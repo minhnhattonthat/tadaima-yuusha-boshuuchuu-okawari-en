@@ -8,7 +8,7 @@ id	loc	jp	en
 05A032	r05A032:44	{sfx:00}人々の平和なくらしを{nl}まもるために、これからも{nl}しっかりたのんだぞ！{sfx:FE}{page}{end}	
 05A05E	r05A05E:21	{sfx:00}それでは{nl}しばしのわかれじゃ！{sfx:FE}{page}{end}	
 05A073	r05A073:24	{sfx:00}また会おう{nl}勇者たちよ！{sfx:FE}{pause:F0}{pause:C3}{end}	
-05A08B	r05A08B:64	ワヲ♥ヲ ヲOンまンぽンュン★ン0ァYァ{color:07}シルフィ{color:0F}{nl}{sfx:01}おつかれさまでした勇者様。{nl}冒険ももうおわりね。{sfx:FE}{page}{end}	
+05A09F	r05A09F:44	{color:07}シルフィ{color:0F}{nl}{sfx:01}おつかれさまでした勇者様。{nl}冒険ももうおわりね。{sfx:FE}{page}{end}	
 05A0CB	r05A0CB:42	{sfx:01}ざんねんながら{nl}王様はとらわれたままだけど、{nl}王様とて勇者。{sfx:FE}{page}{end}	
 05A0F5	r05A0F5:35	{sfx:01}みすみすザガンにやられて{nl}しまうようなことは{nl}ないはずよ。{sfx:FE}{page}{end}	
 05A118	r05A118:42	{sfx:01}だからしんぱいせずに、{nl}あたしたちは{nl}成続の発表にいきましょ〜。{sfx:FE}{page}{end}	
@@ -20,13 +20,12 @@ id	loc	jp	en
 05A222	r05A222:24	{sfx:01}それでは、また会う日まで！{sfx:FE}{pause:F0}{pause:C3}{end}	
 05AB4B	r05AB4B:46	{sfx:01}クエストをクリアすると、{nl}大りょうのNVPとシリングを{nl}さしあげます{color:09}♥{color:0F}{sfx:FE}{page}{end}	
 05AB79	r05AB79:20	{sfx:01}みなさん、がんばってね〜。{sfx:FE}{pause:40}{end}	
-05AB8D	r05AB8D:9	ヤガヂガ・ガ🅡ガ{end}	
 05AB96	r05AB96:32	ガ{color:07}シルフィ{color:0F}{nl}{sfx:01}おめでとうございま〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	
 05ABB6	r05ABB6:24	{sfx:01}勇者{sub:0100}様{nl}{sub:0000}解放！{sfx:FE}{page}{end}	
 05ABCE	r05ABCE:23	{sfx:01}新たなクエストの{nl}発表です！{sfx:FE}{page}{end}	
 05ABE5	r05ABE5:26	{sfx:01}つぎのクエストは{nl}{sub:0000}で〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	
 05ABFF	r05ABFF:23	{sfx:01}みなさん、がんばってね{color:09}♥{color:0F}{sfx:FE}{pause:40}{end}	
-05AC2B	r05AC2B:74	3339おゆギイギヨギベギ🅑ギ5グよグぷグナグゲグヴグⓍグ{color:07}シルフィ{color:0F}{nl}{sfx:01}それでは、みなさんの{nl}とくてんを発表しま〜す{color:09}♥{color:0F}{sfx:FE}{pause:B4}{end}	
+05AC48	r05AC48:45	{color:07}シルフィ{color:0F}{nl}{sfx:01}それでは、みなさんの{nl}とくてんを発表しま〜す{color:09}♥{color:0F}{sfx:FE}{pause:B4}{end}	
 05AC75	r05AC75:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	
 05AC99	r05AC99:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	
 05ACBD	r05ACBD:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	
@@ -38,7 +37,7 @@ id	loc	jp	en
 05ADAE	r05ADAE:22	{sfx:01}ハニワスロットおいでませーッ。{sfx:FE}{pause:80}{end}	
 05ADC4	r05ADC4:22	{sfx:01}さあ、優勝は誰の手に・・・{sfx:FE}{end}	
 05ADDA	r05ADDA:10	勇者{sub:0200}{pause:80}{end}	
-05ADF4	r05ADF4:79	{nl}グギゲぅゴ0ザダジ6ゲみゲじゲヒゲ{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでアルディア地方の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	
+05AE06	r05AE06:61	{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでアルディア地方の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	
 05AE43	r05AE43:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	
 05AE61	r05AE61:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	
 05AE8E	r05AE8E:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	
@@ -46,7 +45,7 @@ id	loc	jp	en
 05AEEB	r05AEEB:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	
 05AF09	r05AF09:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	
 05AF36	r05AF36:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	
-05AF54	r05AF54:67	ぎゴヤゴダゴ🅧ゴ{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでペリル諸島の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	
+05AF5C	r05AF5C:59	{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでペリル諸島の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	
 05AF97	r05AF97:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	
 05AFB5	r05AFB5:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	
 05AFE2	r05AFE2:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	

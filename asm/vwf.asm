@@ -52,6 +52,11 @@ org $C21CF0
     jml rect_read
 org $C2A63F
     jml top_name
+; "12/25 うまれ" is built from immediates, three tiles of the label sheet (rects.tiles): DOB
+org $C2BD6C
+    dw $190E
+org $C2BD72
+    dw $000C
 
 org $C0FFD7
     db $0C              ; 4 MB

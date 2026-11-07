@@ -120,6 +120,7 @@ def apply(rom, english):
     edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"1"}
     blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
+    (ROOT / "build/far.tsv").write_text("".join(f"{n}\t{i}\n" for i, n in number.items()), encoding="utf-8")  # for tools/windows.py
     return out, blocks
 
 

@@ -32,8 +32,8 @@ def run(args, scene, frames):
     states = ROOT / "work/states" if args.dir == "scenes" else out
     cmd = [sys.executable, "-X", "utf8", f"{SKILL}/scripts/emu.py", str(args.rom), "--out", str(out), "--script",
            str(ROOT / "tools/debug/statelog.lua"), "--script", str(ROOT / "tools/debug/textlog.lua"), "--script",
-           str(ROOT / "tools/debug/rectlog.lua"), "--script", str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
-           "--frames", str((frames or args.frames) + args.extra), "--state-out", str(states / f"{scene}.mss")]
+           str(ROOT / "tools/debug/rectlog.lua"), "--script", str(ROOT / "tools/debug/winlog.lua"), "--script", str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
+           "--frames", str((frames or args.frames) + args.extra), "--timeout", "1200", "--state-out", str(states / f"{scene}.mss")]
     code = subprocess.run(cmd, cwd=ROOT, capture_output=True).returncode
     shot = out / "final.png"
     flat = not shot.exists() or len(Image.open(shot).convert("RGB").getcolors(1 << 16) or [0, 0]) < 2

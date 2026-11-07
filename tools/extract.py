@@ -40,6 +40,7 @@ RECORDS = [
 ]
 JP = re.compile(r"[ぁ-んァ-ヴー一-龥]")
 NOISE = re.compile(r"[Ⓐ-ⓩ🅐-🅨♂♀／％＆★「」]")
+LATIN_OK = re.compile(r"HP|MP|NVP|NPC|BOSS|BOO|SOS|MAP|HUMAN|THE|END|CONFIG|MODE|GO|LV[0-9]*|[🅐🅨🅧🅑]ボタン|[0-9]+(?=シリング|回|番|位|人|つ|コ|カ|が|ほん|さい|かい|キ|セ|時間|年|ポイント|$)")
 
 
 def plain(s):
@@ -57,16 +58,33 @@ def texty(s):
     return jp >= 2 and jp * 2 >= len(p) or set(p) <= set("・・？！…") and bool(p) or p == "あ"
 
 
-def tail(data, p, e, cuts):
+def dirty(s):
+    """Table bytes in front of a string pass texty: u16 tables and records decode as kana. Junk shows in the head, the glyphs
+    before the row's first code: a stray letter, digit or icon, or a pointer table's rhythm (the high byte every 2nd glyph)."""
+    head = re.split(r"\{", re.sub(r"^(\{nl\})+", "", s))[0]
+    if re.search(r"[0-9]\[F4\]", head) or re.search(r"[0-9]", head) and len(head) <= 4 or re.match(r"[。、ァィゥェォャュョッぁぃぅぇぉゃゅょっ]", head):
+        return True
+    if re.search(r"[0-9A-Za-z]|[Ⓐ-ⓩ🅐-🅩]", LATIN_OK.sub("", head.replace("[F4]", ""))[:12]):
+        return True
+    p = plain(s).replace("[F4]", "")[:24]
+    return any(p[i] == p[i + 2] == p[i + 4] == p[i + 6] and p[i] not in "〜ー・ッ" and len(set(p[i + 1:i + 6:2])) == 3 for i in range(len(p) - 6))
+
+
+def ptr_run(data, q, e, cuts, org):
+    """3 words in a row that point inside the block: a pointer table, whatever it decodes to."""
+    return e - q >= 6 and all((data[w] | data[w + 1] << 8) - org in cuts for w in range(q, q + 6, 2))
+
+
+def tail(data, p, e, cuts, org=0):
     """A piece with no FF before its text: table bytes, then a string. Returns where the string starts, or None.
     The start is a pointer target or a colour or voice code, and everything after it must read as clean text."""
-    if data[e - 1] != 0xFF:
+    if data[e - 1] not in (0xFF, 0xFE):
         return None
     marks = {q for q in range(p + 1, e - 1) if data[q] in (0xFB, 0xF6)}
     marks |= {q + 5 for q in range(p, e - 6) if data[q:q + 2] == b"\xf4\x01"}  # encounter record: name 5 bytes after F4 01
     for c in sorted({c for c in cuts if p < c < e - 1} | marks):
         s = T.decode(data, c, length=e - c)[0]
-        if texty(s) and not NOISE.search(plain(s)):
+        if texty(s) and not dirty(s) and not ptr_run(data, c, e, cuts, org):
             return c
     return None
 
@@ -173,15 +191,17 @@ def words(data, org):
 def piece(sink, sec, tag, b, data, p, e, cuts, known=False):
     """Files data[p:e] as text, as table bytes then text, or as data."""
     s = T.decode(data, p, length=e - p)[0]
-    if known or texty(s):  # no FF at the end: a pointer enters the string there, it runs on into the next row
+    org = VM_ORG if sec == "event" else SHOP_ORG
+    if known or texty(s) and not dirty(s) and not ptr_run(data, p, e, cuts, org):  # no FF at the end: a pointer enters the string there, it runs on into the next row
         sink.text(sec, tag, f"b{b}+{p:X}", data, p, e)
         return
-    head = max((q + 1 for q in range(p, e) if data[q] == 0xFE and texty(T.decode(data, p, length=q + 1 - p)[0])), default=0)
+    head = max((q + 1 for q in range(p, e) if data[q] == 0xFE and data[q - 1] != 0xF6 and texty(t := T.decode(data, p, length=q + 1 - p)[0])
+                and not dirty(t)), default=0)
     if head:  # fixed-width name list, FE after each name, no FF: records follow it directly
         sink.text(sec, tag, f"b{b}+{p:X}", data, p, head)
         sink.data(f"b{b}+{head:X}", e - head, "not text")
         return
-    c = tail(data, p, e, cuts)
+    c = tail(data, p, e, cuts, org)
     sink.data(f"b{b}+{p:X}", (c or e) - p, "not text")
     if c:
         sink.text(sec, tag, f"b{b}+{c:X}", data, c, e)
@@ -217,8 +237,9 @@ def load(rom):
     for first, end, sec in RAW:
         for p, e in split(rom, first, end):
             s = T.decode(rom, p, length=e - p)[0]
-            c = None if texty(s) else tail(rom, p, e, ())
-            if c or texty(s) and rom[e - 1] == 0xFF:
+            clean = texty(s) and not dirty(s)
+            c = None if clean else tail(rom, p, e, ())
+            if c or clean and rom[e - 1] == 0xFF:
                 sink.text(sec, "", f"r{c or p:06X}", rom, c or p, e)
                 if c:
                     sink.data(f"r{p:06X}", c - p, "not text")

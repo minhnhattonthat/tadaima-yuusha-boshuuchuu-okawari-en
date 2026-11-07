@@ -87,7 +87,7 @@ def test_raw_ranges_fully_accounted(world):
 def test_no_japanese_left_in_data(world):
     """A long clean kana run filed as data would be text the patch never touches."""
     rom, blocks, sink = world
-    run = re.compile(r"[ぁ-ん]{9,}")  # shop id lists decode to runs of up to 8 random hiragana
+    run = re.compile(r"[ぁ-ん]{13,}")  # shop id lists decode to runs of up to 12 random hiragana
     bad = []
     for loc, n, why in sink.other:
         if why == "code" or why == "offset table":
@@ -97,6 +97,14 @@ def test_no_japanese_left_in_data(world):
         if run.search(s) and loc not in ("b237+13A", "r00A038"):  # read by eye: a value table and a glyph grid
             bad.append((loc, s[:40]))
     assert bad == []
+
+
+def test_tables_are_not_rows(world):
+    """Bytes that only decode as kana: a far code over them breaks the game (F4F4 as a script set, versus, orb table in b213)."""
+    rows = {r[1].split(":")[0] for rows in world[2].rows.values() for r in rows}
+    assert not {f"b{b}+0" for b in extract.SHOP} & rows
+    assert not {"b233+92", "b238+212", "r05AB8D"} & rows
+    assert {"b213+30E", "b230+508", "r05A09F", "b212+C04"} <= rows  # the string behind each table starts at its own text
 
 
 def test_script_files_match(world):
