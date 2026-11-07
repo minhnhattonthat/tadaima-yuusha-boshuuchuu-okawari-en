@@ -29,10 +29,33 @@ org $C21780
 org $C21AC4
     jml strip
 
+org $C21A99
+    jml text_wait
+
 org $C0FFD7
     db $0C              ; 4 MB
 
 org $E00000
+; A window sleeps +01 frames (6) per glyph and again in the speed loop: English has 2-3 times the glyphs of the Japanese.
+; {pause} waits through the same routine and keeps its length.
+text_wait:
+    lda.w $0001,x
+    and.w #$00FF
+    pha
+    lda 3,s
+    cmp.w #$1538        ; return address of the JSR in the pause loop, minus one
+    pla
+    beq .wait
+    lsr                 ; 6 -> 2: a letter takes 4 frames, 15 a second
+    beq .one
+    dec
+    bne .wait
+.one:
+    lda.w #$0001
+.wait:
+    jsl $80E11C
+    jml $C21AA3
+
 far_read:
     cmp.w #$00FF
     beq .end
