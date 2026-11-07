@@ -7,6 +7,7 @@ local wram, prg = emu.memType.snesWorkRam, emu.memType.snesPrgRom
 local NEWGAME_EXIT, TITLE_EXIT, DISPATCH = 0xC176A5, 0xC4322A, 0x8290BD
 
 local function state() return emu.read(0x0DDD, wram) end
+if scene.expect then L.log(string.format("expect %02X", scene.expect)) end  -- regen.py compares the run's last state
 
 if scene.state then
   emu.write(0x0176A6, scene.state, prg)
@@ -20,14 +21,22 @@ L.on_exec(NEWGAME_EXIT, NEWGAME_EXIT, function()
   for a, v in pairs(scene.ram or {}) do emu.write(a, v, wram) end
   L.log(string.format("warp: %s at f%d", SCENE, L.frame))
 end)
-if scene.intro_exit then  -- first dispatch of state 00 after the warp: the intro has ended, swap in ours before the read
+if scene.tile then  -- first turn menu of the map: act as if the player just stopped on this tile (state 0C runs its event)
   local done = false
   L.on_exec(DISPATCH, DISPATCH, function()
-    if warped and not done and state() == 0 then
+    if warped and not done and state() == 1 then
       done = true
-      emu.write(0x0DDD, scene.intro_exit, wram)
+      for i, base in ipairs({ 0x1584, 0x1586 }) do emu.write(base, scene.tile[i], wram); emu.write(base + 1, 0, wram) end
+      emu.write(0x0CAF, scene.tile[1], wram)
+      emu.write(0x0CCF, scene.tile[2], wram)
+      emu.write(0x0DDD, 0x0C, wram)
+      if not scene.keep_mash then after_frame = L.frame end
+      L.log(string.format("tile event %02X,%02X at f%d", scene.tile[1], scene.tile[2], L.frame))
     end
   end)
+end
+if scene.boot_pad then
+  L.on_exec(0xC10000, 0xC10000, function() emu.write(0x015F, scene.boot_pad, wram) end)
 end
 if scene.mode then
   L.on_exec(TITLE_EXIT, TITLE_EXIT, function() emu.write(0x1F4B, scene.mode, wram) end)

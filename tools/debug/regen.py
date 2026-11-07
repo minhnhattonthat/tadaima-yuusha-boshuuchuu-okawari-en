@@ -18,10 +18,13 @@ from skill import SKILL  # noqa: E402
 
 
 def names():
-    """{scene: frames or None}. Same list as scenes.lua: its fixed lines, then its two chapter loops."""
+    """{scene: frames or None}. Same list as scenes.lua: its fixed lines, then its chapter loops."""
     src = (ROOT / "tools/debug/scenes.lua").read_text(encoding="utf-8")
-    fixed = {m[0]: int(m[1]) for m in re.findall(r"^S\.(\w+) = .*frames = (\d+)", src, re.M)}
-    return fixed | {f"ch{c:02d}": None for c in range(13)} | {f"ch{c:02d}_clear": 22000 for c in range(13)}
+    fixed = {m[0]: int(m[1]) for m in re.findall(r"^S\.(\w+) = .*frames = (\d+)", src, re.M) if m[0] != "name"}
+    turns = {m: 18000 for m in re.findall(r"^S\.(\w+) = turn\(", src, re.M)}
+    tiles = {m: 18300 for m in re.findall(r"(\w+) = \{ 0x\w\w, 0x\w\w \}", src[src.index("local tiles"):])}
+    return (fixed | turns | tiles | {f"ch{c:02d}": None for c in range(8)} | {f"mid{c:02d}": 12000 for c in range(5)}
+            | {f"clear{c:02d}": 12000 for c in range(5)})
 
 
 def run(args, scene, frames):
@@ -32,7 +35,10 @@ def run(args, scene, frames):
     code = subprocess.run(cmd, cwd=ROOT, capture_output=True).returncode
     shot = out / "final.png"
     flat = not shot.exists() or len(Image.open(shot).convert("RGB").getcolors(1 << 16) or [0, 0]) < 2
-    return scene, code, flat
+    log = (out / "log.txt").read_text(encoding="utf-8")
+    expect = re.search(r"^expect (\w\w)$", log, re.M)
+    wrong = expect and re.findall(r"^f\d+ state (\w\w)$", log, re.M)[-1:] != [expect[1]]
+    return scene, 4 if wrong else code, flat
 
 
 def main():

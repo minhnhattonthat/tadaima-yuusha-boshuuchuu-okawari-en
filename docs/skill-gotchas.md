@@ -9,4 +9,6 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - scripts/emu.py: `--mash 90` left the opening stuck on one dialogue box while 4-frame presses every 150 frames advanced it; a route or `L.press` works, cause not found.
 - references/emulator-qa.md: cold boots here drift by a few frames between runs (state 16 at f483 or f485, warp at f3502 or f3532), so a route counted in frames from boot lands wrong; count from a RAM state instead.
 - references/emulator-qa.md: a `--script` file can't `dofile` a repo-relative path, Mesen's cwd isn't the repo; `warp.lua` derives the root from `OUT`.
+- scripts/lua/probes/watch.lua: it logs each PC once, so a decompressor rewriting a watched buffer later looks like no write at all; compare a RAM dump with the expected bytes before ruling an overwrite out.
+- references/emulator-qa.md: a menu on a dice or board game can sit in a handler that never returns to the dispatcher, so poking the state byte does nothing; write it from an exec hook on the dispatcher. Text that looks like a corrupt font can be a warp into a state the data tables don't define for that value: dump the per-chapter tables before debugging the text path.
 - scripts/lua/mesen_lib.lua: `L.safe` drops return values, so an `L.on_write` callback can't override the written value; patch at the reader instead (`warp.lua` hooks the dispatcher).

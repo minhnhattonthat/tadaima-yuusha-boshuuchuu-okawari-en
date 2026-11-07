@@ -7,7 +7,9 @@
 --   mash      press A every N frames after the warp, until state `after` shows up (default: to the end)
 --   after     state that starts `route` and stops mash (cold boots drift a few frames, so never count from the warp)
 --   route     presses as { {frame, "button", frames}, .. } counted from `after`
---   intro_exit  state to enter when the chapter intro (state 17) ends
+--   tile      { x, y }: at the first turn menu, run that map tile's event (shop, inn, battle); stops mash unless keep_mash
+--   boot_pad  byte poked into $015F at the boot check $C1:0000 (controller notices)
+--   expect    state the run must end in, or regen.py fails it
 --   frames    run length for regen.py (one line per scene so it can read it)
 local S = {}
 
@@ -20,17 +22,65 @@ S.vs = { state = 0x1A, frames = 4400 }
 S.tournament = { state = 0x20, frames = 4400 }
 S.config = { state = 0x22, frames = 4400 }
 S.save_menu = { state = 0x23, frames = 4400 }
-S.ending = { state = 0x1D, mash = 150, frames = 5000 }
-S.epilogue = { state = 0x1E, mash = 150, frames = 5000 }
+-- The ending as the game plays it, from the last clear: states 18, 1D (text over sunset), 1E (epilogue maps + staff roll), 21 (THE END).
+S.ending = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 18000, expect = 0x1D }
+S.credits = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 24000, expect = 0x1E }
+S.the_end = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 30000, expect = 0x21 }
 S.party_mode = { mode = 1, frames = 5000, mash = 60 }
 S.field = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, frames = 19500 }
-S.field_menu = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, after = 0x03, frames = 21500,
-  route = { { 300, "a" }, { 424, "a" }, { 548, "right" }, { 612, "a" } } }
+S.field_menu = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, after = 0x01, frames = 18000 }
 
-for ch = 0, 12 do
+-- Turn menus on ch 0's first turn. after = 1: routes count from the command menu (cursor on Move).
+-- Inventory: player record +0E ($0BF9), 30 item ids. Spells: character record +19 ($0A48), 12 ids (docs/re/memory.md).
+local function turn(route, ram, expect)
+  ram = ram or {}
+  ram[0x0A2C] = 0
+  return { state = 0x17, ram = ram, mash = 150, after = 0x01, expect = expect or 0x01, frames = 18000, route = route }
+end
+local items, spells = {}, {}
+for i = 0, 29 do items[0x0BF9 + i] = i + 1 end
+for i = 0, 11 do spells[0x0A48 + i] = i + 1 end
+S.field_menu2 = turn({ { 90, "x" } })
+S.field_map = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" } }, nil, 0x07)
+S.field_rest = turn({ { 90, "x" }, { 140, "left" }, { 190, "a" } }, nil, 0x08)
+S.field_status = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" } }, nil, 0x09)
+S.field_items = turn({ { 90, "down" }, { 140, "a" } }, items)
+S.field_magic = turn({ { 90, "up" }, { 140, "a" }, { 200, "a" } }, spells)
+S.field_orb = turn({ { 90, "right" }, { 140, "a" } }, items)
+S.field_status_equip = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x09)
+S.field_status_magic = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "right" }, { 420, "a" } }, spells, 0x09)
+S.field_map_town = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x07)
+-- HP 1 ($0A42, character +13) in the first fight: the defeat scene. Scenario mode has no game over screen: the robot takes items and play goes on.
+S.defeat = { state = 0x17, ram = { [0x0A2C] = 0, [0x0A42] = 1 }, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 21000 }
+S.battle_magic = { state = 0x17, ram = spells, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 19000, expect = 0x0F,
+  route = { { 300, "a" }, { 450, "a" }, { 600, "a" }, { 750, "up" }, { 810, "a" } } }
+S.battle_menu2 = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 19000, expect = 0x0F,
+  route = { { 300, "a" }, { 450, "a" }, { 600, "a" }, { 750, "x" } } }
+S.shop_inside = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, tile = { 0x20, 0x27 }, frames = 18300, expect = 0x11 }
+S.continue = { mode = 2, frames = 4500, expect = 0x16 }
+S.versus = { mode = 3, frames = 5000, mash = 60 }
+S.standings = { state = 0x19, frames = 4200, expect = 0x19 }
+S.field_pass = turn({ { 90, "x" }, { 140, "down" }, { 190, "a" } }, nil, 0x0A)
+-- Controller notices shown instead of the title (state 26 at boot, $C1:0000): $015F bit 6 and bit 0 pick the string.
+S.notice_a = { title = true, boot_pad = 0x40, frames = 900, expect = 0x26 }
+S.notice_b = { title = true, boot_pad = 0x01, frames = 900, expect = 0x26 }
+
+-- Ch 0 map tiles by event type (list at $7E:D006, docs/re/memory.md): shops and inns have 3 sites each.
+local tiles = { teleport = { 0x1A, 0x19 }, cave = { 0x27, 0x09 }, duel = { 0x0D, 0x0A }, encounter = { 0x31, 0x10 },
+  orb_slot = { 0x34, 0x37 }, shop0 = { 0x20, 0x27 }, shop1 = { 0x42, 0x2C }, shop2 = { 0x20, 0x37 },
+  inn0 = { 0x21, 0x12 }, inn1 = { 0x35, 0x1E }, inn2 = { 0x2F, 0x2E } }
+for name, xy in pairs(tiles) do
+  S[name] = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, tile = xy, frames = 18300 }
+end
+
+-- Chapters 0-4 and the branches 5-7 open with state 17. Values 8-12 are chapter 0-4 + 8: state 1F adds the 8 itself for
+-- the mid-chapter event, state 18 (clear) expects it set and subtracts 7 for the next intro (docs/re/memory.md).
+for ch = 0, 7 do
   S[string.format("ch%02d", ch)] = { state = 0x17, ram = { [0x0A2C] = ch }, mash = 150 }
-  -- the clear event reads text the intro loaded, so play the intro first
-  S[string.format("ch%02d_clear", ch)] = { state = 0x17, ram = { [0x0A2C] = ch }, mash = 150, intro_exit = 0x18 }
+end
+for ch = 0, 4 do
+  S[string.format("mid%02d", ch)] = { state = 0x1F, ram = { [0x0A2C] = ch }, mash = 150 }
+  S[string.format("clear%02d", ch)] = { state = 0x18, ram = { [0x0A2C] = ch + 8 }, mash = 150 }
 end
 
 return S
