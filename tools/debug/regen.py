@@ -28,10 +28,12 @@ def names():
 
 
 def run(args, scene, frames):
-    out = ROOT / "work/qa/scenes" / scene
+    out = ROOT / "work/qa" / args.dir / scene
+    states = ROOT / "work/states" if args.dir == "scenes" else out
     cmd = [sys.executable, "-X", "utf8", f"{SKILL}/scripts/emu.py", str(args.rom), "--out", str(out), "--script",
-           str(ROOT / "tools/debug/statelog.lua"), "--script", str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
-           "--frames", str(frames or args.frames), "--state-out", str(ROOT / "work/states" / f"{scene}.mss")]
+           str(ROOT / "tools/debug/statelog.lua"), "--script", str(ROOT / "tools/debug/textlog.lua"), "--script",
+           str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
+           "--frames", str(frames or args.frames), "--state-out", str(states / f"{scene}.mss")]
     code = subprocess.run(cmd, cwd=ROOT, capture_output=True).returncode
     shot = out / "final.png"
     flat = not shot.exists() or len(Image.open(shot).convert("RGB").getcolors(1 << 16) or [0, 0]) < 2
@@ -46,6 +48,7 @@ def main():
     ap.add_argument("--rom", default=next((ROOT / "rom").glob("*.sfc")))
     ap.add_argument("--frames", type=int, default=6000)
     ap.add_argument("--jobs", type=int, default=6)
+    ap.add_argument("--dir", default="scenes", help="under work/qa/; anything but `scenes` keeps states there too")
     ap.add_argument("prefix", nargs="*")
     args = ap.parse_args()
     (ROOT / "work/states").mkdir(parents=True, exist_ok=True)
@@ -55,9 +58,9 @@ def main():
     bad = [r for r in res if r[1] or r[2]]
     for scene, code, flat in res:
         print(scene, "exit", code, "FLAT" if flat else "ok")
-    shots = [str(ROOT / "work/qa/scenes" / r[0] / "final.png") for r in res if not r[2]]
+    shots = [str(ROOT / "work/qa" / args.dir / r[0] / "final.png") for r in res if not r[2]]
     subprocess.run([sys.executable, "-X", "utf8", f"{SKILL}/scripts/sheet.py", *shots, "--out",
-                    str(ROOT / "work/qa/scenes/sheet.png")], cwd=ROOT)
+                    str(ROOT / "work/qa" / args.dir / "sheet.png")], cwd=ROOT)
     print(len(res) - len(bad), "of", len(res), "scenes ok")
     return 1 if bad else 0
 
