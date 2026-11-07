@@ -1,0 +1,8 @@
+# Boot, wait, press Start through the title.
+900 -
+4 start
+300 -
+4 start
+300 -
+4 a
+300 -
