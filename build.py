@@ -22,7 +22,7 @@ if mode == "--identity":
 else:
     rows = [r for sec in extract.load(rom).rows.values() for r in sec]
     if mode == "--marker":
-        english = insert.marker(rows) | rects.marker(rom)
+        english = insert.marker(rows) | rects.marker(rom) | dict(a.split("=", 1) for a in sys.argv[2:])  # ID=text: stress one row
         out = ROOT / "build/tadaima_marker.sfc"
     else:
         english = {}
