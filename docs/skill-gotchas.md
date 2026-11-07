@@ -18,3 +18,5 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - references/pipeline.md (Extract): a clean-kana string filter misses strings glued to data with no terminator (name lists, records ending in a name), and a scan that skips "already covered" ranges hid a whole text range here; audit the data pieces for kana runs too, and scan without the mask.
 - references/pipeline.md (Extract): before tracing every pointer to raw strings, consider a control code at each string's start that jumps to new text: list walks and computed tables then need no tracing (proposed here, not yet proven).
 - hooks/guard_bash.py: a heredoc writing a .py file is blocked, while `python - <<'X'` on stdin passes; throwaway analysis still works that way.
+references/platform-snes.md: a game on a cooperative scheduler: a wait routine that takes a count ($80E11C here) may not be a frame count; A=2 hung the task, only 1 was a safe one-frame wait.
+references/pipeline.md: slowing a shared wait routine for text pace also slows button-wait loops that sample input edges through it; with a 2-frame loop a press on an even frame is missed forever. Hook by return address.

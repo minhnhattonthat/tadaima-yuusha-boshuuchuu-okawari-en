@@ -33,7 +33,7 @@ def run(args, scene, frames):
     cmd = [sys.executable, "-X", "utf8", f"{SKILL}/scripts/emu.py", str(args.rom), "--out", str(out), "--script",
            str(ROOT / "tools/debug/statelog.lua"), "--script", str(ROOT / "tools/debug/textlog.lua"), "--script",
            str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
-           "--frames", str(frames or args.frames), "--state-out", str(states / f"{scene}.mss")]
+           "--frames", str((frames or args.frames) + args.extra), "--state-out", str(states / f"{scene}.mss")]
     code = subprocess.run(cmd, cwd=ROOT, capture_output=True).returncode
     shot = out / "final.png"
     flat = not shot.exists() or len(Image.open(shot).convert("RGB").getcolors(1 << 16) or [0, 0]) < 2
@@ -48,6 +48,7 @@ def main():
     ap.add_argument("--rom", default=next((ROOT / "rom").glob("*.sfc")))
     ap.add_argument("--frames", type=int, default=6000)
     ap.add_argument("--jobs", type=int, default=6)
+    ap.add_argument("--extra", type=int, default=0, help="frames on top of each scene's length: scenes on a patched ROM run longer")
     ap.add_argument("--dir", default="scenes", help="under work/qa/; anything but `scenes` keeps states there too")
     ap.add_argument("prefix", nargs="*")
     args = ap.parse_args()

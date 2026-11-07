@@ -37,21 +37,20 @@ org $C0FFD7
 
 org $E00000
 ; A window sleeps +01 frames (6) per glyph and again in the speed loop: English has 2-3 times the glyphs of the Japanese.
-; {pause} waits through the same routine and keeps its length.
+; Only those two waits change (return addresses below, minus one): button waits sample input through this routine, and at 2 frames
+; a loop they miss presses. {pause} keeps its length too.
 text_wait:
+    lda 1,s
+    cmp.w #$1818        ; after the glyph
+    beq .fast
+    cmp.w #$160B        ; speed loop
+    beq .fast
     lda.w $0001,x
     and.w #$00FF
-    pha
-    lda 3,s
-    cmp.w #$1538        ; return address of the JSR in the pause loop, minus one
-    pla
-    beq .wait
-    lsr                 ; 6 -> 2: a letter takes 4 frames, 15 a second
-    beq .one
-    dec
-    bne .wait
-.one:
-    lda.w #$0001
+    bra .wait
+.fast:
+    jsl $80E113         ; one frame; A = 2 for $80E11C hangs the task, it isn't a plain frame count
+    lda.w #$0001        ; about 3 frames a letter, 20 a second
 .wait:
     jsl $80E11C
     jml $C21AA3
@@ -530,6 +529,7 @@ strip_text:
 
 ; bufA goes to the strip, bufB moves down
 strip_flush:
+    phy
     phb
     lda.l !DST
     tay
@@ -548,7 +548,9 @@ strip_flush:
     lda.w #$0000
 +
     sta.l !PEN
-    jmp shift_cells
+    jsr shift_cells
+    ply
+    rts
 
 planebit:
     db 1, 2, 4, 8
