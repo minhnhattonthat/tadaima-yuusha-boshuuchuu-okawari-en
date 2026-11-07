@@ -40,7 +40,16 @@ English: `tools/insert.py images()` renders each row of `NAMES` at build time (`
 
 Upload: `$80D78F` makes the rest of the caller run in the next VBlank with X = a record (5 bytes queue, ours after), or inline during forced blank (`$00FF` bit 7). `$80D6F5` = DMA to VRAM, D = size, A = bank, X = source, Y = word address; it leaves D = 0. Records: 8 x 14 bytes at `$0483` (**candidate**: only ramuse dumps say free, no write watch yet). `small_load` spins while 8 continuations are queued.
 
-Pool: tiles `$41-$9F` in a ring, blanked in block 001. Rows `$27-$40` of the sheet are a-z in fixed cells for text from RAM (player names), `$24-$3D` map there; kana after them are gone, so a leftover kana on this path shows as a wrong letter. **Limit:** no dedupe: a name stays until 95 tiles are drawn after it, so a screen that keeps a label while a list scrolls long enough loses the label. Not seen yet; test on shop and status scrolls.
+Pool: tiles `$4A-$9F` in a ring, blanked in block 001. Tiles `$30-$49` of the sheet (the game's own hiragana) are a-z in fixed cells for text from RAM (player names); the game's mapping sends codes `$24-$3D` there, so a leftover kana on this path shows as a wrong letter. `$27 $28 $29 $2B` (marks, long bar, slash) stay the game's. **Limit:** no dedupe: a name stays until 86 tiles are drawn after it, so a screen that keeps a label while a list scrolls long enough loses the label. Not seen yet; test on shop and status scrolls.
+
+## Lines on the tilemap path (`tools/insert.py lines_in`)
+Item, equipment and spell descriptions and bios (`insert.LINES`) reach the tilemap through `$C220C1` one line at a time, FE between, 10 cells wide (rect 10x4 or 10x6 in `$1111`). A far code per line, `F0 a b FE F0 c d F4.. FF`, inside the row's own bytes: 4 bytes a line. Spell records keep the bytes from `／` on, so the MP cost lines up.
+
+## Label rects (`tools/rects.py`, `script/label.tsv`)
+`$C21CF0` blits `W H tiles` from DB:`$11ED` to BG2 at `$11EF`, attr `$11F1`, through the queue at `$7FBC00`: 183 call sites. Labels are records in `$C0`, `$C4`, `$C5` in tile numbers (no string table holds them, so `findtext` never saw them). `tools/debug/rectlog.lua` logs sources; a brute scan of banks 00-05 gave `rects.RECTS`. Tiles: `rects.TILE`. English uses the sheet's own A-Z, 0-9 and the a-z above, one 8 px tile per letter: in place if it fits in W, else `F0 lo hi` over the record (a W no record has) and `rect_read` runs the blit with DB on the far copy. `rects.COPIED` are templates code copies to RAM and writes numbers into: they can't take a far code, English stays inside W, and `rebuild` fails if it runs into a number. Other sources at `$1111` are built from strings through `$C21E93`.
+
+## Direct readers
+`$C2A63F`: label `$C4:B220` (5 glyphs, `name_misc` row) then a 5-byte name, a glyph at a time: `top_name` sends both through `strip`. `$C4:B485`, `$C4:B492`: job names as a sheet of cells read whole by `strip`, two 16 px cells a word, then male, female one cell each: put `{cell}` between words, it ends the open cell. A job word must be 17-32 px wide. `$C2C34E`, `$C4:B8E7`: digits, no text.
 
 ## Width
 Lines: cells x 16 px. Measured budgets in `docs/re/windows.md`.

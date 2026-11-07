@@ -21,8 +21,9 @@ hirom
 !KEEP   = $FF20
 !T      = $FF22
 !IMAGES = $E20000       ; far number -> u24 tiles, tile count (tools/insert.py)
-!POOL   = $41           ; old kana tiles the names go to, up to !POOLEND
+!POOL   = $4A           ; old kana tiles the names go to, up to !POOLEND; $30-$49 hold a-z, the game's own mapping sends $24-$3D there
 !POOLEND = $A0
+!NAMEBUF = $7FFF30      ; 5 name bytes + FF for strip
 !HEAD   = $7FFF24       ; next free pool tile
 !NEXT   = $7FFF25       ; next tile to give out
 !RUN    = $7FFF26       ; tiles left to give out
@@ -47,6 +48,10 @@ org $C21E93
     jml small_map
 org $C220BD
     jml small_end
+org $C21CF0
+    jml rect_read
+org $C2A63F
+    jml top_name
 
 org $C0FFD7
     db $0C              ; 4 MB
@@ -96,6 +101,36 @@ far_read:
     plb
     sta $00
     jml $C215B9
+
+; Tile-rect blit: a record starting F0 lo hi is a far rect, a W no record has. The blit reads it with DB switched; everything else it touches is low RAM or long.
+rect_read:
+    phy
+    ldy.w $11ED
+    lda.w $0000,y
+    and.w #$00FF
+    cmp.w #!FAR
+    beq rect_read_far
+    ply
+rect_body:
+    lda $00
+    pha
+    lda $02
+    pha
+    jml $C21CF6
+rect_read_far:
+    lda $00
+    pha
+    lda.w $0001,y
+    jsr far_entry
+    tya
+    sta.w $11ED
+    lda 2,s             ; $00 went on far_entry's stack shuffle
+    sta $00
+    jsl rect_body
+    plb
+    pla
+    ply
+    rtl
 
 ; A = string number -> Y = string, DB = its bank. The caller's DB is on the stack: plb when done.
 far_entry:
@@ -474,7 +509,9 @@ strip:
     sta.l !FG
     lda.w #$0000
     sta.l !PEN
+    phy
     jsr clear_cells
+    ply
     jsr strip_text
     lda.l !PEN
     beq +
@@ -489,7 +526,9 @@ strip_text:
     lda.w $0000,y
     and.w #$00FF
     cmp.w #$00FF
-    beq .ret
+    bne +
+    rts
++
     iny
     cmp.w #$00FB
     beq .color
@@ -503,6 +542,16 @@ strip_text:
     iny
     bra .fixed
 .glyph:
+    cmp.w #$00F5        ; {cell}: end the open cell, or a blank cell if none is open. Word slots in a sheet of cells line up on it
+    bne +
+    lda.l !PEN
+    beq .blank
+    jsr strip_flush
+    bra strip_text
+.blank:
+    lda.w #$00F5
+    bra .fixed
++
     cmp.w #$000A
     bcc .fixed
     cmp.w #$006A
@@ -538,7 +587,7 @@ strip_text:
     sta.l !FG
     rep #$20
     iny
-    bra strip_text
+    jmp strip_text
 .far:
     lda.w $0000,y
     jsr far_entry
@@ -546,6 +595,43 @@ strip_text:
     plb
 .ret:
     rts
+
+; $C2A63F: 5 cells of label, then 5 of name, read one glyph at a time. Both go through strip so English draws.
+top_name:
+    ldx.w #$0000
+    lda.w #$0000
+.clear:
+    sta.l $7E7900,x
+    inx
+    inx
+    cpx.w #$0500
+    bne .clear
+    lda $0A             ; strip counts in $0A
+    pha
+    ldy.w #$B220
+    ldx.w #$7900
+    jsl strip
+    pla
+    sta $0A
+    ldy.w #$0000
+.copy:
+    lda ($0A),y
+    tyx
+    sta.l !NAMEBUF,x
+    iny
+    cpy.w #$0005
+    bne .copy
+    lda.w #$00FF
+    sta.l !NAMEBUF+5
+    phb
+    pea.w $7F7F
+    plb
+    plb
+    ldy.w #!NAMEBUF
+    ldx.w #$7B80
+    jsl strip
+    plb
+    jml $C2A66F
 
 ; bufA goes to the strip, bufB moves down
 strip_flush:
@@ -603,15 +689,6 @@ small_map:
     sta.l !RUN
 .plain:
     pla
-    cmp.b #$24
-    bcc .old
-    cmp.b #$3E
-    bcs .old
-    adc.b #$03          ; a-z: code - $24 + first tile $27, carry clear
-    xba
-    lda.b #$26
-    rtl
-.old:
     cmp.b #$23
     beq .low
     bcs .high

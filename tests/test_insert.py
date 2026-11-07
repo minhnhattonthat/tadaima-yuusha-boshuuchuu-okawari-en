@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import extract  # noqa: E402
 import insert  # noqa: E402
+import rects  # noqa: E402
 
 ROM = next((ROOT / "rom").glob("*.sfc"), None)
 pytestmark = pytest.mark.skipif(ROM is None, reason="no dump in rom/")
@@ -22,9 +23,28 @@ def built():
     return rom, rows, english, image, blocks
 
 
+def test_rects():
+    """Labels: English in place when it fits, a far rect when wider, numbers in a copied rect untouched."""
+    rom = ROM.read_bytes()
+    assert all(r[2] for r in rects.rows(rom)), "a rect with no kana"
+    out = bytearray(rom) + b"\xff" * (insert.ROM_SIZE - len(rom))
+    p = 0x04CBD1  # プレイじかん, 6 wide
+    wide, short = f"rect{p:06X}", "rect04CC16"
+    far = insert.Far(out)
+    rects.apply(out, {wide: "Play Time", short: "Fast"}, far)
+    assert out[p] == insert.FAR
+    cpu = int.from_bytes(out[insert.TABLE:insert.TABLE + 3], "little")
+    assert out[cpu & 0x3FFFFF:(cpu & 0x3FFFFF) + 2] == bytes([9, 2])
+    assert out[0x04CC16:0x04CC18] == rom[0x04CC16:0x04CC18] and out[0x04CC18] == 0x10  # F of Fast, in place
+    with pytest.raises(AssertionError):
+        rects.apply(bytearray(rom), {"rect04B4AA": "Remaining{nl}Shillings and more of them here"}, far)
+
+
 def test_far_codes_resolve(built):
     rom, rows, english, image, blocks = built
     t = insert.table()
+    secs = extract.load(rom).rows
+    lined = {r[0] for sec in insert.LINES for r in secs[sec]}
     for i, loc, _ in rows:
         if i not in english:
             continue
@@ -36,7 +56,7 @@ def test_far_codes_resolve(built):
         assert span[start + 1] < 0xF4 and span[start + 2] < 0xF4, i
         cpu = int.from_bytes(image[insert.TABLE + num * 3:insert.TABLE + num * 3 + 3], "little")
         assert 0xA1 <= cpu >> 16 <= 0xBF and cpu & 0xFFFF >= 0x8000, i
-        data = t.encode(english[i])
+        data = t.encode(english[i].split("{nl}")[0] if i in lined else english[i])  # descriptions: a far code per line
         assert image[cpu & 0x3FFFFF:(cpu & 0x3FFFFF) + len(data)] == data, i
 
 

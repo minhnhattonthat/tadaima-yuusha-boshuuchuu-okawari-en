@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
+import rects  # noqa: E402
 import unpack  # noqa: E402
 import vm  # noqa: E402
 from tbl import Table  # noqa: E402
@@ -27,7 +28,7 @@ RAW = [
     (0x008662, 0x00A230, "bio"), (0x00A490, 0x00A6DA, "desc_item"), (0x00B54A, 0x00C298, "desc_equip"), (0x00C52B, 0x00C72F, "desc_spell"),
     (0x01978C, 0x01A841, "party"),
     (0x049887, 0x049899, "system"), (0x049943, 0x049953, "system"), (0x04A1E7, 0x04A1F3, "system"),
-    (0x04A2F4, 0x04B220, "system"), (0x04B484, 0x04B4A0, "system"), (0x04B8D7, 0x04B8E7, "system"),
+    (0x04A2F4, 0x04B220, "system"), (0x04B485, 0x04B4A0, "system"), (0x04B8D7, 0x04B8E7, "system"),
     (0x04BE02, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
     (0x058017, 0x0589D0, "boss"), (0x059F3F, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
 ]
@@ -35,6 +36,7 @@ RAW = [
 RECORDS = [
     (0x00800E, 45, 0x24, 1, 5, "name_char"), (0x00A230, 38, 0x10, 1, 8, "name_item"),
     (0x00A6DA, 231, 0x10, 1, 8, "name_equip"), (0x00C298, 41, 0x10, 1, 9, "name_spell"),
+    (0x04B220, 1, 0x10, 0, 5, "name_misc"),  # label read 5 glyphs at a time, no end code ($C2A645)
 ]
 JP = re.compile(r"[ぁ-んァ-ヴー一-龥]")
 NOISE = re.compile(r"[Ⓐ-ⓩ🅐-🅨♂♀／％＆★「」]")
@@ -196,7 +198,7 @@ def records(sink, rom):
         for i in range(count):
             pos = first + i * stride + off
             s = T.decode(rom, pos, length=size)[0]
-            if plain(s).replace("[F4]", ""):
+            if JP.search(plain(s)):
                 sink.rows.setdefault(sec, []).append((f"{sec[5:]}{i:03d}", f"r{pos:06X}:{size}", s))
 
 
@@ -235,6 +237,9 @@ if __name__ == "__main__":
         lines = ["id\tloc\tjp\ten"] + [f"{i}\t{loc}\t{s}\t" for i, loc, s in rows]
         (out / f"{sec}.tsv").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
         print(f"{sec:12} {len(rows):5d} rows {sum(len(plain(r[2])) for r in rows):7d} chars")
+    labels = rects.rows(rom)
+    (out / "label.tsv").write_text("id\tloc\tjp\ten\n" + "".join(f"{i}\t{loc}\t{s}\t\n" for i, loc, s in labels), encoding="utf-8", newline="\n")
+    print(f"{'label':12} {len(labels):5d} rows")
     (out / "nontext.tsv").write_text("loc\tbytes\twhy\n" + "".join(f"{a}\t{b}\t{c}\n" for a, b, c in sink.other),
                                      encoding="utf-8", newline="\n")
     print("nontext", len(sink.other), sum(n for _, n, _ in sink.other))

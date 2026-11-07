@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import extract  # noqa: E402
 import font  # noqa: E402
+import rects  # noqa: E402
 import unpack  # noqa: E402
 from tbl import Table  # noqa: E402
 
@@ -19,7 +20,10 @@ TABLE = 0x210000  # 3 bytes per string, lower half of the bank
 LOC = re.compile(r"(?:b(\d+)\+|r)([0-9A-F]+):(\d+)")
 IMG, IMG_DATA = 0x220000, 0x230000  # lower halves of banks: far strings keep to the upper ones
 NAMES = ("item", "equip", "spell", "char")  # rows shown through the tilemap path
+LINES = {"desc_item": 10, "desc_equip": 10, "desc_spell": 10, "bio": 10}  # the same path, a far code per line: section -> cells a line
 CODE = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")
+CODE_NL = re.compile(r"\{nl\}")
+COST = re.compile(r"(?:\[F4\]|[0-9])*／.*")  # spell record: the cost after the name stays the game's bytes, so it lines up
 
 
 def table():
@@ -65,14 +69,31 @@ def apply(rom, english):
     far = Far(out)
     number = {}
     at = {}  # (block, start) -> row id, to follow a row with no end code into the next one
+    secs = extract.load(rom).rows
+    by_line = {r[0]: LINES[sec] for sec in LINES for r in secs[sec]}
+    shown = {}  # far number -> (text, cells) for images()
     for i, loc, jp in rows:
         m = LOC.fullmatch(loc)
         at[(m[1], int(m[2], 16))] = i
     for i, loc, jp in rows:
-        if i in english:
+        if i in english and i not in by_line:
             number[i] = far.number()
     for i, loc, jp in rows:
         if i not in english:
+            continue
+        if i in by_line:
+            lines_in(out, far, shown, t, i, loc, jp, english[i], by_line[i])
+            continue
+        if i.startswith("spell") and COST.search(jp):
+            keep = len(extract.T.encode(COST.search(jp)[0]))
+            loc = f"{loc.split(':')[0]}:{int(loc.split(':')[1]) - keep}"
+            shown[number[i]] = (english[i], int(loc.split(":")[1]))
+            data = t.encode(english[i]) + b"\xff"
+            far.put(number[i], data)
+            start = int(LOC.fullmatch(loc)[2], 16)
+            out[start:start + 3] = bytes([FAR, number[i] & 255, number[i] >> 8])
+            n = int(loc.split(":")[1])
+            out[start + 3:start + n] = bytes([PAD]) * (n - 3)
             continue
         m = LOC.fullmatch(loc)
         block, start, n = m[1], int(m[2], 16), int(m[3])
@@ -92,12 +113,31 @@ def apply(rom, english):
         assert n >= 3, (i, n)
         far.put(number[i], data)
         place(span, start, n, bytes([FAR, number[i] & 255, number[i] >> 8]))
+    rects.apply(out, english, far)
     blocks[1] = bytearray(font.small_sheet(bytes(blocks[1])))
-    images(out, far.count, {number[i]: (english[i], int(loc.split(":")[1])) for i, loc, _ in rows if i in english and i.startswith(NAMES)})
+    shown |= {number[i]: (english[i], int(loc.split(":")[1])) for i, loc, _ in rows if i in english and i.startswith(NAMES) and number[i] not in shown}
+    images(out, far.count, shown)
     edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"1"}
     blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
     return out, blocks
+
+
+def lines_in(out, far, shown, t, i, loc, jp, en, cells):
+    """A description in a raw range: `F0 a b FE F0 c d .. F4.. FF`, one far code per line, in the row's own bytes. 4 bytes a line."""
+    m = LOC.fullmatch(loc)
+    start, size = int(m[2], 16), int(m[3])
+    text = [s for s in en.removesuffix("{end}").split("{nl}") if s]
+    if 4 * len(text) > size:
+        print(f"{i}: {size} bytes hold {size // 4} of {len(text)} lines")
+        text = text[:size // 4]
+    code = bytearray()
+    for k, s in enumerate(text):
+        n = far.number()
+        far.put(n, t.encode(s) + b"\xff")
+        shown[n] = (s, cells)
+        code += bytes([FAR, n & 255, n >> 8]) + (b"\xfe" if k < len(text) - 1 else b"")
+    out[start:start + size - 1] = code + bytes([PAD]) * (size - 1 - len(code))
 
 
 def images(out, count, rows):

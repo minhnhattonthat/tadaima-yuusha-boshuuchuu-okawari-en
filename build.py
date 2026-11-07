@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import check_rom  # noqa: E402
 import extract  # noqa: E402
 import insert  # noqa: E402
+import rects  # noqa: E402
 import repack  # noqa: E402
 
 check_rom.check()
@@ -21,7 +22,7 @@ if mode == "--identity":
 else:
     rows = [r for sec in extract.load(rom).rows.values() for r in sec]
     if mode == "--marker":
-        english = insert.marker(rows)
+        english = insert.marker(rows) | rects.marker(rom)
         out = ROOT / "build/tadaima_marker.sfc"
     else:
         english = {}

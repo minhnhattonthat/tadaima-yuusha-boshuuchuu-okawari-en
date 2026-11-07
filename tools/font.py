@@ -37,7 +37,7 @@ def codes():
     return m | {c: 0x3E + i for i, c in enumerate(rest)}
 
 
-SMALL_BG, SMALL_LOWER, POOL_START, POOL_END = 0x26, 0x27, 0x41, 0xA0  # blank tile, a-z tiles, tiles names are sent to (asm/vwf.asm)
+SMALL_BG, SMALL_LOWER, POOL_START, POOL_END = 0x26, 0x30, 0x4A, 0xA0  # blank tile, a-z tiles, tiles names are sent to (asm/vwf.asm)
 
 
 def small():
