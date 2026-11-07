@@ -20,6 +20,17 @@ hirom
 !SP     = $FF1C         ; shadow
 !KEEP   = $FF20
 !T      = $FF22
+!IMAGES = $E20000       ; far number -> u24 tiles, tile count (tools/insert.py)
+!POOL   = $41           ; old kana tiles the names go to, up to !POOLEND
+!POOLEND = $A0
+!HEAD   = $7FFF24       ; next free pool tile
+!NEXT   = $7FFF25       ; next tile to give out
+!RUN    = $7FFF26       ; tiles left to give out
+!SKIP   = $7FFF27       ; number bytes still to come
+!NUM    = $7FFF28
+!RECP   = $7FFF2A       ; next upload record
+!RECORDS = $0483        ; 8 upload records in low RAM, free (work/ramuse.txt)
+!RECSIZE = 14
 
 ; ------ hooks: every overwritten instruction is listed in docs/re/vwf.md
 org $C2143B
@@ -31,6 +42,11 @@ org $C21AC4
 
 org $C21A99
     jml text_wait
+
+org $C21E93
+    jml small_map
+org $C220BD
+    jml small_end
 
 org $C0FFD7
     db $0C              ; 4 MB
@@ -555,6 +571,220 @@ strip_flush:
     jsr shift_cells
     ply
     rts
+
+; ------ the tilemap path: $C21E93 turns a code into a tile pair, every loop that draws small text calls it per byte. A far code there shows
+; its name as tiles made at build time: sent into the old kana tiles (a ring, a name stays as long as nothing else draws 95 tiles), and
+; each byte of the string gives the next tile. A = upper row (blank), B = lower row.
+small_map:
+    cmp.b #!FAR
+    beq .far
+    pha
+    lda.l !SKIP
+    beq .text
+    dec
+    sta.l !SKIP
+    bne .lo
+    pla
+    sta.l !NUM+1
+    jsr small_load
+    bra .emit
+.lo:
+    pla
+    sta.l !NUM
+    bra .emit
+.text:
+    lda.l !RUN
+    beq .plain
+    pla
+    cmp.b #$F4          ; padding: the rest of the name
+    beq .emit
+    pha
+    lda.b #$00
+    sta.l !RUN
+.plain:
+    pla
+    cmp.b #$24
+    bcc .old
+    cmp.b #$3E
+    bcs .old
+    adc.b #$03          ; a-z: code - $24 + first tile $27, carry clear
+    xba
+    lda.b #$26
+    rtl
+.old:
+    cmp.b #$23
+    beq .low
+    bcs .high
+.low:
+    jml $C21E99
+.high:
+    jml $C21EA2
+.far:
+    lda.b #$02
+    sta.l !SKIP
+    inc
+    sta.l !RUN
+    lda.l !HEAD
+    cmp.b #!POOLEND-12  ; room for the longest name
+    bcs +
+    cmp.b #!POOL        ; WRAM at boot holds anything
+    bcs ++
++
+    lda.b #!POOL
+++
+    sta.l !HEAD
+    sta.l !NEXT
+.emit:
+    lda.l !RUN
+    beq .blank
+    dec
+    sta.l !RUN
+    lda.l !NEXT
+    inc
+    sta.l !NEXT
+    dec
+    bra .pair
+.blank:
+    lda.b #$00
+.pair:
+    pha                 ; two callers add a font offset to what we return: take it back
+    rep #$20
+    lda 2,s
+    cmp.w #$1E77
+    beq .sub02
+    cmp.w #$20C4
+    beq .sub0A
+    sep #$20
+    pla
+    bra .done
+.sub02:
+    sep #$20
+    pla
+    sec
+    sbc $02
+    bra .done
+.sub0A:
+    sep #$20
+    pla
+    sec
+    sbc $0A
+.done:
+    xba
+    lda.b #$26
+    rtl
+
+; the loop that stops at FE/FF: a name may run past the old string
+small_end:
+    cmp.b #$FE
+    bcs +
+    jml $C220C1
++
+    pha
+    lda.l !RUN
+    beq .stop
+    pla
+    lda.b #$F4
+    jsl small_map
+    sta ($04),y
+    xba
+    sta ($02),y
+    iny
+    jml $C220BB
+.stop:
+    pla
+    jml $C220D6
+
+; A8. Number complete: RUN = its tiles left after the two already given out, HEAD moves on, tiles sent in the next VBlank.
+small_load:
+    php
+    rep #$30
+    phb
+    phd
+    phx
+    phy
+    pea.w $8080
+    plb
+    plb
+    lda.w #$0000
+    tcd
+.wait:
+    lda.w $0166         ; continuations waiting: a frame's VBlank holds about 8 names
+    and.w #$00FF
+    cmp.w #$0008
+    bcs .wait
+    lda.l !NUM
+    asl
+    asl
+    tax
+    lda.l !RECP
+    cmp.w #!RECORDS
+    bcc +
+    cmp.w #!RECORDS+!RECSIZE*8
+    bcc ++
++
+    lda.w #!RECORDS
+++
+    tay
+    lda.l !IMAGES,x
+    sta.w $0006,y
+    lda.l !IMAGES+2,x
+    and.w #$00FF
+    sta.w $0008,y
+    lda.l !IMAGES+3,x
+    and.w #$00FF
+    pha
+    asl
+    asl
+    asl
+    asl
+    asl
+    sta.w $000C,y
+    lda.l !HEAD
+    and.w #$00FF
+    asl
+    asl
+    asl
+    asl
+    clc
+    adc.w #$4000
+    sta.w $000A,y
+    pla
+    sep #$20
+    pha
+    dec
+    dec
+    sta.l !RUN
+    pla
+    clc
+    adc.l !HEAD
+    sta.l !HEAD
+    rep #$20
+    tya
+    clc
+    adc.w #!RECSIZE
+    sta.l !RECP
+    tyx
+    jsl small_send
+    ply
+    plx
+    pld
+    plb
+    plp
+    rts
+
+; The game's $80D78F: what follows it runs in VBlank with X = record, or now during forced blank.
+small_send:
+    jsl $80D78F
+    lda.w $000C,x
+    tcd
+    ldy.w $000A,x
+    lda.w $0008,x
+    pha
+    lda.w $0006,x
+    tax
+    pla
+    jsl $80D6F5
+    rtl
 
 planebit:
     db 1, 2, 4, 8

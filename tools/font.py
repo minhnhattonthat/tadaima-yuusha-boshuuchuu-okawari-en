@@ -37,6 +37,83 @@ def codes():
     return m | {c: 0x3E + i for i, c in enumerate(rest)}
 
 
+SMALL_BG, SMALL_LOWER, POOL_START, POOL_END = 0x26, 0x27, 0x41, 0xA0  # blank tile, a-z tiles, tiles names are sent to (asm/vwf.asm)
+
+
+def small():
+    """Names on the tilemap path: {char: (8 rows, advance)} from fonts/spleen-5x8.bdf, trimmed to proportional."""
+    out, code, rows = {}, None, None
+    for line in (ROOT / "fonts/spleen-5x8.bdf").read_text(encoding="ascii").splitlines():
+        if line.startswith("ENCODING "):
+            code = int(line.split()[1])
+        elif line == "BITMAP":
+            rows = []
+        elif line == "ENDCHAR":
+            if 32 <= code < 127:
+                ink = max((8 - (r & -r).bit_length() + 1 for r in rows if r), default=0)
+                left = min((8 - r.bit_length() for r in rows if r), default=0)
+                out[chr(code)] = ([r << left & 0xFF for r in rows], ink - left + 1 if ink else 3)
+            rows = None
+        elif rows is not None:
+            rows.append(int(line, 16))
+    return out
+
+
+def planar(px):
+    """8x8 pixel values -> 32 bytes of SNES 4bpp."""
+    t = bytearray(32)
+    for y, row in enumerate(px):
+        for x, v in enumerate(row):
+            for p in range(4):
+                t[(p >> 1) * 16 + y * 2 + (p & 1)] |= (v >> p & 1) << (7 - x)
+    return bytes(t)
+
+
+def small_width(text):
+    g = small()
+    return sum(g[c][1] for c in text)
+
+
+def small_tiles(text, cells):
+    """Text as 4bpp tiles, ink 15 and shadow 14 like the game's small font: at least 3 tiles, clipped to `cells`."""
+    g, w = small(), cells * 8
+    px = [[0] * w for _ in range(8)]
+    pen = 0
+    for c in text:
+        rows, adv = g[c]
+        for y, r in enumerate(rows):
+            for x in range(8):
+                if r >> (7 - x) & 1:
+                    for dx, dy in ((1, 0), (0, 1), (1, 1)):
+                        if pen + x + dx < w and y + dy < 8 and not px[y + dy][pen + x + dx]:
+                            px[y + dy][pen + x + dx] = 14
+                    if pen + x < w:
+                        px[y][pen + x] = 15
+        pen += adv
+    n = max(3, min(cells, (min(pen, w) + 7) // 8))
+    return b"".join(planar([r[i * 8:i * 8 + 8] for r in px]) for i in range(n))
+
+
+def small_sheet(sheet):
+    """Block 001 with a-z at the tiles asm/vwf.asm maps them to and the name tiles blanked. A kana left in the script can't pass for a word."""
+    out = bytearray(sheet)
+    g = small()
+    for i in range(26):
+        rows = g[chr(97 + i)][0]
+        px = [[0] * 8 for _ in range(8)]
+        for y, r in enumerate(rows):
+            for x in range(7):
+                if r >> (7 - x) & 1:
+                    px[y][x] = 15
+                    if y < 7 and not px[y + 1][x + 1]:
+                        px[y + 1][x + 1] = 14
+                    if not px[y][x + 1]:
+                        px[y][x + 1] = 14
+        out[(SMALL_LOWER + i) * 32:(SMALL_LOWER + i + 1) * 32] = planar(px)
+    out[POOL_START * 32:POOL_END * 32] = bytes((POOL_END - POOL_START) * 32)
+    return bytes(out)
+
+
 def advances():
     return {ch: adv for ch, (_, adv) in load().items()}
 

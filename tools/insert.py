@@ -17,6 +17,9 @@ FAR, BANK0, ROM_SIZE = 0xF0, 0x21, 0x400000  # file bank of the first far string
 PAD = 0xF4  # the game's blank glyph: names trim it, list walks skip it
 TABLE = 0x210000  # 3 bytes per string, lower half of the bank
 LOC = re.compile(r"(?:b(\d+)\+|r)([0-9A-F]+):(\d+)")
+IMG, IMG_DATA = 0x220000, 0x230000  # lower halves of banks: far strings keep to the upper ones
+NAMES = ("item", "equip", "spell", "char")  # rows shown through the tilemap path
+CODE = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")
 
 
 def table():
@@ -89,9 +92,32 @@ def apply(rom, english):
         assert n >= 3, (i, n)
         far.put(number[i], data)
         place(span, start, n, bytes([FAR, number[i] & 255, number[i] >> 8]))
-    blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english}}
+    blocks[1] = bytearray(font.small_sheet(bytes(blocks[1])))
+    images(out, far.count, {number[i]: (english[i], int(loc.split(":")[1])) for i, loc, _ in rows if i in english and i.startswith(NAMES)})
+    edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"1"}
+    blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
     return out, blocks
+
+
+def images(out, count, rows):
+    """Far numbers shown on the tilemap path: each gets its text as tiles. Table entry: u24 source, tile count. docs/re/vwf.md."""
+    pos = IMG_DATA
+    blank = pos
+    pos += 3 * 32
+    for n in range(count):
+        at, tiles = blank, 3
+        if n in rows:
+            text, cells = rows[n]
+            data = font.small_tiles(CODE.sub("", text), cells)
+            if (pos & 0xFFFF) + len(data) > 0x8000:
+                pos = (pos >> 16) + 1 << 16
+            at, tiles = pos, len(data) // 32
+            out[pos:pos + len(data)] = data
+            pos += len(data)
+        out[IMG + n * 4:IMG + n * 4 + 4] = (at | 0xC00000).to_bytes(3, "little") + bytes([tiles])
+    assert pos < ROM_SIZE
+    print(f"name images {len(rows)}, end {pos:06X}")
 
 
 MARK = "The quick brown fox jumps over the lazy dog. "

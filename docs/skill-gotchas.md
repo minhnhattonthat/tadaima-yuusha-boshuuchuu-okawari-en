@@ -2,6 +2,9 @@
 
 One line per gotcha: the reference file it belongs in, then the fact.
 
+- scripts/lua/mesen_lib.lua: `L.on_read` on a ROM range ($80/$C0 mirrors) logged nothing here while the code plainly read it; `L.on_read` on WRAM works. Follow the copy in RAM, or log callers with an exec hook (`tools/debug/calllog.lua`). Cause not found.
+- references/platform-snes.md: a game can have a run-the-rest-in-VBlank call (`$80D78F` here: queues its return address, or returns at once in forced blank). Look for it before writing an upload path: name tiles took one record and one DMA call.
+
 - references/setup.md: `fetch_emu.py` fails with CERTIFICATE_VERIFY_FAILED when Python's CA store is stale; `gh release download` works instead, and `python -c "import certifi"` alone doesn't fix urllib.
 - scripts/emu.py: `ppudump.lua` needs `--frames` or `DUMP_AT`; a `--route`-only run stops with a Lua error before any frame.
 - references/emulator-qa.md: Mesen `watch.lua` reports WRAM writes as `00FCA000` for `$7E:A000` (the probe's address field isn't the CPU address on this path); trust the PC, not `addr`.
