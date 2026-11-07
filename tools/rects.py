@@ -93,6 +93,8 @@ def rebuild(rom, p, en):
 
 def apply(out, english, far):
     """Far rects take a number from `far`, the same table as far strings."""
+    if f"rect{RECTS[0]:06X}" in english:
+        grid(out, far)
     for p in RECTS:
         en = english.get(f"rect{p:06X}")
         if en is None:
@@ -105,6 +107,62 @@ def apply(out, english, far):
         n = far.number()
         far.put(n, bytes([w, h]) + body)
         out[p:p + 3] = bytes([0xF0, n & 255, n >> 8])
+
+
+# Name entry: pages 0, 1 (hiragana, katakana) become capitals and small letters. Grid = two rects, 7 rows of 10 cells; code table = 68 u16, code + a
+# dakuten flag, the same order. The romaji page stays. The last 3 cells are the commands すすむ, もどる, おわる (Next, Back, Done). docs/re/vwf.md.
+GRID = ((0x059A8B, 0x059B19, 0x0595F9), (0x059B84, 0x059C12, 0x059681))
+GRID_COLS = (0, 2, 4, 6, 8, 11, 13, 15, 17, 19)
+NO_CHAR = 0xF4
+ROMAJI_LOW = 0x059D0B
+CURSOR, CURSOR_X = (0x05959C, 0x05959E, 0x0595A0), (0x78, 0xA0, 0xC8)  # cursor x of the three commands: the words are longer, so they sit further left
+TITLE = (0x0594C6, 0x0594D8, 0x0594EA)  # the page's name in big kana cells of another sheet, blanked: the tabs L and R name the pages
+
+
+def grid_chars(base, first_code):
+    """(chars, codes) for 60 cells: letters, then digits, then nothing."""
+    chars = [chr(base + i) for i in range(26)] + list("0123456789")
+    codes = [first_code + i for i in range(26)] + list(range(10))
+    return chars + [" "] * (60 - len(chars)), codes + [NO_CHAR] * (60 - len(codes))
+
+
+def grid(out, far):
+    for page, (top, low, table) in enumerate(GRID):
+        chars, codes = grid_chars(65 + 32 * page, 0x24 if page else 0x0A)
+        for k, c in enumerate(codes + [NO_CHAR] * 5):
+            out[table + k * 2:table + k * 2 + 2] = bytes([c, 0])
+        w, h = out[top], out[top + 1]
+        body = bytearray(w * h)
+        for r in range(4):
+            for k, x in enumerate(GRID_COLS):
+                body[r * 2 * w + x] = tiles(chars[r * 10 + k], 0)[0]
+        out[top + 2:top + 2 + w * h] = body
+        lw, lh = 23, out[low + 1]
+        body = bytearray(lw * lh)
+        for r in range(2):
+            for k, x in enumerate(GRID_COLS):
+                body[r * 2 * lw + x] = tiles(chars[(4 + r) * 10 + k], 0)[0]
+        commands(body, lw)
+        n = far.number()
+        far.put(n, bytes([lw, lh]) + body)
+        out[low:low + 3] = bytes([0xF0, n & 255, n >> 8])
+    w, h = out[ROMAJI_LOW], out[ROMAJI_LOW + 1]
+    body = bytearray(out[ROMAJI_LOW + 2:ROMAJI_LOW + 2 + w * h])
+    for x in range(10, w):  # すすむ もどる おわる, the same words as the other pages
+        body[4 * w + x] = 0
+    commands(body, w)
+    n = far.number()
+    far.put(n, bytes([w, h]) + body)
+    out[ROMAJI_LOW:ROMAJI_LOW + 3] = bytes([0xF0, n & 255, n >> 8])
+    for at, x in zip(CURSOR, CURSOR_X):
+        out[at] = x
+    for at in TITLE:
+        out[at + 2:at + 2 + 16] = bytes(16)
+
+
+def commands(body, w):
+    for word, x in (("Next", 6), ("Back", 11), ("Done", 16)):
+        body[4 * w + x:4 * w + x + 4] = bytes(tiles(word, 0))
 
 
 def marker(rom):

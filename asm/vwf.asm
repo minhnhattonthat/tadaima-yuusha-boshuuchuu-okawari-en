@@ -788,7 +788,12 @@ small_load:
     lda.w $0166         ; continuations waiting: a frame's VBlank holds about 8 names
     and.w #$00FF
     cmp.w #$0008
-    bcs .wait
+    bcc +
+    jsl $80E113         ; sleep a frame: the queue drains in this scheduler, a spin never sees it move
+    lda.w #$0001
+    jsl $80E11C
+    bra .wait
++
     lda.l !NUM
     asl
     asl
