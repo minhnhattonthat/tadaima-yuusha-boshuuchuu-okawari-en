@@ -15,3 +15,6 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - references/pipeline.md (Identity): before settling for a decompress-equal test, compare the original's tokens with plain greedy longest-nearest: all 749 blocks here matched, one script's work, and `bytes.rfind` compresses 2.7 MB in 4 s in pure Python.
 - hooks/guard_bash.py: it blocks a whole chained command if any part pipes tests, even when commit comes after `&&` on a later line; run `check.py` in its own call.
 - scripts/lua/mesen_lib.lua: `L.safe` drops return values, so an `L.on_write` callback can't override the written value; patch at the reader instead (`warp.lua` hooks the dispatcher).
+- references/pipeline.md (Extract): a clean-kana string filter misses strings glued to data with no terminator (name lists, records ending in a name), and a scan that skips "already covered" ranges hid a whole text range here; audit the data pieces for kana runs too, and scan without the mask.
+- references/pipeline.md (Extract): before tracing every pointer to raw strings, consider a control code at each string's start that jumps to new text: list walks and computed tables then need no tracing (proposed here, not yet proven).
+- hooks/guard_bash.py: a heredoc writing a .py file is blocked, while `python - <<'X'` on stdin passes; throwaway analysis still works that way.
