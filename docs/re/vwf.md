@@ -28,7 +28,7 @@ An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So an
 |---|---|---|
 | `$C2143B` | `CMP #$FF / BNE / JMP $15B9` | reader: `F0`, close cell on `FC FD FE` |
 | `$C21780` | `PLA / STA $00 / CMP..` | glyph draw; old path returns at `$C21783` |
-| `$C21A99` | `LDA +01,x / AND / JSL $80E11C` | sleep per glyph (+01 = 6 frames) down to 2; pause loop (`$C21538`) keeps 6 |
+| `$C21A99` | `LDA +01,x / AND / JSL $80E11C` | `$80E11C(id)` sleeps until `$80E14D(id)`: 1 = frame, 6 = input poll. The two per-letter waits sleep by frame; page prompt and `{pause}` keep id 6 |
 | `$C21AC4` | whole routine | strip renderer |
 
 Free WRAM: `$7F:FE00-FFFF` unchanged across 55 dumps of 7 scenes (`tools/debug/ramuse.py`).

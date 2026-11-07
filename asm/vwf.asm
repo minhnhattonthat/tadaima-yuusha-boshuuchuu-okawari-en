@@ -36,20 +36,24 @@ org $C0FFD7
     db $0C              ; 4 MB
 
 org $E00000
-; A window sleeps +01 frames (6) per glyph and again in the speed loop: English has 2-3 times the glyphs of the Japanese.
-; Only those two waits change (return addresses below, minus one): button waits sample input through this routine, and at 2 frames
-; a loop they miss presses. {pause} keeps its length too.
+; $80E11C(id) sleeps until something signals id ($80E14D): 1 = next frame, 6 = the input poll ($82:93BE), which is what a window's
+; +01 holds, and that comes about every 6 frames. English has 2-3 times the glyphs of the Japanese, so the two waits per letter
+; (return addresses below, minus one) sleep by frames instead. Everything else keeps id 6: the page prompt's loop must stay in step with
+; the poll or it misses presses, including its own glyph draw ($0FB8 set), and {pause} keeps its length.
 text_wait:
     lda 1,s
-    cmp.w #$1818        ; after the glyph
-    beq .fast
     cmp.w #$160B        ; speed loop
     beq .fast
+    cmp.w #$1818        ; after a glyph
+    bne .poll
+    lda.l $7E0FB8
+    beq .fast
+.poll:
     lda.w $0001,x
     and.w #$00FF
     bra .wait
 .fast:
-    jsl $80E113         ; one frame; A = 2 for $80E11C hangs the task, it isn't a plain frame count
+    jsl $80E113
     lda.w #$0001        ; about 3 frames a letter, 20 a second
 .wait:
     jsl $80E11C
