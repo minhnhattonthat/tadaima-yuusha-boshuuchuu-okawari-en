@@ -35,6 +35,14 @@ One stream of flag bytes, literal bytes and 16-bit LE words of code bits, interl
   count code consumed (or the "1" bit), which is why it is skipped.
 - Tables live in bank `$82` (`$83C5-$8522`); `lz.py` reads them from the ROM.
 
-Max distance `0x1FFF + 1`; copies use MVN with bank `$7E` or `$7F` from `dest`, so 16-bit wrap inside one WRAM bank.
+Max distance 4096 (the codes reach `dist` 0-`0xFFF`); copies use MVN with bank `$7E` or `$7F` from `dest`, so 16-bit wrap inside one WRAM bank.
 
-**Not written yet:** a compressor. Phase 3 needs one, tested byte-for-byte or at least decompress-equal on all 749 blocks.
+## Compressor (verified: `tests/test_identity.py`, rebuild equals the dump's SHA-1; `lz.compress`, `tools/repack.py`)
+
+- Codes: `count` is Elias gamma (`1` = 1, `010` = 2, `00100` = 4...); from 128 it is 7 zeros + the low 7 bits. A count code's last bit is the bit the distance decoder skips, so it isn't sent twice. Copy length 2-255, distance 1-4096.
+- The original parse is plain greedy: at each position the longest match, the nearest one on a tie, a literal if under 2 bytes. No lazy matching. Reproduces all 749 blocks.
+- A code word sits in the stream where the decoder pulls it, between flags and literals. The pull is look-ahead: a word can hold no real bits, only the bits past the end code.
+  - 46 blocks: that word would be the last 2 bytes, so the original tool left it out and the decoder reads the next block's first word as padding. `tools/unpack.py` reports `used` 2 too high for these, and in the dump the next block starts there.
+  - 19 blocks: flags or literals follow it, so it has to exist. Its bytes are never used. The original left a stale output buffer in it: 13 match the same offset of an earlier block (e.g. 84 from 83, 124 from 121), 6 match no earlier block. `compress(old=...)` copies them from the dump, for identity only; a new block gets zeros.
+
+Compressing all 2.7 MB of unpacked blocks takes about 4 seconds (`bytes.rfind`).

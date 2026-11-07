@@ -11,8 +11,7 @@ HiROM + FastROM (`$FFD5 = 31`), 2 MB (`$FFD7 = 0B`), SRAM (`$FFD8 = 03`), region
 | `1DDF40-1DF837` | resource table |
 | `1DF838-1FFFFF` | not mapped by the table: rest of bank `1D` and banks `1E`, `1F` |
 
-Compressed blocks leave only short gaps (`17E418-17FFFF`, `1AEB80-1AFFFF`, `1CF0AD-1CFFFF`): these are **candidates**, not free
-(fill-and-tour first).
+Five gaps between blocks, each up to a bank end: `09FF4C-09FFFF`, `17E418-17FFFF`, `1AEB80-1AFFFF`, `1BFF3A-1BFFFF`, `1CF0AD-1CFFFF`. None is `$FF` padding: all hold mixed bytes (at `17E418` it looks like tile or palette data). Whether anything reads them is unknown: **candidates**, not free (fill-and-tour first). `tools/repack.py` leaves them untouched.
 
 ## Free space plan (**guess**, promote in phase 5)
 
