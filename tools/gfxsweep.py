@@ -1,7 +1,7 @@
 """Static graphics sweep: thumbnail every unpacked block as tiles, into numbered pages with an index.
 
-gfxsweep.py [4|2]  -> work/gfx/page_NN.png + work/gfx/index.txt. Skips only blocks too small for a tile page
-(<0x200 bytes) and the text blocks, and prints them.
+gfxsweep.py [4|2] [FIRST-LAST|N ..] -> work/gfx<bpp>/page_NN.png + index.txt. Skips only blocks too small for a tile
+page (<0x200 bytes) and the text blocks, and prints them. Block ranges limit the sweep.
 """
 import sys
 from pathlib import Path
@@ -15,6 +15,7 @@ CHUNK = TW * TW * 8 * BPP   # 128x128 px per cell
 COLS, ROWS = 8, 3
 CELL_W, CELL_H = 130, 142
 SKIP_TEXT = set(range(212, 303)) | set(range(725, 727)) | set(range(739, 767))
+ONLY = {n for a in sys.argv[2:] for n in range(int(a.split("-")[0]), int(a.split("-")[-1]) + 1)}
 
 
 def tile(d, o, px, x0, y0):
@@ -35,6 +36,8 @@ cells, skipped = [], []
 for f in sorted((ROOT / "work/blocks").glob("*.bin")):
     d = f.read_bytes()
     i = int(f.stem)
+    if ONLY and i not in ONLY:
+        continue
     if i in SKIP_TEXT or len(d) < 0x200:
         skipped.append(i)
         continue

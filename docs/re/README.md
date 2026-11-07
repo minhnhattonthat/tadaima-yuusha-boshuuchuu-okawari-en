@@ -15,6 +15,6 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | [compression.md](compression.md) | resource table, LZ format | verified on all blocks; no compressor yet |
 | [text.md](text.md) | encoding, font, control codes, text locations | encoding verified; event VM and raw pointers open |
 | [memory.md](memory.md) | ROM map, free space plan | map verified; free space plan a guess |
-| [graphics.md](graphics.md) | tile-drawn Japanese survey | in progress |
+| [graphics.md](graphics.md) | tile-drawn Japanese survey | static sweep done; mid-game screens pending warps |
 
 Prior work: no earlier fan patch found (searches 2026-11-07, English and Japanese title).

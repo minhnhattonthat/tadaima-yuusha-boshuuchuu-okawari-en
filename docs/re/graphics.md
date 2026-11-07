@@ -14,6 +14,9 @@ page index in `work/gfx4/index.txt`), `tools/gfxzoom.py OUT BPP ZOOM BLOCK[+OFF[
 **No Japanese seen at thumbnail scale:** portraits 799-811 (and 812 group), sprites 34-82, 425-477, 478-525, effects 526-555, map
 tiles 20-33, backgrounds 313-350, 403-407.
 
-**Not swept yet:** blocks that read as noise at 4bpp (e.g. 005, 069, 097, 120-145, 556-729, 817-862) may be 2bpp tiles,
-tilemaps or data. Run `tools/gfxsweep.py 2` limited to these before closing phase 1, since block 001 only became legible at 2bpp.
-Also: screens that only show mid-game (chapter cards, game over, ending, credits) need warps from phase 2.
+**2bpp sweep (done):** `tools/gfxsweep.py 2 5 69 97 120-145 556-729 817-862`, 254 cells on 11 pages (4 pages read at thumbnail scale: 0, 1, 7, 8;
+the rest are the same map/sound data by destination and size), index in `work/gfx2/index.txt`. Skipped as under 0x200 bytes: 127, 137, 583-585,
+699-708, 710-714, 716, 719, 728, 817, 819. No Japanese found: 120-145 effect tiles and tables, 556-696 map data for `7F:3000`, 697-724 data, 817-862
+sound data. 820 is the HUMAN ENTERTAINMENT logo (English already); 727 is icons.
+
+Screens that only show mid-game (chapter cards, game over, ending, credits): check with the phase 2 warps and add rows here.
