@@ -19,7 +19,7 @@ and tiles advance when it crosses into the next. Cells are drawn in `$7F:FE00` (
 `$C217A2` path (`$0FB8` set so `$C21819` skips its cell advance).
 
 An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So any code that sets `+0E` (window open, clear, ~30 menu sites) closes it with no hook. `PEN`, `WIN`,
-`POS` say where the open cell is: if the window moved its cursor without setting `+0E`, the next glyph takes a new tile. Newline and page close it in `far_read`.
+`POS` say where the open cell is: if the window moved its cursor without setting `+0E`, the next glyph takes a new tile. Newline and page close it in `far_read`, through `align`: the cursor steps past the open cell, so the page arrow lands after the text, not over its last cell.
 
 `$C21AC4` (string to a strip of cells in RAM, 12 callers) is replaced by `strip`: same pen, cells flushed to `X`.
 

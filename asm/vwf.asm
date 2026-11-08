@@ -96,8 +96,8 @@ far_read:
     beq .far
     cmp.w #$00FC
     bcc .go
-    pha                 ; page or newline: the open cell stays on the old line
-    jsr close_cell
+    pha                 ; page or newline: the open cell stays on the old line, and the page arrow goes after it, not over it
+    jsr align
     pla
 .go:
     jml $C21443

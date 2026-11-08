@@ -1,5 +1,5 @@
 """Build from the pinned dump. build.py -> build/tadaima_en.sfc (dump + engine + English rows). --marker -> build/tadaima_marker.sfc:
-every row shows its id. --identity -> rebuild the dump with no edits (what tests/test_identity.py proves)."""
+every row shows its id; --marker ID=text.. -> build/tadaima_stress.sfc with those rows overridden. --identity -> rebuild the dump with no edits (what tests/test_identity.py proves)."""
 import hashlib
 import subprocess
 import sys
@@ -23,7 +23,7 @@ else:
     rows = [r for sec in extract.load(rom).rows.values() for r in sec]
     if mode == "--marker":
         english = insert.marker(rows) | rects.marker(rom) | dict(a.split("=", 1) for a in sys.argv[2:])  # ID=text: stress one row
-        out = ROOT / "build/tadaima_marker.sfc"
+        out = ROOT / ("build/tadaima_stress.sfc" if sys.argv[2:] else "build/tadaima_marker.sfc")  # a stress build never clobbers a toured marker
     else:
         english = {}
         for f in (ROOT / "script").glob("*.tsv"):

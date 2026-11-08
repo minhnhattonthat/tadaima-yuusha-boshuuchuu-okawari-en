@@ -45,6 +45,10 @@ S.field_map = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" } }, nil, 0x07)
 S.field_rest = turn({ { 90, "x" }, { 140, "left" }, { 190, "a" } }, nil, 0x08)
 S.field_status = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" } }, nil, 0x09)
 S.field_items = turn({ { 90, "down" }, { 140, "a" } }, items)
+-- all 30 items scrolled down and back up: names on the tilemap path share an 86-tile pool ring (docs/re/vwf.md)
+local scroll = { { 90, "down" }, { 140, "a" } }
+for k = 1, 60 do scroll[#scroll + 1] = { 200 + 20 * k, k <= 30 and "down" or "up" } end
+S.field_items_scroll = turn(scroll, items)
 S.field_magic = turn({ { 90, "up" }, { 140, "a" }, { 200, "a" } }, spells)
 S.field_orb = turn({ { 90, "right" }, { 140, "a" } }, items)
 S.field_status_equip = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x09)
