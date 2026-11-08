@@ -160,15 +160,15 @@ id	loc	jp	en
 00BE4D	r00BE4D:13	めったにない{nl}スグレモノ{end}	A rare and{nl}first-rate item{end}
 00BE5B	r00BE5B:13	めったにない{nl}スグレモノ{end}	A rare and{nl}first-rate item{end}
 00BE69	r00BE69:13	めったにない{nl}スグレモノ{end}	A rare and{nl}first-rate item{end}
-00BE77	r00BE77:14	たいりょく{nl}プラス[F4][F4]10{end}	Vitality{nl}+[F4][F4]10{end}
+00BE77	r00BE77:14	たいりょく{nl}プラス[F4][F4]10{end}	Vigor{nl}+[F4][F4]10{end}
 00BE86	r00BE86:13	こううん{nl}プラス[F4][F4]10{end}	Luck{nl}+[F4][F4]10{end}
 00BE94	r00BE94:13	まりょく{nl}プラス[F4][F4]10{end}	Magic{nl}+[F4][F4]10{end}
 00BEA2	r00BEA2:13	すばやさ{nl}プラス[F4][F4]10{end}	Speed{nl}+[F4][F4]10{end}
-00BEB0	r00BEB0:14	わんりょく{nl}プラス[F4][F4]10{end}	Strength{nl}+[F4][F4]10{end}
+00BEB0	r00BEB0:14	わんりょく{nl}プラス[F4][F4]10{end}	Power{nl}+[F4][F4]10{end}
 00BEBF	r00BEBF:13	こううん{nl}プラス[F4][F4]10{end}	Luck{nl}+[F4][F4]10{end}
 00BECD	r00BECD:13	すばやさ{nl}プラス[F4][F4]10{end}	Speed{nl}+[F4][F4]10{end}
 00BEDB	r00BEDB:13	すばやさ{nl}プラス[F4][F4][F4]5{end}	Speed{nl}+[F4][F4][F4]5{end}
-00BEE9	r00BEE9:14	たいりょく{nl}プラス[F4][F4]10{end}	Vitality{nl}+[F4][F4]10{end}
+00BEE9	r00BEE9:14	たいりょく{nl}プラス[F4][F4]10{end}	Vigor{nl}+[F4][F4]10{end}
 00BEF8	r00BEF8:13	すばやさ{nl}プラス[F4][F4]10{end}	Speed{nl}+[F4][F4]10{end}
 00BF06	r00BF06:13	まりょく{nl}プラス[F4][F4]10{end}	Magic{nl}+[F4][F4]10{end}
 00BF14	r00BF14:16	おとどけもの{nl}つかうといきさき{end}	A delivery. Use it{nl}to see where to{end}

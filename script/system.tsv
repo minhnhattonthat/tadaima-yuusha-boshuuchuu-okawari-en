@@ -31,7 +31,7 @@ id	loc	jp	en
 04A577	r04A577:27	けっかいをはられているので、{nl}オーブは使えません。{end}	A barrier is in place,{nl}so Orbs can't be used.{end}
 04A593	r04A593:19	おおあめのため、{nl}いどうできません。{end}	Due to heavy rain,{nl}you can't move.{end}
 04A5A7	r04A5A7:22	{color:08}おまもりオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Charm Orb{color:0F}{nl}wore off.{end}
-04A5BE	r04A5BE:23	{color:08}けっかいのオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Barrier Orb{color:0F}{nl}wore off.{end}
+04A5BE	r04A5BE:23	{color:08}けっかいのオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Seal Orb{color:0F}{nl}wore off.{end}
 04A5D6	r04A5D6:10	あめが上がった。{end}	The rain stopped.{end}
 04A5E1	r04A5E1:19	{color:08}スッタカ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Suttaka{color:0F}{nl}wore off.{end}
 04A5F5	r04A5F5:19	{color:08}モータモ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Motamo{color:0F}{nl}wore off.{end}
@@ -122,7 +122,7 @@ id	loc	jp	en
 04B006	r04B006:27	大きな金のハニワが{nl}わらいながら飛んできた‼{page}{end}	A big golden Haniwa{nl}came flying by, laughing!!{page}{end}
 04B022	r04B022:24	{sub:0000}の所持金が{nl}{sub:0100}シリングへった‼{end}	{sub:0000} lost{nl}{sub:0100} Shillings!!{end}
 04B03B	r04B03B:24	{sub:0000}の所持金が{nl}{sub:0100}シリングふえた‼{end}	{sub:0000} gained{nl}{sub:0100} Shillings!!{end}
-04B054	r04B054:32	ぜんいんに{color:08}けっかいのオーブ{color:0F}が{nl}かかってしまった．．．‼{end}	A {color:08}Barrier Orb{color:0F} was cast{nl}on everyone...!!{end}
+04B054	r04B054:32	ぜんいんに{color:08}けっかいのオーブ{color:0F}が{nl}かかってしまった．．．‼{end}	A {color:08}Seal Orb{color:0F} was cast{nl}on everyone...!!{end}
 04B075	r04B075:52	{color:08}どくとるはに〜{color:0F}があらわれた‼{page}{sfx:00}ホッホッホ{sfx:FE}{page}パーティーみんなのHPが{nl}全回復した‼{end}	{color:08}Doctor Hanny{color:0F} appeared!!{page}{sfx:00}Ho ho ho{sfx:FE}{page}The whole party's HP{nl}is fully restored!!{end}
 04B0AA	r04B0AA:55	{color:08}どくとるはに〜{color:0F}があらわれた‼{page}{sfx:00}ホッホッホ{sfx:FE}{page}パーティーみんなのHPが{nl}1／2になってしまった‼{end}	{color:08}Doctor Hanny{color:0F} appeared!!{page}{sfx:00}Ho ho ho{sfx:FE}{page}The whole party's HP{nl}got cut in half!!{end}
 04B0E2	r04B0E2:21	ぜんいんのいちが{nl}いれかわってしまった‼{end}	Everyone's positions{nl}got swapped around!!{end}

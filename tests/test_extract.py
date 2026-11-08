@@ -106,6 +106,9 @@ def test_tables_are_not_rows(world):
     assert not {"b233+92", "b238+212", "r05AB8D", "r05AB96"} & rows  # 05AB96: high byte of pointer $ABFF after its FF low byte
     assert {"b213+30E", "b230+508", "r05A09F", "b212+C04"} <= rows  # the string behind each table starts at its own text
     assert {"r05AB97", "r059F1A"} <= rows  # versus result line; tournament king, first entry of table $C5:9F06
+    # record bytes before a shop line (00005{sfx, ぞ{sfx, {color:85}4テA): the row starts at the text, the bytes stay data
+    assert {"b217+935", "b226+92E", "b226+781", "b225+5FB", "b227+5FB"} <= rows
+    assert not {"b217+930", "b226+929", "b226+780", "b225+5F6", "b227+5F6"} & rows
 
 
 def test_script_files_match(world):

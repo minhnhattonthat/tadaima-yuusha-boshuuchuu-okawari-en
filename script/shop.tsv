@@ -34,7 +34,7 @@ s212.0589	b212+589:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s212.0597	b212+597:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s212.05A5	b212+5A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s212.05B6	b212+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s212.05E0	b212+5E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s212.05E0	b212+5E0:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s212.05E9	b212+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s212.061C	b212+61C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s212.0633	b212+633:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -121,7 +121,7 @@ s213.0590	b213+590:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s213.059E	b213+59E:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s213.05AC	b213+5AC:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s213.05BD	b213+5BD:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s213.05E7	b213+5E7:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s213.05E7	b213+5E7:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s213.05F0	b213+5F0:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s213.0623	b213+623:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s213.063A	b213+63A:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -208,7 +208,7 @@ s214.058B	b214+58B:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s214.0599	b214+599:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s214.05A7	b214+5A7:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s214.05B8	b214+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s214.05E2	b214+5E2:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s214.05E2	b214+5E2:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s214.05EB	b214+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s214.061E	b214+61E:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s214.0635	b214+635:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -295,7 +295,7 @@ s215.056C	b215+56C:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s215.057A	b215+57A:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s215.0588	b215+588:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s215.0599	b215+599:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s215.05C3	b215+5C3:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s215.05C3	b215+5C3:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s215.05CC	b215+5CC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s215.05FF	b215+5FF:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s215.0616	b215+616:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -381,7 +381,7 @@ s216.05D3	b216+5D3:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s216.05E1	b216+5E1:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s216.05EF	b216+5EF:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s216.0600	b216+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s216.062A	b216+62A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s216.062A	b216+62A:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s216.0633	b216+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s216.0666	b216+666:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s216.067D	b216+67D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -466,7 +466,7 @@ s217.058B	b217+58B:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s217.0599	b217+599:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s217.05A7	b217+5A7:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s217.05B8	b217+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s217.05E2	b217+5E2:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s217.05E2	b217+5E2:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s217.05EB	b217+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s217.061E	b217+61E:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s217.0635	b217+635:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -491,7 +491,7 @@ s217.0841	b217+841:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれ
 s217.0860	b217+860:132	コンドルのどうくつ {nl}カワセミのどうくつ {nl}ハヤブサのどうくつ {nl}ハチドリのどうくつ {nl}オウムのどうくつ  {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Condor Cave{nl}Kingfisher Cave{nl}Falcon Cave{nl}Hummingbird Cave{nl}Parrot Cave{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}
 s217.090C	b217+90C:8	コレデタラバグ{end}	Bug If Seen{end}
 s217.0915	b217+915:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob  LV3{nl}Royal Guard  LV2{end}
-s217.0930	b217+930:70	00005{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Ohh, noble Hero,{nl}you rescued {sub:0000}{nl}from the monsters' clutches,{nl}you did!{page}All the townsfolk{nl}are grateful to you, eh!{sfx:FE}{end}
+s217.0935	b217+935:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero,{nl}you have saved {sub:0000}{nl}from the hands of the monsters,{nl}and we thank you!{page}Everyone in town is{nl}grateful to you!{sfx:FE}{end}
 s217.0977	b217+977:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s217.0986	b217+986:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way...{nl}shall I trade Shillings{nl}and NVP for you, eh?{sfx:FE}{end}
 s217.09A7	b217+9A7:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}{sub:0100}{color:0F}シリング、{nl}一度に{sub:0200}NVPまで{nl}OKぢゃよ。{page}上下キーでNVPをかえるのぢゃ{sfx:FE}{end}	{sfx:00}{color:08}{sub:0000}{color:0F} NVP is worth{nl}{color:08}{sub:0100}{color:0F} Shillings, and up to{nl}{sub:0200} NVP at a time{nl}is fine by me, eh.{page}Change the NVP with Up and Down, eh{sfx:FE}{end}
@@ -553,7 +553,7 @@ s218.058F	b218+58F:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s218.059D	b218+59D:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s218.05AB	b218+5AB:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s218.05BC	b218+5BC:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s218.05E6	b218+5E6:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s218.05E6	b218+5E6:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s218.05EF	b218+5EF:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s218.0622	b218+622:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s218.0639	b218+639:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -640,7 +640,7 @@ s219.0589	b219+589:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s219.0597	b219+597:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s219.05A5	b219+5A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s219.05B6	b219+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s219.05E0	b219+5E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s219.05E0	b219+5E0:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s219.05E9	b219+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s219.061C	b219+61C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s219.0633	b219+633:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -730,7 +730,7 @@ s220.044D	b220+44D:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s220.045B	b220+45B:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s220.0469	b220+469:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s220.047A	b220+47A:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s220.0496	b220+496:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s220.0496	b220+496:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s220.049F	b220+49F:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s220.04D2	b220+4D2:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s220.04E9	b220+4E9:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -777,7 +777,7 @@ s221.0431	b221+431:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s221.043F	b221+43F:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s221.044D	b221+44D:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s221.045E	b221+45E:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s221.047A	b221+47A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s221.047A	b221+47A:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s221.0483	b221+483:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s221.04B6	b221+4B6:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s221.04CD	b221+4CD:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -824,7 +824,7 @@ s222.0405	b222+405:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s222.0413	b222+413:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s222.0421	b222+421:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s222.0432	b222+432:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s222.044E	b222+44E:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s222.044E	b222+44E:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s222.0457	b222+457:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s222.048A	b222+48A:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s222.04A1	b222+4A1:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -871,7 +871,7 @@ s223.0481	b223+481:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s223.048F	b223+48F:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s223.049D	b223+49D:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s223.04AE	b223+4AE:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s223.04CA	b223+4CA:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s223.04CA	b223+4CA:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s223.04D3	b223+4D3:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s223.0506	b223+506:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s223.051D	b223+51D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -920,7 +920,7 @@ s224.0497	b224+497:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s224.04A5	b224+4A5:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s224.04B3	b224+4B3:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s224.04C4	b224+4C4:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s224.04E0	b224+4E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s224.04E0	b224+4E0:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s224.04E9	b224+4E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s224.051C	b224+51C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s224.0533	b224+533:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -964,7 +964,7 @@ s225.05A4	b225+5A4:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s225.05B2	b225+5B2:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s225.05C0	b225+5C0:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s225.05D1	b225+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s225.05F6	b225+5F6:13	{color:85}4テAオーブコ〜ナ〜{end}	{color:85}Orb Corneeer~{end}
+s225.05FB	b225+5FB:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s225.0604	b225+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s225.0637	b225+637:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s225.064E	b225+64E:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -1051,7 +1051,7 @@ s226.058C	b226+58C:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s226.059A	b226+59A:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s226.05A8	b226+5A8:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s226.05B9	b226+5B9:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s226.05E3	b226+5E3:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s226.05E3	b226+5E3:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s226.05EC	b226+5EC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s226.061F	b226+61F:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s226.0636	b226+636:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -1063,7 +1063,7 @@ s226.06AA	b226+6AA:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{c
 s226.06FE	b226+6FE:9	水しょうの宿{end}	Crystal Inn{end}
 s226.0732	b226+732:9	マーメイドの宿{end}	Mermaid Inn{end}
 s226.0766	b226+766:8	精霊の宿{end}	Spirit Inn{end}
-s226.0780	b226+780:36	ぞ{sfx:01}いきかう人々のであうところ、{nl}旅の宿屋へようこそ！{sfx:FE}{end}	{sfx:01}Where travelers come and meet,{nl}welcome to the travelers' inn!{sfx:FE}{end}
+s226.0781	b226+781:35	{sfx:01}いきかう人々のであうところ、{nl}旅の宿屋へようこそ！{sfx:FE}{end}	{sfx:01}Where travelers cross paths...{nl}Welcome to the travelers' inn!{sfx:FE}{end}
 s226.07A5	b226+7A5:15	{sfx:01}ごようは何かしら？{sfx:FE}{end}	{sfx:01}What can I do for you, dear?{sfx:FE}{end}
 s226.07B5	b226+7B5:17	{sfx:01}それでは、{nl}ごゆっくり〜{sfx:FE}{end}	{sfx:01}Well then,{nl}make yourself at home~{sfx:FE}{end}
 s226.07C7	b226+7C7:18	{sfx:01}{sub:0000}人見つかったわ。{sfx:FE}{end}	{sfx:01}Travelers found: {sub:0000}, dear.{sfx:FE}{end}
@@ -1076,7 +1076,7 @@ s226.0848	b226+848:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれ
 s226.0867	b226+867:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s226.0913	b226+913:7	グリムの街{end}	Grim Town{end}
 s226.091B	b226+91B:13	ミノスガーダー  LV9{end}	Minos Guard  LV9{end}
-s226.0929	b226+929:70	ぼ2005{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Ohh, noble Hero,{nl}you rescued {sub:0000}{nl}from the monsters' clutches,{nl}you did!{page}All the townsfolk{nl}are grateful to you, eh!{sfx:FE}{end}
+s226.092E	b226+92E:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero,{nl}you have saved {sub:0000}{nl}from the hands of the monsters,{nl}and we thank you!{page}Everyone in town is{nl}grateful to you!{sfx:FE}{end}
 s226.0970	b226+970:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s226.097F	b226+97F:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way...{nl}shall I trade Shillings{nl}and NVP for you, eh?{sfx:FE}{end}
 s226.09A0	b226+9A0:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}{sub:0100}{color:0F}シリング、{nl}一度に{sub:0200}NVPまで{nl}OKぢゃよ。{page}上下キーでNVPをかえるのぢゃ{sfx:FE}{end}	{sfx:00}{color:08}{sub:0000}{color:0F} NVP is worth{nl}{color:08}{sub:0100}{color:0F} Shillings, and up to{nl}{sub:0200} NVP at a time{nl}is fine by me, eh.{page}Change the NVP with Up and Down, eh{sfx:FE}{end}
@@ -1138,7 +1138,7 @@ s227.05A4	b227+5A4:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s227.05B2	b227+5B2:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s227.05C0	b227+5C0:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s227.05D1	b227+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s227.05F6	b227+5F6:13	{color:85}4テKオーブコ〜ナ〜{end}	{color:85}Orb Corneeer~{end}
+s227.05FB	b227+5FB:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s227.0604	b227+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s227.0637	b227+637:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s227.064E	b227+64E:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
@@ -1224,7 +1224,7 @@ s228.05D3	b228+5D3:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooo
 s228.05E1	b228+5E1:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s228.05EF	b228+5EF:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 s228.0600	b228+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
-s228.062A	b228+62A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
+s228.062A	b228+62A:8	オーブコ〜ナ〜{end}	Orb Corneeer~{end}
 s228.0633	b228+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s228.0666	b228+666:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s228.067D	b228+67D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}

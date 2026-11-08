@@ -64,6 +64,10 @@ def dirty(s):
     head = re.split(r"\{", re.sub(r"^(\{nl\})+", "", s))[0]
     if re.search(r"[0-9]\[F4\]", head) or re.search(r"[0-9]", head) and len(head) <= 4 or re.match(r"[。、ァィゥェォャュョッぁぃぅぇぉゃゅょっ]", head):
         return True
+    if re.fullmatch(r"\D?[0-9]{3,}", head) or len(head) == 1 and s.startswith(head + "{sfx:"):  # record bytes before a voice code: 00005{sfx, ぞ{sfx
+        return True
+    if re.match(r"\{color:[0-9A-F]{2}\}[0-9][^0-9{]?[A-Za-z]", s):  # a colour code then digit, kana, letter: record bytes (s225.05F6)
+        return True
     if re.search(r"[0-9A-Za-z]|[Ⓐ-ⓩ🅐-🅩]", LATIN_OK.sub("", head.replace("[F4]", ""))[:12]):
         return True
     p = plain(s).replace("[F4]", "")[:24]
@@ -275,7 +279,12 @@ if __name__ == "__main__":
     out = ROOT / "script"
     out.mkdir(exist_ok=True)
     for sec, rows in sink.rows.items():
-        lines = ["id\tloc\tjp\ten"] + [f"{i}\t{loc}\t{s}\t" for i, loc, s in rows]
+        path = out / f"{sec}.tsv"
+        old = [r.split("\t") for r in path.read_text(encoding="utf-8").splitlines()[1:]] if path.exists() else []
+        en = {r[0]: r[3] for r in old}
+        # a row that now starts later (record bytes cut off its head) keeps the English of the old row it ends
+        moved = {i: next((r[3] for r in old if r[0] != i and r[2].endswith(s) and r[0][:5] == i[:5]), "") for i, _, s in rows if i not in en}
+        lines = ["id\tloc\tjp\ten"] + [f"{i}\t{loc}\t{s}\t{en.get(i, moved.get(i, ''))}" for i, loc, s in rows]
         (out / f"{sec}.tsv").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
         print(f"{sec:12} {len(rows):5d} rows {sum(len(plain(r[2])) for r in rows):7d} chars")
     labels = rects.rows(rom)
