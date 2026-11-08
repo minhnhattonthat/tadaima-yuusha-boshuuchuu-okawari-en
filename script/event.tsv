@@ -1535,12 +1535,12 @@ e267.024A	b267+24A:12	{sfx:01}バイバイ・・・{sfx:FE}{end}	{sfx:01}Bye-bye
 e267.0257	b267+257:19	{sfx:01}お金ないの？{nl}じゃあねぇ〜{sfx:FE}{end}	{sfx:01}No money?{nl}Laterrr~{sfx:FE}{end}
 e267.026B	b267+26B:11	仲間にしますか？{end}	Take on as an ally?{end}
 e268.00E1	b268+E1:8	{color:0B}{sub:0000}{color:0F}{end}	
-e268.00EA	b268+EA:80	{sfx:00}ひさしぶりだな{nl}勇者殿・・・{page}あいかわらず魔物たちとの{nl}戦いをつづけているのか・・・{page}{color:08}{sub:0100}{color:0F}シリングで{nl}また仲間になるぜ・・・{sfx:FE}{end}	{sfx:00}Long time no see,{nl}Hero...{page}Still fighting the{nl}monsters as always, huh...{page}For {color:08}{sub:0100}{color:0F} Shillings{nl}I'll be your ally again...{sfx:FE}{end}
+e268.00EA	b268+EA:80	{sfx:00}ひさしぶりだな{nl}勇者殿・・・{page}あいかわらず魔物たちとの{nl}戦いをつづけているのか・・・{page}{color:08}{sub:0100}{color:0F}シリングで{nl}また仲間になるぜ・・・{sfx:FE}{end}	{sfx:00}Long time no see,{nl}noble Hero...{page}Still fighting the{nl}monsters as always, huh...{page}For {color:08}{sub:0100}{color:0F} Shillings{nl}I'll be your ally again...{sfx:FE}{end}
 e268.013B	b268+13B:92	{sfx:00}オレは光の戦士。{page}ラター様よりさずかった光の力で{nl}邪悪なモンスターたちを{nl}例すために旅している。{page}まい月{color:08}{sub:0100}{color:0F}シリング{nl}で仲間になるぜ・・・{sfx:FE}{end}	{sfx:00}I'm a warrior of light.{page}With the power of light granted{nl}by Ratar-sama, I travel to{nl}defeat wicked monsters.{page}For {color:08}{sub:0100}{color:0F} Shillings a{nl}month I'll be your ally...{sfx:FE}{end}
-e268.0198	b268+198:69	{sfx:00}やあ、勇者殿{nl}会いたかったぜ。{page}君とまたいっしょに旅を{nl}できるとはうれしいな。{page}もちろん、{nl}お金なんかいらないさ。{sfx:FE}{end}	{sfx:00}Hey, Hero,{nl}I've been wanting to see you.{page}I'm glad I get to travel{nl}with you again.{page}Of course,{nl}I don't need any money.{sfx:FE}{end}
+e268.0198	b268+198:69	{sfx:00}やあ、勇者殿{nl}会いたかったぜ。{page}君とまたいっしょに旅を{nl}できるとはうれしいな。{page}もちろん、{nl}お金なんかいらないさ。{sfx:FE}{end}	{sfx:00}Hey, noble Hero,{nl}I've been wanting to see you.{page}I'm glad I get to travel{nl}with you again.{page}Of course,{nl}I don't need any money.{sfx:FE}{end}
 e268.01DE	b268+1DE:23	{sfx:00}そうか、{nl}おたがいがんばろうな・・・{sfx:FE}{end}	{sfx:00}I see.{nl}Let's both do our best...{sfx:FE}{end}
 e268.01F6	b268+1F6:11	{sfx:00}よろしくな！{sfx:FE}{end}	{sfx:00}Glad to be aboard!{sfx:FE}{end}
-e268.0202	b268+202:21	{sfx:00}また会おう{nl}勇者殿・・・{sfx:FE}{end}	{sfx:00}Until we meet again,{nl}Hero...{sfx:FE}{end}
+e268.0202	b268+202:21	{sfx:00}また会おう{nl}勇者殿・・・{sfx:FE}{end}	{sfx:00}Until we meet again,{nl}noble Hero...{sfx:FE}{end}
 e268.0218	b268+218:12	{sfx:00}さらばだ・・・{sfx:FE}{end}	{sfx:00}Farewell...{sfx:FE}{end}
 e268.0225	b268+225:44	{sfx:00}そうか、金がないのか・・・{nl}ラターのまもりがあんたに{nl}かがやくといいな・・・{sfx:FE}{end}	{sfx:00}I see, you're out of money...{nl}May Ratar's protection{nl}shine upon you...{sfx:FE}{end}
 e268.0252	b268+252:11	仲間にしますか？{end}	Take on as an ally?{end}
@@ -1596,7 +1596,7 @@ e273.020E	b273+20E:42	{sfx:00}金がないのかい？{nl}悪いな、ようへ�
 e273.0239	b273+239:11	仲間にしますか？{end}	Take on as an ally?{end}
 e274.00E1	b274+E1:8	{color:0B}{sub:0000}{color:0F}{end}	
 e274.00EA	b274+EA:66	{sfx:00}おお、{nl}ひさしぶりでござるな。{page}わがはいのたすけが{nl}またひつようなのかな？{page}{color:08}{sub:0100}{color:0F}シリングで{nl}またおともいたすぞ。{sfx:FE}{end}	{sfx:00}Ohh,{nl}long time no see, forsooth.{page}Dost thou need my aid{nl}once more?{page}For {color:08}{sub:0100}{color:0F} Shillings{nl}I shall accompany thee again.{sfx:FE}{end}
-e274.012D	b274+12D:91	{sfx:00}わがはいの名はバロン。{page}ロスティア王国の{nl}ゆいしょただしい騎士の一族の{nl}出であるぞ。{page}まい月{color:08}{sub:0100}{color:0F}シリングで{nl}勇者殿のおともをいたすが・・・{sfx:FE}{end}	{sfx:00}My name is Baron.{page}I hail from a knightly{nl}family of noble lineage{nl}in the Kingdom of Lostia.{page}For {color:08}{sub:0100}{color:0F} Shillings a month{nl}I shall accompany thee, Hero...{sfx:FE}{end}
+e274.012D	b274+12D:91	{sfx:00}わがはいの名はバロン。{page}ロスティア王国の{nl}ゆいしょただしい騎士の一族の{nl}出であるぞ。{page}まい月{color:08}{sub:0100}{color:0F}シリングで{nl}勇者殿のおともをいたすが・・・{sfx:FE}{end}	{sfx:00}My name is Baron.{page}I hail from a knightly{nl}family of noble lineage{nl}in the Kingdom of Lostia.{page}For {color:08}{sub:0100}{color:0F} Shillings a month{nl}I shall accompany thee, noble Hero...{sfx:FE}{end}
 e274.0189	b274+189:84	{sfx:00}おお、なつかしき{nl}しんゆうよ！{page}わがはいもぜひ、{nl}もう一度そなたとともに{nl}旅をしたいのだが・・・{page}むろん騎士道にのっとって、{nl}金などはいらぬぞ！{sfx:FE}{end}	{sfx:00}Ohh, my dear{nl}old friend!{page}I too would dearly love{nl}to journey with thee{nl}once more...{page}And of course, by the code{nl}of chivalry, I need no gold!{sfx:FE}{end}
 e274.01DE	b274+1DE:19	{sfx:00}そうか、{nl}しかたないの・・・{sfx:FE}{end}	{sfx:00}I see,{nl}it can't be helped, eh...{sfx:FE}{end}
 e274.01F2	b274+1F2:60	{sfx:00}ちなみにわがはいは{nl}アンデッドアレルギーである。{page}きゃつらどもとは、なるべく{nl}会わないようにしてくだされよ！{sfx:FE}{end}	{sfx:00}I should mention, I am{nl}allergic to the undead.{page}Pray, avoid meeting{nl}those fiends as best thou canst!{sfx:FE}{end}
@@ -1831,10 +1831,10 @@ e297.010D	b297+10D:26	{color:0B}ベンケー{color:0F}{nl}{sfx:00}そうか、{n
 e297.0128	b297+128:34	{color:0B}ベンケー{color:0F}{nl}{sfx:00}また会おう、勇者殿！{nl}さらばだ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}We'll meet again, noble Hero!{nl}Farewell!{sfx:FE}{end}
 e297.014B	b297+14B:25	{sfx:00}武士のめいよにかけて{nl}ともに戦おう{sfx:FE}{end}	{sfx:00}On my honor as a warrior,{nl}let us fight together{sfx:FE}{end}
 e298.0089	b298+89:24	{sfx:00}しばらくじゃが、{nl}わしも手伝おう！{sfx:FE}{end}	{sfx:00}Only for a while, mind,{nl}but I'll lend a hand too!{sfx:FE}{end}
-e298.00A2	b298+A2:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}ではサラバじゃ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}I see.{nl}Farewell, then...{sfx:FE}{end}
+e298.00A2	b298+A2:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}ではサラバじゃ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Hmm, I see.{nl}Farewell then, eh...{sfx:FE}{end}
 e298.00C0	b298+C0:60	{color:0B}ウィズー{color:0F}{nl}{sfx:00}勇者殿、{nl}わしはそろそろ{nl}一人旅に出ようと思う{page}また会おう、{nl}さらばじゃ！{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Noble Hero,{nl}I think it's about time{nl}I set off traveling alone{page}We'll meet again.{nl}Farewell!{sfx:FE}{end}
-e298.00FD	b298+FD:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}たのもしいのぉ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}I see.{nl}How reliable of you...{sfx:FE}{end}
-e298.011B	b298+11B:22	{color:0B}ウィズー{color:0F}{nl}{sfx:00}しょうがないのぉ{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Oh, it can't be helped{sfx:FE}{end}
+e298.00FD	b298+FD:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}たのもしいのぉ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}I see.{nl}Most reassuring, eh...{sfx:FE}{end}
+e298.011B	b298+11B:22	{color:0B}ウィズー{color:0F}{nl}{sfx:00}しょうがないのぉ{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Ah well, it can't{nl}be helped, eh...{sfx:FE}{end}
 e298.0132	b298+132:17	{sfx:00}ウム、{nl}よろしくたのむぞ{sfx:FE}{end}	{sfx:00}Mm,{nl}I'm counting on you{sfx:FE}{end}
 e299.0089	b299+89:45	{sfx:00}あんたのように強い{nl}奴と旅がしたいんだ。{nl}オレも仲間にしてくれないか？{sfx:FE}{end}	{sfx:00}I wanna travel with someone{nl}as strong as you.{nl}Won't you make me an ally?{sfx:FE}{end}
 e299.00B7	b299+B7:21	{color:0B}タケル{color:0F}{nl}{sfx:00}また会おうな！{sfx:FE}{end}	{color:0B}Takeru{color:0F}{nl}{sfx:00}See ya again!{sfx:FE}{end}

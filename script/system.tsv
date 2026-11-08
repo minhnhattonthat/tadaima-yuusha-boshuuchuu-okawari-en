@@ -33,8 +33,8 @@ id	loc	jp	en
 04A5A7	r04A5A7:22	{color:08}おまもりオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Charm Orb{color:0F}{nl}wore off.{end}
 04A5BE	r04A5BE:23	{color:08}けっかいのオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Seal Orb{color:0F}{nl}wore off.{end}
 04A5D6	r04A5D6:10	あめが上がった。{end}	The rain stopped.{end}
-04A5E1	r04A5E1:19	{color:08}スッタカ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Suttaka{color:0F}{nl}wore off.{end}
-04A5F5	r04A5F5:19	{color:08}モータモ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Motamo{color:0F}{nl}wore off.{end}
+04A5E1	r04A5E1:19	{color:08}スッタカ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Hustle{color:0F}{nl}wore off.{end}
+04A5F5	r04A5F5:19	{color:08}モータモ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Dawdle{color:0F}{nl}wore off.{end}
 04A609	r04A609:13	ハニワのこうかがきれた。{end}	The Haniwa wore off.{end}
 04A617	r04A617:24	{sub:0000}はテンションが{nl}{color:08}{sub:0100}{color:0F}になった。{end}	{sub:0000} now has{nl}{color:08}{sub:0100}{color:0F} tension.{end}
 04A630	r04A630:24	{sub:0000}は、{nl}{color:08}{sub:0100}{color:0F}ポイントのダメージ‼{end}	{sub:0000} took{nl}{color:08}{sub:0100}{color:0F} points of damage!!{end}

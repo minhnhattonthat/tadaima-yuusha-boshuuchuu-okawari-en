@@ -25,3 +25,8 @@ with `tools/batches.py split` only for new text; the merged English is in `scrip
 - s212/s213 monster + LV rows: JP spaces line up "LV"; the VWF won't line up with plain spaces (use `{cell}`?).
 - Katakana-only speech (Tinnians, robots, golems): ALL CAPS for robots, mixed case for monsters; agree one rule in review.
 - Hero battle cries 058017-058980 and idle lines e235.*: speaker per slot guessed from voice.
+
+## Resolved in the terms pass and review (2026-11-08)
+- Drift list: ruled in `glossary.md` (not ruled: 魔道/精霊軍団 Corps/Legion, ガーン, おねーさん, ミッテイ, spell families - reviewers saw them, Minors in `docs/polish.md`).
+- 勇者様: D11, plain "Hero". Junk-byte rows: extractor fix, the rows now start at their text (`docs/status.md`).
+- Still open for phase 7/8: 04B492 男/女 cell, e234.1281 / e236.047E in-game, s212/s213 LV alignment, robot ALL CAPS rule.
