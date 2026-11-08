@@ -66,7 +66,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ドワーフ | Dwarf | | | |
 | ニャンキー | Nyankee | | cat folk | |
 | ブリキニアン | Tinnian | | tin folk (ブリキ = tin) | Brikinian |
-| まぞく / 魔族 | Demonkin | | | |
+| まぞく / 魔族 | Demon | | the race; "Demonkin" also passes (labels have 6 cells) | |
 | イヌぞく / イヌ族 | Dogfolk | | | |
 | ビースト | Beast | | | |
 | エルフ | Elf | | | |
