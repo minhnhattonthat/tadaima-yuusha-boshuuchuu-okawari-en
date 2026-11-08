@@ -24,7 +24,7 @@ NAMES = ("item", "equip", "spell", "char")  # rows shown through the tilemap pat
 LINES = {"desc_item": 10, "desc_equip": 10, "desc_spell": 10, "bio": 10}  # the same path, a far code per line: section -> cells a line
 CODE = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")
 CODE_NL = re.compile(r"\{nl\}")
-COST = re.compile(r"(?:\[F4\]|[0-9])*／.*")  # spell record: the cost after the name stays the game's bytes, so it lines up
+COST = re.compile(r"／.*")  # spell record: the cost from ／ on stays the game's bytes, so it lines up; the name gets all 5 cells before it, pads included
 
 
 def table():

@@ -14,3 +14,5 @@ decision replaces one, mark the old one "replaced by D<n>" instead of deleting i
 | D6 | 2026-11-07 | Specs and plans | need approval, pre-approved | Pre-approved: keep going through every checkpoint, no questions. |
 | D7 | 2026-11-07 | Saves, memory cards, savestates | user supplies, none | None provided; build the debug tool as usual. |
 | D8 | 2026-11-07 | Publishing | - | Never run `gh release create`, never change repo visibility. The run ends at a built and verified release zip. Pushing to main is pre-approved for this run. |
+| D9 | 2026-11-08 | How D1 (keep honorifics) applies to titles | keep on every noun (Hero-san, King-sama); keep on names only | Controller's reading of D1 for a pre-approved run: honorifics stay on personal names (Ratar-sama, Sylphy-chan); on titles and common nouns they become English (勇者さん "Hero", 勇者様 "Sir Hero", 王様 "Your Majesty"), since "Hero-sama" reads as a mistake. |
+| D10 | 2026-11-08 | The hero チンク: Hepburn gives "Chink", an English slur | Chink, Chinku, a new name | Chinku: Hepburn with the final vowel kept, close to the JP and not a slur. |

@@ -1,105 +1,105 @@
 id	loc	jp	en
-e229.006B	b229+6B:25	{sfx:00}じゃじゃーん、{nl}こんな所でも出るのだ{sfx:FE}{end}	
-e229.0085	b229+85:76	妖怪べろりんQがあらわれた{wait}{sfx:00}サイコロころがす{nl}良い子のみんな、どこでも{nl}べろりんQと勝負なのだ{page}負けたらやっぱり{nl}オシオキなのだ{sfx:FE}{end}	
-e229.00D2	b229+D2:16	{sfx:00}{sub:0000}なのだ{page}ふるのだ{sfx:FE}{end}	
-e229.00E3	b229+E3:37	{sfx:00}べろりんQの負けなのだ{page}ど〜こか〜、とお〜くへ{nl}い〜くの〜だ♪{sfx:FE}{end}	
-e229.0109	b229+109:24	{sfx:00}べろりんQの勝ちなのだ{nl}さらばなのだ{sfx:FE}{end}	
-e229.0122	b229+122:31	{sfx:00}あいうちなのだ{nl}またお会いいたしましょう{nl}なのだ〜{sfx:FE}{end}	
-e229.0180	b229+180:38	土をけずった{nl}とりでのかべが、とつぜん{nl}くずれはじめた！{page}あぶないっ！{wait}{end}	
-e229.01A7	b229+1A7:43	タアッ！{page}すばやく勇者はガレキを{nl}よけた！{wait}ヒューッ、{nl}あぶない、あぶない・・・{end}	
-e229.01D3	b229+1D3:50	ガラガラガラ〜ッ！{page}ガレキにうずもれて、{nl}勇者は動けなく{nl}なってしまった・・・{wait}1回やすみ{end}	
-e229.0244	b229+244:51	遺跡のかべがとつぜん{nl}ひらいて、するどい{nl}ドクバリが飛び出してきた！{page}古代のワナだっ！{wait}{end}	
-e229.0278	b229+278:39	ザッ！{page}すばやく勇者はドクバリを{nl}かわした！{wait}あぶない所だったぁ・・・{end}	
-e229.02A0	b229+2A0:57	グサッ！{page}ドクバリが勇者の体に{nl}つきささった！{page}ビリビリ〜、{nl}体がしびれて動かない・・・{wait}1回やすみ{end}	
-e229.0318	b229+318:38	ブワッ！{page}とつぜんイワのわれ目から{nl}ようがんがふきだした！{page}ふせろっ！{wait}{end}	
-e229.033F	b229+33F:35	すばやく勇者は{nl}みをひるがえした！{wait}いやあ、{nl}危機いっぱつ〜{end}	
-e229.0363	b229+363:46	アチチ〜ッ！{page}勇者のアシにようがんが{nl}かかって{nl}ヤケドしてしまった・・・{page}1回やすみ{end}	
-e229.03D0	b229+3D0:42	とつぜん{nl}カベの神ぞうの目が光り{nl}怪光センをハッシャした！{wait}よけろっ！{wait}{end}	
-e229.03FB	b229+3FB:44	ヒョ〜ッ！{page}勇者はみをかがめて{nl}怪光センをかわした！{wait}きわどい所だった・・・{end}	
-e229.0428	b229+428:44	ビシーッ！{page}怪光センが勇者をうつ！{page}か、{nl}体が動かない・・・{wait}1回やすみ{end}	
-e229.0493	b229+493:57	ロスティア城をみたした{nl}邪悪な気が、とつぜん集まって{nl}勇者をつつもうとしている！{wait}ザガンのワナだ！{end}	
-e229.04CD	b229+4CD:49	ムンッ！{page}勇者は気あいをため、{nl}邪悪な気をはね飛ばした！{wait}ザガンめ、{nl}今いくぞ〜{end}	
-e229.04FF	b229+4FF:49	ムググッ！{page}邪悪な気にしばられて、{nl}勇者の体が動かなく{nl}なった・・・{wait}1回やすみ{end}	
-e229.0539	b229+539:31	フォートのとりでは{nl}おもくるしく{nl}しずまりかえっている・・・{end}	
-e229.0561	b229+561:45	古代の魔法にまもられて、{nl}タシュール遺跡は闇の中に{nl}ひろがっている・・・{end}	
-e229.0597	b229+597:35	巨大なケモノのほえ声が{nl}ふういんの洞窟に{nl}こだまする・・・{end}	
-e229.05C3	b229+5C3:44	つめたい大気につつまれて、{nl}アストロン神殿の神々は{nl}チンモクしている・・・{end}	
-e229.05F8	b229+5F8:33	美しかったロスティア城が{nl}ガレキの中に{nl}うもれている・・・{end}	
-e230.0040	b230+40:8	ダミーざんすぅ{end}	
-e230.0077	b230+77:21	モンスターがあらわれた！{page}{color:09}{sub:0000}{color:0F}{end}	
-e230.008D	b230+8D:19	ふん！{nl}カタナのサビにしてくれるわ‼{end}	
-e230.00A1	b230+A1:18	もうっ！{nl}いいかげんにしなさいよ‼{end}	
-e230.00B4	b230+B4:15	かわいい女の子いるかな？{end}	
-e230.00C4	b230+C4:16	んもぅ！{nl}ついてないなぁ・・・{end}	
-e230.00DC	b230+DC:44	チャ〜ミ〜クリンを使うと〜♪{nl}てをつなぎたくな〜〜る〜〜♪♪{page}BY[F4]さ{color:09}♥{color:0F}がみ{end}	
-e230.0109	b230+109:26	けっ！しゃらくせー‼{nl}かえりうちにしてくれるワン‼{end}	
-e230.0124	b230+124:25	えぇ〜！敵ですかぁ？{nl}まいりましたねぇ・・・・{end}	
-e230.013E	b230+13E:8	あのさぁ・・・{end}	
-e230.0147	b230+147:18	どっからでも{nl}かかってらっしゃい‼{end}	
-e230.015A	b230+15A:8	ふん！ザコが‼{end}	
-e230.0163	b230+163:33	シンジラレナ〜イ‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	
-e230.0184	b230+184:6	{nl}つまらん{end}	
-e230.0204	b230+204:38	きみの悪いモンスターがいる。{page}見つからないように{nl}とおりすぎよう・・・{end}	
-e230.022B	b230+22B:25	モンスターはこちらに気がついた{page}{color:09}{sub:0000}{color:0F}{end}	
-e230.0245	b230+245:17	むっ！{nl}コヤツ、なかなかできるな{end}	
-e230.0257	b230+257:20	えぇ〜！やだぁ‼{nl}しんじられな〜い‼‼{end}	
-e230.026C	b230+26C:15	てらちゃんスキスキ{color:09}♥{color:0F}{end}	
-e230.027C	b230+27C:14	んもぅ！{nl}さいあくぅ・・・{end}	
-e230.028F	b230+28F:2	・{end}	
-e230.0292	b230+292:16	あっちゃ〜{nl}みつかっちゃったぁ{end}	
-e230.02A3	b230+2A3:9	ついてないワン‼{end}	
-e230.02AD	b230+2AD:17	えぇ〜！{nl}みつかっちゃいました？{end}	
-e230.02BF	b230+2BF:8	あのさぁ・・・{end}	
-e230.02C8	b230+2C8:21	しょうがないわねぇ{nl}かかってらっしゃい‼{end}	
-e230.02DE	b230+2DE:8	ふん！ボスが‼{end}	
-e230.02E7	b230+2E7:33	シンジラレナ〜イ‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	
-e230.0308	b230+308:6	{nl}つまらん{end}	
-e230.030F	b230+30F:24	モンスターはさっていった・・・{page}{color:09}{sub:0000}{color:0F}{end}	
-e230.0328	b230+328:21	フッ！{nl}今回だけは見逃してやる！{end}	
-e230.0346	b230+346:7	クックック‼{end}	
-e230.034E	b230+34E:10	ラッキ〜{color:09}♥{color:0F}{end}	
-e230.0359	b230+359:6	フフン・・{end}	
-e230.0360	b230+360:10	よかった{color:09}♥{color:0F}{end}	
-e230.036B	b230+36B:9	ラッキーだワン‼{end}	
-e230.0375	b230+375:15	おぉ〜！{nl}よかったよかった。{end}	
-e230.0385	b230+385:8	あのさぁ・・・{end}	
-e230.038E	b230+38E:32	ま、よけいな戦いをさけるのも{nl}大人のよゆうってヤツよね‼{end}	
-e230.03AF	b230+3AF:4	ふん‼{end}	
-e230.03B4	b230+3B4:34	やりすごしたじょ〜‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	
-e230.03D6	b230+3D6:6	{nl}つまらん{end}	
-e230.0445	b230+445:18	旅の冒険者と出会った{page}{end}	
-e230.0458	b230+458:32	旅はみちづれ、世はなさけ！{nl}仲間になりたいといっている{end}	
-e230.049B	b230+49B:50	{color:09}コジマ{color:0F}{nl}オ〜ッホッホッホッ！{nl}私の名はコジマ、{nl}世界一美しい女盗賊よ‼{page}{end}	
-e230.04DC	b230+4DC:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	
-e230.0508	b230+508:11	出前道具屋{end}	
-e230.0514	b230+514:56	はろはろ、勇者様！{nl}ピココショップ、{nl}しゅっちょう道具屋でしゅ〜♪{page}きょうのごようはなにかしら〜♪{end}	
-e230.054D	b230+54D:15	ほかにごようはないかしら〜♪{end}	
-e230.055D	b230+55D:11	どれを買います〜♪{end}	
-e230.0569	b230+569:12	売りものはどちら〜♪{end}	
-e230.0576	b230+576:25	もう、もてませ〜ん！{nl}もちものをへらしましょ〜♪{end}	
-e230.0590	b230+590:25	{color:09}{sub:0000}{color:0F}シリングで〜す{nl}お売りですか〜♪{end}	
-e230.05AA	b230+5AA:13	{color:09}{sub:0000}{color:0F}シリング、{end}	
-e230.05B8	b230+5B8:9	おかねな〜い〜♪{end}	
-e230.05C2	b230+5C2:9	お買いあげ〜♪{end}	
-e230.05CC	b230+5CC:12	ありがとございま〜す♪{end}	
-e230.05D9	b230+5D9:16	ごきげんよう、勇者様〜♪{end}	
-e230.05F8	b230+5F8:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	
-e230.0628	b230+628:11	出前武器屋{end}	
-e230.0634	b230+634:33	まいどぉ！{nl}ピココショップ、{nl}しゅっちょう武器屋でっしゅ！{end}	
-e230.0656	b230+656:15	ほかに何かごいりようでし？{end}	
-e230.0666	b230+666:11	何をおもとめでし？{end}	
-e230.0672	b230+672:15	何を売ってくれるっしゅ？{end}	
-e230.0682	b230+682:37	もちものがいっぱいでっしゅ！{nl}何か売るかすてるか{nl}してちょーだいっ！{end}	
-e230.06A8	b230+6A8:48	攻撃力 {color:09}{sub:0000}{color:0F}から{color:09}{sub:0100}{color:0F}{nl}防御力 {color:09}{sub:0200}{color:0F}から{color:09}{sub:0300}{color:0F}{end}	
-e230.06D9	b230+6D9:35	買いとりは{nl}{color:09}{sub:0000}{color:0F}シリングになりまっ！{nl}これでいいかにゃ？{end}	
-e230.06FD	b230+6FD:23	そうびできないっしゅ。{nl}それでもいいでしか？{end}	
-e230.0715	b230+715:18	{color:09}{sub:0000}{color:0F}シリングになりまっ！{end}	
-e230.0728	b230+728:13	おかねがないでしゅ．．．{end}	
-e230.0736	b230+736:10	これでいいかにゃ？{end}	
-e230.0741	b230+741:8	まいだぁりぃ〜{end}	
-e230.074A	b230+74A:12	そうびしていくかにゃ？{end}	
-e230.0757	b230+757:10	おにあいでっしゅ！{end}	
-e230.0762	b230+762:12	またきてちょ〜だいっ！{end}	
+e229.006B	b229+6B:25	{sfx:00}じゃじゃーん、{nl}こんな所でも出るのだ{sfx:FE}{end}	{sfx:00}Ta-daaa!{nl}I show up even here, yes indeedy!{sfx:FE}{end}
+e229.0085	b229+85:76	妖怪べろりんQがあらわれた{wait}{sfx:00}サイコロころがす{nl}良い子のみんな、どこでも{nl}べろりんQと勝負なのだ{page}負けたらやっぱり{nl}オシオキなのだ{sfx:FE}{end}	The yokai Berorin Q appeared!{wait}{sfx:00}Roll the dice, good boys and girls!{nl}Anywhere at all, it's a match{nl}with Berorin Q, yes indeedy!{page}Lose, and of course{nl}you get punished, yes indeedy!{sfx:FE}{end}
+e229.00D2	b229+D2:16	{sfx:00}{sub:0000}なのだ{page}ふるのだ{sfx:FE}{end}	{sfx:00}It's {sub:0000}, yes indeedy!{page}Now roll, yes indeedy!{sfx:FE}{end}
+e229.00E3	b229+E3:37	{sfx:00}べろりんQの負けなのだ{page}ど〜こか〜、とお〜くへ{nl}い〜くの〜だ♪{sfx:FE}{end}	{sfx:00}Berorin Q loses, yes indeedy!{page}Off I go, faaar, faaar{nl}awaaay I gooo~[D0]{sfx:FE}{end}
+e229.0109	b229+109:24	{sfx:00}べろりんQの勝ちなのだ{nl}さらばなのだ{sfx:FE}{end}	{sfx:00}Berorin Q wins, yes indeedy!{nl}Farewell, yes indeedy!{sfx:FE}{end}
+e229.0122	b229+122:31	{sfx:00}あいうちなのだ{nl}またお会いいたしましょう{nl}なのだ〜{sfx:FE}{end}	{sfx:00}It's a draw, yes indeedy!{nl}Let us meet again,{nl}yes indeedyyy~{sfx:FE}{end}
+e229.0180	b229+180:38	土をけずった{nl}とりでのかべが、とつぜん{nl}くずれはじめた！{page}あぶないっ！{wait}{end}	The fort's walls of carved earth{nl}suddenly began{nl}to crumble!{page}Look out!{wait}{end}
+e229.01A7	b229+1A7:43	タアッ！{page}すばやく勇者はガレキを{nl}よけた！{wait}ヒューッ、{nl}あぶない、あぶない・・・{end}	Hyah!{page}The Hero swiftly dodged{nl}the rubble!{wait}Whew,{nl}that was close, so close...{end}
+e229.01D3	b229+1D3:50	ガラガラガラ〜ッ！{page}ガレキにうずもれて、{nl}勇者は動けなく{nl}なってしまった・・・{wait}1回やすみ{end}	CRASH, CRASH, CRAAASH!{page}Buried under the rubble,{nl}the Hero can't{nl}move...{wait}Lose 1 turn{end}
+e229.0244	b229+244:51	遺跡のかべがとつぜん{nl}ひらいて、するどい{nl}ドクバリが飛び出してきた！{page}古代のワナだっ！{wait}{end}	The ruin's wall suddenly{nl}opened, and sharp{nl}poison needles shot out!{page}An ancient trap!{wait}{end}
+e229.0278	b229+278:39	ザッ！{page}すばやく勇者はドクバリを{nl}かわした！{wait}あぶない所だったぁ・・・{end}	Zip!{page}The Hero swiftly dodged{nl}the poison needles!{wait}That was a close one...{end}
+e229.02A0	b229+2A0:57	グサッ！{page}ドクバリが勇者の体に{nl}つきささった！{page}ビリビリ〜、{nl}体がしびれて動かない・・・{wait}1回やすみ{end}	Stab!{page}The poison needles stuck{nl}into the Hero's body!{page}Tingle, tingle...{nl}Numb all over, can't move...{wait}Lose 1 turn{end}
+e229.0318	b229+318:38	ブワッ！{page}とつぜんイワのわれ目から{nl}ようがんがふきだした！{page}ふせろっ！{wait}{end}	FWOOSH!{page}Suddenly lava gushed out{nl}of a crack in the rock!{page}Get down!{wait}{end}
+e229.033F	b229+33F:35	すばやく勇者は{nl}みをひるがえした！{wait}いやあ、{nl}危機いっぱつ〜{end}	The Hero swiftly{nl}spun out of the way!{wait}Phew,{nl}what a close call~{end}
+e229.0363	b229+363:46	アチチ〜ッ！{page}勇者のアシにようがんが{nl}かかって{nl}ヤケドしてしまった・・・{page}1回やすみ{end}	Hot, hot, hooot!{page}Lava splashed{nl}on the Hero's legs,{nl}leaving a nasty burn...{page}Lose 1 turn{end}
+e229.03D0	b229+3D0:42	とつぜん{nl}カベの神ぞうの目が光り{nl}怪光センをハッシャした！{wait}よけろっ！{wait}{end}	Suddenly{nl}the eyes of the god statue on the wall{nl}glowed and fired a weird ray!{wait}Dodge it!{wait}{end}
+e229.03FB	b229+3FB:44	ヒョ〜ッ！{page}勇者はみをかがめて{nl}怪光センをかわした！{wait}きわどい所だった・・・{end}	Whoa!{page}The Hero ducked{nl}under the weird ray!{wait}That was a close shave...{end}
+e229.0428	b229+428:44	ビシーッ！{page}怪光センが勇者をうつ！{page}か、{nl}体が動かない・・・{wait}1回やすみ{end}	ZAP!{page}The weird ray hits the Hero!{page}C-can't...{nl}move...{wait}Lose 1 turn{end}
+e229.0493	b229+493:57	ロスティア城をみたした{nl}邪悪な気が、とつぜん集まって{nl}勇者をつつもうとしている！{wait}ザガンのワナだ！{end}	The evil aura filling{nl}Lostia Castle suddenly gathered{nl}to engulf the Hero!{wait}It's Zagan's trap!{end}
+e229.04CD	b229+4CD:49	ムンッ！{page}勇者は気あいをため、{nl}邪悪な気をはね飛ばした！{wait}ザガンめ、{nl}今いくぞ〜{end}	Hmph!{page}With a burst of willpower, the Hero{nl}blasted the evil aura away!{wait}Zagan, you fiend,{nl}here I come!{end}
+e229.04FF	b229+4FF:49	ムググッ！{page}邪悪な気にしばられて、{nl}勇者の体が動かなく{nl}なった・・・{wait}1回やすみ{end}	Nngh!{page}Bound by the evil aura,{nl}the Hero can no longer{nl}move...{wait}Lose 1 turn{end}
+e229.0539	b229+539:31	フォートのとりでは{nl}おもくるしく{nl}しずまりかえっている・・・{end}	The Fort stronghold lies{nl}in heavy, oppressive{nl}silence...{end}
+e229.0561	b229+561:45	古代の魔法にまもられて、{nl}タシュール遺跡は闇の中に{nl}ひろがっている・・・{end}	Guarded by ancient magic,{nl}the Tashur Ruins spread out{nl}in the darkness...{end}
+e229.0597	b229+597:35	巨大なケモノのほえ声が{nl}ふういんの洞窟に{nl}こだまする・・・{end}	The howl of a giant beast{nl}echoes through{nl}the Sealed Cave...{end}
+e229.05C3	b229+5C3:44	つめたい大気につつまれて、{nl}アストロン神殿の神々は{nl}チンモクしている・・・{end}	Wrapped in cold air,{nl}the gods of the Temple of Astron{nl}keep their silence...{end}
+e229.05F8	b229+5F8:33	美しかったロスティア城が{nl}ガレキの中に{nl}うもれている・・・{end}	Once-beautiful Lostia Castle{nl}lies buried{nl}in rubble...{end}
+e230.0040	b230+40:8	ダミーざんすぅ{end}	Dummy text, zansu~{end}
+e230.0077	b230+77:21	モンスターがあらわれた！{page}{color:09}{sub:0000}{color:0F}{end}	A monster appeared!{page}{color:09}{sub:0000}{color:0F}{end}
+e230.008D	b230+8D:19	ふん！{nl}カタナのサビにしてくれるわ‼{end}	Hmph!{nl}You'll be rust on my katana!!{end}
+e230.00A1	b230+A1:18	もうっ！{nl}いいかげんにしなさいよ‼{end}	Ugh!{nl}Give it a rest already!!{end}
+e230.00B4	b230+B4:15	かわいい女の子いるかな？{end}	Any cute girls around, I wonder?{end}
+e230.00C4	b230+C4:16	んもぅ！{nl}ついてないなぁ・・・{end}	Aww, come on!{nl}Just my luck...{end}
+e230.00DC	b230+DC:44	チャ〜ミ〜クリンを使うと〜♪{nl}てをつなぎたくな〜〜る〜〜♪♪{page}BY[F4]さ{color:09}♥{color:0F}がみ{end}	When you use Charmy-Clean~[D0]{nl}you'll want to hold haaands~~[D0][D0]{page}BY[F4]Sa{color:09}[CB]{color:0F}gami{end}
+e230.0109	b230+109:26	けっ！しゃらくせー‼{nl}かえりうちにしてくれるワン‼{end}	Tch! Big talk!!{nl}I'll send you packing, arf!!{end}
+e230.0124	b230+124:25	えぇ〜！敵ですかぁ？{nl}まいりましたねぇ・・・・{end}	Whaaat! An enemy?{nl}Oh dear, oh dear...{end}
+e230.013E	b230+13E:8	あのさぁ・・・{end}	Um, say...{end}
+e230.0147	b230+147:18	どっからでも{nl}かかってらっしゃい‼{end}	Come at me{nl}any way you like!!{end}
+e230.015A	b230+15A:8	ふん！ザコが‼{end}	Hmph! Small fry!!{end}
+e230.0163	b230+163:33	シンジラレナ〜イ‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	Unbelieeevable!!{page}{speed:40}Hyo-hyo-hyo-hyo!!{nl}{speed:08}......{speed:FF}
+e230.0184	b230+184:6	{nl}つまらん{end}	{nl}How dull.{end}
+e230.0204	b230+204:38	きみの悪いモンスターがいる。{page}見つからないように{nl}とおりすぎよう・・・{end}	There's a creepy monster here.{page}Let's sneak past{nl}without being seen...{end}
+e230.022B	b230+22B:25	モンスターはこちらに気がついた{page}{color:09}{sub:0000}{color:0F}{end}	The monster noticed you!{page}{color:09}{sub:0000}{color:0F}{end}
+e230.0245	b230+245:17	むっ！{nl}コヤツ、なかなかできるな{end}	Hm!{nl}This one is quite skilled.{end}
+e230.0257	b230+257:20	えぇ〜！やだぁ‼{nl}しんじられな〜い‼‼{end}	Whaaat! No way!!{nl}I can't belieeeve it!!!!{end}
+e230.026C	b230+26C:15	てらちゃんスキスキ{color:09}♥{color:0F}{end}	I love you, Tera-chan{color:09}[CB]{color:0F}{end}
+e230.027C	b230+27C:14	んもぅ！{nl}さいあくぅ・・・{end}	Ugh!{nl}This is the worst...{end}
+e230.028F	b230+28F:2	・{end}	.{end}
+e230.0292	b230+292:16	あっちゃ〜{nl}みつかっちゃったぁ{end}	Oopsie~{nl}They spotted us~{end}
+e230.02A3	b230+2A3:9	ついてないワン‼{end}	What bad luck, arf!!{end}
+e230.02AD	b230+2AD:17	えぇ〜！{nl}みつかっちゃいました？{end}	Whaaat!{nl}We've been spotted?{end}
+e230.02BF	b230+2BF:8	あのさぁ・・・{end}	Um, say...{end}
+e230.02C8	b230+2C8:21	しょうがないわねぇ{nl}かかってらっしゃい‼{end}	Well, it can't be helped.{nl}Come at me!!{end}
+e230.02DE	b230+2DE:8	ふん！ボスが‼{end}	Hmph! A boss!!{end}
+e230.02E7	b230+2E7:33	シンジラレナ〜イ‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	Unbelieeevable!!{page}{speed:40}Hyo-hyo-hyo-hyo!!{nl}{speed:08}......{speed:FF}
+e230.0308	b230+308:6	{nl}つまらん{end}	{nl}How dull.{end}
+e230.030F	b230+30F:24	モンスターはさっていった・・・{page}{color:09}{sub:0000}{color:0F}{end}	The monster went away...{page}{color:09}{sub:0000}{color:0F}{end}
+e230.0328	b230+328:21	フッ！{nl}今回だけは見逃してやる！{end}	Hmph!{nl}I'll let you off, just this once!{end}
+e230.0346	b230+346:7	クックック‼{end}	Heh heh heh!!{end}
+e230.034E	b230+34E:10	ラッキ〜{color:09}♥{color:0F}{end}	Lucky~{color:09}[CB]{color:0F}{end}
+e230.0359	b230+359:6	フフン・・{end}	Hmhm...{end}
+e230.0360	b230+360:10	よかった{color:09}♥{color:0F}{end}	Thank goodness{color:09}[CB]{color:0F}{end}
+e230.036B	b230+36B:9	ラッキーだワン‼{end}	How lucky, arf!!{end}
+e230.0375	b230+375:15	おぉ〜！{nl}よかったよかった。{end}	Ohhh!{nl}Good, good.{end}
+e230.0385	b230+385:8	あのさぁ・・・{end}	Um, say...{end}
+e230.038E	b230+38E:32	ま、よけいな戦いをさけるのも{nl}大人のよゆうってヤツよね‼{end}	Well, dodging needless fights is{nl}just grown-up composure, right!!{end}
+e230.03AF	b230+3AF:4	ふん‼{end}	Hmph!!{end}
+e230.03B4	b230+3B4:34	やりすごしたじょ〜‼{page}{speed:40}ヒョッヒョッヒョッヒョ‼{nl}{speed:08}・・・・{speed:FF}	Slipped right past 'em!!{page}{speed:40}Hyo-hyo-hyo-hyo!!{nl}{speed:08}......{speed:FF}
+e230.03D6	b230+3D6:6	{nl}つまらん{end}	{nl}How dull.{end}
+e230.0445	b230+445:18	旅の冒険者と出会った{page}{end}	You met a traveling adventurer.{page}{end}
+e230.0458	b230+458:32	旅はみちづれ、世はなさけ！{nl}仲間になりたいといっている{end}	On the road, a friend indeed!{nl}They want to join your party.{end}
+e230.049B	b230+49B:50	{color:09}コジマ{color:0F}{nl}オ〜ッホッホッホッ！{nl}私の名はコジマ、{nl}世界一美しい女盗賊よ‼{page}{end}	{color:09}Kojima{color:0F}{nl}Oh-ho-ho-ho-ho!{nl}My name is Kojima, the most{nl}beautiful lady thief in the world!!{page}{end}
+e230.04DC	b230+4DC:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some big luggage...?{end}
+e230.0508	b230+508:11	出前道具屋{end}	Traveling Item Shop{end}
+e230.0514	b230+514:56	はろはろ、勇者様！{nl}ピココショップ、{nl}しゅっちょう道具屋でしゅ〜♪{page}きょうのごようはなにかしら〜♪{end}	Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop's traveling{nl}item shop-sh~[D0]{page}What can I do for you todaaay~[D0]{end}
+e230.054D	b230+54D:15	ほかにごようはないかしら〜♪{end}	Anything else for you todaaay~[D0]{end}
+e230.055D	b230+55D:11	どれを買います〜♪{end}	What will you buuuy~[D0]{end}
+e230.0569	b230+569:12	売りものはどちら〜♪{end}	Which will you seeell~[D0]{end}
+e230.0576	b230+576:25	もう、もてませ〜ん！{nl}もちものをへらしましょ〜♪{end}	You can't carry any mooore!{nl}Let's lighten your load~[D0]{end}
+e230.0590	b230+590:25	{color:09}{sub:0000}{color:0F}シリングで〜す{nl}お売りですか〜♪{end}	That's {color:09}{sub:0000}{color:0F} Shillings~{nl}Will you sell it~[D0]{end}
+e230.05AA	b230+5AA:13	{color:09}{sub:0000}{color:0F}シリング、{end}	{color:09}{sub:0000}{color:0F} Shillings,{end}
+e230.05B8	b230+5B8:9	おかねな〜い〜♪{end}	No mooooney~[D0]{end}
+e230.05C2	b230+5C2:9	お買いあげ〜♪{end}	Sold to youuu~[D0]{end}
+e230.05CC	b230+5CC:12	ありがとございま〜す♪{end}	Thank yooou~[D0]{end}
+e230.05D9	b230+5D9:16	ごきげんよう、勇者様〜♪{end}	Fare thee well, Sir Hero~[D0]{end}
+e230.05F8	b230+5F8:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
+e230.0628	b230+628:11	出前武器屋{end}	Traveling Weapon Shop{end}
+e230.0634	b230+634:33	まいどぉ！{nl}ピココショップ、{nl}しゅっちょう武器屋でっしゅ！{end}	Welcome, welcome!{nl}It's the Pikoko Shop's traveling{nl}weapon shop-sh!{end}
+e230.0656	b230+656:15	ほかに何かごいりようでし？{end}	Need anything elshe?{end}
+e230.0666	b230+666:11	何をおもとめでし？{end}	What are you after-sh?{end}
+e230.0672	b230+672:15	何を売ってくれるっしゅ？{end}	What'll you sell me-sh?{end}
+e230.0682	b230+682:37	もちものがいっぱいでっしゅ！{nl}何か売るかすてるか{nl}してちょーだいっ！{end}	Your bag's full-sh!{nl}Sell or toss something{nl}for me, pleash!{end}
+e230.06A8	b230+6A8:48	攻撃力 {color:09}{sub:0000}{color:0F}から{color:09}{sub:0100}{color:0F}{nl}防御力 {color:09}{sub:0200}{color:0F}から{color:09}{sub:0300}{color:0F}{end}	Attack {color:09}{sub:0000}{color:0F} -> {color:09}{sub:0100}{color:0F}{nl}Defense {color:09}{sub:0200}{color:0F} -> {color:09}{sub:0300}{color:0F}{end}
+e230.06D9	b230+6D9:35	買いとりは{nl}{color:09}{sub:0000}{color:0F}シリングになりまっ！{nl}これでいいかにゃ？{end}	I'll buy it for{nl}{color:09}{sub:0000}{color:0F} Shillings!{nl}Is that okay, meow?{end}
+e230.06FD	b230+6FD:23	そうびできないっしゅ。{nl}それでもいいでしか？{end}	You can't equip that-sh.{nl}Is that still okay-sh?{end}
+e230.0715	b230+715:18	{color:09}{sub:0000}{color:0F}シリングになりまっ！{end}	That's {color:09}{sub:0000}{color:0F} Shillings!{end}
+e230.0728	b230+728:13	おかねがないでしゅ．．．{end}	You haven't got the money-sh...{end}
+e230.0736	b230+736:10	これでいいかにゃ？{end}	Is that okay, meow?{end}
+e230.0741	b230+741:8	まいだぁりぃ〜{end}	Thank you kiiindly~{end}
+e230.074A	b230+74A:12	そうびしていくかにゃ？{end}	Will you wear it now, meow?{end}
+e230.0757	b230+757:10	おにあいでっしゅ！{end}	It suits you-sh!{end}
+e230.0762	b230+762:12	またきてちょ〜だいっ！{end}	Come again, pleash!{end}
 e230.077D	b230+77D:24	何やらハニワをかついだ{nl}ピココがいる・・・？{end}	
 e230.079D	b230+79D:10	出前オーブ屋{end}	
 e230.07A8	b230+7A8:46	ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{end}	
@@ -268,7 +268,7 @@ e233.02EF	b233+2EF:30	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ホッホッ！{
 e233.030E	b233+30E:31	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}おもしろいっ！{nl}あたしがあいてよっ‼{sfx:FE}{end}	
 e233.032E	b233+32E:20	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ふん！ザコが‼{sfx:FE}{end}	
 e233.0343	b233+343:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{sfx:FE}{end}	
-e233.03AE	b233+3AE:38	きみの悪いモンスターがいる。{page}見つからないように{nl}とおりすぎよう・・・{end}	
+e233.03AE	b233+3AE:38	きみの悪いモンスターがいる。{page}見つからないように{nl}とおりすぎよう・・・{end}	There's a creepy monster here.{page}Let's sneak past{nl}without being seen...{end}
 e233.03D5	b233+3D5:18	モンスターはこちらに気がついた{page}{end}	
 e233.03E8	b233+3E8:29	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}むっ！{nl}コヤツ、なかなかできるな{sfx:FE}{end}	
 e233.0406	b233+406:25	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ええいっ、{nl}まだまだぁ‼{sfx:FE}{end}	
@@ -323,10 +323,10 @@ e233.0B0A	b233+B0A:14	{sfx:01}な、{page}なだれだぁ！{sfx:FE}{end}
 e233.0B19	b233+B19:12	なだれにまきこまれて、{end}	
 e234.0061	b234+61:17	{sfx:00}じゃじゃーん、{nl}でたのだ{sfx:FE}{end}	
 e234.0073	b234+73:67	妖怪べろりんQがあらわれた{wait}{sfx:00}サイコロころがす{nl}良い子のみんな、{nl}べろりんQと勝負なのだ{page}負けたらオシオキなのだ{sfx:FE}{end}	
-e234.00B7	b234+B7:16	{sfx:00}{sub:0000}なのだ{page}ふるのだ{sfx:FE}{end}	
-e234.00C8	b234+C8:37	{sfx:00}べろりんQの負けなのだ{page}ど〜こか〜、とお〜くへ{nl}い〜くの〜だ♪{sfx:FE}{end}	
-e234.00EE	b234+EE:24	{sfx:00}べろりんQの勝ちなのだ{nl}さらばなのだ{sfx:FE}{end}	
-e234.0107	b234+107:31	{sfx:00}あいうちなのだ{nl}またお会いいたしましょう{nl}なのだ〜{sfx:FE}{end}	
+e234.00B7	b234+B7:16	{sfx:00}{sub:0000}なのだ{page}ふるのだ{sfx:FE}{end}	{sfx:00}It's {sub:0000}, yes indeedy!{page}Now roll, yes indeedy!{sfx:FE}{end}
+e234.00C8	b234+C8:37	{sfx:00}べろりんQの負けなのだ{page}ど〜こか〜、とお〜くへ{nl}い〜くの〜だ♪{sfx:FE}{end}	{sfx:00}Berorin Q loses, yes indeedy!{page}Off I go, faaar, faaar{nl}awaaay I gooo~[D0]{sfx:FE}{end}
+e234.00EE	b234+EE:24	{sfx:00}べろりんQの勝ちなのだ{nl}さらばなのだ{sfx:FE}{end}	{sfx:00}Berorin Q wins, yes indeedy!{nl}Farewell, yes indeedy!{sfx:FE}{end}
+e234.0107	b234+107:31	{sfx:00}あいうちなのだ{nl}またお会いいたしましょう{nl}なのだ〜{sfx:FE}{end}	{sfx:00}It's a draw, yes indeedy!{nl}Let us meet again,{nl}yes indeedyyy~{sfx:FE}{end}
 e234.0257	b234+257:29	つづらの中には{nl}{color:08}{sub:0000}{color:0F}シリング入っていた！！{end}	
 e234.028E	b234+28E:68	{sfx:01}すずめのお宿の{nl}つづら屋さん♪{page}大きなつづらっ、{nl}小さなつづらっ、{nl}の〜ぞいてご〜らん{nl}何がある〜♪{sfx:FE}{page}どれをあける？{end}	
 e234.02D3	b234+2D3:8	大きいつづら{end}	
@@ -441,8 +441,8 @@ e235.0819	b235+819:33	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ホッホッ、{
 e235.083B	b235+83B:33	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}敵がおらん！{nl}ワシのオノがふるえんぞ！{sfx:FE}{end}	
 e235.085D	b235+85D:38	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ゴッチ、ゴッチ{nl} ゴンゴンゴッチ{nl}  ゴンゴ〜ン♪{sfx:FE}{end}	
 e235.0884	b235+884:36	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}なんじゃい、{nl}いがいに平和じゃないか・・・{sfx:FE}{end}	
-e236.0049	b236+49:18	旅の冒険者と出会った{page}{end}	
-e236.005C	b236+5C:32	旅はみちづれ、世はなさけ！{nl}仲間になりたいといっている{end}	
+e236.0049	b236+49:18	旅の冒険者と出会った{page}{end}	You met a traveling adventurer.{page}{end}
+e236.005C	b236+5C:32	旅はみちづれ、世はなさけ！{nl}仲間になりたいといっている{end}	On the road, a friend indeed!{nl}They want to join your party.{end}
 e236.024A	b236+24A:20	{sfx:01}負けたよ。{nl}あんた強いね。{sfx:FE}{end}	
 e236.025F	b236+25F:32	{sfx:00}・・・？{nl}サイフがないぞ・・・？{page}あっ！{nl}スリだっ！{page}{sfx:FE}{end}	
 e236.0280	b236+280:32	{sfx:01}・・・？{nl}サイフがないぞ・・・？{page}あっ！{nl}スリだっ！{page}{sfx:FE}{end}	
@@ -523,8 +523,8 @@ e237.0CFF	b237+CFF:30	{page}{sfx:01}できた、できた！{nl}勇者様、見�
 e237.0D1E	b237+D1E:81	まっしろにかがやく{nl}美しい勇者のすがた・・・{page}人々はまぶしそうに{nl}勇者のぞうを見上げるのだった。{wait}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをかくとく！{end}	
 e237.0D70	b237+D70:101	に、{nl}にてない・・・{page}かんせいした勇者のぞうは{nl}この世の物とも思えない{nl}おマヌケさだった・・・{wait}人々は勇者を見て{nl}わらっている・・・{page}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをうしなった。{end}	
 e237.0DD6	b237+DD6:45	勇者の旅は長くつらい・・・{nl}人々にチヤホヤされてちゃ{nl}気がゆるんじゃうよ！{end}	
-e238.0030	b238+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	
-e238.00BA	b238+BA:11	出前道具屋{end}	
+e238.0030	b238+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some big luggage...?{end}
+e238.00BA	b238+BA:11	出前道具屋{end}	Traveling Item Shop{end}
 e238.00C6	b238+C6:61	{sfx:01}はろはろ、勇者様！{nl}ピココショップ、{nl}しゅっちょう道具屋でしゅ〜♪{page}今日のごようは何かしら〜♪{sfx:FE}{end}	
 e238.0104	b238+104:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	
 e238.0118	b238+118:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	
@@ -536,8 +536,8 @@ e238.0189	b238+189:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}
 e238.0197	b238+197:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	
 e238.01A5	b238+1A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	
 e238.01B6	b238+1B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	
-e238.01F5	b238+1F5:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	
-e238.0280	b238+280:11	出前武器屋{end}	
+e238.01F5	b238+1F5:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
+e238.0280	b238+280:11	出前武器屋{end}	Traveling Weapon Shop{end}
 e238.028C	b238+28C:37	{sfx:01}まいどぉ！{nl}ピココショップ、{nl}しゅっちょう武器屋でっしゅ！{sfx:FE}{end}	
 e238.02B2	b238+2B2:19	{sfx:01}ほかに何かごいりようでし？{sfx:FE}{end}	
 e238.02C6	b238+2C6:15	{sfx:01}何をおもとめでし？{sfx:FE}{end}	
@@ -563,8 +563,8 @@ e238.04E9	b238+4E9:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}
 e238.04FC	b238+4FC:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	
 e238.0514	b238+514:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	
 e238.0534	b238+534:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	
-e239.0030	b239+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	
-e239.00BA	b239+BA:11	出前道具屋{end}	
+e239.0030	b239+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some big luggage...?{end}
+e239.00BA	b239+BA:11	出前道具屋{end}	Traveling Item Shop{end}
 e239.00C6	b239+C6:40	{sfx:01}勇者様、{nl}がんばてるっしゅか〜？{nl}ピココショップとくべつ店〜！{sfx:FE}{end}	
 e239.00EF	b239+EF:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	
 e239.0103	b239+103:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	
@@ -576,8 +576,8 @@ e239.0174	b239+174:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}
 e239.0182	b239+182:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	
 e239.0190	b239+190:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	
 e239.01A1	b239+1A1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	
-e239.01E0	b239+1E0:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	
-e239.026B	b239+26B:11	出前武器屋{end}	
+e239.01E0	b239+1E0:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
+e239.026B	b239+26B:11	出前武器屋{end}	Traveling Weapon Shop{end}
 e239.0277	b239+277:40	{sfx:01}勇者様、{nl}がんばてるっしゅか〜？{nl}ピココショップとくべつ店〜！{sfx:FE}{end}	
 e239.02A0	b239+2A0:19	{sfx:01}ほかに何かごいりようでし？{sfx:FE}{end}	
 e239.02B4	b239+2B4:15	{sfx:01}何をおもとめでし？{sfx:FE}{end}	
