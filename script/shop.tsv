@@ -23,7 +23,7 @@ s212.0453	b212+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s212.0464	b212+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s212.0473	b212+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s212.04C4	b212+4C4:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s212.04CE	b212+4CE:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s212.04CE	b212+4CE:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s212.0504	b212+504:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s212.0518	b212+518:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s212.0528	b212+528:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -33,9 +33,9 @@ s212.0577	b212+577:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s212.0589	b212+589:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s212.0597	b212+597:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s212.05A5	b212+5A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s212.05B6	b212+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s212.05B6	b212+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s212.05E0	b212+5E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s212.05E9	b212+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s212.05E9	b212+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s212.061C	b212+61C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s212.0633	b212+633:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s212.064A	b212+64A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -110,7 +110,7 @@ s213.0457	b213+457:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s213.0468	b213+468:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s213.0477	b213+477:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s213.04CB	b213+4CB:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s213.04D5	b213+4D5:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s213.04D5	b213+4D5:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s213.050B	b213+50B:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s213.051F	b213+51F:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s213.052F	b213+52F:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -120,9 +120,9 @@ s213.057E	b213+57E:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s213.0590	b213+590:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s213.059E	b213+59E:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s213.05AC	b213+5AC:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s213.05BD	b213+5BD:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s213.05BD	b213+5BD:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s213.05E7	b213+5E7:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s213.05F0	b213+5F0:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s213.05F0	b213+5F0:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s213.0623	b213+623:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s213.063A	b213+63A:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s213.0651	b213+651:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -145,7 +145,7 @@ s213.085C	b213+85C:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s213.0887	b213+887:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s213.08A6	b213+8A6:132	ウシャクのピラミッド{nl}ファラオのピラミッド{nl}なげきのピラミッド {nl}キトのピラミッド  {nl}カドのピラミッド  {nl}アクラのピラミッド {nl}ラーマのピラミッド {nl}ノズーのピラミッド {nl}テイルのピラミッド {nl}トメアスのピラミッド{nl}シ・ハのピラミッド {nl}ハビスのピラミッド {nl}	Ushak Pyramid{nl}Pharaoh Pyramid{nl}Pyramid of Sorrow{nl}Kito Pyramid{nl}Kado Pyramid{nl}Akura Pyramid{nl}Rama Pyramid{nl}Nozu Pyramid{nl}Teil Pyramid{nl}Tomeas Pyramid{nl}Shi-Ha Pyramid{nl}Habis Pyramid{nl}
 s213.0966	b213+966:8	やまあいの街{end}	Valley Town{end}
-s213.096F	b213+96F:26	サンドゴーレム  LV4{nl}ダリオロス    LV6{end}	Sand Golem  LV4{nl}Dariolos  LV6{end}
+s213.096F	b213+96F:26	サンドゴーレム  LV4{nl}ダリオロス    LV6{end}	Sand Golem  LV4{nl}Darioros  LV6{end}
 s213.098F	b213+98F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero,{nl}you have saved {sub:0000}{nl}from the hands of the monsters,{nl}and we thank you!{page}Everyone in town is{nl}grateful to you!{sfx:FE}{end}
 s213.09D1	b213+9D1:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s213.09E0	b213+9E0:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way...{nl}shall I trade Shillings{nl}and NVP for you, eh?{sfx:FE}{end}
@@ -197,7 +197,7 @@ s214.0453	b214+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s214.0464	b214+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s214.0473	b214+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s214.04C7	b214+4C7:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s214.04D1	b214+4D1:52	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}きょうのごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}Pikoko Shop Item Corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s214.04D1	b214+4D1:52	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}きょうのごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}Pikoko Shop Item Corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s214.0506	b214+506:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s214.051A	b214+51A:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s214.052A	b214+52A:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -207,9 +207,9 @@ s214.0579	b214+579:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s214.058B	b214+58B:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s214.0599	b214+599:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s214.05A7	b214+5A7:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s214.05B8	b214+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s214.05B8	b214+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s214.05E2	b214+5E2:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s214.05EB	b214+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s214.05EB	b214+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s214.061E	b214+61E:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s214.0635	b214+635:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s214.064C	b214+64C:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -284,7 +284,7 @@ s215.0433	b215+433:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s215.0444	b215+444:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s215.0453	b215+453:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s215.04A7	b215+4A7:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s215.04B1	b215+4B1:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s215.04B1	b215+4B1:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s215.04E7	b215+4E7:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s215.04FB	b215+4FB:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s215.050B	b215+50B:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -294,9 +294,9 @@ s215.055A	b215+55A:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s215.056C	b215+56C:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s215.057A	b215+57A:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s215.0588	b215+588:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s215.0599	b215+599:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s215.0599	b215+599:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s215.05C3	b215+5C3:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s215.05CC	b215+5CC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s215.05CC	b215+5CC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s215.05FF	b215+5FF:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s215.0616	b215+616:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s215.062D	b215+62D:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -370,7 +370,7 @@ s216.049A	b216+49A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s216.04AB	b216+4AB:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s216.04BA	b216+4BA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s216.050E	b216+50E:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s216.0518	b216+518:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s216.0518	b216+518:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s216.054E	b216+54E:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s216.0562	b216+562:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s216.0572	b216+572:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -380,9 +380,9 @@ s216.05C1	b216+5C1:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s216.05D3	b216+5D3:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s216.05E1	b216+5E1:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s216.05EF	b216+5EF:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s216.0600	b216+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s216.0600	b216+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s216.062A	b216+62A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s216.0633	b216+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s216.0633	b216+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s216.0666	b216+666:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s216.067D	b216+67D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s216.0694	b216+694:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -429,7 +429,7 @@ s216.0C9E	b216+C9E:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14
 s216.0D00	b216+D00:14	キングサラマンダ LV14{end}	King Salamander  LV14{end}
 s216.0D1C	b216+D1C:14	ヘルドラゴン   LV14{end}	Hell Dragon  LV14{end}
 s216.0D38	b216+D38:14	グニングル    LV14{end}	Guningle  LV14{end}
-s216.0D54	b216+D54:27	オスロー     LV14{nl}バッカニア    LV7{end}	Oslow  LV14{nl}Buccaneer  LV7{end}
+s216.0D54	b216+D54:27	オスロー     LV14{nl}バッカニア    LV7{end}	Oslo  LV14{nl}Buccaneer  LV7{end}
 s216.0D7D	b216+D7D:14	キングサーペント LV14{end}	King Serpent  LV14{end}
 s217.01E2	b217+1E2:8	ピココショップ{end}	Pikoko Shop{end}
 s217.01EB	b217+1EB:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop{nl}you like, pleash!{sfx:FE}{nl} {color:08}[E0]{color:0F} Button: Select{nl} {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -455,7 +455,7 @@ s217.0451	b217+451:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s217.0462	b217+462:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s217.0471	b217+471:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s217.04C6	b217+4C6:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s217.04D0	b217+4D0:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s217.04D0	b217+4D0:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s217.0506	b217+506:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s217.051A	b217+51A:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s217.052A	b217+52A:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -465,9 +465,9 @@ s217.0579	b217+579:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s217.058B	b217+58B:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s217.0599	b217+599:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s217.05A7	b217+5A7:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s217.05B8	b217+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s217.05B8	b217+5B8:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s217.05E2	b217+5E2:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s217.05EB	b217+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s217.05EB	b217+5EB:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s217.061E	b217+61E:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s217.0635	b217+635:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s217.064C	b217+64C:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -542,7 +542,7 @@ s218.0455	b218+455:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s218.0466	b218+466:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s218.0475	b218+475:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s218.04CA	b218+4CA:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s218.04D4	b218+4D4:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s218.04D4	b218+4D4:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s218.050A	b218+50A:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s218.051E	b218+51E:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s218.052E	b218+52E:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -552,9 +552,9 @@ s218.057D	b218+57D:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s218.058F	b218+58F:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s218.059D	b218+59D:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s218.05AB	b218+5AB:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s218.05BC	b218+5BC:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s218.05BC	b218+5BC:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s218.05E6	b218+5E6:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s218.05EF	b218+5EF:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s218.05EF	b218+5EF:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s218.0622	b218+622:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s218.0639	b218+639:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s218.0650	b218+650:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -629,7 +629,7 @@ s219.0453	b219+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s219.0464	b219+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s219.0473	b219+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s219.04C4	b219+4C4:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s219.04CE	b219+4CE:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s219.04CE	b219+4CE:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s219.0504	b219+504:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s219.0518	b219+518:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s219.0528	b219+528:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -639,9 +639,9 @@ s219.0577	b219+577:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s219.0589	b219+589:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s219.0597	b219+597:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s219.05A5	b219+5A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s219.05B6	b219+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s219.05B6	b219+5B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s219.05E0	b219+5E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s219.05E9	b219+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s219.05E9	b219+5E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s219.061C	b219+61C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s219.0633	b219+633:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s219.064A	b219+64A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -719,7 +719,7 @@ s220.0341	b220+341:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s220.0352	b220+352:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s220.0361	b220+361:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s220.0388	b220+388:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s220.0392	b220+392:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s220.0392	b220+392:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s220.03C8	b220+3C8:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s220.03DC	b220+3DC:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s220.03EC	b220+3EC:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -729,9 +729,9 @@ s220.043B	b220+43B:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s220.044D	b220+44D:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s220.045B	b220+45B:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s220.0469	b220+469:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s220.047A	b220+47A:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s220.047A	b220+47A:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s220.0496	b220+496:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s220.049F	b220+49F:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s220.049F	b220+49F:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s220.04D2	b220+4D2:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s220.04E9	b220+4E9:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s220.0500	b220+500:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -766,7 +766,7 @@ s221.0324	b221+324:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s221.0335	b221+335:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s221.0344	b221+344:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s221.036C	b221+36C:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s221.0376	b221+376:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s221.0376	b221+376:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s221.03AC	b221+3AC:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s221.03C0	b221+3C0:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s221.03D0	b221+3D0:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -776,9 +776,9 @@ s221.041F	b221+41F:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s221.0431	b221+431:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s221.043F	b221+43F:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s221.044D	b221+44D:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s221.045E	b221+45E:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s221.045E	b221+45E:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s221.047A	b221+47A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s221.0483	b221+483:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s221.0483	b221+483:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s221.04B6	b221+4B6:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s221.04CD	b221+4CD:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s221.04E4	b221+4E4:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -813,7 +813,7 @@ s222.02F8	b222+2F8:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s222.0309	b222+309:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s222.0318	b222+318:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s222.0340	b222+340:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s222.034A	b222+34A:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s222.034A	b222+34A:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s222.0380	b222+380:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s222.0394	b222+394:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s222.03A4	b222+3A4:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -823,9 +823,9 @@ s222.03F3	b222+3F3:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s222.0405	b222+405:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s222.0413	b222+413:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s222.0421	b222+421:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s222.0432	b222+432:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s222.0432	b222+432:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s222.044E	b222+44E:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s222.0457	b222+457:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s222.0457	b222+457:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s222.048A	b222+48A:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s222.04A1	b222+4A1:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s222.04B8	b222+4B8:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -860,7 +860,7 @@ s223.0374	b223+374:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s223.0385	b223+385:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s223.0394	b223+394:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s223.03BC	b223+3BC:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s223.03C6	b223+3C6:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s223.03C6	b223+3C6:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s223.03FC	b223+3FC:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s223.0410	b223+410:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s223.0420	b223+420:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -870,9 +870,9 @@ s223.046F	b223+46F:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s223.0481	b223+481:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s223.048F	b223+48F:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s223.049D	b223+49D:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s223.04AE	b223+4AE:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s223.04AE	b223+4AE:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s223.04CA	b223+4CA:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s223.04D3	b223+4D3:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s223.04D3	b223+4D3:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s223.0506	b223+506:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s223.051D	b223+51D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s223.0534	b223+534:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -909,7 +909,7 @@ s224.038A	b224+38A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s224.039B	b224+39B:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s224.03AA	b224+3AA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s224.03D2	b224+3D2:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s224.03DC	b224+3DC:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s224.03DC	b224+3DC:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s224.0412	b224+412:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s224.0426	b224+426:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s224.0436	b224+436:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -919,9 +919,9 @@ s224.0485	b224+485:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s224.0497	b224+497:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s224.04A5	b224+4A5:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s224.04B3	b224+4B3:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s224.04C4	b224+4C4:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s224.04C4	b224+4C4:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s224.04E0	b224+4E0:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s224.04E9	b224+4E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s224.04E9	b224+4E9:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s224.051C	b224+51C:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s224.0533	b224+533:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s224.054A	b224+54A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -953,7 +953,7 @@ s225.046B	b225+46B:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s225.047C	b225+47C:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s225.048B	b225+48B:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s225.04DF	b225+4DF:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s225.04E9	b225+4E9:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s225.04E9	b225+4E9:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s225.051F	b225+51F:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s225.0533	b225+533:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s225.0543	b225+543:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -963,9 +963,9 @@ s225.0592	b225+592:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s225.05A4	b225+5A4:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s225.05B2	b225+5B2:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s225.05C0	b225+5C0:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s225.05D1	b225+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s225.05D1	b225+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s225.05F6	b225+5F6:13	{color:85}4テAオーブコ〜ナ〜{end}	{color:85}Orb Corneeer~{end}
-s225.0604	b225+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s225.0604	b225+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s225.0637	b225+637:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s225.064E	b225+64E:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s225.0665	b225+665:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -1040,7 +1040,7 @@ s226.0453	b226+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s226.0464	b226+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s226.0473	b226+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s226.04C7	b226+4C7:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s226.04D1	b226+4D1:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s226.04D1	b226+4D1:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s226.0507	b226+507:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s226.051B	b226+51B:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s226.052B	b226+52B:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -1050,9 +1050,9 @@ s226.057A	b226+57A:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s226.058C	b226+58C:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s226.059A	b226+59A:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s226.05A8	b226+5A8:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s226.05B9	b226+5B9:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s226.05B9	b226+5B9:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s226.05E3	b226+5E3:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s226.05EC	b226+5EC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s226.05EC	b226+5EC:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s226.061F	b226+61F:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s226.0636	b226+636:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s226.064D	b226+64D:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -1127,7 +1127,7 @@ s227.046B	b227+46B:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s227.047C	b227+47C:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s227.048B	b227+48B:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s227.04DF	b227+4DF:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s227.04E9	b227+4E9:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s227.04E9	b227+4E9:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s227.051F	b227+51F:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s227.0533	b227+533:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s227.0543	b227+543:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -1137,9 +1137,9 @@ s227.0592	b227+592:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s227.05A4	b227+5A4:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s227.05B2	b227+5B2:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s227.05C0	b227+5C0:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s227.05D1	b227+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s227.05D1	b227+5D1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s227.05F6	b227+5F6:13	{color:85}4テKオーブコ〜ナ〜{end}	{color:85}Orb Corneeer~{end}
-s227.0604	b227+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s227.0604	b227+604:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s227.0637	b227+637:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s227.064E	b227+64E:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s227.0665	b227+665:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -1213,7 +1213,7 @@ s228.049A	b228+49A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 s228.04AB	b228+4AB:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s228.04BA	b228+4BA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 s228.050E	b228+50E:9	道具コ〜ナ〜{end}	Item Cornerrr~{end}
-s228.0518	b228+518:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Sir Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
+s228.0518	b228+518:53	{sfx:01}はろはろ、勇者様！{nl}ピココショップ道具屋コーナー♪{nl}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero!{nl}It's the Pikoko Shop item corner~[D0]{nl}What can I do for you todaaay~[D0]{sfx:FE}{end}
 s228.054E	b228+54E:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 s228.0562	b228+562:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
 s228.0572	b228+572:16	{sfx:01}売りものはどちら〜♪{sfx:FE}{end}	{sfx:01}Which will you seeell~[D0]{sfx:FE}{end}
@@ -1223,9 +1223,9 @@ s228.05C1	b228+5C1:17	{sfx:01}{color:08}{sub:0000}{color:0F}シリング、{sfx:
 s228.05D3	b228+5D3:13	{sfx:01}お金な〜い〜♪{sfx:FE}{end}	{sfx:01}No mooooney~[D0]{sfx:FE}{end}
 s228.05E1	b228+5E1:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to youuu~[D0]{sfx:FE}{end}
 s228.05EF	b228+5EF:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
-s228.0600	b228+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Sir Hero~[D0]{sfx:FE}{end}
+s228.0600	b228+600:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Fare thee well, Hero~[D0]{sfx:FE}{end}
 s228.062A	b228+62A:8	オーブコ〜ナ〜{end}	Orb Cornerrr~{end}
-s228.0633	b228+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Sir Hero-sh...{sfx:FE}{end}
+s228.0633	b228+633:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's blessings become{nl}Orbs, and they'll help you{nl}on your journey, Hero-sh...{sfx:FE}{end}
 s228.0666	b228+666:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 s228.067D	b228+67D:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin{nl}Ratar's slot-sh?{sfx:FE}{end}
 s228.0694	b228+694:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:01}Spin one more time-sh?{sfx:FE}{end}
@@ -1272,5 +1272,5 @@ s228.0BF0	b228+BF0:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14
 s228.0C52	b228+C52:14	キングサラマンダ LV14{end}	King Salamander  LV14{end}
 s228.0C6E	b228+C6E:14	ヘルドラゴン   LV14{end}	Hell Dragon  LV14{end}
 s228.0C8A	b228+C8A:14	グニングル    LV14{end}	Guningle  LV14{end}
-s228.0CA6	b228+CA6:28	ジェネラル    LV13{nl}オスロー     LV14{end}	General  LV13{nl}Oslow  LV14{end}
+s228.0CA6	b228+CA6:28	ジェネラル    LV13{nl}オスロー     LV14{end}	General  LV13{nl}Oslo  LV14{end}
 s228.0CD0	b228+CD0:14	キングサーペント LV14{end}	King Serpent  LV14{end}

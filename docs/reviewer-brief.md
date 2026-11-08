@@ -12,8 +12,8 @@ controller saves it.
 ## This game
 - Codes: `{nl}` line break, `{page}`/`{wait}` button prompts, `{sub:XXXX}` text the game inserts (a name, number or price),
   `[CB]` heart, `[D0]` note, `{color:..}{sfx:..}` effects. The JP writes 倒す as 例す and 成績 as 成続 (table quirk).
-- Rulings: honorifics on personal names only; 勇者さん/様/殿 are "Hero"/"Sir Hero"/"noble Hero" (D9); the hero can be either
-  sex, so "he"/"she" for the hero is an Important issue; "Lose 1 turn" for 1回やすみ.
+- Rulings: honorifics on personal names only; 勇者さん/様/殿 are "Hero"/"Hero"/"noble Hero" (D9, D11); the hero can be either
+  sex, so "he"/"she"/"Sir" for the hero is an Important issue; "Lose 1 turn" for 1回やすみ.
 - Board-game RPG for kids: playful, short; rows are often pieces of one box, read them together.
 
 ## Judge

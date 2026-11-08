@@ -4,7 +4,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 `tools/batches.py check` fails a line whose JP holds a term below while its English lacks the term's EN (any of the `/` forms).
 
 ## Rulings (asked of the user once; options and reasons in docs/decisions.md)
-- Honorifics (D1, D9): kept on personal names, hyphenated: Ratar-sama, Sylphy-chan, Tira-san. On a title or a common noun they become English: 勇者さん / 勇者様 / 勇者殿 -> "Hero" / "Sir Hero" / "noble Hero" by the speaker's register, 王様 -> "the King" / "Your Majesty". Name order: Western (given name first).
+- Honorifics (D1, D9): kept on personal names, hyphenated: Ratar-sama, Sylphy-chan, Tira-san. On a title or a common noun they become English: 勇者さん / 勇者様 / 勇者殿 -> "Hero" / "Hero" / "noble Hero" by the speaker's register (D11: never "Sir Hero", the hero may be female; carry 様's deference in the phrasing), 王様 -> "the King" / "Your Majesty". Name order: Western (given name first).
 - Romanisation (D2): no official English names exist; katakana loanwords take their English source (ゴーレム Golem, シリング Shilling), invented names Hepburn without macrons unless a row below says otherwise.
 - Credits (D3): English. Abbreviations (D4): none; full names and terms, engine work before cuts.
 - Register / flavour: light, jokey board-game RPG for kids; keep verbal tics (ニャ, ワン, っしゅ, なのだ) as English tics, never flatten them.
@@ -56,6 +56,36 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ゴーゴン | Gorgon | | | |
 | ミノタウロス | Minotaur | | | |
 | ケルベロス | Cerberus | | | |
+| バルバル | Barbar | | recruit | Barbal |
+| ドラーラ | Drara | | recruit | |
+| ラスター | Luster | | recruit | |
+| ルドルフ | Rudolf | | recruit | |
+| ユージー | Yuji | | recruit | |
+| ベイオルフ | Beowulf | | recruit | |
+| ペルセス | Perseus | | | |
+| イリス | Iris | | | |
+| マリー | Marie | | | |
+| 長老 | Elder | | | |
+
+## Foes and groups
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| 魔王 | Demon Lord | | Zagan's title; case by sentence position | |
+| 4天王 | Big Four | | Zagan's four generals | Four Heavenly Kings |
+| 闇の騎士団 | Dark Knights | | | Knights of Darkness |
+| しんえい騎士団 | Royal Guard | | ザガンしんえい騎士団 Zagan's Royal Guard | Royal Knights |
+| いにしえの魔物 | Ancient Fiend | | | |
+| ダリオロス | Darioros | | | Dariolos |
+| オスロー | Oslo | | オスローのつえ Oslo Staff | Oslow |
+| ミノスガーダー | Minos Guard | | | Minos Guarder |
+| ウィングガーダー | Wing Guard | | | Wing Guarder |
+| グニングル | Guningle | | | Gningle / Gningul |
+| ケルベニアン | Kerbenian | | | Cerbenian |
+| グロス | Gros | | | |
+| ゲルドナ | Geldona | | | |
+| グルフレグ | Grufreg | | | Gulfreg |
+| ビザーレ | Bizarre | | ビザーレはくしゃく Count Bizarre | |
+| ディープブル | Deep Bull | | | |
 
 ## Races
 | JP | EN | max | notes | Avoid |
@@ -89,6 +119,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | アストロン | Astron | | アストロン神殿 Temple of Astron | |
 | アステア | Astea | | | |
 | ハーディス | Hardis | | | |
+| ふういんの洞窟 | Sealed Cave | | | |
+| ワープゾーン | Warp Zone | | | |
+| ブリキランド | Tinland | | | |
 
 ## Items / systems / terms
 | JP | EN | max | notes | Avoid |
@@ -107,6 +140,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 防御力 | Defense | | stat | |
 | クリスタル | crystal | | | |
 | ハニワ | Haniwa | | | |
+| おうけのたて | Royal Shield | | as in name_equip | |
+| けっとうオーブ | Duel Orb | | | |
+| サラリーオーブ | Salary Orb | | | |
+| バイバイオーブ | Bye-Bye Orb | | | |
+| ワープオーブ | Warp Orb | | | |
 
 ## Decisions from earlier batches
 - (none yet)

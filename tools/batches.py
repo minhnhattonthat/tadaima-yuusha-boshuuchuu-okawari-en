@@ -4,6 +4,7 @@
     python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English (for check.py)
     python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
     python -X utf8 tools/batches.py fit ID "English"      widths and lines of one row's English, as check sees them
+    python -X utf8 tools/batches.py fix FILE.tsv [--dry]  id<TAB>English rows (review/terms fixes): check, then overwrite
 
 Copied from the skill's assets/batches.py, ADAPTER fitted to script/*.tsv (id, loc, jp, en) and the width gate in
 docs/re/windows.md. Rows with the same JP in one section are one entry (shop.tsv repeats its lines across 17 blocks):
@@ -389,6 +390,15 @@ def main(argv):
         for p in problems(e, args[1], terms):
             print("PROBLEM:", p)
         return 0
+    if cmd == "fix":  # review / terms fixes: FILE of id<TAB>English rows, checked, then merged over the old English
+        first = {i: e["id"] for e in ents.values() for i in e["ids"]}
+        new = {first.get(r[0], r[0]): "\t".join(r[1:]) for r in read_tsv(Path(args[0]))}
+        bad = [f"{i}: {p}: {en!r}" for i, en in new.items() for p in
+               (problems(ents[i], en, terms) if i in ents else ["unknown id"])]
+        print("\n".join(bad) or f"{len(new)} rows OK")
+        if bad:
+            return 1
+        return 0 if "--dry" in args else merge(new, True)
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
     if cmd == "check" and not names:
