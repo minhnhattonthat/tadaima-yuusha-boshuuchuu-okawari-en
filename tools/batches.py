@@ -24,7 +24,8 @@ MAX_ENTRIES = 150
 
 # ---- ADAPTER: this game's text format ----
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")  # control codes and raw bytes; must survive translation
-FREE = {"{nl}", "[F4]", "{cell}", "{page}", "[CB]", "[D0]"}  # layout, and the game's heart / note glyphs; {page} checked separately: never fewer
+GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨": "[E3]", "🅛": "[E4]", "🅡": "[E5]", "♥": "[CB]", "♪": "[D0]"}  # the game's own glyphs, raw bytes in English
+FREE = {"{nl}", "[F4]", "{cell}", "{page}", *GLYPHS.values()}  # layout and glyphs; {page} checked separately: never fewer
 VARIABLE = r"\{sub:[0-9A-F]{4}\}"  # a name the game draws
 HONORIFICS = {}  # D1 keeps honorifics on personal names only (glossary Rulings); a checker can't tell a name from a title
 ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "bio", "desc_item", "desc_equip", "desc_spell",
@@ -171,6 +172,9 @@ def segments(en):
 
 
 def width_problems(entry, en):
+    n = min(cells(loc) for loc in entry["locs"])
+    if n < 3 and len(_font()["tbl"].encode(en)) > n:  # too short for a far code: the English stays in the row's own bytes
+        return [f"row has {n} bytes, too few for a far string: the English must fit in {n} bytes with its {{end}}"]
     f = form(entry)
     if f == "name":
         cap = name_cap(entry)

@@ -41,7 +41,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ニャギー | Nyaggy | | hero: drifter, "he is the wind" | |
 | コジマ | Kojima | | self-styled most beautiful lady thief | |
 | ピココ | Pikoko | | shopkeepers (a cat-like race): ピココショップ Pikoko Shop; speech tics でしゅ/っしゅ/にゃ -> lisp "-sh" and "meow" | |
-| べろりんQ | Berorin Q | | dice-rolling yokai of event squares, なのだ -> "...it is!" | |
+| べろりんQ | Berorin Q | | dice-rolling yokai of event squares, なのだ -> ", yes indeedy!" | |
 | 遠見のつかさ / 遠見のじい | Farseer | | keeper of the far-seeing crystal; 遠見のじい "the old Farseer" | |
 | ポップ | Pop | | | |
 | モンティ | Monty | | | |

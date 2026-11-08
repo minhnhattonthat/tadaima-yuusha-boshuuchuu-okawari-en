@@ -1,231 +1,231 @@
 id	loc	jp	en
-equip001	r00A6EB:8	ムックリン[F4][F4][F4]	
-equip002	r00A6FB:8	ムックリンZ[F4][F4]	
-equip003	r00A70B:8	ムクナール[F4][F4][F4]	
-equip004	r00A71B:8	ムクナリン[F4][F4][F4]	
-equip005	r00A72B:8	ムクナリンVZ[F4]	
-equip006	r00A73B:8	シャッキリン[F4][F4]	
-equip007	r00A74B:8	メラメラドリンク	
-equip008	r00A75B:8	ドッシリドリンク	
-equip009	r00A76B:8	マバシのまきもの	
-equip010	r00A77B:8	ピカラのまきもの	
-equip011	r00A78B:8	アバホのまきもの	
-equip012	r00A79B:8	ギアスのまきもの	
-equip013	r00A7AB:8	ホワワのまきもの	
-equip014	r00A7BB:8	ヘニャのまきもの	
-equip015	r00A7CB:8	グスカのまきもの	
-equip016	r00A7DB:8	モゴモのまきもの	
-equip017	r00A7EB:8	ホルドのまきもの	
-equip018	r00A7FB:8	ブレスレット[F4][F4]	
-equip019	r00A80B:8	カイロ[F4][F4][F4][F4][F4]	
-equip020	r00A81B:8	スノーパウダー[F4]	
-equip021	r00A82B:8	たね[F4][F4][F4][F4][F4][F4]	
-equip022	r00A83B:8	もんしょう[F4][F4][F4]	
-equip023	r00A84B:8	ぼくとう[F4][F4][F4][F4]	
-equip024	r00A85B:8	せいどうのけん[F4]	
-equip025	r00A86B:8	しんちゅうのけん	
-equip026	r00A87B:8	てつのけん[F4][F4][F4]	
-equip027	r00A88B:8	カーボンサーベル	
-equip028	r00A89B:8	ごうきんけん[F4][F4]	
-equip029	r00A8AB:8	こうてつけん[F4][F4]	
-equip030	r00A8BB:8	シルバーサーベル	
-equip031	r00A8CB:8	ナイトソード[F4][F4]	
-equip032	r00A8DB:8	おうごんけん[F4][F4]	
-equip033	r00A8EB:8	プラチナソード[F4]	
-equip034	r00A8FB:8	ヤオヨロズのけん	
-equip035	r00A90B:8	ダイヤのけん[F4][F4]	
-equip036	r00A91B:8	シグマソード[F4][F4]	
-equip037	r00A92B:8	ゼロのけん[F4][F4][F4]	
-equip038	r00A93B:8	ソルジャーソード	
-equip039	r00A94B:8	かまいたちのけん	
-equip040	r00A95B:8	ミラクルソード[F4]	
-equip041	r00A96B:8	ブレイズソード[F4]	
-equip042	r00A97B:8	アステアのつるぎ	
-equip043	r00A98B:8	オニタイジのけん	
-equip044	r00A99B:8	こだいのけん[F4][F4]	
-equip045	r00A9AB:8	ひかりのつるぎ[F4]	
-equip046	r00A9BB:8	デスブリンガー[F4]	
-equip047	r00A9CB:8	ナギナタ[F4][F4][F4][F4]	
-equip048	r00A9DB:8	ほのおのけん[F4][F4]	
-equip049	r00A9EB:8	やみのけん[F4][F4][F4]	
-equip050	r00A9FB:8	ティーンセーバー	
-equip051	r00AA0B:8	ヤマタイソード[F4]	
-equip052	r00AA1B:8	ゆうしゃダンゴ[F4]	
-equip053	r00AA2B:8	みっしょ[F4][F4][F4][F4]	
-equip054	r00AA3B:8	ダールのひとみ[F4]	
-equip055	r00AA4B:8	ヒヨドリのす[F4][F4]	
-equip056	r00AA5B:8	ブロンズアックス	
-equip057	r00AA6B:8	カーボンアックス	
-equip058	r00AA7B:8	ハガネのおの[F4][F4]	
-equip059	r00AA8B:8	ハーンのおの[F4][F4]	
-equip060	r00AA9B:8	ゴールドアックス	
-equip061	r00AAAB:8	プラチナアックス	
-equip062	r00AABB:8	ブラックアックス	
-equip063	r00AACB:8	ドカドカアックス	
-equip064	r00AADB:8	いにしえのおの[F4]	
-equip065	r00AAEB:8	ブロードアックス	
-equip066	r00AAFB:8	なだれいわのおの	
-equip067	r00AB0B:8	キディアックス[F4]	
-equip068	r00AB1B:8	クローバー[F4][F4][F4]	
-equip069	r00AB2B:8	ジャム[F4][F4][F4][F4][F4]	
-equip070	r00AB3B:8	てがみ[F4][F4][F4][F4][F4]	
-equip071	r00AB4B:8	XXXなほん[F4][F4]	
-equip072	r00AB5B:8	クリスタル[F4][F4][F4]	
-equip073	r00AB6B:8	きのやり[F4][F4][F4][F4]	
-equip074	r00AB7B:8	ブロンズランス[F4]	
-equip075	r00AB8B:8	スチールランス[F4]	
-equip076	r00AB9B:8	シーザランス[F4][F4]	
-equip077	r00ABAB:8	こうてつのやり[F4]	
-equip078	r00ABBB:8	ダイアランス[F4][F4]	
-equip079	r00ABCB:8	ネムリのやり[F4][F4]	
-equip080	r00ABDB:8	ゴウケツのやり[F4]	
-equip081	r00ABEB:8	アイススピア[F4][F4]	
-equip082	r00ABFB:8	しにがみのやり[F4]	
-equip083	r00AC0B:8	ひかりのやり[F4][F4]	
-equip084	r00AC1B:8	スカラベ[F4][F4][F4][F4]	
-equip085	r00AC2B:8	ひやけどめ[F4][F4][F4]	
-equip086	r00AC3B:8	モアのたまご[F4][F4]	
-equip087	r00AC4B:8	アイスキャンディ	
-equip088	r00AC5B:8	ブーメラン[F4][F4][F4]	
-equip089	r00AC6B:8	せんばしゅりけん	
-equip090	r00AC7B:8	ストーミーエッジ	
-equip091	r00AC8B:8	シャインカッター	
-equip092	r00AC9B:8	ファルコンブーム	
-equip093	r00ACAB:8	ジェットカッター	
-equip094	r00ACBB:8	ロボブーメラン[F4]	
-equip095	r00ACCB:8	ミニブーメラン[F4]	
-equip096	r00ACDB:8	キッドカッター[F4]	
-equip097	r00ACEB:8	ステルスブーム[F4]	
-equip098	r00ACFB:8	マハラジャ[F4][F4][F4]	
-equip099	r00AD0B:8	パピルスのほん[F4]	
-equip100	r00AD1B:8	バーボン[F4][F4][F4][F4]	
-equip101	r00AD2B:8	ちゆのつえ[F4][F4][F4]	
-equip102	r00AD3B:8	ほのおのつえ[F4][F4]	
-equip103	r00AD4B:8	みずのつえ[F4][F4][F4]	
-equip104	r00AD5B:8	かぜのつえ[F4][F4][F4]	
-equip105	r00AD6B:8	つちのつえ[F4][F4][F4]	
-equip106	r00AD7B:8	やみのつえ[F4][F4][F4]	
-equip107	r00AD8B:8	ひかりのつえ[F4][F4]	
-equip108	r00AD9B:8	チビッコのつえ[F4]	
-equip109	r00ADAB:8	セイレンのつえ[F4]	
-equip110	r00ADBB:8	せいれいのつえ[F4]	
-equip111	r00ADCB:8	ワイズスタッフ[F4]	
-equip112	r00ADDB:8	ささやきのつえ[F4]	
-equip113	r00ADEB:8	オスローのつえ[F4]	
-equip114	r00ADFB:8	フェアリーのつえ	
-equip115	r00AE0B:8	マッドスタッフ[F4]	
-equip116	r00AE1B:8	エルベンスタッフ	
-equip117	r00AE2B:8	ちず[F4][F4][F4][F4][F4][F4]	
-equip118	r00AE3B:8	ホネビラメ[F4][F4][F4]	
-equip119	r00AE4B:8	きゅうけつのしょ	
-equip120	r00AE5B:8	シルフのしょ[F4][F4]	
-equip121	r00AE6B:8	こもりうたのしょ	
-equip122	r00AE7B:8	まもりのしょ[F4][F4]	
-equip123	r00AE8B:8	あんこくのしょ[F4]	
-equip124	r00AE9B:8	ひょうけつのしょ	
-equip125	r00AEAB:8	ちんもくのしょ[F4]	
-equip126	r00AEBB:8	かなしばりのしょ	
-equip127	r00AECB:8	きよめのしょ[F4][F4]	
-equip128	r00AEDB:8	くろまほうのしょ	
-equip129	r00AEEB:8	かえんのしょ[F4][F4]	
-equip130	r00AEFB:8	ディプレスのしょ	
-equip131	r00AF0B:8	ひかりのしょ[F4][F4]	
-equip132	r00AF1B:8	ペルセルクのしょ	
-equip133	r00AF2B:8	ミノスのまきがい	
-equip134	r00AF3B:8	ネズミとり[F4][F4][F4]	
-equip135	r00AF4B:8	けがわ[F4][F4][F4][F4][F4]	
-equip136	r00AF5B:8	ひけんユキムラ[F4]	
-equip137	r00AF6B:8	かわのよろい[F4][F4]	
-equip138	r00AF7B:8	ブリキのよろい[F4]	
-equip139	r00AF8B:8	せいどうのよろい	
-equip140	r00AF9B:8	てつのよろい[F4][F4]	
-equip141	r00AFAB:8	クロムアーマー[F4]	
-equip142	r00AFBB:8	プロテクトX[F4][F4]	
-equip143	r00AFCB:8	メタルアーマー[F4]	
-equip144	r00AFDB:8	ブラックアーマー	
-equip145	r00AFEB:8	プラチナアーマー	
-equip146	r00AFFB:8	ミノアのよろい[F4]	
-equip147	r00B00B:8	バトルコート[F4][F4]	
-equip148	r00B01B:8	ドワーフのよろい	
-equip149	r00B02B:8	ゴーレムのころも	
-equip150	r00B03B:8	キングスアーマー	
-equip151	r00B04B:8	アステアのよろい	
-equip152	r00B05B:8	カイザーアーマー	
-equip153	r00B06B:8	ブラッドアーマー	
-equip154	r00B07B:8	ダークアーマー[F4]	
-equip155	r00B08B:8	カニバルアーマー	
-equip156	r00B09B:8	トンプーアーマー	
-equip157	r00B0AB:8	ラグーンのよろい	
-equip158	r00B0BB:8	ワウラのよろい[F4]	
-equip159	r00B0CB:8	アルザスのよろい	
-equip160	r00B0DB:8	シムルーのツルギ	
-equip161	r00B0EB:8	マタランのツルギ	
-equip162	r00B0FB:8	メシアのリング[F4]	
-equip163	r00B10B:8	マープルリング[F4]	
-equip164	r00B11B:8	マジカルリング[F4]	
-equip165	r00B12B:8	ようせいのゆびわ	
-equip166	r00B13B:8	パワーリング[F4][F4]	
-equip167	r00B14B:8	ブレストサークル	
-equip168	r00B15B:8	てんしのゆびわ[F4]	
-equip169	r00B16B:8	ケモノのゆびわ[F4]	
-equip170	r00B17B:8	アドレナリング[F4]	
-equip171	r00B18B:8	ゴルゴンリング[F4]	
-equip172	r00B19B:8	なないろのゆびわ	
-equip173	r00B1AB:8	シモンのゆびわ[F4]	
-equip174	r00B1BB:8	キバのもんしょう	
-equip175	r00B1CB:8	ミュウのまたたび	
-equip176	r00B1DB:8	えいゆうのけん[F4]	
-equip177	r00B1EB:8	きのたて[F4][F4][F4][F4]	
-equip178	r00B1FB:8	ラウンドシールド	
-equip179	r00B20B:8	クロムのたて[F4][F4]	
-equip180	r00B21B:8	ブラックシールド	
-equip181	r00B22B:8	ナイトシールド[F4]	
-equip182	r00B23B:8	ダイヤのたて[F4][F4]	
-equip183	r00B24B:8	チューカナベ[F4][F4]	
-equip184	r00B25B:8	もんしょうのたて	
-equip185	r00B26B:8	おうけのたて[F4][F4]	
-equip186	r00B27B:8	サエバーシールド	
-equip187	r00B28B:8	リュウホウのタテ	
-equip188	r00B29B:8	チェンのつめ[F4][F4]	
-equip189	r00B2AB:8	イーグルのつめ[F4]	
-equip190	r00B2BB:8	ストマッククロー	
-equip191	r00B2CB:8	ダンディクロー[F4]	
-equip192	r00B2DB:8	スキッドクロー[F4]	
-equip193	r00B2EB:8	ステルスクロー[F4]	
-equip194	r00B2FB:8	アマーニアーマー	
-equip195	r00B30B:8	さきもりのよろい	
-equip196	r00B31B:8	UVアーマー[F4][F4]	
-equip197	r00B32B:8	へいけのよろい[F4]	
-equip198	r00B33B:8	ボンバーアックス	
-equip199	r00B34B:8	アラガミのおの[F4]	
-equip200	r00B35B:8	シークのツメ[F4][F4]	
-equip201	r00B36B:8	コブラクロー[F4][F4]	
-equip202	r00B37B:8	テガタナ[F4][F4][F4][F4]	
-equip203	r00B38B:8	シュリケンカムイ	
-equip204	r00B39B:8	ヘビーランス[F4][F4]	
-equip205	r00B3AB:8	ビーストのやり[F4]	
-equip206	r00B3BB:8	しんぴのつえ[F4][F4]	
-equip207	r00B3CB:8	コスモのつえ[F4][F4]	
-equip208	r00B3DB:8	コアスタッフ[F4][F4]	
-equip209	r00B3EB:8	ハニーシールド[F4]	
-equip210	r00B3FB:8	ハニーのよろい[F4]	
-equip211	r00B40B:8	ハニワンアーマー	
-equip212	r00B41B:8	ハニワガード[F4][F4]	
-equip213	r00B42B:8	ハニワガードEX	
-equip214	r00B43B:8	ハニワンアックス	
-equip215	r00B44B:8	ハニワンテのおの	
-equip216	r00B45B:8	ハニークロー[F4][F4]	
-equip217	r00B46B:8	ハニワブのつめ[F4]	
-equip218	r00B47B:8	ハニーブーメラン	
-equip219	r00B48B:8	ハニワシュリケン	
-equip220	r00B49B:8	ハニーのやり[F4][F4]	
-equip221	r00B4AB:8	ハニワンスピア[F4]	
-equip222	r00B4BB:8	ハニーのつえ[F4][F4]	
-equip223	r00B4CB:8	ハニワンスタッフ	
-equip224	r00B4DB:8	ハニハニのつえ[F4]	
-equip225	r00B4EB:8	ななしのしょ[F4][F4]	
-equip226	r00B4FB:8	ななしのしょ[F4][F4]	
-equip227	r00B50B:8	ななしのしょ[F4][F4]	
-equip228	r00B51B:8	ななしのしょ[F4][F4]	
-equip229	r00B52B:8	ななしのしょ[F4][F4]	
-equip230	r00B53B:8	ハニワティッシュ	
+equip001	r00A6EB:8	ムックリン[F4][F4][F4]	Peppin
+equip002	r00A6FB:8	ムックリンZ[F4][F4]	Peppin Z
+equip003	r00A70B:8	ムクナール[F4][F4][F4]	Pepnal
+equip004	r00A71B:8	ムクナリン[F4][F4][F4]	Pepnalin
+equip005	r00A72B:8	ムクナリンVZ[F4]	Pepnalin VZ
+equip006	r00A73B:8	シャッキリン[F4][F4]	Snappin
+equip007	r00A74B:8	メラメラドリンク	Fire-Up Drink
+equip008	r00A75B:8	ドッシリドリンク	Sturdy Drink
+equip009	r00A76B:8	マバシのまきもの	Ward Scroll
+equip010	r00A77B:8	ピカラのまきもの	Flara Scroll
+equip011	r00A78B:8	アバホのまきもの	Dumdum Scroll
+equip012	r00A79B:8	ギアスのまきもの	Geas Scroll
+equip013	r00A7AB:8	ホワワのまきもの	Wimpy Scroll
+equip014	r00A7BB:8	ヘニャのまきもの	Flopra Scroll
+equip015	r00A7CB:8	グスカのまきもの	Snooze Scroll
+equip016	r00A7DB:8	モゴモのまきもの	Muffle Scroll
+equip017	r00A7EB:8	ホルドのまきもの	Hold Scroll
+equip018	r00A7FB:8	ブレスレット[F4][F4]	Bracelet
+equip019	r00A80B:8	カイロ[F4][F4][F4][F4][F4]	Hand Warmer
+equip020	r00A81B:8	スノーパウダー[F4]	Snow Powder
+equip021	r00A82B:8	たね[F4][F4][F4][F4][F4][F4]	Seed
+equip022	r00A83B:8	もんしょう[F4][F4][F4]	Crest
+equip023	r00A84B:8	ぼくとう[F4][F4][F4][F4]	Wooden Sword
+equip024	r00A85B:8	せいどうのけん[F4]	Bronze Sword
+equip025	r00A86B:8	しんちゅうのけん	Brass Sword
+equip026	r00A87B:8	てつのけん[F4][F4][F4]	Iron Sword
+equip027	r00A88B:8	カーボンサーベル	Carbon Saber
+equip028	r00A89B:8	ごうきんけん[F4][F4]	Alloy Sword
+equip029	r00A8AB:8	こうてつけん[F4][F4]	Steel Sword
+equip030	r00A8BB:8	シルバーサーベル	Silver Saber
+equip031	r00A8CB:8	ナイトソード[F4][F4]	Knight Sword
+equip032	r00A8DB:8	おうごんけん[F4][F4]	Golden Sword
+equip033	r00A8EB:8	プラチナソード[F4]	Platina Sword
+equip034	r00A8FB:8	ヤオヨロズのけん	Myriad Sword
+equip035	r00A90B:8	ダイヤのけん[F4][F4]	Diamond Sword
+equip036	r00A91B:8	シグマソード[F4][F4]	Sigma Sword
+equip037	r00A92B:8	ゼロのけん[F4][F4][F4]	Zero Sword
+equip038	r00A93B:8	ソルジャーソード	Soldier Sword
+equip039	r00A94B:8	かまいたちのけん	Gale Sword
+equip040	r00A95B:8	ミラクルソード[F4]	Miracle Sword
+equip041	r00A96B:8	ブレイズソード[F4]	Blaze Sword
+equip042	r00A97B:8	アステアのつるぎ	Astea Blade
+equip043	r00A98B:8	オニタイジのけん	Oni Slayer
+equip044	r00A99B:8	こだいのけん[F4][F4]	Ancient Sword
+equip045	r00A9AB:8	ひかりのつるぎ[F4]	Light Blade
+equip046	r00A9BB:8	デスブリンガー[F4]	Deathbringer
+equip047	r00A9CB:8	ナギナタ[F4][F4][F4][F4]	Naginata
+equip048	r00A9DB:8	ほのおのけん[F4][F4]	Flame Sword
+equip049	r00A9EB:8	やみのけん[F4][F4][F4]	Dark Sword
+equip050	r00A9FB:8	ティーンセーバー	Teen Saber
+equip051	r00AA0B:8	ヤマタイソード[F4]	Yamatai Sword
+equip052	r00AA1B:8	ゆうしゃダンゴ[F4]	Hero Dumpling
+equip053	r00AA2B:8	みっしょ[F4][F4][F4][F4]	Secret Letter
+equip054	r00AA3B:8	ダールのひとみ[F4]	Eye of Dahl
+equip055	r00AA4B:8	ヒヨドリのす[F4][F4]	Bulbul Nest
+equip056	r00AA5B:8	ブロンズアックス	Bronze Axe
+equip057	r00AA6B:8	カーボンアックス	Carbon Axe
+equip058	r00AA7B:8	ハガネのおの[F4][F4]	Steel Axe
+equip059	r00AA8B:8	ハーンのおの[F4][F4]	Khan's Axe
+equip060	r00AA9B:8	ゴールドアックス	Gold Axe
+equip061	r00AAAB:8	プラチナアックス	Platina Axe
+equip062	r00AABB:8	ブラックアックス	Black Axe
+equip063	r00AACB:8	ドカドカアックス	Wham-Wham Axe
+equip064	r00AADB:8	いにしえのおの[F4]	Olden Axe
+equip065	r00AAEB:8	ブロードアックス	Broad Axe
+equip066	r00AAFB:8	なだれいわのおの	Rockslide Axe
+equip067	r00AB0B:8	キディアックス[F4]	Kiddie Axe
+equip068	r00AB1B:8	クローバー[F4][F4][F4]	Clover
+equip069	r00AB2B:8	ジャム[F4][F4][F4][F4][F4]	Jam
+equip070	r00AB3B:8	てがみ[F4][F4][F4][F4][F4]	Letter
+equip071	r00AB4B:8	XXXなほん[F4][F4]	XXX Book
+equip072	r00AB5B:8	クリスタル[F4][F4][F4]	Crystal
+equip073	r00AB6B:8	きのやり[F4][F4][F4][F4]	Wooden Spear
+equip074	r00AB7B:8	ブロンズランス[F4]	Bronze Lance
+equip075	r00AB8B:8	スチールランス[F4]	Steel Lance
+equip076	r00AB9B:8	シーザランス[F4][F4]	Caesar Lance
+equip077	r00ABAB:8	こうてつのやり[F4]	Steel Spear
+equip078	r00ABBB:8	ダイアランス[F4][F4]	Diamond Lance
+equip079	r00ABCB:8	ネムリのやり[F4][F4]	Slumber Spear
+equip080	r00ABDB:8	ゴウケツのやり[F4]	Valiant Spear
+equip081	r00ABEB:8	アイススピア[F4][F4]	Ice Spear
+equip082	r00ABFB:8	しにがみのやり[F4]	Reaper Spear
+equip083	r00AC0B:8	ひかりのやり[F4][F4]	Light Spear
+equip084	r00AC1B:8	スカラベ[F4][F4][F4][F4]	Scarab
+equip085	r00AC2B:8	ひやけどめ[F4][F4][F4]	Sunscreen
+equip086	r00AC3B:8	モアのたまご[F4][F4]	Moa Egg
+equip087	r00AC4B:8	アイスキャンディ	Popsicle
+equip088	r00AC5B:8	ブーメラン[F4][F4][F4]	Boomerang
+equip089	r00AC6B:8	せんばしゅりけん	1000 Shuriken
+equip090	r00AC7B:8	ストーミーエッジ	Stormy Edge
+equip091	r00AC8B:8	シャインカッター	Shine Cutter
+equip092	r00AC9B:8	ファルコンブーム	Falcon Boom
+equip093	r00ACAB:8	ジェットカッター	Jet Cutter
+equip094	r00ACBB:8	ロボブーメラン[F4]	Roboomerang
+equip095	r00ACCB:8	ミニブーメラン[F4]	Wee Boomerang
+equip096	r00ACDB:8	キッドカッター[F4]	Kid Cutter
+equip097	r00ACEB:8	ステルスブーム[F4]	Stealth Boom
+equip098	r00ACFB:8	マハラジャ[F4][F4][F4]	Maharaja
+equip099	r00AD0B:8	パピルスのほん[F4]	Papyrus Book
+equip100	r00AD1B:8	バーボン[F4][F4][F4][F4]	Bourbon
+equip101	r00AD2B:8	ちゆのつえ[F4][F4][F4]	Healing Staff
+equip102	r00AD3B:8	ほのおのつえ[F4][F4]	Flame Staff
+equip103	r00AD4B:8	みずのつえ[F4][F4][F4]	Water Staff
+equip104	r00AD5B:8	かぜのつえ[F4][F4][F4]	Wind Staff
+equip105	r00AD6B:8	つちのつえ[F4][F4][F4]	Earth Staff
+equip106	r00AD7B:8	やみのつえ[F4][F4][F4]	Dark Staff
+equip107	r00AD8B:8	ひかりのつえ[F4][F4]	Light Staff
+equip108	r00AD9B:8	チビッコのつえ[F4]	Kiddo Staff
+equip109	r00ADAB:8	セイレンのつえ[F4]	Siren Staff
+equip110	r00ADBB:8	せいれいのつえ[F4]	Spirit Staff
+equip111	r00ADCB:8	ワイズスタッフ[F4]	Wise Staff
+equip112	r00ADDB:8	ささやきのつえ[F4]	Whisper Staff
+equip113	r00ADEB:8	オスローのつえ[F4]	Oslo Staff
+equip114	r00ADFB:8	フェアリーのつえ	Fairy Staff
+equip115	r00AE0B:8	マッドスタッフ[F4]	Mad Staff
+equip116	r00AE1B:8	エルベンスタッフ	Elven Staff
+equip117	r00AE2B:8	ちず[F4][F4][F4][F4][F4][F4]	Map
+equip118	r00AE3B:8	ホネビラメ[F4][F4][F4]	Bone Flounder
+equip119	r00AE4B:8	きゅうけつのしょ	Vampire Tome
+equip120	r00AE5B:8	シルフのしょ[F4][F4]	Sylph Tome
+equip121	r00AE6B:8	こもりうたのしょ	Lullaby Tome
+equip122	r00AE7B:8	まもりのしょ[F4][F4]	Guard Tome
+equip123	r00AE8B:8	あんこくのしょ[F4]	Darkness Tome
+equip124	r00AE9B:8	ひょうけつのしょ	Frost Tome
+equip125	r00AEAB:8	ちんもくのしょ[F4]	Silence Tome
+equip126	r00AEBB:8	かなしばりのしょ	Binding Tome
+equip127	r00AECB:8	きよめのしょ[F4][F4]	Purify Tome
+equip128	r00AEDB:8	くろまほうのしょ	Sorcery Tome
+equip129	r00AEEB:8	かえんのしょ[F4][F4]	Inferno Tome
+equip130	r00AEFB:8	ディプレスのしょ	Depress Tome
+equip131	r00AF0B:8	ひかりのしょ[F4][F4]	Light Tome
+equip132	r00AF1B:8	ペルセルクのしょ	Berserk Tome
+equip133	r00AF2B:8	ミノスのまきがい	Minos Conch
+equip134	r00AF3B:8	ネズミとり[F4][F4][F4]	Mousetrap
+equip135	r00AF4B:8	けがわ[F4][F4][F4][F4][F4]	Pelt
+equip136	r00AF5B:8	ひけんユキムラ[F4]	Yukimura
+equip137	r00AF6B:8	かわのよろい[F4][F4]	Leather Armor
+equip138	r00AF7B:8	ブリキのよろい[F4]	Tin Armor
+equip139	r00AF8B:8	せいどうのよろい	Bronze Armor
+equip140	r00AF9B:8	てつのよろい[F4][F4]	Iron Armor
+equip141	r00AFAB:8	クロムアーマー[F4]	Chrome Armor
+equip142	r00AFBB:8	プロテクトX[F4][F4]	Protect X
+equip143	r00AFCB:8	メタルアーマー[F4]	Metal Armor
+equip144	r00AFDB:8	ブラックアーマー	Black Armor
+equip145	r00AFEB:8	プラチナアーマー	Platina Armor
+equip146	r00AFFB:8	ミノアのよろい[F4]	Minoan Armor
+equip147	r00B00B:8	バトルコート[F4][F4]	Battle Coat
+equip148	r00B01B:8	ドワーフのよろい	Dwarf Armor
+equip149	r00B02B:8	ゴーレムのころも	Golem Garb
+equip150	r00B03B:8	キングスアーマー	King's Armor
+equip151	r00B04B:8	アステアのよろい	Astea Armor
+equip152	r00B05B:8	カイザーアーマー	Kaiser Armor
+equip153	r00B06B:8	ブラッドアーマー	Blood Armor
+equip154	r00B07B:8	ダークアーマー[F4]	Dark Armor
+equip155	r00B08B:8	カニバルアーマー	Cannibal Mail
+equip156	r00B09B:8	トンプーアーマー	Tonpu Armor
+equip157	r00B0AB:8	ラグーンのよろい	Lagoon Armor
+equip158	r00B0BB:8	ワウラのよろい[F4]	Waura Armor
+equip159	r00B0CB:8	アルザスのよろい	Alsace Armor
+equip160	r00B0DB:8	シムルーのツルギ	Simru Blade
+equip161	r00B0EB:8	マタランのツルギ	Mataran Blade
+equip162	r00B0FB:8	メシアのリング[F4]	Messiah Ring
+equip163	r00B10B:8	マープルリング[F4]	Marple Ring
+equip164	r00B11B:8	マジカルリング[F4]	Magical Ring
+equip165	r00B12B:8	ようせいのゆびわ	Fairy Ring
+equip166	r00B13B:8	パワーリング[F4][F4]	Power Ring
+equip167	r00B14B:8	ブレストサークル	Bless Circle
+equip168	r00B15B:8	てんしのゆびわ[F4]	Angel Ring
+equip169	r00B16B:8	ケモノのゆびわ[F4]	Beast Ring
+equip170	r00B17B:8	アドレナリング[F4]	Adrenaring
+equip171	r00B18B:8	ゴルゴンリング[F4]	Gorgon Ring
+equip172	r00B19B:8	なないろのゆびわ	Rainbow Ring
+equip173	r00B1AB:8	シモンのゆびわ[F4]	Simon's Ring
+equip174	r00B1BB:8	キバのもんしょう	Fang Crest
+equip175	r00B1CB:8	ミュウのまたたび	Myu's Catnip
+equip176	r00B1DB:8	えいゆうのけん[F4]	Hero's Sword
+equip177	r00B1EB:8	きのたて[F4][F4][F4][F4]	Wooden Shield
+equip178	r00B1FB:8	ラウンドシールド	Round Shield
+equip179	r00B20B:8	クロムのたて[F4][F4]	Chrome Shield
+equip180	r00B21B:8	ブラックシールド	Black Shield
+equip181	r00B22B:8	ナイトシールド[F4]	Knight Shield
+equip182	r00B23B:8	ダイヤのたて[F4][F4]	Diamond Guard
+equip183	r00B24B:8	チューカナベ[F4][F4]	Wok
+equip184	r00B25B:8	もんしょうのたて	Crest Shield
+equip185	r00B26B:8	おうけのたて[F4][F4]	Royal Shield
+equip186	r00B27B:8	サエバーシールド	Saeba Shield
+equip187	r00B28B:8	リュウホウのタテ	Ryuho Shield
+equip188	r00B29B:8	チェンのつめ[F4][F4]	Chen's Claw
+equip189	r00B2AB:8	イーグルのつめ[F4]	Eagle Claw
+equip190	r00B2BB:8	ストマッククロー	Stomach Claw
+equip191	r00B2CB:8	ダンディクロー[F4]	Dandy Claw
+equip192	r00B2DB:8	スキッドクロー[F4]	Skid Claw
+equip193	r00B2EB:8	ステルスクロー[F4]	Stealth Claw
+equip194	r00B2FB:8	アマーニアーマー	Armani Armor
+equip195	r00B30B:8	さきもりのよろい	Sentry Armor
+equip196	r00B31B:8	UVアーマー[F4][F4]	UV Armor
+equip197	r00B32B:8	へいけのよろい[F4]	Heike Armor
+equip198	r00B33B:8	ボンバーアックス	Bomber Axe
+equip199	r00B34B:8	アラガミのおの[F4]	Aragami Axe
+equip200	r00B35B:8	シークのツメ[F4][F4]	Sheikh Claw
+equip201	r00B36B:8	コブラクロー[F4][F4]	Cobra Claw
+equip202	r00B37B:8	テガタナ[F4][F4][F4][F4]	Karate Chop
+equip203	r00B38B:8	シュリケンカムイ	Kamui Stars
+equip204	r00B39B:8	ヘビーランス[F4][F4]	Heavy Lance
+equip205	r00B3AB:8	ビーストのやり[F4]	Beast Spear
+equip206	r00B3BB:8	しんぴのつえ[F4][F4]	Mystic Staff
+equip207	r00B3CB:8	コスモのつえ[F4][F4]	Cosmo Staff
+equip208	r00B3DB:8	コアスタッフ[F4][F4]	Core Staff
+equip209	r00B3EB:8	ハニーシールド[F4]	Honey Shield
+equip210	r00B3FB:8	ハニーのよろい[F4]	Honey Armor
+equip211	r00B40B:8	ハニワンアーマー	Haniwan Armor
+equip212	r00B41B:8	ハニワガード[F4][F4]	Haniguard
+equip213	r00B42B:8	ハニワガードEX	Haniguard EX
+equip214	r00B43B:8	ハニワンアックス	Haniwan Axe
+equip215	r00B44B:8	ハニワンテのおの	Haniwante Axe
+equip216	r00B45B:8	ハニークロー[F4][F4]	Honey Claw
+equip217	r00B46B:8	ハニワブのつめ[F4]	Haniwab Claw
+equip218	r00B47B:8	ハニーブーメラン	Honeyrang
+equip219	r00B48B:8	ハニワシュリケン	Haniwa Star
+equip220	r00B49B:8	ハニーのやり[F4][F4]	Honey Spear
+equip221	r00B4AB:8	ハニワンスピア[F4]	Haniwan Spear
+equip222	r00B4BB:8	ハニーのつえ[F4][F4]	Honey Staff
+equip223	r00B4CB:8	ハニワンスタッフ	Haniwan Staff
+equip224	r00B4DB:8	ハニハニのつえ[F4]	Hani-Hani Rod
+equip225	r00B4EB:8	ななしのしょ[F4][F4]	Nameless Tome
+equip226	r00B4FB:8	ななしのしょ[F4][F4]	Nameless Tome
+equip227	r00B50B:8	ななしのしょ[F4][F4]	Nameless Tome
+equip228	r00B51B:8	ななしのしょ[F4][F4]	Nameless Tome
+equip229	r00B52B:8	ななしのしょ[F4][F4]	Nameless Tome
+equip230	r00B53B:8	ハニワティッシュ	Haniwa Tissue
