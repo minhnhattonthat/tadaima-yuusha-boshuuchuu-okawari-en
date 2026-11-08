@@ -5,8 +5,9 @@
 Allowed ranges come from the inputs, never from the diff: text row spans (raw `r` rows and label rects), the name-entry
 grid tables, the LZ block slots (repack.py), the bytes asm/vwf.asm assembles (asar run on blank 0x00 and 0xFF images),
 and the expanded banks $20-$3F. Writes build/ranges.txt (one range + reason a line) and runs romdiff.check on it.
-shortcut: ranges only, no per-write log (romdiff --writes); overlapping rows are caught by tests/test_extract.py instead.
-Add the log if a write ever lands on the wrong original bytes.
+shortcut: ranges only, no per-write log (romdiff --writes); overlapping rows are caught by tests/test_extract.py, and the
+expanded banks' layout by asserts (insert.Far.number, insert.images, ranges() below). Add the log if a write ever lands on
+the wrong original bytes.
 """
 import subprocess
 import sys
@@ -70,7 +71,11 @@ def ranges(rom):
         off = src & 0x3FFFFF
         used = unpack.load(rom, src, size)[1]
         out.append((off, off + (used or size) - 1, f"block {i}"))
-    out += [(lo, hi, "asm/vwf.asm") for lo, hi in runs(asm_bytes())]
+    asm = asm_bytes()
+    # expanded banks: asm $E0:0000-7FFF, pointer table $21 and image table $22 lower halves (asserted in insert.Far.number),
+    # far strings upper halves of $21+, name images lower halves of $23+ (insert.images)
+    assert all(i < len(rom) or 0x200000 <= i < 0x208000 for i in asm), "asm/vwf.asm writes past $E0:7FFF in the expanded banks"
+    out += [(lo, hi, "asm/vwf.asm") for lo, hi in runs(asm)]
     out.append((0x00FFDC, 0x00FFDF, "header checksum (build.py)"))
     out.append((len(rom), insert.ROM_SIZE - 1, "expanded banks"))
     return out

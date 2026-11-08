@@ -9,8 +9,9 @@ Far code ends the string: the old text is never read again. A row with no `FF` (
 **Place lists** (`s212.0899`, `s213`-`s219`, `s225`-`s228`: 12 records of 10 bytes + `FE`, no `FF`) get a **call code** per record, `F1 lo hi`:
 the far string, then skip `F4` and go on. `$C2:D4AB` copies 10 bytes of record `n` (`[$7E:800A] + n * 11`) into slot `$1236`, then code-builds
 `FE` 危険度 ★ after it (map town box, `field_map_town`), so an `F0` there dropped the danger line. `$C2:D1F5` copies a record into a `{sub}` slot
-with `FFFF`. Strip and tilemap paths treat `F1` as `F0` (records get name images too). 危険度 is code-built (`LDA #$8CF7` at `$C2:D503`): no row,
-phase 7 patches those immediates or keeps the glyphs. Far numbers skip bytes `F0+`: the tilemap path checks each byte for `F0`/`F1` first.
+with `FFFF`. The tilemap path treats `F1` as `F0` (records get name images too); `strip` follows an `F1` with the rest of the string after the pads
+(a record's `FF FF` ends it). **Code-built text** (`insert.CODE_TEXT`, far numbers 0.. always first; asm patches the immediates to `F1 n 00 F4..`):
+0 "Danger" for 危険度 (`$C2:D503`, map-town box); 1 "Hero " for the shop/inn header 勇者 + name (`$C5:5584`, into `$1236`, drawn by `strip`). Far numbers skip bytes `F0+`: the tilemap path checks each byte for `F0`/`F1` first.
 Stream recompressed in its slot; an edit that outgrows the slot fails the build (only blanking so far, so it can't yet).
 
 ## Codes (`tbl/en.tbl`, generated)
@@ -35,6 +36,8 @@ An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So an
 | `$C21780` | `PLA / STA $00 / CMP..` | glyph draw; old path returns at `$C21783` |
 | `$C21A99` | `LDA +01,x / AND / JSL $80E11C` | `$80E11C(id)` sleeps until `$80E14D(id)`: 1 = frame, 6 = input poll. The two per-letter waits sleep by frame; page prompt and `{pause}` keep id 6 |
 | `$C21AC4` | whole routine | strip renderer |
+| `$C2D504`, `$C2D50A`, `$C2D510` | immediates `F7 8C`, `F7 42`, `F7 C7` (危険度) | `F1 00`, `00 F4`, `F4 F4`: far string 0 |
+| `$C55585`, `$C5558B` | immediates `F7 00`, `F7 01` (勇者) | `F1 01`, `00 F4`: far string 1 |
 
 WRAM `$7F:FE00-FFFF`: in the original, only block 4's load (`7F:E000`, 8 KB, its last 512 bytes zero) writes it, and only the LZ decoder reads it (read watch, `tools/debug/readlog.lua --var PAGE=1`; a DMA at `$80D761` reads `7F:F980-FCxx` in versus, below it). So a screen load can zero our state mid-text: every state byte is clamped or harmless at 0 (`HEAD` falls back to `POOL`).
 

@@ -25,7 +25,7 @@ MAX_ENTRIES = 150
 
 # ---- ADAPTER: this game's text format ----
 TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")  # control codes and raw bytes; must survive translation
-GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨": "[E3]", "🅛": "[E4]", "🅡": "[E5]", "♥": "[CB]", "♪": "[D0]"}  # the game's own glyphs, raw bytes in English
+GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨": "[E3]", "🅛": "[E4]", "🅡": "[E5]", "♥": "[CB]", "♪": "[D0]", "♂": "[D6]", "♀": "[D7]"}  # the game's own glyphs, raw bytes in English
 FREE = {"{nl}", "[F4]", "{cell}", "{page}", *GLYPHS.values()}  # layout and glyphs; {page} checked separately: never fewer
 VARIABLE = r"\{sub:[0-9A-F]{4}\}"  # a name the game draws
 HONORIFICS = {}  # extra JP -> EN honorific forms; empty: honorifics() builds name+suffix from the glossary's katakana names (D1)
@@ -33,8 +33,10 @@ ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "bio
          "story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"]  # names first: they go into the glossary before dialogue; label.tsv is done by hand
 DLG = {"story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"}
 LINES = {"bio", "desc_item", "desc_equip", "desc_spell"}  # tilemap lines, insert.lines_in
-LINE_PX, DLG_PX, PROMPT_PX, ROWS = 80, 240, 224, 3  # 10 small cells; dialogue line; line before {page}/{wait}; unmeasured window
+INSET = 4  # asm/vwf.asm !INSET: a dialogue line starts 4 px in
+LINE_PX, DLG_PX, PROMPT_PX, ROWS = 80, 240 - INSET, 224 - INSET, 3  # 10 small cells; dialogue line; line before {page}/{wait}; unmeasured window
 SUB_PX, CELL_PX = 40, 16  # a {sub} name (5 letters); a [F4] / {cell} / {kanji} glyph
+CELL_SHEETS = {"04B485": (2, 2, 2), "04B492": (2, 2, 1, 1)}  # strip cell sheets read whole (docs/re/vwf.md): 16 px cells per word, {cell} between
 SPEAKER = re.compile(r"^(?:\{[^}]*\})*\{color:[0-9A-F]{2}\}([^{]+)\{color:0F\}\{nl\}")
 _cache = {}
 
@@ -121,6 +123,8 @@ def needs_english(entry):
 
 def form(entry):
     sec = entry["sec"]
+    if entry["id"] in CELL_SHEETS:
+        return "cells"
     if sec in DLG:
         return "choice" if any(i in _font()["choice"] for i in entry["ids"]) else ("menu" if sec == "system" else "dlg")
     return "lines" if sec in LINES else "name"
@@ -153,6 +157,8 @@ def limit_label(entry):
         return f"{LINE_PX}px x{min(3, (cells(entry['locs'][0]) + 1) // 4)}"
     if f == "choice":
         return "112px" if _choice_op(entry) == 0x21 else f"{DLG_PX}px"
+    if f == "cells":
+        return "{cell}-separated: " + " ".join(f"{CELL_PX * (n - 1) + 1}-{CELL_PX * n}px" for n in CELL_SHEETS[entry["id"]])
     return f"{DLG_PX}px x{rows_of(entry)}"
 
 
@@ -189,6 +195,17 @@ def width_problems(entry, en):
         if len(text) > 3 or cost > size - 1:
             out.append(f"{len(text)} lines: room for {min(3, (size + 1) // 4)} (each line costs 3 bytes + 1 between, row has {size})")
         return out
+    if f == "cells":
+        slots = CELL_SHEETS[entry["id"]]
+        items = strip_cells(en)
+        out, at = [], 0
+        for k, n in enumerate(slots):
+            if k >= len(items):
+                out.append(f"slot {k + 1} is empty")
+            elif items[k][1:] != (at, at + n):
+                out.append(f"{items[k][0]!r} fills cells {items[k][1]}-{items[k][2] - 1}, its slot is cells {at}-{at + n - 1}")
+            at += n
+        return out + [f"{s!r} after the last slot" for s, _, _ in items[len(slots):] if s != "[F4]"]
     if f == "choice":
         cap = 112 if _choice_op(entry) == 0x21 else DLG_PX
         w = max(px(s) for s in en.removesuffix("{end}").split("{nl}"))
@@ -203,9 +220,40 @@ def width_problems(entry, en):
             out.append(f"{len(shown)} lines between prompts, window has {rows}: add a {{page}}")
         for j, s in enumerate(lines):
             cap = PROMPT_PX if prompt and j == len(lines) - 1 else DLG_PX
+            if re.match(r"(?:\{(?!sub)[^}]*\})*\[", s):  # a raw glyph opens the line: VWF text starts at column 2, no inset
+                cap += INSET
             if px(s) > cap:
                 out.append(f"line {TOKEN.sub('', s)[:24]!r}.. is {px(s)} px, over {cap}")
     return out
+
+
+def strip_cells(en):
+    """[(item, first cell, cell after it)] as asm/vwf.asm `strip` lays a sheet out: a glyph that brings the pen to 16 px
+    flushes the cell; {cell} flushes the open cell, or adds a blank one if none is open; a raw glyph ([D7]) takes its own
+    cell. A word's slot ends at the {cell} after it, so the blank cell counts toward it."""
+    adv, items, pos, pen = _font()["adv"], [], 0, 0
+    for piece in re.split(r"(\{[^}]*\}|\[[0-9A-F]{2}\])", en):
+        if not piece or piece == "{end}":
+            continue
+        if piece == "{cell}":
+            pos, pen = pos + 1, 0
+            if items:
+                items[-1][2] = pos
+        elif piece.startswith(("[", "{kanji:")):
+            pos, pen = pos + (pen > 0), 0
+            items.append([piece, pos, pos + 1])
+            pos += 1
+        elif not TOKEN.fullmatch(piece):
+            if pen == 0 and (not items or items[-1][2] <= pos):
+                items.append([piece, pos, pos])
+            else:
+                items[-1][0] += piece
+            for c in piece:
+                pen += adv.get(c, 8)
+                if pen >= CELL_PX:
+                    pos, pen = pos + 1, pen - CELL_PX
+            items[-1][2] = pos + (pen > 0)
+    return [tuple(i) for i in items]
 
 
 def stub_problems(entry, en):

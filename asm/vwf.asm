@@ -7,6 +7,7 @@ hirom
 !BUFA   = $FE00         ; bank $7F, free (tools/debug/ramuse.py): 4bpp 16x16 cell the pen is in
 !BUFB   = $FE80         ; the next cell, a glyph spills into it
 !PEN    = $7FFF00       ; px inside the cell, 0-15
+!INSET  = 4             ; dialogue lines start this many px into their first cell
 !WIN    = $7FFF02       ; window record of the open cell
 !POS    = $7FFF04       ; its +6 col, +7 row
 !FG     = $7FFF06       ; colour
@@ -66,6 +67,21 @@ org $C2BD6C
     dw $190E
 org $C2BD72
     dw $000C
+; FE {color:09}危険度{color:07}★★★ after a place record in the map-town box is built from immediates ($C2:D4F7): 危険度 (F7 8C F7 42 F7 C7)
+; becomes F1 00 00 F4 F4 F4, a call to far string 0 (insert.CODE_TEXT, always numbered first), the pads skipped
+org $C2D504
+    dw $00F1
+org $C2D50A
+    dw $F400
+org $C2D510
+    dw $F4F4
+org $C2D535             ; an unlit star: F5 (skip a cell) left a stale VWF tile there; F4 draws the blank glyph
+    db $F4
+; shop/inn header 勇者 + name ($C5:5584, F7 00 F7 01 into $1236, the name at $123A, drawn by strip): F1 01 00 F4, far string 1 "Hero "
+org $C55585
+    dw $01F1
+org $C5558B
+    dw $F400
 
 org $C0FFD7
     db $0C              ; 4 MB
@@ -319,7 +335,14 @@ vwf_char:
     beq .keep
     jsr close_cell
 .fresh:
+    lda.w $0006,x       ; a line's first cell starts !INSET px in, off the window border (tools/batches.py DLG_PX)
+    and.w #$00FF
+    beq +
     lda.w #$0000
+    bra ++
++
+    lda.w #!INSET
+++
     sta.l !PEN
     jsr clear_cells
     bra .draw
@@ -624,8 +647,10 @@ strip_text:
     beq .color
     cmp.w #!FAR
     beq .far
-    cmp.w #!CALL        ; a place record as a strip: the name is all of it
-    beq .far
+    cmp.w #!CALL        ; far string, then skip F4 pads and go on (a place record's FF FF ends it there)
+    bne +
+    jmp .call
++
     cmp.w #$00F7
     bne .glyph
     lda.w $0000,y
@@ -671,7 +696,7 @@ strip_text:
     sta.l !DST
     inc $0A
     ply
-    bra strip_text
+    jmp strip_text
 .color:
     sep #$20
     lda.w $0000,y
@@ -687,6 +712,24 @@ strip_text:
     plb
 .ret:
     rts
+.call:
+    phy
+    lda.w $0000,y
+    jsr far_entry
+    jsr strip_text
+    plb
+    ply
+    iny
+    iny
+.pad:
+    lda.w $0000,y
+    and.w #$00FF
+    cmp.w #$00F4
+    beq +
+    jmp strip_text
++
+    iny
+    bra .pad
 
 ; $C2A63F: 5 cells of label, then 5 of name, read one glyph at a time. Both go through strip so English draws.
 top_name:

@@ -24,6 +24,7 @@ NAMES = ("item", "equip", "spell", "char")  # rows shown through the tilemap pat
 LINES = {"desc_item": 10, "desc_equip": 10, "desc_spell": 10, "bio": 10}  # the same path, a far code per line: section -> cells a line
 CODE = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")
 CODE_NL = re.compile(r"\{nl\}")
+CODE_TEXT = ("Danger", "Hero ")  # text code builds from immediates, far numbers 0.. in this order: asm/vwf.asm patches the immediates to call them
 COST = re.compile(r"／.*")  # spell record: the cost from ／ on stays the game's bytes, so it lines up; the name gets all 5 cells before it, pads included
 
 
@@ -44,6 +45,8 @@ class Far:
         while n & 0xFF >= 0xF0 or n >> 8 >= 0xF0:
             n += 1
         self.count = n + 1
+        # the pointer table (3 bytes) and the image table (4 bytes) keep to the lower half of their bank: far strings start at +8000
+        assert self.count * 4 <= 0x8000, f"far number {n}: the image table at {IMG:06X} would run into the far strings"
         return n
 
     def put(self, n, data):
@@ -75,6 +78,10 @@ def apply(rom, english):
     shop = {r[0] for r in secs["shop"]}
     shown = {}  # far number -> (text, cells) for images()
     extra = []  # (far number, row id) of list records, for far.tsv
+    for k, s in enumerate(CODE_TEXT):
+        assert far.number() == k
+        far.put(k, t.encode(s) + b"\xff")
+        shown[k] = (s, 10)
     for i, loc, jp in rows:
         m = LOC.fullmatch(loc)
         at[(m[1], int(m[2], 16))] = i
@@ -157,10 +164,7 @@ def lines_in(out, far, shown, t, i, loc, jp, en, cells):
     while text and not text[-1] and len(text) > jp.count("{nl}") + 1:
         text.pop()
     cost = lambda ls: sum(3 if s else 0 for s in ls) + len(ls) - 1
-    if cost(text) > size - 1:
-        print(f"{i}: {size} bytes hold fewer than {len(text)} lines")
-        while cost(text) > size - 1:
-            text.pop()
+    assert cost(text) <= size - 1, f"{i}: {size} bytes hold fewer than {len(text)} lines"
     code = bytearray()
     for k, s in enumerate(text):
         if s:

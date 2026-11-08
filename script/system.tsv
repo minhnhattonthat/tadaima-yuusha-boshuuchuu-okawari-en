@@ -137,7 +137,7 @@ id	loc	jp	en
 04B1C1	r04B1C1:56	マルチプレイヤー5が{nl}1コンにセットされています。{nl}2コンの方にセットして{nl}リセットしてくださいネ{color:09}♥{color:0F}{end}	The Multiplayer 5 is plugged{nl}into Controller 1.{nl}Plug it into Controller 2{nl}and reset, okay{color:09}[CB]{color:0F}{end}
 04B1FA	r04B1FA:37	コントローラがちがうみたい。{nl}ただしくつないで{nl}リセットしてネ{color:09}♥{color:0F}{end}	The controllers seem wrong.{nl}Connect them properly{nl}and reset, okay{color:09}[CB]{color:0F}{end}
 04B485	r04B485:13	勇者戦士僧侶{end}	Hero{cell}Knight{cell}Priest{end}
-04B492	r04B492:14	盗賊魔術男女[F4]{end}	Thief{cell}Mage{cell}Male{cell}Female[F4]{end}
+04B492	r04B492:14	盗賊魔術男女[F4]{end}	Thief{cell}Mage{cell}[D6][D7][F4]{end}
 04B8D7	r04B8D7:8	{nl}    はい{end}	{nl}    Yes{end}
 04B8E0	r04B8E0:6	  いいえ{end}	  No{end}
 04C84E	r04C84E:6	HUMAN{end}	HUMAN{end}

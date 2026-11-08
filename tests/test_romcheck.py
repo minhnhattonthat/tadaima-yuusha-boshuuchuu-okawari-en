@@ -6,14 +6,16 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
+import insert  # noqa: E402
 import romcheck  # noqa: E402
 import romdiff  # noqa: E402
 
 ROM = next((ROOT / "rom").glob("*.sfc"), None)
-pytestmark = pytest.mark.skipif(ROM is None or not (ROOT / "build/vwf_font.bin").exists(), reason="no dump or no font build")
+pytestmark = pytest.mark.skipif(ROM is None, reason="no dump")
 
 
 def test_ranges():
+    insert.table()  # writes build/vwf_font.bin, which asm/vwf.asm incbins
     rom = ROM.read_bytes()
     allowed = set()
     for lo, hi, _ in romcheck.ranges(rom):
