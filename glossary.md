@@ -88,6 +88,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | グルフレグ | Grufreg | | | Gulfreg |
 | ビザーレ | Bizarre | | ビザーレはくしゃく Count Bizarre | |
 | ディープブル | Deep Bull | | | |
+| キラースケルトン | Killer Bones | 64px | battle name slot is 8 small cells (`name_foe`) | Killer Skeleton |
+| こだいのせんし | Elder Warrior | 64px | | Ancient Warrior |
+| そうこうへい | Armor Trooper | 64px | | Armored Soldier |
+| さばくのせんし | Sand Warrior | 64px | | Desert Warrior |
+| キングサラマンダ | King Salamander / K. Salamander | | battle box only: "K. Salamander" (last-resort abbreviation, docs/polish.md) | |
 
 ## Races
 | JP | EN | max | notes | Avoid |

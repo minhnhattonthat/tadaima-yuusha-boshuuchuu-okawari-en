@@ -823,7 +823,7 @@ strip_flush:
 
 ; ------ the tilemap path: $C21E93 turns a code into a tile pair, every loop that draws small text calls it per byte. A far code there shows
 ; its name as tiles made at build time: sent into the old kana tiles (a ring, a name stays as long as nothing else draws 95 tiles), and
-; each byte of the string gives the next tile. A = upper row (blank), B = lower row.
+; each byte of the string gives the next tile. A = lower row (the letter), B = upper row (blank).
 small_map:
     cmp.b #!FAR
     beq .far
@@ -915,37 +915,30 @@ small_map:
     bra .pair
 .blank:
     lda.b #$00
-.pair:
-    pha                 ; two callers add a font offset to what we return: take it back
-    rep #$20
-    lda 2,s
-    cmp.w #$1E77
-    beq .sub02
-    cmp.w #$20C4
-    beq .sub0A
-    sep #$20
-    pla
-    bra .done
-.sub02:
-    sep #$20
-    pla
-    sec
-    sbc $02
-    bra .done
-.sub0A:
-    sep #$20
-    pla
-    sec
-    sbc $0A
-.done:
+.pair:                  ; as the game's own exit ($C2209C XBA): A = lower row (the letter), B = upper row ($26, callers add their font offset)
     xba
     lda.b #$26
+    xba
     rtl
 
 ; the loop that stops at FE/FF: a name may run past the old string
 small_end:
     cmp.b #$FE
     bcs +
+    cmp.b #$F4          ; a pad once the row is full (Y - $08 >= width $06): skip it, else its upper-row blank lands on the next line
+    bne .map
+    pha
+    tya
+    sec
+    sbc $08
+    cmp $06
+    pla
+    bcc .map
+    rep #$20
+    inc $00
+    sep #$20
+    jml $C220BB
+.map:
     jml $C220C1
 +
     pha
@@ -956,6 +949,8 @@ small_end:
     jsl small_map
     sta ($04),y
     xba
+    clc
+    adc $0A
     sta ($02),y
     iny
     jml $C220BB

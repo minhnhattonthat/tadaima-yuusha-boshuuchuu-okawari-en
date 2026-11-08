@@ -29,7 +29,7 @@ GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨":
 FREE = {"{nl}", "[F4]", "{cell}", "{page}", *GLYPHS.values()}  # layout and glyphs; {page} checked separately: never fewer
 VARIABLE = r"\{sub:[0-9A-F]{4}\}"  # a name the game draws
 HONORIFICS = {}  # extra JP -> EN honorific forms; empty: honorifics() builds name+suffix from the glossary's katakana names (D1)
-ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "bio", "desc_item", "desc_equip", "desc_spell",
+ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "name_foe", "name_hero", "bio", "desc_item", "desc_equip", "desc_spell",
          "story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"]  # names first: they go into the glossary before dialogue; label.tsv is done by hand
 DLG = {"story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"}
 LINES = {"bio", "desc_item", "desc_equip", "desc_spell"}  # tilemap lines, insert.lines_in

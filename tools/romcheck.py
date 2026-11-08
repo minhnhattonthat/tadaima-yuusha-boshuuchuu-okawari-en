@@ -71,6 +71,7 @@ def ranges(rom):
         off = src & 0x3FFFFF
         used = unpack.load(rom, src, size)[1]
         out.append((off, off + (used or size) - 1, f"block {i}"))
+        out.append((unpack.TABLE + i * 8, unpack.TABLE + i * 8 + 2, f"block {i} src (repack.MOVED)"))
     asm = asm_bytes()
     # expanded banks: asm $E0:0000-7FFF, pointer table $21 and image table $22 lower halves (asserted in insert.Far.number),
     # far strings upper halves of $21+, name images lower halves of $23+ (insert.images)

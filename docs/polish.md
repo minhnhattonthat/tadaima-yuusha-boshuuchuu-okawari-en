@@ -6,6 +6,7 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [ ] rect00A0DA, rect0499DB, rect04B871 - シリング as "Sh": these rects are copied to RAM with numbers patched in (rects.COPIED), 4-5 cells; last-resort abbreviation (D4). Engine fix: widen the copy, or draw the unit from a far rect.
 - [ ] rect04B871 - まいつき as "/mo" (4 cells before the number); rect00A0DA まいつき as "Pay". Same engine fix.
 - [ ] rect04B845 - けいけんち as "EXP" (6 cells): standard RPG term, check it reads well in the status screen.
+- [ ] foe592 - キングサラマンダ as "K. Salamander" in the battle target box (8 small cells, 64 px; "King Salamander" is 71 px). Last-resort abbreviation (D16); the bestiary and place lists keep "King Salamander". Engine fix: a narrower name font, or a 9-cell box.
 
 ## Batch review Minors (2026-11-08, reports in docs/reviews/)
 - [ ] b001 equip033 / equip061 - プラチナ - "Platina" reads like a typo for Platinum; "Platinum Sword" is 66 px (over 64), so keep it, or use "Plat. Sword" if the abbreviation ruling is ever relaxed (it is not now). Platina Armor (equip145) agrees.

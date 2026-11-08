@@ -1,0 +1,140 @@
+id	loc	jp	en
+foe558	b558+46A:8	バスターイーグル	Buster Eagle
+foe559	b559+46A:8	イーグル[F4][F4][F4][F4]	Eagle
+foe560	b560+46A:8	サンドイーグル[F4]	Sand Eagle
+foe561	b561+46A:8	キラーイーグル[F4]	Killer Eagle
+foe562	b562+3C8:8	ウィルダ[F4][F4][F4][F4]	Wilda
+foe563	b563+2B8:8	キャプテン[F4][F4][F4]	Captain
+foe564	b564+2B0:8	バックラー[F4][F4][F4]	Buckler
+foe565	b565+43B:8	キメラ[F4][F4][F4][F4][F4]	Chimera
+foe566	b566+43B:8	アークキメラ[F4][F4]	Arch Chimera
+foe567	b567+43B:8	ブラックキメラ[F4]	Black Chimera
+foe568	b568+43B:8	エビルビースト[F4]	Evil Beast
+foe569	b569+4BC:8	グリフォン[F4][F4][F4]	Griffon
+foe570	b570+4DA:8	ヒポグリフ[F4][F4][F4]	Hippogriff
+foe571	b571+4DA:8	キンググリフォン	King Griffon
+foe572	b572+429:8	ケルベロス[F4][F4][F4]	Cerberus
+foe573	b573+429:8	スノーウルフ[F4][F4]	Snow Wolf
+foe574	b574+429:8	ヘルハウンド[F4][F4]	Hellhound
+foe575	b575+65C:8	スピリット[F4][F4][F4]	Spirit
+foe576	b576+65C:8	ゴースト[F4][F4][F4][F4]	Ghost
+foe577	b577+66E:8	ロストソウル[F4][F4]	Lost Soul
+foe578	b578+680:8	ヘルブレイズ[F4][F4]	Hellblaze
+foe579	b579+680:8	ロードリッチ[F4][F4]	Lord Lich
+foe580	b580+397:8	クレイゴーレム[F4]	Clay Golem
+foe581	b581+376:8	ガーディアン[F4][F4]	Guardian
+foe582	b582+376:8	スチールゴーレム	Steel Golem
+foe583	b583+161:8	ゴブリン[F4][F4][F4][F4]	Goblin
+foe584	b584+161:8	ホブゴブリン[F4][F4]	Hobgoblin
+foe585	b585+161:8	すなゴブリン[F4][F4]	Sand Goblin
+foe586	b586+568:8	さばくのせんし[F4]	Sand Warrior
+foe587	b587+568:8	デザートマン[F4][F4]	Desert Man
+foe588	b588+568:8	シーローグ[F4][F4][F4]	Sea Rogue
+foe589	b589+568:8	バッカニア[F4][F4][F4]	Buccaneer
+foe590	b590+5A3:8	ファイアリザード	Fire Lizard
+foe591	b591+5B8:8	サラマンダ[F4][F4][F4]	Salamander
+foe592	b592+5B8:8	キングサラマンダ	K. Salamander
+foe593	b593+1FC7:8	ザガン[F4][F4][F4][F4][F4]	Zagan
+foe594	b594+3C4:8	デッガー[F4][F4][F4][F4]	Degger
+foe595	b595+3C4:8	グロブ[F4][F4][F4][F4][F4]	Grob
+foe596	b596+3C4:8	サドンデス[F4][F4][F4]	Sudden Death
+foe597	b597+3C4:8	バッカス[F4][F4][F4][F4]	Bacchus
+foe598	b598+3C4:8	グロス[F4][F4][F4][F4][F4]	Gros
+foe599	b599+3C4:8	ジェネラル[F4][F4][F4]	General
+foe600	b600+3C4:8	しれいかん[F4][F4][F4]	Commander
+foe601	b601+AE6:8	ウインガ[F4][F4][F4][F4]	Winga
+foe602	b602+B04:8	ブレイジー[F4][F4][F4]	Blazy
+foe603	b603+B04:8	ジン[F4][F4][F4][F4][F4][F4]	Djinn
+foe604	b604+B04:8	フリーザー[F4][F4][F4]	Freezer
+foe605	b605+B04:8	カザエル[F4][F4][F4][F4]	Kazael
+foe606	b606+925:8	スケルトン[F4][F4][F4]	Skeleton
+foe607	b607+925:8	キラースケルトン	Killer Bones
+foe608	b608+925:8	レッドスカル[F4][F4]	Red Skull
+foe609	b609+925:8	サンドスカル[F4][F4]	Sand Skull
+foe610	b610+925:8	ボーンゴーレム[F4]	Bone Golem
+foe611	b611+925:8	こだいのせんし[F4]	Elder Warrior
+foe612	b612+3A7:8	メレディウス[F4][F4]	Meredius
+foe613	b613+3C8:8	ソーサラー[F4][F4][F4]	Sorcerer
+foe614	b614+401:8	ハイソーサラー[F4]	High Sorcerer
+foe615	b615+3B9:8	ハイソーサラー[F4]	High Sorcerer
+foe616	b616+3B9:8	マスターメイジ[F4]	Master Mage
+foe617	b617+3B9:8	オスロー[F4][F4][F4][F4]	Oslo
+foe618	b618+373:8	タイタニア[F4][F4][F4]	Titania
+foe619	b619+373:8	ロキウス[F4][F4][F4][F4]	Lokius
+foe620	b620+373:8	ギルガン[F4][F4][F4][F4]	Gilgan
+foe621	b621+373:8	ゴルゴス[F4][F4][F4][F4]	Gorgos
+foe622	b622+5BA:8	ダークエルフ[F4][F4]	Dark Elf
+foe623	b623+5E1:8	ハンターエルフ[F4]	Hunter Elf
+foe624	b624+5E1:8	スレッジ[F4][F4][F4][F4]	Sledge
+foe625	b625+5E1:8	アクアエルフ[F4][F4]	Aqua Elf
+foe626	b626+4F8:8	ジャイアント[F4][F4]	Giant
+foe627	b627+4F8:8	ギガンティア[F4][F4]	Gigantia
+foe628	b628+4F8:8	ゴア[F4][F4][F4][F4][F4][F4]	Gore
+foe629	b629+4F8:8	ゾグ[F4][F4][F4][F4][F4][F4]	Zog
+foe630	b630+450:8	デーモン[F4][F4][F4][F4]	Demon
+foe631	b631+450:8	グルップ[F4][F4][F4][F4]	Grupp
+foe632	b632+450:8	ゲルドナ[F4][F4][F4][F4]	Geldona
+foe633	b633+518:8	ディープビースト	Deep Beast
+foe634	b634+518:8	ドラゴン[F4][F4][F4][F4]	Dragon
+foe635	b635+539:8	ヘルドラゴン[F4][F4]	Hell Dragon
+foe636	b636+5D5:8	ビザーレ[F4][F4][F4][F4]	Bizarre
+foe637	b637+5E9:8	リッジモンド[F4][F4]	Ridgemond
+foe638	b638+5E9:8	ノスフェラトゥ[F4]	Nosferatu
+foe639	b639+5E9:8	バンパイアロード	Vampire Lord
+foe640	b640+A2E:8	バシュラグ[F4][F4][F4]	Bashrag
+foe641	b641+A2E:8	グルフレグ[F4][F4][F4]	Grufreg
+foe642	b642+A2E:8	ゴルドラ[F4][F4][F4][F4]	Goldra
+foe643	b643+A2E:8	ガランディア[F4][F4]	Galandia
+foe644	b644+A2E:8	ギグナシュク[F4][F4]	Gignashuk
+foe645	b645+A2E:8	グニングル[F4][F4][F4]	Guningle
+foe646	b646+541:8	カオスヒドラ[F4][F4]	Chaos Hydra
+foe647	b647+541:8	ダークヒドラ[F4][F4]	Dark Hydra
+foe648	b648+541:8	キングサーペント	King Serpent
+foe649	b649+4FD:8	ファイター[F4][F4][F4]	Fighter
+foe650	b650+51E:8	ロイヤルガード[F4]	Royal Guard
+foe651	b651+51E:8	マーシナリー[F4][F4]	Mercenary
+foe652	b652+51E:8	そうこうへい[F4][F4]	Armor Trooper
+foe653	b653+3A7:8	ネクロマンサー[F4]	Necromancer
+foe654	b654+3A7:8	ネクロマンサー[F4]	Necromancer
+foe655	b655+3A7:8	ダリオロス[F4][F4][F4]	Darioros
+foe656	b656+3A7:8	やみつかい[F4][F4][F4]	Shadowcaster
+foe657	b657+3A7:8	だいまどう[F4][F4][F4]	Archmage
+foe658	b658+3A7:8	ダークマジシャン	Dark Magician
+foe659	b659+3F4:8	マンティコア[F4][F4]	Manticore
+foe660	b660+3F4:8	ブラッドビースト	Blood Beast
+foe661	b661+3F4:8	ビシュヌス[F4][F4][F4]	Vishnus
+foe662	b662+34F:8	ミイラおとこ[F4][F4]	Mummy Man
+foe663	b663+34F:8	マミー[F4][F4][F4][F4][F4]	Mummy
+foe664	b664+34F:8	グレートマミー[F4]	Great Mummy
+foe665	b665+34F:8	デスドール[F4][F4][F4]	Death Doll
+foe666	b666+1F5:8	ミノタウロス[F4][F4]	Minotaur
+foe667	b667+1F5:8	ディープブル[F4][F4]	Deep Bull
+foe668	b668+1F5:8	ミノスガーター[F4]	Minos Guard
+foe669	b669+1F5:8	キングブル[F4][F4][F4]	King Bull
+foe670	b670+395:8	メデューサ[F4][F4][F4]	Medusa
+foe671	b671+353:8	ゴーゴン[F4][F4][F4][F4]	Gorgon
+foe672	b672+395:8	ゴーゴンシスター	Gorgon Sister
+foe673	b673+395:8	グレース[F4][F4][F4][F4]	Grace
+foe674	b674+395:8	マスターゴーゴン	Master Gorgon
+foe675	b675+478:8	モンク[F4][F4][F4][F4][F4]	Monk
+foe676	b676+478:8	かくとうか[F4][F4][F4]	Brawler
+foe677	b677+AC5:8	リレイア[F4][F4][F4][F4]	Releia
+foe678	b678+8B9:8	ウルフェン[F4][F4][F4]	Wolfen
+foe679	b679+8B9:8	ソルジャーウルフ	Soldier Wolf
+foe680	b680+7DA:8	ケルベニアン[F4][F4]	Kerbenian
+foe681	b681+83D:8	ワードック[F4][F4][F4]	Wardock
+foe682	b682+556:8	サンドワーム[F4][F4]	Sandworm
+foe683	b683+556:8	シーワーム[F4][F4][F4]	Sea Worm
+foe684	b684+556:8	パープルワーム[F4]	Purple Worm
+foe685	b685+556:8	ワーム[F4][F4][F4][F4][F4]	Worm
+foe686	b686+5FC:8	ワイバーン[F4][F4][F4]	Wyvern
+foe687	b687+65F:8	アイスサーペント	Ice Serpent
+foe688	b688+65F:8	ウイングガーター	Wing Guard
+foe689	b689+82C:8	ビックリばこ[F4][F4]	Jack-in-Box
+foe690	b690+82C:8	ビックリばこ[F4][F4]	Jack-in-Box
+foe691	b691+82C:8	ビックリばこ[F4][F4]	Jack-in-Box
+foe692	b692+82C:8	ビックリばこ[F4][F4]	Jack-in-Box
+foe693	b693+82C:8	ビックリばこ[F4][F4]	Jack-in-Box
+foe694	b694+47D:8	バニー[F4][F4][F4][F4][F4]	Bunny
+foe695	b695+47B:8	スーパーバニー[F4]	Super Bunny
+foe696	b696+355:8	サンドゴーレム[F4]	Sand Golem

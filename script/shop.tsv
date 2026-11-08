@@ -58,7 +58,7 @@ s212.084F	b212+84F:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s212.087A	b212+87A:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s212.0899	b212+899:132	ハニワやまのどうくつ{nl}こうやのどうくつ  {nl}プリムのどうくつ  {nl}そうげんのどうくつ {nl}フルーレのどうくつ {nl}にしのどうくつ   {nl}エペのどうくつ   {nl}アルディアのどうくつ{nl}みさきのどうくつ  {nl}せいなるどうくつ  {nl}マンボウのどうくつ {nl}みなみのどうくつ  {nl}	Haniwa Mountain Cave{nl}Wasteland Cave{nl}Prim Cave{nl}Grassland Cave{nl}Fleuret Cave{nl}West Cave{nl}Epee Cave{nl}Ardia Cave{nl}Cape Cave{nl}Holy Cave{nl}Sunfish Cave{nl}South Cave{nl}
 s212.0959	b212+959:7	プリムタウン{end}	Prim Town{end}
-s212.0961	b212+961:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
+s212.0961	b212+961:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob  LV3{nl}Royal Guard  LV2{end}
 s212.0981	b212+981:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s212.09C3	b212+9C3:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s212.09D2	b212+9D2:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -66,26 +66,26 @@ s212.09F3	b212+9F3:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s212.0A38	b212+A38:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s212.0A48	b212+A48:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s212.0A8C	b212+A8C:8	メルシアの街{end}	Mercia{end}
-s212.0A95	b212+A95:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death LV3 Royal Guard LV2{end}
+s212.0A95	b212+A95:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death  LV3{nl}Royal Guard  LV2{end}
 s212.0AE7	b212+AE7:9	ルフルーレの街{end}	Lefleuret{end}
-s212.0AF1	b212+AF1:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus LV3 Monk LV1{end}
+s212.0AF1	b212+AF1:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus  LV3{nl}Monk  LV1{end}
 s212.0B43	b212+B43:9	アルディアの街{end}	Ardia Town{end}
-s212.0B4D	b212+B4D:26	ゴブリン     LV1{nl}メレディウス   LV3{end}	Goblin LV1 Meredius LV3{end}
+s212.0B4D	b212+B4D:26	ゴブリン     LV1{nl}メレディウス   LV3{end}	Goblin  LV1{nl}Meredius  LV3{end}
 s212.0B9F	b212+B9F:9	グロービアの街{end}	Globia{end}
 s212.0BA9	b212+BA9:13	ケルベニアン   LV3{end}	Kerbenian  LV3{end}
 s212.0BBC	b212+BBC:34	フォートとりで{nl}{color:09}BOSS{color:0F}{nl}魔将軍ウィルダ  LV？？{end}	The Fort stronghold {color:09}BOSS{color:0F}{nl}Demon General Wilda LV??{end}
 s212.0C04	b212+C04:13	ホブゴブリン   LV2{end}	Hobgoblin  LV2{end}
 s212.0C1F	b212+C1F:13	イーグル     LV1{end}	Eagle  LV1{end}
-s212.0C3A	b212+C3A:13	キラースケルトン LV2{end}	Killer Skeleton  LV2{end}
+s212.0C3A	b212+C3A:13	キラースケルトン LV2{end}	Killer Bones  LV2{end}
 s212.0C55	b212+C55:13	ハンターエルフ  LV2{end}	Hunter Elf  LV2{end}
-s212.0C70	b212+C70:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary LV2 Goblin LV1{end}
-s212.0C98	b212+C98:26	そうこうへい   LV1{nl}モンク      LV1{end}	Armored Soldier LV1 Monk LV1{end}
-s212.0CC0	b212+CC0:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger LV2 Fighter LV1{end}
+s212.0C70	b212+C70:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary  LV2{nl}Goblin  LV1{end}
+s212.0C98	b212+C98:26	そうこうへい   LV1{nl}モンク      LV1{end}	Armor Trooper  LV1{nl}Monk  LV1{end}
+s212.0CC0	b212+CC0:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger  LV2{nl}Fighter  LV1{end}
 s212.0CE8	b212+CE8:13	ミイラおとこ   LV2{end}	Mummy Man  LV2{end}
 s212.0D03	b212+D03:13	ミノタウロス   LV2{end}	Minotaur  LV2{end}
 s212.0D1E	b212+D1E:13	クレイゴーレム  LV2{end}	Clay Golem  LV2{end}
 s212.0D39	b212+D39:13	ビザーレ     LV2{end}	Bizarre  LV2{end}
-s212.0D54	b212+D54:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull LV2 Skeleton LV1{end}
+s212.0D54	b212+D54:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull  LV2{nl}Skeleton  LV1{end}
 s213.01EA	b213+1EA:8	ピココショップ{end}	Pikoko Shop{end}
 s213.01F3	b213+1F3:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
 s213.0246	b213+246:59	{sfx:01}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -145,7 +145,7 @@ s213.085C	b213+85C:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s213.0887	b213+887:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s213.08A6	b213+8A6:132	ウシャクのピラミッド{nl}ファラオのピラミッド{nl}なげきのピラミッド {nl}キトのピラミッド  {nl}カドのピラミッド  {nl}アクラのピラミッド {nl}ラーマのピラミッド {nl}ノズーのピラミッド {nl}テイルのピラミッド {nl}トメアスのピラミッド{nl}シ・ハのピラミッド {nl}ハビスのピラミッド {nl}	Ushak Pyramid{nl}Pharaoh Pyramid{nl}Pyramid of Sorrow{nl}Kito Pyramid{nl}Kado Pyramid{nl}Akura Pyramid{nl}Rama Pyramid{nl}Nozu Pyramid{nl}Teil Pyramid{nl}Tomeas Pyramid{nl}Shi-Ha Pyramid{nl}Habis Pyramid{nl}
 s213.0966	b213+966:8	やまあいの街{end}	Valley Town{end}
-s213.096F	b213+96F:26	サンドゴーレム  LV4{nl}ダリオロス    LV6{end}	Sand Golem LV4 Darioros LV6{end}
+s213.096F	b213+96F:26	サンドゴーレム  LV4{nl}ダリオロス    LV6{end}	Sand Golem  LV4{nl}Darioros  LV6{end}
 s213.098F	b213+98F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s213.09D1	b213+9D1:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s213.09E0	b213+9E0:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -153,7 +153,7 @@ s213.0A01	b213+A01:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s213.0A46	b213+A46:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s213.0A56	b213+A56:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s213.0A9A	b213+A9A:8	ヒイズルの街{end}	Hiizuru{end}
-s213.0AA3	b213+AA3:26	スレッジ     LV6{nl}そうこうへい   LV2{end}	Sledge LV6 Armored Soldier LV2{end}
+s213.0AA3	b213+AA3:26	スレッジ     LV6{nl}そうこうへい   LV2{end}	Sledge  LV6{nl}Armor Trooper  LV2{end}
 s213.0AF5	b213+AF5:8	オアシスの街{end}	Oasis Town{end}
 s213.0AFE	b213+AFE:13	リッジモンド   LV6{end}	Ridgemond  LV6{end}
 s213.0B43	b213+B43:7	ネッサの街{end}	Nessa{end}
@@ -161,12 +161,12 @@ s213.0B4B	b213+B4B:13	ファイアリザード LV6{end}	Fire Lizard  LV6{end}
 s213.0B90	b213+B90:7	コルドの街{end}	Cordo{end}
 s213.0B98	b213+B98:13	グリフォン    LV6{end}	Griffon  LV6{end}
 s213.0BAB	b213+BAB:38	タシュールの遺跡{nl}{color:09}BOSS{color:0F}{nl}謎の魔道士    LV？？{end}	Tashur Ruins {color:09}BOSS{color:0F} Mysterious Sorcerer LV??{end}
-s213.0C2D	b213+C2D:26	ウィンガ     LV4{nl}ハイソーサラー  LV5{end}	Winga LV4 High Sorcerer LV5{end}
-s213.0C55	b213+C55:26	ハイソーサラー  LV5{nl}さばくのせんし  LV4{end}	High Sorcerer LV5 Desert Warrior LV4{end}
+s213.0C2D	b213+C2D:26	ウィンガ     LV4{nl}ハイソーサラー  LV5{end}	Winga  LV4{nl}High Sorcerer  LV5{end}
+s213.0C55	b213+C55:26	ハイソーサラー  LV5{nl}さばくのせんし  LV4{end}	High Sorcerer  LV5{nl}Sand Warrior  LV4{end}
 s213.0C7D	b213+C7D:13	グレートマミー  LV5{end}	Great Mummy  LV5{end}
 s213.0C98	b213+C98:13	ブレイジー    LV5{end}	Blazy  LV5{end}
-s213.0CB3	b213+CB3:26	ボーンゴーレム  LV4{nl}ネクロマンサー  LV5{end}	Bone Golem LV4 Necromancer LV5{end}
-s213.0CDB	b213+CDB:26	マミー      LV4{nl}ネクロマンサー  LV5{end}	Mummy LV4 Necromancer LV5{end}
+s213.0CB3	b213+CB3:26	ボーンゴーレム  LV4{nl}ネクロマンサー  LV5{end}	Bone Golem  LV4{nl}Necromancer  LV5{end}
+s213.0CDB	b213+CDB:26	マミー      LV4{nl}ネクロマンサー  LV5{end}	Mummy  LV4{nl}Necromancer  LV5{end}
 s213.0D03	b213+D03:13	ソルジャーウルフ LV5{end}	Soldier Wolf  LV5{end}
 s213.0D1E	b213+D1E:13	スピリット    LV5{end}	Spirit  LV5{end}
 s213.0D39	b213+D39:13	マンティコア   LV5{end}	Manticore  LV5{end}
@@ -249,13 +249,13 @@ s214.0B72	b214+B72:8	ニュー・コリト{end}	New Corito{end}
 s214.0B7B	b214+B7B:13	ワイバーン    LV9{end}	Wyvern  LV9{end}
 s214.0B8E	b214+B8E:35	ふういんの洞窟{nl}{color:09}BOSS{color:0F}{nl}いにしえの魔物  LV？？{end}	Sealed Cave {color:09}BOSS{color:0F} Ancient Fiend LV??{end}
 s214.0BD7	b214+BD7:13	ロストソウル   LV8{end}	Lost Soul  LV8{end}
-s214.0BF2	b214+BF2:26	パープルワーム  LV8{nl}ネクロマンサー  LV8{end}	Purple Worm LV8 Necromancer LV8{end}
+s214.0BF2	b214+BF2:26	パープルワーム  LV8{nl}ネクロマンサー  LV8{end}	Purple Worm  LV8{nl}Necromancer  LV8{end}
 s214.0C1A	b214+C1A:13	ワーム      LV8{end}	Worm  LV8{end}
 s214.0C35	b214+C35:13	ディープブル   LV8{end}	Deep Bull  LV8{end}
 s214.0C50	b214+C50:13	フリーザー    LV8{end}	Freezer  LV8{end}
 s214.0C6B	b214+C6B:13	カザエル     LV8{end}	Kazael  LV8{end}
 s214.0C86	b214+C86:13	キメラ      LV8{end}	Chimera  LV8{end}
-s214.0CA1	b214+CA1:26	バックラー    LV8{nl}バッカニア    LV7{end}	Buckler LV8 Buccaneer LV7{end}
+s214.0CA1	b214+CA1:26	バックラー    LV8{nl}バッカニア    LV7{end}	Buckler  LV8{nl}Buccaneer  LV7{end}
 s214.0CC9	b214+CC9:13	カオスヒドラ   LV8{end}	Chaos Hydra  LV8{end}
 s214.0CE4	b214+CE4:13	ダークヒドラ   LV8{end}	Dark Hydra  LV8{end}
 s214.0CFF	b214+CFF:13	ゴーゴン     LV8{end}	Gorgon  LV8{end}
@@ -335,7 +335,7 @@ s215.0A9F	b215+A9F:14	ガランディア   LV12{end}	Galandia  LV12{end}
 s215.0AD5	b215+AD5:9	キュービーの街{end}	Cubie Town{end}
 s215.0ADF	b215+ADF:14	ギグナシュク   LV12{end}	Gignashuk  LV12{end}
 s215.0AF3	b215+AF3:31	アストロン神殿{nl}{color:09}BOSS{color:0F}{nl}タイタニア  LV？？{end}	Temple of Astron {color:09}BOSS{color:0F} Titania LV??{end}
-s215.0B48	b215+B48:14	こだいのせんし  LV11{end}	Ancient Warrior  LV11{end}
+s215.0B48	b215+B48:14	こだいのせんし  LV11{end}	Elder Warrior  LV11{end}
 s215.0B64	b215+B64:14	ロキウス     LV11{end}	Lokius  LV11{end}
 s215.0B80	b215+B80:14	グレース     LV11{end}	Grace  LV11{end}
 s215.0B9C	b215+B9C:14	ブラッドビースト LV11{end}	Blood Beast  LV11{end}
@@ -425,11 +425,11 @@ s216.0C2E	b216+C2E:14	ゴルゴス     LV14{end}	Gorgos  LV14{end}
 s216.0C4A	b216+C4A:14	ビシュヌス    LV14{end}	Vishnus  LV14{end}
 s216.0C66	b216+C66:14	マスターゴーゴン LV14{end}	Master Gorgon  LV14{end}
 s216.0C82	b216+C82:14	バンパイアロード LV14{end}	Vampire Lord  LV14{end}
-s216.0C9E	b216+C9E:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14{end}	Hellblaze LV13 Dark Magician LV14{end}
+s216.0C9E	b216+C9E:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14{end}	Hellblaze  LV13{nl}Dark Magician  LV14{end}
 s216.0D00	b216+D00:14	キングサラマンダ LV14{end}	King Salamander  LV14{end}
 s216.0D1C	b216+D1C:14	ヘルドラゴン   LV14{end}	Hell Dragon  LV14{end}
 s216.0D38	b216+D38:14	グニングル    LV14{end}	Guningle  LV14{end}
-s216.0D54	b216+D54:27	オスロー     LV14{nl}バッカニア    LV7{end}	Oslo LV14 Buccaneer LV7{end}
+s216.0D54	b216+D54:27	オスロー     LV14{nl}バッカニア    LV7{end}	Oslo  LV14{nl}Buccaneer  LV7{end}
 s216.0D7D	b216+D7D:14	キングサーペント LV14{end}	King Serpent  LV14{end}
 s217.01E2	b217+1E2:8	ピココショップ{end}	Pikoko Shop{end}
 s217.01EB	b217+1EB:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -490,7 +490,7 @@ s217.0816	b217+816:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s217.0841	b217+841:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s217.0860	b217+860:132	コンドルのどうくつ {nl}カワセミのどうくつ {nl}ハヤブサのどうくつ {nl}ハチドリのどうくつ {nl}オウムのどうくつ  {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Condor Cave{nl}Kingfisher Cave{nl}Falcon Cave{nl}Hummingbird Cave{nl}Parrot Cave{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}
 s217.090C	b217+90C:8	コレデタラバグ{end}	Bug If Seen{end}
-s217.0915	b217+915:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
+s217.0915	b217+915:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob  LV3{nl}Royal Guard  LV2{end}
 s217.0935	b217+935:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s217.0977	b217+977:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s217.0986	b217+986:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -498,26 +498,26 @@ s217.09A7	b217+9A7:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s217.09EC	b217+9EC:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s217.09FC	b217+9FC:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s217.0A30	b217+A30:8	コレデタラバグ{end}	Bug If Seen{end}
-s217.0A39	b217+A39:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death LV3 Royal Guard LV2{end}
+s217.0A39	b217+A39:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death  LV3{nl}Royal Guard  LV2{end}
 s217.0A77	b217+A77:8	コレデタラバグ{end}	Bug If Seen{end}
-s217.0A80	b217+A80:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus LV3 Monk LV1{end}
+s217.0A80	b217+A80:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus  LV3{nl}Monk  LV1{end}
 s217.0ABE	b217+ABE:8	コレデタラバグ{end}	Bug If Seen{end}
-s217.0AC7	b217+AC7:26	メレディウス   LV3{nl}ゴブリン     LV1{end}	Meredius LV3 Goblin LV1{end}
+s217.0AC7	b217+AC7:26	メレディウス   LV3{nl}ゴブリン     LV1{end}	Meredius  LV3{nl}Goblin  LV1{end}
 s217.0B09	b217+B09:8	コレデタラバグ{end}	Bug If Seen{end}
 s217.0B12	b217+B12:13	ケルベニアン   LV3{end}	Kerbenian  LV3{end}
 s217.0B25	b217+B25:25	フォートとりで{nl}{color:09}BOSS{color:0F}{nl}コレデタラバグ{end}	Fort Stronghold {color:09}BOSS{color:0F} Bug If Seen{end}
 s217.0B64	b217+B64:13	ホブゴブリン   LV2{end}	Hobgoblin  LV2{end}
 s217.0B7F	b217+B7F:13	イーグル     LV1{end}	Eagle  LV1{end}
-s217.0B9A	b217+B9A:13	キラースケルトン LV2{end}	Killer Skeleton  LV2{end}
+s217.0B9A	b217+B9A:13	キラースケルトン LV2{end}	Killer Bones  LV2{end}
 s217.0BB5	b217+BB5:13	ハンターエルフ  LV2{end}	Hunter Elf  LV2{end}
-s217.0BD0	b217+BD0:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary LV2 Goblin LV1{end}
-s217.0BF8	b217+BF8:26	そうこうへい   LV1{nl}モンク      LV1{end}	Armored Soldier LV1 Monk LV1{end}
-s217.0C20	b217+C20:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger LV2 Fighter LV1{end}
+s217.0BD0	b217+BD0:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary  LV2{nl}Goblin  LV1{end}
+s217.0BF8	b217+BF8:26	そうこうへい   LV1{nl}モンク      LV1{end}	Armor Trooper  LV1{nl}Monk  LV1{end}
+s217.0C20	b217+C20:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger  LV2{nl}Fighter  LV1{end}
 s217.0C48	b217+C48:13	ミイラおとこ   LV2{end}	Mummy Man  LV2{end}
 s217.0C63	b217+C63:13	ミノタウロス   LV2{end}	Minotaur  LV2{end}
 s217.0C7E	b217+C7E:13	クレイゴーレム  LV2{end}	Clay Golem  LV2{end}
 s217.0C99	b217+C99:13	ビザーレ     LV2{end}	Bizarre  LV2{end}
-s217.0CB4	b217+CB4:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull LV2 Skeleton LV1{end}
+s217.0CB4	b217+CB4:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull  LV2{nl}Skeleton  LV1{end}
 s218.01E6	b218+1E6:8	ピココショップ{end}	Pikoko Shop{end}
 s218.01EF	b218+1EF:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
 s218.0242	b218+242:59	{sfx:01}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -577,7 +577,7 @@ s218.081A	b218+81A:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s218.0845	b218+845:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s218.0864	b218+864:132	タコスのどうくつ  {nl}ビビンバのどうくつ {nl}ナンのどうくつ   {nl}オレガノのどうくつ {nl}パエリヤのどうくつ {nl}トムヤムのどうくつ {nl}バジルのどうくつ  {nl}ハルサメのどうくつ {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Taco Cave{nl}Bibimbap Cave{nl}Naan Cave{nl}Oregano Cave{nl}Paella Cave{nl}Tom Yum Cave{nl}Basil Cave{nl}Noodle Cave{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}
 s218.0910	b218+910:9	ガーリックの街{end}	Garlic Town{end}
-s218.091A	b218+91A:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
+s218.091A	b218+91A:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob  LV3{nl}Royal Guard  LV2{end}
 s218.093A	b218+93A:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s218.097C	b218+97C:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s218.098B	b218+98B:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -585,26 +585,26 @@ s218.09AC	b218+9AC:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s218.09F1	b218+9F1:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s218.0A01	b218+A01:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s218.0A31	b218+A31:8	ペッパータウン{end}	Pepper Town{end}
-s218.0A3A	b218+A3A:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death LV3 Royal Guard LV2{end}
+s218.0A3A	b218+A3A:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death  LV3{nl}Royal Guard  LV2{end}
 s218.0A78	b218+A78:7	ミントの街{end}	Mint Town{end}
-s218.0A80	b218+A80:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus LV3 Monk LV1{end}
+s218.0A80	b218+A80:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus  LV3{nl}Monk  LV1{end}
 s218.0ABE	b218+ABE:8	コレデタラバグ{end}	Bug If Seen{end}
-s218.0AC7	b218+AC7:26	メレディウス   LV3{nl}ファイター    LV1{end}	Meredius LV3 Fighter LV1{end}
+s218.0AC7	b218+AC7:26	メレディウス   LV3{nl}ファイター    LV1{end}	Meredius  LV3{nl}Fighter  LV1{end}
 s218.0B05	b218+B05:8	コレデタラバグ{end}	Bug If Seen{end}
 s218.0B0E	b218+B0E:13	ケルベニアン   LV3{end}	Kerbenian  LV3{end}
 s218.0B21	b218+B21:32	フォートとりで{nl}{color:09}BOSS{color:0F}{nl}コレデタラバグ   LV？？{end}	Fort Stronghold {color:09}BOSS{color:0F} Bug If Seen LV??{end}
 s218.0B67	b218+B67:13	ホブゴブリン   LV2{end}	Hobgoblin  LV2{end}
 s218.0B82	b218+B82:13	イーグル     LV1{end}	Eagle  LV1{end}
-s218.0B9D	b218+B9D:13	キラースケルトン LV2{end}	Killer Skeleton  LV2{end}
+s218.0B9D	b218+B9D:13	キラースケルトン LV2{end}	Killer Bones  LV2{end}
 s218.0BB8	b218+BB8:13	ハンターエルフ  LV2{end}	Hunter Elf  LV2{end}
-s218.0BD3	b218+BD3:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary LV2 Goblin LV1{end}
-s218.0BFB	b218+BFB:26	ファイター    LV1{nl}モンク      LV1{end}	Fighter LV1 Monk LV1{end}
-s218.0C23	b218+C23:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger LV2 Fighter LV1{end}
+s218.0BD3	b218+BD3:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary  LV2{nl}Goblin  LV1{end}
+s218.0BFB	b218+BFB:26	ファイター    LV1{nl}モンク      LV1{end}	Fighter  LV1{nl}Monk  LV1{end}
+s218.0C23	b218+C23:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger  LV2{nl}Fighter  LV1{end}
 s218.0C4B	b218+C4B:13	ミイラおとこ   LV2{end}	Mummy Man  LV2{end}
 s218.0C66	b218+C66:13	ミノタウロス   LV2{end}	Minotaur  LV2{end}
 s218.0C81	b218+C81:13	クレイゴーレム  LV2{end}	Clay Golem  LV2{end}
 s218.0C9C	b218+C9C:13	ビザーレ     LV2{end}	Bizarre  LV2{end}
-s218.0CB7	b218+CB7:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull LV2 Skeleton LV1{end}
+s218.0CB7	b218+CB7:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull  LV2{nl}Skeleton  LV1{end}
 s219.01E6	b219+1E6:8	ピココショップ{end}	Pikoko Shop{end}
 s219.01EF	b219+1EF:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
 s219.0242	b219+242:59	{sfx:01}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Pick whichever shop you like, pleash!{sfx:FE} {color:08}[E0]{color:0F}{nl}Button: Select {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -664,7 +664,7 @@ s219.0816	b219+816:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s219.0841	b219+841:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s219.0860	b219+860:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s219.090C	b219+90C:7	グリムの街{end}	Grim Town{end}
-s219.0914	b219+914:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
+s219.0914	b219+914:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob  LV3{nl}Royal Guard  LV2{end}
 s219.0934	b219+934:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s219.0976	b219+976:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s219.0985	b219+985:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -672,26 +672,26 @@ s219.09A6	b219+9A6:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s219.09EB	b219+9EB:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s219.09FB	b219+9FB:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s219.0A2B	b219+A2B:8	リキニアの街{end}	Rikinia Town{end}
-s219.0A34	b219+A34:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death LV3 Royal Guard LV2{end}
+s219.0A34	b219+A34:26	サドンデス    LV3{nl}ロイヤルガード  LV2{end}	Sudden Death  LV3{nl}Royal Guard  LV2{end}
 s219.0A72	b219+A72:9	ヘルゲイトの街{end}	Hellgate Town{end}
-s219.0A7C	b219+A7C:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus LV3 Monk LV1{end}
+s219.0A7C	b219+A7C:26	バッカス     LV3{nl}モンク      LV1{end}	Bacchus  LV3{nl}Monk  LV1{end}
 s219.0ABA	b219+ABA:8	タロットの街{end}	Tarot Town{end}
-s219.0AC3	b219+AC3:26	メレディウス   LV3{nl}ゴブリン     LV1{end}	Meredius LV3 Goblin LV1{end}
+s219.0AC3	b219+AC3:26	メレディウス   LV3{nl}ゴブリン     LV1{end}	Meredius  LV3{nl}Goblin  LV1{end}
 s219.0B01	b219+B01:7	マサゴの街{end}	Masago Town{end}
 s219.0B09	b219+B09:13	ケルベニアン   LV3{end}	Kerbenian  LV3{end}
 s219.0B1C	b219+B1C:32	フォートとりで{nl}{color:09}BOSS{color:0F}{nl}コレデタラバグ   LV？？{end}	Fort Stronghold {color:09}BOSS{color:0F} Bug If Seen LV??{end}
 s219.0B62	b219+B62:13	ホブゴブリン   LV2{end}	Hobgoblin  LV2{end}
 s219.0B7D	b219+B7D:13	イーグル     LV1{end}	Eagle  LV1{end}
-s219.0B98	b219+B98:13	キラースケルトン LV2{end}	Killer Skeleton  LV2{end}
+s219.0B98	b219+B98:13	キラースケルトン LV2{end}	Killer Bones  LV2{end}
 s219.0BB3	b219+BB3:13	ハンターエルフ  LV2{end}	Hunter Elf  LV2{end}
-s219.0BCE	b219+BCE:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary LV2 Goblin LV1{end}
-s219.0BF6	b219+BF6:26	ファイター    LV1{nl}モンク      LV1{end}	Fighter LV1 Monk LV1{end}
-s219.0C1E	b219+C1E:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger LV2 Fighter LV1{end}
+s219.0BCE	b219+BCE:26	マーシナリー   LV2{nl}ゴブリン     LV1{end}	Mercenary  LV2{nl}Goblin  LV1{end}
+s219.0BF6	b219+BF6:26	ファイター    LV1{nl}モンク      LV1{end}	Fighter  LV1{nl}Monk  LV1{end}
+s219.0C1E	b219+C1E:26	デッガー     LV2{nl}ファイター    LV1{end}	Degger  LV2{nl}Fighter  LV1{end}
 s219.0C46	b219+C46:13	ミイラおとこ   LV2{end}	Mummy Man  LV2{end}
 s219.0C61	b219+C61:13	ミノタウロス   LV2{end}	Minotaur  LV2{end}
 s219.0C7C	b219+C7C:13	クレイゴーレム  LV2{end}	Clay Golem  LV2{end}
 s219.0C97	b219+C97:13	ビザーレ     LV2{end}	Bizarre  LV2{end}
-s219.0CB2	b219+CB2:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull LV2 Skeleton LV1{end}
+s219.0CB2	b219+CB2:26	レッドスカル   LV2{nl}スケルトン    LV1{end}	Red Skull  LV2{nl}Skeleton  LV1{end}
 s220.00A2	b220+A2:14	ウルフェン    LV？？{end}	Wolfen  LV??{end}
 s220.00BB	b220+BB:20	{color:0F}{nl}魔将軍ウィルダ  LV？？{end}	{color:0F}{nl}Demon General Wilda  LV??{end}
 s220.00D0	b220+D0:11	魔将軍ウィルダ{end}	Demon General Wilda{end}
@@ -988,7 +988,7 @@ s225.0831	b225+831:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちし�
 s225.085C	b225+85C:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
 s225.087B	b225+87B:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s225.0927	b225+927:7	グリムの街{end}	Grim Town{end}
-s225.092F	b225+92F:26	ダリオロス    LV6{nl}サンドゴーレム  LV4{end}	Darioros LV6 Sand Golem LV4{end}
+s225.092F	b225+92F:26	ダリオロス    LV6{nl}サンドゴーレム  LV4{end}	Darioros  LV6{nl}Sand Golem  LV4{end}
 s225.094F	b225+94F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
 s225.0991	b225+991:14	{sfx:00}{sub:0000}へようこそ！{sfx:FE}{end}	{sfx:00}Welcome to {sub:0000}!{sfx:FE}{end}
 s225.09A0	b225+9A0:32	{sfx:00}ところで・・・{nl}シリングとNVPを{nl}へんかんするかの？{sfx:FE}{end}	{sfx:00}By the way... shall I trade{nl}Shillings and NVP for you, eh?{sfx:FE}{end}
@@ -996,7 +996,7 @@ s225.09C1	b225+9C1:68	{sfx:00}NVP{color:08}{sub:0000}{color:0F}で{nl}{color:08}
 s225.0A06	b225+A06:15	{sfx:00}こんなんでいいかの？{sfx:FE}{end}	{sfx:00}Will this do, eh?{sfx:FE}{end}
 s225.0A16	b225+A16:17	{sfx:00}またいつでも来んしゃい{sfx:FE}{end}	{sfx:00}Come again any time, sonny{sfx:FE}{end}
 s225.0A46	b225+A46:8	リキニアの街{end}	Rikinia Town{end}
-s225.0A4F	b225+A4F:26	スレッジ     LV6{nl}そうこうへい   LV2{end}	Sledge LV6 Armored Soldier LV2{end}
+s225.0A4F	b225+A4F:26	スレッジ     LV6{nl}そうこうへい   LV2{end}	Sledge  LV6{nl}Armor Trooper  LV2{end}
 s225.0A8D	b225+A8D:9	ヘルゲイトの街{end}	Hellgate Town{end}
 s225.0A97	b225+A97:13	リッジモンド   LV6{end}	Ridgemond  LV6{end}
 s225.0AC8	b225+AC8:8	タロットの街{end}	Tarot Town{end}
@@ -1004,12 +1004,12 @@ s225.0AD1	b225+AD1:13	ファイアリザード LV6{end}	Fire Lizard  LV6{end}
 s225.0B02	b225+B02:7	マサゴの街{end}	Masago Town{end}
 s225.0B0A	b225+B0A:13	グリフォン    LV6{end}	Griffon  LV6{end}
 s225.0B1D	b225+B1D:35	タシュールの遺跡{nl}{color:09}BOSS{color:0F}{nl}コレデタラバグ   LV？？{end}	Tashur Ruins {color:09}BOSS{color:0F} Bug If Seen LV??{end}
-s225.0B66	b225+B66:26	ウィンガ     LV4{nl}ハイソーサラー  LV5{end}	Winga LV4 High Sorcerer LV5{end}
-s225.0B8E	b225+B8E:26	ハイソーサラー  LV5{nl}さばくのせんし  LV4{end}	High Sorcerer LV5 Desert Warrior LV4{end}
+s225.0B66	b225+B66:26	ウィンガ     LV4{nl}ハイソーサラー  LV5{end}	Winga  LV4{nl}High Sorcerer  LV5{end}
+s225.0B8E	b225+B8E:26	ハイソーサラー  LV5{nl}さばくのせんし  LV4{end}	High Sorcerer  LV5{nl}Sand Warrior  LV4{end}
 s225.0BB6	b225+BB6:13	グレートマミー  LV5{end}	Great Mummy  LV5{end}
 s225.0BD1	b225+BD1:13	ブレイジー    LV5{end}	Blazy  LV5{end}
-s225.0BEC	b225+BEC:26	ボーンゴーレム  LV4{nl}ネクロマンサー  LV5{end}	Bone Golem LV4 Necromancer LV5{end}
-s225.0C14	b225+C14:26	マミー      LV4{nl}ネクロマンサー  LV5{end}	Mummy LV4 Necromancer LV5{end}
+s225.0BEC	b225+BEC:26	ボーンゴーレム  LV4{nl}ネクロマンサー  LV5{end}	Bone Golem  LV4{nl}Necromancer  LV5{end}
+s225.0C14	b225+C14:26	マミー      LV4{nl}ネクロマンサー  LV5{end}	Mummy  LV4{nl}Necromancer  LV5{end}
 s225.0C3C	b225+C3C:13	ソルジャーウルフ LV5{end}	Soldier Wolf  LV5{end}
 s225.0C57	b225+C57:13	スピリット    LV5{end}	Spirit  LV5{end}
 s225.0C72	b225+C72:13	マンティコア   LV5{end}	Manticore  LV5{end}
@@ -1098,7 +1098,7 @@ s226.0B86	b226+B86:13	ディープブル   LV8{end}	Deep Bull  LV8{end}
 s226.0BA1	b226+BA1:13	フリーザー    LV8{end}	Freezer  LV8{end}
 s226.0BBC	b226+BBC:13	カザエル     LV8{end}	Kazael  LV8{end}
 s226.0BD7	b226+BD7:13	キメラ      LV8{end}	Chimera  LV8{end}
-s226.0BF2	b226+BF2:26	バックラー    LV8{nl}バッカニア    LV7{end}	Buckler LV8 Buccaneer LV7{end}
+s226.0BF2	b226+BF2:26	バックラー    LV8{nl}バッカニア    LV7{end}	Buckler  LV8{nl}Buccaneer  LV7{end}
 s226.0C1A	b226+C1A:13	カオスヒドラ   LV8{end}	Chaos Hydra  LV8{end}
 s226.0C35	b226+C35:13	ダークヒドラ   LV8{end}	Dark Hydra  LV8{end}
 s226.0C50	b226+C50:13	ゴーゴン     LV8{end}	Gorgon  LV8{end}
@@ -1178,7 +1178,7 @@ s227.0ABE	b227+ABE:14	ガランディア   LV12{end}	Galandia  LV12{end}
 s227.0AF0	b227+AF0:7	マサゴの街{end}	Masago Town{end}
 s227.0AF8	b227+AF8:14	ギグナシュク   LV12{end}	Gignashuk  LV12{end}
 s227.0B0C	b227+B0C:31	アストロン神殿{nl}{color:09}BOSS{color:0F}{nl}タイタニア  LV？？{end}	Temple of Astron {color:09}BOSS{color:0F} Titania LV??{end}
-s227.0B51	b227+B51:14	こだいのせんし  LV11{end}	Ancient Warrior  LV11{end}
+s227.0B51	b227+B51:14	こだいのせんし  LV11{end}	Elder Warrior  LV11{end}
 s227.0B6D	b227+B6D:14	ロキウス     LV11{end}	Lokius  LV11{end}
 s227.0B89	b227+B89:14	グレース     LV11{end}	Grace  LV11{end}
 s227.0BA5	b227+BA5:14	ブラッドビースト LV11{end}	Blood Beast  LV11{end}
@@ -1268,9 +1268,9 @@ s228.0B80	b228+B80:14	ゴルゴス     LV14{end}	Gorgos  LV14{end}
 s228.0B9C	b228+B9C:14	ビシュヌス    LV14{end}	Vishnus  LV14{end}
 s228.0BB8	b228+BB8:14	マスターゴーゴン LV14{end}	Master Gorgon  LV14{end}
 s228.0BD4	b228+BD4:14	バンパイアロード LV14{end}	Vampire Lord  LV14{end}
-s228.0BF0	b228+BF0:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14{end}	Hellblaze LV13 Dark Magician LV14{end}
+s228.0BF0	b228+BF0:28	ヘルブレイズ   LV13{nl}ダークマジシャン LV14{end}	Hellblaze  LV13{nl}Dark Magician  LV14{end}
 s228.0C52	b228+C52:14	キングサラマンダ LV14{end}	King Salamander  LV14{end}
 s228.0C6E	b228+C6E:14	ヘルドラゴン   LV14{end}	Hell Dragon  LV14{end}
 s228.0C8A	b228+C8A:14	グニングル    LV14{end}	Guningle  LV14{end}
-s228.0CA6	b228+CA6:28	ジェネラル    LV13{nl}オスロー     LV14{end}	General LV13 Oslo LV14{end}
+s228.0CA6	b228+CA6:28	ジェネラル    LV13{nl}オスロー     LV14{end}	General  LV13{nl}Oslo  LV14{end}
 s228.0CD0	b228+CD0:14	キングサーペント LV14{end}	King Serpent  LV14{end}

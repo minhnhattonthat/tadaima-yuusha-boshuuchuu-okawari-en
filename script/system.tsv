@@ -141,8 +141,8 @@ id	loc	jp	en
 04B8D7	r04B8D7:8	{nl}    はい{end}	{nl}    Yes{end}
 04B8E0	r04B8E0:6	  いいえ{end}	  No{end}
 04C84E	r04C84E:6	HUMAN{end}	HUMAN{end}
-04C855	r04C855:8	THE[F4]END{end}	THE[F4]END{end}
-04C85E	r04C85E:12	CONFIG[F4]MODE{end}	CONFIG[F4]MODE{end}
+04C855	r04C855:8	THE[F4]END{end}	{cell}{cell} THE END{end}
+04C85E	r04C85E:12	CONFIG[F4]MODE{end}	{cell}{cell}{cell} CONFIG MODE{end}
 04C86B	r04C86B:4	セーブ{end}	Save{end}
 04C870	r04C870:4	ロード{end}	Load{end}
 04C875	r04C875:8	ゲームをやめる{end}	Quit Game{end}

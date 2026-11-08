@@ -53,6 +53,18 @@ def test_ids_unique(world):
     assert len(ids) == len(set(ids))
 
 
+def test_name_fields(world):
+    """Foe names (battle box) and the second hero tables (versus, preset parties): fixed fields, pads only after the name."""
+    rom, blocks, sink = world
+    foes, heroes = sink.rows["name_foe"], sink.rows["name_hero"]
+    assert len(foes) == 139 and len(heroes) == 24
+    for _, loc, s in foes + heroes:
+        key, a, b, data = span(loc, rom, blocks)
+        name = data[a:b].rstrip(b"\xf4")
+        assert name and 0xF4 not in name and 0xFF not in name, loc
+    assert next(s for i, _, s in foes if i == "foe584").startswith("ホブゴブリン")
+
+
 def test_blocks_fully_accounted(world):
     """Script code is listed as a byte total, so sum per block: text + data == block size, with no gap left over."""
     rom, blocks, sink = world
@@ -60,7 +72,7 @@ def test_blocks_fully_accounted(world):
     for rows in sink.rows.values():
         for _, loc, _ in rows:
             key, a, b, _ = span(loc, rom, blocks)
-            if key != "rom":
+            if key in done:  # name fields in data blocks (foes, preset parties) aren't text blocks
                 done[key] += b - a
     for loc, n, _ in sink.other:
         if loc[0] == "b":

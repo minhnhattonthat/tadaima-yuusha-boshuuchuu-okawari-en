@@ -38,6 +38,7 @@ RECORDS = [
     (0x00800E, 45, 0x24, 1, 5, "name_char"), (0x00A230, 38, 0x10, 1, 8, "name_item"),
     (0x00A6DA, 231, 0x10, 1, 8, "name_equip"), (0x00C298, 41, 0x10, 1, 9, "name_spell"),
     (0x04B220, 1, 0x10, 0, 5, "name_misc"),  # label read 5 glyphs at a time, no end code ($C2A645)
+    (0x009743, 12, 0x25, 1, 5, "name_hero"),  # the 12 heroes again, index byte + 5-byte name: versus mode (the shop header showed チンク)
 ]
 JP = re.compile(r"[ぁ-んァ-ヴー一-龥]")
 NOISE = re.compile(r"[Ⓐ-ⓩ🅐-🅨♂♀／％＆★「」]")
@@ -241,6 +242,28 @@ def records(sink, rom):
                 sink.rows.setdefault(sec, []).append((f"{sec[5:]}{i:03d}", f"r{pos:06X}:{size}", s))
 
 
+FOES = range(558, 697)  # monster blocks: 4 u16 section offsets, the last section starts with the 8-byte name (no end code, F4 pads),
+# copied to $7E:8161 and drawn by the tilemap path in the battle target box ($C21E66). docs/re/text.md
+
+
+PARTIES = range(310, 313)  # preset parties: 4 hero records of 0x6F bytes, index byte at +3, the 5-byte name at +4
+
+
+def foes(sink, blocks):
+    for b in PARTIES:
+        for k in range(4):
+            pos = 4 + k * 0x6F
+            s = T.decode(blocks[b], pos, length=5)[0]
+            assert JP.search(plain(s)), (b, k, s)
+            sink.rows.setdefault("name_hero", []).append((f"hero{b}{k}", f"b{b}+{pos:X}:5", s))
+    for b in FOES:
+        d = blocks[b]
+        pos = d[6] | d[7] << 8
+        s = T.decode(d, pos, length=8)[0]
+        assert JP.search(plain(s)), (b, s)
+        sink.rows.setdefault("name_foe", []).append((f"foe{b:03d}", f"b{b}+{pos:X}:8", s))
+
+
 def load(rom):
     sink = Sink()
     blocks = {i: unpack.load(rom, src, size)[0] for i, src, size, _, _ in unpack.entries(rom)}
@@ -271,6 +294,7 @@ def load(rom):
             elif s != "{end}":  # an extra FF: list separator
                 sink.data(f"r{p:06X}", e - p, "not text")
     records(sink, rom)
+    foes(sink, blocks)
     return sink
 
 
