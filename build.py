@@ -40,7 +40,8 @@ def build(out, english=None):
     out.unlink(missing_ok=True)  # a failed assemble must not leave an old ROM to test
     out.write_bytes(built)
     if english is not None:
-        if subprocess.call([str(ROOT / "tools/asar/asar.exe"), "--fix-checksum=off", "--no-title-check", str(ROOT / "asm/vwf.asm"), str(out)]):
+        if subprocess.call([str(ROOT / "tools/asar/asar.exe"), "--fix-checksum=off", "--no-title-check", "--symbols=wla", f"--symbols-path={out.with_suffix('.sym')}",
+                            str(ROOT / "asm/vwf.asm"), str(out)]):  # .sym: tools/debug/sweep.py hooks labels
             out.unlink()
             return "asar failed"
         built = bps.snes_checksum(out.read_bytes())[0]  # asar runs with --fix-checksum=off

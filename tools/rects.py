@@ -14,11 +14,13 @@ KATA = "アイウエオカキクケコサシスセソタチツテトナニヌネ
 TILE = {0x30 + i: c for i, c in enumerate(GOJUON)} | {0x62 + i: c for i, c in enumerate(KATA)}
 TILE |= dict(zip(range(0x85, 0x99), "ラリルレロヤユヨワヲンッャュョァィゥェォ"))
 TILE |= {0x29: "ー", 0x2B: "／"} | {i + 1: c for i, c in enumerate("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ")}
+YEAR, YEAR_RECT = 0xF7, 0x04CBDF  # 年 (G4) is text only in its own rect, the config play time "1 年" (in the status box code fills it)
+TILE[YEAR] = "年"
 MARK = {0x27: "゙", 0x28: "゚", 0xE8: "゙", 0xE9: "゚"}  # tile on the row above; E8, E9 are for windows that fill with E7
 BLANK = (0x00, 0x26, 0xE7)
 # File offsets. COPIED: code copies these to RAM and patches numbers in, so they can't take a far code: English stays inside W.
 RECTS = [0x00A0DA, 0x00A14C, 0x0480F7, 0x0499DB, 0x04B4A0, 0x04B4AA, *range(0x04B596, 0x04B607, 14), 0x04B7BF, 0x04B80C, 0x04B814, 0x04B819,
-         0x04B837, 0x04B845, 0x04B859, 0x04B863, 0x04B871, 0x04CBD1, 0x04CBE2, 0x04CC06, 0x04CC16, 0x04CC1C, 0x04CC24, 0x04CC2E, 0x04CC34,
+         0x04B837, 0x04B845, 0x04B859, 0x04B863, 0x04B871, 0x04CBD1, 0x04CBDF, 0x04CBE2, 0x04CC06, 0x04CC16, 0x04CC1C, 0x04CC24, 0x04CC2E, 0x04CC34,
          *range(0x04CC46, 0x04CCA1, 18), 0x0597CC, 0x0597F0, 0x0597FA, 0x059804, *range(0x0598A6, 0x059941, 14), 0x05BC09, 0x05BC11, 0x05BC19]
 COPIED = {0x00A0DA, 0x00A14C, 0x0499DB, 0x04B4AA, 0x04B871}
 
@@ -31,15 +33,16 @@ def runs(rom, p):
     """Kana runs of the rect at p: (row, first col, end col, jp)."""
     w, h = rom[p], rom[p + 1]
     body = rom[p + 2:p + 2 + w * h]
+    text = lambda t: text_tile(t) or (p == YEAR_RECT and t == YEAR)
     out = []
     for y in range(h):
         x = 0
         while x < w:
-            if not text_tile(body[y * w + x]) and not (body[y * w + x] == 0x29 and x):
+            if not text(body[y * w + x]) and not (body[y * w + x] == 0x29 and x):
                 x += 1
                 continue
             a = x
-            while x < w and (text_tile(body[y * w + x]) or body[y * w + x] == 0x29):
+            while x < w and (text(body[y * w + x]) or body[y * w + x] == 0x29):
                 x += 1
             s = "".join(TILE.get(body[y * w + i], "?") + (MARK.get(body[(y - 1) * w + i], "") if y else "") for i in range(a, x))
             out.append((y, a, x, unicodedata.normalize("NFC", s)))

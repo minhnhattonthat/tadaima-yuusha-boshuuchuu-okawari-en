@@ -93,7 +93,7 @@ def apply(rom, english):
         if i not in english:
             continue
         if i in by_line:
-            lines_in(out, far, shown, t, i, loc, jp, english[i], by_line[i])
+            extra += [(i, n) for n in lines_in(out, far, shown, t, i, loc, jp, english[i], by_line[i])[:1]]
             continue
         if i.startswith("spell") and COST.search(jp):
             keep = len(extract.T.encode(COST.search(jp)[0]))
@@ -128,15 +128,32 @@ def apply(rom, english):
         far.put(number[i], data)
         place(span, start, n, bytes([FAR, number[i] & 255, number[i] >> 8]))
     rects.apply(out, english, far)
-    blocks[1] = bytearray(font.small_sheet(bytes(blocks[1])))
-    blocks[2], blocks[794] = gfx.buttons(bytes(blocks[2])), gfx.title(bytes(blocks[794]))
+    blocks[1] = bytearray(gfx.race(gfx.panel(font.small_sheet(bytes(blocks[1])))))
+    blocks[0], blocks[2], blocks[794] = gfx.year(bytes(blocks[0])), gfx.buttons(bytes(blocks[2])), gfx.title(bytes(blocks[794]))
     shown |= {number[i]: (english[i], int(loc.split(":")[1])) for i, loc, _ in rows if i in english and i.startswith(NAMES) and number[i] not in shown}
     images(out, far.count, shown)
-    edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"1", "2", "794"}
+    edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"0", "1", "2", "794"}
     blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
     (ROOT / "build/far.tsv").write_text("".join(f"{n}\t{i}\n" for i, n in [*number.items(), *extra]), encoding="utf-8")  # for tools/windows.py
+    strings(english, rows, number, extra)
     return out, blocks
+
+
+def strings(english, rows, number, extra):
+    """build/strings.tsv for textcover.py (tools/debug/textcover.lua): id, then the file offset the game reads first: the far table
+    entry ($210000 + 3n; a place list: its first record's), else a raw row's own first byte. A 2-byte row in a block has neither: 0."""
+    loc = {i: l for i, l, _ in rows}
+    first = {}
+    for i, f in extra:
+        first.setdefault(i, f)
+    out = []
+    for i in english:
+        n = first.get(i, number.get(i))
+        raw = loc.get(i, "r" + i[4:] if i.startswith("rect") else "")
+        off = 0x210000 + 3 * n if n is not None else int(raw[1:].split(":")[0], 16) if raw.startswith("r") else 0
+        out.append(f"{i}\t{off:X}\n")
+    (ROOT / "build/strings.tsv").write_text("".join(out), encoding="utf-8")
 
 
 def records_in(span, far, extra, shown, t, i, start, n, en):
@@ -168,14 +185,17 @@ def lines_in(out, far, shown, t, i, loc, jp, en, cells):
     cost = lambda ls: sum(3 if s else 0 for s in ls) + len(ls) - 1
     assert cost(text) <= size - 1, f"{i}: {size} bytes hold fewer than {len(text)} lines"
     code = bytearray()
+    numbers = []
     for k, s in enumerate(text):
         if s:
             n = far.number()
             far.put(n, t.encode(s) + b"\xff")
             shown[n] = (s, cells)
+            numbers.append(n)
             code += bytes([FAR, n & 255, n >> 8])
         code += b"\xfe" if k < len(text) - 1 else b""
     out[start:start + size - 1] = code + bytes([PAD]) * (size - 1 - len(code))
+    return numbers
 
 
 def images(out, count, rows):

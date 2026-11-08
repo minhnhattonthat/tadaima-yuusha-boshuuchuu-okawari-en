@@ -106,6 +106,11 @@ org $C423D1
 org $C5BC2F
     db $23,$41,$00,$00,$00,$17,$3E
 
+; VS-mode date box: $C2:A7E7-A824 built "0年目 4月" in $1236; date_text builds the English
+org $C2A7E7
+    jsl date_text
+    db $80, $C2A825-$C2A7ED   ; bra $C2A825 (asar's bra took only the low byte of this target)
+
 org $C0FFD7
     db $0C              ; 4 MB
 
@@ -1105,6 +1110,80 @@ pay_index:
     sbc.w #!RECORDS     ; 0, 6, 12 -> 0, 12, 24
     asl
     rts
+
+; VS-mode date "0年目 4月" ($C2:A7E7 built it in $1236 for $C2:140A): English "Year 0, April" (4月 is the calendar month).
+; Up to 19 bytes: runs into $1246, the item-description scratch slot, which is free while this box shows.
+date_text:
+    ldy.w #$1236
+    ldx.w #.year-.s
+    jsr .put
+    lda.w $0A2D
+    and.w #$00FF
+    jsr .num
+    ldx.w #.comma-.s
+    jsr .put
+    lda.w $0A2E         ; month as the original: (n + 3) mod 12, 1-12
+    and.w #$00FF
+    clc
+    adc.w #3
+    cmp.w #13
+    bcc +
+    sbc.w #12
++   dec
+    asl
+    tax
+    lda.l .months,x
+    tax
+    jsr .put
+    lda.w #$FFFF
+    sta.w $0000,y
+    rtl
+.num:                   ; A = 0-99 -> narrow ASCII digits ('0' = $60), no leading zero
+    sta.w $4204
+    sep #$20
+    lda.b #10
+    sta.w $4206
+    nop #8
+    lda.w $4214
+    beq +
+    clc
+    adc.b #$60
+    sta.w $0000,y
+    iny
++   lda.w $4216
+    clc
+    adc.b #$60
+    sta.w $0000,y
+    iny
+    rep #$20
+    rts
+.put:                   ; copy .s+X until 00 to Y
+    sep #$20
+-   lda.l .s,x
+    beq +
+    sta.w $0000,y
+    inx
+    iny
+    bra -
++   rep #$20
+    rts
+.months:
+    dw .jan-.s, .feb-.s, .mar-.s, .apr-.s, .may-.s, .jun-.s, .jul-.s, .aug-.s, .sep-.s, .oct-.s, .nov-.s, .dec-.s
+.s:                     ; en.tbl codes: A-Z $0A, a-z $24, space $3E, comma $4A
+.year:  db $22,$28,$24,$35,$3E,0                    ; "Year "
+.comma: db $4A,$3E,0                                ; ", "
+.jan:   db $13,$24,$31,$38,$24,$35,$3C,0            ; January
+.feb:   db $0F,$28,$25,$35,$38,$24,$35,$3C,0        ; February
+.mar:   db $16,$24,$35,$26,$2B,0                    ; March
+.apr:   db $0A,$33,$35,$2C,$2F,0                    ; April
+.may:   db $16,$24,$3C,0                            ; May
+.jun:   db $13,$38,$31,$28,0                        ; June
+.jul:   db $13,$38,$2F,$3C,0                        ; July
+.aug:   db $0A,$38,$2A,$38,$36,$37,0                ; August
+.sep:   db $1C,$28,$33,$37,$28,$30,$25,$28,$35,0    ; September
+.oct:   db $18,$26,$37,$32,$25,$28,$35,0            ; October
+.nov:   db $17,$32,$39,$28,$30,$25,$28,$35,0        ; November
+.dec:   db $0D,$28,$26,$28,$30,$25,$28,$35,0        ; December
 
 planebit:
     db 1, 2, 4, 8

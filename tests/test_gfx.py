@@ -40,6 +40,16 @@ def test_title_only_touches_its_box():
             assert out[t * 32:t * 32 + 32] == sheet[t * 32:t * 32 + 32], hex(t)
 
 
+def test_panel_keeps_the_face():
+    sheet = block(ROM.read_bytes(), 1)
+    out = gfx.panel(sheet)
+    assert out[:gfx.PANEL_TILE * 32] == sheet[:gfx.PANEL_TILE * 32] and out[(gfx.PANEL_TILE + 36) * 32:] == sheet[(gfx.PANEL_TILE + 36) * 32:]
+    for k in range(36):
+        if k % 9 < 4:  # x 0-31: the face
+            assert gfx.get(out, gfx.PANEL_TILE + k) == gfx.get(sheet, gfx.PANEL_TILE + k)
+    assert out != sheet
+
+
 def test_status_box_cells():
     rom = ROM.read_bytes()
     body = rects.status(rom, "Time left{nl}Shillings")

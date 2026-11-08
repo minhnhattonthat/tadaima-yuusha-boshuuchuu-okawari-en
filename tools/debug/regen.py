@@ -27,12 +27,30 @@ def names():
             | {f"clear{c:02d}": 12000 for c in range(5)})
 
 
+def cover_ranges():
+    """textcover.lua inputs from build/strings.tsv: raw rows' first bytes merged into ranges, and the far-table size."""
+    offs = sorted({int(l.split("\t")[1], 16) for l in (ROOT / "build/strings.tsv").read_text(encoding="utf-8").splitlines()})
+    raw = [o for o in offs if 0 < o < 0x210000]
+    spans = []
+    for o in raw:
+        if spans and o - spans[-1][1] < 0x40 and o >> 16 == spans[-1][0] >> 16:
+            spans[-1][1] = o
+        else:
+            spans.append([o, o])
+    return ",".join(f"{a:X}-{b:X}" for a, b in spans), (max(offs) - 0x210000) // 3 + 1
+
+
+RANGES, FARS = cover_ranges()
+
+
 def run(args, scene, frames):
     out = ROOT / "work/qa" / args.dir / scene
     states = ROOT / "work/states" if args.dir == "scenes" else out
-    cmd = [sys.executable, "-X", "utf8", f"{SKILL}/scripts/emu.py", str(args.rom), "--out", str(out), "--script",
-           str(ROOT / "tools/debug/statelog.lua"), "--script", str(ROOT / "tools/debug/textlog.lua"), "--script",
-           str(ROOT / "tools/debug/rectlog.lua"), "--script", str(ROOT / "tools/debug/winlog.lua"), "--script", str(ROOT / "tools/debug/freewatch.lua"), "--script", str(ROOT / "tools/debug/lowmap.lua"), "--script", str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
+    probes = ["textlog", "rectlog", "winlog", "freewatch", "lowmap"] if args.probes else []  # 7x slower; windows.py needs winlog
+    cmd = [sys.executable, "-X", "utf8", f"{SKILL}/scripts/emu.py", str(args.rom), "--out", str(out),
+           *[a for p in ["statelog", *probes] for a in ("--script", str(ROOT / f"tools/debug/{p}.lua"))],
+           "--script", str(ROOT / "tools/debug/warp.lua"), "--var", f"SCENE='{scene}'",
+           "--script", str(ROOT / "tools/debug/textcover.lua"), "--var", f"RANGES='{RANGES}'", "--var", f"FARS={FARS}",
            "--frames", str((frames or args.frames) + args.extra), "--timeout", str(args.timeout), "--state-out", str(states / f"{scene}.mss")]
     code = subprocess.run(cmd, cwd=ROOT, capture_output=True).returncode
     shot = out / "final.png"
@@ -51,6 +69,7 @@ def main():
     ap.add_argument("--extra", type=int, default=0, help="frames on top of each scene's length: scenes on a patched ROM run longer")
     ap.add_argument("--timeout", type=int, default=1200, help="seconds per scene: raise it when more jobs share the machine")
     ap.add_argument("--dir", default="scenes", help="under work/qa/; anything but `scenes` keeps states there too")
+    ap.add_argument("--probes", action="store_true", help="also the RE logs (text, rect, window, free RAM): marker tours for windows.py")
     ap.add_argument("prefix", nargs="*")
     args = ap.parse_args()
     (ROOT / "work/states").mkdir(parents=True, exist_ok=True)

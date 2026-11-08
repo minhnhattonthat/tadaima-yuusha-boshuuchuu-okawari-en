@@ -1,4 +1,4 @@
-"""Graphics text redrawn in English at build time (docs/re/graphics.md G1, G2). Called by insert.apply on the unpacked blocks.
+"""Graphics text redrawn in English at build time (docs/re/graphics.md G1, G2, G6). Called by insert.apply on the unpacked blocks.
 
 buttons(): block 002, 28 buttons of 32x16 (4x2 tiles, 4 to a sheet row of 16 tiles). Inside the border (x 2-29, y 2-13) the ground is
 index 11, ink 15, shadow 1 to the right. English from fonts/spleen-5x8.bdf with a 3-px t, centred.
@@ -19,6 +19,31 @@ BUTTONS = [  # JP per sheet row; None keeps the art (PASS, SOS! and the frame pi
 ]
 NARROW = {"t": [0x40, 0x40, 0xE0, 0x40, 0x40, 0x40, 0x60, 0], }  # 3 px wide, so Status and Attack fit 28 px
 GROUND, INK, SHADOW = 11, 15, 1
+
+PANEL = [("Allies", 4), ("Wanted!", 17)]  # 仲間 / 募集中! with each line's top row
+PANEL_TILE, PANEL_INK, PANEL_SHADOW = 0xB6, 11, 14
+
+RACE = [
+    "................",
+    "................",
+    "##..............",
+    "#.#.............",
+    "##..##...##..##.",
+    "#.#..##.#...#.#.",
+    "#.#.#.#.#...##..",
+    "#.#..##..##..##.",
+]
+YR = ["................"] * 7 + [  # glyph rows 0-15, baseline 13 like the digits
+    ".##..##..##.###.",
+    ".##..##..####...",
+    ".##..##..###....",
+    ".##..##..##.....",
+    ".##..##..##.....",
+    ".##..##..##.....",
+    "..#####..##.....",
+    ".....##.........",
+    "..####..........",
+]
 
 TITLE = ["Scenario Mode", "Party Mode", "Continue"]  # しなりおモード ぱーてぃーモード つづきをする
 TITLE_ROWS = [(9, 0x25, 13), (9, 0x32, 13), (9, 0x3F, 13), (9, 0x4C, 14), (9, 0x5A, 11), (10, 0x66, 10)]  # per box row: first col, block tile, count
@@ -78,6 +103,62 @@ def buttons(sheet):
             for ty in range(2):
                 for tx in range(4):
                     put(out, first + ty * 16 + tx, [grid[ty * 8 + y][tx * 8:tx * 8 + 8] for y in range(8)])
+    return bytes(out)
+
+
+def panel(sheet):
+    """Block 001 (4bpp art part): the empty party slot 仲間 / 募集中! (BG2 tiles 0xB6-0xD9, 9x4, field HUD). The text area right of
+    the face (x 32-71, y 0-29) is a ground that shades by row: refill each row from its last pixel, then English in ink 11, shadow 14 right."""
+    out = bytearray(sheet)
+    grid = [[0] * 72 for _ in range(32)]
+    for k in range(36):
+        for y, line in enumerate(get(out, PANEL_TILE + k)):
+            grid[k // 9 * 8 + y][k % 9 * 8:k % 9 * 8 + 8] = line
+    for y in range(30):  # the row's commonest pixel that isn't ink or shadow
+        grid[y][32:72] = [max(range(16), key=lambda v: (v not in (PANEL_INK, PANEL_SHADOW)) * grid[y][32:72].count(v))] * 40
+    g = glyphs()
+    for word, top in PANEL:
+        width = sum(g[c][1] for c in word) + len(word) - 1
+        assert width < 40, word
+        pen = 32 + (40 - width) // 2
+        for c in word:
+            rows, w = g[c]
+            for y, r in enumerate(rows):
+                for x in range(w):
+                    if r >> (7 - x) & 1:
+                        grid[top + y][pen + x] = PANEL_INK
+                        if grid[top + y][pen + x + 1] != PANEL_INK:
+                            grid[top + y][pen + x + 1] = PANEL_SHADOW
+            pen += w + 1
+    for k in range(36):
+        put(out, PANEL_TILE + k, [grid[k // 9 * 8 + y][k % 9 * 8:k % 9 * 8 + 8] for y in range(8)])
+    return bytes(out)
+
+
+def race(sheet):
+    """Block 001: 種族 in the status header, tiles 0xB0-0xB1 that $C2:BCD2 places before the race name: "Race" in 3-px letters, ink 15,
+    shadow 14 right, like the small font. Two cells is all the code leaves."""
+    out = bytearray(sheet)
+    px = [[0] * 16 for _ in range(8)]
+    for y, row in enumerate(RACE):
+        for x, c in enumerate(row):
+            if c == "#":
+                px[y][x] = 15
+                if x + 1 < 16 and row[x + 1:x + 2] != "#":
+                    px[y][x + 1] = 14
+    for k in range(2):
+        put(out, 0xB0 + k, [r[k * 8:k * 8 + 8] for r in px])
+    return bytes(out)
+
+
+def year(sheet):
+    """Block 000 (1bpp 16x16 font, glyph = TL TR BL BR tiles of 8 bytes): glyph $10A 年 is still drawn by code after the digits in the
+    years picker (ch 0 intro, rect $85:A9AF), one 16 px cell: "yr" (D15 last resort: a cell can't hold "years")."""
+    out = bytearray(sheet)
+    g = 0x10A * 32
+    for y, row in enumerate(YR):
+        bits = int(row.replace(".", "0").replace("#", "1"), 2)
+        out[g + y // 8 * 16 + y % 8], out[g + y // 8 * 16 + 8 + y % 8] = bits >> 8, bits & 0xFF
     return bytes(out)
 
 

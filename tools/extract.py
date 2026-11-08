@@ -17,7 +17,7 @@ import vm  # noqa: E402
 from tbl import Table  # noqa: E402
 
 T = Table.load(ROOT / "tbl/jp.tbl")
-DIALOGUE = [*range(739, 761), *range(762, 767)]  # u16 offset table at +0, then strings
+DIALOGUE = range(739, 767)  # u16 offset table at +0, then strings (761: chapter cards, MAP n + title)
 TALK = [725, 726]  # u16 offset table, 0 = none
 SHOP = range(212, 229)  # dest $8000, absolute pointers
 SCRIPT = range(229, 303)  # event VM, dest $A000
@@ -31,6 +31,7 @@ RAW = [
     (0x04A2F4, 0x04B220, "system"), (0x04B485, 0x04B4A0, "system"), (0x04B8D7, 0x04B8E7, "system"),
     (0x04BE02, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
     (0x058017, 0x0589D0, "boss"), (0x059F1A, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
+    (0x05BBFB, 0x05BC09, "system"),  # save-slot confirm Yes/No (found on the phase 8 tour)
 ]
 # (first, count, stride, name offset, name bytes, section): fixed-size name fields, padded with F4
 RECORDS = [
