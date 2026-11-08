@@ -128,16 +128,24 @@ def lines_in(out, far, shown, t, i, loc, jp, en, cells):
     """A description in a raw range: `F0 a b FE F0 c d .. F4.. FF`, one far code per line, in the row's own bytes. 4 bytes a line."""
     m = LOC.fullmatch(loc)
     start, size = int(m[2], 16), int(m[3])
-    text = [s for s in en.removesuffix("{end}").split("{nl}") if s]
-    if 4 * len(text) > size:
-        print(f"{i}: {size} bytes hold {size // 4} of {len(text)} lines")
-        text = text[:size // 4]
+    text = en.removesuffix("{end}").split("{nl}")
+    # the box is blitted as tall as its lines: a line dropped (even an empty one) leaves the last description's tiles there
+    text += [""] * (jp.count("{nl}") + 1 - len(text))
+    while text and not text[-1] and len(text) > jp.count("{nl}") + 1:
+        text.pop()
+    cost = lambda ls: sum(3 if s else 0 for s in ls) + len(ls) - 1
+    if cost(text) > size - 1:
+        print(f"{i}: {size} bytes hold fewer than {len(text)} lines")
+        while cost(text) > size - 1:
+            text.pop()
     code = bytearray()
     for k, s in enumerate(text):
-        n = far.number()
-        far.put(n, t.encode(s) + b"\xff")
-        shown[n] = (s, cells)
-        code += bytes([FAR, n & 255, n >> 8]) + (b"\xfe" if k < len(text) - 1 else b"")
+        if s:
+            n = far.number()
+            far.put(n, t.encode(s) + b"\xff")
+            shown[n] = (s, cells)
+            code += bytes([FAR, n & 255, n >> 8])
+        code += b"\xfe" if k < len(text) - 1 else b""
     out[start:start + size - 1] = code + bytes([PAD]) * (size - 1 - len(code))
 
 
@@ -154,6 +162,7 @@ def images(out, count, rows):
             if (pos & 0xFFFF) + len(data) > 0x8000:
                 pos = (pos >> 16) + 1 << 16
             at, tiles = pos, len(data) // 32
+            assert tiles <= 10, (n, text)  # asm/vwf.asm !ROOM: each pool ring keeps room for 10 tiles
             out[pos:pos + len(data)] = data
             pos += len(data)
         out[IMG + n * 4:IMG + n * 4 + 4] = (at | 0xC00000).to_bytes(3, "little") + bytes([tiles])

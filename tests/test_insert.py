@@ -72,6 +72,21 @@ def test_end_bytes_survive(built):
             assert (rom[start + n - 1] == 0xFF) <= (image[start + n - 1] == 0xFF), i
 
 
+def test_lines_keep_count(built):
+    """A description keeps every line the Japanese had, an empty one as a bare FE: the box is blitted as tall as its lines."""
+    rom, _, _, image, _ = built
+    secs = extract.load(rom).rows
+    for i, loc, jp in (r for sec in insert.LINES for r in secs[sec]):
+        start, n = int(insert.LOC.fullmatch(loc)[2], 16), int(loc.split(":")[1])
+        code, k, fe = image[start:start + n - 1], 0, 0
+        while k < len(code):  # a far number byte may be FE: walk the codes
+            fe += code[k] == 0xFE
+            k += 3 if code[k] == insert.FAR else 1
+        assert fe == jp.count("{nl}"), i
+    p = 0x00B5F0  # てきにのろいをかける{nl}{end}: line 2 empty
+    assert image[p] == insert.FAR and image[p + 3] == 0xFE
+
+
 def test_blocks_keep_size(built):
     rom, _, _, _, blocks = built
     sizes = {i: size for i, _, size, _, _ in insert.unpack.entries(rom)}

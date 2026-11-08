@@ -22,7 +22,11 @@ hirom
 !T      = $FF22
 !IMAGES = $E20000       ; far number -> u24 tiles, tile count (tools/insert.py)
 !POOL   = $4A           ; old kana tiles the names go to, up to !POOLEND; $30-$49 hold a-z, the game's own mapping sends $24-$3D there
-!POOLEND = $A0
+!POOLB  = $7A           ; names ring $4A-$79 (6 names of 8 tiles), description/bio lines ring $7A-$9F (3 lines of 10 and change):
+!POOLEND = $A0          ; one ring let a new description overwrite list names still on screen (docs/re/vwf.md)
+!ROOM   = 10            ; the longest image: description lines are 10 cells, names fewer
+!HEADB  = $7FFF2C       ; next free tile of the lines ring
+!RING   = $7FFF2D       ; ring of the image being drawn: 0 names, 1 lines
 !NAMEBUF = $7FFF30      ; 5 name bytes + FF for strip
 !HEAD   = $7FFF24       ; next free pool tile
 !NEXT   = $7FFF25       ; next tile to give out
@@ -113,6 +117,7 @@ far_read:
 
 ; Tile-rect blit: a record starting F0 lo hi is a far rect, a W no record has. The blit reads it with DB switched; everything else it touches is low RAM or long.
 rect_read:
+    jsr rect_room
     phy
     ldy.w $11ED
     lda.w $0000,y
@@ -140,6 +145,59 @@ rect_read_far:
     pla
     ply
     rtl
+
+; The blit list at $11D1 holds 11 entries, then its FFFF, then the count $11E9, and the writer never checks. The drain task
+; empties it once a game frame; English text makes our frames lag, so the item list queued 12 between drains, the 12th FFFF
+; landed on the count and a 0-row entry spun 64 KB DMAs forever (black screen). Full: sleep until the drain has run.
+rect_room:
+    pha
+-   lda.l $7E11E9
+    cmp.w #$0016        ; 2 x 11
+    bcc +
+    jsr nap
+    bra -
++   pla
+    rts
+
+; Sleep one frame and keep everything the caller had: registers, DB, D and the direct-page scratch $0000-$001F. Other tasks
+; use that scratch while we sleep; the game never sleeps inside the routines we hook, so their loop counters live there
+; (the item list's row counter $09 was clobbered: rows ran on and overflowed the blit list). shortcut: saves $0000-$001F
+; only, so a caller with D != 0 keeps its own page unguarded; widen if a hooked caller turns out to move D.
+nap:
+    php
+    rep #$30
+    pha
+    phx
+    phy
+    phb
+    phd
+    lda.w #$0000
+    tcd
+    ldx.w #$001E
+-   lda $00,x
+    pha
+    dex
+    dex
+    bpl -
+    jsl $80E113
+    lda.w #$0001
+    jsl $80E11C
+    lda.w #$0000
+    tcd
+    tax
+-   pla
+    sta $00,x
+    inx
+    inx
+    cpx.w #$0020
+    bne -
+    pld
+    plb
+    ply
+    plx
+    pla
+    plp
+    rts
 
 ; A = string number -> Y = string, DB = its bank. The caller's DB is on the stack: plb when done.
 far_entry:
@@ -710,8 +768,15 @@ small_map:
     sta.l !SKIP
     inc
     sta.l !RUN
+    rep #$20
+    lda 1,s             ; called from the FE/FF loop ($C220C1): description and bio lines, their own ring
+    cmp.w #$20C4
+    sep #$20
+    beq .ringb
+    lda.b #$00
+    sta.l !RING
     lda.l !HEAD
-    cmp.b #!POOLEND-12  ; room for the longest name
+    cmp.b #!POOLB-!ROOM ; room for the longest image
     bcs +
     cmp.b #!POOL        ; WRAM at boot holds anything
     bcs ++
@@ -719,6 +784,20 @@ small_map:
     lda.b #!POOL
 ++
     sta.l !HEAD
+    bra .ready
+.ringb:
+    lda.b #$01
+    sta.l !RING
+    lda.l !HEADB
+    cmp.b #!POOLEND-!ROOM
+    bcs +
+    cmp.b #!POOLB
+    bcs ++
++
+    lda.b #!POOLB
+++
+    sta.l !HEADB
+.ready:
     sta.l !NEXT
 .emit:
     lda.l !RUN
@@ -798,9 +877,7 @@ small_load:
     and.w #$00FF
     cmp.w #$0008
     bcc +
-    jsl $80E113         ; sleep a frame: the queue drains in this scheduler, a spin never sees it move
-    lda.w #$0001
-    jsl $80E11C
+    jsr nap             ; sleep a frame: the queue drains in this scheduler, a spin never sees it move
     bra .wait
 +
     lda.l !NUM
@@ -825,13 +902,7 @@ small_load:
     lda.l !PAY+6,x
     and.w #$00FF
     beq .free
-    phx
-    phy
-    jsl $80E113
-    lda.w #$0001
-    jsl $80E11C
-    ply
-    plx
+    jsr nap
     pla
     dec
     bne .busy
@@ -851,7 +922,9 @@ small_load:
     phx
     tyx
     sta.l !PAY+2,x
-    lda.l !HEAD
+    lda.l !NEXT         ; the image's first tile: two tiles were given out before the number was complete
+    dec
+    dec
     and.w #$00FF
     asl
     asl
@@ -873,8 +946,19 @@ small_load:
     sta.l !RUN
     pla
     clc
-    adc.l !HEAD
+    adc.l !NEXT
+    dec
+    dec                 ; first tile + count: the ring's next free tile
+    pha
+    lda.l !RING
+    bne +
+    pla
     sta.l !HEAD
+    bra ++
++
+    pla
+    sta.l !HEADB
+++
     rep #$20
     tya
     clc
