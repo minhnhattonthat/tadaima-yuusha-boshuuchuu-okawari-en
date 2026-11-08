@@ -1,7 +1,8 @@
 -- Log every DMA start from a frame on: which channel's source, size and bus dest, PC, stack. --script tools/debug/dmalog.lua [--var FROM=1600]
 -- Only A-bus to B-bus $80 ($2180, WRAM) unless ALL=1: that is the path that lands in low RAM.
 FROM = FROM or 0
-for bank = 0, 0x3F do L.on_write(bank << 16 | 0x420B, bank << 16 | 0x420B, function(addr, value)
+-- Banks $00-$3F and $80-$BF: code with DB = $82 writes $82:420B.
+local function hook(bank) L.on_write(bank << 16 | 0x420B, bank << 16 | 0x420B, function(addr, value)
   if L.frame < FROM then return end
   local s = emu.getState()
   local m, sp = emu.memType.snesMemory, s["cpu.sp"]
@@ -20,3 +21,4 @@ for bank = 0, 0x3F do L.on_write(bank << 16 | 0x420B, bank << 16 | 0x420B, funct
     end
   end
 end) end
+for bank = 0, 0x3F do hook(bank); hook(bank | 0x80) end

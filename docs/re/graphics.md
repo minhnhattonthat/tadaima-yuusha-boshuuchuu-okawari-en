@@ -8,7 +8,7 @@ page index in `work/gfx4/index.txt`), `tools/gfxzoom.py OUT BPP ZOOM BLOCK[+OFF[
 | G1 | 002 | `$C6:32DB` LZ | `7F:A000`, then VRAM | 4bpp, 32x16 buttons | 移動 魔法 オーブ 道具 / 休憩 地図 状態 PASS / 攻撃 魔法 オーブ 道具 / 防御 逃げる オート SOS / はい いいえ / 能力値 装備 魔法 / クエスト 街 勇者 施設 | redraw in English |
 | G2 | 794 | `$D9:CA6B` LZ | `01:7000` | 4bpp, title BG | しなりおモード / ぱーてぃーモード / つづきをする, plus the HUMAN 1994 line | redraw in English |
 | G3 | 793 | `$D9:B5FB` LZ | `01:4000` | 4bpp, title BG | logo ただいま 勇者募集中 おかわり | **keep** (D5: no official English version) |
-| G4 | 001 | `$C6:2134` LZ | `01:4000` | 2bpp + art | second font (0-9, A-Z, kana, 年月日): HUD and small labels. Has Latin, so only strings need work; find its table and users in phase 2 | check users |
+| G4 | 001 | `$C6:2134` LZ | `01:4000` | 2bpp + art | second font (0-9, A-Z, kana, 年月日): HUD and small labels. Has Latin, so only strings need work; find its table and users in phase 2. User found: status screen `1年 0ヶ月` = tiles `F7`, `F8 F9` placed by code into rect `$82:B850` (code-built in `$1111`, 21x2), not a string | redraw `F7`-`F9` (e.g. `yr`, `mo`) or patch the code's tile numbers |
 | G5 | 738 | `$D8:A3D5` LZ | `01:2000` | small icon sheet | icons, digits: no kana seen at 3x | check on a marker tour |
 
 **No Japanese seen at thumbnail scale:** portraits 799-811 (and 812 group), sprites 34-82, 425-477, 478-525, effects 526-555, map
