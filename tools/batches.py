@@ -28,7 +28,7 @@ TOKEN = re.compile(r"\{[^}]*\}|\[[0-9A-F]{2}\]")  # control codes and raw bytes;
 GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨": "[E3]", "🅛": "[E4]", "🅡": "[E5]", "♥": "[CB]", "♪": "[D0]"}  # the game's own glyphs, raw bytes in English
 FREE = {"{nl}", "[F4]", "{cell}", "{page}", *GLYPHS.values()}  # layout and glyphs; {page} checked separately: never fewer
 VARIABLE = r"\{sub:[0-9A-F]{4}\}"  # a name the game draws
-HONORIFICS = {}  # D1 keeps honorifics on personal names only (glossary Rulings); a checker can't tell a name from a title
+HONORIFICS = {}  # extra JP -> EN honorific forms; empty: honorifics() builds name+suffix from the glossary's katakana names (D1)
 ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "bio", "desc_item", "desc_equip", "desc_spell",
          "story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"]  # names first: they go into the glossary before dialogue; label.tsv is done by hand
 DLG = {"story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"}
@@ -208,6 +208,21 @@ def width_problems(entry, en):
     return out
 
 
+def stub_problems(entry, en):
+    """A lowercase word or two orphaned on the last line of a dialogue paragraph ("..., so" / "but"); a name variable,
+    a speaker label above it, or a capitalised exclamation ("Why?!") is not a stub."""
+    if form(entry) != "dlg":
+        return []
+    out = []
+    for lines, prompt in segments(en):
+        if lines and lines[-1] == "" and not prompt:
+            lines = lines[:-1]
+        last = TOKEN.sub("", lines[-1]).strip() if len(lines) > 1 else ""
+        if last and len(last) < 6 and last[0].islower() and "{sub:" not in lines[-1] and not SPEAKER.match(lines[-2] + "{nl}"):
+            out.append(f"stub last line {last!r}: rewrap the paragraph")
+    return out
+
+
 def encodable_problems(en):
     try:
         _font()["tbl"].encode(en)
@@ -249,6 +264,15 @@ def glossary():
     return rows
 
 
+def honorifics(terms):
+    """D1: honorifics stay on personal names. Name+suffix from the glossary's katakana names, e.g. ラター様 -> Ratar-sama."""
+    if "hon" not in _cache:
+        suf = {"さん": "-san", "様": "-sama", "ちゃん": "-chan", "くん": "-kun"}
+        _cache["hon"] = {j + s: e + x for jps, ens, _ in terms for j in jps if j and all(kind(c) == "katakana" for c in j)
+                         for e in ens[:1] for s, x in suf.items()}
+    return _cache["hon"]
+
+
 def problems(entry, en, terms):
     """Every rule, on one row of English."""
     jp = entry["jp"]
@@ -273,10 +297,10 @@ def problems(entry, en, terms):
         if any(has_term(jp_plain, j) for j in jps) and not any(x.lower() in en.lower() for x in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")
         out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
-    for jp_form, en_form in HONORIFICS.items():
-        if jp_form in jp_plain and en_form.lower() not in en.lower():
+    for jp_form, en_form in (HONORIFICS or honorifics(terms)).items():
+        if has_term(jp_plain, jp_form) and en_form.lower() not in en.lower():
             out.append(f"honorific {jp_form} needs {en_form}")
-    return out + width_problems(entry, en)
+    return out + width_problems(entry, en) + stub_problems(entry, en)
 
 
 def read_tsv(path):

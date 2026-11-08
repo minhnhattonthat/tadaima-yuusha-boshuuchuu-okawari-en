@@ -44,3 +44,8 @@ if mode != "--identity":
         sys.exit(code)
     built = out.read_bytes()
 print(f"{out.relative_to(ROOT)} sha1 {hashlib.sha1(built).hexdigest()} {'identical to the dump' if built == rom else 'differs'}")
+if mode != "--identity":
+    import romcheck  # noqa: E402
+    if romcheck.main([str(out)]):
+        out.unlink()
+        sys.exit("romcheck: bytes changed outside the allowed ranges (build/ranges.txt)")
