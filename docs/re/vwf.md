@@ -6,6 +6,9 @@ a closing `FF` stays, so no pointer, table, list walk or block size changes. Num
 at the English. Far strings live in the **upper half** of file banks `21+`, read through CPU banks `$A1+:8000`: the text engine runs with DB = the string's
 bank and reads low RAM by absolute address, so a `$C0+` bank would break it. Numbers skip any byte `F4+`, so a far code never reads as a padding or end byte.
 Far code ends the string: the old text is never read again. A row with no `FF` (a pointer enters the next row) gets `F0` to the next row at the end of its English.
+**Place lists** (`s212.0899`, `s213`-`s219`, `s225`-`s228`: 12 records of 10 bytes + `FE`, no `FF`) get a far code per record: `$C2:D4AB` copies
+10 bytes of record `n` (`[$7E:800A] + n * 11`) into slot `$1236`, then code-builds `FE` 危険度 ★ after it (map town box, `field_map_town`). 危険度 is
+code-built (`LDA #$8CF7` at `$C2:D503`): no row, phase 7 patches those immediates or keeps the glyphs.
 Stream recompressed in its slot; an edit that outgrows the slot fails the build (only blanking so far, so it can't yet).
 
 ## Codes (`tbl/en.tbl`, generated)

@@ -103,8 +103,9 @@ def test_tables_are_not_rows(world):
     """Bytes that only decode as kana: a far code over them breaks the game (F4F4 as a script set, versus, orb table in b213)."""
     rows = {r[1].split(":")[0] for rows in world[2].rows.values() for r in rows}
     assert not {f"b{b}+0" for b in extract.SHOP} & rows
-    assert not {"b233+92", "b238+212", "r05AB8D"} & rows
+    assert not {"b233+92", "b238+212", "r05AB8D", "r05AB96"} & rows  # 05AB96: high byte of pointer $ABFF after its FF low byte
     assert {"b213+30E", "b230+508", "r05A09F", "b212+C04"} <= rows  # the string behind each table starts at its own text
+    assert {"r05AB97", "r059F1A"} <= rows  # versus result line; tournament king, first entry of table $C5:9F06
 
 
 def test_script_files_match(world):

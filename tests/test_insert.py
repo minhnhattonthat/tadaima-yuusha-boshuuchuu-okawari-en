@@ -44,7 +44,7 @@ def test_far_codes_resolve(built):
     rom, rows, english, image, blocks = built
     t = insert.table()
     secs = extract.load(rom).rows
-    lined = {r[0] for sec in insert.LINES for r in secs[sec]}
+    lined = {r[0] for sec in insert.LINES for r in secs[sec]} | {r[0] for r in secs["shop"] if is_list(rom, r[1])}
     for i, loc, _ in rows:
         if i not in english:
             continue
@@ -85,6 +85,26 @@ def test_lines_keep_count(built):
         assert fe == jp.count("{nl}"), i
     p = 0x00B5F0  # てきにのろいをかける{nl}{end}: line 2 empty
     assert image[p] == insert.FAR and image[p + 3] == 0xFE
+
+
+def is_list(rom, loc):
+    m = insert.LOC.fullmatch(loc)
+    data = insert.unpack.load(rom, *next((s, z) for b, s, z, _, _ in insert.unpack.entries(rom) if b == int(m[1])))[0]
+    start, n = int(m[2], 16), int(m[3])
+    return extract.fixed_list(data, start, start + n) == start + n
+
+
+def test_place_lists_keep_records(built):
+    """Place names are copied 10 bytes at a time ($C2:D4DE): every record gets its own far code and keeps its FE."""
+    rom, rows, english, image, blocks = built
+    lists = [(i, loc) for i, loc, _ in extract.load(rom).rows["shop"] if is_list(rom, loc)]
+    assert len(lists) == 12
+    for i, loc in lists:
+        m = insert.LOC.fullmatch(loc)
+        span, start = blocks[int(m[1])], int(m[2], 16)
+        for k in range(int(m[3]) // 11):
+            q = start + k * 11
+            assert span[q] == insert.FAR and span[q + 10] == 0xFE, (i, k)
 
 
 def test_blocks_keep_size(built):

@@ -1,4 +1,5 @@
 id	loc	jp	en
+059F1A	r059F1A:37	{color:0B}王様{color:0F}{nl}{sfx:00}おお、勇者たちよ。{nl}ごくろうであったな。{sfx:FE}{page}{end}	
 059F3F	r059F3F:41	{sfx:00}そなたたちのかつやくで{nl}ずいぶんモンスターのひがいが{nl}へったようじゃ。{sfx:FE}{page}{end}	
 059F68	r059F68:37	{sfx:00}王国の民も、さぞや{nl}心強く思っていることじゃろう。{sfx:FE}{page}{end}	
 059F8D	r059F8D:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	
@@ -20,7 +21,7 @@ id	loc	jp	en
 05A222	r05A222:24	{sfx:01}それでは、また会う日まで！{sfx:FE}{pause:F0}{pause:C3}{end}	
 05AB4B	r05AB4B:46	{sfx:01}クエストをクリアすると、{nl}大りょうのNVPとシリングを{nl}さしあげます{color:09}♥{color:0F}{sfx:FE}{page}{end}	
 05AB79	r05AB79:20	{sfx:01}みなさん、がんばってね〜。{sfx:FE}{pause:40}{end}	
-05AB96	r05AB96:32	ガ{color:07}シルフィ{color:0F}{nl}{sfx:01}おめでとうございま〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	
+05AB97	r05AB97:31	{color:07}シルフィ{color:0F}{nl}{sfx:01}おめでとうございま〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	
 05ABB6	r05ABB6:24	{sfx:01}勇者{sub:0100}様{nl}{sub:0000}解放！{sfx:FE}{page}{end}	
 05ABCE	r05ABCE:23	{sfx:01}新たなクエストの{nl}発表です！{sfx:FE}{page}{end}	
 05ABE5	r05ABE5:26	{sfx:01}つぎのクエストは{nl}{sub:0000}で〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	

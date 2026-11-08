@@ -30,7 +30,7 @@ RAW = [
     (0x049887, 0x049899, "system"), (0x049943, 0x049953, "system"), (0x04A1E7, 0x04A1F3, "system"),
     (0x04A2F4, 0x04B220, "system"), (0x04B485, 0x04B4A0, "system"), (0x04B8D7, 0x04B8E7, "system"),
     (0x04BE02, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
-    (0x058017, 0x0589D0, "boss"), (0x059F3F, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
+    (0x058017, 0x0589D0, "boss"), (0x059F1A, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
 ]
 # (first, count, stride, name offset, name bytes, section): fixed-size name fields, padded with F4
 RECORDS = [
@@ -188,10 +188,24 @@ def words(data, org):
     return {w - org for w in (data[i] | data[i + 1] << 8 for i in range(len(data) - 1)) if org <= w < org + len(data)}
 
 
+def fixed_list(data, p, e, w=10):
+    """Place names copied 10 bytes at a time ($C2:D4DE): `name FE` records, no FF. The list's end if 3+ records, else 0."""
+    q = p
+    while q + w < e and data[q + w] == 0xFE and 0xFE not in data[q:q + w] and texty(T.decode(data, q, length=w)[0]):
+        q += w + 1
+    return q if q - p >= 3 * (w + 1) else 0
+
+
 def piece(sink, sec, tag, b, data, p, e, cuts, known=False):
     """Files data[p:e] as text, as table bytes then text, or as data."""
     s = T.decode(data, p, length=e - p)[0]
     org = VM_ORG if sec == "event" else SHOP_ORG
+    lst = sec == "shop" and fixed_list(data, p, e)
+    if lst:  # records may follow the list directly: they are data, not part of the row
+        sink.text(sec, tag, f"b{b}+{p:X}", data, p, lst)
+        if lst < e:
+            piece(sink, sec, tag, b, data, lst, e, cuts)
+        return
     if known or texty(s) and not dirty(s) and not ptr_run(data, p, e, cuts, org):  # no FF at the end: a pointer enters the string there, it runs on into the next row
         sink.text(sec, tag, f"b{b}+{p:X}", data, p, e)
         return
@@ -235,7 +249,13 @@ def load(rom):
     for b in SCRIPT:
         script_block(sink, b, blocks[b], argc)
     for first, end, sec in RAW:
+        bank = first & 0xFF0000
+        cuts = {bank | rom[i] | rom[i + 1] << 8 for i in range(first, end - 1)}
         for p, e in split(rom, first, end):
+            ptr = bank | rom[p - 1] | rom[p] << 8  # an FF that is a pointer's low byte: its high byte isn't text ($C5:AB8D table)
+            if rom[p - 1] == 0xFF and first <= ptr < end and p + 1 in cuts:
+                sink.data(f"r{p:06X}", 1, "not text")
+                p += 1
             s = T.decode(rom, p, length=e - p)[0]
             clean = texty(s) and not dirty(s)
             c = None if clean else tail(rom, p, e, ())

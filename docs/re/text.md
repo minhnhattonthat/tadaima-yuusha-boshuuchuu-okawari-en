@@ -50,6 +50,10 @@ No text found outside these: a sweep of banks 00-05 and `1D-1F` for clean kana f
 (short kana-shaped hits in graphics data, `work/sweep.txt`). Blocks 722-724 and 303-306 look like text to the sweep and aren't.
 Not checked: strings built by code from `LDA #glyph` chains; the marker build will show them as Japanese that stays.
 
+Found by the marker tour: `$C5:9F06` (tournament king) starts its table at `9F1A`, so the `clear` range starts there; in the `$C5:AB8D` table the
+last pointer `$ABFF` puts an `FF` before its high byte, so a raw piece that starts right after a pointer-low `FF` skips that byte (`05AB97`, versus);
+shop place lists end at their last `name FE` record (`extract.fixed_list`), the records after them are data.
+
 Multi-string lists: `$82:9D0F` walks `X` entries past a terminator word in `A` (`FFFF`), so a list is `str FF FF str FF FF`.
 Used with `$C0:A490` (item descriptions, by item id), and by VM op 1F when its second operand isn't 0.
 

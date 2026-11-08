@@ -71,7 +71,9 @@ def apply(rom, english):
     at = {}  # (block, start) -> row id, to follow a row with no end code into the next one
     secs = extract.load(rom).rows
     by_line = {r[0]: LINES[sec] for sec in LINES for r in secs[sec]}
+    shop = {r[0] for r in secs["shop"]}
     shown = {}  # far number -> (text, cells) for images()
+    extra = []  # (far number, row id) of list records, for far.tsv
     for i, loc, jp in rows:
         m = LOC.fullmatch(loc)
         at[(m[1], int(m[2], 16))] = i
@@ -98,6 +100,9 @@ def apply(rom, english):
         m = LOC.fullmatch(loc)
         block, start, n = m[1], int(m[2], 16), int(m[3])
         span = blocks[int(block)] if block else out
+        if i in shop and extract.fixed_list(span, start, start + n) == start + n:
+            records_in(span, far, extra, t, i, start, n, english[i])
+            continue
         data = t.encode(english[i])
         if span[start + n - 1] != 0xFF and not loc.startswith("r"):  # runs into the next row
             nxt = at.get((block, start + n))
@@ -120,8 +125,23 @@ def apply(rom, english):
     edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"1"}
     blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
-    (ROOT / "build/far.tsv").write_text("".join(f"{n}\t{i}\n" for i, n in number.items()), encoding="utf-8")  # for tools/windows.py
+    (ROOT / "build/far.tsv").write_text("".join(f"{n}\t{i}\n" for i, n in [*number.items(), *extra]), encoding="utf-8")  # for tools/windows.py
     return out, blocks
+
+
+def records_in(span, far, extra, t, i, start, n, en):
+    """A place list: `name FE` records of 10 bytes, copied 10 at a time into a slot ($C2:D4DE). A far code per record."""
+    names = en.split("{nl}")
+    for k in range(n // 11):
+        s = names[k].strip() if k < len(names) else ""
+        q = start + k * 11
+        code = b""
+        if s:
+            f = far.number()
+            far.put(f, t.encode(s) + b"\xff")
+            extra.append((i, f))
+            code = bytes([FAR, f & 255, f >> 8])
+        span[q:q + 10] = code + bytes([PAD]) * (10 - len(code))
 
 
 def lines_in(out, far, shown, t, i, loc, jp, en, cells):
