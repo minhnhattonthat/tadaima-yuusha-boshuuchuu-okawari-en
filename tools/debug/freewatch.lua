@@ -10,5 +10,5 @@ local function watch(lo, hi)
     L.log(key)
   end)
 end
-watch(0x7E0483, 0x7E04F2)  -- !RECORDS
+watch(0x7E1538, 0x7E1549)  -- !RECORDS (the scheduler at $80D78F writes them too: its PCs are expected)
 watch(0x7FFE00, 0x7FFFFF)  -- VWF cells and state

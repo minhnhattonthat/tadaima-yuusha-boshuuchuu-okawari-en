@@ -30,8 +30,12 @@ hirom
 !SKIP   = $7FFF27       ; number bytes still to come
 !NUM    = $7FFF28
 !RECP   = $7FFF2A       ; next upload record
-!RECORDS = $0483        ; 8 upload records in low RAM, free (work/ramuse.txt)
-!RECSIZE = 14
+; The scheduler's 5 bytes of a continuation record must be in bank 0. $1538-$154A: no scene of the original's tour
+; writes it (tools/debug/lowmap.lua + freeram.py) and no absolute operand names it. $0483 was the sprite buffer's tail.
+!RECORDS = $1538
+!RECSIZE = 6
+!RECN   = 3
+!PAY    = $7FFF40       ; per record, 12 apart: +0 source, +2 bank, +3 tile count, +4 VRAM word, +6 busy until sent
 
 ; ------ hooks: every overwritten instruction is listed in docs/re/vwf.md
 org $C2143B
@@ -806,26 +810,47 @@ small_load:
     lda.l !RECP
     cmp.w #!RECORDS
     bcc +
-    cmp.w #!RECORDS+!RECSIZE*8
+    cmp.w #!RECORDS+(!RECSIZE*!RECN)  ; asar math runs left to right: without the brackets the ring never wrapped
     bcc ++
 +
     lda.w #!RECORDS
 ++
     tay
-    lda.l !IMAGES,x
-    sta.w $0006,y
-    lda.l !IMAGES+2,x
-    and.w #$00FF
-    sta.w $0008,y
-    lda.l !IMAGES+3,x
-    and.w #$00FF
+    jsr pay_index       ; A is still the record
+    phx
+    tax
+    lda.w #3            ; a record still queued is sent in the next frame; bounded, as WRAM at boot holds anything
+.busy:
     pha
-    asl
-    asl
-    asl
-    asl
-    asl
-    sta.w $000C,y
+    lda.l !PAY+6,x
+    and.w #$00FF
+    beq .free
+    phx
+    phy
+    jsl $80E113
+    lda.w #$0001
+    jsl $80E11C
+    ply
+    plx
+    pla
+    dec
+    bne .busy
+    pha
+.free:
+    pla
+    txa
+    plx                 ; X = image index, A = payload index
+    phy
+    tay
+    lda.l !IMAGES,x
+    phx
+    tyx
+    sta.l !PAY,x
+    plx
+    lda.l !IMAGES+2,x   ; bank, tile count
+    phx
+    tyx
+    sta.l !PAY+2,x
     lda.l !HEAD
     and.w #$00FF
     asl
@@ -834,8 +859,13 @@ small_load:
     asl
     clc
     adc.w #$4000
-    sta.w $000A,y
-    pla
+    sta.l !PAY+4,x
+    lda.w #$0001
+    sta.l !PAY+6,x
+    plx
+    ply
+    lda.l !IMAGES+3,x
+    and.w #$00FF
     sep #$20
     pha
     dec
@@ -862,16 +892,36 @@ small_load:
 ; The game's $80D78F: what follows it runs in VBlank with X = record, or now during forced blank.
 small_send:
     jsl $80D78F
-    lda.w $000C,x
+    txa
+    jsr pay_index
+    tax
+    lda.l !PAY+3,x
+    and.w #$00FF
+    asl
+    asl
+    asl
+    asl
+    asl
     tcd
-    ldy.w $000A,x
-    lda.w $0008,x
+    lda.l !PAY+4,x
+    tay
+    lda.w #$0000
+    sta.l !PAY+6,x      ; free once this runs: $80D6F5 doesn't wait
+    lda.l !PAY+2,x
+    and.w #$00FF
     pha
-    lda.w $0006,x
+    lda.l !PAY,x
     tax
     pla
     jsl $80D6F5
     rtl
+
+; A16: A = record -> A = payload index, 12 a record.
+pay_index:
+    sec
+    sbc.w #!RECORDS     ; 0, 6, 12 -> 0, 12, 24
+    asl
+    rts
 
 planebit:
     db 1, 2, 4, 8
