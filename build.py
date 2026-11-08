@@ -42,7 +42,9 @@ if mode != "--identity":
     if code:
         out.unlink()
         sys.exit(code)
-    built = out.read_bytes()
+    import bps  # noqa: E402
+    built = bps.snes_checksum(out.read_bytes())[0]  # asar runs with --fix-checksum=off
+    out.write_bytes(built)
 print(f"{out.relative_to(ROOT)} sha1 {hashlib.sha1(built).hexdigest()} {'identical to the dump' if built == rom else 'differs'}")
 if mode != "--identity":
     import romcheck  # noqa: E402
