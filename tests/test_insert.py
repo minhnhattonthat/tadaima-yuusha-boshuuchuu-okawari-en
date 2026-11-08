@@ -51,9 +51,9 @@ def test_far_codes_resolve(built):
         m = insert.LOC.fullmatch(loc)
         span = blocks[int(m[1])] if m[1] else image
         start, n = int(m[2], 16), int(m[3])
-        assert span[start] == insert.FAR, i
+        assert span[start] in (insert.FAR, insert.CALL), i
         num = span[start + 1] | span[start + 2] << 8
-        assert span[start + 1] < 0xF4 and span[start + 2] < 0xF4, i
+        assert span[start + 1] < 0xF0 and span[start + 2] < 0xF0, i
         cpu = int.from_bytes(image[insert.TABLE + num * 3:insert.TABLE + num * 3 + 3], "little")
         assert 0xA1 <= cpu >> 16 <= 0xBF and cpu & 0xFFFF >= 0x8000, i
         data = t.encode(english[i].split("{nl}")[0] if i in lined else english[i])  # descriptions: a far code per line
@@ -104,7 +104,7 @@ def test_place_lists_keep_records(built):
         span, start = blocks[int(m[1])], int(m[2], 16)
         for k in range(int(m[3]) // 11):
             q = start + k * 11
-            assert span[q] == insert.FAR and span[q + 10] == 0xFE, (i, k)
+            assert span[q] == insert.CALL and span[q + 10] == 0xFE, (i, k)
 
 
 def test_blocks_keep_size(built):

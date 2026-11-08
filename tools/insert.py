@@ -15,6 +15,7 @@ import unpack  # noqa: E402
 from tbl import Table  # noqa: E402
 
 FAR, BANK0, ROM_SIZE = 0xF0, 0x21, 0x400000  # file bank of the first far strings, also the table's bank
+CALL = 0xF1  # far string, then the text goes on after the code (asm/vwf.asm far_read .call)
 PAD = 0xF4  # the game's blank glyph: names trim it, list walks skip it
 TABLE = 0x210000  # 3 bytes per string, lower half of the bank
 LOC = re.compile(r"(?:b(\d+)\+|r)([0-9A-F]+):(\d+)")
@@ -38,9 +39,9 @@ class Far:
         self.out, self.count, self.pos = out, 0, (BANK0 << 16) + 0x8000
 
     def number(self):
-        """No byte a list walk or a name copy stops on: FF ends, F4+ pads."""
+        """No byte a list walk or a name copy stops on (FF ends, F4+ pads), nor one the tilemap path reads as a code (F0, F1)."""
         n = self.count
-        while n & 0xFF >= 0xF4 or n >> 8 >= 0xF4:
+        while n & 0xFF >= 0xF0 or n >> 8 >= 0xF0:
             n += 1
         self.count = n + 1
         return n
@@ -101,7 +102,7 @@ def apply(rom, english):
         block, start, n = m[1], int(m[2], 16), int(m[3])
         span = blocks[int(block)] if block else out
         if i in shop and extract.fixed_list(span, start, start + n) == start + n:
-            records_in(span, far, extra, t, i, start, n, english[i])
+            records_in(span, far, extra, shown, t, i, start, n, english[i])
             continue
         data = t.encode(english[i])
         if span[start + n - 1] != 0xFF and not loc.startswith("r"):  # runs into the next row
@@ -129,8 +130,9 @@ def apply(rom, english):
     return out, blocks
 
 
-def records_in(span, far, extra, t, i, start, n, en):
-    """A place list: `name FE` records of 10 bytes, copied 10 at a time into a slot ($C2:D4DE). A far code per record."""
+def records_in(span, far, extra, shown, t, i, start, n, en):
+    """A place list: `name FE` records of 10 bytes, copied 10 at a time into a slot ($C2:D4DE, $C2:D22C). A call code per
+    record: $C2:D4AB appends FE 危険度 ★ after the 10 bytes, so the text must go on after the name."""
     names = en.split("{nl}")
     for k in range(n // 11):
         s = names[k].strip() if k < len(names) else ""
@@ -140,7 +142,8 @@ def records_in(span, far, extra, t, i, start, n, en):
             f = far.number()
             far.put(f, t.encode(s) + b"\xff")
             extra.append((i, f))
-            code = bytes([FAR, f & 255, f >> 8])
+            shown[f] = (s, 10)
+            code = bytes([CALL, f & 255, f >> 8])
         span[q:q + 10] = code + bytes([PAD]) * (10 - len(code))
 
 

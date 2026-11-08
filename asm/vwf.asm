@@ -2,6 +2,7 @@
 hirom
 
 !FAR    = $F0           ; text code: F0 lo hi = print far string number hilo, then the string is over
+!CALL   = $F1           ; F1 lo hi = the same, then skip F4 padding and go on: place records, where code appends text to the slot
 !TABLE  = $E10000       ; far strings: u24 entries, CPU addresses in $A1-$BF:8000+ (low RAM stays visible, the engine needs it)
 !BUFA   = $FE00         ; bank $7F, free (tools/debug/ramuse.py): 4bpp 16x16 cell the pen is in
 !BUFB   = $FE80         ; the next cell, a glyph spills into it
@@ -98,6 +99,8 @@ far_read:
     beq .end
     cmp.w #!FAR
     beq .far
+    cmp.w #!CALL
+    beq .call
     cmp.w #$00FC
     bcc .go
     pha                 ; page or newline: the open cell stays on the old line, and the page arrow goes after it, not over it
@@ -114,6 +117,24 @@ far_read:
     plb
     sta $00
     jml $C215B9
+.call:                  ; $C2:D4AB copies a record into slot $1236, then adds FE 危険度 ★ after its 10 bytes
+    phy
+    lda.w $0001,y
+    jsr far_entry
+    jsl $C21421
+    plb
+    ply
+    sta $00
+    cmp.w #$0000        ; sta sets no flags
+    bne .end            ; skipped or closed: stop like the end code would
+-   iny
+    lda.w $0002,y       ; the byte after the code
+    and.w #$00FF
+    cmp.w #$00F4
+    beq -
+    iny
+    iny
+    jml $C21421
 
 ; Tile-rect blit: a record starting F0 lo hi is a far rect, a W no record has. The blit reads it with DB switched; everything else it touches is low RAM or long.
 rect_read:
@@ -236,12 +257,14 @@ same_pos:
 .no:
     rts
 
-; +0E is a tile number, a multiple of 4. Bit 0 = this window has an open cell: any code that sets +0E closes it.
+; +0E is a tile number: a multiple of 4 plus the window's base (1 in the ending's text window, 0 elsewhere: every window of the tours).
+; Bit 1 = this window has an open cell: any code that sets +0E closes it. (Bit 0 was base 1's own bit: the ending drew scrambled cells.)
+!OPEN = $0002
 close_cell:
     lda.w $000E,x
-    bit.w #$0001
+    bit.w #!OPEN
     beq next_tile_rts
-    and.w #$FFFC
+    and.w #$FFFF-!OPEN
     sta.w $000E,x
 next_tile:
     lda.w $0010,x
@@ -264,7 +287,7 @@ next_tile_rts:
 ; a fixed-width glyph or code-drawn text comes next: leave the open cell
 align:
     lda.w $000E,x
-    bit.w #$0001
+    bit.w #!OPEN
     beq .done
     jsr same_pos
     bne .moved
@@ -290,7 +313,7 @@ vwf_char:
     jml $C21783
 .vwf:
     lda.w $000E,x
-    bit.w #$0001
+    bit.w #!OPEN
     beq .fresh
     jsr same_pos
     beq .keep
@@ -302,7 +325,7 @@ vwf_char:
     bra .draw
 .keep:
     lda.w $000E,x
-    and.w #$FFFC
+    and.w #$FFFF-!OPEN
     sta.w $000E,x
 .draw:
     lda.w $0014,x
@@ -332,7 +355,7 @@ vwf_char:
     lda.l !PEN
     beq .closed
     lda.w $000E,x
-    ora.w #$0001
+    ora.w #!OPEN
     sta.w $000E,x
 .closed:
     txa
@@ -601,6 +624,8 @@ strip_text:
     beq .color
     cmp.w #!FAR
     beq .far
+    cmp.w #!CALL        ; a place record as a strip: the name is all of it
+    beq .far
     cmp.w #$00F7
     bne .glyph
     lda.w $0000,y
@@ -730,6 +755,8 @@ strip_flush:
 ; each byte of the string gives the next tile. A = upper row (blank), B = lower row.
 small_map:
     cmp.b #!FAR
+    beq .far
+    cmp.b #!CALL
     beq .far
     pha
     lda.l !SKIP

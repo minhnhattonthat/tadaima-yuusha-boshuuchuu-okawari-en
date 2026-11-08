@@ -4,11 +4,13 @@
 The ROM grows to 4 MB (`$FFD7 = 0C`). Every translated row keeps its place: its first 3 bytes become `F0 lo hi`, the rest is blanked with `F4` and
 a closing `FF` stays, so no pointer, table, list walk or block size changes. Number `hilo` indexes u24 entries at `$E1:0000` (file `210000`) that point
 at the English. Far strings live in the **upper half** of file banks `21+`, read through CPU banks `$A1+:8000`: the text engine runs with DB = the string's
-bank and reads low RAM by absolute address, so a `$C0+` bank would break it. Numbers skip any byte `F4+`, so a far code never reads as a padding or end byte.
+bank and reads low RAM by absolute address, so a `$C0+` bank would break it. Numbers skip any byte `F0+`, so a far code never reads as a padding, end or far byte.
 Far code ends the string: the old text is never read again. A row with no `FF` (a pointer enters the next row) gets `F0` to the next row at the end of its English.
-**Place lists** (`s212.0899`, `s213`-`s219`, `s225`-`s228`: 12 records of 10 bytes + `FE`, no `FF`) get a far code per record: `$C2:D4AB` copies
-10 bytes of record `n` (`[$7E:800A] + n * 11`) into slot `$1236`, then code-builds `FE` 危険度 ★ after it (map town box, `field_map_town`). 危険度 is
-code-built (`LDA #$8CF7` at `$C2:D503`): no row, phase 7 patches those immediates or keeps the glyphs.
+**Place lists** (`s212.0899`, `s213`-`s219`, `s225`-`s228`: 12 records of 10 bytes + `FE`, no `FF`) get a **call code** per record, `F1 lo hi`:
+the far string, then skip `F4` and go on. `$C2:D4AB` copies 10 bytes of record `n` (`[$7E:800A] + n * 11`) into slot `$1236`, then code-builds
+`FE` 危険度 ★ after it (map town box, `field_map_town`), so an `F0` there dropped the danger line. `$C2:D1F5` copies a record into a `{sub}` slot
+with `FFFF`. Strip and tilemap paths treat `F1` as `F0` (records get name images too). 危険度 is code-built (`LDA #$8CF7` at `$C2:D503`): no row,
+phase 7 patches those immediates or keeps the glyphs. Far numbers skip bytes `F0+`: the tilemap path checks each byte for `F0`/`F1` first.
 Stream recompressed in its slot; an edit that outgrows the slot fails the build (only blanking so far, so it can't yet).
 
 ## Codes (`tbl/en.tbl`, generated)
