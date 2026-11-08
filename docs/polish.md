@@ -6,6 +6,9 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [ ] rect00A0DA, rect0499DB, rect04B871 - シリング as "Sh": these rects are copied to RAM with numbers patched in (rects.COPIED), 4-5 cells; last-resort abbreviation (D4). Engine fix: widen the copy, or draw the unit from a far rect.
 - [ ] rect04B871 - まいつき as "/mo" (4 cells before the number); rect00A0DA まいつき as "Pay". Same engine fix.
 - [ ] rect04B845 - けいけんち as "EXP" (6 cells): standard RPG term, check it reads well in the status screen.
+- [ ] status header 12/25 うまれ as "DOB" (3 label-sheet tiles of immediates at `$C2:BD6C`, asm/vwf.asm): last-resort abbreviation (D4). Engine fix: 3 custom 3 px-letter tiles "born" like G7 "Race" (`tools/gfx.py`).
+- [ ] s212.070F / s212.0756 shop and inn headers (Bendas Inn, Rareko Inn, Pikoko Shop): the game centres the name by its byte count, so the narrower VWF text sits 4-6 px left of the JP centre (Ginso Inn is on it). Phase 8 tour `inn0`, `inn1`, `shop0`. Engine fix: centre by the far string's pixel width.
+- [ ] VS date box "Year 0, April" (`date_text`, asm/vwf.asm) is left-aligned; the JP 0年目 4月 fills the box. Lead with the width-centring offset, and keep it inside the 16-byte `$1236` slot ("Year 9, September" + FFFF is already 19 bytes: check what `$1246` holds in VS mode).
 - [ ] foe592 - キングサラマンダ as "K. Salamander" in the battle target box (8 small cells, 64 px; "King Salamander" is 71 px). Last-resort abbreviation (D16); the bestiary and place lists keep "King Salamander". Engine fix: a narrower name font, or a 9-cell box.
 
 ## Batch review Minors (2026-11-08, reports in docs/reviews/)

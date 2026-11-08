@@ -21,8 +21,10 @@ def names():
     """{scene: frames or None}. Same list as scenes.lua: its fixed lines, then its chapter loops."""
     src = (ROOT / "tools/debug/scenes.lua").read_text(encoding="utf-8")
     fixed = {m[0]: int(m[1]) for m in re.findall(r"^S\.(\w+) = .*frames = (\d+)", src, re.M) if m[0] != "name"}
-    turns = {m: 18000 for m in re.findall(r"^S\.(\w+) = turn\(", src, re.M)}
-    tiles = {m: 18300 for m in re.findall(r"(\w+) = \{ 0x\w\w, 0x\w\w \}", src[src.index("local tiles"):])}
+    turn_f = int(re.search(r"frames = (\d+), route = route", src)[1])  # turn()'s and the tile loop's own lengths
+    tile_f = int(re.search(r"tile = xy, frames = (\d+)", src)[1])
+    turns = {m: turn_f for m in re.findall(r"^S\.(\w+) = turn\(", src, re.M)}
+    tiles = {m: tile_f for m in re.findall(r"(\w+) = \{ 0x\w\w, 0x\w\w \}", src[src.index("local tiles"):])}
     return (fixed | turns | tiles | {f"ch{c:02d}": None for c in range(8)} | {f"mid{c:02d}": 12000 for c in range(5)}
             | {f"clear{c:02d}": 12000 for c in range(5)})
 
@@ -63,7 +65,7 @@ def run(args, scene, frames):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--rom", default=next((ROOT / "rom").glob("*.sfc")))
+    ap.add_argument("--rom", help="default: the original ROM for a --dir ending _jp or `scenes`, else build/tadaima_en.sfc")
     ap.add_argument("--frames", type=int, default=6000)
     ap.add_argument("--jobs", type=int, default=6)
     ap.add_argument("--extra", type=int, default=0, help="frames on top of each scene's length: scenes on a patched ROM run longer")
@@ -72,6 +74,9 @@ def main():
     ap.add_argument("--probes", action="store_true", help="also the RE logs (text, rect, window, free RAM): marker tours for windows.py")
     ap.add_argument("prefix", nargs="*")
     args = ap.parse_args()
+    if not args.rom:  # two EN tours once ran on the Japanese ROM by default
+        jp = args.dir == "scenes" or args.dir.endswith("_jp")
+        args.rom = next((ROOT / "rom").glob("*.sfc")) if jp else ROOT / "build/tadaima_en.sfc"
     (ROOT / "work/states").mkdir(parents=True, exist_ok=True)
     todo = {n: f for n, f in names().items() if not args.prefix or n.startswith(tuple(args.prefix))}
     with ThreadPoolExecutor(args.jobs) as ex:
@@ -82,7 +87,7 @@ def main():
     shots = [str(ROOT / "work/qa" / args.dir / r[0] / "final.png") for r in res if not r[2]]
     subprocess.run([sys.executable, "-X", "utf8", f"{SKILL}/scripts/sheet.py", *shots, "--out",
                     str(ROOT / "work/qa" / args.dir / "sheet.png")], cwd=ROOT)
-    print(len(res) - len(bad), "of", len(res), "scenes ok")
+    print(len(res) - len(bad), "of", len(res), "scenes ok on", args.rom)  # the default ROM is the Japanese one
     return 1 if bad else 0
 
 

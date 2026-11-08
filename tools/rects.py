@@ -143,7 +143,10 @@ GRID_COLS = (0, 2, 4, 6, 8, 11, 13, 15, 17, 19)
 NO_CHAR = 0xF4
 ROMAJI_LOW = 0x059D0B
 CURSOR, CURSOR_X = (0x05959C, 0x05959E, 0x0595A0), (0x78, 0xA0, 0xC8)  # cursor x of the three commands: the words are longer, so they sit further left
-TITLE = (0x0594C6, 0x0594D8, 0x0594EA)  # the page's name in big kana cells of another sheet, blanked: the tabs L and R name the pages
+TITLE = (0x0594C6, 0x0594D8, 0x0594EA)  # the page's name: 4 big cells each of the glyph set below (cells 4p..4p+3)
+# Glyph set ひらがなカタカナローマ字 (12 cells in the old 16 px font, drawn one per cell: asm fixed_check) the titles pick from.
+# The tabs L and R name the pages, so every page's title reads NAME. Codes 0A-23 are the old font's capitals.
+TITLE_SET, TITLE_GLYPHS = 0x05947C, bytes([0x17, 0x0A, 0x16, 0x0E] * 3 + [0xF4, 0xFF])
 
 
 def grid_chars(base, first_code):
@@ -183,8 +186,8 @@ def grid(out, far):
     out[ROMAJI_LOW:ROMAJI_LOW + 3] = bytes([0xF0, n & 255, n >> 8])
     for at, x in zip(CURSOR, CURSOR_X):
         out[at] = x
-    for at in TITLE:
-        out[at + 2:at + 2 + 16] = bytes(16)
+    assert out[TITLE_SET + len(TITLE_GLYPHS) - 1] == 0xFF
+    out[TITLE_SET:TITLE_SET + len(TITLE_GLYPHS)] = TITLE_GLYPHS
 
 
 def commands(body, w):

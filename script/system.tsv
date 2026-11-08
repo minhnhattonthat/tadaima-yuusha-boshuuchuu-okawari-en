@@ -141,8 +141,8 @@ id	loc	jp	en
 04B8D7	r04B8D7:8	{nl}    はい{end}	{nl}    Yes{end}
 04B8E0	r04B8E0:6	  いいえ{end}	  No{end}
 04C84E	r04C84E:6	HUMAN{end}	HUMAN{end}
-04C855	r04C855:8	THE[F4]END{end}	{cell}{cell} THE END{end}
-04C85E	r04C85E:12	CONFIG[F4]MODE{end}	{cell}{cell}{cell} CONFIG MODE{end}
+04C855	r04C855:8	THE[F4]END{end}	[F4][F4] THE END{end}
+04C85E	r04C85E:12	CONFIG[F4]MODE{end}	[F4][F4][F4]  CONFIG MODE{end}
 04C86B	r04C86B:4	セーブ{end}	Save{end}
 04C870	r04C870:4	ロード{end}	Load{end}
 04C875	r04C875:8	ゲームをやめる{end}	Quit Game{end}
@@ -176,3 +176,7 @@ id	loc	jp	en
 04CB98	r04CB98:14	やったね。決まったね。{page}{end}	We did it. We nailed it.{page}{end}
 05BBFB	r05BBFB:7	{nl}   はい{end}	{nl}              Yes{end}
 05BC02	r05BC02:7	   いいえ{end}	                No{end}
+059452	r059452:7	{nl}   ひと{end}	{nl}[F4][F4][F4]Human{end}
+059459	r059459:10	   コンピュータ{end}	[F4][F4][F4]Computer{end}
+059463	r059463:7	{nl}   はい{end}	{nl}              Yes{end}
+05946A	r05946A:7	   いいえ{end}	                No{end}

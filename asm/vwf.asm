@@ -30,6 +30,7 @@ hirom
 !HEADB  = $7FFF2C       ; next free tile of the lines ring
 !RING   = $7FFF2D       ; ring of the image being drawn: 0 names, 1 lines
 !NAMEBUF = $7FFF30      ; 5 name bytes + FF for strip
+!FIXED  = $7FFF36       ; strip: nonzero = every glyph in its own cell, the original way (fixed_check)
 !HEAD   = $7FFF24       ; next free pool tile
 !NEXT   = $7FFF25       ; next tile to give out
 !RUN    = $7FFF26       ; tiles left to give out
@@ -653,7 +654,10 @@ strip:
     phy
     jsr clear_cells
     ply
+    jsr fixed_check
     jsr strip_text
+    lda.w #$0000
+    sta.l !FIXED
     lda.l !PEN
     beq +
     jsr strip_flush
@@ -672,9 +676,13 @@ strip_text:
 +
     iny
     cmp.w #$00FB
-    beq .color
+    bne +
+    jmp .color
++
     cmp.w #!FAR
-    beq .far
+    bne +
+    jmp .far
++
     cmp.w #!CALL        ; far string, then skip F4 pads and go on (a place record's FF FF ends it there)
     bne +
     jmp .call
@@ -697,6 +705,13 @@ strip_text:
     lda.w #$00F5
     bra .fixed
 +
+    sta $00
+    lda.l !FIXED
+    beq +
+    lda $00
+    bra .fixed
++
+    lda $00
     cmp.w #$000A
     bcc .fixed
     cmp.w #$006A
@@ -758,6 +773,29 @@ strip_text:
 +
     iny
     bra .pad
+
+; Glyph sets, not text: the player select draws each byte into its own 16 px cell and a tilemap ($C5:948A) picks cells
+; ("PLAYERSCT" becomes PLAYER SELECT in the old big letters). Packed by the VWF they came out garbled, so strings at these
+; addresses (any bank mirror) draw every glyph the original way ($C21B0B). Y = string, DB = its bank.
+fixed_check:
+    phb
+    phb
+    pla
+    and.w #$003F
+    cmp.w #$0005
+    bne .no
+    cpy.w #$9471
+    beq .yes
+    cpy.w #$947C
+    bne .no
+.yes:
+    lda.w #$0001
+    bra +
+.no:
+    lda.w #$0000
++
+    sta.l !FIXED
+    rts
 
 ; $C2A63F: 5 cells of label, then 5 of name, read one glyph at a time. Both go through strip so English draws.
 top_name:

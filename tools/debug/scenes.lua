@@ -15,29 +15,31 @@ local S = {}
 
 S.title = { title = true, frames = 900 }
 S.opening = { newgame = true, frames = 1300 }
-S.player_select = { newgame = true, frames = 1700 }
-S.name_entry = { newgame = true, frames = 3200 }
+-- EN: name entry grid ~f2100-2300, then player 2's select with the Human / Computer choice ~f2600
+S.player_select = { newgame = true, frames = 2600 }
+S.name_entry = { newgame = true, frames = 2250 }
 S.battle = { state = 0x0F, frames = 5000 }
-S.vs = { state = 0x1A, frames = 4400 }
-S.tournament = { state = 0x20, frames = 4400 }
-S.config = { state = 0x22, frames = 4400 }
-S.save_menu = { state = 0x23, frames = 4400 }
+-- EN text makes new game longer: the warp lands ~f4400 (4400-frame scenes ended black on the card fade)
+S.vs = { state = 0x1A, frames = 6000 }
+S.tournament = { state = 0x20, frames = 6000 }
+S.config = { state = 0x22, frames = 6000 }
+S.save_menu = { state = 0x23, frames = 6000 }
 -- Save into slot 1 and confirm: the slot then shows the save's date (年目 / 月, rect $85:BC2D, digits from $C4:2364 and $C4:23CB)
-S.save_slot = { state = 0x23, after = 0x23, route = { { 200, "a" }, { 320, "a" }, { 500, "left", 8 }, { 620, "a" }, { 800, "a" }, { 1000, "a" } }, frames = 5400, expect = 0x23 }
+S.save_slot = { state = 0x23, after = 0x23, route = { { 200, "a" }, { 320, "a" }, { 500, "left", 8 }, { 620, "a" }, { 800, "a" }, { 1000, "a" } }, frames = 6800, expect = 0x23 }
 -- The ending as the game plays it, from the last clear: states 18, 1D (text over sunset), 1E (epilogue maps + staff roll), 21 (THE END).
-S.ending = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 18000, expect = 0x1D }
+S.ending = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 21000, expect = 0x1D }  -- EN: 1D at ~f20000, 1E at ~f23000
 S.credits = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 24000, expect = 0x1E }
-S.the_end = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 30000, expect = 0x21 }
-S.party_mode = { mode = 1, frames = 5000, mash = 60 }
-S.field = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, frames = 19500 }
-S.field_menu = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, after = 0x01, frames = 18000 }
+S.the_end = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 32000, expect = 0x21 }
+S.party_mode = { mode = 1, frames = 6500, mash = 60 }
+S.field = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, frames = 22000 }
+S.field_menu = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, after = 0x01, frames = 22000 }
 
 -- Turn menus on ch 0's first turn. after = 1: routes count from the command menu (cursor on Move).
 -- Inventory: player record +0E ($0BF9), 30 item ids. Spells: character record +19 ($0A48), 12 ids (docs/re/memory.md).
 local function turn(route, ram, expect)
   ram = ram or {}
   ram[0x0A2C] = 0
-  return { state = 0x17, ram = ram, mash = 150, after = 0x01, expect = expect or 0x01, frames = 18000, route = route }
+  return { state = 0x17, ram = ram, mash = 150, after = 0x01, expect = expect or 0x01, frames = 22000, route = route }  -- the EN king's intro runs past f18000
 end
 local items, spells = {}, {}
 for i = 0, 29 do items[0x0BF9 + i] = i + 1 end
@@ -57,15 +59,15 @@ S.field_status_equip = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300
 S.field_status_magic = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "right" }, { 420, "a" } }, spells, 0x09)
 S.field_map_town = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x07)
 -- HP 1 ($0A42, character +13) in the first fight: the defeat scene. Scenario mode has no game over screen: the robot takes items and play goes on.
-S.defeat = { state = 0x17, ram = { [0x0A2C] = 0, [0x0A42] = 1 }, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 21000 }
-S.battle_magic = { state = 0x17, ram = spells, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 19000, expect = 0x0F,
+S.defeat = { state = 0x17, ram = { [0x0A2C] = 0, [0x0A42] = 1 }, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 24000 }
+S.battle_magic = { state = 0x17, ram = spells, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 23000, expect = 0x0F,
   route = { { 300, "a" }, { 450, "a" }, { 600, "a" }, { 750, "up" }, { 810, "a" } } }
-S.battle_menu2 = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 19000, expect = 0x0F,
+S.battle_menu2 = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 23000, expect = 0x0F,
   route = { { 300, "a" }, { 450, "a" }, { 600, "a" }, { 750, "x" } } }
-S.shop_inside = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, tile = { 0x20, 0x27 }, frames = 18300, expect = 0x11 }
+S.shop_inside = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, tile = { 0x20, 0x27 }, frames = 22300, expect = 0x11 }
 S.continue = { mode = 2, frames = 4500, expect = 0x16 }
-S.versus = { mode = 3, frames = 5000, mash = 60 }
-S.standings = { state = 0x19, frames = 4200, expect = 0x19 }
+S.versus = { mode = 3, frames = 6400, mash = 60 }  -- EN: Sylphy's map talk ~f5600-7000 (the boss lines before it sit between fades)
+S.standings = { state = 0x19, frames = 6000, expect = 0x19 }
 S.field_pass = turn({ { 90, "x" }, { 140, "down" }, { 190, "a" } }, nil, 0x0A)
 -- Controller notices shown instead of the title (state 26 at boot, $C1:0000): $015F bit 6 and bit 0 pick the string.
 S.notice_a = { title = true, boot_pad = 0x40, frames = 900, expect = 0x26 }
@@ -76,7 +78,7 @@ local tiles = { teleport = { 0x1A, 0x19 }, cave = { 0x27, 0x09 }, duel = { 0x0D,
   orb_slot = { 0x34, 0x37 }, shop0 = { 0x20, 0x27 }, shop1 = { 0x42, 0x2C }, shop2 = { 0x20, 0x37 },
   inn0 = { 0x21, 0x12 }, inn1 = { 0x35, 0x1E }, inn2 = { 0x2F, 0x2E } }
 for name, xy in pairs(tiles) do
-  S[name] = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, tile = xy, frames = 18300 }
+  S[name] = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, tile = xy, frames = 22300 }
 end
 
 -- Chapters 0-4 and the branches 5-7 open with state 17. Values 8-12 are chapter 0-4 + 8: state 1F adds the 8 itself for

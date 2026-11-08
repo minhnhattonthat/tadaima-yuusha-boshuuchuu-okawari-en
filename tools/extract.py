@@ -32,6 +32,7 @@ RAW = [
     (0x04BE02, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
     (0x058017, 0x0589D0, "boss"), (0x059F1A, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
     (0x05BBFB, 0x05BC09, "system"),  # save-slot confirm Yes/No (found on the phase 8 tour)
+    (0x059452, 0x059471, "system"),  # player select: ひと / コンピュータ choice, name entry はい / いいえ (phase 8 tour)
 ]
 # (first, count, stride, name offset, name bytes, section): fixed-size name fields, padded with F4
 RECORDS = [

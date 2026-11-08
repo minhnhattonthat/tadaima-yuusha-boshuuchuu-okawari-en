@@ -438,19 +438,19 @@ d760.035D	b760+35D:34	{sfx:01}冒険きかんが終ったら{nl}お城で成続�
 d760.037F	b760+37F:33	{sfx:01}それまでに誰が一番NVPを{nl}ためておけるかしら？{sfx:FE}{page}{end}	{sfx:01}By then, who will have saved up{nl}the most NVP, I wonder?{sfx:FE}{page}{end}
 d760.03A0	b760+3A0:23	{sfx:01}みなさん{color:09}♥{color:0F}{nl}がんばってね〜{sfx:FE}{page}{end}	{sfx:01}Everyone{color:09}[CB]{color:0F} do your best~{sfx:FE}{page}{end}
 d760.03B7	b760+3B7:29	{sfx:01}以上、{nl}シルフィの{nl}マップガイドでした〜{sfx:FE}{pause:C0}{end}	{sfx:01}And that was{nl}Sylphy's{nl}Map Guide~{sfx:FE}{pause:C0}{end}
-d761.001A	b761+1A:32	[F4][F4][F4][F4][F4][F4]MAP1{nl}{nl}[F4][F4][F4]ロスティア王国の危機[F4][F4]{end}	[F4][F4][F4][F4][F4][F4]  MAP 1{nl}{nl}[F4][F4][F4][F4][F4] Lostia in Peril{end}
-d761.003A	b761+3A:31	[F4][F4][F4][F4][F4][F4]MAP2{nl}{nl}[F4][F4][F4][F4][F4]魔道士のワナ[F4][F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]  MAP 2{nl}{nl}[F4][F4][F4][F4] The Sorcerer's Trap{end}
-d761.0059	b761+59:34	[F4][F4][F4][F4][F4][F4]MAP3{nl}{nl}[F4][F4][F4][F4]復活！深海の魔物[F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]  MAP 3{nl}{nl}[F4][F4] The Beast of the Deep Returns!{end}
-d761.007B	b761+7B:31	[F4][F4][F4][F4][F4][F4]MAP4{nl}{nl}[F4][F4]伝説の地[F4]アルセンガルド[F4]{end}	[F4][F4][F4][F4][F4][F4]  MAP 4{nl}{nl}[F4][F4][F4]Arsengard, Land of Legend{end}
-d761.009A	b761+9A:33	[F4][F4][F4][F4][F4][F4]MAP5{nl}{nl}[F4][F4][F4][F4]決戦！[F4]闇の魔王[F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]  MAP 5{nl}{nl}[F4][F4][F4]Showdown! The Demon Lord{end}
-d761.00BB	b761+BB:20	{nl}{nl}[F4][F4][F4][F4]勇者のたびだち[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]  The Hero Sets Out{end}
-d761.00CF	b761+CF:19	{nl}{nl}[F4][F4][F4][F4][F4]しれんの道[F4][F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]  The Path of Trials{end}
-d761.00E2	b761+E2:21	{nl}{nl}[F4][F4][F4][F4][F4]終りなき伝説[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4] The Endless Legend{end}
-d761.00F7	b761+F7:18	{nl}{nl}[F4][F4][F4][F4]フォートのとりで[F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4] The Fort Stronghold{end}
-d761.0109	b761+109:20	{nl}{nl}[F4][F4][F4][F4]タシュール遺跡[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4][F4] Tashur Ruins{end}
-d761.011D	b761+11D:20	{nl}{nl}[F4][F4][F4][F4]ふういんの洞窟[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]   The Sealed Cave{end}
-d761.0131	b761+131:20	{nl}{nl}[F4][F4][F4][F4]アストロン神殿[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]   Temple of Astron{end}
-d761.0145	b761+145:19	{nl}{nl}[F4][F4][F4][F4][F4]ロスティア城[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4][F4] Lostia Castle{end}
+d761.001A	b761+1A:32	[F4][F4][F4][F4][F4][F4]MAP1{nl}{nl}[F4][F4][F4]ロスティア王国の危機[F4][F4]{end}	[F4][F4][F4][F4][F4][F4]     MAP 1{nl}{nl}[F4][F4][F4][F4][F4]    Lostia in Peril{end}
+d761.003A	b761+3A:31	[F4][F4][F4][F4][F4][F4]MAP2{nl}{nl}[F4][F4][F4][F4][F4]魔道士のワナ[F4][F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]    MAP 2{nl}{nl}[F4][F4][F4][F4]    The Sorcerer's Trap{end}
+d761.0059	b761+59:34	[F4][F4][F4][F4][F4][F4]MAP3{nl}{nl}[F4][F4][F4][F4]復活！深海の魔物[F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]    MAP 3{nl}{nl}[F4][F4]    The Beast of the Deep Returns!{end}
+d761.007B	b761+7B:31	[F4][F4][F4][F4][F4][F4]MAP4{nl}{nl}[F4][F4]伝説の地[F4]アルセンガルド[F4]{end}	[F4][F4][F4][F4][F4][F4]    MAP 4{nl}{nl}[F4][F4][F4]   Arsengard, Land of Legend{end}
+d761.009A	b761+9A:33	[F4][F4][F4][F4][F4][F4]MAP5{nl}{nl}[F4][F4][F4][F4]決戦！[F4]闇の魔王[F4][F4][F4]{end}	[F4][F4][F4][F4][F4][F4]    MAP 5{nl}{nl}[F4][F4][F4]   Showdown! The Demon Lord{end}
+d761.00BB	b761+BB:20	{nl}{nl}[F4][F4][F4][F4]勇者のたびだち[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]     The Hero Sets Out{end}
+d761.00CF	b761+CF:19	{nl}{nl}[F4][F4][F4][F4][F4]しれんの道[F4][F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]     The Path of Trials{end}
+d761.00E2	b761+E2:21	{nl}{nl}[F4][F4][F4][F4][F4]終りなき伝説[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]    The Endless Legend{end}
+d761.00F7	b761+F7:18	{nl}{nl}[F4][F4][F4][F4]フォートのとりで[F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]    The Fort Stronghold{end}
+d761.0109	b761+109:20	{nl}{nl}[F4][F4][F4][F4]タシュール遺跡[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4][F4]    Tashur Ruins{end}
+d761.011D	b761+11D:20	{nl}{nl}[F4][F4][F4][F4]ふういんの洞窟[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]      The Sealed Cave{end}
+d761.0131	b761+131:20	{nl}{nl}[F4][F4][F4][F4]アストロン神殿[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]      Temple of Astron{end}
+d761.0145	b761+145:19	{nl}{nl}[F4][F4][F4][F4][F4]ロスティア城[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4][F4]    Lostia Castle{end}
 d762.000E	b762+E:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Everyone, the time has come at last!{sfx:FE}{page}{end}
 d762.0030	b762+30:60	{sfx:00}闇の騎士団が例され、敵の大将{nl}ウィルダが、ついに{nl}フォートとりでのとびらを{nl}ひらいたのじゃ。{sfx:FE}{page}{end}	{sfx:00}The Dark Knights are defeated, and at{nl}last the enemy general Wilda has opened{nl}the gates of the Fort stronghold.{sfx:FE}{page}{end}
 d762.006C	b762+6C:17	{sfx:00}やつのとりでにむかえ！{sfx:FE}{page}{end}	{sfx:00}Head for that stronghold!{sfx:FE}{page}{end}

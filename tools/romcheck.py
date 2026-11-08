@@ -66,7 +66,7 @@ def ranges(rom):
         out.append((low, low + 2, "name-entry far rect"))
     out.append((rects.ROMAJI_LOW, rects.ROMAJI_LOW + 2, "romaji far rect"))
     out += [(a, a, "name-entry cursor x") for a in rects.CURSOR]
-    out += [(a + 2, a + 17, "name-entry page title") for a in rects.TITLE]
+    out.append((rects.TITLE_SET, rects.TITLE_SET + len(rects.TITLE_GLYPHS) - 1, "name-entry title glyph set"))
     for i, src, size, _, _ in unpack.entries(rom):
         off = src & 0x3FFFFF
         used = unpack.load(rom, src, size)[1]
