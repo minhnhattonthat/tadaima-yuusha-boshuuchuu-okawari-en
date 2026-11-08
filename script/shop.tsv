@@ -56,7 +56,7 @@ s212.082E	b212+82E:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s212.0841	b212+841:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s212.084F	b212+84F:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s212.087A	b212+87A:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s212.0899	b212+899:132	ハニワやまのどうくつ{nl}こうやのどうくつ  {nl}プリムのどうくつ  {nl}そうげんのどうくつ {nl}フルーレのどうくつ {nl}にしのどうくつ   {nl}エペのどうくつ   {nl}アルディアのどうくつ{nl}みさきのどうくつ  {nl}せいなるどうくつ  {nl}マンボウのどうくつ {nl}みなみのどうくつ  {nl}	Haniwa Mountain Cave Wasteland Cave{nl}Prim Cave Grassland Cave Fleuret Cave{nl}West Cave Epee Cave Ardia Cave Cape{nl}Cave Holy Cave Sunfish Cave South Cave{nl}
+s212.0899	b212+899:132	ハニワやまのどうくつ{nl}こうやのどうくつ  {nl}プリムのどうくつ  {nl}そうげんのどうくつ {nl}フルーレのどうくつ {nl}にしのどうくつ   {nl}エペのどうくつ   {nl}アルディアのどうくつ{nl}みさきのどうくつ  {nl}せいなるどうくつ  {nl}マンボウのどうくつ {nl}みなみのどうくつ  {nl}	Haniwa Mountain Cave{nl}Wasteland Cave{nl}Prim Cave{nl}Grassland Cave{nl}Fleuret Cave{nl}West Cave{nl}Epee Cave{nl}Ardia Cave{nl}Cape Cave{nl}Holy Cave{nl}Sunfish Cave{nl}South Cave{nl}
 s212.0959	b212+959:7	プリムタウン{end}	Prim Town{end}
 s212.0961	b212+961:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
 s212.0981	b212+981:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -143,7 +143,7 @@ s213.083B	b213+83B:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s213.084E	b213+84E:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s213.085C	b213+85C:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s213.0887	b213+887:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s213.08A6	b213+8A6:132	ウシャクのピラミッド{nl}ファラオのピラミッド{nl}なげきのピラミッド {nl}キトのピラミッド  {nl}カドのピラミッド  {nl}アクラのピラミッド {nl}ラーマのピラミッド {nl}ノズーのピラミッド {nl}テイルのピラミッド {nl}トメアスのピラミッド{nl}シ・ハのピラミッド {nl}ハビスのピラミッド {nl}	Ushak Pyramid Pharaoh Pyramid{nl}Pyramid of Sorrow Kito Pyramid Kado{nl}Pyramid Akura Pyramid Rama Pyramid{nl}Nozu Pyramid Teil Pyramid Tomeas{nl}Pyramid Shi-Ha Pyramid Habis Pyramid{nl}
+s213.08A6	b213+8A6:132	ウシャクのピラミッド{nl}ファラオのピラミッド{nl}なげきのピラミッド {nl}キトのピラミッド  {nl}カドのピラミッド  {nl}アクラのピラミッド {nl}ラーマのピラミッド {nl}ノズーのピラミッド {nl}テイルのピラミッド {nl}トメアスのピラミッド{nl}シ・ハのピラミッド {nl}ハビスのピラミッド {nl}	Ushak Pyramid{nl}Pharaoh Pyramid{nl}Pyramid of Sorrow{nl}Kito Pyramid{nl}Kado Pyramid{nl}Akura Pyramid{nl}Rama Pyramid{nl}Nozu Pyramid{nl}Teil Pyramid{nl}Tomeas Pyramid{nl}Shi-Ha Pyramid{nl}Habis Pyramid{nl}
 s213.0966	b213+966:8	やまあいの街{end}	Valley Town{end}
 s213.096F	b213+96F:26	サンドゴーレム  LV4{nl}ダリオロス    LV6{end}	Sand Golem LV4 Darioros LV6{end}
 s213.098F	b213+98F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -230,7 +230,7 @@ s214.0837	b214+837:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s214.084A	b214+84A:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s214.0858	b214+858:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s214.0883	b214+883:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s214.08A2	b214+8A2:132	さいはてのほこら  {nl}アギトのほこら   {nl}ペリリアのほこら  {nl}アバロンのほこら  {nl}さきもりのほこら  {nl}いわばのほこら   {nl}かいぞくのほこら  {nl}ワゥラのほこら   {nl}みちびきのほこら  {nl}オキのほこら    {nl}イリエのほこら   {nl}まぼろしのほこら  {nl}	World's End Shrine Agito Shrine Peliria Shrine{nl}Avalon Shrine Sentinel Shrine Crag Shrine{nl}Pirate Shrine Waura Shrine Guiding Shrine{nl}Offshore Shrine Cove Shrine Phantom Shrine{nl}
+s214.08A2	b214+8A2:132	さいはてのほこら  {nl}アギトのほこら   {nl}ペリリアのほこら  {nl}アバロンのほこら  {nl}さきもりのほこら  {nl}いわばのほこら   {nl}かいぞくのほこら  {nl}ワゥラのほこら   {nl}みちびきのほこら  {nl}オキのほこら    {nl}イリエのほこら   {nl}まぼろしのほこら  {nl}	World's End Shrine{nl}Agito Shrine{nl}Peliria Shrine{nl}Avalon Shrine{nl}Sentinel Shrine{nl}Crag Shrine{nl}Pirate Shrine{nl}Waura Shrine{nl}Guiding Shrine{nl}Offshore Shrine{nl}Cove Shrine{nl}Phantom Shrine{nl}
 s214.0962	b214+962:9	ハニワもりの街{end}	Haniwa Woods Town{end}
 s214.096C	b214+96C:13	ミノスガーダー  LV9{end}	Minos Guard  LV9{end}
 s214.097F	b214+97F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -317,7 +317,7 @@ s215.07E5	b215+7E5:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s215.07F8	b215+7F8:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s215.0806	b215+806:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s215.0831	b215+831:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s215.0850	b215+850:132	ノーザンクロスのとう{nl}エンゼルタワー   {nl}ゲートタワー    {nl}あやかしのとう   {nl}エリダヌスのとう  {nl}さざなみのとう   {nl}クレディブのとう  {nl}ケフェウスのとう  {nl}アイスバレーのとう {nl}キザハシのとう   {nl}レカミエのとう   {nl}デスタワー     {nl}	Northern Cross Tower Angel Tower Gate{nl}Tower Specter Tower Eridanus Tower{nl}Ripple Tower Credib Tower Cepheus{nl}Tower Ice Valley Tower Stairway Tower{nl}Recamier Tower Death Tower{nl}
+s215.0850	b215+850:132	ノーザンクロスのとう{nl}エンゼルタワー   {nl}ゲートタワー    {nl}あやかしのとう   {nl}エリダヌスのとう  {nl}さざなみのとう   {nl}クレディブのとう  {nl}ケフェウスのとう  {nl}アイスバレーのとう {nl}キザハシのとう   {nl}レカミエのとう   {nl}デスタワー     {nl}	Northern Cross Tower{nl}Angel Tower{nl}Gate Tower{nl}Specter Tower{nl}Eridanus Tower{nl}Ripple Tower{nl}Credib Tower{nl}Cepheus Tower{nl}Ice Valley Tower{nl}Stairway Tower{nl}Recamier Tower{nl}Death Tower{nl}
 s215.0900	b215+900:7	スノウタウン{end}	Snow Town{end}
 s215.0908	b215+908:14	バシュラグ    LV12{end}	Bashrag  LV12{end}
 s215.091C	b215+91C:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -403,7 +403,7 @@ s216.087D	b216+87D:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s216.0890	b216+890:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s216.089E	b216+89E:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s216.08C9	b216+8C9:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s216.08E8	b216+8E8:132	イリスしんでん   {nl}ウォストしんでん  {nl}ハニワンしんでん  {nl}ダールしんでん   {nl}やみのしんでん   {nl}にしもりのしんでん {nl}サントスしんでん  {nl}ラターしんでん   {nl}ささやきのしんでん {nl}みずさきのしんでん {nl}シオサイのしんでん {nl}ワゥラしんでん   {nl}	Iris Temple Wost Temple Haniwan{nl}Temple Dahl Temple Temple of Darkness{nl}West Woods Temple Santos Temple{nl}Ratar Temple Whisper Temple Cape{nl}Temple Surf Temple Waura Temple{nl}
+s216.08E8	b216+8E8:132	イリスしんでん   {nl}ウォストしんでん  {nl}ハニワンしんでん  {nl}ダールしんでん   {nl}やみのしんでん   {nl}にしもりのしんでん {nl}サントスしんでん  {nl}ラターしんでん   {nl}ささやきのしんでん {nl}みずさきのしんでん {nl}シオサイのしんでん {nl}ワゥラしんでん   {nl}	Iris Temple{nl}Wost Temple{nl}Haniwan Temple{nl}Dahl Temple{nl}Temple of Darkness{nl}West Woods Temple{nl}Santos Temple{nl}Ratar Temple{nl}Whisper Temple{nl}Cape Temple{nl}Surf Temple{nl}Waura Temple{nl}
 s216.09A8	b216+9A8:9	ハイロードの街{end}	Highroad Town{end}
 s216.09B2	b216+9B2:14	グルップ     LV15{end}	Grupp  LV15{end}
 s216.09C6	b216+9C6:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -488,7 +488,7 @@ s217.07F5	b217+7F5:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s217.0808	b217+808:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s217.0816	b217+816:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s217.0841	b217+841:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s217.0860	b217+860:132	コンドルのどうくつ {nl}カワセミのどうくつ {nl}ハヤブサのどうくつ {nl}ハチドリのどうくつ {nl}オウムのどうくつ  {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Condor Cave Kingfisher Cave Falcon Cave{nl}Hummingbird Cave Parrot Cave Bug If{nl}Seen Bug If Seen Bug If Seen Bug If Seen{nl}Bug If Seen Bug If Seen Bug If Seen{nl}
+s217.0860	b217+860:132	コンドルのどうくつ {nl}カワセミのどうくつ {nl}ハヤブサのどうくつ {nl}ハチドリのどうくつ {nl}オウムのどうくつ  {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Condor Cave{nl}Kingfisher Cave{nl}Falcon Cave{nl}Hummingbird Cave{nl}Parrot Cave{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}
 s217.090C	b217+90C:8	コレデタラバグ{end}	Bug If Seen{end}
 s217.0915	b217+915:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
 s217.0935	b217+935:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -575,7 +575,7 @@ s218.07F9	b218+7F9:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s218.080C	b218+80C:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s218.081A	b218+81A:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s218.0845	b218+845:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s218.0864	b218+864:132	タコスのどうくつ  {nl}ビビンバのどうくつ {nl}ナンのどうくつ   {nl}オレガノのどうくつ {nl}パエリヤのどうくつ {nl}トムヤムのどうくつ {nl}バジルのどうくつ  {nl}ハルサメのどうくつ {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Taco Cave Bibimbap Cave Naan Cave{nl}Oregano Cave Paella Cave Tom Yum Cave{nl}Basil Cave Noodle Cave Bug If Seen Bug{nl}If Seen Bug If Seen Bug If Seen{nl}
+s218.0864	b218+864:132	タコスのどうくつ  {nl}ビビンバのどうくつ {nl}ナンのどうくつ   {nl}オレガノのどうくつ {nl}パエリヤのどうくつ {nl}トムヤムのどうくつ {nl}バジルのどうくつ  {nl}ハルサメのどうくつ {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}コレデタラバグ   {nl}	Taco Cave{nl}Bibimbap Cave{nl}Naan Cave{nl}Oregano Cave{nl}Paella Cave{nl}Tom Yum Cave{nl}Basil Cave{nl}Noodle Cave{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}Bug If Seen{nl}
 s218.0910	b218+910:9	ガーリックの街{end}	Garlic Town{end}
 s218.091A	b218+91A:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
 s218.093A	b218+93A:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -662,7 +662,7 @@ s219.07F5	b219+7F5:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s219.0808	b219+808:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s219.0816	b219+816:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s219.0841	b219+841:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s219.0860	b219+860:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave Netherworld Cave Loki Cave{nl}Darkness Cave Damian Cave Ogre Cave{nl}Demon Cave Goat Cave Enma Cave{nl}Inferno Cave Hades Cave Solitude Cave{nl}
+s219.0860	b219+860:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s219.090C	b219+90C:7	グリムの街{end}	Grim Town{end}
 s219.0914	b219+914:26	グロブ      LV3{nl}ロイヤルガード  LV2{end}	Grob LV3 Royal Guard LV2{end}
 s219.0934	b219+934:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -986,7 +986,7 @@ s225.0810	b225+810:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s225.0823	b225+823:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s225.0831	b225+831:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s225.085C	b225+85C:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s225.087B	b225+87B:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave Netherworld Cave Loki Cave{nl}Darkness Cave Damian Cave Ogre Cave{nl}Demon Cave Goat Cave Enma Cave{nl}Inferno Cave Hades Cave Solitude Cave{nl}
+s225.087B	b225+87B:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s225.0927	b225+927:7	グリムの街{end}	Grim Town{end}
 s225.092F	b225+92F:26	ダリオロス    LV6{nl}サンドゴーレム  LV4{end}	Darioros LV6 Sand Golem LV4{end}
 s225.094F	b225+94F:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -1073,7 +1073,7 @@ s226.07FC	b226+7FC:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s226.080F	b226+80F:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s226.081D	b226+81D:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s226.0848	b226+848:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s226.0867	b226+867:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave Netherworld Cave Loki Cave{nl}Darkness Cave Damian Cave Ogre Cave{nl}Demon Cave Goat Cave Enma Cave{nl}Inferno Cave Hades Cave Solitude Cave{nl}
+s226.0867	b226+867:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s226.0913	b226+913:7	グリムの街{end}	Grim Town{end}
 s226.091B	b226+91B:13	ミノスガーダー  LV9{end}	Minos Guard  LV9{end}
 s226.092E	b226+92E:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -1160,7 +1160,7 @@ s227.0814	b227+814:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s227.0827	b227+827:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s227.0835	b227+835:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s227.0860	b227+860:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s227.087F	b227+87F:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave Netherworld Cave Loki Cave{nl}Darkness Cave Damian Cave Ogre Cave{nl}Demon Cave Goat Cave Enma Cave{nl}Inferno Cave Hades Cave Solitude Cave{nl}
+s227.087F	b227+87F:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s227.092B	b227+92B:7	グリムの街{end}	Grim Town{end}
 s227.0933	b227+933:14	バシュラグ    LV12{end}	Bashrag  LV12{end}
 s227.0947	b227+947:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}
@@ -1246,7 +1246,7 @@ s228.0843	b228+843:18	{sfx:01}仲間なんていないわよ。{sfx:FE}{end}	{sf
 s228.0856	b228+856:13	{sfx:01}この人でいい？{sfx:FE}{end}	{sfx:01}This one, then?{sfx:FE}{end}
 s228.0864	b228+864:42	{sfx:01}ざんねんだけど、今{nl}勇者様たちしかおきゃくさん{nl}いないみたい・・・{sfx:FE}{end}	{sfx:01}Sorry, but right now it looks like{nl}you Heroes are my only guests...{sfx:FE}{end}
 s228.088F	b228+88F:30	{sfx:01}仲間は2人までですよ。{nl}誰とわかれますか？{sfx:FE}{end}	{sfx:01}You can only have 2 allies, dear.{nl}Who will you part with?{sfx:FE}{end}
-s228.08AE	b228+8AE:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave Netherworld Cave Loki Cave{nl}Darkness Cave Damian Cave Ogre Cave{nl}Demon Cave Goat Cave Enma Cave{nl}Inferno Cave Hades Cave Solitude Cave{nl}
+s228.08AE	b228+8AE:132	きょじんのどうくつ {nl}メイフのどうくつ  {nl}ロキのどうくつ   {nl}あんこくのどうくつ {nl}ダミアンのどうくつ {nl}アッキのどうくつ  {nl}デーモンのどうくつ {nl}ゴートのどうくつ  {nl}エンマのどうくつ  {nl}グレンのどうくつ  {nl}ハデスのどうくつ  {nl}こどくのどうくつ  {nl}	Giant Cave{nl}Netherworld Cave{nl}Loki Cave{nl}Darkness Cave{nl}Damian Cave{nl}Ogre Cave{nl}Demon Cave{nl}Goat Cave{nl}Enma Cave{nl}Inferno Cave{nl}Hades Cave{nl}Solitude Cave{nl}
 s228.095A	b228+95A:7	グリムの街{end}	Grim Town{end}
 s228.0962	b228+962:14	グルップ     LV15{end}	Grupp  LV15{end}
 s228.0976	b228+976:65	{sfx:00}おお、勇者殿、{nl}よくぞ{sub:0000}を{nl}モンスターの手からすくって{nl}くださった！{page}街の者もみな{nl}かんしゃしておるぞ！{sfx:FE}{end}	{sfx:00}Oh, noble Hero, you have saved{nl}{sub:0000} from the hands of the{nl}monsters, and we thank you!{page}Everyone in town is grateful to you!{sfx:FE}{end}

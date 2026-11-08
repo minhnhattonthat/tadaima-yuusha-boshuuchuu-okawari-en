@@ -38,6 +38,7 @@ def codes():
 
 
 SMALL_BG, SMALL_LOWER, POOL_START, POOL_END = 0x26, 0x30, 0x4A, 0xA0  # blank tile, a-z tiles, tiles names are sent to (asm/vwf.asm)
+SMALL_DOT = 0x2A  # the game's ・, only in the rank label NO・1 ($C2:B778): redrawn as a full stop for "No.1"
 
 
 def small():
@@ -98,8 +99,8 @@ def small_sheet(sheet):
     """Block 001 with a-z at the tiles asm/vwf.asm maps them to and the name tiles blanked. A kana left in the script can't pass for a word."""
     out = bytearray(sheet)
     g = small()
-    for i in range(26):
-        rows = g[chr(97 + i)][0]
+    for i, ch in [*enumerate(map(chr, range(97, 123))), (SMALL_DOT - SMALL_LOWER, ".")]:
+        rows = g[ch][0]
         px = [[0] * 8 for _ in range(8)]
         for y, r in enumerate(rows):
             for x in range(7):

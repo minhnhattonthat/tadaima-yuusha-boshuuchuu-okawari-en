@@ -4,7 +4,7 @@ rect00A14C	r00A14C:114	ちから{nl}たいりょく{nl}まりょく{nl}こうう
 rect0480F7	r0480F7:6	ゆうしゃ	Hero
 rect0499DB	r0499DB:22	シリング	Sh
 rect04B4A0	r04B4A0:10	じゅんい	Rank
-rect04B4AA	r04B4AA:44	のこり{nl}シリング	Left{nl}Shillings
+rect04B4AA	r04B4AA:44	のこり{nl}シリング	Time left{nl}Shillings
 rect04B596	r04B596:14	ウサミー	Usamee
 rect04B5A4	r04B5A4:14	にんげん	Human
 rect04B5B2	r04B5B2:14	エルフィン	Elfin

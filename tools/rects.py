@@ -91,6 +91,27 @@ def rebuild(rom, p, en):
     return width, h, bytes(v for r in grid for v in r)
 
 
+# Status box, 21x2, copied to $1111 by $C2:B7CF. The code writes money (5 digits), years and months (2 each) into it; asm/vwf.asm moves
+# those writes to the cells below (row 0 at $1113, row 1 at $1128). JP: のこり over 1年 0ヶ月 (年 ヶ月 are G4 tiles F7-F9), money + シリング
+# under it. English: money + "Shillings" on row 0, "<time left> 1yr 0mo" on row 1. yr/mo: flagged D4 abbreviation, "years"/"months" don't fit.
+STATUS = 0x04B4AA
+STATUS_CELLS = {"money": (0, 2, 5), "years": (1, 11, 2), "months": (1, 16, 2)}  # row, col, digits: asm writes at $1113 + 21 * row + col
+
+
+def status(rom, en):
+    left, money = en.split("{nl}")
+    w, h = rom[STATUS], rom[STATUS + 1]
+    grid = [[0x26] * w for _ in range(h)]
+    grid[0][:2], grid[1][:2] = rom[STATUS + 2:STATUS + 4], rom[STATUS + 2 + w:STATUS + 4 + w]  # the purse icon
+    for y, x, n in STATUS_CELLS.values():
+        grid[y][x:x + n] = [0] * n
+    for y, x, s in ((0, 8, money), (1, 2, left), (1, 13, "yr"), (1, 18, "mo")):
+        t = tiles(s, 0x26)
+        assert all(v == 0x26 for v in grid[y][x:x + len(t)]) and x + len(t) <= w, (s, "status box: no room")
+        grid[y][x:x + len(t)] = t
+    return bytes(v for r in grid for v in r)
+
+
 def apply(out, english, far):
     """Far rects take a number from `far`, the same table as far strings."""
     if f"rect{RECTS[0]:06X}" in english:
@@ -98,6 +119,9 @@ def apply(out, english, far):
     for p in RECTS:
         en = english.get(f"rect{p:06X}")
         if en is None:
+            continue
+        if p == STATUS:
+            out[p + 2:p + 2 + out[p] * out[p + 1]] = status(out, en)
             continue
         w, h, body = rebuild(out, p, en)
         if w == out[p]:

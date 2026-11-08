@@ -83,6 +83,29 @@ org $C55585
 org $C5558B
     dw $F400
 
+; status box digits ($C2:B7F0 money loop, $C2:B825 years, $C2:B838 months) moved to the English layout (tools/rects.py STATUS_CELLS)
+org $C2B7F4
+    dw $1113+2          ; row 0, col 2
+org $C2B826
+    dw $1128+11         ; row 1, col 11
+org $C2B839
+    dw $1128+16         ; row 1, col 16
+
+; rank label NO・1 ($C2:B76C, tiles of the label sheet): "No.1", o = rects.tiles, ・ redrawn as a stop (font.SMALL_DOT)
+org $C2B76D
+    dw $3E18
+
+; save slot date "0年目 4月": template rect $85:BC2D (7x1, 年 目 . MM . 月) at col 23, year digits (2) at col 20, month at col 26.
+; English "Yr 0 Mo 4": template at col 20 = Y r YY . M o, year at col 22, month at col 27 (tiles of the label sheet, rects.tiles)
+org $C42270
+    dw $0014
+org $C4236A
+    dw $0016
+org $C423D1
+    dw $001B
+org $C5BC2F
+    db $23,$41,$00,$00,$00,$17,$3E
+
 org $C0FFD7
     db $0C              ; 4 MB
 
@@ -841,8 +864,14 @@ small_map:
     rep #$20
     lda 1,s             ; called from the FE/FF loop ($C220C1): description and bio lines, their own ring
     cmp.w #$20C4
+    bne +
+    lda 4,s             ; but the equip screen's gear names ($C2:C0CA calls the loop) share the screen with a 3-line bio:
+    cmp.w #$C0CD        ; names ring (tools/debug/farcaller.lua)
+    beq +
     sep #$20
-    beq .ringb
+    bra .ringb
++
+    sep #$20
     lda.b #$00
     sta.l !RING
     lda.l !HEAD

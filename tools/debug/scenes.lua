@@ -22,6 +22,8 @@ S.vs = { state = 0x1A, frames = 4400 }
 S.tournament = { state = 0x20, frames = 4400 }
 S.config = { state = 0x22, frames = 4400 }
 S.save_menu = { state = 0x23, frames = 4400 }
+-- Save into slot 1 and confirm: the slot then shows the save's date (年目 / 月, rect $85:BC2D, digits from $C4:2364 and $C4:23CB)
+S.save_slot = { state = 0x23, after = 0x23, route = { { 200, "a" }, { 320, "a" }, { 500, "left", 8 }, { 620, "a" }, { 800, "a" }, { 1000, "a" } }, frames = 5400, expect = 0x23 }
 -- The ending as the game plays it, from the last clear: states 18, 1D (text over sunset), 1E (epilogue maps + staff roll), 21 (THE END).
 S.ending = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 18000, expect = 0x1D }
 S.credits = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 24000, expect = 0x1E }

@@ -36,6 +36,7 @@ LINES = {"bio", "desc_item", "desc_equip", "desc_spell"}  # tilemap lines, inser
 INSET = 4  # asm/vwf.asm !INSET: a dialogue line starts 4 px in
 LINE_PX, DLG_PX, PROMPT_PX, ROWS = 80, 240 - INSET, 224 - INSET, 3  # 10 small cells; dialogue line; line before {page}/{wait}; unmeasured window
 SUB_PX, CELL_PX = 40, 16  # a {sub} name (5 letters); a [F4] / {cell} / {kanji} glyph
+PLACES = 12  # records in a shop place list (s212.0899, s213-s219, s225-s228)
 CELL_SHEETS = {"04B485": (2, 2, 2), "04B492": (2, 2, 1, 1)}  # strip cell sheets read whole (docs/re/vwf.md): 16 px cells per word, {cell} between
 SPEAKER = re.compile(r"^(?:\{[^}]*\})*\{color:[0-9A-F]{2}\}([^{]+)\{color:0F\}\{nl\}")
 _cache = {}
@@ -125,6 +126,8 @@ def form(entry):
     sec = entry["sec"]
     if entry["id"] in CELL_SHEETS:
         return "cells"
+    if sec == "shop" and "{end}" not in entry["jp"] and entry["jp"].count("{nl}") == PLACES:
+        return "list"  # a place list: 12 records, one name each (insert.records_in), never reflowed
     if sec in DLG:
         return "choice" if any(i in _font()["choice"] for i in entry["ids"]) else ("menu" if sec == "system" else "dlg")
     return "lines" if sec in LINES else "name"
@@ -157,6 +160,8 @@ def limit_label(entry):
         return f"{LINE_PX}px x{min(3, (cells(entry['locs'][0]) + 1) // 4)}"
     if f == "choice":
         return "112px" if _choice_op(entry) == 0x21 else f"{DLG_PX}px"
+    if f == "list":
+        return f"{PLACES} names, {{nl}} after each, {DLG_PX}px"
     if f == "cells":
         return "{cell}-separated: " + " ".join(f"{CELL_PX * (n - 1) + 1}-{CELL_PX * n}px" for n in CELL_SHEETS[entry["id"]])
     return f"{DLG_PX}px x{rows_of(entry)}"
@@ -206,6 +211,10 @@ def width_problems(entry, en):
                 out.append(f"{items[k][0]!r} fills cells {items[k][1]}-{items[k][2] - 1}, its slot is cells {at}-{at + n - 1}")
             at += n
         return out + [f"{s!r} after the last slot" for s, _, _ in items[len(slots):] if s != "[F4]"]
+    if f == "list":
+        names = en.split("{nl}")
+        out = [f"{len(names) - 1} names, the list has {PLACES} records (one {{nl}} after each)"] if len(names) != PLACES + 1 or names[-1] else []
+        return out + [f"{s!r} is {px(s)} px, over {DLG_PX}" for s in names if px(s) > DLG_PX]
     if f == "choice":
         cap = 112 if _choice_op(entry) == 0x21 else DLG_PX
         w = max(px(s) for s in en.removesuffix("{end}").split("{nl}"))
