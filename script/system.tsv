@@ -5,12 +5,12 @@ id	loc	jp	en
 04994C	r04994C:6	  いいえ{end}	  No{end}
 04A1E7	r04A1E7:11	{color:08}ひほう{color:0F}{sub:0000}{end}	{color:08}Treasure{color:0F} {sub:0000}{end}
 04A2F4	r04A2F4:9	よろしいですか？{end}	Is that okay?{end}
-04A2FE	r04A2FE:57	ふしぎなじゅもん{nl}サッサカサー{page}{color:09}トクレセンタボービ{color:0F}{wait}お〜い、タムラさ〜ん‼{nl}たぶんあんたのバグだじょ〜‼{end}	A mysterious spell:{nl}Sassakasaa{page}{color:09}Tokuresentabobi{color:0F}{wait}Heeey, Tamura-saaan!!{nl}This is prob'ly your bug, ya know!!{end}
+04A2FE	r04A2FE:57	ふしぎなじゅもん{nl}サッサカサー{page}{color:09}トクレセンタボービ{color:0F}{wait}お〜い、タムラさ〜ん‼{nl}たぶんあんたのバグだじょ〜‼{end}	A mysterious spell:{nl}Sassakasaa{page}{color:09}Tokuresentabobi{color:0F}{wait}Heeey, Tamura-saaan!!{nl}This is prob'ly your bug, ya knooow!!{end}
 04A338	r04A338:20	{sub:0000}は{nl}{color:08}{sub:0100}{color:0F}を使った！{page}{end}	{sub:0000} used{nl}{color:08}{sub:0100}{color:0F}!{page}{end}
 04A34D	r04A34D:20	{sub:0000}は{nl}{color:08}{sub:0100}{color:0F}をとなえた！{page}{end}	{sub:0000} cast{nl}{color:08}{sub:0100}{color:0F}!{page}{end}
 04A362	r04A362:10	{speed:40}・・・・・・{speed:FF}	{speed:40}......{speed:FF}
 04A36C	r04A36C:14	{pause:40}{nl}ガーン！ミスったー‼{end}	{pause:40}{nl}Oh no! I goofed!!{end}
-04A37B	r04A37B:59	こんな道具使われちゃうと{nl}リンダこまっちゃ〜う{color:09}♥{color:0F}{wait}お〜い、タムラさ〜ん‼{nl}たぶんあんたのバグだじょ〜‼{end}	If you use an item like this,{nl}Linda's in a real pickle~{color:09}[CB]{color:0F}{wait}Heeey, Tamura-saaan!!{nl}This is prob'ly your bug, ya know!!{end}
+04A37B	r04A37B:59	こんな道具使われちゃうと{nl}リンダこまっちゃ〜う{color:09}♥{color:0F}{wait}お〜い、タムラさ〜ん‼{nl}たぶんあんたのバグだじょ〜‼{end}	If you use an item like this,{nl}Linda's in a real pickle~{color:09}[CB]{color:0F}{wait}Heeey, Tamura-saaan!!{nl}This is prob'ly your bug, ya knooow!!{end}
 04A3B7	r04A3B7:15	ふわぁぁ・・・{nl}ねむひ・・・{end}	Yaaawn...{nl}Sho shleepy...{end}
 04A3C7	r04A3C7:22	ほんとはここで{nl}サブがめんにいくんだよ〜ん{end}	Really, this is where{nl}the sub-screen should go~{end}
 04A3DE	r04A3DE:23	じょうたいひょうじ・・・{nl}んなもんあとあと！{end}	Status display...{nl}Eh, that's for later!{end}
@@ -27,7 +27,7 @@ id	loc	jp	en
 04A508	r04A508:37	勇者{sub:0000}は{nl}勇者{sub:0200}に、{nl}{color:08}{sub:0100}{color:0F}シリングうばわれた‼{end}	Hero {sub:0200} stole{nl}{color:08}{sub:0100}{color:0F} Shillings{nl}from Hero {sub:0000}!!{end}
 04A52E	r04A52E:25	勇者{sub:0000}は、{nl}{color:08}{sub:0100}{color:0F}をうしなった‼{end}	Hero {sub:0000} lost{nl}{color:08}{sub:0100}{color:0F}!!{end}
 04A548	r04A548:28	勇者{sub:0000}は、{nl}{color:08}{sub:0100}{color:0F}シリングうしなった‼{end}	Hero {sub:0000} lost{nl}{color:08}{sub:0100}{color:0F} Shillings!!{end}
-04A565	r04A565:17	ガーン！{nl}今月はやすみだ〜‼{end}	Oh no!{nl}I'm sitting out this month~!!{end}
+04A565	r04A565:17	ガーン！{nl}今月はやすみだ〜‼{end}	GAAAH!{nl}I'm sitting out this month~!!{end}
 04A577	r04A577:27	けっかいをはられているので、{nl}オーブは使えません。{end}	A barrier is in place,{nl}so Orbs can't be used.{end}
 04A593	r04A593:19	おおあめのため、{nl}いどうできません。{end}	Due to heavy rain,{nl}you can't move.{end}
 04A5A7	r04A5A7:22	{color:08}おまもりオーブ{color:0F}の{nl}こうかがきれた。{end}	The {color:08}Charm Orb{color:0F}{nl}wore off.{end}

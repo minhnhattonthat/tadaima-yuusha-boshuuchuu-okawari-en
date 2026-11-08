@@ -1,5 +1,9 @@
 # Review-and-fix brief (one batch)
 
+**Retired 2026-11-08** (phase 6 review): making the reviewer also write every Important fix, with a Minor cap, led
+reviewers to file about 70 voice findings as Minor. For later reviews use the read-only `reviewer` agent type (or
+`tools/review.py` with codex), no cap on Minors, and fix in a separate step. Kept for the record.
+
 Used when no read-only reviewer can be run separately (codex out of credits, nested workers refused): a fresh agent that
 did not translate the batch reviews it and drafts the fixes. The controller merges the fix file.
 

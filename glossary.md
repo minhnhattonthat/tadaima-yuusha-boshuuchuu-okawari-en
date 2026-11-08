@@ -8,6 +8,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 - Romanisation (D2): no official English names exist; katakana loanwords take their English source (ゴーレム Golem, シリング Shilling), invented names Hepburn without macrons unless a row below says otherwise.
 - Credits (D3): English. Abbreviations (D4): none; full names and terms, engine work before cuts.
 - Register / flavour: light, jokey board-game RPG for kids; keep verbal tics (ニャ, ワン, っしゅ, なのだ) as English tics, never flatten them.
+- The hero's crown: 王 / 王様 / ロスティア王 said of the player's hero (who may be female) is "ruler" or "on the throne" ("with {sub:0200} on the throne", "the new ruler of Lostia"), never "King". The old King stays "King".
+- Robots and machines that speak in katakana (Gigantia, Gigo, Gattan, the bleeping robots) talk in ALL CAPS; their sound effects (Gshshsh, Beep) and katakana monsters stay in mixed case.
 - Sound effects: plain capitalised words with punctuation as in the JP (ガラガラ〜ッ！ -> "CRASH, CRASH!"; ザッ！ -> "Whoosh!").
 
 ## Style rules
@@ -21,7 +23,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 |---|---|---|---|---|
 | 勇者 | Hero | | the player's hero; 勇者たち "heroes" | Brave |
 | シルフィ | Sylphy | | the King's fairy aide and the player's guide; bubbly, says "you know!" | Sylphie / Silphy |
-| 王様 / ロスティア王 | King / Majesty | | King of Lostia; old-man speech じゃ/のう -> "eh?", "my boy", grand and fussy | |
+| 王様 / ロスティア王 | King / Majesty / ruler / throne | | King of Lostia; old-man speech じゃ/のう -> "eh?", "my boy", grand and fussy. When the hero (any gender) takes the crown: "ruler" / "on the throne", never "King" | |
 | ザガン | Zagan | | the demon lord, revived | |
 | ダール | Dahl | | the dark source that revived Zagan | |
 | ラター | Ratar | | the celestial power that shields the world; ラター様 Ratar-sama | |
@@ -105,6 +107,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | ロスティア | Lostia | | the kingdom; ロスティア城 Lostia Castle | |
+| ハズレー | Duddley | | ハズレ = a dud: keep the joke | Hazley |
 | 天界 | Heaven | | the celestial realm Zagan marches on | |
 | 魔界 | Demon World | | | |
 | タシュール | Tashur | | タシュール遺跡 Tashur Ruins | |
@@ -147,4 +150,6 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ワープオーブ | Warp Orb | | | |
 
 ## Decisions from earlier batches
-- (none yet)
+- D11: 勇者様 is plain "Hero", never "Sir Hero" (341 rows, phase 6 terms pass).
+- D12: the hero taking the throne is "ruler" / "on the throne", never "King"; katakana robots speak in ALL CAPS (phase 6 review).
+- Voice tics are Important, not Minor: old men じゃ/のう/ぞい -> "eh", "mark me", "mind you"; ladies' かしら/わ -> "would you mind", "dear", "I wonder"; Pikoko's っしゅ/でし -> "-sh", "yesh" (never glued to a `{sub}`).

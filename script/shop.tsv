@@ -18,7 +18,7 @@ s212.03F2	b212+3F2:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s212.040E	b212+40E:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s212.0425	b212+425:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s212.0437	b212+437:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s212.0446	b212+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s212.0446	b212+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s212.0453	b212+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s212.0464	b212+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s212.0473	b212+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -42,7 +42,7 @@ s212.064A	b212+64A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s212.065C	b212+65C:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s212.066F	b212+66F:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s212.0687	b212+687:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s212.06A7	b212+6A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s212.06A7	b212+6A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s212.070F	b212+70F:8	ベンダスの宿{end}	Bendas Inn{end}
 s212.0756	b212+756:7	ラレコの宿{end}	Rareko Inn{end}
 s212.079C	b212+79C:8	ギンソウの宿{end}	Ginso Inn{end}
@@ -105,7 +105,7 @@ s213.03F6	b213+3F6:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s213.0412	b213+412:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s213.0429	b213+429:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s213.043B	b213+43B:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s213.044A	b213+44A:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s213.044A	b213+44A:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s213.0457	b213+457:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s213.0468	b213+468:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s213.0477	b213+477:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -129,7 +129,7 @@ s213.0651	b213+651:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s213.0663	b213+663:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s213.0676	b213+676:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s213.068E	b213+68E:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s213.06AE	b213+6AE:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s213.06AE	b213+6AE:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s213.0716	b213+716:8	カナーベの宿{end}	Kanabe Inn{end}
 s213.075D	b213+75D:8	街道の宿{end}	Highway Inn{end}
 s213.07A4	b213+7A4:9	4ほんヤシの宿{end}	Four Palms Inn{end}
@@ -192,7 +192,7 @@ s214.03F2	b214+3F2:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s214.040E	b214+40E:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s214.0425	b214+425:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s214.0437	b214+437:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s214.0446	b214+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s214.0446	b214+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s214.0453	b214+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s214.0464	b214+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s214.0473	b214+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -216,7 +216,7 @@ s214.064C	b214+64C:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s214.065E	b214+65E:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s214.0671	b214+671:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s214.0689	b214+689:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s214.06A9	b214+6A9:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s214.06A9	b214+6A9:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s214.0711	b214+711:9	ハーターゴの宿{end}	Hartago Inn{end}
 s214.0759	b214+759:9	サンロックの宿{end}	Sunrock Inn{end}
 s214.07A1	b214+7A1:8	カリビア・イン{end}	Caribia Inn{end}
@@ -279,7 +279,7 @@ s215.03D2	b215+3D2:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s215.03EE	b215+3EE:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s215.0405	b215+405:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s215.0417	b215+417:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s215.0426	b215+426:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s215.0426	b215+426:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s215.0433	b215+433:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s215.0444	b215+444:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s215.0453	b215+453:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -303,7 +303,7 @@ s215.062D	b215+62D:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s215.063F	b215+63F:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s215.0652	b215+652:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s215.066A	b215+66A:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s215.068A	b215+68A:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s215.068A	b215+68A:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s215.06E2	b215+6E2:8	きたかぜの宿{end}	North Wind Inn{end}
 s215.0719	b215+719:8	はねうまの宿{end}	Pegasus Inn{end}
 s215.0750	b215+750:7	ツララの宿{end}	Icicle Inn{end}
@@ -365,7 +365,7 @@ s216.0439	b216+439:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s216.0455	b216+455:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s216.046C	b216+46C:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s216.047E	b216+47E:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s216.048D	b216+48D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s216.048D	b216+48D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s216.049A	b216+49A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s216.04AB	b216+4AB:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s216.04BA	b216+4BA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -389,7 +389,7 @@ s216.0694	b216+694:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s216.06A6	b216+6A6:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s216.06B9	b216+6B9:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s216.06D1	b216+6D1:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s216.06F1	b216+6F1:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s216.06F1	b216+6F1:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s216.0759	b216+759:8	シャイン・イン{end}	Shine Inn{end}
 s216.07A0	b216+7A0:9	ロスティアの宿{end}	Lostia Inn{end}
 s216.07E8	b216+7E8:7	いこいの宿{end}	Respite Inn{end}
@@ -418,7 +418,7 @@ s216.0B1F	b216+B1F:8	サントスの街{end}	Santos Town{end}
 s216.0B28	b216+B28:14	キンググリフォン LV15{end}	King Griffon  LV15{end}
 s216.0B6E	b216+B6E:7	マリータウン{end}	Marie Town{end}
 s216.0B76	b216+B76:14	ギガンティア   LV15{end}	Gigantia  LV15{end}
-s216.0BBC	b216+BBC:8	ハズレーの街{end}	Hazley Town{end}
+s216.0BBC	b216+BBC:8	ハズレーの街{end}	Duddley Town{end}
 s216.0BC5	b216+BC5:14	ロードリッチ   LV15{end}	Lord Lich  LV15{end}
 s216.0BD9	b216+BD9:31	ロスティア城{nl}{color:09}BOSS{color:0F}{nl}魔王ザガン  LV？？{end}	Lostia Castle{nl}{color:09}BOSS{color:0F}{nl}Demon Lord Zagan  LV??{end}
 s216.0C2E	b216+C2E:14	ゴルゴス     LV14{end}	Gorgos  LV14{end}
@@ -450,7 +450,7 @@ s217.03F0	b217+3F0:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s217.040C	b217+40C:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s217.0423	b217+423:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s217.0435	b217+435:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s217.0444	b217+444:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s217.0444	b217+444:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s217.0451	b217+451:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s217.0462	b217+462:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s217.0471	b217+471:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -474,7 +474,7 @@ s217.064C	b217+64C:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s217.065E	b217+65E:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s217.0671	b217+671:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s217.0689	b217+689:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s217.06A9	b217+6A9:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s217.06A9	b217+6A9:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s217.06FD	b217+6FD:8	ミミズクの宿{end}	Owl Inn{end}
 s217.0730	b217+730:8	コレデタラバグ{end}	Bug If Seen{end}
 s217.0763	b217+763:8	コレデタラバグ{end}	Bug If Seen{end}
@@ -537,7 +537,7 @@ s218.03F4	b218+3F4:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s218.0410	b218+410:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s218.0427	b218+427:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s218.0439	b218+439:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s218.0448	b218+448:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s218.0448	b218+448:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s218.0455	b218+455:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s218.0466	b218+466:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s218.0475	b218+475:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -561,7 +561,7 @@ s218.0650	b218+650:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s218.0662	b218+662:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s218.0675	b218+675:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s218.068D	b218+68D:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s218.06AD	b218+6AD:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s218.06AD	b218+6AD:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s218.0701	b218+701:8	オリーブの宿{end}	Olive Inn{end}
 s218.0734	b218+734:8	コレデタラバグ{end}	Bug If Seen{end}
 s218.0767	b218+767:8	コレデタラバグ{end}	Bug If Seen{end}
@@ -624,7 +624,7 @@ s219.03F2	b219+3F2:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s219.040E	b219+40E:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s219.0425	b219+425:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s219.0437	b219+437:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s219.0446	b219+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s219.0446	b219+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s219.0453	b219+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s219.0464	b219+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s219.0473	b219+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -648,7 +648,7 @@ s219.064A	b219+64A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s219.065C	b219+65C:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s219.066F	b219+66F:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s219.0687	b219+687:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s219.06A7	b219+6A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s219.06A7	b219+6A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s219.06FB	b219+6FB:9	水しょうの宿{end}	Crystal Inn{end}
 s219.072F	b219+72F:9	マーメイドの宿{end}	Mermaid Inn{end}
 s219.0763	b219+763:8	精霊の宿{end}	Spirit Inn{end}
@@ -714,7 +714,7 @@ s220.02E0	b220+2E0:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s220.02FC	b220+2FC:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s220.0313	b220+313:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s220.0325	b220+325:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s220.0334	b220+334:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s220.0334	b220+334:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s220.0341	b220+341:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s220.0352	b220+352:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s220.0361	b220+361:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -738,7 +738,7 @@ s220.0500	b220+500:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s220.0512	b220+512:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s220.0525	b220+525:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s220.053D	b220+53D:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s220.055D	b220+55D:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s220.055D	b220+55D:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s221.0082	b221+82:16	チスワードック    LV？？{end}	Chiswardock  LV??{end}
 s221.009D	b221+9D:20	{color:0F}{nl}魔道士リレイア  LV？？{end}	{color:0F}{nl}Sorceress Releia  LV??{end}
 s221.00B2	b221+B2:11	魔道士リレイア{end}	Sorceress Releia{end}
@@ -761,7 +761,7 @@ s221.02C3	b221+2C3:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s221.02DF	b221+2DF:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s221.02F6	b221+2F6:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s221.0308	b221+308:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s221.0317	b221+317:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s221.0317	b221+317:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s221.0324	b221+324:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s221.0335	b221+335:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s221.0344	b221+344:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -785,7 +785,7 @@ s221.04E4	b221+4E4:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s221.04F6	b221+4F6:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s221.0509	b221+509:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s221.0521	b221+521:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s221.0541	b221+541:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s221.0541	b221+541:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s222.005A	b222+5A:14	シーワーム    LV？？{end}	Sea Worm  LV??{end}
 s222.0073	b222+73:19	{color:0F}{nl}いにしえの魔物  LV？？{end}	{color:0F}{nl}Ancient Fiend  LV??{end}
 s222.0087	b222+87:10	いにしえの魔物{end}	Ancient Fiend{end}
@@ -808,7 +808,7 @@ s222.0297	b222+297:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s222.02B3	b222+2B3:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s222.02CA	b222+2CA:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s222.02DC	b222+2DC:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s222.02EB	b222+2EB:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s222.02EB	b222+2EB:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s222.02F8	b222+2F8:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s222.0309	b222+309:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s222.0318	b222+318:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -832,7 +832,7 @@ s222.04B8	b222+4B8:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s222.04CA	b222+4CA:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s222.04DD	b222+4DD:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s222.04F5	b222+4F5:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s222.0515	b222+515:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s222.0515	b222+515:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s223.00DA	b223+DA:15	ジャイアント    LV？？{end}	Giant  LV??{end}
 s223.00F4	b223+F4:18	{color:0F}{nl}タイタニア     LV？？{end}	{color:0F}{nl}Titania  LV??{end}
 s223.0107	b223+107:6	タイタニア{end}	Titania{end}
@@ -855,7 +855,7 @@ s223.0313	b223+313:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s223.032F	b223+32F:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s223.0346	b223+346:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s223.0358	b223+358:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s223.0367	b223+367:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s223.0367	b223+367:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s223.0374	b223+374:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s223.0385	b223+385:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s223.0394	b223+394:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -879,7 +879,7 @@ s223.0534	b223+534:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s223.0546	b223+546:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s223.0559	b223+559:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s223.0571	b223+571:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s223.0591	b223+591:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s223.0591	b223+591:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s224.00CA	b224+CA:14	デーモン     LV？？{end}	Demon  LV??{end}
 s224.00DD	b224+DD:14	デーモン     LV？？{end}	Demon  LV??{end}
 s224.00F0	b224+F0:14	デーモン     LV？？{end}	Demon  LV??{end}
@@ -904,7 +904,7 @@ s224.0329	b224+329:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s224.0345	b224+345:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s224.035C	b224+35C:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s224.036E	b224+36E:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s224.037D	b224+37D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s224.037D	b224+37D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s224.038A	b224+38A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s224.039B	b224+39B:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s224.03AA	b224+3AA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -928,7 +928,7 @@ s224.054A	b224+54A:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s224.055C	b224+55C:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s224.056F	b224+56F:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s224.0587	b224+587:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s224.05A7	b224+5A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s224.05A7	b224+5A7:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s225.01FE	b225+1FE:8	ピココショップ{end}	Pikoko Shop{end}
 s225.0207	b225+207:82	{sfx:01}{color:0F}まいどぉ！{nl}ピココショップへようこそっ！{page}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Welcome, welcome!{nl}Welcome to the Pikoko Shop!{page}{color:0F}Pick whichever shop{nl}you like, pleash!{sfx:FE}{nl} {color:08}[E0]{color:0F} Button: Select{nl} {color:07}[E1]{color:0F} Button: Leave shop{end}
 s225.025A	b225+25A:59	{sfx:01}{color:0F}おすきなお店を{nl}えらんでちょーだいっ！{sfx:FE}{nl} {color:08}🅐{color:0F}ボタン 決定{nl} {color:07}🅑{color:0F}ボタン 店を出る{end}	{sfx:01}{color:0F}Pick whichever shop{nl}you like, pleash!{sfx:FE}{nl} {color:08}[E0]{color:0F} Button: Select{nl} {color:07}[E1]{color:0F} Button: Leave shop{end}
@@ -948,7 +948,7 @@ s225.040A	b225+40A:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s225.0426	b225+426:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s225.043D	b225+43D:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s225.044F	b225+44F:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s225.045E	b225+45E:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s225.045E	b225+45E:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s225.046B	b225+46B:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s225.047C	b225+47C:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s225.048B	b225+48B:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -972,7 +972,7 @@ s225.0665	b225+665:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s225.0677	b225+677:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s225.068A	b225+68A:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s225.06A2	b225+6A2:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s225.06C2	b225+6C2:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s225.06C2	b225+6C2:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s225.0716	b225+716:9	水しょうの宿{end}	Crystal Inn{end}
 s225.074A	b225+74A:9	マーメイドの宿{end}	Mermaid Inn{end}
 s225.077E	b225+77E:8	精霊の宿{end}	Spirit Inn{end}
@@ -1035,7 +1035,7 @@ s226.03F2	b226+3F2:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s226.040E	b226+40E:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s226.0425	b226+425:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s226.0437	b226+437:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s226.0446	b226+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s226.0446	b226+446:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s226.0453	b226+453:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s226.0464	b226+464:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s226.0473	b226+473:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -1059,7 +1059,7 @@ s226.064D	b226+64D:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s226.065F	b226+65F:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s226.0672	b226+672:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s226.068A	b226+68A:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s226.06AA	b226+6AA:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s226.06AA	b226+6AA:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s226.06FE	b226+6FE:9	水しょうの宿{end}	Crystal Inn{end}
 s226.0732	b226+732:9	マーメイドの宿{end}	Mermaid Inn{end}
 s226.0766	b226+766:8	精霊の宿{end}	Spirit Inn{end}
@@ -1122,7 +1122,7 @@ s227.040A	b227+40A:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s227.0426	b227+426:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s227.043D	b227+43D:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s227.044F	b227+44F:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s227.045E	b227+45E:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s227.045E	b227+45E:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s227.046B	b227+46B:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s227.047C	b227+47C:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s227.048B	b227+48B:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -1146,7 +1146,7 @@ s227.0665	b227+665:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s227.0677	b227+677:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s227.068A	b227+68A:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s227.06A2	b227+6A2:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s227.06C2	b227+6C2:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s227.06C2	b227+6C2:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s227.0716	b227+716:9	水しょうの宿{end}	Crystal Inn{end}
 s227.074A	b227+74A:9	マーメイドの宿{end}	Mermaid Inn{end}
 s227.077E	b227+77E:8	精霊の宿{end}	Spirit Inn{end}
@@ -1208,7 +1208,7 @@ s228.0439	b228+439:27	{sfx:01}そうびできないっしゅ。{nl}それでも�
 s228.0455	b228+455:22	{sfx:01}{color:08}{sub:0000}{color:0F}シリングになりまっ！{sfx:FE}{end}	{sfx:01}That's {color:08}{sub:0000}{color:0F} Shillings!{sfx:FE}{end}
 s228.046C	b228+46C:17	{sfx:01}お金がないでしゅ．．．{sfx:FE}{end}	{sfx:01}You haven't got the money-sh...{sfx:FE}{end}
 s228.047E	b228+47E:14	{sfx:01}これでいいかにゃ？{sfx:FE}{end}	{sfx:01}Is that okay, meow?{sfx:FE}{end}
-s228.048D	b228+48D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly~{sfx:FE}{end}
+s228.048D	b228+48D:12	{sfx:01}まいだぁりぃ〜{sfx:FE}{end}	{sfx:01}Thank you kiiindly-sh~{sfx:FE}{end}
 s228.049A	b228+49A:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sfx:01}Will you wear it now, meow?{sfx:FE}{end}
 s228.04AB	b228+4AB:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 s228.04BA	b228+4BA:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
@@ -1232,7 +1232,7 @@ s228.0694	b228+694:17	{sfx:01}もう1回まわしましま？{sfx:FE}{end}	{sfx:
 s228.06A6	b228+6A6:18	{sfx:01}もう{nl}持ちきれないっしゅ{sfx:FE}{end}	{sfx:01}You can't{nl}carry any more-sh{sfx:FE}{end}
 s228.06B9	b228+6B9:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ。{sfx:FE}{end}	{sfx:01}...Huh?{nl}Looks like you're out of money, meow.{sfx:FE}{end}
 s228.06D1	b228+6D1:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection{nl}watch over you...{sfx:FE}{end}
-s228.06F1	b228+6F1:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}You got {color:08}{sub:0000}{color:0F}!{page}This Orb's effect is{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
+s228.06F1	b228+6F1:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-da-DAAAN!!{nl}It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect:{nl}{color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 s228.0745	b228+745:9	水しょうの宿{end}	Crystal Inn{end}
 s228.0779	b228+779:9	マーメイドの宿{end}	Mermaid Inn{end}
 s228.07AD	b228+7AD:8	精霊の宿{end}	Spirit Inn{end}

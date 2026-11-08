@@ -20,7 +20,9 @@ playful, never stiff. Every speaker keeps their tic.
 
 ## Rules shown by the pilot
 - The hero is any of 12 characters, male or female: never "he/she" for 勇者; say "the Hero" or rephrase.
-- 勇者さん / 勇者様 / 勇者殿 are titles, not names: "Hero", "Sir Hero", "noble Hero" by register (D9).
+- 勇者さん / 勇者様 / 勇者殿 are titles, not names: "Hero", "Hero", "noble Hero" by register (D11: never "Sir Hero"; carry 様's deference in the phrasing).
+- The hero taking the crown (王 said of the hero) is "ruler" / "on the throne", never "King" (glossary Style rules).
+- Katakana robots and machines (Gigantia, Gigo, Gattan) speak in ALL CAPS; their sound effects stay mixed case.
 - Sound effects lead, in capitals or with stretched letters and the JP punctuation: ザッ！ "Zip!", ブワッ！ "FWOOSH!", アチチ〜ッ！ "Hot, hot, hooot!".
 - Timed scrolls (`{pause:..}` after every line, no prompts) keep exactly one English line per JP line, same pause codes.
 - Hearts and notes are the game's glyphs: ♥ `[CB]` (inside the JP's `{color:09}..{color:0F}`), ♪ `[D0]`.

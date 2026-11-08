@@ -2,11 +2,11 @@ id	loc	jp	en
 059F1A	r059F1A:37	{color:0B}王様{color:0F}{nl}{sfx:00}おお、勇者たちよ。{nl}ごくろうであったな。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Ah, Heroes.{nl}You've worked hard, my dears.{sfx:FE}{page}{end}
 059F3F	r059F3F:41	{sfx:00}そなたたちのかつやくで{nl}ずいぶんモンスターのひがいが{nl}へったようじゃ。{sfx:FE}{page}{end}	{sfx:00}Thanks to your efforts,{nl}the harm done by monsters{nl}seems to have dropped a lot, eh.{sfx:FE}{page}{end}
 059F68	r059F68:37	{sfx:00}王国の民も、さぞや{nl}心強く思っていることじゃろう。{sfx:FE}{page}{end}	{sfx:00}The people of the kingdom{nl}must feel much reassured, eh.{sfx:FE}{page}{end}
-059F8D	r059F8D:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results...{sfx:FE}{page}{end}
+059F8D	r059F8D:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results, eh...{sfx:FE}{page}{end}
 059FAB	r059FAB:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Congratulations, Hero {sub:0200}.{nl}The rest of you did well too.{sfx:FE}{page}{end}
 059FD8	r059FD8:48	{sfx:00}これからも{nl}モンスターたちのきょういは{nl}わがロスティア王国を{nl}おびやかすだろう。{sfx:FE}{page}{end}	{sfx:00}Even so, the monster threat{nl}will surely go on{nl}menacing our Kingdom{nl}of Lostia.{sfx:FE}{page}{end}
 05A008	r05A008:42	{sfx:00}勇者にやすらぎが{nl}おとずれるのは、{nl}まだまださきの話のようじゃな。{sfx:FE}{page}{end}	{sfx:00}It seems peace for the Heroes{nl}is still a long,{nl}long way off, eh.{sfx:FE}{page}{end}
-05A032	r05A032:44	{sfx:00}人々の平和なくらしを{nl}まもるために、これからも{nl}しっかりたのんだぞ！{sfx:FE}{page}{end}	{sfx:00}To protect the peaceful lives{nl}of the people, I'm counting{nl}on you from here on!{sfx:FE}{page}{end}
+05A032	r05A032:44	{sfx:00}人々の平和なくらしを{nl}まもるために、これからも{nl}しっかりたのんだぞ！{sfx:FE}{page}{end}	{sfx:00}To protect the peaceful lives{nl}of the people, I'll be counting{nl}on you from here on, mind!{sfx:FE}{page}{end}
 05A05E	r05A05E:21	{sfx:00}それでは{nl}しばしのわかれじゃ！{sfx:FE}{page}{end}	{sfx:00}And so,{nl}farewell for now!{sfx:FE}{page}{end}
 05A073	r05A073:24	{sfx:00}また会おう{nl}勇者たちよ！{sfx:FE}{pause:F0}{pause:C3}{end}	{sfx:00}Until we meet again,{nl}Heroes!{sfx:FE}{pause:F0}{pause:C3}{end}
 05A09F	r05A09F:44	{color:07}シルフィ{color:0F}{nl}{sfx:01}おつかれさまでした勇者様。{nl}冒険ももうおわりね。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Great work, Heroes.{nl}The adventure's over now, huh.{sfx:FE}{page}{end}
@@ -39,15 +39,15 @@ id	loc	jp	en
 05ADC4	r05ADC4:22	{sfx:01}さあ、優勝は誰の手に・・・{sfx:FE}{end}	{sfx:01}Now, who will claim the victory...{sfx:FE}{end}
 05ADDA	r05ADDA:10	勇者{sub:0200}{pause:80}{end}	Hero {sub:0200}{pause:80}{end}
 05AE06	r05AE06:61	{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでアルディア地方の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Well done, Heroes.{nl}Now the people of the Ardia{nl}region can live in peace, eh.{sfx:FE}{page}{end}
-05AE43	r05AE43:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results...{sfx:FE}{page}{end}
+05AE43	r05AE43:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results, eh...{sfx:FE}{page}{end}
 05AE61	r05AE61:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Congratulations, Hero {sub:0200}.{nl}The rest of you did well too.{sfx:FE}{page}{end}
 05AE8E	r05AE8E:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	{sfx:00}Keep on competing and{nl}striving hard, my dears.{sfx:FE}{page}{end}
 05AEB4	r05AEB4:55	{color:0B}王様{color:0F}{nl}{sfx:00}よくやった勇者たちよ。{nl}これでタシュール地方にも{nl}平和がもどったな。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Well done, Heroes.{nl}Now peace has returned{nl}to the Tashur region too, eh.{sfx:FE}{page}{end}
-05AEEB	r05AEEB:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results...{sfx:FE}{page}{end}
+05AEEB	r05AEEB:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results, eh...{sfx:FE}{page}{end}
 05AF09	r05AF09:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Congratulations, Hero {sub:0200}.{nl}The rest of you did well too.{sfx:FE}{page}{end}
 05AF36	r05AF36:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	{sfx:00}Keep on competing and{nl}striving hard, my dears.{sfx:FE}{page}{end}
 05AF5C	r05AF5C:59	{color:0B}王様{color:0F}{nl}{sfx:00}よくやった、勇者たちよ。{nl}これでペリル諸島の民も{nl}平和にくらせるはずじゃ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Well done, Heroes.{nl}Now the people of the Peril{nl}Islands can live in peace, eh.{sfx:FE}{page}{end}
-05AF97	r05AF97:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results...{sfx:FE}{page}{end}
+05AF97	r05AF97:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results, eh...{sfx:FE}{page}{end}
 05AFB5	r05AFB5:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Congratulations, Hero {sub:0200}.{nl}The rest of you did well too.{sfx:FE}{page}{end}
 05AFE2	r05AFE2:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	{sfx:00}Keep on competing and{nl}striving hard, my dears.{sfx:FE}{page}{end}
 05B01A	r05B01A:15	{color:0F}{nl}{sfx:00}・・・・？{sfx:FE}{pause:B4}{end}	{color:0F}{nl}{sfx:00}....?{sfx:FE}{pause:B4}{end}
@@ -92,12 +92,12 @@ id	loc	jp	en
 05B666	r05B666:40	{color:0B}王様{color:0F}{nl}{sfx:00}ということじゃ。{nl}勇者{sub:0200}よ、おめでとう。{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}And so it is.{nl}Congratulations, Hero {sub:0200}.{sfx:FE}{pause:B4}{end}
 05B68E	r05B68E:31	{sfx:00}今からそなたが{nl}このロスティアの国王じゃ。{sfx:FE}{pause:B4}{end}	{sfx:00}From this moment on, you are{nl}the ruler of Lostia.{sfx:FE}{pause:B4}{end}
 05B6AD	r05B6AD:57	{sfx:00}長い冒険を戦いぬいた{nl}そなたならば、きっとこの国を{nl}りっぱにまもる事ができる{nl}じゃろう。{sfx:FE}{pause:F0}{end}	{sfx:00}You fought your way through{nl}a long adventure, so surely{nl}you can protect this country{nl}splendidly, eh.{sfx:FE}{pause:F0}{end}
-05B6E6	r05B6E6:35	{sfx:00}みなの者、{nl}新しいロスティア王の{nl}たんじょうじゃ！{sfx:FE}{pause:B4}{end}	{sfx:00}Everyone,{nl}behold the birth of{nl}the new King of Lostia!{sfx:FE}{pause:B4}{end}
+05B6E6	r05B6E6:35	{sfx:00}みなの者、{nl}新しいロスティア王の{nl}たんじょうじゃ！{sfx:FE}{pause:B4}{end}	{sfx:00}Everyone,{nl}behold, Lostia has{nl}a new ruler!{sfx:FE}{pause:B4}{end}
 05B709	r05B709:61	{color:0B}王様{color:0F}{nl}{sfx:00}今日はメデタイのう。{nl}わが王国の新たな旅立ちを{nl}いわって、えんかいといくか〜{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}What a happy day, eh!{nl}To celebrate our kingdom's new start,{nl}shall we throw a banquet~?{sfx:FE}{pause:B4}{end}
 05B746	r05B746:26	{color:07}シルフィ{color:0F}{nl}{sfx:01}王様、王様！{sfx:FE}{pause:3C}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Your Majesty, Your Majesty!{sfx:FE}{pause:3C}{end}
 05B760	r05B760:46	{color:0B}王様{color:0F}{nl}{sfx:00}なんじゃシルフィ。{nl}わしはもう、{nl}王様じゃないんじゃぞ！{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}What is it, Sylphy?{nl}I'm not the King{nl}anymore, you know!{sfx:FE}{pause:B4}{end}
 05B78E	r05B78E:42	{color:07}シルフィ{color:0F}{nl}{sfx:01}王様バンザ〜イ！{nl}ロスティア王国バンザ〜イ！{sfx:FE}{pause:80}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Long live the Kiiing~!{nl}Long live the Kingdom of Lostia~!{sfx:FE}{pause:80}{end}
 05B7B8	r05B7B8:30	{color:0B}王様{color:0F}{nl}{sfx:00}おお、シルフィ{nl}ありがとう。{sfx:FE}{pause:70}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Oh, Sylphy,{nl}thank you.{sfx:FE}{pause:70}{end}
-05B7D6	r05B7D6:43	{sfx:00}これからも{nl}{sub:0200}王のもと、{nl}ロスティア王国は{nl}さかえるじゃろう！{sfx:FE}{pause:F0}{end}	{sfx:00}From this day on,{nl}under King {sub:0200},{nl}the Kingdom of Lostia{nl}shall surely prosper!{sfx:FE}{pause:F0}{end}
-05B801	r05B801:38	{sfx:00}さあ、勇者たちよ、{nl}そなたたちの冒険に{nl}カンパイじゃ！{sfx:FE}{pause:B4}{end}	{sfx:00}Now then, Heroes,{nl}a toast{nl}to your adventures!{sfx:FE}{pause:B4}{end}
+05B7D6	r05B7D6:43	{sfx:00}これからも{nl}{sub:0200}王のもと、{nl}ロスティア王国は{nl}さかえるじゃろう！{sfx:FE}{pause:F0}{end}	{sfx:00}From this day on,{nl}with {sub:0200} on the throne,{nl}the Kingdom of Lostia{nl}shall surely prosper!{sfx:FE}{pause:F0}{end}
+05B801	r05B801:38	{sfx:00}さあ、勇者たちよ、{nl}そなたたちの冒険に{nl}カンパイじゃ！{sfx:FE}{pause:B4}{end}	{sfx:00}Now then, Heroes,{nl}let us drink a toast{nl}to your adventures!{sfx:FE}{pause:B4}{end}
 05B827	r05B827:29	{color:07}シルフィ{color:0F}{nl}{sfx:01}勇者様バンザ〜イ！！{sfx:FE}{pause:40}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Long live the Heroes~!!{sfx:FE}{pause:40}{end}
