@@ -38,6 +38,9 @@ An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So an
 | `$C21AC4` | whole routine | strip renderer |
 | `$C2D504`, `$C2D50A`, `$C2D510` | immediates `F7 8C`, `F7 42`, `F7 C7` (危険度) | `F1 00`, `00 F4`, `F4 F4`: far string 0 |
 | `$C55585`, `$C5558B` | immediates `F7 00`, `F7 01` (勇者) | `F1 01`, `00 F4`: far string 1 |
+| `$C2A6DF` | `INC A / ORA #$FF00 / STA $113E` (HUD bar rank digit + 位 tile `$FF`) | `JSL rank_text` + 3 NOP: "No.1" in cells 12-15 of rect `$1111` |
+
+`far_read` also runs `title_check` on every byte read: while the reader is inside `$C4:C855-C86A` (THE END, CONFIG MODE, raw rows left Japanese-side = the original English, D19) it sets `!FIXED` and `vwf_char` sends each glyph down the old 16 px path. `rects.DOT_MARK`: the name entry draws a 1x1 rect `$85:9D76` (`$C1:4AB8`) holding the ゛ of もどる; blanked.
 
 WRAM `$7F:FE00-FFFF`: in the original, only block 4's load (`7F:E000`, 8 KB, its last 512 bytes zero) writes it, and only the LZ decoder reads it (read watch, `tools/debug/readlog.lua --var PAGE=1`; a DMA at `$80D761` reads `7F:F980-FCxx` in versus, below it). So a screen load can zero our state mid-text: every state byte is clamped or harmless at 0 (`HEAD` falls back to `POOL`).
 

@@ -12,6 +12,7 @@ page index in `work/gfx4/index.txt`), `tools/gfxzoom.py OUT BPP ZOOM BLOCK[+OFF[
 | G5 | 738 | `$D8:A3D5` LZ | `01:2000` | small icon sheet | icons, digits: no kana seen at 3x | check on a marker tour |
 | G6 | 001 | `$C6:2134` LZ (4bpp art part) | BG2 tiles `0xB6-0xD9` | 9x4 panel | 仲間 / 募集中! on an empty party slot (field and battle HUD) | **done** `tools/gfx.py panel`: "Allies / Wanted!", ink 11, shadow 14, the row-shaded ground refilled (tour `field`, `battle_magic`) |
 | G7 | 001 | same | BG2 tiles `0xB0-0xB1` | 2 cells | 種族 before the race name in the status header (`$C2:BCD2`) | **done** `tools/gfx.py race`: "Race" in 3 px letters (tour `field_status_equip`) |
+| G9 | 001 | same | BG2 tile `$FF` | 1 cell | 位 after the rank digit in the field HUD bar (`$C2:A6DF`, rect `$1111`) | **done** (D19) asm `rank_text`: "No.1" |
 | G8 | 000 | 1bpp 16x16 font | glyph `$10A` | 1 cell | 年 after the digits in the years picker (ch 0 intro, rect `$85:A9AF`) and config play time | **done** `tools/gfx.py year`: "yr" (D15 last resort; tour `config` "1 yr") |
 
 **No Japanese seen at thumbnail scale:** portraits 799-811 (and 812 group), sprites 34-82, 425-477, 478-525, effects 526-555, map

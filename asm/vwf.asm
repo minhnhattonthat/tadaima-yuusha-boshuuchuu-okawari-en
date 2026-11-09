@@ -96,6 +96,13 @@ org $C2B839
 org $C2B76D
     dw $3E18
 
+; field HUD bar rank "1位" ($C2:A6DF: INC A / ORA #$FF00 / STA $113E, digit then the 位 tile $FF): "No.1" like the status box
+org $C2A6DF
+    jsl rank_text
+    nop
+    nop
+    nop
+
 ; save slot date "0年目 4月": template rect $85:BC2D (7x1, 年 目 . MM . 月) at col 23, year digits (2) at col 20, month at col 26.
 ; English "Yr 0 Mo 4": template at col 20 = Y r YY . M o, year at col 22, month at col 27 (tiles of the label sheet, rects.tiles)
 org $C42270
@@ -140,6 +147,7 @@ text_wait:
     jml $C21AA3
 
 far_read:
+    jsr title_check
     cmp.w #$00FF
     beq .end
     cmp.w #!FAR
@@ -345,9 +353,35 @@ align:
 .done:
     rts
 
+; THE END and CONFIG MODE ($C4:C855-C86A, raw rows, D19) are English in the original's 16 px capitals: while the reader is in them,
+; vwf_char sends every glyph down the old path. A = the byte read, kept; Y = its address, DB = its bank.
+title_check:
+    pha
+    phb
+    phb
+    pla
+    and.w #$003F
+    cmp.w #$0004
+    bne .no
+    cpy.w #$C855
+    bcc .no
+    cpy.w #$C86B
+    bcs .no
+    lda.w #$0001
+    bra +
+.no:
+    lda.w #$0000
++
+    sta.l !FIXED
+    pla
+    rts
+
 vwf_char:
     pla
     sta $00
+    lda.l !FIXED
+    bne .old
+    lda $00
     cmp.w #$000A
     bcc .old
     cmp.w #$006A
@@ -1146,6 +1180,16 @@ pay_index:
 
 ; VS-mode date "0年目 4月" ($C2:A7E7 built it in $1236 for $C2:140A): English "Year 0, April" (4月 is the calendar month).
 ; Up to 19 bytes: runs into $1246, the item-description scratch slot, which is free while this box shows.
+; A = rank from $82:AE26. HUD bar row 2 (rect $1111, 30x2): cells 12-15 = N o . digit, the V sign follows at 16. DB as the caller's.
+rank_text:
+    inc a
+    xba
+    ora.w #$002A        ; the ・ tile, a stop (font.SMALL_DOT)
+    sta.w $113F
+    lda.w #$3E18
+    sta.w $113D
+    rtl
+
 date_text:
     ldy.w #$1236
     ldx.w #.year-.s

@@ -142,6 +142,7 @@ GRID = ((0x059A8B, 0x059B19, 0x0595F9), (0x059B84, 0x059C12, 0x059681))
 GRID_COLS = (0, 2, 4, 6, 8, 11, 13, 15, 17, 19)
 NO_CHAR = 0xF4
 ROMAJI_LOW = 0x059D0B
+DOT_MARK = 0x059D78  # body of the 1x1 rect $85:9D76 (drawn by $C1:4AB8): ゛ over もどる's と, left as a stray mark before "Done"
 CURSOR, CURSOR_X = (0x05959C, 0x05959E, 0x0595A0), (0x78, 0xA0, 0xC8)  # cursor x of the three commands: the words are longer, so they sit further left
 TITLE = (0x0594C6, 0x0594D8, 0x0594EA)  # the page's name: 4 big cells each of the glyph set below (cells 4p..4p+3)
 # Glyph set ひらがなカタカナローマ字 (12 cells in the old 16 px font, drawn one per cell: asm fixed_check) the titles pick from.
@@ -184,6 +185,8 @@ def grid(out, far):
     n = far.number()
     far.put(n, bytes([w, h]) + body)
     out[ROMAJI_LOW:ROMAJI_LOW + 3] = bytes([0xF0, n & 255, n >> 8])
+    assert out[DOT_MARK - 2:DOT_MARK + 1] == b"\x01\x01\x27"
+    out[DOT_MARK] = 0
     for at, x in zip(CURSOR, CURSOR_X):
         out[at] = x
     assert out[TITLE_SET + len(TITLE_GLYPHS) - 1] == 0xFF
