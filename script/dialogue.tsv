@@ -316,7 +316,7 @@ d756.015D	b756+15D:34	{sfx:01}タイタニアの邪悪さには{nl}気がつか�
 d756.017F	b756+17F:49	{sfx:01}なにしろあいてはドラゴン、{nl}レベルが十分上がってから{nl}ちょう戦してね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}You're up against dragons, after{nl}all! Wait till your level is high{nl}enough to take them on{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d756.01B0	b756+1B0:36	{sfx:01}ここはかつて神々がおすまいに{nl}なっていた神殿で〜す。{sfx:FE}{page}{end}	{sfx:01}This is the temple where{nl}the gods once lived~.{sfx:FE}{page}{end}
 d756.01D4	b756+1D4:49	{sfx:01}今は邪悪な巨人の王{nl}タイタニアがうばって、{nl}玉座をかまえているわ・・・{sfx:FE}{page}{end}	{sfx:01}Now Titania, the evil giant king, has{nl}stolen it and set up a throne there...{sfx:FE}{page}{end}
-d756.0205	b756+205:50	{sfx:01}タイタニアは恐ろしい巨人よ。{nl}今のみなさんの力では、例すのは{nl}ムリみたいね。{sfx:FE}{page}{end}	{sfx:01}Titania is a terrifying giant.{nl}With your strength right now,{nl}you can't defeat that one, I bet.{sfx:FE}{page}{end}
+d756.0205	b756+205:50	{sfx:01}タイタニアは恐ろしい巨人よ。{nl}今のみなさんの力では、例すのは{nl}ムリみたいね。{sfx:FE}{page}{end}	{sfx:01}Titania is a terrifying giant.{nl}With your strength right now,{nl}you can't defeat that one yet.{sfx:FE}{page}{end}
 d756.0237	b756+237:49	{sfx:01}まずはタイタニアの手下の{nl}モンスターをやっつける事から{nl}はじめましょう{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}First, let's start by beating the{nl}monsters who work for Titania{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d756.0268	b756+268:17	{sfx:01}ピココショップで〜す。{sfx:FE}{page}{end}	{sfx:01}It's a Pikoko Shop~!{sfx:FE}{page}{end}
 d756.0279	b756+279:43	{sfx:01}この山おくでも{nl}武器、道具、オーブが{nl}手に入れられますよ〜。{sfx:FE}{page}{end}	{sfx:01}Even deep in these mountains you{nl}can get weapons, items and Orbs~.{sfx:FE}{page}{end}
@@ -354,7 +354,7 @@ d757.033F	b757+33F:46	{sfx:01}このロスティア王国の危機を{nl}すく�
 d757.036D	b757+36D:48	{sfx:01}武器、道具、オーブは{nl}ザガンとの戦いにもやくだって{nl}くれるはずよ{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}Weapons, items and Orbs should help{nl}you out in the fight with Zagan too{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d757.039D	b757+39D:17	{sfx:01}旅の宿屋で〜す。{sfx:FE}{page}{end}	{sfx:01}It's the travelers' inn~!{sfx:FE}{page}{end}
 d757.03AE	b757+3AE:54	{sfx:01}勇者様といっしょに{nl}ザガンと戦ってくれる勇かんな{nl}旅の冒険者がたくさんいます。{sfx:FE}{page}{end}	{sfx:01}There are lots of brave traveling{nl}adventurers who'll fight Zagan{nl}together with you Heroes.{sfx:FE}{page}{end}
-d757.03E4	b757+3E4:45	{sfx:01}HP、MPの回復も{nl}いつもどおりにできるから、{nl}うまく使ってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}You can restore HP and MP just like always,{nl}too, so use it well{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
+d757.03E4	b757+3E4:45	{sfx:01}HP、MPの回復も{nl}いつもどおりにできるから、{nl}うまく使ってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}You can restore HP and MP just like always,{nl}too, so make good use of it{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d757.0411	b757+411:14	{sfx:01}さんばしで〜す。{sfx:FE}{page}{end}	{sfx:01}It's a pier~!{sfx:FE}{page}{end}
 d757.041F	b757+41F:22	{sfx:01}船にのる時はこちらへどうぞ。{sfx:FE}{page}{end}	{sfx:01}This way to board a ship.{sfx:FE}{page}{end}
 d757.0435	b757+435:19	{sfx:01}ここはドラゴンのすむ山。{sfx:FE}{page}{end}	{sfx:01}This is the mountain where{nl}a dragon lives.{sfx:FE}{page}{end}
@@ -366,7 +366,7 @@ d757.04F0	b757+4F0:45	{sfx:01}その時がきたら、シルフィが{nl}おし�
 d757.051D	b757+51D:46	{sfx:01}それまで、みなさん、{nl}レベルやNVPをかせいで、{nl}力をつけておいてね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}Until then, everyone, earn levels and{nl}NVP and build up your strength{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d757.054B	b757+54B:34	{sfx:01}以上{nl}シルフィの{nl}ロスティア平原ガイドでした〜{sfx:FE}{pause:C0}{end}	{sfx:01}And that was{nl}Sylphy's Guide{nl}to the Lostia Plains~{sfx:FE}{pause:C0}{end}
 d758.0034	b758+34:33	{sfx:01}こちらが{nl}これからみなさんのむかう{nl}ビッグバード島。{sfx:FE}{page}{end}	{sfx:01}This is{nl}where you're all headed:{nl}Big Bird Island.{sfx:FE}{page}{end}
-d758.0055	b758+55:34	{sfx:01}この島は、古くから{nl}たびだちの島ともよばれていて、{sfx:FE}{page}{end}	{sfx:01}Since long ago, this island has{nl}also been called the Isle of Setting Out,{sfx:FE}{page}{end}
+d758.0055	b758+55:34	{sfx:01}この島は、古くから{nl}たびだちの島ともよばれていて、{sfx:FE}{page}{end}	{sfx:01}Since long ago, this island has{nl}also been called the Isle of Departure,{sfx:FE}{page}{end}
 d758.0077	b758+77:43	{sfx:01}勇者になりたての若者が、{nl}よく、力だめしに{nl}おとずれる所なの。{sfx:FE}{page}{end}	{sfx:01}a place young folks who've just become{nl}Heroes often visit to test their strength.{sfx:FE}{page}{end}
 d758.00A2	b758+A2:51	{sfx:01}みなさんのさいしょの冒険は{nl}まず、この島から{nl}はじめてもらう事になるわね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}Your very first adventure will{nl}start right here on this island{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d758.00D5	b758+D5:24	{sfx:01}今光っているのが洞窟で〜す。{sfx:FE}{page}{end}	{sfx:01}The ones glowing now are caves~.{sfx:FE}{page}{end}
@@ -399,7 +399,7 @@ d759.00B9	b759+B9:28	{sfx:01}勇者としてのけいけんを{nl}つんでほ�
 d759.00D5	b759+D5:43	{sfx:01}この島の8カ所にある洞窟に{nl}モンスターがつぎつぎ{nl}あらわれるから、{sfx:FE}{page}{end}	{sfx:01}Monsters keep appearing in the caves at 8{nl}spots on this island, one after another, so{sfx:FE}{page}{end}
 d759.0100	b759+100:40	{sfx:01}そのクエストを解決していって、{nl}NVPをためていってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}clear those Quests one by one{nl}and rack up NVP{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d759.0128	b759+128:15	{sfx:01}これは街で〜す。{sfx:FE}{page}{end}	{sfx:01}This is a town~!{sfx:FE}{page}{end}
-d759.0137	b759+137:44	{sfx:01}それぞれの街には長老がいて、{nl}お金とNVPをとりかえて{nl}くれま〜す。{sfx:FE}{page}{end}	{sfx:01}Every town has an elder who'll{nl}trade money for NVP for you~.{sfx:FE}{page}{end}
+d759.0137	b759+137:44	{sfx:01}それぞれの街には長老がいて、{nl}お金とNVPをとりかえて{nl}くれま〜す。{sfx:FE}{page}{end}	{sfx:01}Every town has an Elder who'll{nl}trade money for NVP for you~.{sfx:FE}{page}{end}
 d759.0163	b759+163:47	{sfx:01}島についてのうわさなんかも{nl}きく事ができるから、{nl}マメによってみるといいわよ！{sfx:FE}{page}{end}	{sfx:01}You can hear rumors about the island{nl}there too, so it's smart to drop by often!{sfx:FE}{page}{end}
 d759.0192	b759+192:41	{sfx:01}これは、{nl}ピココ族という妖精がやっている{nl}ピココショップで〜す。{sfx:FE}{page}{end}	{sfx:01}This is a Pikoko Shop, run by{nl}fairies called the Pikoko folk~{sfx:FE}{page}{end}
 d759.01BB	b759+1BB:36	{sfx:01}このお店では、武器や道具、{nl}オーブを売ってます。{sfx:FE}{page}{end}	{sfx:01}This shop sells weapons, items and Orbs.{sfx:FE}{page}{end}
@@ -420,9 +420,9 @@ d760.00AA	b760+AA:51	{sfx:01}いくら勇者様たちでも、{nl}数えきれ�
 d760.00DD	b760+DD:26	{sfx:01}あまりムリせず、{nl}ほどほどにね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}Don't push yourselves too hard, okay{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d760.00F7	b760+F7:36	{sfx:01}これが魔界につうじているという{nl}うわさの洞窟で〜す。{sfx:FE}{page}{end}	{sfx:01}These are the caves rumored{nl}to lead to the Demon World~.{sfx:FE}{page}{end}
 d760.011B	b760+11B:41	{sfx:01}この洞窟の中の{nl}どれかに、つぎつぎと{nl}モンスターが現れるから、{sfx:FE}{page}{end}	{sfx:01}Monsters keep popping up in one cave{nl}or another, one after another, so{sfx:FE}{page}{end}
-d760.0144	b760+144:37	{sfx:01}どんどんやっつけて、{nl}クエストを解決していってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}beat them one after another{nl}and clear the Quests{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
+d760.0144	b760+144:37	{sfx:01}どんどんやっつけて、{nl}クエストを解決していってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}beat them all{nl}and clear the Quests{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d760.0169	b760+169:15	{sfx:01}これは街で〜す。{sfx:FE}{page}{end}	{sfx:01}This is a town~!{sfx:FE}{page}{end}
-d760.0178	b760+178:40	{sfx:01}街で長老に会うと、{nl}お金とNVPをとりかえて{nl}くれま〜す。{sfx:FE}{page}{end}	{sfx:01}Meet the elder in a town, and they'll{nl}trade money for NVP for you~.{sfx:FE}{page}{end}
+d760.0178	b760+178:40	{sfx:01}街で長老に会うと、{nl}お金とNVPをとりかえて{nl}くれま〜す。{sfx:FE}{page}{end}	{sfx:01}Meet the Elder in a town, and they'll{nl}trade money for NVP for you~.{sfx:FE}{page}{end}
 d760.01A0	b760+1A0:41	{sfx:01}これは、{nl}ピココ族という妖精がやっている{nl}ピココショップで〜す。{sfx:FE}{page}{end}	{sfx:01}This is a Pikoko Shop, run by{nl}fairies called the Pikoko folk~{sfx:FE}{page}{end}
 d760.01C9	b760+1C9:36	{sfx:01}このお店では、武器や道具、{nl}オーブを売ってるの。{sfx:FE}{page}{end}	{sfx:01}This shop sells weapons, items and Orbs.{sfx:FE}{page}{end}
 d760.01ED	b760+1ED:56	{sfx:01}時々、売っている品物が{nl}かわる事もあるというから、{nl}マメにチェックしておこうね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}They say the goods for sale change from{nl}time to time, so check back often{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
@@ -451,32 +451,32 @@ d761.0109	b761+109:20	{nl}{nl}[F4][F4][F4][F4]タシュール遺跡[F4][F4][F4][
 d761.011D	b761+11D:20	{nl}{nl}[F4][F4][F4][F4]ふういんの洞窟[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]      The Sealed Cave{end}
 d761.0131	b761+131:20	{nl}{nl}[F4][F4][F4][F4]アストロン神殿[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4]      Temple of Astron{end}
 d761.0145	b761+145:19	{nl}{nl}[F4][F4][F4][F4][F4]ロスティア城[F4][F4][F4][F4]{end}	{nl}{nl}[F4][F4][F4][F4][F4]    Lostia Castle{end}
-d762.000E	b762+E:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Everyone, the time has come at last!{sfx:FE}{page}{end}
+d762.000E	b762+E:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Hear me, one and all!{nl}The time has come at last!{sfx:FE}{page}{end}
 d762.0030	b762+30:60	{sfx:00}闇の騎士団が例され、敵の大将{nl}ウィルダが、ついに{nl}フォートとりでのとびらを{nl}ひらいたのじゃ。{sfx:FE}{page}{end}	{sfx:00}The Dark Knights are defeated, and at{nl}last the enemy general Wilda has opened{nl}the gates of the Fort stronghold.{sfx:FE}{page}{end}
 d762.006C	b762+6C:17	{sfx:00}やつのとりでにむかえ！{sfx:FE}{page}{end}	{sfx:00}Head for that stronghold!{sfx:FE}{page}{end}
 d762.007D	b762+7D:41	{sfx:00}ウィルダを例せば、{nl}大りょうのNVPとシリングを{nl}やくそくしよう！{sfx:FE}{page}{end}	{sfx:00}Defeat Wilda, and I promise{nl}you loads of NVP and Shillings!{sfx:FE}{page}{end}
 d762.00A6	b762+A6:66	{color:07}シルフィ{color:0F}{nl}{sfx:01}ウィルダはとりでのおく、闇の{nl}玉座で、再び攻撃をしかける{nl}機会をうかがっているはずよ。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Deep in the stronghold, on the dark{nl}throne, Wilda must be waiting for{nl}a chance to strike again.{sfx:FE}{page}{end}
 d762.00E8	b762+E8:43	{color:0B}王様{color:0F}{nl}{sfx:00}そなたたちの力、{nl}ウィルダにとくと{nl}みせてやるがよい！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Go and show Wilda just{nl}what your strength can do!{sfx:FE}{page}{end}
-d762.0113	b762+113:18	{sfx:00}ゆけ‼勇者たちよ！{sfx:FE}{pause:80}{end}	{sfx:00}Go forth!! Heroes!{sfx:FE}{pause:80}{end}
+d762.0113	b762+113:18	{sfx:00}ゆけ‼勇者たちよ！{sfx:FE}{pause:80}{end}	{sfx:00}Go forth, Heroes!!{sfx:FE}{pause:80}{end}
 d763.0012	b763+12:39	{color:0B}王様{color:0F}{nl}{sfx:00}勇者たちよ、{nl}敵のしょうたいがわかったぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Heroes, we know who the enemy is!{sfx:FE}{page}{end}
-d763.0039	b763+39:58	{sfx:00}ザガン軍魔道ぶたいをひきいる{nl}女魔道士リレイアが地下神殿に{nl}ひそんでおったのじゃ！{sfx:FE}{page}{end}	{sfx:00}The sorceress Releia, who leads the{nl}magic corps of Zagan's army, was{nl}lurking in the underground temple!{sfx:FE}{page}{end}
-d763.0073	b763+73:54	{sfx:00}やつの放ったモンスターが全て{nl}例されたため、{nl}ついにみずからそのすがたを{nl}あらわしおった。{sfx:FE}{page}{end}	{sfx:00}Now that all the monsters she unleashed are{nl}defeated, she has at last shown herself.{sfx:FE}{page}{end}
+d763.0039	b763+39:58	{sfx:00}ザガン軍魔道ぶたいをひきいる{nl}女魔道士リレイアが地下神殿に{nl}ひそんでおったのじゃ！{sfx:FE}{page}{end}	{sfx:00}The sorceress Releia, who leads the{nl}magic corps of Zagan's army, was{nl}lurking in the underground temple,{nl}I tell you!{sfx:FE}{page}{end}
+d763.0073	b763+73:54	{sfx:00}やつの放ったモンスターが全て{nl}例されたため、{nl}ついにみずからそのすがたを{nl}あらわしおった。{sfx:FE}{page}{end}	{sfx:00}Now that the monsters she unleashed{nl}are all beaten, she's shown herself, hmph.{sfx:FE}{page}{end}
 d763.00A9	b763+A9:21	{sfx:00}今こそリレイアを例す時！{sfx:FE}{page}{end}	{sfx:00}Now is the time to defeat Releia!{sfx:FE}{page}{end}
 d763.00BE	b763+BE:33	{sfx:00}じゅんびをととのえ、{nl}地下神殿にむかうがよい！{sfx:FE}{page}{end}	{sfx:00}Make ready, and head{nl}for the underground temple!{sfx:FE}{page}{end}
 d763.00DF	b763+DF:60	{color:07}シルフィ{color:0F}{nl}{sfx:01}リレイアの魔力は、{nl}街を占領していた手下たちに{nl}くらべてはるかに強力よ。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Releia's magic is far stronger than that{nl}of the underlings who held the towns.{sfx:FE}{page}{end}
 d763.011B	b763+11B:28	{sfx:01}くれぐれも気をつけて{nl}戦ってね{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}Be really, really careful when you fight{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
 d763.0137	b763+137:53	{color:0B}王様{color:0F}{nl}{sfx:00}タシュールの民の平和なくらしは{nl}そなたたちの活やくに{nl}かかっておる！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}The peaceful lives of the Tashur{nl}folk depend on your great deeds!{sfx:FE}{page}{end}
 d763.016C	b763+16C:22	{sfx:00}たのんだぞ、{nl}勇者たちよ！{sfx:FE}{pause:80}{end}	{sfx:00}I'm counting on you,{nl}Heroes!{sfx:FE}{pause:80}{end}
-d764.0012	b764+12:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Everyone, the time has come at last!{sfx:FE}{page}{end}
+d764.0012	b764+12:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Hear me, one and all!{nl}The time has come at last!{sfx:FE}{page}{end}
 d764.0034	b764+34:49	{sfx:00}大うずがきえて、{nl}ついに「いにしえの海の魔物」が{nl}すがたをあらわしたそうじゃ。{sfx:FE}{page}{end}	{sfx:00}The great whirlpool is gone,{nl}and at last "the Ancient Sea Fiend"{nl}has shown itself, they say.{sfx:FE}{page}{end}
 d764.0065	b764+65:38	{sfx:00}魔物のしょうたいは{nl}巨大なドラゴン、{nl}ディープビースト！{sfx:FE}{page}{end}	{sfx:00}The fiend is in truth a giant{nl}dragon: the Deep Beast!{sfx:FE}{page}{end}
 d764.008B	b764+8B:63	{sfx:00}だが、そなたたちがモンスターを{nl}すべて例してくれたおかげで、{nl}やつはまだかんぜんに力を{nl}とりもどしてはおらん。{sfx:FE}{page}{end}	{sfx:00}But thanks to you defeating all the monsters,{nl}it has not yet fully regained its power.{sfx:FE}{page}{end}
 d764.00CA	b764+CA:22	{sfx:00}例すなら、今がチャンスじゃ！{sfx:FE}{page}{end}	{sfx:00}If you're to defeat it, now's the chance!{sfx:FE}{page}{end}
-d764.00E0	b764+E0:57	{color:07}シルフィ{color:0F}{nl}{sfx:01}ドラゴンは大うずのそこにあった{nl}深海の洞窟のおくで{nl}目ざめたばかりなの。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}The dragon has just woken up deep{nl}in a deep-sea cave that was at{nl}the bottom of the great whirlpool.{sfx:FE}{page}{end}
+d764.00E0	b764+E0:57	{color:07}シルフィ{color:0F}{nl}{sfx:01}ドラゴンは大うずのそこにあった{nl}深海の洞窟のおくで{nl}目ざめたばかりなの。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}The dragon has just woken up far{nl}inside a sea cave at the bottom{nl}of the great whirlpool.{sfx:FE}{page}{end}
 d764.0119	b764+119:36	{sfx:01}力をとりもどす前に、{nl}なんとしても{nl}やっつけなくちゃね！{sfx:FE}{page}{end}	{sfx:01}We've got to beat it, no matter what,{nl}before it gets its power back!{sfx:FE}{page}{end}
 d764.013D	b764+13D:57	{color:0B}王様{color:0F}{nl}{sfx:00}「いにしえの魔物」から{nl}世界をすくうには、{nl}そなたたちの力がひつようじゃ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}To save the world from "the{nl}Ancient Fiend," we need your strength!{sfx:FE}{page}{end}
 d764.0176	b764+176:22	{sfx:00}たのんだぞ、{nl}勇者たちよ！{sfx:FE}{pause:80}{end}	{sfx:00}I'm counting on you,{nl}Heroes!{sfx:FE}{pause:80}{end}
-d765.000C	b765+C:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Everyone, the time has come at last!{sfx:FE}{page}{end}
+d765.000C	b765+C:34	{color:0B}王様{color:0F}{nl}{sfx:00}みなのもの、{nl}いよいよ時は来たぞ！{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Hear me, one and all!{nl}The time has come at last!{sfx:FE}{page}{end}
 d765.002E	b765+2E:60	{sfx:00}めざすはアストロン神殿、{nl}今のそなたたちの力なら{nl}巨人タイタニアを例す事が{nl}できるじゃろう。{sfx:FE}{page}{end}	{sfx:00}Your goal is the Temple of Astron. With{nl}your strength as it is now, you should{nl}be able to defeat the giant Titania.{sfx:FE}{page}{end}
 d765.006A	b765+6A:59	{color:07}シルフィ{color:0F}{nl}{sfx:01}タイタニアは神殿のおくで{nl}ロスティア攻撃のさいごの{nl}じゅんびをととのえているわ。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Deep in the temple, Titania is making{nl}the final preparations to attack Lostia.{sfx:FE}{page}{end}
 d765.00A5	b765+A5:50	{sfx:01}ゆだんしないで！{nl}タイタニアは勇者様たちを{nl}あの手この手でせめて{nl}くるはずよ！{sfx:FE}{page}{end}	{sfx:01}Don't let your guard down! Titania{nl}is sure to come at you Heroes{nl}with every trick in the book!{sfx:FE}{page}{end}

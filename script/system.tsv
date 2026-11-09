@@ -17,7 +17,7 @@ id	loc	jp	en
 04A3F6	r04A3F6:16	ほな、サクサクまいりまひょか〜{end}	Well then, let's get crackin', shall we~{end}
 04A407	r04A407:56	王様のことばをつたえま〜す{color:09}♥{color:0F}{page}{color:09}王様{color:0F}「うむ。がんばるのじゃ！」{page}いじょうで〜す{color:09}♥{color:0F}{end}	Here's a message from the King~{color:09}[CB]{color:0F}{page}{color:09}King{color:0F} "Mm. Do your best, eh!"{page}That's all~{color:09}[CB]{color:0F}{end}
 04A440	r04A440:13	誰に声をかけますか？{end}	Who will you talk to?{end}
-04A44E	r04A44E:12	この人でよいですか？{end}	This person, okay?{end}
+04A44E	r04A44E:12	この人でよいですか？{end}	Is this person OK?{end}
 04A45B	r04A45B:24	仲間がいっぱいです。{nl}誰とわかれますか？{end}	Your party is full.{nl}Who will you part with?{end}
 04A474	r04A474:49	勇者 {sub:0000} LV{sub:0100}[F4]{nl}{color:08}NVP{color:0F}{sub:0200}ポイント{nl}{color:08}所持金{color:0F}{sub:0300}シリング{end}	Hero {sub:0000} LV{sub:0100}[F4]{nl}{color:08}NVP{color:0F} {sub:0200} points{nl}{color:08}Money{color:0F} {sub:0300} Shillings{end}
 04A4A6	r04A4A6:16	ここはだれ？{nl}わたしはどこ？？{end}	Who am here?{nl}Where is I??{end}
@@ -45,7 +45,7 @@ id	loc	jp	en
 04A6CB	r04A6CB:8	ひっひっひ‼{nl}{end}	Hee hee hee!!{nl}{end}
 04A6D4	r04A6D4:45	「じつは{sub:0000}って・・・」{page}{color:08}{sub:0000}{color:0F}のNVPが{nl}{color:08}{sub:0100}{color:0F}ポイント下がった！{end}	"Y'know, {sub:0000} is actually..."{page}NVP for {color:08}{sub:0000}{color:0F}{nl}fell {color:08}{sub:0100}{color:0F} points!{end}
 04A702	r04A702:10	ひゃっひゃっひゃ！{end}	Hyah hyah hyah!{end}
-04A70D	r04A70D:28	勇者{sub:0000}から{nl}{color:08}{sub:0100}{color:0F}シリングいただいた‼{end}	From Hero {sub:0000},{nl}I helped myself to{nl}{color:08}{sub:0100}{color:0F} Shillings!!{end}
+04A70D	r04A70D:28	勇者{sub:0000}から{nl}{color:08}{sub:0100}{color:0F}シリングいただいた‼{end}	Helped myself to{nl}{color:08}{sub:0100}{color:0F} Shillings{nl}from Hero {sub:0000}!!{end}
 04A72A	r04A72A:36	{sub:0000}{color:0F}{nl}うっそぉ！やっだぁん‼{nl}調子悪くなっちゃったぁ〜ん‼{end}	{sub:0000}{color:0F}{nl}No waaay! Eww!!{nl}I'm feeling all out of sorts~!!{end}
 04A74F	r04A74F:15	うっひゃ〜！{nl}どしゃぶりだ！{end}	Yikeees!{nl}It's pouring!{end}
 04A75F	r04A75F:17	とつぜん{nl}{sub:0000}はさっていった。{end}	Suddenly,{nl}{sub:0000} left.{end}
@@ -101,8 +101,8 @@ id	loc	jp	en
 04ACF1	r04ACF1:30	{sub:0100}は{sub:0000}の{nl}HP{sub:0200}をすいとり、{nl}MPにかえた！{nl}{end}	{sub:0100} drained{nl}{sub:0200} HP from {sub:0000}{nl}and turned it into MP!{nl}{end}
 04AD10	r04AD10:19	{sub:0000}のHPが{color:08}1{color:0F}になった。{nl}{end}	{sub:0000} is down to {color:08}1{color:0F} HP.{nl}{end}
 04AD24	r04AD24:39	はたらきすぎは体にどく！{nl}勇者{sub:0000}さん{nl}つぎの回はおやすみです。{nl}{end}	Overwork is bad for you!{nl}Hero {sub:0000}, you'll{nl}sit out the next round.{nl}{end}
-04AD4C	r04AD4C:43	なんか体がかるくなったみたい。{page}勇者{sub:0000}は{nl}たくさん動けるようになった。{nl}{end}	Somehow your body feels light.{page}Hero {sub:0000}{nl}can now move a lot farther.{nl}{end}
-04AD78	r04AD78:42	なんか体がおもくなったみたい。{page}勇者{sub:0000}は{nl}少ししか進めなくなった。{nl}{end}	Somehow your body feels heavy.{page}Hero {sub:0000}{nl}can now move only a little.{nl}{end}
+04AD4C	r04AD4C:43	なんか体がかるくなったみたい。{page}勇者{sub:0000}は{nl}たくさん動けるようになった。{nl}{end}	Somehow I feel lighter.{page}Hero {sub:0000}{nl}can now move a lot farther.{nl}{end}
+04AD78	r04AD78:42	なんか体がおもくなったみたい。{page}勇者{sub:0000}は{nl}少ししか進めなくなった。{nl}{end}	Somehow I feel heavy.{page}Hero {sub:0000}{nl}can now move only a little.{nl}{end}
 04ADA3	r04ADA3:29	ま〜わ〜る〜ま〜わ〜る〜{nl}く〜る〜く〜る〜ま〜わ〜る〜{page}{end}	Rooound and rooound it goes~{nl}spiiin, spiiin, rooound it goes~{page}{end}
 04ADC1	r04ADC1:18	．．．うっぷ．．．{nl}ここはどこ！？{end}	...Urp...{nl}Where am I?!{end}
 04ADD4	r04ADD4:16	{sub:0000}の{nl}モンスターはさった。{end}	The monster at{nl}{sub:0000} left.{end}
@@ -128,8 +128,8 @@ id	loc	jp	en
 04B0E2	r04B0E2:21	ぜんいんのいちが{nl}いれかわってしまった‼{end}	Everyone's positions{nl}got swapped around!!{end}
 04B0F8	r04B0F8:38	ん？{nl}なんだこのかんじは．．．？[F4]{nl}{color:08}どくとるはに〜{color:0F}があらわれた‼{page}{end}	Hm?{nl}What's this feeling...?[F4]{nl}{color:08}Doctor Hanny{color:0F} appeared!!{page}{end}
 04B11F	r04B11F:10	{sfx:00}ホッホッホ{sfx:FE}{end}	{sfx:00}Ho ho ho{sfx:FE}{end}
-04B12A	r04B12A:22	{page}{sub:0000}のHPが{nl}1／2になってしまった‼{end}	{page}{sub:0000} had HP{nl}cut in half!!{end}
-04B141	r04B141:19	{page}{sub:0000}のHPが{nl}全回復した‼{end}	{page}{sub:0000} had HP{nl}fully restored!!{end}
+04B12A	r04B12A:22	{page}{sub:0000}のHPが{nl}1／2になってしまった‼{end}	{page}{sub:0000} had their HP{nl}cut in half!!{end}
+04B141	r04B141:19	{page}{sub:0000}のHPが{nl}全回復した‼{end}	{page}{sub:0000} had their HP{nl}fully restored!!{end}
 04B174	r04B174:39	マップも〜ど！{nl}{color:08}🅐{color:0F}ボタンでもくひょうを{nl}きりかえられるよ{color:07}★{color:0F}{wait}{end}	Map mode!{nl}Press the {color:08}[E0]{color:0F} Button{nl}to switch targets{color:07}[D1]{color:0F}{wait}{end}
 04B19C	r04B19C:10	{nl}  なんか買う{end}	{nl}  Buy stuff{end}
 04B1A7	r04B1A7:8	 なんか売る{end}	 Sell stuff{end}
@@ -141,8 +141,8 @@ id	loc	jp	en
 04B8D7	r04B8D7:8	{nl}    はい{end}	{nl}    Yes{end}
 04B8E0	r04B8E0:6	  いいえ{end}	  No{end}
 04C84E	r04C84E:6	HUMAN{end}	HUMAN{end}
-04C855	r04C855:8	THE[F4]END{end}
-04C85E	r04C85E:12	CONFIG[F4]MODE{end}
+04C855	r04C855:8	THE[F4]END{end}	
+04C85E	r04C85E:12	CONFIG[F4]MODE{end}	
 04C86B	r04C86B:4	セーブ{end}	Save{end}
 04C870	r04C870:4	ロード{end}	Load{end}
 04C875	r04C875:8	ゲームをやめる{end}	Quit Game{end}
@@ -161,7 +161,7 @@ id	loc	jp	en
 04CA0B	r04CA0B:12	{color:09}[F4]・・・・・{pause:80}{nl}{end}	{color:09}[F4].....{pause:80}{nl}{end}
 04CA18	r04CA18:31	{color:09}[F4]おお、思い出したぞ！{nl}[F4]われは魔王・・・{pause:80}{nl}{end}	{color:09}[F4]Ohh, now I remember!{nl}[F4]I am the Demon Lord...{pause:80}{nl}{end}
 04CA38	r04CA38:50	{color:09}[F4]光の神ラターのしもべたちに{nl}[F4]よって、この地のそこに{nl}[F4]ほうむられたのだ・・・・{pause:80}{nl}{end}	{color:09}[F4]By the servants of Ratar,{nl}[F4]god of light, I was buried{nl}[F4]in the depths of this land....{pause:80}{nl}{end}
-04CA6B	r04CA6B:29	{color:09}[F4]すると・・・{pause:60}{nl}[F4]おまえは父なる闇か？{pause:80}{nl}{end}	{color:09}[F4]Then...{pause:60}{nl}[F4]are you the Father Darkness?{pause:80}{nl}{end}
+04CA6B	r04CA6B:29	{color:09}[F4]すると・・・{pause:60}{nl}[F4]おまえは父なる闇か？{pause:80}{nl}{end}	{color:09}[F4]Then...{pause:60}{nl}[F4]are you the Dark Father?{pause:80}{nl}{end}
 04CA89	r04CA89:20	{color:03}[F4]そのとおりだ、わがしもべよ{pause:80}{nl}{end}	{color:03}[F4]Just so, my servant{pause:80}{nl}{end}
 04CA9E	r04CA9E:49	{color:03}[F4]私はおまえに{nl}[F4]ふたたび力をあたえるために{nl}[F4]この地のそこまでおりて来たのだ{pause:80}{nl}{end}	{color:03}[F4]I have come down{nl}[F4]to the depths of this land{nl}[F4]to give you power once more{pause:80}{nl}{end}
 04CAD0	r04CAD0:31	{color:09}[F4]力を？{pause:30}{nl}[F4]それではここから出られるのか？{pause:80}{nl}{end}	{color:09}[F4]Power?{pause:30}{nl}[F4]Then I can get out of here?{pause:80}{nl}{end}

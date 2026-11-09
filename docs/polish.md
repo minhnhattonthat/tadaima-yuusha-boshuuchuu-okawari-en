@@ -182,126 +182,126 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [x] b022 e266.0135 - オーラをかんじるわ - feminine わ flattened - "I sense a strong aura from you, I do." (fixed: phase 6 review re-grade, Important)
 - [x] b022 e261.0F9A - そうか！よろしくな！ - "Splendid!" slightly grand for そうか - "Good! I'm counting on you!" (fixed)
 - [x] b023 e274.00EA - ひさしぶりでござるな - "long time no see, forsooth" mixes modern idiom with archaism - "'Tis been long indeed." (fixed)
-- [ ] b023 e274.0241 - ウム、さらばだ - "Hmm," reads hesitant; ウム is a firm assent - "Indeed,{nl}farewell..."
-- [ ] b023 e276.0171 - またいっしょに旅してぇな - line ends with no punctuation before {page} - "I wanna travel with ya again!"
-- [ ] b023 e279.021F - よろしくお願いします - "I'm in your care..." is a calque - "I'm counting on you..."
-- [ ] b023 e281.0120 - セイギノミカタッ - "FRIEND OF JUSTICE" is a literal take on the idiom - "CHAMPION OF JUSTICE!"
+- [x] b023 e274.0241 - ウム、さらばだ - "Hmm," reads hesitant; ウム is a firm assent - "Indeed,{nl}farewell..." (fixed)
+- [x] b023 e276.0171 - またいっしょに旅してぇな - line ends with no punctuation before {page} - "I wanna travel with ya again!" (fixed)
+- [x] b023 e279.021F - よろしくお願いします - "I'm in your care..." is a calque - "I'm counting on you..." (fixed)
+- [x] b023 e281.0120 - セイギノミカタッ - "FRIEND OF JUSTICE" is a literal take on the idiom - "CHAMPION OF JUSTICE!" (fixed)
 - [x] b023 e277.01E5 - それじゃ、よろしくな - "Well then, I'm in..." fine, but the punk's swagger could show more - "Well then, guess I'm in..." (fixed: phase 6 review re-grade, Important)
-- [ ] b024 e287.01D2 - そうか、たのもしいの！ (reply to being turned down: "how dependable of you") - "you've got guts" drifts - "I see, you can manage on your own, eh!"
+- [x] b024 e287.01D2 - そうか、たのもしいの！ (reply to being turned down: "how dependable of you") - "you've got guts" drifts - "I see, you can manage on your own, eh!" (fixed)
 - [x] b024 e287.012B - 仲間になるぞい - old-man ぞい tail lost on the last page - "I'll be your ally, heh..." (fixed: phase 6 review re-grade, Important)
-- [ ] b024 e287.01FF - ウム、さらばじゃ / ガハハ！ - no punctuation before the laugh - "Mm, farewell!{nl}Gahaha!"
-- [ ] b024 e285.0203 - ともにいこうかのぉ・・・ - question/suggestion reads as a statement - "Then shall we{nl}go together, dearie?"
+- [x] b024 e287.01FF - ウム、さらばじゃ / ガハハ！ - no punctuation before the laugh - "Mm, farewell!{nl}Gahaha!" (fixed)
+- [x] b024 e285.0203 - ともにいこうかのぉ・・・ - question/suggestion reads as a statement - "Then shall we{nl}go together, dearie?" (fixed)
 - [x] b024 e288.0144 - ついていきたいのじゃが・・・ - old-man じゃが flattened - "...I'd like to join your{nl}journey, noble Hero, eh..." (fixed: phase 6 review re-grade, Important)
-- [ ] b024 e291.01FC - よろしくね〜★ - "let's have fun~" adds meaning - "Yaaay,{nl}I'm counting on you~"
-- [ ] b024 e295.012A - よかったらいっしょに旅してくれない？ - "Would you travel with me, if you like?" doubled politeness - "Won't you travel{nl}with me?"
+- [x] b024 e291.01FC - よろしくね〜★ - "let's have fun~" adds meaning - "Yaaay,{nl}I'm counting on you~" (fixed)
+- [x] b024 e295.012A - よかったらいっしょに旅してくれない？ - "Would you travel with me, if you like?" doubled politeness - "Won't you travel{nl}with me?" (fixed)
 - [x] b024 e289.00EA - あたしの旅はまだつづいてるわ / ついていってあげるわよ - feminine わ/わよ flattened - "My journey still goes on, you know." / "I'll come along again, okay?" (fixed: phase 6 review re-grade, Important)
-- [ ] b024 e294.0248 - おう、グッバイ！ - "Yo, goodbye!" loses the katakana English swagger - "Yo,{nl}g'bye!"
-- [ ] b025 d725.0539 - ザガン軍一の将 = Zagan's foremost general - "first general" reads as a rank/order - "Zagan's greatest general"
-- [ ] b025 d725.0539 - 例した事はほめてやろう - "I'll praise you" stiff - "I'll commend you for defeating..."
-- [ ] b025 d725.02AE - 闇の騎士団を例そうというなら...やぶってみるがよい - "If you'd defeat the Dark Knights, first try to beat me!" stiff - "If you would defeat the Dark Knights, you must first get past me!"
-- [ ] b025 e299.0089 - オレも仲間にしてくれないか - "Won't you make me an ally?" stiff for rough Takeru - "How 'bout lettin' me join up?"
+- [x] b024 e294.0248 - おう、グッバイ！ - "Yo, goodbye!" loses the katakana English swagger - "Yo,{nl}g'bye!" (fixed)
+- [x] b025 d725.0539 - ザガン軍一の将 = Zagan's foremost general - "first general" reads as a rank/order - "Zagan's greatest general" (fixed)
+- [x] b025 d725.0539 - 例した事はほめてやろう - "I'll praise you" stiff - "I'll commend you for defeating..." (fixed)
+- [x] b025 d725.02AE - 闇の騎士団を例そうというなら...やぶってみるがよい - "If you'd defeat the Dark Knights, first try to beat me!" stiff - "If you would defeat the Dark Knights, you must first get past me!" (fixed)
+- [x] b025 e299.0089 - オレも仲間にしてくれないか - "Won't you make me an ally?" stiff for rough Takeru - "How 'bout lettin' me join up?" (fixed: "How 'bout lettin' me be your ally?")
 - [x] b025 e302.00C4 - ゴ〜ジャスな旅 - drawn-out vowel dropped, Kojima's vanity - "a far more gooorgeous journey!" (fixed: phase 6 review re-grade, Important)
-- [ ] b025 e300.02DA - 勇者ちゃんといっしょにいる - Kitty addresses the Hero directly - "I wanna stay with you, Hero~!!"
-- [ ] b025 d725.0421 - さすが勇者だの / 長老じゃ - Meredius old-man だの/じゃ mostly neutral after the laugh - add "eh" / "my boy" flavour
-- [ ] b025 d725.07AB / d725.09C8 - 魔道軍団 "Sorcery Corps" vs 魔道士ぶたい "Sorcerer Corps" - near-identical names for different units; fine if intended, else pick distinct ("Sorcery Legion" / "Sorcerer Squad")
-- [ ] b026 d725.0D88 - 闇の魔王 - glossary term 魔王 is "Demon Lord"; lowercase reads as generic - "the dark Demon Lord"
-- [ ] b026 d725.0CC6 - ウケルナリ - line before {page} lacks end punctuation, runs into "Prepare thyself!" - "shall feel my iron fist!"
-- [ ] b026 d725.1B6B - かつての勇者のまつえいだな - sentence ends without punctuation before {page} - add "..." or "!"
-- [ ] b026 d725.13A2 - 王者のごとくかがやくウロコ - "shining like a king's" is clunky - "Scales shining regally,"
-- [ ] b026 d725.13A2 - そびえたつ巨体 - "a towering giant body" stiff - "a towering, mighty frame..."
-- [ ] b026 d726.0116 - 血まつりにあげてやるぞぉ - "make ya bleed for it" implies payback; JP is "we'll slaughter you" - "Time to paint the town red with ya!" / "We'll tear ya to bits!"
-- [ ] b026 d725.0C58 - ヒサシブリジャ - old-crone じゃ only as "it has"; fine but could lean more crone - "it's been ages, it has, hee hee..."
-- [ ] b026 d725.1B6B - わが玉座にふみ入る - "sets foot upon my throne" sounds like stepping on the chair - "dares enter my throne room..."
-- [ ] b026 d725.0B1C - 勇者よ、おまえたち - consistent with other rows; ok, no change needed beyond style pass
-- [ ] b027 d726.10E1 - 大したシュウネンだ - "Quite the grudge" duplicates Kasim's later うらみ "grudge"; シュウネン is tenacity - "Such tenacity."
+- [x] b025 e300.02DA - 勇者ちゃんといっしょにいる - Kitty addresses the Hero directly - "I wanna stay with you, Hero~!!" (fixed)
+- [x] b025 d725.0421 - さすが勇者だの / 長老じゃ - Meredius old-man だの/じゃ mostly neutral after the laugh - add "eh" / "my boy" flavour (fixed: "my boy" at the end)
+- [x] b025 d725.07AB / d725.09C8 - 魔道軍団 "Sorcery Corps" vs 魔道士ぶたい "Sorcerer Corps" - near-identical names for different units; fine if intended, else pick distinct ("Sorcery Legion" / "Sorcerer Squad") (waived: different units (the corps vs its sorcerer squad), as bullet 146)
+- [x] b026 d725.0D88 - 闇の魔王 - glossary term 魔王 is "Demon Lord"; lowercase reads as generic - "the dark Demon Lord" (fixed)
+- [x] b026 d725.0CC6 - ウケルナリ - line before {page} lacks end punctuation, runs into "Prepare thyself!" - "shall feel my iron fist!" (fixed)
+- [x] b026 d725.1B6B - かつての勇者のまつえいだな - sentence ends without punctuation before {page} - add "..." or "!" (fixed)
+- [x] b026 d725.13A2 - 王者のごとくかがやくウロコ - "shining like a king's" is clunky - "Scales shining regally," (fixed)
+- [x] b026 d725.13A2 - そびえたつ巨体 - "a towering giant body" stiff - "a towering, mighty frame..." (fixed)
+- [x] b026 d726.0116 - 血まつりにあげてやるぞぉ - "make ya bleed for it" implies payback; JP is "we'll slaughter you" - "Time to paint the town red with ya!" / "We'll tear ya to bits!" (fixed)
+- [x] b026 d725.0C58 - ヒサシブリジャ - old-crone じゃ only as "it has"; fine but could lean more crone - "it's been ages, it has, hee hee..." (fixed)
+- [x] b026 d725.1B6B - わが玉座にふみ入る - "sets foot upon my throne" sounds like stepping on the chair - "dares enter my throne room..." (fixed)
+- [x] b026 d725.0B1C - 勇者よ、おまえたち - consistent with other rows; ok, no change needed beyond style pass (waived: no change needed (reviewer note))
+- [x] b027 d726.10E1 - 大したシュウネンだ - "Quite the grudge" duplicates Kasim's later うらみ "grudge"; シュウネン is tenacity - "Such tenacity." (fixed)
 - [x] b027 d726.0EC8 - ねえさん、闇の騎士ウィルダを・・・ - trailing を implies Sledge's devotion to Wilda; "you mean" guesses - "Sis, you... for Wilda,{nl}the Dark Knight..." (fixed: phase 6 review re-grade, Important)
 - [x] b027 d726.0EC8 - ダメよ、ねえさん！わたしは戦えないわ！ - feminine よ/わ flattened - "No, Sis, please!{nl}I just can't fight you!" (fixed: phase 6 review re-grade, Important)
-- [ ] b027 d726.12A0 - グリフォン - "A griffon!!" / "Come, griffon" lowercase while the speaker label is "Griffon" (it is addressed by name) - "Griffon!!" / "Come, Griffon,"
-- [ ] b027 d726.1486 - われらザガン精霊軍団の力 - "the power of us, Zagan's Spirit Legion" stiff - "Behold the might of{nl}Zagan's Spirit Legion!"
+- [x] b027 d726.12A0 - グリフォン - "A griffon!!" / "Come, griffon" lowercase while the speaker label is "Griffon" (it is addressed by name) - "Griffon!!" / "Come, Griffon," (fixed)
+- [x] b027 d726.1486 - われらザガン精霊軍団の力 - "the power of us, Zagan's Spirit Legion" stiff - "Behold the might of{nl}Zagan's Spirit Legion!" (fixed)
 - [x] b027 d726.02FC - 闇の力は強大だぜ - "huge" weak; rough ぜ lost - "The power of darkness{nl}is mighty, I tell ya!" (fixed: phase 6 review re-grade, Important)
-- [ ] b027 d726.0C73 - ギシシシ・・・ - "Gshshshsh" hard to read - "Kshhhhh..."
-- [ ] b027 d726.05C1 - ハッ‼ - "Huh!!" reads as confusion, JP is snapping out of it - "Gasp!!"
-- [ ] b028 d726.1928 - ガーディアン katakana robot speech - first three pages mixed case, later pages caps; make consistent - "I AM...THE GUARDIAN{nl}OF THE WATER SHRINE..." etc.
-- [ ] b028 d726.233C - ゴア katakana speech - "I am...Gore..." / "Intruders...begone..." mixed case while WARNING! is caps; consider caps throughout
-- [ ] b028 d726.1775 - ゴーゴン ワラワ/〜ジャエ archaic feminine - mostly neutral English; could carry more archaic flavour ("mine darling Nyack", "thou")
-- [ ] b028 d726.2128 - 古文書に書いてあった魔道書のかくされた塔をまもるゴーレム - "the tower of the hidden grimoire from the old texts" slightly tangled - "the golem from the old texts, guarding the tower where the grimoire is hidden!"
-- [ ] b028 d726.2223 - たどりついたか (no JP punctuation) - "so you made it to me" ends with no mark before {page}; add "..."
+- [x] b027 d726.0C73 - ギシシシ・・・ - "Gshshshsh" hard to read - "Kshhhhh..." (fixed)
+- [x] b027 d726.05C1 - ハッ‼ - "Huh!!" reads as confusion, JP is snapping out of it - "Gasp!!" (fixed)
+- [x] b028 d726.1928 - ガーディアン katakana robot speech - first three pages mixed case, later pages caps; make consistent - "I AM...THE GUARDIAN{nl}OF THE WATER SHRINE..." etc. (fixed)
+- [x] b028 d726.233C - ゴア katakana speech - "I am...Gore..." / "Intruders...begone..." mixed case while WARNING! is caps; consider caps throughout (fixed: caps throughout)
+- [x] b028 d726.1775 - ゴーゴン ワラワ/〜ジャエ archaic feminine - mostly neutral English; could carry more archaic flavour ("mine darling Nyack", "thou") (waived: the Gorgon keeps her crone tics, as bullet 163)
+- [x] b028 d726.2128 - 古文書に書いてあった魔道書のかくされた塔をまもるゴーレム - "the tower of the hidden grimoire from the old texts" slightly tangled - "the golem from the old texts, guarding the tower where the grimoire is hidden!" (fixed)
+- [x] b028 d726.2223 - たどりついたか (no JP punctuation) - "so you made it to me" ends with no mark before {page}; add "..." (fixed)
 - [x] b028 d726.268E - オスロー ワシ/〜ぞ old-man register - a bit neutral; could add "eh" or "my boy" flavour (fixed: phase 6 review re-grade, Important)
-- [ ] b028 d726.1DBC - ハッ！！ gasp of realisation - "Huh!!" reads as confusion; "Gasp!!" fits better
-- [ ] b028 d726.2480 - 勇者ちゃ〜ん - "Heroooo~" drops the ちゃん cuteness; acceptable given D1 (title, not name)
+- [x] b028 d726.1DBC - ハッ！！ gasp of realisation - "Huh!!" reads as confusion; "Gasp!!" fits better (fixed)
+- [x] b028 d726.2480 - 勇者ちゃ〜ん - "Heroooo~" drops the ちゃん cuteness; acceptable given D1 (title, not name) (waived: D1, ちゃん on a title not kept)
 - [x] b029 d725.1AC8 - Gigantia's other row (another batch) is also mixed case - controller: put it in caps too, to match d726.29DB (fixed: phase 6 review re-grade, Important)
-- [ ] b029 d726.29DB - ザガン軍のせん兵 (尖兵 = vanguard) - "war machine" guesses - "Zagan's vanguard,"
-- [ ] b029 d726.28C8 - ゲルドナだ！ (Geldona introducing himself) - "it's Geldona!" sounds like a narrator - "I am Geldona!"
-- [ ] b029 01978C - 悪い魔王 - lowercase "demon lord" (also 019DA1, 019E27) vs glossary "Demon Lord" - controller: rule the case once
-- [ ] b029 01A263 - わがタンキュウの旅 (journey of inquiry) - "my quest" collides with the glossary term Quest - "my journey of discovery"
-- [ ] b029 01A2CF - ハカイぼうず (monk who breaks his vows) - "unruly old monk" loses the vow-breaking - "a wayward old monk"
-- [ ] b029 019F3C - グレてる - "went bad" a bit vague - "turned delinquent"
-- [ ] b030 058811 - 魔王ザガン - title before a name lowercased ("Zagan, demon lord!!"); glossary term is Demon Lord - "Zagan, Demon Lord!!"
-- [ ] b030 05889C - クックック、魔王ザガン - same: "demon lord Zagan" - "Demon Lord Zagan!"
-- [ ] b030 05849B - わが剣のサビになるがいい - "Become rust on my sword!!" stiff; style reference has Kojiro's "You'll be rust on my katana!!" - "You'll be rust on my blade!!"
-- [ ] b030 0580DC - セイギのテッケンじゃー - "ho!" reads oddly for the old-man じゃ - "Take this, my iron fist{nl}of justice, I say!"
-- [ ] b030 058050 - エ〜イ 勝負なのだぁ - "It's a match, so there!" slightly flat - "Let's fight, so there!" (matches 0581A9)
-- [ ] b030 05AD05 - 第N回ロスティア王国勇者コンテスト - missing article: "Grand Prix of Lostia Kingdom Hero Contest" - "...of the{nl}Lostia Kingdom Hero Contest..." if width allows
-- [ ] b030 05B34F - せいせきの、ヒック・・・発表じゃ - "the results, *hic*...are..." drops "announce" - "Time to announce, *sniff*...{nl}the results, *hic*...{nl}eh..."
+- [x] b029 d726.29DB - ザガン軍のせん兵 (尖兵 = vanguard) - "war machine" guesses - "Zagan's vanguard," (fixed)
+- [x] b029 d726.28C8 - ゲルドナだ！ (Geldona introducing himself) - "it's Geldona!" sounds like a narrator - "I am Geldona!" (waived: the JP line is narration (a general of Zagan's Demon Legion: Geldona!), kept as narration)
+- [x] b029 01978C - 悪い魔王 - lowercase "demon lord" (also 019DA1, 019E27) vs glossary "Demon Lord" - controller: rule the case once (fixed: Demon Lord capitalised everywhere)
+- [x] b029 01A263 - わがタンキュウの旅 (journey of inquiry) - "my quest" collides with the glossary term Quest - "my journey of discovery" (fixed)
+- [x] b029 01A2CF - ハカイぼうず (monk who breaks his vows) - "unruly old monk" loses the vow-breaking - "a wayward old monk" (fixed: "a wayward old monk" (polish5 also fixed "an wayward"))
+- [x] b029 019F3C - グレてる - "went bad" a bit vague - "turned delinquent" (fixed)
+- [x] b030 058811 - 魔王ザガン - title before a name lowercased ("Zagan, demon lord!!"); glossary term is Demon Lord - "Zagan, Demon Lord!!" (fixed)
+- [x] b030 05889C - クックック、魔王ザガン - same: "demon lord Zagan" - "Demon Lord Zagan!" (fixed)
+- [x] b030 05849B - わが剣のサビになるがいい - "Become rust on my sword!!" stiff; style reference has Kojiro's "You'll be rust on my katana!!" - "You'll be rust on my blade!!" (fixed)
+- [x] b030 0580DC - セイギのテッケンじゃー - "ho!" reads oddly for the old-man じゃ - "Take this, my iron fist{nl}of justice, I say!" (fixed)
+- [x] b030 058050 - エ〜イ 勝負なのだぁ - "It's a match, so there!" slightly flat - "Let's fight, so there!" (matches 0581A9) (fixed)
+- [x] b030 05AD05 - 第N回ロスティア王国勇者コンテスト - missing article: "Grand Prix of Lostia Kingdom Hero Contest" - "...of the{nl}Lostia Kingdom Hero Contest..." if width allows (fixed)
+- [x] b030 05B34F - せいせきの、ヒック・・・発表じゃ - "the results, *hic*...are..." drops "announce" - "Time to announce, *sniff*...{nl}the results, *hic*...{nl}eh..." (fixed)
 - [x] b030 059F8D - 成続発表とまいろうかの - King's のう/かの flattened - "...to announcing the results, eh..." (fixed: phase 6 review re-grade, Important)
 - [x] b030 05A032 - しっかりたのんだぞ - King register a bit neutral - "I'm counting on you, my dears!" (fixed: phase 6 review re-grade, Important)
-- [ ] b030 05B2B6 - くやしくてしかたなかったのね、きっと - addressee ambiguous (to the King or about him); "you" works but "galling" is a hard word for kids - "it must have been so frustrating"
-- [ ] b030 058088 - ゴメンあそばせ〜 - "darling" is an addition; fine for Charmy's prissy tone but optional - "Do pardon meee~!"
+- [x] b030 05B2B6 - くやしくてしかたなかったのね、きっと - addressee ambiguous (to the King or about him); "you" works but "galling" is a hard word for kids - "it must have been so frustrating" (fixed)
+- [x] b030 058088 - ゴメンあそばせ〜 - "darling" is an addition; fine for Charmy's prissy tone but optional - "Do pardon meee~!" (waived: optional; "darling" fits Charmy's prissy voice)
 - [x] b031 05B7D6 - {sub:0200}王のもと - "under King {sub:0200}" reads oddly for a female hero (JP 王 too); consider "under the rule of {sub:0200}," if width allows (fixed: phase 6 review re-grade, Important)
 - [x] b031 05B6E6 - 新しいロスティア王のたんじょう - same gender point; "the new ruler of Lostia" would suit any hero (fixed: phase 6 review re-grade, Important)
-- [ ] b031 05B760 - 王様じゃないんじゃぞ old-man じゃぞ - "you know!" a bit neutral; "I'm no King anymore, eh!"
+- [x] b031 05B760 - 王様じゃないんじゃぞ old-man じゃぞ - "you know!" a bit neutral; "I'm no King anymore, eh!" (fixed)
 - [x] b031 05B801 - カンパイじゃ - King's じゃ flattened; "a toast to your adventures, eh!" (fixed: phase 6 review re-grade, Important)
-- [ ] b031 d740.0024 - メッセンジャーシルフで〜す♥ - third line is a lone "~[CB]"; "the King's messenger sylph{nl}at your service~[CB]"
-- [ ] b031 d745.0162 - キョーアクな魔王 - "demon lord" lowercase while d744.01A8 has "Demon Lord"; use "Demon Lord"
-- [ ] b031 d745.034E - もっともNVPをためた者には - "To whoever ..., shall be granted" inverted and stiff over two rows; "Whoever ... earns the most NVP" / "shall be granted the throne..."
+- [x] b031 d740.0024 - メッセンジャーシルフで〜す♥ - third line is a lone "~[CB]"; "the King's messenger sylph{nl}at your service~[CB]" (fixed)
+- [x] b031 d745.0162 - キョーアクな魔王 - "demon lord" lowercase while d744.01A8 has "Demon Lord"; use "Demon Lord" (fixed)
+- [x] b031 d745.034E - もっともNVPをためた者には - "To whoever ..., shall be granted" inverted and stiff over two rows; "Whoever ... earns the most NVP" / "shall be granted the throne..." (fixed)
 - [x] b031 d745.039E - え〜っ‼ ...やめちゃうのぉ？ - ‼ -> "!!", and drawn-out のぉ lost; "Whaaat!!{nl}So you're quitting being Kiiing?" (fixed: phase 6 review re-grade, Important)
-- [ ] b031 d745.03C3 - むろんじゃ - "Of course." flat; "Naturally, eh!"
-- [ ] b031 d745.04B2 - ハッ！ (snapping out of a daydream) - "Ahem!" repeats d745.00CA's コホン; "...Oh!" or "Gasp!"
-- [ ] b031 d747.01E5 - 解こうとしておるようじゃ - missing comma: "the fiend's seal,{nl}it seems!"
+- [x] b031 d745.03C3 - むろんじゃ - "Of course." flat; "Naturally, eh!" (fixed)
+- [x] b031 d745.04B2 - ハッ！ (snapping out of a daydream) - "Ahem!" repeats d745.00CA's コホン; "...Oh!" or "Gasp!" (fixed)
+- [x] b031 d747.01E5 - 解こうとしておるようじゃ - missing comma: "the fiend's seal,{nl}it seems!" (fixed)
 - [x] b031 d744.01A8 - のろわれた血のあかしさ - Zephyr's cool さ lost; "This magic? Proof of my cursed blood." (fixed: phase 6 review re-grade, Important)
-- [ ] b032 d747.02D9 - 何年、冒険するのかおしえて〜 - EN adds a {page} the JP lacks, so the player presses a button for one word before the menu; fit on two lines - "Before we set off, everyone,{nl}how many years will you adventure~?"
-- [ ] b032 d748.022B - は〜い♥ - "Yes, sir~" is stiff for Sylphy to the King - "Okaaay~[CB]"
-- [ ] b032 d750.02CE - は〜い♥ - same as d748.022B - "Okaaay~[CB]"
-- [ ] b032 d750.0185 - 勇者こそわが王国のシンボル - singular "The Hero" reads like the player; King means heroes in general - "Heroes are the very symbol{nl}of our kingdom!"
-- [ ] b032 d752.01CE - この地の地下深く - "deep underground here" places the King in Hardis; he means that land - "deep beneath that land"
-- [ ] b032 d753.0323 - 旅は道づれ、世はなさけ (proverb) - "a friend is the best help!" is flat; an English saying would land better - "Two heads are better than one!"
-- [ ] b032 d753.026D - ピココ族という妖精 - "the Pikoko folk~." stray period after ~ - "the Pikoko folk~"
-- [ ] b032 d754.003F - ピラミッドで〜す - stray period after ~; same pattern in d753.0359 "seaaa~." and d754.014E "temple~."
-- [ ] b032 d750.040C - きたいしておるぞ - "We expect great deeds" royal we is fine but loses the old-man warmth - "I expect great deeds{nl}from you all, eh!"
-- [ ] b033 d755.005F - 魔物のふういんを解こう - "the fiend's seal" reads as a seal the fiend made; it is the seal on the Ancient Fiend - "trying to break{nl}the seal on the fiend!"
-- [ ] b033 d755.0220 - 仲間のたいせつさについては、もういうまでもないよね - split phrasing is stiff - "I don't need to tell you{nl}how important allies are[CB]"
-- [ ] b033 d755.01DB - りようしてね - "so drop by and use it" flat - "so make good use of it!"
-- [ ] b033 d757.0435 - ドラゴンのすむ山 - "the mountain of a dragon" awkward - "This is the mountain where{nl}a dragon lives."
-- [ ] b033 d757.048E - 入りくんだ地けい...うまく使ってね〜 - "use it well" has no clear referent (likely the warps; JP is equally vague) - "so get around it smartly~"
-- [ ] b033 d758.0055 - たびだちの島 - "Isle of Setting Out" clunky - "Isle of Departure" / "Isle of Beginnings"
-- [ ] b033 d759.0137 / d760.0178 - 長老 - glossary EN is capitalised "Elder" - "an Elder" / "the Elder"
-- [ ] b033 d760.011B / d760.0144 - つぎつぎと / どんどん - "one after another" twice in two rows - row 2: "so beat them all{nl}and clear the Quests[CB]"
-- [ ] b033 d756.0205 - 例すのはムリみたいね - "I bet" slightly off for みたい - "you can't beat that one yet."
-- [ ] b033 d757.03E4 - うまく使ってね - "so use it well" for the inn; fine but repetitive across guides - "so make good use of it"
+- [x] b032 d747.02D9 - 何年、冒険するのかおしえて〜 - EN adds a {page} the JP lacks, so the player presses a button for one word before the menu; fit on two lines - "Before we set off, everyone,{nl}how many years will you adventure~?" (fixed)
+- [x] b032 d748.022B - は〜い♥ - "Yes, sir~" is stiff for Sylphy to the King - "Okaaay~[CB]" (fixed)
+- [x] b032 d750.02CE - は〜い♥ - same as d748.022B - "Okaaay~[CB]" (fixed)
+- [x] b032 d750.0185 - 勇者こそわが王国のシンボル - singular "The Hero" reads like the player; King means heroes in general - "Heroes are the very symbol{nl}of our kingdom!" (fixed)
+- [x] b032 d752.01CE - この地の地下深く - "deep underground here" places the King in Hardis; he means that land - "deep beneath that land" (fixed)
+- [x] b032 d753.0323 - 旅は道づれ、世はなさけ (proverb) - "a friend is the best help!" is flat; an English saying would land better - "Two heads are better than one!" (fixed)
+- [x] b032 d753.026D - ピココ族という妖精 - "the Pikoko folk~." stray period after ~ - "the Pikoko folk~" (fixed)
+- [x] b032 d754.003F - ピラミッドで〜す - stray period after ~; same pattern in d753.0359 "seaaa~." and d754.014E "temple~." (fixed: no stray period in d754.003F, d753.0359, d754.014E)
+- [x] b032 d750.040C - きたいしておるぞ - "We expect great deeds" royal we is fine but loses the old-man warmth - "I expect great deeds{nl}from you all, eh!" (fixed)
+- [x] b033 d755.005F - 魔物のふういんを解こう - "the fiend's seal" reads as a seal the fiend made; it is the seal on the Ancient Fiend - "trying to break{nl}the seal on the fiend!" (fixed)
+- [x] b033 d755.0220 - 仲間のたいせつさについては、もういうまでもないよね - split phrasing is stiff - "I don't need to tell you{nl}how important allies are[CB]" (fixed)
+- [x] b033 d755.01DB - りようしてね - "so drop by and use it" flat - "so make good use of it!" (fixed)
+- [x] b033 d757.0435 - ドラゴンのすむ山 - "the mountain of a dragon" awkward - "This is the mountain where{nl}a dragon lives." (fixed)
+- [x] b033 d757.048E - 入りくんだ地けい...うまく使ってね〜 - "use it well" has no clear referent (likely the warps; JP is equally vague) - "so get around it smartly~" (fixed)
+- [x] b033 d758.0055 - たびだちの島 - "Isle of Setting Out" clunky - "Isle of Departure" / "Isle of Beginnings" (fixed: Isle of Departure)
+- [x] b033 d759.0137 / d760.0178 - 長老 - glossary EN is capitalised "Elder" - "an Elder" / "the Elder" (fixed: Elder)
+- [x] b033 d760.011B / d760.0144 - つぎつぎと / どんどん - "one after another" twice in two rows - row 2: "so beat them all{nl}and clear the Quests[CB]" (fixed: "beat them all")
+- [x] b033 d756.0205 - 例すのはムリみたいね - "I bet" slightly off for みたい - "you can't beat that one yet." (fixed: "you can't defeat that one yet.")
+- [x] b033 d757.03E4 - うまく使ってね - "so use it well" for the inn; fine but repetitive across guides - "so make good use of it" (fixed)
 - [x] b034 d765.0116 - 負けるでないぞ！勇者たちよ！ - "Do not lose! Heroes!" splits awkwardly; King's ぞ lost - "Don't you dare lose,{nl}my Heroes!" (fixed: phase 6 review re-grade, Important)
-- [ ] b034 d762.0113 - ゆけ‼勇者たちよ！ - "Go forth!! Heroes!" reads choppy - "Go forth, Heroes!!"
-- [ ] b034 d762.000E - みなのもの、いよいよ時は来たぞ！ - "Everyone," is plain for the King's みなのもの - "Hear me, one and all!"
-- [ ] b034 d763.0039 - ひそんでおったのじゃ - King's old-man じゃ flat - add "...temple, I tell you!"
-- [ ] b034 d763.0073 - あらわしおった - neutral; King could huff - "she has finally shown her face, hmph."
-- [ ] b034 d764.00E0 - 深海の洞窟のおく - "deep in a deep-sea cave" repeats "deep" - "has just woken in a sea cave far below{nl}the great whirlpool."
-- [ ] b034 d762.0030 - 例され - King line neutral prose; fine but no じゃ flavour - optional "eh!" at end
-- [ ] b034 s212.05B6 - ごきげんよう、勇者様〜♪ - "Fare thee well" archaic for a sing-song clerk - "Toodle-oo, Hero~[D0]"
+- [x] b034 d762.0113 - ゆけ‼勇者たちよ！ - "Go forth!! Heroes!" reads choppy - "Go forth, Heroes!!" (fixed)
+- [x] b034 d762.000E - みなのもの、いよいよ時は来たぞ！ - "Everyone," is plain for the King's みなのもの - "Hear me, one and all!" (fixed: "Hear me, one and all!")
+- [x] b034 d763.0039 - ひそんでおったのじゃ - King's old-man じゃ flat - add "...temple, I tell you!" (fixed: "I tell you!")
+- [x] b034 d763.0073 - あらわしおった - neutral; King could huff - "she has finally shown her face, hmph." (fixed: "hmph.")
+- [x] b034 d764.00E0 - 深海の洞窟のおく - "deep in a deep-sea cave" repeats "deep" - "has just woken in a sea cave far below{nl}the great whirlpool." (fixed)
+- [x] b034 d762.0030 - 例され - King line neutral prose; fine but no じゃ flavour - optional "eh!" at end (waived: optional; the King's other rows carry the flavour)
+- [x] b034 s212.05B6 - ごきげんよう、勇者様〜♪ - "Fare thee well" archaic for a sing-song clerk - "Toodle-oo, Hero~[D0]" (fixed: Toodle-oo)
 - [x] b034 s212.0446 - まいだぁりぃ〜 (weapon shop) - lisp tic missing - "Thank you kiiindly-sh~" (fixed: phase 6 review re-grade, Important)
-- [ ] b034 s212.07F9 - {sub:0000}人見つかったわ - "Travelers found: N, dear." stiff - acceptable (avoids plural with a variable); polish if width allows
-- [ ] b034 s212.0BBC - フォートとりで - label "The Fort stronghold" - "Fort Stronghold" reads better as a place label
-- [ ] b034 s212.0B43 - アルディアの街 "Ardia Town" vs other towns without "Town" (Mercia, Globia) - fine if meant to separate from Ardia region; else "Ardia"
-- [ ] b034 s213.08A6 - テイルのピラミッド "Teil" - check whether "Tail" intended
+- [x] b034 s212.07F9 - {sub:0000}人見つかったわ - "Travelers found: N, dear." stiff - acceptable (avoids plural with a variable); polish if width allows (waived: avoids a plural after a variable)
+- [x] b034 s212.0BBC - フォートとりで - label "The Fort stronghold" - "Fort Stronghold" reads better as a place label (waived: glossary ruling "the Fort stronghold" (used in 6 rows))
+- [x] b034 s212.0B43 - アルディアの街 "Ardia Town" vs other towns without "Town" (Mercia, Globia) - fine if meant to separate from Ardia region; else "Ardia" (waived: glossary アルディア = Ardia; "Ardia Town" keeps the town apart from the region)
+- [x] b034 s213.08A6 - テイルのピラミッド "Teil" - check whether "Tail" intended (waived: テイル reads Teil; no source says Tail)
 - [x] b034 s212.06A7 - X でし - "You got X!" adds subject; Pikoko lisp missing on that line - "It's {sub}, yesh!" (fixed: phase 6 review re-grade, Important)
-- [ ] b035 04A44E - この人でよいですか？ - "This person, okay?" clipped - "Talk to this person?"
-- [ ] b035 s214.08A2 - ペリリアのほこら - glossary ペリル is Peril; "Peliria" may want "Perilia" to keep the link - "Perilia Shrine"
+- [x] b035 04A44E - この人でよいですか？ - "This person, okay?" clipped - "Talk to this person?" (fixed: "Is this person OK?")
+- [x] b035 s214.08A2 - ペリリアのほこら - glossary ペリル is Peril; "Peliria" may want "Perilia" to keep the link - "Perilia Shrine" (waived: ペリリア is its own name, not ペリル)
 - [x] b035 04A2FE / 04A37B - だじょ〜 drawn-out cutesy tail - "ya know!!" loses the stretch - "This is prob'ly your bug, ya knooow!!" (fixed: phase 6 review re-grade, Important)
-- [ ] b035 s219.0860 - アッキのどうくつ (悪鬼) - "Ogre Cave" ok, "Fiend Cave" closer to 悪鬼 - optional
+- [x] b035 s219.0860 - アッキのどうくつ (悪鬼) - "Ogre Cave" ok, "Fiend Cave" closer to 悪鬼 - optional (waived: optional; Ogre fits 悪鬼)
 - [x] b035 s216.0BBC - ハズレーの街 (ハズレ = a dud/miss) - joke lost in "Hazley" - optional "Duddley Town" (fixed: phase 6 review re-grade, Important)
-- [ ] b036 04B485 - 戦士 = warrior; "Knight" differs from "warrior" used everywhere else; "Warrior" if the cell width allows (unverified)
-- [ ] b036 04AD4C - なんか体がかるくなったみたい is the hero's own musing; "Somehow I feel lighter." reads better than "your body"
-- [ ] b036 04AD78 - same: "Somehow I feel heavy."
-- [ ] b036 04B12A - "{sub:0000} had HP cut in half!!" missing possessive; "{sub:0000} had their HP{nl}cut in half!!"
-- [ ] b036 04B141 - same: "{sub:0000} had their HP{nl}fully restored!!"
-- [ ] b036 04A70D - "From Hero X,{nl}I helped myself to" stiff order; "Helped myself to{nl}N Shillings{nl}from Hero X!!"
-- [ ] b036 04CA6B - 父なる闇 "the Father Darkness" odd; "Darkness, my father?" or "the Dark Father?"
+- [x] b036 04B485 - 戦士 = warrior; "Knight" differs from "warrior" used everywhere else; "Warrior" if the cell width allows (unverified) (waived: "Warrior" is 37 px, over the 31 px job cell (docs/re/windows.md))
+- [x] b036 04AD4C - なんか体がかるくなったみたい is the hero's own musing; "Somehow I feel lighter." reads better than "your body" (fixed: "Somehow I feel lighter.")
+- [x] b036 04AD78 - same: "Somehow I feel heavy." (fixed)
+- [x] b036 04B12A - "{sub:0000} had HP cut in half!!" missing possessive; "{sub:0000} had their HP{nl}cut in half!!" (fixed)
+- [x] b036 04B141 - same: "{sub:0000} had their HP{nl}fully restored!!" (fixed)
+- [x] b036 04A70D - "From Hero X,{nl}I helped myself to" stiff order; "Helped myself to{nl}N Shillings{nl}from Hero X!!" (fixed)
+- [x] b036 04CA6B - 父なる闇 "the Father Darkness" odd; "Darkness, my father?" or "the Dark Father?" (fixed: "the Dark Father?")
 - [x] b036 04A565 - ガーン！ shock beat; "Gaaah!" or "Nooo!" punchier than "Oh no!" (fixed: phase 6 review re-grade, Important)
