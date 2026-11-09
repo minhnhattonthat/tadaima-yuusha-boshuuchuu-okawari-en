@@ -9,7 +9,8 @@ version's files without --force. The debug tool is Lua only (tools/debug/*.lua, 
 is in the ROM; the build fixes the header checksum itself (build.py), so the patched image is build/tadaima_en.sfc.
 Never publishes.
 
-Text coverage: work/qa/cover12 holds tour logs carried to this build's build/strings.tsv (tools/debug/relog.py);
+Text coverage: work/qa/cover13 holds tour logs carried to this build's build/strings.tsv (tools/debug/relog.py), the
+v1.1 tour (regen.py --rom build/tadaima_en.sfc: its default is the original ROM) and a sweep of what was left (sweep.py --ids);
 after a text change, re-tour and re-log (docs/status.md item 3) or textcover fails on the new far addresses.
 jp_left scans the raw row slots (build/ranges.txt "# row" lines); LZ-block rows are checked in script/ instead.
 """
@@ -30,7 +31,7 @@ SCRIPTS = Path(SKILL) / "scripts"
 ROM = ROOT / "rom" / "Tadaima Yuusha Boshuuchuu Okawari (Japan).sfc"
 BUILT = ROOT / "build" / "tadaima_en.sfc"
 QA = ROOT / "work" / "qa"
-COVER = QA / "cover12"
+COVER = QA / "cover13"
 NAME = "TadaimaYuushaBoshuuchuuOkawari_EN"
 PY = [sys.executable, "-X", "utf8"]
 JP = re.compile(r"[぀-ヿ一-鿿]")
