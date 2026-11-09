@@ -142,8 +142,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 仲間 | ally / allies / party / companion / friend / member | | | |
 | 1回やすみ | Lose 1 turn | | board-game penalty; keep exactly | |
 | ピココショップ | Pikoko Shop | | | |
-| 出前道具屋 | Traveling Item Shop | | | |
-| 出前武器屋 | Traveling Weapon Shop | | | |
+| 出前道具屋 | Item Peddler | | | header: ~114 px window, byte-centred |
+| 出前武器屋 | Weapon Peddler | | | header: ~114 px window, byte-centred |
+| 出前オーブ屋 | Orb Peddler | | | header |
 | 攻撃力 | Attack | | stat | |
 | 防御力 | Defense | | stat | |
 | クリスタル | crystal | | | |

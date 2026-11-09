@@ -73,7 +73,7 @@ e230.0445	b230+445:18	旅の冒険者と出会った{page}{end}	You met a travel
 e230.0458	b230+458:32	旅はみちづれ、世はなさけ！{nl}仲間になりたいといっている{end}	On the road, a friend indeed!{nl}They want to join your party.{end}
 e230.049B	b230+49B:50	{color:09}コジマ{color:0F}{nl}オ〜ッホッホッホッ！{nl}私の名はコジマ、{nl}世界一美しい女盗賊よ‼{page}{end}	{color:09}Kojima{color:0F}{nl}Oh-ho-ho-ho-ho! My name is Kojima, the{nl}most beautiful lady thief in the world!!{page}{end}
 e230.04DC	b230+4DC:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying some big luggage...?{end}
-e230.0508	b230+508:11	出前道具屋{end}	Traveling Item Shop{end}
+e230.0508	b230+508:11	出前道具屋{end}	Item Peddler{end}
 e230.0514	b230+514:56	はろはろ、勇者様！{nl}ピココショップ、{nl}しゅっちょう道具屋でしゅ〜♪{page}きょうのごようはなにかしら〜♪{end}	Hallo hallo, Hero! It's the Pikoko Shop's{nl}traveling item shop-sh~[D0]{page}What can I do for you todaaay~[D0]{end}
 e230.054D	b230+54D:15	ほかにごようはないかしら〜♪{end}	Anything else for you todaaay~[D0]{end}
 e230.055D	b230+55D:11	どれを買います〜♪{end}	What will you buuuy~[D0]{end}
@@ -86,7 +86,7 @@ e230.05C2	b230+5C2:9	お買いあげ〜♪{end}	Sold to youuu~[D0]{end}
 e230.05CC	b230+5CC:12	ありがとございま〜す♪{end}	Thank yooou~[D0]{end}
 e230.05D9	b230+5D9:16	ごきげんよう、勇者様〜♪{end}	Fare thee well, Hero~[D0]{end}
 e230.05F8	b230+5F8:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
-e230.0628	b230+628:11	出前武器屋{end}	Traveling Weapon Shop{end}
+e230.0628	b230+628:11	出前武器屋{end}	Weapon Peddler{end}
 e230.0634	b230+634:33	まいどぉ！{nl}ピココショップ、{nl}しゅっちょう武器屋でっしゅ！{end}	Welcome, welcome! It's the Pikoko Shop's{nl}traveling weapon shop-sh!{end}
 e230.0656	b230+656:15	ほかに何かごいりようでし？{end}	Need anything elshe?{end}
 e230.0666	b230+666:11	何をおもとめでし？{end}	What are you after-sh?{end}
@@ -103,7 +103,7 @@ e230.074A	b230+74A:12	そうびしていくかにゃ？{end}	Will you wear it no
 e230.0757	b230+757:10	おにあいでっしゅ！{end}	It suits you-sh!{end}
 e230.0762	b230+762:12	またきてちょ〜だいっ！{end}	Come again, pleash!{end}
 e230.077D	b230+77D:24	何やらハニワをかついだ{nl}ピココがいる・・・？{end}	There's a Pikoko lugging{nl}a Haniwa on its back...?{end}
-e230.079D	b230+79D:10	出前オーブ屋{end}	Traveling Orb Shop{end}
+e230.079D	b230+79D:10	出前オーブ屋{end}	Orb Peddler{end}
 e230.07A8	b230+7A8:46	ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{end}	Ratar-sama's divine will becomes Orbs{nl}to help you on your journey, Hero-sh...{end}
 e230.07DA	b230+7DA:15	{color:09}{sub:0000}{color:0F}シリングでし。{end}	{color:09}{sub:0000}{color:0F} Shillings-sh.{end}
 e230.07EA	b230+7EA:17	ラターのスロットをまわしましま？{end}	Will you spin the Ratar Slot-sh?{end}
@@ -529,7 +529,7 @@ e237.0D1E	b237+D1E:81	まっしろにかがやく{nl}美しい勇者のすがた
 e237.0D70	b237+D70:101	に、{nl}にてない・・・{page}かんせいした勇者のぞうは{nl}この世の物とも思えない{nl}おマヌケさだった・・・{wait}人々は勇者を見て{nl}わらっている・・・{page}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをうしなった。{end}	It... it looks nothing like me...{page}The finished Hero statue looked{nl}dumber than anything in this world...{wait}The people look at the Hero and laugh...{page}You lost {color:08}{sub:0000}{color:0F} NVP points.{end}
 e237.0DD6	b237+DD6:45	勇者の旅は長くつらい・・・{nl}人々にチヤホヤされてちゃ{nl}気がゆるんじゃうよ！{end}	A Hero's journey is long and hard... If{nl}people keep fawning over me, I'll go soft!{end}
 e238.0030	b238+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying some big luggage...?{end}
-e238.00BA	b238+BA:11	出前道具屋{end}	Traveling Item Shop{end}
+e238.00BA	b238+BA:11	出前道具屋{end}	Item Peddler{end}
 e238.00C6	b238+C6:61	{sfx:01}はろはろ、勇者様！{nl}ピココショップ、{nl}しゅっちょう道具屋でしゅ〜♪{page}今日のごようは何かしら〜♪{sfx:FE}{end}	{sfx:01}Hallo hallo, Hero! It's the Pikoko Shop's{nl}traveling item shop-sh~[D0]{page}What can I do for you todaaay~[D0]{sfx:FE}{end}
 e238.0104	b238+104:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 e238.0118	b238+118:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
@@ -542,7 +542,7 @@ e238.0197	b238+197:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to
 e238.01A5	b238+1A5:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 e238.01B6	b238+1B6:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Toodle-oo, Hero~[D0]{sfx:FE}{end}
 e238.01F5	b238+1F5:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
-e238.0280	b238+280:11	出前武器屋{end}	Traveling Weapon Shop{end}
+e238.0280	b238+280:11	出前武器屋{end}	Weapon Peddler{end}
 e238.028C	b238+28C:37	{sfx:01}まいどぉ！{nl}ピココショップ、{nl}しゅっちょう武器屋でっしゅ！{sfx:FE}{end}	{sfx:01}Welcome, welcome! It's the Pikoko Shop's{nl}traveling weapon shop-sh!{sfx:FE}{end}
 e238.02B2	b238+2B2:19	{sfx:01}ほかに何かごいりようでし？{sfx:FE}{end}	{sfx:01}Need anything elshe?{sfx:FE}{end}
 e238.02C6	b238+2C6:15	{sfx:01}何をおもとめでし？{sfx:FE}{end}	{sfx:01}What are you after-sh?{sfx:FE}{end}
@@ -559,7 +559,7 @@ e238.03D3	b238+3D3:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 e238.03E4	b238+3E4:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 e238.03F3	b238+3F3:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 e238.042F	b238+42F:24	何やらハニワをかついだ{nl}ピココがいる・・・？{end}	There's a Pikoko lugging{nl}a Haniwa on its back...?{end}
-e238.046B	b238+46B:10	出前オーブ屋{end}	Traveling Orb Shop{end}
+e238.046B	b238+46B:10	出前オーブ屋{end}	Orb Peddler{end}
 e238.0476	b238+476:50	{sfx:01}ラター様のみこころは、{nl}オーブとなって、勇者様の旅を{nl}たすけてくれまっしゅ・・・{sfx:FE}{end}	{sfx:01}Ratar-sama's divine will becomes Orbs{nl}to help you on your journey, Hero-sh...{sfx:FE}{end}
 e238.04A9	b238+4A9:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 e238.04C0	b238+4C0:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin the Ratar Slot-sh?{sfx:FE}{end}
@@ -569,7 +569,7 @@ e238.04FC	b238+4FC:23	{sfx:01}．．．あり？{nl}お金ないみたいにぇ�
 e238.0514	b238+514:31	{sfx:01}ラター様のまもりが{nl}あなたをつつみますように・・・{sfx:FE}{end}	{sfx:01}May Ratar-sama's protection enfold you...{sfx:FE}{end}
 e238.0534	b238+534:53	{sfx:01}パンパカパ〜ン‼{nl}{color:08}{sub:0000}{color:0F}でし。{page}このオーブは{nl}{color:08}{sub:0100}{color:0F}というこうかがありまっしゅ。{sfx:FE}{end}	{sfx:01}Ta-da-daaa!! It's {color:08}{sub:0000}{color:0F}, yesh!{page}This Orb'sh effect: {color:08}{sub:0100}{color:0F}, yesh.{sfx:FE}{end}
 e239.0030	b239+30:28	何やら大きなにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying some big luggage...?{end}
-e239.00BA	b239+BA:11	出前道具屋{end}	Traveling Item Shop{end}
+e239.00BA	b239+BA:11	出前道具屋{end}	Item Peddler{end}
 e239.00C6	b239+C6:40	{sfx:01}勇者様、{nl}がんばてるっしゅか〜？{nl}ピココショップとくべつ店〜！{sfx:FE}{end}	{sfx:01}Hero, doing your besht~? It's{nl}the Pikoko Shop Special Branch~!{sfx:FE}{end}
 e239.00EF	b239+EF:19	{sfx:01}ほかにごようはないかしら〜♪{sfx:FE}{end}	{sfx:01}Anything else for you todaaay~[D0]{sfx:FE}{end}
 e239.0103	b239+103:15	{sfx:01}どれを買います〜♪{sfx:FE}{end}	{sfx:01}What will you buuuy~[D0]{sfx:FE}{end}
@@ -582,7 +582,7 @@ e239.0182	b239+182:13	{sfx:01}お買いあげ〜♪{sfx:FE}{end}	{sfx:01}Sold to
 e239.0190	b239+190:16	{sfx:01}ありがとございま〜す♪{sfx:FE}{end}	{sfx:01}Thank yooou~[D0]{sfx:FE}{end}
 e239.01A1	b239+1A1:20	{sfx:01}ごきげんよう、勇者様〜♪{sfx:FE}{end}	{sfx:01}Toodle-oo, Hero~[D0]{sfx:FE}{end}
 e239.01E0	b239+1E0:28	何やら危ないにもつを持った{nl}ピココがいる・・・？{end}	There's a Pikoko carrying{nl}some dangerous luggage...?{end}
-e239.026B	b239+26B:11	出前武器屋{end}	Traveling Weapon Shop{end}
+e239.026B	b239+26B:11	出前武器屋{end}	Weapon Peddler{end}
 e239.0277	b239+277:40	{sfx:01}勇者様、{nl}がんばてるっしゅか〜？{nl}ピココショップとくべつ店〜！{sfx:FE}{end}	{sfx:01}Hero, doing your besht~? It's{nl}the Pikoko Shop Special Branch~!{sfx:FE}{end}
 e239.02A0	b239+2A0:19	{sfx:01}ほかに何かごいりようでし？{sfx:FE}{end}	{sfx:01}Need anything elshe?{sfx:FE}{end}
 e239.02B4	b239+2B4:15	{sfx:01}何をおもとめでし？{sfx:FE}{end}	{sfx:01}What are you after-sh?{sfx:FE}{end}
@@ -599,7 +599,7 @@ e239.03C1	b239+3C1:16	{sfx:01}そうびしていくかにゃ？{sfx:FE}{end}	{sf
 e239.03D2	b239+3D2:14	{sfx:01}おにあいでっしゅ！{sfx:FE}{end}	{sfx:01}It suits you-sh!{sfx:FE}{end}
 e239.03E1	b239+3E1:17	{sfx:01}また来てちょ〜だいっ！{sfx:FE}{end}	{sfx:01}Come again, pleash!{sfx:FE}{end}
 e239.041D	b239+41D:24	何やらハニワをかついだ{nl}ピココがいる・・・？{end}	There's a Pikoko lugging{nl}a Haniwa on its back...?{end}
-e239.0459	b239+459:10	出前オーブ屋{end}	Traveling Orb Shop{end}
+e239.0459	b239+459:10	出前オーブ屋{end}	Orb Peddler{end}
 e239.0464	b239+464:40	{sfx:01}勇者様、{nl}がんばてるっしゅか〜？{nl}ピココショップとくべつ店〜！{sfx:FE}{end}	{sfx:01}Hero, doing your besht~? It's{nl}the Pikoko Shop Special Branch~!{sfx:FE}{end}
 e239.048D	b239+48D:22	{sfx:01}1回{color:08}{sub:0000}{color:0F}シリングでし。{sfx:FE}{end}	{sfx:01}{color:08}{sub:0000}{color:0F} Shillings a spin-sh.{sfx:FE}{end}
 e239.04A4	b239+4A4:22	{sfx:01}ラターのスロットを{nl}まわしましま？{sfx:FE}{end}	{sfx:01}Will you spin the Ratar Slot-sh?{sfx:FE}{end}
