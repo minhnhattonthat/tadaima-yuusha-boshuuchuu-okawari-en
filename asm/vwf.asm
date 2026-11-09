@@ -1236,7 +1236,7 @@ pay_index:
     rts
 
 ; VS-mode date "0年目 4月" ($C2:A7E7 built it in $1236 for $C2:140A): English "Year 0, April" (4月 is the calendar month).
-; Up to 19 bytes: runs into $1246, the item-description scratch slot, which is free while this box shows.
+; Up to 26 bytes with the centring pads (.centre): runs into $1246, the item-description scratch slot, free while this box shows.
 ; A = rank from $82:AE26. HUD bar row 2 (rect $1111, 30x2): cells 12-15 = N o . digit, the V sign follows at 16. DB as the caller's.
 rank_text:
     inc a
@@ -1269,9 +1269,82 @@ date_text:
     lda.l .months,x
     tax
     jsr .put
+    jsr .centre
     lda.w #$FFFF
     sta.w $0000,y
     rtl
+.centre:                ; Y = end. Lead with (109 - px) / 8 spaces (4 px): the box's text area is 105 px from the first pen
+    phy                 ; position (measured, tour vs), so this centres it. Capped at 24 bytes + FFFF ($1236-$124F; the $1246
+                        ; slot takes 33-byte JP item descriptions). Longest real need: "Year 99, September" + 1 pad = 19.
+    lda.w #109
+    pha                 ; 1,s = 109 - px so far, 3,s = end
+    ldx.w #$1236
+.sum:
+    txa
+    cmp 3,s
+    bcs .sumd
+    lda.w $0000,x
+    and.w #$00FF
+    sec
+    sbc.w #$000A        ; width is indexed from the first glyph code
+    phx
+    tax
+    lda.l width,x
+    plx
+    and.w #$00FF
+    eor.w #$FFFF
+    inc
+    clc
+    adc 1,s
+    sta 1,s
+    inx
+    bra .sum
+.sumd:
+    pla
+    bmi .none
+    lsr
+    lsr
+    lsr
+    pha                 ; 1,s = pads, 3,s = end
+    lda.w #$1236+24
+    sec
+    sbc 3,s             ; room left in 24 bytes
+    bmi .none2
+    cmp 1,s
+    bcs +
+    sta 1,s
++   lda 3,s
+    dec
+    tax                 ; last byte
+    pla
+    beq .none
+    clc
+    adc 1,s
+    sta 1,s             ; new end, returned in Y
+    dec
+    tay
+    sep #$20
+.cp:
+    lda.w $0000,x
+    sta.w $0000,y
+    dey
+    dex
+    cpx.w #$1236-1
+    bne .cp
+    lda.b #$3E          ; space
+.fill:
+    sta.w $0000,y
+    dey
+    cpy.w #$1236-1
+    bne .fill
+    rep #$20
+    ply
+    rts
+.none2:
+    pla
+.none:
+    ply
+    rts
 .num:                   ; A = 0-99 -> narrow ASCII digits ('0' = $60), no leading zero
     sta.w $4204
     sep #$20
