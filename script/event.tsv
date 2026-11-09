@@ -270,7 +270,7 @@ e233.032E	b233+32E:20	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ふん！ザコ�
 e233.0343	b233+343:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{sfx:FE}{end}
 e233.03AE	b233+3AE:38	きみの悪いモンスターがいる。{page}見つからないように{nl}とおりすぎよう・・・{end}	There's a creepy monster here.{page}Let's sneak past without being seen...{end}
 e233.03D5	b233+3D5:18	モンスターはこちらに気がついた{page}{end}	The monster noticed you!{page}{end}
-e233.03E8	b233+3E8:29	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}むっ！{nl}コヤツ、なかなかできるな{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hm! This one is quite skilled.{sfx:FE}{end}
+e233.03E8	b233+3E8:29	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}むっ！{nl}コヤツ、なかなかできるな{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hm! This knave is no novice.{sfx:FE}{end}
 e233.0406	b233+406:25	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ええいっ、{nl}まだまだぁ‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Hyaaah, I'm not done yet!!{sfx:FE}{end}
 e233.0420	b233+420:27	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}なにおっ！{nl}うけてたつぜっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}What's that?! Bring it on!!{sfx:FE}{end}
 e233.043C	b233+43C:26	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}んもぅ！{nl}さいあくぅ・・・{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Ugh! This is the worst...{sfx:FE}{end}
@@ -279,7 +279,7 @@ e233.0475	b233+475:33	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}あっちゃ〜{
 e233.0497	b233+497:27	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ヘヘェ！{nl}やるじゃねぇかっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Heh heh! Ya ain't half bad!!{sfx:FE}{end}
 e233.04B3	b233+4B3:30	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ピピーッ‼{nl}[F4]セントウタイセーッ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}BEEEP!!{nl}[F4]BATTLE STATIONS!!{sfx:FE}{end}
 e233.04D2	b233+4D2:29	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ムムッ！{nl}よし、勝負じゃっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Mmm! Right, have at ye!!{sfx:FE}{end}
-e233.04F0	b233+4F0:33	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}しょうがないわねぇ{nl}かかってらっしゃい‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Well, it can't be helped. Come at me!!{sfx:FE}{end}
+e233.04F0	b233+4F0:33	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}しょうがないわねぇ{nl}かかってらっしゃい‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Oh, very well~ Come and get it!!{sfx:FE}{end}
 e233.0512	b233+512:28	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}クククッ！{nl}ひきさいてやるっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Heh heh heh! I'll tear you apart!!{sfx:FE}{end}
 e233.052F	b233+52F:20	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・！！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....!!{sfx:FE}{end}
 e233.0544	b233+544:17	モンスターはさっていった・・・{page}{end}	The monster went away...{page}{end}
@@ -291,7 +291,7 @@ e233.05CF	b233+5CF:22	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}よかった{col
 e233.05E6	b233+5E6:24	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ヘヘン、{nl}[F4]あばよっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Heh heh,{nl}[F4]see ya!!{sfx:FE}{end}
 e233.05FF	b233+5FF:31	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ピピピ、{nl}[F4]ケイホウカイジョー・・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Beep beep,{nl}[F4]ALERT CANCELED...{sfx:FE}{end}
 e233.061F	b233+61F:33	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ホホッ、{nl}そのうち勝負してやるわい！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Ho ho,{nl}we'll have our match one of these days!{sfx:FE}{end}
-e233.0641	b233+641:44	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ま、よけいな戦いをさけるのも{nl}大人のよゆうってヤツよね‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Well, dodging needless fights is{nl}what being a grown-up's about, right!!{sfx:FE}{end}
+e233.0641	b233+641:44	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ま、よけいな戦いをさけるのも{nl}大人のよゆうってヤツよね‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Well, dodging needless fights is{nl}what grown-up cool is all about!!{sfx:FE}{end}
 e233.066E	b233+66E:16	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ふん‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hmph!!{sfx:FE}{end}
 e233.067F	b233+67F:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{sfx:FE}{end}
 e233.0778	b233+778:50	とつぜんはげしい風がふき、{nl}巨大なたつまきが{nl}まきおこった！{wait}{sfx:00}みんな、つかまるんだ！{sfx:FE}{end}	Suddenly a fierce wind blew,{nl}and a giant tornado whirled up!{wait}{sfx:00}Everyone, hold on tight!{sfx:FE}{end}
@@ -466,8 +466,8 @@ e236.07FB	b236+7FB:38	{sfx:00}さすが勇者だな。{nl}オレの血もひさ�
 e236.0822	b236+822:58	{sfx:00}おいおいホントかい？{nl}勇者がきいてあきれるぜ・・・{sfx:FE}{nl}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをうしなった・・・{end}	{sfx:00}Hey, hey, seriously? Some Hero you are...{sfx:FE}{nl}You lost {color:08}{sub:0000}{color:0F} NVP points...{end}
 e236.085D	b236+85D:66	{color:0B}タケル{color:0F}{nl}{sfx:00}やあ、また会えたな。{nl}今度のオレはひとあじ{nl}ちがうぜ！{page}{color:08}🅐{color:0F}ボタンのはやおしで{nl}勝負だ！{page}{sfx:FE}{end}	{color:0B}Takeru{color:0F}{nl}{sfx:00}Hey, we meet again. This time{nl}I'm a whole new man!{page}Let's see who's quicker on the {color:08}[E0]{color:0F} Button!{page}{sfx:FE}{end}
 e236.08A0	b236+8A0:97	{color:0B}タケル{color:0F}{nl}{sfx:00}オレの名はタケル。{page}東国一の剣の使い手さ！{nl}勇者と名のるからには、{nl}オレより強いんだろ？{page}{color:08}🅐{color:0F}ボタンのはやおしで{nl}勝負してもらおうか！{page}{sfx:FE}{end}	{color:0B}Takeru{color:0F}{nl}{sfx:00}The name's Takeru.{page}Best swordsman in the East!{nl}If you call yourself a Hero,{nl}you're stronger than me, right?{page}Let's see who's quicker on the {color:08}[E0]{color:0F} Button!{page}{sfx:FE}{end}
-e237.01BD	b237+1BD:67	{sfx:01}歌おう空に、君とぼく♪{nl}つらい事もかなしい事も{nl}大きな声でふきとばそう〜♪{wait}ロスティア王国歌がっせ〜ん♪{sfx:FE}{end}	{sfx:01}Sing to the sky, you and me[D0]{nl}Blow the hard times and sad times{nl}away with a great big voice~[D0]{wait}The Lostia Kingdom Sing-Off~[D0]{sfx:FE}{end}
-e237.0201	b237+201:9	さんかしようか？{end}	Shall I enter?{end}
+e237.01BD	b237+1BD:67	{sfx:01}歌おう空に、君とぼく♪{nl}つらい事もかなしい事も{nl}大きな声でふきとばそう〜♪{wait}ロスティア王国歌がっせ〜ん♪{sfx:FE}{end}	{sfx:01}Sing to the sky, you and me[D0]{nl}Blow the hard times and sad times{nl}away with a great big voice~[D0]{wait}The Lostia National Song Contest[D0]{sfx:FE}{end}
+e237.0201	b237+201:9	さんかしようか？{end}	Shall I join in?{end}
 e237.020B	b237+20B:8	{nl}    する{end}	{nl}    Yes{end}
 e237.0214	b237+214:6	  しない{end}	  No{end}
 e237.021B	b237+21B:36	{sfx:01}まあ、勇者様！{nl}どんな歌を{nl}歌ってくださるのかしら？{sfx:FE}{end}	{sfx:01}Oh my, Hero! What song will you sing for us,{nl}I wonder?{sfx:FE}{end}
@@ -496,7 +496,7 @@ e237.054E	b237+54E:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
 e237.0558	b237+558:17	どうやら無事にやりすごしたぞ{end}	Phew, looks like I got away with it.{end}
 e237.056A	b237+56A:75	{sfx:01}あ、あなたは勇者{sub:0000}様！{sfx:FE}{wait}しまった{nl}気づかれちゃった{wait}{sfx:01}勇者様のケチッ！{sfx:FE}{wait}{color:08}{sub:0100}{color:0F}ポイントの{nl}NVPをうしなった{end}	{sfx:01}Oh, you're Hero {sub:0000}!{sfx:FE}{wait}Oops, they recognized me{wait}{sfx:01}What a cheapskate, Hero!{sfx:FE}{wait}You lost {color:08}{sub:0100}{color:0F} NVP points.{end}
 e237.065B	b237+65B:30	おおぜいの人があつまって{nl}ダンスパーティーをひらいている{end}	A big crowd has gathered{nl}and is holding a dance party{end}
-e237.067A	b237+67A:9	さんかしようか？{end}	Shall I enter?{end}
+e237.067A	b237+67A:9	さんかしようか？{end}	Shall I join in?{end}
 e237.0684	b237+684:8	{nl}    する{end}	{nl}    Yes{end}
 e237.068D	b237+68D:6	  しない{end}	  No{end}
 e237.0694	b237+694:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
@@ -721,7 +721,7 @@ e243.077B	b243+77B:48	{sfx:00}勇者殿のかつやくは{nl}きっとのちの�
 e243.07AC	b243+7AC:44	{sfx:00}勇者殿、{nl}いどうする前に{nl}ちずやルーペでいちをかくにん{nl}するのじゃぞ。{sfx:FE}{end}	{sfx:00}Noble Hero, before you move, check where{nl}you are with the map or the loupe, eh.{sfx:FE}{end}
 e243.07D9	b243+7D9:44	{sfx:00}街のみんなのきぼうで{nl}勇者のぞうをつくってるんじゃ。{nl}たのしみじゃのう。{sfx:FE}{end}	{sfx:00}At the whole town's request, we're{nl}making a Hero statue. I can't wait, eh.{sfx:FE}{end}
 e243.0806	b243+806:59	{sfx:00}勇者殿のいうとおり、{nl}これからは、悪に立ちむかう{nl}勇気を、みんなが持たなければ{nl}いかんのう。{sfx:FE}{end}	{sfx:00}Just as you say, noble Hero, from{nl}now on everyone must have the{nl}courage to stand up to evil, eh.{sfx:FE}{end}
-e243.0842	b243+842:57	{sfx:00}そういえば、きのう{nl}ふしぎな夢を見たのう。{nl}新しい王の夢を見たんじゃ。{nl}あれは、たしか・・・{sfx:FE}{end}	{sfx:00}Come to think of it, yesterday I had a{nl}strange dream, eh. I dreamed of a new king.{nl}If I recall, it was...{sfx:FE}{end}
+e243.0842	b243+842:57	{sfx:00}そういえば、きのう{nl}ふしぎな夢を見たのう。{nl}新しい王の夢を見たんじゃ。{nl}あれは、たしか・・・{sfx:FE}{end}	{sfx:00}Come to think of it, yesterday I had a{nl}strange dream, eh. I dreamed of a new ruler.{nl}If I recall, it was...{sfx:FE}{end}
 e243.087C	b243+87C:53	{sfx:00}こうしていると、{nl}今、どこかで誰かが戦い、{nl}きずついているとは{nl}ほんに、しんじられんのう。{sfx:FE}{end}	{sfx:00}Sitting here like this, it's hard to{nl}believe that somewhere, someone's{nl}fighting and getting hurt, eh.{sfx:FE}{end}
 e243.08B2	b243+8B2:40	{sfx:00}そういえば、きのう{nl}勇者殿にそっくりな{nl}ハニワを見かけたのう。{sfx:FE}{end}	{sfx:00}Come to think of it, yesterday I spotted a{nl}Haniwa that looked just like you, noble Hero.{sfx:FE}{end}
 e243.08DB	b243+8DB:65	{sfx:00}この地方にかつてさかえた{nl}古代タシュール王国には{nl}多くの民のくびをはねた{nl}こわ〜い王もいたそうじゃよ。{sfx:FE}{end}	{sfx:00}In the ancient Kingdom of Tashur that{nl}once flourished here, they say a scaaary{nl}king beheaded many of his people.{sfx:FE}{end}
@@ -812,7 +812,7 @@ e245.06B6	b245+6B6:89	{sfx:00}わしはお金にはまったく{nl}キョウミ�
 e245.0710	b245+710:39	{sfx:00}あかマキガミ{nl}あおマキガミ{nl}きマキガミ{page}どうじゃ、うまくいえるかの？{sfx:FE}{end}	{sfx:00}Red leather, yellow leather,{nl}red leather, yellow leather...{page}Well? Can you say it right, eh?{sfx:FE}{end}
 e245.0738	b245+738:80	{sfx:00}おそろしい夢をみたんじゃ。{nl}国王がショケイされ、{nl}人々は闇の国でドレイのように{nl}はたらかせられて・・・{page}まさ夢にならねば{nl}よいがのう。{sfx:FE}{end}	{sfx:00}I had a terrible dream. The King was{nl}executed, and folks were worked{nl}like slaves in a land of darkness...{page}I hope it doesn't come true, eh.{sfx:FE}{end}
 e245.0789	b245+789:60	{sfx:00}勇者殿、戦いは頭で勝負じゃ。{nl}力まかせに攻撃するだけでは{nl}ほんとうの勇者とはいえんよ。{sfx:FE}{end}	{sfx:00}Noble Hero, battles are won with{nl}the head. Brute-force attacks alone{nl}won't make you a true Hero.{sfx:FE}{end}
-e245.07C6	b245+7C6:71	{sfx:00}新しい王がたんじょうしたら{nl}お城で大パーティが{nl}ひらかれるんじゃ。{page}一度でいいからお城で{nl}ダンスをおどってみたいのう。{sfx:FE}{end}	{sfx:00}When a new King is crowned, there's{nl}a grand party at the castle.{page}Just once, I'd love to dance at the castle, eh.{sfx:FE}{end}
+e245.07C6	b245+7C6:71	{sfx:00}新しい王がたんじょうしたら{nl}お城で大パーティが{nl}ひらかれるんじゃ。{page}一度でいいからお城で{nl}ダンスをおどってみたいのう。{sfx:FE}{end}	{sfx:00}When a new ruler is crowned, there's{nl}a grand party at the castle.{page}Just once, I'd love to dance at the castle, eh.{sfx:FE}{end}
 e245.080E	b245+80E:94	{sfx:00}勇者殿、{nl}あつかましいお願いなんじゃが{nl}勇者殿がロスティア王に{nl}なったあかつきには{page}わしをダイジンにして{nl}ほしいんじゃ。{nl}どうじゃ、{nl}かんがえてみてもらえんかの。{sfx:FE}{end}	{sfx:00}Noble Hero, it's a cheeky request, but{nl}when you become the ruler of Lostia,{page}I'd like you to make me a minister. How{nl}about it? Won't you think it over?{sfx:FE}{end}
 e245.086D	b245+86D:53	{sfx:00}この地方では雪はふっても{nl}あめはふらんのでのう。{nl}水は雪をとかしてから{nl}使うんじゃ。{sfx:FE}{end}	{sfx:00}In this region it snows, but it never rains,{nl}eh. So we melt the snow before we use{nl}the water.{sfx:FE}{end}
 e245.08A3	b245+8A3:54	{sfx:00}街中をさえずっていたトリが{nl}この戦いですべて{nl}どこかにきえてしまった。{page}ほんにさみしいのう。{sfx:FE}{end}	{sfx:00}The birds that sang all over town have{nl}all vanished somewhere in this war.{page}It's truly lonely, eh.{sfx:FE}{end}

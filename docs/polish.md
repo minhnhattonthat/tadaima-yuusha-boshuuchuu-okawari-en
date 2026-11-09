@@ -307,3 +307,6 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [x] b036 04A565 - ガーン！ shock beat; "Gaaah!" or "Nooo!" punchier than "Oh no!" (fixed: phase 6 review re-grade, Important)
 - [x] story 02 d745.037E - 国王の地位 "the throne of the King of Lostia" redundant; "the throne of Lostia" (fixed)
 - [x] story 02 d747.02D9 - same JP as its siblings, odd wording; matched to "Now everyone, before we set off, tell me..." (fixed)
+- [x] story 04 e233.03E8 / e233.04F0 / e233.0641 - same JP as their e230 twins, different English; matched to e230 (fixed)
+- [x] story 05 e237.01BD - "Lostia Kingdom Sing-Off" vs e230.0F2A "Lostia National Song Contest"; matched (fixed)
+- [x] story 05 e237.067A - dance party "Shall I enter?"; "Shall I join in?" as e230.1313 (fixed; same-JP e237.0201 follows)
