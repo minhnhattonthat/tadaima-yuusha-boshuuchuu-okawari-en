@@ -35,6 +35,14 @@ Window record at X (fields used here): `+0` active, `+1`, `+2` screen pos (y,x),
 `+8` width limit, `+9` row limit, `+0A/0C` first tile / first VRAM, `+0E/10` next tile / next VRAM, `+12` tile limit, `+14/15` colours,
 `+17` speed, `+18` voice, `+19` flags (bit7 = paged, bit0 = BG select), `+1A/1C`, `+1E`. A full row wraps (`$C2:1746`).
 
+**Scrolling narrations (verified, player bug report 2026-11-09):** story `04BD14`, `04C50C`, `04C669` (attract mode) and `04C6E2`
+(ending) draw in a paged window (`+19` bit 7) on a BG2 that scrolls at a fixed speed. Each newline clears the next 2 tilemap rows
+(`$C2:19EE`); nothing else clears them. Every JP line (glyphs at 1 frame each + `{pause}` + newline) takes exactly 65 frames, so the
+text keeps pace with the scroll. EN letters draw at ~1.33 frames each: with the JP pauses the text fell ~300 frames behind and rows not
+yet cleared (earlier lines) scrolled into view. The EN pauses are retimed to 65 frames a line (`tools/retime.py`, from
+`tools/debug/rowclear.lua` logs); `batches.py check` lets pause values differ (count must match). **Re-run `tools/retime.py` after
+any change to these 4 rows.**
+
 Width: the game wraps by count at `+8`, so an 8x16 mode (1 cell per letter) or a VWF is the phase 5 decision. A 16-wide cell
 leaves about 14 letters a line: English needs a change here. The tile budget per window is the `+0A..+12` range.
 
@@ -85,7 +93,7 @@ Handlers for the other ops were not read: no operand of theirs points into the b
 
 | Base | Stride | Count | Name | Fetched by |
 |---|---|---|---|---|
-| `$C0:800E` | `$24` | 45 | +1, 5 cells | `$C2:987F` (characters) |
+| `$C0:800E` | `$24` | 108 | +1, 5 cells | `$C2:987F` (characters; 45-107 are the inn recruits, 3 levels each, then a pointer table at `$8F3E`. Was 45 until a player bug report: recruit names stayed katakana) |
 | `$C0:A230` | 16 | 38 | +1, 8 cells | `$C2:98EA` (items) |
 | `$C0:A6DA` | 16 | 231 | +1, 8 cells | `$C2:98A4` (equipment) |
 | `$C0:C298` | 16 | 41 | +1, 9 cells: name, `／`, cost | `$C2:98D2` (spells) |

@@ -31,6 +31,7 @@ e230.008D	b230+8D:19	ふん！{nl}カタナのサビにしてくれるわ‼{end
 e230.00A1	b230+A1:18	もうっ！{nl}いいかげんにしなさいよ‼{end}	Ugh! Give it a rest already!!{end}
 e230.00B4	b230+B4:15	かわいい女の子いるかな？{end}	Any cute girls around, I wonder?{end}
 e230.00C4	b230+C4:16	んもぅ！{nl}ついてないなぁ・・・{end}	Aww, come on! Just my luck...{end}
+e230.00D5	b230+D5:6	フッ・・・{end}	Heh...{end}
 e230.00DC	b230+DC:44	チャ〜ミ〜クリンを使うと〜♪{nl}てをつなぎたくな〜〜る〜〜♪♪{page}BY[F4]さ{color:09}♥{color:0F}がみ{end}	When you use Charmy-Clean~[D0]{nl}you'll want to hold haaands~~[D0][D0]{page}BY[F4]Sa{color:09}[CB]{color:0F}gami{end}
 e230.0109	b230+109:26	けっ！しゃらくせー‼{nl}かえりうちにしてくれるワン‼{end}	Tch! Big talk!! I'll send you packing, arf!!{end}
 e230.0124	b230+124:25	えぇ〜！敵ですかぁ？{nl}まいりましたねぇ・・・・{end}	Whaaat! An enemy? Oh dear, oh dear...{end}
@@ -45,7 +46,7 @@ e230.0245	b230+245:17	むっ！{nl}コヤツ、なかなかできるな{end}	Hm!
 e230.0257	b230+257:20	えぇ〜！やだぁ‼{nl}しんじられな〜い‼‼{end}	Whaaat! No way!! I can't belieeeve it!!!!{end}
 e230.026C	b230+26C:15	てらちゃんスキスキ{color:09}♥{color:0F}{end}	I love you, Tera-chan{color:09}[CB]{color:0F}{end}
 e230.027C	b230+27C:14	んもぅ！{nl}さいあくぅ・・・{end}	Ugh! This is the worst...{end}
-e230.028F	b230+28F:2	・{end}	.{end}
+e230.028B	b230+28B:6	フン・・・{end}	Hmph...{end}
 e230.0292	b230+292:16	あっちゃ〜{nl}みつかっちゃったぁ{end}	Oopsie~ They spotted us~{end}
 e230.02A3	b230+2A3:9	ついてないワン‼{end}	What bad luck, arf!!{end}
 e230.02AD	b230+2AD:17	えぇ〜！{nl}みつかっちゃいました？{end}	Whaaat! We've been spotted?{end}
@@ -56,6 +57,7 @@ e230.02E7	b230+2E7:33	シンジラレナ〜イ‼{page}{speed:40}ヒョッヒョ
 e230.0308	b230+308:6	{nl}つまらん{end}	{nl}How dull.{end}
 e230.030F	b230+30F:24	モンスターはさっていった・・・{page}{color:09}{sub:0000}{color:0F}{end}	The monster went away...{page}{color:09}{sub:0000}{color:0F}{end}
 e230.0328	b230+328:21	フッ！{nl}今回だけは見逃してやる！{end}	Hmph! I'll let you off, just this once!{end}
+e230.033E	b230+33E:7	ほっ・・・！{end}	Phew...!{end}
 e230.0346	b230+346:7	クックック‼{end}	Heh heh heh!!{end}
 e230.034E	b230+34E:10	ラッキ〜{color:09}♥{color:0F}{end}	Lucky~{color:09}[CB]{color:0F}{end}
 e230.0359	b230+359:6	フフン・・{end}	Hmhm...{end}
@@ -284,6 +286,7 @@ e233.0512	b233+512:28	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}クククッ！{
 e233.052F	b233+52F:20	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・！！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....!!{sfx:FE}{end}
 e233.0544	b233+544:17	モンスターはさっていった・・・{page}{end}	The monster went away...{page}{end}
 e233.0556	b233+556:33	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}フッ！{nl}今回だけは見逃してやる！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hmph! I'll let you off, just this once!{sfx:FE}{end}
+e233.0578	b233+578:19	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ほっ・・・！{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Phew...!{sfx:FE}{end}
 e233.058C	b233+58C:24	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}うんのいい奴だぜっ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Lucky so-and-so, ain't ya!!{sfx:FE}{end}
 e233.05A5	b233+5A5:22	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ラッキ〜{color:09}♥{color:0F}{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Lucky~{color:09}[CB]{color:0F}{sfx:FE}{end}
 e233.05BC	b233+5BC:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}フフン・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hmhm...{sfx:FE}{end}
@@ -430,6 +433,8 @@ e235.068C	b235+68C:30	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ピピピ・・�
 e235.06AB	b235+6AB:29	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ピピピ・・・{nl}ヘイワ〜[F4]ピンフ〜{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Beep beep beep... PEACE~[F4]PEACE OUT~{sfx:FE}{end}
 e235.06C9	b235+6C9:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{sfx:FE}{end}
 e235.06DC	b235+6DC:19	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・？{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....?{sfx:FE}{end}
+e235.06F0	b235+6F0:23	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{color:07}★{color:0F}{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{color:07}[D1]{color:0F}{sfx:FE}{end}
+e235.0708	b235+708:19	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・♪{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....[D0]{sfx:FE}{end}
 e235.071C	b235+71C:18	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・・{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{sfx:FE}{end}
 e235.072F	b235+72F:39	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}平和がつづけば{nl}勇者なんていらないのさ・・・{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}If peace goes on,{nl}nobody needs Heroes anyway...{sfx:FE}{end}
 e235.0757	b235+757:45	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}あたしは{nl}戦いすぎだって？{nl}ま、タマには平和もいいか・・・{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Me? I fight too much, you say?{nl}Well, peace is nice now and then...{sfx:FE}{end}

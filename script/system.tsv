@@ -1,4 +1,5 @@
 id	loc	jp	en
+04987C	r04987C:10	仲間をいれる{nl}{end}	Recruit an ally{nl}{end}
 049887	r049887:11	仲間とわかれる{nl}{end}	Leave an ally{nl}{end}
 049893	r049893:5	もうねる{end}	Go to sleep{end}
 049943	r049943:8	{nl}    はい{end}	{nl}    Yes{end}
@@ -140,6 +141,11 @@ id	loc	jp	en
 04B492	r04B492:14	盗賊魔術男女[F4]{end}	Thief{cell}Mage{cell}[D6][D7][F4]{end}
 04B8D7	r04B8D7:8	{nl}    はい{end}	{nl}    Yes{end}
 04B8E0	r04B8E0:6	  いいえ{end}	  No{end}
+04BAB9	r04BAB9:8	{nl}    はい{end}	{nl}    Yes{end}
+04BAC2	r04BAC2:6	  いいえ{end}	  No{end}
+0485E4	r0485E4:8	{nl}    はい{end}	{nl}    Yes{end}
+0485ED	r0485ED:6	  いいえ{end}	  No{end}
+049318	r049318:5	どこに？{end}	Where to?{end}
 04C84E	r04C84E:6	HUMAN{end}	HUMAN{end}
 04C855	r04C855:8	THE[F4]END{end}	
 04C85E	r04C85E:12	CONFIG[F4]MODE{end}	

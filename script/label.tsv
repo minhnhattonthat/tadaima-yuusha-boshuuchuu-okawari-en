@@ -1,5 +1,5 @@
 id	loc	jp	en
-rect00A0DA	r00A0DA:114	しゅぞく{nl}しょくぎょう{nl}たんじょうび{nl}まいつき{nl}シリング	Race{nl}Job{nl}Birthday{nl}Pay{nl}Sh
+rect00A0DA	r00A0DA:114	しゅぞく{nl}しょくぎょう{nl}たんじょうび{nl}まいつき{nl}シリング	Race{nl}Job{nl}Born{nl}Pay{nl}Sh
 rect00A14C	r00A14C:114	ちから{nl}たいりょく{nl}まりょく{nl}こううん{nl}すばやさ{nl}こうげきりょくぼうぎょりょく	Power{nl}Vigor{nl}Magic{nl}Luck{nl}Speed{nl}Attack Defense
 rect0480F7	r0480F7:6	ゆうしゃ	Hero
 rect0499DB	r0499DB:22	シリング	Sh
@@ -57,3 +57,13 @@ rect059940	r059940:14	ニャンキー	Nyankee
 rect05BC09	r05BC09:8	ロード	Load
 rect05BC11	r05BC11:8	セーブ	Save
 rect05BC19	r05BC19:20	データがありません	No Data
+cell00A062	r00A062:12	にんげん	Human
+cell00A06E	r00A06E:12	エルフィン	Elfin
+cell00A07A	r00A07A:12	ドワーフ	Dwarf
+cell00A086	r00A086:12	ニャンキー	Nyankee
+cell00A092	r00A092:12	ブリキニアン	Tinnian
+cell00A0A8	r00A0A8:10	せんし	Knight
+cell00A0B2	r00A0B2:10	まじゅつし	Mage
+cell00A0BC	r00A0BC:10	そうりょ	Priest
+cell00A0C6	r00A0C6:10	とうぞく	Thief
+cell00A0D0	r00A0D0:10	ゆうしゃ	Hero

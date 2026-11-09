@@ -1,0 +1,4 @@
+# Attract-mode intro: one A during the HUMAN logo skips to 遠い昔・・・, then the Lostia narration scrolls; press nothing after.
+300 -
+4 a
+5000 -

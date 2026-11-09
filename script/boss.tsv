@@ -1,4 +1,5 @@
 id	loc	jp	en
+058000	r058000:22	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}イザ、勝負っ！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Have at you!{sfx:FE}{end}
 058017	r058017:32	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}女神の名において{nl}カクゴなさい！{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}In the name of the goddess,{nl}prepare yourself!{sfx:FE}{end}
 058038	r058038:23	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}そのクビもらったぁ！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Your head is mine!{sfx:FE}{end}
 058050	r058050:26	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}エ〜イ{nl}勝負なのだぁ！{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Hiyaaah~ Let's fight, so there!{sfx:FE}{end}
@@ -21,6 +22,7 @@ id	loc	jp	en
 05824D	r05824D:37	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}おぬしがウィルダじゃな！{nl}いざ、勝負じゃー‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}So thou art Wilda, eh! Now, let us duel!!{sfx:FE}{end}
 058273	r058273:35	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}あら、いい男ね。{nl}でもヨウシャしないわよ‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}My, what a handsome man.{nl}But I won't go easy on you!!{sfx:FE}{end}
 058297	r058297:41	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ふん！おまえがウィルダか。{nl}さっさとかたづけてくれよう‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Hmph! So you're Wilda.{nl}I'll be done with you quickly!!{sfx:FE}{end}
+0582C1	r0582C1:24	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・。{nl}・・・・‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}.....{nl}....!!{sfx:FE}{end}
 0582DA	r0582DA:45	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}くっ！魔法の使い手か‼{nl}だがそうカンタンには負けんぞ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Tch! A magic user!!{nl}But I won't lose that easily!!{sfx:FE}{end}
 058308	r058308:39	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}魔道士リレイア！{nl}神にかわって私がたおす‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Releia the sorceress! I'll{nl}defeat you in the gods' name!!{sfx:FE}{end}
 058330	r058330:28	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}魔道士め！{nl}カクゴしろ！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Sorceress! Prepare yourself!{sfx:FE}{end}
@@ -32,6 +34,7 @@ id	loc	jp	en
 0583FD	r0583FD:40	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}魔道士リレイアじゃな！{nl}とっとと勝負じゃー‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}So thou art Releia the sorceress!{nl}Let us duel, and quick!!{sfx:FE}{end}
 058426	r058426:42	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}あら、あなたがリレイアね。{nl}どこからでもかかってきなさい‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Oh, so you're Releia.{nl}Come at me any way you like!!{sfx:FE}{end}
 058451	r058451:47	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}魔法の使い手か、こざかしい‼{nl}さっさとかたをつけてくれるわ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}A magic user, how cheeky!!{nl}I'll settle this quickly!!{sfx:FE}{end}
+058481	r058481:25	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・・‼{nl}・・・・‼‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}....!!{nl}....!!!!{sfx:FE}{end}
 05849B	r05849B:41	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}おまえが海の魔物か。{nl}わが剣のサビになるがいい‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}So you're the sea fiend.{nl}You'll be rust on my blade!!{sfx:FE}{end}
 0584C5	r0584C5:44	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}いにしえの海の魔物・・・{nl}ふたたびねむりにつくがいいわ‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Ancient fiend of the sea...{nl}go back to sleep once more!!{sfx:FE}{end}
 0584F2	r0584F2:33	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}魔物め！{nl}地上に出すものかっ！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Fiend! You'll never reach the surface!{sfx:FE}{end}
@@ -54,6 +57,7 @@ id	loc	jp	en
 058783	r058783:30	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}タイタニア！{nl}わしと勝負じゃ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Titania! Fight me, I say!!{sfx:FE}{end}
 0587A2	r0587A2:40	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}アンタがタイタニアね。{nl}戦いは力だけじゃないのよ‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}So you're Titania. Fighting{nl}isn't all about strength!!{sfx:FE}{end}
 0587CB	r0587CB:44	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}巨人の王タイタニア・・・{nl}キサマなどおそるるにたらんわ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Titania, king of giants...{nl}you are nothing to fear!!{sfx:FE}{end}
+0587F8	r0587F8:24	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}・・・‼{nl}・・・・‼‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}...!!{nl}....!!!!{sfx:FE}{end}
 058811	r058811:38	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}魔王ザガン‼{nl}わが剣にかけてキサマに勝つ‼{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Zagan, Demon Lord!!{nl}By my sword, I will beat you!!{sfx:FE}{end}
 058838	r058838:33	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}ザガン‼{nl}ふたたびねむりにつくがいいわ‼{sfx:FE}{end}	{color:07}{sub:0000}{color:0F}{nl}{sfx:01}Zagan!! Go back to sleep once more!!{sfx:FE}{end}
 05885A	r05885A:31	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}ザガン！{nl}ロスティアはわたさないぞ！{sfx:FE}{end}	{color:02}{sub:0000}{color:0F}{nl}{sfx:00}Zagan! You won't have Lostia!{sfx:FE}{end}

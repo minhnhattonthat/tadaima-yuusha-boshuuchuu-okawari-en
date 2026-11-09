@@ -25,21 +25,29 @@ VM_ORG, SHOP_ORG = 0xA000, 0x8000
 
 # (first, end, section): file ranges of the raw strings. Bytes inside that aren't text go to nontext.tsv.
 RAW = [
-    (0x008662, 0x00A230, "bio"), (0x00A490, 0x00A6DA, "desc_item"), (0x00B54A, 0x00C298, "desc_equip"), (0x00C52B, 0x00C72F, "desc_spell"),
+    (0x008F3E, 0x00A230, "bio"), (0x00A490, 0x00A6DA, "desc_item"), (0x00B54A, 0x00C298, "desc_equip"), (0x00C52B, 0x00C72F, "desc_spell"),
     (0x01978C, 0x01A841, "party"),
-    (0x049887, 0x049899, "system"), (0x049943, 0x049953, "system"), (0x04A1E7, 0x04A1F3, "system"),
+    # inn menu 仲間をいれる (recruit) starts at $4987C; attract-mode intro 遠い昔・・・ at $4BCF6 (both from a player bug report)
+    (0x04987C, 0x049899, "system"), (0x049943, 0x049953, "system"), (0x04A1E7, 0x04A1F3, "system"),
     (0x04A2F4, 0x04B220, "system"), (0x04B485, 0x04B4A0, "system"), (0x04B8D7, 0x04B8E7, "system"),
-    (0x04BE02, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
-    (0x058017, 0x0589D0, "boss"), (0x059F1A, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
+    # recruit offer はい / いいえ choice (after 仲間にしますか？; player bug report), a second はい / いいえ ($C5:0B53) and どこに？
+    # ($C2:4630): all three in tools/textsweep_raw.py; マップ がめん だよ〜ん‼ at $494E1 has no reference (debug)
+    (0x04BAB9, 0x04BAC8, "system"), (0x0485E4, 0x0485F3, "system"), (0x049318, 0x04931D, "system"),
+    (0x04BCF6, 0x04C84E, "story"), (0x04C84E, 0x04CBA7, "system"),
+    # boss lines from the bank start: the hero's イザ、勝負っ！ at $C5:8000 (blind-spot sweep, tools/textsweep_raw.py)
+    (0x058000, 0x0589D0, "boss"), (0x059F1A, 0x05A258, "clear"), (0x05AB4B, 0x05B854, "clear"),
     (0x05BBFB, 0x05BC09, "system"),  # save-slot confirm Yes/No (found on the phase 8 tour)
     (0x059452, 0x059471, "system"),  # player select: ひと / コンピュータ choice, name entry はい / いいえ (phase 8 tour)
 ]
 # (first, count, stride, name offset, name bytes, section): fixed-size name fields, padded with F4
 RECORDS = [
-    (0x00800E, 45, 0x24, 1, 5, "name_char"), (0x00A230, 38, 0x10, 1, 8, "name_item"),
+    # name_char: 0-44 heroes/NPCs, 45-107 inn recruits (3 levels each), then a pointer table at $8F3E
+    (0x00800E, 108, 0x24, 1, 5, "name_char"), (0x00A230, 38, 0x10, 1, 8, "name_item"),
     (0x00A6DA, 231, 0x10, 1, 8, "name_equip"), (0x00C298, 41, 0x10, 1, 9, "name_spell"),
     (0x04B220, 1, 0x10, 0, 5, "name_misc"),  # label read 5 glyphs at a time, no end code ($C2A645)
     (0x009743, 12, 0x25, 1, 5, "name_hero"),  # the 12 heroes again, index byte + 5-byte name: versus mode (the shop header showed チンク)
+    # battle result box label [F4]シリング + the next label's F4 ($C3:391A copies 6, asm/vwf.asm): small path, so a far name image
+    (0x018479, 1, 0, 0, 6, "name_result"),
 ]
 JP = re.compile(r"[ぁ-んァ-ヴー一-龥]")
 NOISE = re.compile(r"[Ⓐ-ⓩ🅐-🅨♂♀／％＆★「」]")
@@ -55,7 +63,7 @@ def texty(s):
     p = plain(s).replace("[F4]", "").replace(" ", "")
     if "[" in p or re.search(r"\{sub:[0-9A-F]{2}(?!00)[0-9A-F]{2}\}", s):
         return False
-    jp = len(JP.findall(p))
+    jp = len(JP.findall(p)) + p.count("・")  # 王様・・・・ is a line (King's silence in the opening; was cut to its dots)
     if re.fullmatch(r"[A-Z ]{4,}", p):
         return True
     return jp >= 2 and jp * 2 >= len(p) or set(p) <= set("・・？！…") and bool(p) or p == "あ"

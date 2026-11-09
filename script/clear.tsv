@@ -50,11 +50,11 @@ id	loc	jp	en
 05AF97	r05AF97:30	{sfx:00}それでは、成続発表と{nl}まいろうかの・・・{sfx:FE}{page}{end}	{sfx:00}Now then, shall we move on{nl}to announcing the results, eh...{sfx:FE}{page}{end}
 05AFB5	r05AFB5:45	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、おめでとう。{nl}ほかのみなも、よくやったぞ。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Congratulations, Hero {sub:0200}.{nl}The rest of you did well too.{sfx:FE}{page}{end}
 05AFE2	r05AFE2:30	{sfx:00}これからも、きそって{nl}しょうじんしてくれたまい。{sfx:FE}{page}{end}	{sfx:00}Keep on competing and{nl}striving hard, my dears.{sfx:FE}{page}{end}
-05B01A	r05B01A:15	{color:0F}{nl}{sfx:00}・・・・？{sfx:FE}{pause:B4}{end}	{color:0F}{nl}{sfx:00}....?{sfx:FE}{pause:B4}{end}
+05B014	r05B014:21	{color:02}勇者{color:0F}{nl}{sfx:00}・・・・？{sfx:FE}{pause:B4}{end}	{color:02}Hero{color:0F}{nl}{sfx:00}....?{sfx:FE}{pause:B4}{end}
 05B029	r05B029:44	{color:07}シルフィ{color:0F}{nl}{sfx:01}勇者様、タイタニアを{nl}例してくれてありがとう・・・{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Heroes, thank you for defeating Titania...{sfx:FE}{page}{end}
 05B055	r05B055:59	{sfx:01}でも、みなさんが{nl}アルセンガルドに出かけている{nl}すきに、ロスティアがたいへん{nl}な事になってしまったの！{sfx:FE}{page}{end}	{sfx:01}But while you were all away in Arsengard,{nl}something terrible happened to Lostia!{sfx:FE}{page}{end}
 05B090	r05B090:22	{sfx:01}王様がね、{nl}王様が・・・{sfx:FE}{page}{end}	{sfx:01}His Majesty, you see, His Majesty...{sfx:FE}{page}{end}
-05B0AC	r05B0AC:13	{color:0F}{nl}{sfx:00}・・・・{sfx:FE}{page}{end}	{color:0F}{nl}{sfx:00}....{sfx:FE}{page}{end}
+05B0A6	r05B0A6:19	{color:02}勇者{color:0F}{nl}{sfx:00}・・・・{sfx:FE}{page}{end}	{color:02}Hero{color:0F}{nl}{sfx:00}....{sfx:FE}{page}{end}
 05B0B9	r05B0B9:47	{color:07}シルフィ{color:0F}{nl}{sfx:01}攻めてきたザガン軍が{nl}ロスティア城をうばって{nl}しまったの！{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Zagan's army attacked{nl}and took Lostia Castle!{sfx:FE}{page}{end}
 05B0E8	r05B0E8:48	{sfx:01}王様は、ザガンにとらわれて{nl}ロスティア城のどこかに{nl}とじこめられているはずよ。{sfx:FE}{page}{end}	{sfx:01}His Majesty was captured by{nl}Zagan, and he must be locked{nl}up somewhere in Lostia Castle.{sfx:FE}{page}{end}
 05B118	r05B118:55	{sfx:01}今度はみなさんにロスティア城{nl}を解放して、王様をたすけて{nl}もらわなければならないわ！{sfx:FE}{page}{end}	{sfx:01}This time, you'll all have to free{nl}Lostia Castle and rescue His Majesty!{sfx:FE}{page}{end}

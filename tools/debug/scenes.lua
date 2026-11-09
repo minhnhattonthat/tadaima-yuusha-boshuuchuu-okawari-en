@@ -60,6 +60,12 @@ S.field_status_magic = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300
 S.field_map_town = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x07)
 -- HP 1 ($0A42, character +13) in the first fight: the defeat scene. Scenario mode has no game over screen: the robot takes items and play goes on.
 S.defeat = { state = 0x17, ram = { [0x0A2C] = 0, [0x0A42] = 1 }, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 24000 }
+-- Same fight, the 3 heroes at 999 HP (+13 HP, +15 max), mashed A until it's won: the result window (NVP / Shillings, 04CB3F / 04CB56).
+-- The warp leaves junk RAM: the foe is named "41" and the castle report after it is garbage, the same on the JP ROM.
+local hp = { [0x0A2C] = 0 }
+for slot = 0, 2 do for _, f in ipairs({ 0x13, 0x15 }) do hp[0x0A2F + 0x25 * slot + f] = 0xE7; hp[0x0A30 + 0x25 * slot + f] = 0x03 end end
+S.duel_win = { state = 0x17, ram = hp, mash = 150, keep_mash = true, tile = { 0x0D, 0x0A }, frames = 30000 }
+S.victory = { state = 0x17, ram = hp, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 26000 }
 S.battle_magic = { state = 0x17, ram = spells, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 23000, expect = 0x0F,
   route = { { 300, "a" }, { 450, "a" }, { 600, "a" }, { 750, "up" }, { 810, "a" } } }
 S.battle_menu2 = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, keep_mash = true, after = 0x0F, tile = { 0x31, 0x10 }, frames = 23000, expect = 0x0F,
@@ -80,7 +86,15 @@ local tiles = { teleport = { 0x1A, 0x19 }, cave = { 0x27, 0x09 }, duel = { 0x0D,
 for name, xy in pairs(tiles) do
   S[name] = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, tile = xy, frames = 22300 }
 end
-
+-- Inn menu -> recruit: candidate list (names, race/job/birthday status box, intro talk), then cursor moves between candidates
+-- shortcut: timed for build 2026-11-09 (Bendas Inn chatter, 3 pages); the inn's talk varies with the build's timing, so re-time from the sheet
+S.inn_recruit = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, tile = tiles.inn0, frames = 25200,
+  route = { { 900, "a" }, { 1100, "a" }, { 1300, "a" }, { 1500, "a" }, { 1900, "a" }, { 2200, "a" }, { 2700, "down" }, { 3100, "down" },
+    { 3500, "up" }, { 3900, "a" } } }
+-- the same with the hero keeping a default name (a far name image on the tilemap path): name bytes copied from the ROM's hero 0 record
+local far_ram = { [0x0A2C] = 0 }
+for i = 0, 4 do far_ram[0x0A30 + i] = emu.read(0x009744 + i, emu.memType.snesPrgRom) end
+S.inn_recruit_far = { state = 0x17, ram = far_ram, mash = 150, tile = tiles.inn0, frames = 25200, route = S.inn_recruit.route }
 -- Chapters 0-4 and the branches 5-7 open with state 17. Values 8-12 are chapter 0-4 + 8: state 1F adds the 8 itself for
 -- the mid-chapter event, state 18 (clear) expects it set and subtracts 7 for the next intro (docs/re/memory.md).
 for ch = 0, 7 do

@@ -50,7 +50,34 @@ def runs(rom, p):
 
 
 def rows(rom):
-    return [(f"rect{p:06X}", f"r{p:06X}:{2 + rom[p] * rom[p + 1]}", "{nl}".join(r[3] for r in runs(rom, p))) for p in RECTS]
+    return [(f"rect{p:06X}", f"r{p:06X}:{2 + rom[p] * rom[p + 1]}", "{nl}".join(r[3] for r in runs(rom, p))) for p in RECTS] + cell_rows(rom)
+
+
+# Recruit status box: $C2:B3DD copies rect $A0DA to $1111 and patches in headerless cell tables (no W H): race at $C0:A056 + 12 * race
+# (6 cells x 2 rows), job at $C0:A09E + 10 * job (5 x 2), upper row dakuten. Entry 0 of each is a ????? placeholder. English is lower
+# row only, from the entry's first byte: asm/vwf.asm makes the code read 7 race / 6 job cells there (found from a player bug report).
+CELLS = {0x00A056: (12, 6, 7), 0x00A09E: (10, 5, 6)}  # table: (stride, JP cells a row, English cells)
+
+
+def cell_rows(rom):
+    out = []
+    for t, (stride, w, _) in CELLS.items():
+        for p in range(t + stride, t + 6 * stride, stride):
+            top, low = rom[p:p + w], rom[p + w:p + 2 * w]
+            s = "".join(TILE[b] + MARK.get(a, "") for a, b in zip(top, low) if b not in BLANK)
+            out.append((f"cell{p:06X}", f"r{p:06X}:{stride}", unicodedata.normalize("NFC", s)))
+    return out
+
+
+def cells(out, english):
+    for i, _, _ in cell_rows(out):
+        if i not in english:
+            continue
+        p = int(i[4:], 16)
+        stride, _, room = next(v for t, v in CELLS.items() if t < p < t + 6 * v[0])
+        t = tiles(english[i], 0)
+        assert len(t) <= room, (i, english[i], f"room for {room}")
+        out[p:p + stride] = bytes(t + [0] * (stride - len(t)))
 
 
 def tiles(s, fill):
@@ -119,6 +146,7 @@ def apply(out, english, far):
     """Far rects take a number from `far`, the same table as far strings."""
     if f"rect{RECTS[0]:06X}" in english:
         grid(out, far)
+    cells(out, english)
     for p in RECTS:
         en = english.get(f"rect{p:06X}")
         if en is None:

@@ -37,6 +37,20 @@ hirom
 !SKIP   = $7FFF27       ; number bytes still to come
 !NUM    = $7FFF28
 !RECP   = $7FFF2A       ; next upload record
+!CACHE  = $7FFF64       ; names ring images, 4 bytes each: +0 far number, +2 first tile (0 = none), +3 tile count (name_cache)
+!CACHEN = 6
+!CROT   = $7FFF7C       ; next cache slot x 4
+!HIT    = $7FFF7D       ; nonzero: this image goes back into its cached tiles, the ring's head stays
+!CFIRST = $7FFF7E
+!CEND   = $7FFF7F
+!HUDC   = $7FFF2E       ; nonzero: the image being drawn is a HUD panel name (name_cache)
+!PANEL  = $7FFF80       ; what each HUD panel shows, 4 bytes an entry: +0 panel key (!PKEY), +2 first tile (0 = none), +3 count
+!PANELN = 6             ; (the inn's recruit screen has 5 panels); other names-ring images go past all of them (protect)
+!PROT   = $7FFF98       ; next entry x 4 for a new key
+!MOVED  = $7FFF99       ; protect: nonzero = this pass moved the start
+!NEED   = $7FFF9C       ; tiles the image being placed needs: its own count when the number can be read ahead, else !ROOM
+!PKEY   = $7FFF9A       ; 16-bit: the panel being drawn = its face slot, DP $00 & $F0 in $C2:B0F1 (face tiles $100 + 16 x panel;
+                        ; its screen position $17B8 moves while a panel slides in)
 ; The scheduler's 5 bytes of a continuation record must be in bank 0. $1538-$154A: no scene of the original's tour
 ; writes it (tools/debug/lowmap.lua + freeram.py) and no absolute operand names it. $0483 was the sprite buffer's tail.
 !RECORDS = $1538
@@ -97,6 +111,37 @@ org $C555C1
     jsl header_strip
 org $C2B67A
     jsl name_strip      ; same stale cells after a hero's name in the status box and equip header
+
+; recruit status box ($C2:B3DD, copied rect $A0DA at $1111): job cells (5x2 at $C0:A09E + 10 * job) and race cells (6x2 at $C0:A056
+; + 12 * race) went to two rows each, kana on the lower, dakuten on the upper. English (tools/rects.py CELLS) is lower row only: both
+; stores of each loop write the lower row from the entry's first bytes, job 6 cells and race 7 (Knight, Priest; Nyankee, Tinnian),
+; both from col 6; the gender glyph moves from col 12 to 13 to make room
+org $C2B42A
+    dw $112E            ; ♂/♀: row 1, col 13
+; battle result box ($C3:38D9): each row is 6 digit cells + a 5-byte label copied from $81:8474/8479/847E into $1A2F/4F/6F.
+; シリング becomes a far name (name_result, r018479:6): copy 6 bytes, the 6th is the EXP label's leading F4 pad (player bug report).
+; The sprite frame covers cell 11, so the row moves a cell left: label at col 5, digits from $1A4E
+; shortcut: the top digit lands in row 0 col 31, off-screen, so 100000+ Shillings in one fight would lose it; widen the frame if that happens
+org $C33911
+    nop                 ; 5 INY, not 6
+org $C33923
+    dw $0006
+org $C33971
+    dw $1A4E
+org $C2B44B
+    dw $1143            ; job, was upper row $1137 (row 2, col 8)
+org $C2B44E
+    dw $0000            ; LDA $0005,y -> $0000,y
+org $C2B451
+    dw $1143            ; row 3, col 6 (was col 8)
+org $C2B456
+    dw $0006            ; 6 job cells
+org $C2B47A
+    dw $1127            ; race, was upper row $1119
+org $C2B47D
+    dw $0000            ; LDA $0006,y -> $0000,y
+org $C2B485
+    dw $0007            ; 7 race cells (row 1, cols 6-12)
 
 ; status box digits ($C2:B7F0 money loop, $C2:B825 years, $C2:B838 months) moved to the English layout (tools/rects.py STATUS_CELLS)
 org $C2B7F4
@@ -967,7 +1012,7 @@ small_map:
     pla
     sta.l !NUM+1
     jsr small_load
-    bra .emit
+    brl .emit
 .lo:
     pla
     sta.l !NUM
@@ -1017,6 +1062,7 @@ small_map:
     lda.b #!POOL
 ++
     sta.l !HEAD
+    jsr name_cache
     bra .ready
 .ringb:
     lda.b #$01
@@ -1181,7 +1227,7 @@ small_load:
     lda.l !RING
     bne +
     pla
-    sta.l !HEAD
+    jsr cache_put
     bra ++
 +
     pla
@@ -1199,6 +1245,361 @@ small_load:
     pld
     plb
     plp
+    rts
+
+; A8 = HEAD -> A8 = the image's first tile. The HUD panels ($82:B0F1 -> wrapper $C21E8A, DB:Y = character record, the name's far
+; number at +2) redraw every candidate's name on each cursor move in the inn's recruit list: each copy took new ring tiles and walked
+; over names still on screen (the hero's, drawn once; player bug report). A name already in the ring goes back into its own tiles,
+; uploaded again, so a screen that reloaded the sheet meanwhile still gets it. The first two tiles are given out before the number is
+; complete, which is why only a caller whose string can be read ahead is matched here.
+name_cache:
+    php
+    rep #$30
+    phx
+    sep #$20
+    sta.l !CFIRST
+    lda.b #$00
+    sta.l !HIT
+    sta.l !HUDC
+    lda.b #!ROOM
+    sta.l !NEED
+    rep #$20
+    lda 6,s             ; 1-2 X, 3 P, 4-5 rts, 6-8 small_map's return into the wrapper, 9-11 the wrapper's return
+    cmp.w #$1E8F
+    beq +
+    brl .other
++
+    lda 9,s
+    cmp.w #$B0F7
+    beq .hud
+    ; the wrapper's other callers leave the F0 at $0000,y (LDA $0001,y / INY: status pages $C2:B5FA, $C1:049E) or at ($02),y + 1
+    ; ($C2:ABE4): read the number ahead too, so the image needs only its own size of free tiles
+    cmp.w #$B5FD
+    beq .y1
+    cmp.w #$04A1
+    beq .y1
+    cmp.w #$ABE7
+    bne .other
+    phy
+    iny
+    lda ($02),y
+    ply
+    bra .ahead
+.y1:
+    lda.w $0001,y
+.ahead:
+    jsr need
+    bra .other
+.hud:
+    sep #$20
+    lda.b #$01
+    sta.l !HUDC
+    rep #$20
+    lda.b $00           ; D is still the panel routine's
+    and.w #$00F0
+    sta.l !PKEY
+    lda.w $0002,y       ; the far number, DB:Y as the caller left them
+    jsr need
+    ldx.w #(!CACHEN-1)*4
+.find:
+    cmp.l !CACHE,x
+    beq .hit
+.next:
+    dex
+    dex
+    dex
+    dex
+    bpl .find
+    sep #$20            ; a new HUD name: packed down from the ring's top, off the other panels' names
+    jsr hud_place
+    sta.l !CFIRST
+    bra .out
+.hit:
+    pha
+    lda.l !CACHE+2,x
+    and.w #$00FF
+    cmp.w #!POOL        ; 0: dropped (or WRAM zeroed by a block load)
+    bcc .miss
+    cmp.w #!POOLB
+    bcs .miss
+    sep #$20
+    sta.l !CFIRST
+    sta.l !HIT
+    jsr use_slot
+    rep #$20
+    pla
+.out:
+    sep #$20
+    lda.l !CFIRST
+    rep #$10
+    plx
+    plp
+    rts
+.miss:
+    pla
+    bra .next
+.other:
+    sep #$20
+    lda.l !CFIRST
+    jsr protect
+    sta.l !CFIRST
+    bra .out
+
+; A16 = far number -> !NEED = its image's tile count (stays !ROOM if out of range). A, X, Y kept.
+need:
+    pha
+    phx
+    asl
+    asl
+    tax
+    lda.l !IMAGES+3,x
+    and.w #$00FF
+    beq +
+    cmp.w #!ROOM+1
+    bcs +
+    sep #$20
+    sta.l !NEED
+    rep #$20
++
+    plx
+    pla
+    rts
+
+; -> A8 = the first tile for a new HUD name of !NEED tiles: as high in the names ring as it fits below the panels' names, so they
+; stay together at the top and the other images get one gap from !POOL up instead of the holes between them (player bug report:
+; 5 panel names spread over the ring left no 10-tile gap, and a Magic page went over them). No fit: protect from HEAD. X, Y kept.
+hud_place:
+    phx
+    phy
+    lda.b #!POOLB
+    sec
+    sbc.l !NEED
+    sta.l !CFIRST
+    ldy.w #!PANELN+1
+.pass:
+    lda.b #$00
+    sta.l !MOVED
+    ldx.w #(!PANELN-1)*4
+.each:
+    jsr protect_meets
+    bcc +
+    lda.l !PANEL+2,x    ; below it
+    sec
+    sbc.l !NEED
+    cmp.b #!POOL
+    bcc .full
+    sta.l !CFIRST
+    sta.l !MOVED
++
+    dex
+    dex
+    dex
+    dex
+    bpl .each
+    lda.l !MOVED
+    beq .done
+    dey
+    bne .pass
+.full:
+    lda.l !HEAD
+    jsr protect
+    sta.l !CFIRST
+.done:
+    lda.l !CFIRST
+    ply
+    plx
+    rts
+
+; X16 = cache slot x 4 of a HUD name just drawn: panel !PKEY now shows it, so the name it showed before is free. A new key takes the
+; next entry in turn. A8 out, X kept.
+use_slot:
+    phx
+    rep #$20
+    lda.l !CACHE+2,x    ; first tile, count
+    pha
+    lda.l !PKEY
+    ldx.w #(!PANELN-1)*4
+.find:
+    cmp.l !PANEL,x
+    beq .set
+    dex
+    dex
+    dex
+    dex
+    bpl .find
+    sep #$20
+    lda.l !PROT
+    clc
+    adc.b #4
+    and.b #$1C          ; WRAM at boot holds anything
+    cmp.b #!PANELN*4
+    bcc +
+    lda.b #$00
++
+    sta.l !PROT
+    rep #$20
+    and.w #$00FF
+    tax
+    lda.l !PKEY
+.set:
+    sta.l !PANEL,x
+    pla
+    sta.l !PANEL+2,x
+    sep #$20
+    plx
+    rts
+
+; A8 = a names-ring image's first tile -> A8 past every name a HUD panel shows. The panels draw a name once and keep it on screen
+; while a status box flips pages, and each page's gear / spell names took new ring tiles over it (player bug reports: "Rick" ->
+; "rWoo"; with 5 panels, Kojiro -> "Bronze" when only the two names used last were kept). Passes until none moves the start; still
+; moving after PANELN + 1 passes = no room: the old start, over them as before. X, Y kept.
+protect:
+    phx
+    phy
+    sta.l !CFIRST
+    pha
+    ldy.w #!PANELN+1
+.pass:
+    lda.b #$00
+    sta.l !MOVED
+    ldx.w #(!PANELN-1)*4
+.each:
+    jsr .one
+    bcc +
+    sta.l !MOVED        ; the new start, nonzero
++
+    dex
+    dex
+    dex
+    dex
+    bpl .each
+    lda.l !MOVED
+    beq .done
+    dey
+    bne .pass
+    pla
+    sta.l !CFIRST
+    bra .out
+.done:
+    pla
+.out:
+    lda.l !CFIRST
+    ply
+    plx
+    rts
+; X16 = panel entry x 4: C set if [CFIRST, CFIRST + NEED) meets its image, CFIRST moved past it (to POOL if the image would not
+; fit below POOLB there)
+.one:
+    jsr protect_meets
+    bcc .no
+    lda.l !PANEL+2,x
+    clc
+    adc.l !PANEL+3,x
+    pha
+    clc
+    adc.l !NEED
+    cmp.b #!POOLB+1
+    pla
+    bcc +
+    lda.b #!POOL
++
+    sta.l !CFIRST
+    sec
+    rts
+.no:
+    clc
+    rts
+
+; X16 = panel entry x 4: C set if [CFIRST, CFIRST + NEED) meets its image. A8 clobbered.
+protect_meets:
+    lda.l !PANEL+2,x
+    cmp.b #!POOL
+    bcc .no             ; 0: none
+    cmp.b #!POOLB
+    bcs .no
+    lda.l !CFIRST
+    clc
+    adc.l !NEED
+    cmp.l !PANEL+2,x
+    beq .no
+    bcc .no             ; ends before it
+    lda.l !PANEL+2,x
+    clc
+    adc.l !PANEL+3,x
+    cmp.l !CFIRST
+    beq .no
+    bcc .no             ; starts after it
+    sec
+    rts
+.no:
+    clc
+    rts
+
+; A8 = the image's end tile, from small_load (names ring). A hit: the head stays. A miss: the head moves there, cached images under
+; the new one are dropped, and this one is cached. X, Y kept.
+cache_put:
+    pha
+    lda.l !HIT
+    beq +
+    pla
+    rts
++
+    pla
+    sta.l !CEND
+    lda.l !HUDC
+    bne +               ; a HUD name went in at the top (hud_place): the other images' ring head stays
+    lda.l !CEND
+    sta.l !HEAD
++
+    phx
+    lda.l !NEXT
+    dec
+    dec
+    sta.l !CFIRST
+    ldx.w #(!CACHEN-1)*4
+.drop:
+    lda.l !CACHE+2,x
+    cmp.l !CEND
+    bcs .keep           ; starts at or after the new image's end
+    clc
+    adc.l !CACHE+3,x    ; its end (pool tiles < $A0 and counts <= !ROOM: no carry)
+    cmp.l !CFIRST
+    beq .keep
+    bcc .keep           ; ends at or before the new image's start
+    lda.b #$00
+    sta.l !CACHE+2,x
+.keep:
+    dex
+    dex
+    dex
+    dex
+    bpl .drop
+    lda.l !HUDC
+    beq .done           ; only HUD names are looked up (name_cache): no slot for the rest
+    lda.l !CROT
+    clc
+    adc.b #4
+    and.b #$1C          ; WRAM at boot holds anything
+    cmp.b #!CACHEN*4
+    bcc +
+    lda.b #$00
++
+    sta.l !CROT
+    rep #$20
+    and.w #$00FF
+    tax
+    lda.l !NUM
+    sta.l !CACHE,x
+    sep #$20
+    lda.l !CFIRST
+    sta.l !CACHE+2,x
+    lda.l !CEND
+    sec
+    sbc.l !CFIRST
+    sta.l !CACHE+3,x
+    jsr use_slot
+.done:
+    plx
     rts
 
 ; The game's $80D78F: what follows it runs in VBlank with X = record, or now during forced blank.

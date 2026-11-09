@@ -29,7 +29,7 @@ GLYPHS = {"★": "[D1]", "🅐": "[E0]", "🅑": "[E1]", "🅧": "[E2]", "🅨":
 FREE = {"{nl}", "[F4]", "{cell}", "{page}", *GLYPHS.values()}  # layout and glyphs; {page} checked separately: never fewer
 VARIABLE = r"\{sub:[0-9A-F]{4}\}"  # a name the game draws
 HONORIFICS = {}  # extra JP -> EN honorific forms; empty: honorifics() builds name+suffix from the glossary's katakana names (D1)
-ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "name_foe", "name_hero", "bio", "desc_item", "desc_equip", "desc_spell",
+ORDER = ["name_char", "name_item", "name_equip", "name_spell", "name_misc", "name_foe", "name_hero", "name_result", "bio", "desc_item", "desc_equip", "desc_spell",
          "story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"]  # names first: they go into the glossary before dialogue; label.tsv is done by hand
 DLG = {"story", "event", "talk", "party", "boss", "clear", "dialogue", "shop", "system"}
 LINES = {"bio", "desc_item", "desc_equip", "desc_spell"}  # tilemap lines, insert.lines_in
@@ -339,8 +339,10 @@ def problems(entry, en, terms):
     if re.search(r"\\u[0-9a-fA-F]{4}|\\n", en) or "\t" in en:
         out.append("escape sequence or tab in the English (breaks are {nl})")
     out += encodable_problems(en)
-    want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
-    have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
+    # pause lengths are free: the scrolling narrations retime them, EN lines draw slower (docs/re/text.md)
+    key = lambda t: "{pause}" if t.startswith("{pause:") else t
+    want = Counter(key(t) for t in TOKEN.findall(jp) if t not in FREE)
+    have = Counter(key(t) for t in TOKEN.findall(en) if t not in FREE)
     if want != have:
         out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if en.count("{page}") < jp.count("{page}"):

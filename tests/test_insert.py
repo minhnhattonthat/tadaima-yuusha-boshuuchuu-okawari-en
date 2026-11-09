@@ -40,6 +40,20 @@ def test_rects():
         rects.apply(bytearray(rom), {"rect04B4AA": "Remaining{nl}Shillings and more of them here"}, far)
 
 
+def test_recruit_cells():
+    """Recruit box race/job tables: kana read off both rows; English goes in from the entry's first byte, padded, within its room."""
+    rom = ROM.read_bytes()
+    rows = {i: jp for i, _, jp in rects.cell_rows(rom)}
+    assert rows["cell00A086"] == "ニャンキー" and rows["cell00A0B2"] == "まじゅつし" and len(rows) == 10
+    out = bytearray(rom)
+    rects.cells(out, {"cell00A086": "Nyankee", "cell00A0B2": "Mage"})
+    assert out[0x00A086:0x00A086 + 12] == bytes(rects.tiles("Nyankee", 0) + [0] * 5)
+    assert out[0x00A0B2:0x00A0B2 + 10] == bytes(rects.tiles("Mage", 0) + [0] * 6)
+    assert out[0x00A07A:0x00A086] == rom[0x00A07A:0x00A086]  # neighbours untouched
+    with pytest.raises(AssertionError):
+        rects.cells(bytearray(rom), {"cell00A0A8": "Swordsman"})  # 9 letters, room for 6
+
+
 def test_far_codes_resolve(built):
     rom, rows, english, image, blocks = built
     t = insert.table()

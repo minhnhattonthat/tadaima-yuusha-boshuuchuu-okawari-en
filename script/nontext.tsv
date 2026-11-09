@@ -2947,7 +2947,6 @@ b230+A0	1	not text
 b230+B3	1	not text
 b230+C3	1	not text
 b230+D4	1	not text
-b230+D5	6	not text
 b230+DB	1	not text
 b230+108	1	not text
 b230+123	1	not text
@@ -2963,7 +2962,6 @@ b230+256	1	not text
 b230+26B	1	not text
 b230+27B	1	not text
 b230+28A	1	not text
-b230+28B	4	not text
 b230+291	1	not text
 b230+2A2	1	not text
 b230+2AC	1	not text
@@ -2974,7 +2972,6 @@ b230+2E6	1	not text
 b230+30E	1	not text
 b230+327	1	not text
 b230+33D	1	not text
-b230+33E	7	not text
 b230+345	1	not text
 b230+34D	1	not text
 b230+358	1	not text
@@ -3235,7 +3232,6 @@ b233+52E	1	not text
 b233+543	1	not text
 b233+555	1	not text
 b233+577	1	not text
-b233+578	19	not text
 b233+58B	1	not text
 b233+5A4	1	not text
 b233+5BB	1	not text
@@ -3407,9 +3403,7 @@ b235+6AA	1	not text
 b235+6C8	1	not text
 b235+6DB	1	not text
 b235+6EF	1	not text
-b235+6F0	23	not text
 b235+707	1	not text
-b235+708	19	not text
 b235+71B	1	not text
 b235+72E	1	not text
 b235+756	1	not text
@@ -4990,7 +4984,7 @@ b302+10A	1	not text
 b302+11D	1	not text
 b302+14C	1	not text
 b302+161	1	not text
-r008662	2518	not text
+r008F3E	250	not text
 r009743	842	not text
 r009A8D	14	not text
 r009AA1	2	not text
@@ -5011,12 +5005,7 @@ r00C26D	43	not text
 r04A7D0	12	not text
 r04AE35	42	not text
 r04B155	30	not text
-r04BFE0	6	not text
-r04C13C	6	not text
-r0582C1	24	not text
-r058481	25	not text
 r058640	18	not text
-r0587F8	24	not text
 r0589A5	28	not text
 r0589C2	14	not text
 r05A08B	20	not text
@@ -5030,6 +5019,5 @@ r05ADF4	18	not text
 r05AEAC	1	not text
 r05AEAD	7	not text
 r05AF54	8	not text
-r05B000	26	not text
-r05B0A6	6	not text
+r05B000	20	not text
 r05B1B5	82	not text
