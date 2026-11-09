@@ -32,8 +32,8 @@ id	loc	jp	en
 00C6AF	r00C6AF:19	アンデットけいを、{nl}じょうぶつさせる{end}	Lays undead{nl}to rest{end}
 00C6C3	r00C6C3:11	いっかいやすませる{nl}{end}	Makes a foe{nl}lose 1 turn{end}
 00C6CF	r00C6CF:9	こんらんさせる{nl}{end}	Confuses{nl}{end}
-00C6D9	r00C6D9:9	すばやさあげる{nl}{end}	Raises speed{nl}{end}
-00C6E3	r00C6E3:9	すばやささげる{nl}{end}	Lowers speed{nl}{end}
+00C6D9	r00C6D9:9	すばやさあげる{nl}{end}	Raises Speed{nl}{end}
+00C6E3	r00C6E3:9	すばやささげる{nl}{end}	Lowers Speed{nl}{end}
 00C6ED	r00C6ED:8	てきをへらす{nl}{end}	Thins out foes{nl}{end}
 00C6F6	r00C6F6:12	てきをどこかにとばす{nl}{end}	Blasts a foe{nl}somewhere else{end}
 00C703	r00C703:17	ライバルを{nl}いっかいやすみにする{end}	Makes a rival{nl}lose 1 turn{end}

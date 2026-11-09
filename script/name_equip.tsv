@@ -8,7 +8,7 @@ equip006	r00A73B:8	シャッキリン[F4][F4]	Snappin
 equip007	r00A74B:8	メラメラドリンク	Fire-Up Drink
 equip008	r00A75B:8	ドッシリドリンク	Sturdy Drink
 equip009	r00A76B:8	マバシのまきもの	Ward Scroll
-equip010	r00A77B:8	ピカラのまきもの	Flara Scroll
+equip010	r00A77B:8	ピカラのまきもの	Flasha Scroll
 equip011	r00A78B:8	アバホのまきもの	Dumdum Scroll
 equip012	r00A79B:8	ギアスのまきもの	Geas Scroll
 equip013	r00A7AB:8	ホワワのまきもの	Wimpy Scroll
@@ -50,7 +50,7 @@ equip048	r00A9DB:8	ほのおのけん[F4][F4]	Flame Sword
 equip049	r00A9EB:8	やみのけん[F4][F4][F4]	Dark Sword
 equip050	r00A9FB:8	ティーンセーバー	Teen Saber
 equip051	r00AA0B:8	ヤマタイソード[F4]	Yamatai Sword
-equip052	r00AA1B:8	ゆうしゃダンゴ[F4]	Hero Dumpling
+equip052	r00AA1B:8	ゆうしゃダンゴ[F4]	Hero Dango
 equip053	r00AA2B:8	みっしょ[F4][F4][F4][F4]	Secret Letter
 equip054	r00AA3B:8	ダールのひとみ[F4]	Eye of Dahl
 equip055	r00AA4B:8	ヒヨドリのす[F4][F4]	Bulbul Nest
@@ -132,9 +132,9 @@ equip130	r00AEFB:8	ディプレスのしょ	Depress Tome
 equip131	r00AF0B:8	ひかりのしょ[F4][F4]	Light Tome
 equip132	r00AF1B:8	ペルセルクのしょ	Berserk Tome
 equip133	r00AF2B:8	ミノスのまきがい	Minos Conch
-equip134	r00AF3B:8	ネズミとり[F4][F4][F4]	Mousetrap
-equip135	r00AF4B:8	けがわ[F4][F4][F4][F4][F4]	Pelt
-equip136	r00AF5B:8	ひけんユキムラ[F4]	Yukimura
+equip134	r00AF3B:8	ネズミとり[F4][F4][F4]	Rat Trap
+equip135	r00AF4B:8	けがわ[F4][F4][F4][F4][F4]	Fur
+equip136	r00AF5B:8	ひけんユキムラ[F4]	Yukimura Edge
 equip137	r00AF6B:8	かわのよろい[F4][F4]	Leather Armor
 equip138	r00AF7B:8	ブリキのよろい[F4]	Tin Armor
 equip139	r00AF8B:8	せいどうのよろい	Bronze Armor

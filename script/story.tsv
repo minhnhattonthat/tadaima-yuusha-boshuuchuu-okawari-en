@@ -4,10 +4,10 @@ id	loc	jp	en
 04BE41	r04BE41:16	{color:07}シルフィ{color:0F}{nl}あのね、{pause:3C}{end}	{color:07}Sylphy{color:0F}{nl}Well, you see,{pause:3C}{end}
 04BE52	r04BE52:37	遠見のつかさのクリスタルが{nl}とつぜん魔界を{nl}うつしだしてね、{pause:D0}{end}	the Farseer's crystal{nl}suddenly showed us{nl}the Demon World, and...{pause:D0}{end}
 04BE78	r04BE78:17	{color:0B}王様{color:0F}{nl}ほう・・・{pause:50}{end}	{color:0B}King{color:0F}{nl}Oho...{pause:50}{end}
-04BE8A	r04BE8A:65	{color:07}シルフィ{color:0F}{nl}それでね、魔王ザガンがダール{nl}から闇の力をうけて復活して{nl}天界にむかっているらしいの！{pause:F0}{pause:3C}{end}	{color:07}Sylphy{color:0F}{nl}And it seems Zagan, the demon lord,{nl}was revived by the dark power{nl}of Dahl and he's marching on Heaven!{pause:F0}{pause:3C}{end}
+04BE8A	r04BE8A:65	{color:07}シルフィ{color:0F}{nl}それでね、魔王ザガンがダール{nl}から闇の力をうけて復活して{nl}天界にむかっているらしいの！{pause:F0}{pause:3C}{end}	{color:07}Sylphy{color:0F}{nl}And it seems Demon Lord Zagan{nl}was revived by the dark power{nl}of Dahl and he's marching on Heaven!{pause:F0}{pause:3C}{end}
 04BECC	r04BECC:35	{color:0B}王様{color:0F}{nl}ザガン！？{nl}なんと、あの伝説の魔王か？{pause:D0}{end}	{color:0B}King{color:0F}{nl}Zagan?!{nl}What, the demon lord of legend?{pause:D0}{end}
 04BEF0	r04BEF0:56	{color:07}シルフィ{color:0F}{nl}闇の魔物たちをひきつれて、{nl}天界をしはいしようとしている{nl}んですって・・・{pause:F0}{pause:20}{end}	{color:07}Sylphy{color:0F}{nl}He's leading the dark fiends,{nl}and he means to rule over{nl}Heaven, they say...{pause:F0}{pause:20}{end}
-04BF29	r04BF29:60	ザガンの力は強力で、{nl}このままだと天界も奴らの手に{nl}おちてしまうって{nl}じいたちがあわてているわ！{pause:F0}{pause:3C}{end}	Zagan's power is so great that{nl}the elders are in a panic, saying{nl}at this rate even Heaven will fall{nl}into his hands!{pause:F0}{pause:3C}{end}
+04BF29	r04BF29:60	ザガンの力は強力で、{nl}このままだと天界も奴らの手に{nl}おちてしまうって{nl}じいたちがあわてているわ！{pause:F0}{pause:3C}{end}	Zagan's power is so great that{nl}the old sages are in a panic, saying{nl}at this rate even Heaven will fall{nl}into his hands!{pause:F0}{pause:3C}{end}
 04BF66	r04BF66:18	{color:0B}王様{color:0F}{nl}ううむ・・・{pause:34}{end}	{color:0B}King{color:0F}{nl}Hmmm...{pause:34}{end}
 04BF79	r04BF79:36	{color:07}シルフィ{color:0F}{nl}これはよげんにうたわれた{nl}決戦の時だって！{pause:78}{end}	{color:07}Sylphy{color:0F}{nl}They say this is the final battle{nl}the prophecy sang of!{pause:78}{end}
 04BF9E	r04BF9E:49	ラター様の力がうしなわれたら、{nl}ザガンの攻撃をふせげる者は{nl}誰もいないのに・・・{pause:B4}{end}	If Ratar-sama's power is lost,{nl}there'll be no one left who can{nl}hold off Zagan's attack...{pause:B4}{end}
@@ -34,7 +34,7 @@ id	loc	jp	en
 04C1EE	r04C1EE:45	兵をよんで、城のまもりを・・・{nl}民によびかけ、モンスターへの{nl}けいかいを・・・{pause:F0}{end}	Summon the soldiers, guard the castle...{nl}Call on the people to be wary{nl}of monsters...{pause:F0}{end}
 04C21C	r04C21C:9	そして・・・{pause:78}{end}	And...{pause:78}{end}
 04C226	r04C226:21	勇者を・・・{nl}はやく勇者を！{pause:90}{end}	The Heroes...{nl}Find the Heroes, and quickly!{pause:90}{end}
-04C23C	r04C23C:63	{color:07}ティラ{color:0F}{nl}いにしえの勇者ルナのしそん。{nl}女神の血をひくやさしい心・・・{nl}平和をみだす者はゆるせない！{end}	{color:07}Tira{color:0F}{nl}Descendant of Luna, Hero of old.{nl}A kind heart with a goddess's blood...{nl}She won't forgive those who break peace!{end}
+04C23C	r04C23C:63	{color:07}ティラ{color:0F}{nl}いにしえの勇者ルナのしそん。{nl}女神の血をひくやさしい心・・・{nl}平和をみだす者はゆるせない！{end}	{color:07}Tira{color:0F}{nl}Descendant of Luna, Hero of old.{nl}A kind heart with a goddess's blood...{nl}She won't forgive those who break the peace!{end}
 04C27C	r04C27C:60	{color:02}デューク{color:0F}{nl}伝説の勇者バードのしそん。{nl}セイギにもえるあつい剣で、{nl}闇の魔物たちにたちむかえっ！{end}	{color:02}Duke{color:0F}{nl}Descendant of Bard, Hero of legend.{nl}With a sword ablaze for justice,{nl}go take on the dark fiends!{end}
 04C2B9	r04C2B9:55	{color:02}コジロー{color:0F}{nl}剣の道をきわめるために、{nl}旅をつづけるさすらいの剣士。{nl}わが剣に敵は無し‼{end}	{color:02}Kojiro{color:0F}{nl}A wandering swordsman, on the road{nl}to master the way of the sword.{nl}"No foe can stand before my blade!!"{end}
 04C2F1	r04C2F1:61	{color:07}チャーミー{color:0F}{nl}大金持ちのハコ入りむすめ。{nl}オジョウサマあつかいされるのが{nl}イヤでいえを飛び出したのだ。{end}	{color:07}Charmy{color:0F}{nl}A sheltered girl from a rich family.{nl}Sick of being treated like a lady,{nl}she ran away from home!{end}

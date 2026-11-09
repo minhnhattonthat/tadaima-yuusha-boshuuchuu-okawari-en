@@ -4,13 +4,13 @@ id	loc	jp	en
 00907D	r00907D:33	いだいなまじゅつし。{nl}じゃあくなアクマたち{nl}をげきたいする。[F4][F4]{end}	A great sorcerer{nl}who drives off{nl}wicked demons.{end}
 00909F	r00909F:33	オンナようへい。[F4][F4]{nl}いいオトコにめがない{nl}のがタマにきず。[F4][F4]{end}	A sellsword gal.{nl}Her one flaw? She{nl}falls for hunks.{end}
 0090C1	r0090C1:33	わるいマドウシは[F4][F4]{nl}ゆるせない、わかき[F4]{nl}エルフのまじゅつし。{end}	A young Elf mage{nl}who can't forgive{nl}evil warlocks.{end}
-0090E3	r0090E3:33	パワフルなようへい。{nl}あくのぐんだんには[F4]{nl}ようしゃしない。[F4][F4]{end}	A mighty sell-{nl}sword. No mercy{nl}for evil armies.{end}
+0090E3	r0090E3:33	パワフルなようへい。{nl}あくのぐんだんには[F4]{nl}ようしゃしない。[F4][F4]{end}	A mighty hired{nl}sword. No mercy{nl}for evil armies.{end}
 009105	r009105:33	アンデッドたいじを[F4]{nl}ちかって、タビを[F4][F4]{nl}つづけるそうりょ。[F4]{end}	A priest sworn{nl}to slay undead,{nl}ever traveling.{end}
 009127	r009127:33	ゆうとうせいてきな[F4]{nl}わかいせんし。[F4][F4][F4]{nl}じつはムシがにがて。{end}	A young warrior,{nl}a model student.{nl}Scared of bugs!{end}
 009149	r009149:33	まけんのしゅくめいに{nl}おわれ、こどくなタビ{nl}をつづけるせんし。[F4]{end}	A demon sword's{nl}fate drives this{nl}warrior on alone.{end}
 00916B	r00916B:33	ブリキニアンのせんし{nl}ネジがヌケてて、あば{nl}れることがある。[F4][F4]{end}	A Tinnian warrior{nl}with screws loose{nl}who may run amok.{end}
 00918D	r00918D:33	アクをうつためにタビ{nl}する、ブリキニアンの{nl}ヒーロー。[F4][F4][F4][F4][F4]{end}	A Tinnian hero{nl}who travels to{nl}strike down evil.{end}
-0091AF	r0091AF:33	ぼうけんずきの[F4][F4][F4]{nl}オンナのこ。ちょっと{nl}あしでまといかな？[F4]{end}	A girl who loves{nl}adventure. Maybe{nl}a little clumsy?{end}
+0091AF	r0091AF:33	ぼうけんずきの[F4][F4][F4]{nl}オンナのこ。ちょっと{nl}あしでまといかな？[F4]{end}	A girl who loves{nl}adventure. Might{nl}slow you down?{end}
 0091D1	r0091D1:33	イカレたまじゅつし。{nl}ときどきぼうそうする{nl}らしい。[F4][F4][F4][F4][F4][F4]{end}	A crazy sorcerer.{nl}Goes haywire{nl}now and then.{end}
 0091F3	r0091F3:33	うでききのオンナ[F4][F4]{nl}とうぞく。いたいのは{nl}すきじゃないらしい。{end}	A skilled woman{nl}thief. Not fond{nl}of pain, they say.{end}
 009215	r009215:33	さすらいのニャンキー{nl}とうぞく。イヌには[F4]{nl}うらみがある。[F4][F4][F4]{end}	A Nyankee thief{nl}who drifts. Holds{nl}a grudge on dogs.{end}
@@ -35,16 +35,16 @@ id	loc	jp	en
 00949B	r00949B:33	おっとりした[F4][F4][F4][F4]{nl}オンナまほうつかい。{nl}アンデッドがきらい？{end}	A laid-back woman{nl}magician. Hates{nl}undead, maybe?{end}
 0094BD	r0094BD:33	ラターのしゅくふくを{nl}うけたひかりのせんし{nl}アクマはゆるさん！[F4]{end}	A light warrior{nl}blessed by Ratar.{nl}Demons: no mercy!{end}
 0094DF	r0094DF:33	わかいのにスゴウデの{nl}ショウネンとうぞく。{nl}かなりかしこい。[F4][F4]{end}	Young, yet an ace{nl}boy thief. Quite{nl}clever, too.{end}
-009501	r009501:33	かたきのきょじんに[F4]{nl}ふくしゅうするために{nl}タビするまどうし。[F4]{end}	A warlock out for{nl}revenge on the{nl}giant he hates.{end}
+009501	r009501:33	かたきのきょじんに[F4]{nl}ふくしゅうするために{nl}タビするまどうし。[F4]{end}	A warlock out for{nl}revenge on the{nl}giant, his foe.{end}
 009523	r009523:33	エルフのまじゅつし。{nl}おなじエルフとは[F4][F4]{nl}たたかえない。[F4][F4][F4]{end}	An Elf sorcerer.{nl}Can't fight fellow{nl}Elves.{end}
-009545	r009545:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess{nl}kept by spirits.{nl}A quiet one.{end}
-009567	r009567:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess{nl}kept by spirits.{nl}A quiet one.{end}
-009589	r009589:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess{nl}kept by spirits.{nl}A quiet one.{end}
+009545	r009545:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess,{nl}spirit-guarded.{nl}A quiet one.{end}
+009567	r009567:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess,{nl}spirit-guarded.{nl}A quiet one.{end}
+009589	r009589:33	セイレイにまもられた{nl}エルフのそうりょ。[F4]{nl}ものしずかなコ。[F4][F4]{end}	An Elf priestess,{nl}spirit-guarded.{nl}A quiet one.{end}
 0095AB	r0095AB:33	ケンのみちをきわめる{nl}ためにタビだった。[F4]{nl}すばやくテキをうつ！{end}	Set out to master{nl}the sword's path.{nl}Swift strikes!{end}
 0095CD	r0095CD:33	でんせつのゆうしゃの{nl}しそん。バランスの[F4]{nl}とれたのうりょく！[F4]{end}	Descendant of a{nl}legendary hero.{nl}Well-balanced!{end}
 0095EF	r0095EF:33	でんせつのゆうしゃの{nl}しそん。パワーで[F4][F4]{nl}しょうぶだ！[F4][F4][F4][F4]{end}	Descendant of a{nl}legendary hero.{nl}Power wins it!{end}
 009611	r009611:33	ウサミーのオンナのこ{nl}すばやさとラッキーさ{nl}でしょうぶだぁ！[F4][F4]{end}	An Usamee girl.{nl}Speed and luck{nl}win the daaay!{end}
-009633	r009633:33	まおうのチをひく[F4][F4]{nl}すぐれたマリョクを[F4]{nl}みよ！[F4][F4][F4][F4][F4][F4][F4]{end}	Of demon-lord{nl}blood. Behold{nl}this great magic!{end}
+009633	r009633:33	まおうのチをひく[F4][F4]{nl}すぐれたマリョクを[F4]{nl}みよ！[F4][F4][F4][F4][F4][F4][F4]{end}	Of Demon Lord{nl}blood. Behold{nl}this great magic!{end}
 009655	r009655:33	チカラはないけど、[F4]{nl}ラッキーさでは[F4][F4][F4]{nl}ダレにもまけないよ！{end}	Not much muscle,{nl}but nobody beats{nl}me for luck!{end}
 009677	r009677:33	じょうぶなカラダと[F4]{nl}すばやいアシ、[F4][F4][F4]{nl}イヌぞくのヒーロー！{end}	Tough body, fast{nl}feet: the Dogfolk{nl}hero!{end}
 009699	r009699:33	ブリキランドのおうじ{nl}がんじょうなボディは{nl}うたれづよいぞ！[F4][F4]{end}	Tinland's prince.{nl}My tough body can{nl}take a beating!{end}

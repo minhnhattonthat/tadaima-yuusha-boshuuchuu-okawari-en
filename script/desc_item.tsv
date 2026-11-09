@@ -1,6 +1,6 @@
 id	loc	jp	en
 00A493	r00A493:17	せんとうにむりやり{nl}さんかさせる{end}	Force someone to{nl}join a battle{end}
-00A4A5	r00A4A5:16	せんとうから{nl}かくじつににげる{end}	Flee from battle{nl}for sure{end}
+00A4A5	r00A4A5:16	せんとうから{nl}かくじつににげる{end}	Always escapes{nl}from battle{end}
 00A4B6	r00A4B6:15	クエストのないようを{nl}かえる{end}	Changes the{nl}Quest{end}
 00A4C6	r00A4C6:21	ぼうぎょがつよくなり{nl}まほうもかからない{end}	Raises Defense,{nl}and blocks magic{end}
 00A4DC	r00A4DC:20	パーティぜんいんの{nl}こうげきカをあげる{end}	Raises the whole{nl}party's Attack{end}
@@ -27,7 +27,7 @@ id	loc	jp	en
 00A627	r00A627:12	だれかといちこうかん{nl}{end}	Swap places with{nl}someone{end}
 00A634	r00A634:11	てきをそくしさせる{nl}{end}	Kills a foe{nl}instantly{end}
 00A640	r00A640:10	いかずちアタック{nl}{end}	Lightning attack{nl}{end}
-00A64B	r00A64B:19	サイコロ2かい{nl}ゾロメならもう1かい{end}	Dice twice; roll{nl}again on doubles{end}
+00A64B	r00A64B:19	サイコロ2かい{nl}ゾロメならもう1かい{end}	Roll twice; again{nl}on doubles{end}
 00A65F	r00A65F:15	サイコロ3つ{nl}どうじにふれる{end}	Roll 3 dice{nl}at once{end}
 00A66F	r00A66F:14	だれかのなかまを{nl}ひきぬく{end}	Poach someone's{nl}ally{end}
 00A67E	r00A67E:18	なかまのきゅうりょう{nl}をただにする{end}	Your allies work{nl}for free{end}

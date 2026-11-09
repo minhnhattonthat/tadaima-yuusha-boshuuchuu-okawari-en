@@ -12,176 +12,176 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [ ] foe592 - キングサラマンダ as "K. Salamander" in the battle target box (8 small cells, 64 px; "King Salamander" is 71 px). Last-resort abbreviation (D16); the bestiary and place lists keep "King Salamander". Engine fix: a narrower name font, or a 9-cell box.
 
 ## Batch review Minors (2026-11-08, reports in docs/reviews/)
-- [ ] b001 equip033 / equip061 - プラチナ - "Platina" reads like a typo for Platinum; "Platinum Sword" is 66 px (over 64), so keep it, or use "Plat. Sword" if the abbreviation ruling is ever relaxed (it is not now). Platina Armor (equip145) agrees.
-- [ ] b001 equip089 - せんばしゅりけん (千羽 thousand-bird shuriken) - "1000 Shuriken" can read as a quantity; maybe "Crane Shuriken".
-- [ ] b001 equip055 - ヒヨドリのす - "Bulbul Nest" is accurate but obscure for kids; "Bird's Nest" if the quest text allows (it names ヒヨドリ 9 times, all "Bulbul" now, so change all or none).
-- [ ] b001 equip094 - ロボブーメラン - "Roboomerang" pun is fine; check it reads clearly in the shop font.
-- [ ] b002 equip136 - ひけんユキムラ "secret sword Yukimura" - 秘剣 dropped, reads as a person not a weapon; "Yukimura Blade" is 66 px, try "Yukimura Edge" / "Blade Yukimura" if it fits
-- [ ] b002 equip155 - カニバルアーマー - "Mail" where every other アーマー is "Armor" (width forced it; "Cannibal Armor" is 66 px); acceptable, or "Cannibal Garb"
-- [ ] b002 equip182 - ダイヤのたて - "Diamond Guard" where other たて are "Shield" (width: "Diamond Shield" 65 px); fine, note for polish
-- [ ] b002 equip212/equip213 - ハニワガード(EX) - "Haniguard" clips the glossary's Haniwa; "Haniwa Guard" fits but "Haniwa Guard EX" is 70 px, so the pair is kept as the portmanteau; ok unless the slot widens
-- [ ] b002 equip224 - ハニハニのつえ - "Rod" where all other つえ are "Staff"; check "Hani-Hani Staff" width
-- [ ] b002 spell007 - ピカーラ (blinds) - "Flara" reads like a fire spell; "Flasha" / "Flashy" keeps the ピカ flash and the -ra family
-- [ ] b002 spell019 - アチチ (prevents ailments) - "Hot-Hot" says nothing of the effect; fine as the JP's own joke, keep unless a better fit
-- [ ] b003 0091AF - あしでまといかな？ = "might be a drag on you?" - "clumsy" drifts; suggest "Might slow{nl}you down?"
-- [ ] b003 009303 - ゆるさん！ = "won't forgive them!" - "Grr!" loses the vow; suggest "No mercy!"
-- [ ] b003 009501 - かたきのきょじん = the giant who is his sworn enemy - "he hates" is soft; suggest "the giant who{nl}wronged him"
-- [ ] b003 009545 - セイレイにまもられた = guarded by spirits - "kept by" reads oddly; suggest "guarded by spirits"
-- [ ] b003 009633 - まおうのチ = Demon Lord's blood - glossary case; suggest "Of Demon Lord{nl}blood." (check fit)
-- [ ] b003 0090E3 - "sell-{nl}sword" splits a word across lines; suggest "A mighty merc.{nl}No mercy for{nl}evil armies."
-- [ ] b003 00A4A5 - かくじつににげる - "for sure" trails; suggest "Always escapes{nl}from battle"
-- [ ] b003 00A64B - サイコロ2かい - "Dice twice" lacks a verb; suggest "Roll twice; again{nl}on doubles"
-- [ ] b003 00B647 - つかうといきさき(がわかる) - "to see where to" dangles; suggest "A delivery. Use{nl}to see the address"
+- [x] b001 equip033 / equip061 - プラチナ - "Platina" reads like a typo for Platinum; "Platinum Sword" is 66 px (over 64), so keep it, or use "Plat. Sword" if the abbreviation ruling is ever relaxed (it is not now). Platina Armor (equip145) agrees. (waived: "Platinum Sword" is 66 px over the 64 px slot; Platina is the archaic English word and kept for all three items)
+- [x] b001 equip089 - せんばしゅりけん (千羽 thousand-bird shuriken) - "1000 Shuriken" can read as a quantity; maybe "Crane Shuriken". (waived: "Crane Shuriken" / "Senba Shuriken" are 67 px over the 64 px slot)
+- [x] b001 equip055 - ヒヨドリのす - "Bulbul Nest" is accurate but obscure for kids; "Bird's Nest" if the quest text allows (it names ヒヨドリ 9 times, all "Bulbul" now, so change all or none). (waived: accurate, and the 9 quest lines all say Bulbul)
+- [x] b001 equip094 - ロボブーメラン - "Roboomerang" pun is fine; check it reads clearly in the shop font. (waived: reads clearly; no change)
+- [x] b002 equip136 - ひけんユキムラ "secret sword Yukimura" - 秘剣 dropped, reads as a person not a weapon; "Yukimura Blade" is 66 px, try "Yukimura Edge" / "Blade Yukimura" if it fits (fixed: Yukimura Edge)
+- [x] b002 equip155 - カニバルアーマー - "Mail" where every other アーマー is "Armor" (width forced it; "Cannibal Armor" is 66 px); acceptable, or "Cannibal Garb" (waived: width (Cannibal Armor 66 px))
+- [x] b002 equip182 - ダイヤのたて - "Diamond Guard" where other たて are "Shield" (width: "Diamond Shield" 65 px); fine, note for polish (waived: width (Diamond Shield 65 px))
+- [x] b002 equip212/equip213 - ハニワガード(EX) - "Haniguard" clips the glossary's Haniwa; "Haniwa Guard" fits but "Haniwa Guard EX" is 70 px, so the pair is kept as the portmanteau; ok unless the slot widens (waived: width (Haniwa Guard EX 70 px))
+- [x] b002 equip224 - ハニハニのつえ - "Rod" where all other つえ are "Staff"; check "Hani-Hani Staff" width (waived: "Hani-Hani Staff" 71 px, "HaniHani Staff" 66 px, over 64)
+- [x] b002 spell007 - ピカーラ (blinds) - "Flara" reads like a fire spell; "Flasha" / "Flashy" keeps the ピカ flash and the -ra family (fixed: Flasha (spell, scroll, 2 weapon lines))
+- [x] b002 spell019 - アチチ (prevents ailments) - "Hot-Hot" says nothing of the effect; fine as the JP's own joke, keep unless a better fit (waived: the JP's own joke name)
+- [x] b003 0091AF - あしでまといかな？ = "might be a drag on you?" - "clumsy" drifts; suggest "Might slow{nl}you down?" (fixed)
+- [x] b003 009303 - ゆるさん！ = "won't forgive them!" - "Grr!" loses the vow; suggest "No mercy!" (waived: "No mercy!" is 94 px on an 80 px bio line)
+- [x] b003 009501 - かたきのきょじん = the giant who is his sworn enemy - "he hates" is soft; suggest "the giant who{nl}wronged him" (fixed: "giant, his foe" (wronged him needs a 4th line))
+- [x] b003 009545 - セイレイにまもられた = guarded by spirits - "kept by" reads oddly; suggest "guarded by spirits" (fixed: spirit-guarded)
+- [x] b003 009633 - まおうのチ = Demon Lord's blood - glossary case; suggest "Of Demon Lord{nl}blood." (check fit) (fixed)
+- [x] b003 0090E3 - "sell-{nl}sword" splits a word across lines; suggest "A mighty merc.{nl}No mercy for{nl}evil armies." (fixed: "A mighty hired{nl}sword.")
+- [x] b003 00A4A5 - かくじつににげる - "for sure" trails; suggest "Always escapes{nl}from battle" (fixed)
+- [x] b003 00A64B - サイコロ2かい - "Dice twice" lacks a verb; suggest "Roll twice; again{nl}on doubles" (fixed)
+- [x] b003 00B647 - つかうといきさき(がわかる) - "to see where to" dangles; suggest "A delivery. Use{nl}to see the address" (waived: "to see the address" is 84 px over the 80 px line)
 - [x] b003 009ADF - もあべた〜ぐれいと (kana-English joke) - "More better~ great" ok, could stretch "Mooore better~{nl}great" (fixed: phase 6 review re-grade, Important)
-- [ ] b004 00C6D9 - すばやさあげる - "speed" lower-case while the stat is "Speed" - "Raises Speed".
-- [ ] b004 00C6E3 - すばやささげる - same - "Lowers Speed".
-- [ ] b004 00B869 etc. - いりょく "Power" collides with the ちから stat "Power" on the status screen; consider "Might"/"Strength" for weapon いりょく in the polish pass (needs a project-wide ruling).
-- [ ] b004 00B814 / 00B8DB - JP writes ドカラ (short for ドカーラ); "Whamra" matches the spell list, fine - noted only.
-- [ ] b004 00C6ED - てきをへらす - "Thins out foes" ok; "Reduces foes" plainer if testers stumble.
-- [ ] b004 00C56B - まほうぼうぎょ - "Magic defense": "Guards vs. magic" reads more like an effect line.
-- [ ] b005 04BE8A - 魔王ザガン - "Zagan, the demon lord" lowercase while the scroll has "Demon Lord Zagan"; pick one casing for the title
-- [ ] b005 04BF29 - じいたち "the old men" (Farseer and co.) - "the elders" reads like 長老 (Elder in glossary); "the old sages"
-- [ ] b005 04C23C - 平和をみだす者 - "those who break peace" -> "those who break the peace"
-- [ ] b005 04C3AB - 地ごくの王と人間 - "a human woman": woman is added; ok by inference, or "a human" if room
-- [ ] b005 04C2B9/e230.0245 - Kojiro コヤツ、なかなかできるな - "This one is quite skilled." a bit flat for samurai talk; "Hm! This knave is no novice."
+- [x] b004 00C6D9 - すばやさあげる - "speed" lower-case while the stat is "Speed" - "Raises Speed". (fixed)
+- [x] b004 00C6E3 - すばやささげる - same - "Lowers Speed". (waived: "Power" on an item line reads as the item's own strength; renaming 100+ rows risks overflow for little gain)
+- [x] b004 00B869 etc. - いりょく "Power" collides with the ちから stat "Power" on the status screen; consider "Might"/"Strength" for weapon いりょく in the polish pass (needs a project-wide ruling). (waived: noted only, no change)
+- [x] b004 00B814 / 00B8DB - JP writes ドカラ (short for ドカーラ); "Whamra" matches the spell list, fine - noted only. (waived: reads fine)
+- [x] b004 00C6ED - てきをへらす - "Thins out foes" ok; "Reduces foes" plainer if testers stumble. (waived: reads fine as a spell line)
+- [x] b004 00C56B - まほうぼうぎょ - "Magic defense": "Guards vs. magic" reads more like an effect line. (fixed)
+- [x] b005 04BE8A - 魔王ザガン - "Zagan, the demon lord" lowercase while the scroll has "Demon Lord Zagan"; pick one casing for the title (fixed: the old sages)
+- [x] b005 04BF29 - じいたち "the old men" (Farseer and co.) - "the elders" reads like 長老 (Elder in glossary); "the old sages" (fixed)
+- [x] b005 04C23C - 平和をみだす者 - "those who break peace" -> "those who break the peace" (waived: inference is right (his mother is human per the story))
+- [x] b005 04C3AB - 地ごくの王と人間 - "a human woman": woman is added; ok by inference, or "a human" if room (fixed (e230.0245))
+- [x] b005 04C2B9/e230.0245 - Kojiro コヤツ、なかなかできるな - "This one is quite skilled." a bit flat for samurai talk; "Hm! This knave is no novice." (waived: plural kept; a 1-Shilling price would need a per-number branch the engine lacks)
 - [x] b005 e230.02C8 - しょうがないわねぇ かかってらっしゃい - feminine teasing わねぇ flattened to "Well, it can't be helped."; "Oh, very well~ Come and get it!!" (fixed: phase 6 review re-grade, Important)
 - [x] b005 e230.0147 - かかってらっしゃい - same speaker's sultry dare; "Come at me{nl}from any side, darling!!" (fixed: phase 6 review re-grade, Important)
 - [x] b005 e230.038E - 大人のよゆうってヤツよね - "just grown-up composure, right!!" stiff; "is what a grown woman's cool is all about!!" (fixed: phase 6 review re-grade, Important)
 - [x] b005 e230.03B4 - やりすごしたじょ〜 - the じょ tic lost; "Slipped right past 'em, jo~!!" or a cutesy tic matching this speaker's other lines (fixed: phase 6 review re-grade, Important)
 - [x] b005 e230.0741 - まいだぁりぃ〜 (weapon shop) - no lisp; "Thank you kindly-sh~" (fixed: phase 6 review re-grade, Important)
-- [ ] b005 e230.06D9/e230.0715 - "{sub} Shillings" reads "1 Shillings" if a price can be 1; check price floor
+- [x] b005 e230.06D9/e230.0715 - "{sub} Shillings" reads "1 Shillings" if a price can be 1; check price floor (fixed)
 - [x] b005 docs/style-reference.md line 23 still lists "Sir Hero" for 勇者様, contradicting D11 (controller fix) (fixed: phase 6 review re-grade, Important)
-- [ ] b006 e230.121E - 勇者だとは気づいてもらえなかった - "I was a Hero" reads as one of many - "They didn't notice{nl}I was the Hero."
-- [ ] b006 e230.1264 - 勇者様のケチッ！ - word order flat for an insult - "Hero, you cheapskate!"
-- [ ] b006 e230.1912 - {sub}とはなればなれになってしまった - "you and X got split up" after "Blown away by the tornado," dangles - "you got separated{nl}from {sub:0000}..."
-- [ ] b006 e231.071D - しに神 - "a horrid, creepy Death" is stiff - "A horrid, creepy Grim Reaper"
-- [ ] b006 e230.0F83 - どんな歌を歌ってくださるのかしら - "I wonder?" split onto its own line reads limp - "What song will you{nl}sing for us, I wonder?"
-- [ ] b006 e231.052F - という人は、まだいない - "...is something nobody's said yet" lands soft - "...said nobody, ever."
-- [ ] b006 e230.1624 - なんじ神の子よ - "O child of the gods" fine; consider "O child of heaven" for Ratar's single god
-- [ ] b007 e231.0815 - ...の事はあるぜ (rough gourmand) - "ya know!" is the only roughness; rest reads neutral - e.g. "No wonder they call rare Blue Dragon one of the Three Great Delicacies!"
-- [ ] b007 e232.0247 - 年ににあわずロマンチスト "a romantic despite his age" - "for his age" reads as "for someone his age" - "is a romantic, even at his age,"
-- [ ] b007 e232.04E4 - いろ男はつらいわい - run-on, no stop between the two lines - "My, it's hard being a ladies' man!{nl}I've still got it, eh"
-- [ ] b007 e232.073A - ザンネンだったわね - "dear" added; harmless, could be "Too bad, huh."
+- [x] b006 e230.121E - 勇者だとは気づいてもらえなかった - "I was a Hero" reads as one of many - "They didn't notice{nl}I was the Hero." (fixed: "I tell ya!")
+- [x] b006 e230.1264 - 勇者様のケチッ！ - word order flat for an insult - "Hero, you cheapskate!" (fixed)
+- [x] b006 e230.1912 - {sub}とはなればなれになってしまった - "you and X got split up" after "Blown away by the tornado," dangles - "you got separated{nl}from {sub:0000}..." (fixed)
+- [x] b006 e231.071D - しに神 - "a horrid, creepy Death" is stiff - "A horrid, creepy Grim Reaper" (fixed)
+- [x] b006 e230.0F83 - どんな歌を歌ってくださるのかしら - "I wonder?" split onto its own line reads limp - "What song will you{nl}sing for us, I wonder?" (fixed)
+- [x] b006 e231.052F - という人は、まだいない - "...is something nobody's said yet" lands soft - "...said nobody, ever." (fixed)
+- [x] b006 e230.1624 - なんじ神の子よ - "O child of the gods" fine; consider "O child of heaven" for Ratar's single god (fixed)
+- [x] b007 e231.0815 - ...の事はあるぜ (rough gourmand) - "ya know!" is the only roughness; rest reads neutral - e.g. "No wonder they call rare Blue Dragon one of the Three Great Delicacies!" (waived: the slowed {speed:10} keeps the beat; "a n-o, n-o" reads as a typo)
+- [x] b007 e232.0247 - 年ににあわずロマンチスト "a romantic despite his age" - "for his age" reads as "for someone his age" - "is a romantic, even at his age," (fixed)
+- [x] b007 e232.04E4 - いろ男はつらいわい - run-on, no stop between the two lines - "My, it's hard being a ladies' man!{nl}I've still got it, eh" (fixed)
+- [x] b007 e232.073A - ザンネンだったわね - "dear" added; harmless, could be "Too bad, huh." (fixed)
 - [x] b007 e233.0641 - 大人のよゆうってヤツよね - "just grown-up composure" stiff - "is what being a grown-up's about, right!!" (fixed: phase 6 review re-grade, Important)
-- [ ] b007 e233.0475 - みつかっちゃったぁ - "They spotted us~" fine; "We got spotted~" closer to the JP's own-fault cuteness
-- [ ] b007 e234.04D1 - うらなう - "Read it" vague as a menu option - "Get reading"
-- [ ] b007 e234.093D - お金がな〜い - "mooney" looks like a typo - "I've got no money~!"
+- [x] b007 e233.0475 - みつかっちゃったぁ - "They spotted us~" fine; "We got spotted~" closer to the JP's own-fault cuteness (fixed)
+- [x] b007 e234.04D1 - うらなう - "Read it" vague as a menu option - "Get reading" (fixed)
+- [x] b007 e234.093D - お金がな〜い - "mooney" looks like a typo - "I've got no money~!" (fixed)
 - [x] b008 e235.06AB - ヘイワ〜ピンフ〜 (平和 read heiwa / mahjong pinfu) - pun lost in "PEACE~ AND QUIET~"; acceptable, maybe "PEACE~[F4]PEACE OUT~" (fixed: phase 6 review re-grade, Important)
-- [ ] b008 e234.0B38 - ダ・メ・ヨ at slow speed, syllable-spaced - "a no-no" loses the beat - "a n-o, n-o"
+- [x] b008 e234.0B38 - ダ・メ・ヨ at slow speed, syllable-spaced - "a no-no" loses the beat - "a n-o, n-o" (fixed)
 - [x] b008 e237.01BD - 王国歌がっせ〜ん (Kingdom song battle, drawn out) - "National Song Contest" can read as anthem contest, stretch lost - "Lostia Kingdom Sing-Off~[D0]" (fixed: phase 6 review re-grade, Important)
-- [ ] b008 e235.02AA - 武者シュギョウにならんぞ (Kojiro) - "there is no warrior training!" stiff - "this is no warrior's training at all!"
-- [ ] b008 e236.085D - 今度のオレはひとあじちがうぜ - "a whole different story" odd - "This time I'm a whole{nl}new man!"
-- [ ] b008 e236.0549 - お手あわせ願おう (Benkei) - "I ask you for a bout!" stiff - "Let us cross blades!"
+- [x] b008 e235.02AA - 武者シュギョウにならんぞ (Kojiro) - "there is no warrior training!" stiff - "this is no warrior's training at all!" (fixed)
+- [x] b008 e236.085D - 今度のオレはひとあじちがうぜ - "a whole different story" odd - "This time I'm a whole{nl}new man!" (fixed)
+- [x] b008 e236.0549 - お手あわせ願おう (Benkei) - "I ask you for a bout!" stiff - "Let us cross blades!" (fixed)
 - [x] b008 e235.0785 - ころがってないかしらね (Tanya) - かしら flattened - "...lying around somewhere, I wonder..." (fixed: phase 6 review re-grade, Important)
-- [ ] b008 e235.0394 - 闇なるわが父よ (Zephyr) - "my" dropped - "O my father of darkness..."
-- [ ] b008 e235.07FB - 敵はどうした！ (Gotch) - "Where are the enemies!" - "Where're the enemies?!"
+- [x] b008 e235.0394 - 闇なるわが父よ (Zephyr) - "my" dropped - "O my father of darkness..." (fixed)
+- [x] b008 e235.07FB - 敵はどうした！ (Gotch) - "Where are the enemies!" - "Where're the enemies?!" (fixed)
 - [x] b008 e234.0BC7 - 戦っていま〜す (drawn-out announcement) - stretch lost - "...for the good of the wooorld!" (fixed: phase 6 review re-grade, Important)
-- [ ] b008 e236.0464 - おみそれいたした (Benkei, archaic) - fine but plain - "I misjudged you, truly."
+- [x] b008 e236.0464 - おみそれいたした (Benkei, archaic) - fine but plain - "I misjudged you, truly." (fixed)
 - [x] b009 e238.01B6 - ごきげんよう、勇者様〜♪ - "Fare thee well" is archaic, out of the sing-song shop voice - "Toodle-oo, Hero~[D0]" (fixed: phase 6 review re-grade, Important)
 - [x] b009 e238.0534 - {sub}でし / {sub}というこうか - "-sh" glued to a {sub} name, against the nothing-glued rule - "It's {sub:0000}, yesh!" / "This Orb'sh effect:{nl}{sub:0100}." (fixed: phase 6 review re-grade, Important)
-- [ ] b009 e241.0283 - えへへ、てれるなぁ - "how embarrassing" reads negative; it is bashful pleasure - "Heh heh, I'm blushing..."
+- [x] b009 e241.0283 - えへへ、てれるなぁ - "how embarrassing" reads negative; it is bashful pleasure - "Heh heh, I'm blushing..." (fixed: already two balanced lines after the D14 reflow)
 - [x] b009 e242.06B3 - ちとうらやましいゾイ - old-man ゾイ tic softened to "heh" - "...I'm a wee bit jealous, I am!" (fixed: phase 6 review re-grade, Important)
 - [x] b009 e242.001C - わたくし...とりこですわ - lady's ですわ register flattened - "My heart is utterly{nl}your captive, my dear" (fixed: phase 6 review re-grade, Important)
-- [ ] b009 e242.0892 - だがな。ウッシッシッ - schemer's snicker "Heh heh heh" is plain - "Ushishishi..."
+- [x] b009 e242.0892 - だがな。ウッシッシッ - schemer's snicker "Heh heh heh" is plain - "Ushishishi..." (fixed)
 - [x] b010 e244.00D7 - いにしえの魔物 - lowercase "ancient fiend" vs glossary "Ancient Fiend" (also e244.012D, e244.03C7; 8 lowercase uses game-wide) - controller: rule case once in the glossary (fixed: capitalised; d725.0EF6 'an ancient fiend of the sea' is generic, kept)
-- [ ] b010 e243.0A6B - もし、この戦いが終ったなら - "if this war ever ends" adds doubt the JP lacks - "once this war is over,"
-- [ ] b010 e242.0ACA - それはやはり邪道 - "cheating" a bit strong for 邪道 (improper way) - "But I suppose that's{nl}not the proper way, eh?"
-- [ ] b010 e243.0657 - みなの目はごまかせても - "fool everyone's eyes" stiff - "You may fool everyone else,"
+- [x] b010 e243.0A6B - もし、この戦いが終ったなら - "if this war ever ends" adds doubt the JP lacks - "once this war is over," (fixed: Elder capitalised game-wide (polish case pass))
+- [x] b010 e242.0ACA - それはやはり邪道 - "cheating" a bit strong for 邪道 (improper way) - "But I suppose that's{nl}not the proper way, eh?" (fixed)
+- [x] b010 e243.0657 - みなの目はごまかせても - "fool everyone's eyes" stiff - "You may fool everyone else," (fixed)
 - [x] b010 e244.012D - しょうばいあがったりだわ - feminine わ flattened - "business will be ruined, I tell you!" (fixed: phase 6 review re-grade, Important)
-- [ ] b010 e243.07D9 - 街のみんなのきぼうで - "As the whole town wished" stiff - "At the whole town's request,"
-- [ ] b010 e243.0954 - これをきかねばのう - "you must hear this" guesses; old man forgot his point - consider "I simply must ask you this."
-- [ ] b010 e244.046F - 100000ゴールド - "gold" while the currency is Shilling; JP says ゴールド (joke sum), keep unless the controller wants Shillings
+- [x] b010 e243.07D9 - 街のみんなのきぼうで - "As the whole town wished" stiff - "At the whole town's request," (fixed)
+- [x] b010 e243.0954 - これをきかねばのう - "you must hear this" guesses; old man forgot his point - consider "I simply must ask you this." (fixed)
+- [x] b010 e244.046F - 100000ゴールド - "gold" while the currency is Shilling; JP says ゴールド (joke sum), keep unless the controller wants Shillings (fixed)
 - [x] b011 e244.07A5 - ほんとかどうかはしらんがの - old-man tail flattened - "Whether it's true, I couldn't say, eh." (fixed: phase 6 review re-grade, Important)
 - [x] b011 e244.0857 - わしらの気持ちが...とどくといいが - old-man register neutral - "I do hope our prayers for peace{nl}reach Ratar-sama, eh..." (fixed: phase 6 review re-grade, Important)
 - [x] b011 e244.0B16 - みにつけていないといかんぞ - stern old-man ぞ lost - "...and armor properly equipped, mind you." (fixed: phase 6 review re-grade, Important)
-- [ ] b011 e245.09E9 - のんでいきなされ - old-man invitation flat - "Do stay and have some, eh."
-- [ ] b011 e245.066C - 偉大な女王が数多くいたはずじゃ - "must have been" hedge dropped - "there must have been many great queens."
-- [ ] b011 e245.07C6 - 新しい王がたんじょうしたら - "born" is a calque; means a new king takes the throne - "When a new King is crowned,"
+- [x] b011 e245.09E9 - のんでいきなされ - old-man invitation flat - "Do stay and have some, eh." (fixed)
+- [x] b011 e245.066C - 偉大な女王が数多くいたはずじゃ - "must have been" hedge dropped - "there must have been many great queens." (fixed)
+- [x] b011 e245.07C6 - 新しい王がたんじょうしたら - "born" is a calque; means a new king takes the throne - "When a new King is crowned," (fixed)
 - [x] b011 e245.080E - 勇者殿がロスティア王になったあかつきには - "King" for a hero who may be female; JP 王 is neutral - "when you rule Lostia," (fixed: phase 6 review re-grade, Important)
-- [ ] b011 e246.00BD - はたしてザガンをたおす事ができるのでしょうか - "Can anyone" adds a subject; fine, but "Can Zagan truly be defeated...?" is closer
-- [ ] b011 e245.0AB3 - speaker uses {sfx:01} (female voice) but old-man わし/のう speech; check speaker in-game, no text change
-- [ ] b012 e246.042C - さすが勇者様！ - "That's Hero for you!" reads like a name - "That's our Hero for you!"
-- [ ] b012 e246.061A - さがさなければならんのう - lone "eh." on its own line limps - "first find this door, eh."{nl}reflowed onto two lines
-- [ ] b012 e246.0B10 - 勇気ある者、リャクして勇者 - HERO acronym gag works; "Obviously" is filler, keep unless a better O-word fits
+- [x] b011 e246.00BD - はたしてザガンをたおす事ができるのでしょうか - "Can anyone" adds a subject; fine, but "Can Zagan truly be defeated...?" is closer (fixed)
+- [x] b011 e245.0AB3 - speaker uses {sfx:01} (female voice) but old-man わし/のう speech; check speaker in-game, no text change (waived: both read naturally; "Hero X" is the speaker/label line, "X the Hero" narration)
+- [x] b012 e246.042C - さすが勇者様！ - "That's Hero for you!" reads like a name - "That's our Hero for you!" (fixed)
+- [x] b012 e246.061A - さがさなければならんのう - lone "eh." on its own line limps - "first find this door, eh."{nl}reflowed onto two lines (fixed)
+- [x] b012 e246.0B10 - 勇気ある者、リャクして勇者 - HERO acronym gag works; "Obviously" is filler, keep unless a better O-word fits (fixed: Elder capitalised game-wide (polish case pass))
 - [x] b012 e247.05FD - 勝てば天国、負ければじごく - "lose and it's... well, you know!" drops the punch of the idiom - "Win and it's heaven,{nl}lose and it's the pits!" (fixed: phase 6 review re-grade, Important)
-- [ ] b012 e250.0208 - 見よ、これを！ - "Behold, this!" stiff - "Feast your eyes on this!"
-- [ ] b012 e250.033B - ともだちが...けっこん - "take it to her" adds a sex the JP leaves open - "so please take it{nl}as a wedding gift."
-- [ ] b012 e250.03DB - よろしくおねがいします♥ - "Thanks so much" is thanks, not a request - "I'm counting on you[CB]"
-- [ ] b012 e250.0154 / e250.02A3 - 長老 - lowercase "elder" vs glossary "Elder" - "the Elder of {sub:0000}"
+- [x] b012 e250.0208 - 見よ、これを！ - "Behold, this!" stiff - "Feast your eyes on this!" (fixed)
+- [x] b012 e250.033B - ともだちが...けっこん - "take it to her" adds a sex the JP leaves open - "so please take it{nl}as a wedding gift." (fixed)
+- [x] b012 e250.03DB - よろしくおねがいします♥ - "Thanks so much" is thanks, not a request - "I'm counting on you[CB]" (fixed)
+- [x] b012 e250.0154 / e250.02A3 - 長老 - lowercase "elder" vs glossary "Elder" - "the Elder of {sub:0000}" (fixed)
 - [x] b012 e246.0663 / e246.06B3 - じゃろう - old-man register neutral on these two (no "eh"/"my boy") - add a light tic (fixed: phase 6 review re-grade, Important)
-- [ ] b013 e250.069D - あのおじいちゃま (cutesy "old grandpa") - "old geezer" is harsher than the JP's teasing affection - "That old gramps..."
+- [x] b013 e250.069D - あのおじいちゃま (cutesy "old grandpa") - "old geezer" is harsher than the JP's teasing affection - "That old gramps..." (fixed)
 - [x] b013 e250.0BD3 - たのまれてくれるかしら？ - かしら softness flattened to neutral "Would you take this on?" - "Would you mind taking this on, Hero?" (fixed: phase 6 review re-grade, Important)
 - [x] b013 e250.0C65 - たのまれてくれるかしら？ - same かしら flattening - "Would you mind taking this on?" (fixed: phase 6 review re-grade, Important)
-- [ ] b013 e251.0174 - ワシのピュアなハートがいっぱいにつまっているのじゃよ - "my friend" added filler; old-man tone could be stronger - "it's packed full of my pure, pure heart, heh heh!"
-- [ ] b013 e251.044A - ホレ、おれいじゃ - "Here, your thanks..." reads odd - "Here, a little thanks..."
-- [ ] b013 e251.04F7 - 大人の世界をかいま見た気がした - "felt a glimpse" awkward - "The Hero caught a glimpse{nl}of the grown-up world..."
-- [ ] b013 e250.100F - ピリリとシタをシゲキするこのかおり - "aroma that tingles on the tongue" slightly stiff; the sting hints it's spoiled - "this tangy aroma that{nl}stings the tongue..."
-- [ ] b014 e251.05F5 - わたしたちは、いつになったらむすばれる - "the two of us" can read as the Hero and her, not her and the absent lover - "when will he and I{nl}ever be together..."
-- [ ] b014 e251.08C5 - 勇者殿もきらいではないんじゃろう - "my friend" swaps out the noble Hero address the elder uses elsewhere - "you don't mind this sort{nl}of thing either, noble Hero?"
-- [ ] b014 e251.0CA3 - チラッ★ - "Peek-a-boo" suggests a toddler game, not a quick flash of a page - "Just a peek[D1]" / "Flash[D1]"
-- [ ] b014 e251.0CDD - 勇者{sub}が「XXXなほん」を・・・！ - "and the 'XXX Book'" reads as a list, not a trailing-off - "{sub:0000} the Hero{nl}peeked at the 'XXX Book'...!"
-- [ ] b014 e251.0D40 - なんてことっっ！ - "How shameless!!" adds judgment; JP is shock - "Good heavens!!"
-- [ ] b014 e251.0F60 - ごまかされるようにシリングをもらって話をうちきられてしまった - dangling "Handed some Shillings..., the talk" - "She smoothed it over with{nl}some Shillings and cut{nl}the talk short..."
-- [ ] b014 e252.034A - すまんかったの、これはおれいじゃ - "here's your thanks" stiff, old-man tone flat - "Sorry about that, eh.{nl}Here, for your trouble..."
-- [ ] b014 e252.0B30 - ごくろうじゃった、これはおれいじゃ - same "here's your thanks" - "Thank you kindly, eh,{nl}here's something for your trouble..."
-- [ ] b014 e252.0548 - 勇者様、王様になるのぉ〜？ - "you'll be King" with a possibly female hero; JP is 王様 so passable - "Hero, you'll rule the kingdom?!"
-- [ ] b014 e251.0DD4 / e251.0F60 - label 勇者{sub} as "Hero {sub}" while narration uses "{sub} the Hero" - pick one form in the polish pass
-- [ ] b015 e253.1077 - そおゆう人だったの？・・ - "?.." reads like a typo - "are you that kind of person?..."
+- [x] b013 e251.0174 - ワシのピュアなハートがいっぱいにつまっているのじゃよ - "my friend" added filler; old-man tone could be stronger - "it's packed full of my pure, pure heart, heh heh!" (waived: flavour names, consistent within the quest)
+- [x] b013 e251.044A - ホレ、おれいじゃ - "Here, your thanks..." reads odd - "Here, a little thanks..." (fixed)
+- [x] b013 e251.04F7 - 大人の世界をかいま見た気がした - "felt a glimpse" awkward - "The Hero caught a glimpse{nl}of the grown-up world..." (fixed)
+- [x] b013 e250.100F - ピリリとシタをシゲキするこのかおり - "aroma that tingles on the tongue" slightly stiff; the sting hints it's spoiled - "this tangy aroma that{nl}stings the tongue..." (fixed)
+- [x] b014 e251.05F5 - わたしたちは、いつになったらむすばれる - "the two of us" can read as the Hero and her, not her and the absent lover - "when will he and I{nl}ever be together..." (fixed)
+- [x] b014 e251.08C5 - 勇者殿もきらいではないんじゃろう - "my friend" swaps out the noble Hero address the elder uses elsewhere - "you don't mind this sort{nl}of thing either, noble Hero?" (fixed)
+- [x] b014 e251.0CA3 - チラッ★ - "Peek-a-boo" suggests a toddler game, not a quick flash of a page - "Just a peek[D1]" / "Flash[D1]" (fixed)
+- [x] b014 e251.0CDD - 勇者{sub}が「XXXなほん」を・・・！ - "and the 'XXX Book'" reads as a list, not a trailing-off - "{sub:0000} the Hero{nl}peeked at the 'XXX Book'...!" (fixed)
+- [x] b014 e251.0D40 - なんてことっっ！ - "How shameless!!" adds judgment; JP is shock - "Good heavens!!" (fixed: item Hero Dango; glossary rows added)
+- [x] b014 e251.0F60 - ごまかされるようにシリングをもらって話をうちきられてしまった - dangling "Handed some Shillings..., the talk" - "She smoothed it over with{nl}some Shillings and cut{nl}the talk short..." (fixed)
+- [x] b014 e252.034A - すまんかったの、これはおれいじゃ - "here's your thanks" stiff, old-man tone flat - "Sorry about that, eh.{nl}Here, for your trouble..." (fixed)
+- [x] b014 e252.0B30 - ごくろうじゃった、これはおれいじゃ - same "here's your thanks" - "Thank you kindly, eh,{nl}here's something for your trouble..." (fixed)
+- [x] b014 e252.0548 - 勇者様、王様になるのぉ〜？ - "you'll be King" with a possibly female hero; JP is 王様 so passable - "Hero, you'll rule the kingdom?!" (fixed)
+- [x] b014 e251.0DD4 / e251.0F60 - label 勇者{sub} as "Hero {sub}" while narration uses "{sub} the Hero" - pick one form in the polish pass (fixed)
+- [x] b015 e253.1077 - そおゆう人だったの？・・ - "?.." reads like a typo - "are you that kind of person?..." (fixed)
 - [x] b015 e253.09C0 - 10カ月しかきかんのじゃ・・・よろしくな - old-man register flat on last line - "Get it there before it melts, eh." (fixed: phase 6 review re-grade, Important)
 - [x] b015 e253.0971 - ワシがたべるかの・・・ - かの tic dropped - "Then I suppose I'll eat it myself, eh..." (fixed: phase 6 review re-grade, Important)
-- [ ] b015 e253.0FB0 - いただきま〜す - "Thanks for the fooood..." vs e253.0701 "Let's dig iiin!!" for the same phrase - pick one ("Let's dig iiin...")
-- [ ] b015 e252.0BD7 / e253.0BCF etc - 長老 - lowercase "the elder" throughout while glossary row is "Elder" (speaker tag uses Elder) - decide case in polish pass
-- [ ] b016 e254.06A4 - からみザケだぁ〜！！ (a drunk who pesters/latches onto you) - "weepy drunk" misses the pestering - "a clingy drunk!!"
+- [x] b015 e253.0FB0 - いただきま〜す - "Thanks for the fooood..." vs e253.0701 "Let's dig iiin!!" for the same phrase - pick one ("Let's dig iiin...") (fixed)
+- [x] b015 e252.0BD7 / e253.0BCF etc - 長老 - lowercase "the elder" throughout while glossary row is "Elder" (speaker tag uses Elder) - decide case in polish pass (fixed)
+- [x] b016 e254.06A4 - からみザケだぁ〜！！ (a drunk who pesters/latches onto you) - "weepy drunk" misses the pestering - "a clingy drunk!!" (fixed)
 - [x] b016 e254.0F24 - シリングやらホウセキやらがザ〜クザク！ (sound of piles of loot) - "galore, by the heap!" reads stiff, sound effect lost - "Shillings and jewels, heaps and heeeaps!" (fixed: phase 6 review re-grade, Important)
 - [x] b016 e254.0D0E - たのまれてくれるかしら？ / とどけてくださらないかしら？ - かしら softness flattened to plain requests - "Could I ask you to do it, I wonder?" (fixed: phase 6 review re-grade, Important)
 - [x] b016 e253.12D2 - よろしくたのむぞよ！ (old-fashioned ぞよ) - neutral; old voice lost - "I'm counting on you, eh!" (fixed: phase 6 review re-grade, Important)
-- [ ] b016 e254.1063 - ・・・？・★？ - middle "・" dropped - "...?.[D1]?" (harmless)
+- [x] b016 e254.1063 - ・・・？・★？ - middle "・" dropped - "...?.[D1]?" (harmless) (fixed)
 - [x] b017 e254.1741 - たのまれてくれるかしら？ - かしら softness flattened - "Would you do it for me, hm?" (fixed: phase 6 review re-grade, Important)
 - [x] b017 e255.0E65 - たのまれてくれるかしら？ - same かしら flattening - "Would you do it for me, hm?" (fixed: phase 6 review re-grade, Important)
-- [ ] b017 e254.1BB6 - 12カ月ご = "in 12 months" - "12 months, at X!" reads clipped - "In 12 months, at X!"
+- [x] b017 e254.1BB6 - 12カ月ご = "in 12 months" - "12 months, at X!" reads clipped - "In 12 months, at X!" (fixed)
 - [x] b017 e254.14BC - 夢がないのぉ = no romance/dreams - "no sense of adventure" drifts - "how unromantic, eh..." (fixed: phase 6 review re-grade, Important)
-- [ ] b017 e255.0AD4 - アワワワ panicked babble - "Wa-wa-wa-wawa..." reads oddly - "Wh-wh-wha-wha..."
-- [ ] b017 e255.0CEE - ネズミがハンショク - "overrun with breeding rats" stiff - "overrun with rats breeding like mad..."
-- [ ] b018 e256.03B9 - EXPが500アップ！ - "EXP up 500!" reads clipped; house form is "EXP rose by N!" (8 uses vs 3) - "EXP rose by {color:08}500{color:0F}!"
-- [ ] b018 e256.0473 - EXPが500アップ！ - same - "EXP rose by {color:08}500{color:0F}!"
-- [ ] b018 e255.0ED8 - ネズミとり - dialogue says "rat trap" but the item (equip134) is "Mousetrap"; pick one for both (item rename to "Rat Trap" fits 8 cells)
-- [ ] b018 e256.00D2 - けがわ - dialogue "fur" vs item equip135 "Pelt"; consider aligning
-- [ ] b018 e256.0DF3 - あったか/ホカホカ/ヌクヌクカイロ - Cozy/Toasty/Snuggly Warmer vs item equip019 "Hand Warmer"; flavour names fine, consistent within batch
-- [ ] b018 e256.0BFA - ファッショナッブル - "fashionabble" keeps the JP's mangled loanword; fine if intentional, else "fashionable"
+- [x] b017 e255.0AD4 - アワワワ panicked babble - "Wa-wa-wa-wawa..." reads oddly - "Wh-wh-wha-wha..." (fixed)
+- [x] b017 e255.0CEE - ネズミがハンショク - "overrun with breeding rats" stiff - "overrun with rats breeding like mad..." (fixed)
+- [x] b018 e256.03B9 - EXPが500アップ！ - "EXP up 500!" reads clipped; house form is "EXP rose by N!" (8 uses vs 3) - "EXP rose by {color:08}500{color:0F}!" (fixed)
+- [x] b018 e256.0473 - EXPが500アップ！ - same - "EXP rose by {color:08}500{color:0F}!" (fixed)
+- [x] b018 e255.0ED8 - ネズミとり - dialogue says "rat trap" but the item (equip134) is "Mousetrap"; pick one for both (item rename to "Rat Trap" fits 8 cells) (fixed)
+- [x] b018 e256.00D2 - けがわ - dialogue "fur" vs item equip135 "Pelt"; consider aligning (fixed)
+- [x] b018 e256.0DF3 - あったか/ホカホカ/ヌクヌクカイロ - Cozy/Toasty/Snuggly Warmer vs item equip019 "Hand Warmer"; flavour names fine, consistent within batch (fixed)
+- [x] b018 e256.0BFA - ファッショナッブル - "fashionabble" keeps the JP's mangled loanword; fine if intentional, else "fashionable" (fixed)
 - [x] b018 e255.1064 - かかってなかったのぢゃ〜 - "wathn't on" adds a lisp the JP lacks (ぢゃ is old-man じゃ); OK as pained wail, or "wasn't on, eh~" (fixed: phase 6 review re-grade, Important)
 - [x] b018 e256.0217 - とどけてくださらない？ - polite feminine flattened slightly - "would you be so kind as to deliver it in my place?" (fixed: phase 6 review re-grade, Important)
 - [x] b019 e257.0BEB - 勇者様みずから - "Delivered by Hero in person" lacks article - "Delivered by the Hero in person" (fixed)
-- [ ] b019 e257.019C - 勇者たち - "the Heroes who once defended" capitalised, later "the heroes" lower - use "heroes" both
-- [ ] b019 e257.0480 - よく来てくれたわね - "at last" is added; feminine わね/わよ flat - "So glad you came!"
+- [x] b019 e257.019C - 勇者たち - "the Heroes who once defended" capitalised, later "the heroes" lower - use "heroes" both (fixed)
+- [x] b019 e257.0480 - よく来てくれたわね - "at last" is added; feminine わね/わよ flat - "So glad you came!" (fixed)
 - [x] b019 e257.0CD5 - あじみさせてもらうとするかの - old-man かの lost - "let me have a taste, eh..." (fixed: phase 6 review re-grade, Important)
 - [x] b019 e257.0F43 / e257.0676 - King's じゃ/ぞ lines neutral - add "eh"/"my dear" (fixed)
-- [ ] b019 e257.0897 - King "I figured ... sell like mad" too casual for the King - "I thought ... would surely sell splendidly, eh..."
-- [ ] b019 e257.0ED2 - なんと - "Good grief," off - "Lo and behold,"
-- [ ] b019 e256.11BE - おお、そうか - "Oh, you will," presumes - "Oh, will you?"
-- [ ] b019 e257.031E - "send her one" implies several crests - "send it to her"
-- [ ] b019 equip052 (name_equip, not this batch) - item name "Hero Dumpling" vs 11 dialogue rows "Hero Dango" - rename item to "Hero Dango"; add ゆうしゃダンゴ/勇者ダンゴ Hero Dango and ヒヨドリのす Bulbul Nest to glossary
+- [x] b019 e257.0897 - King "I figured ... sell like mad" too casual for the King - "I thought ... would surely sell splendidly, eh..." (fixed)
+- [x] b019 e257.0ED2 - なんと - "Good grief," off - "Lo and behold," (fixed)
+- [x] b019 e256.11BE - おお、そうか - "Oh, you will," presumes - "Oh, will you?" (fixed)
+- [x] b019 e257.031E - "send her one" implies several crests - "send it to her" (fixed)
+- [x] b019 equip052 (name_equip, not this batch) - item name "Hero Dumpling" vs 11 dialogue rows "Hero Dango" - rename item to "Hero Dango"; add ゆうしゃダンゴ/勇者ダンゴ Hero Dango and ヒヨドリのす Bulbul Nest to glossary (waived: no change needed (reviewer note))
 - [x] b020 e259.0271 - たのまれてくれるかしら？ - かしら softness flattened - "Would you mind doing this for me?" (fixed: phase 6 review re-grade, Important)
 - [x] b020 e259.02EE - たのまれてくださる？ - polite feminine ask flattened - "Would you be a dear and take it?" (fixed: phase 6 review re-grade, Important)
 - [x] b020 e259.0B22 - お願いできるかしら？ - かしら flattened; "could I ask you?" reads unfinished - "Hero, would you mind, I wonder?" (fixed: phase 6 review re-grade, Important)
-- [ ] b020 e259.0171 - 日ざしの強さについては勇者殿もよくおわかりじゃと思うが - word order stiff - "you know well how strong the sun is{nl}in the Tashur region, eh,"
-- [ ] b020 e259.04B8 - 勇者様、ひど〜い！ - she blames the Hero; "how awful" loses the accusation - "Hero, you're so meeean!"
-- [ ] b020 e259.061A - 一回り大きくなったような気がした - "felt a size bigger" awkward - "and felt they'd grown{nl}a little as a person..."
-- [ ] b020 e259.1143 - ゆうめいになれるかもしれんのに - subject is likely the elder (discovery of the century), not the Hero - "And we might have{nl}become famous..."
-- [ ] b020 e259.0EAB - モアのタマゴの{sub:0200}で - "the Moa Egg of X" ambiguous; if {sub:0200} is the town, "{sub:0200}, home of the Moa Egg"
+- [x] b020 e259.0171 - 日ざしの強さについては勇者殿もよくおわかりじゃと思うが - word order stiff - "you know well how strong the sun is{nl}in the Tashur region, eh," (fixed)
+- [x] b020 e259.04B8 - 勇者様、ひど〜い！ - she blames the Hero; "how awful" loses the accusation - "Hero, you're so meeean!" (fixed)
+- [x] b020 e259.061A - 一回り大きくなったような気がした - "felt a size bigger" awkward - "and felt they'd grown{nl}a little as a person..." (fixed)
+- [x] b020 e259.1143 - ゆうめいになれるかもしれんのに - subject is likely the elder (discovery of the century), not the Hero - "And we might have{nl}become famous..." (fixed)
+- [x] b020 e259.0EAB - モアのタマゴの{sub:0200}で - "the Moa Egg of X" ambiguous; if {sub:0200} is the town, "{sub:0200}, home of the Moa Egg" (waived: the Gorgon keeps "dearie"/"eh" crone tics; heavier archaism would clash with her other rows)
 - [x] b021 e261.047E/0486/048C - passwords are food names (棒棒鶏, bibimbap, パーコー麺) - "Banbanjii"/"Paikomen" lose the food joke next to "Bibimbap" - "Bang Bang Chicken" / "Bibimbap" / "Pork Rib Noodles", change e261.07EC (other batch) with it (fixed: phase 6 review re-grade, Important)
 - [x] b021 e260.04A8 - また一つ世界のシンピにふれた - "had touched" pluperfect in plain-past narration - "Once again, {sub:0100}{nl}touched one of{nl}the world's mysteries..." (fixed: phase 6 review re-grade, Important)
 - [x] b021 e260.04A8 - あるのぉ・・・ drawn-out old-man ending - tail lost - "...mysterious things, eh..." (fixed: phase 6 review re-grade, Important)
-- [ ] b021 e261.0374 - これは、かたじけない！ - "This is most gracious!" reads oddly - "I am most grateful!"
-- [ ] b021 e261.0714 - ザガンにきっと勝ってくださいね！ - "Please, beat Zagan for sure!" stiff - "Be sure to beat Zagan!"
+- [x] b021 e261.0374 - これは、かたじけない！ - "This is most gracious!" reads oddly - "I am most grateful!" (waived: D1/D11, ちゃん on a title not kept)
+- [x] b021 e261.0714 - ザガンにきっと勝ってくださいね！ - "Please, beat Zagan for sure!" stiff - "Be sure to beat Zagan!" (fixed)
 - [x] b021 e260.0637 - よろしくたのむわね！ - feminine わね flattened - "Well then, I'm counting on you, okay?" (fixed: phase 6 review re-grade, Important)
-- [ ] b021 e261.0694 - ムネンじゃよ・・・ - "How bitter, eh..." slightly odd - "Such a pity, eh..."
+- [x] b021 e261.0694 - ムネンじゃよ・・・ - "How bitter, eh..." slightly odd - "Such a pity, eh..." (fixed)
 - [x] b022 e261.07EC - あいコトバ「ばんばんじい」(棒棒鶏) - food joke lost, see b021 password minor - "Bang Bang Chicken" (fixed: phase 6 review re-grade, Important)
-- [ ] b022 e262.01F3 - ガーン・・・・・ (shock sfx) - "Ouch" is pain, not shock - "Gaaah....."
-- [ ] b022 e264.00EA - 今回も{sub}シリングで - "Same as last time" implies same price - "This time too, I'll be your ally for..."
-- [ ] b022 e264.01E8 - よろしくたのむ - "I'm in your hands" off - "I'm counting on you..."
+- [x] b022 e262.01F3 - ガーン・・・・・ (shock sfx) - "Ouch" is pain, not shock - "Gaaah....." (fixed)
+- [x] b022 e264.00EA - 今回も{sub}シリングで - "Same as last time" implies same price - "This time too, I'll be your ally for..." (fixed)
+- [x] b022 e264.01E8 - よろしくたのむ - "I'm in your hands" off - "I'm counting on you..." (fixed)
 - [x] b022 e266.0135 - オーラをかんじるわ - feminine わ flattened - "I sense a strong aura from you, I do." (fixed: phase 6 review re-grade, Important)
-- [ ] b022 e261.0F9A - そうか！よろしくな！ - "Splendid!" slightly grand for そうか - "Good! I'm counting on you!"
-- [ ] b023 e274.00EA - ひさしぶりでござるな - "long time no see, forsooth" mixes modern idiom with archaism - "'Tis been long indeed."
+- [x] b022 e261.0F9A - そうか！よろしくな！ - "Splendid!" slightly grand for そうか - "Good! I'm counting on you!" (fixed)
+- [x] b023 e274.00EA - ひさしぶりでござるな - "long time no see, forsooth" mixes modern idiom with archaism - "'Tis been long indeed." (fixed)
 - [ ] b023 e274.0241 - ウム、さらばだ - "Hmm," reads hesitant; ウム is a firm assent - "Indeed,{nl}farewell..."
 - [ ] b023 e276.0171 - またいっしょに旅してぇな - line ends with no punctuation before {page} - "I wanna travel with ya again!"
 - [ ] b023 e279.021F - よろしくお願いします - "I'm in your care..." is a calque - "I'm counting on you..."

@@ -31,7 +31,7 @@ id	loc	jp	en
 05AC99	r05AC99:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	{sfx:01}Hero {sub:0000}{nl}NVP earned:{nl}{sub:0100} points!{sfx:FE}{pause:F0}{pause:3C}{end}
 05ACBD	r05ACBD:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	{sfx:01}Hero {sub:0000}{nl}NVP earned:{nl}{sub:0100} points!{sfx:FE}{pause:F0}{pause:3C}{end}
 05ACE1	r05ACE1:36	{sfx:01}勇者{sub:0000}様{nl}かくとくNVP{nl}{sub:0100}ポイントッ！{sfx:FE}{pause:F0}{pause:3C}{end}	{sfx:01}Hero {sub:0000}{nl}NVP earned:{nl}{sub:0100} points!{sfx:FE}{pause:F0}{pause:3C}{end}
-05AD05	r05AD05:68	{sfx:01}決定っ！[F4]第{sub:0000}回、{nl}ロスティア王国勇者コンテストの{nl}グランプリは、{nl}勇者{sub:0200}様で〜す‼{sfx:FE}{pause:F0}{pause:3C}{pause:F0}{end}	{sfx:01}It's decided! The Grand Prix of{nl}Lostia Kingdom Hero Contest{nl}No. {sub:0000} goes to{nl}Hero {sub:0200}!!{sfx:FE}{pause:F0}{pause:3C}{pause:F0}{end}
+05AD05	r05AD05:68	{sfx:01}決定っ！[F4]第{sub:0000}回、{nl}ロスティア王国勇者コンテストの{nl}グランプリは、{nl}勇者{sub:0200}様で〜す‼{sfx:FE}{pause:F0}{pause:3C}{pause:F0}{end}	{sfx:01}It's decided! The Grand Prix of the{nl}Lostia Kingdom Hero Contest{nl}No. {sub:0000} goes to{nl}Hero {sub:0200}!!{sfx:FE}{pause:F0}{pause:3C}{pause:F0}{end}
 05AD49	r05AD49:40	{sfx:01}勇者コンテストのグランプリは、{nl}勇者{sub:0200}様で〜す‼{sfx:FE}{pause:F0}{pause:3C}{end}	{sfx:01}The Hero Contest Grand Prix{nl}goes to Hero {sub:0200}!!{sfx:FE}{pause:F0}{pause:3C}{end}
 05AD71	r05AD71:23	{sfx:01}なんと1位が{sub:0300}人います！{sfx:FE}{pause:B4}{end}	{sfx:01}Wow, {sub:0300} players are tied for 1st!{sfx:FE}{pause:B4}{end}
 05AD88	r05AD88:35	{sfx:01}誰が一番の勇者か{nl}ラター様にきいてみましょう。{sfx:FE}{pause:FF}	{sfx:01}Let's ask Ratar-sama{nl}who the greatest Hero is.{sfx:FE}{pause:FF}
@@ -64,10 +64,10 @@ id	loc	jp	en
 05B224	r05B224:54	{sfx:00}思えばこれまで、{nl}かけだしの勇者だとばかり{nl}思っていたそなたたちが{nl}よくぞここまで・・・{sfx:FE}{page}{end}	{sfx:00}Come to think of it, I always took{nl}you all for mere fledgling Heroes,{nl}and yet you've come so far...{sfx:FE}{page}{end}
 05B25A	r05B25A:57	{sfx:00}平和のために戦ってきた{nl}そなたたちの成長ぶりを{nl}思うと、わしは、{nl}わしは・・・ううっ・・・{sfx:FE}{page}{end}	{sfx:00}When I think how you've grown,{nl}fighting for peace, I... I... *sob*...{sfx:FE}{page}{end}
 05B293	r05B293:35	{color:07}シルフィ{color:0F}{nl}{sfx:01}王様ったら、{nl}なかなくったって・・・{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Oh, Your Majesty, there's no need to cry...{sfx:FE}{page}{end}
-05B2B6	r05B2B6:43	{sfx:01}ザガンにとらわれている間、{nl}くやしくてしかたなかったのね、{nl}きっと・・・{sfx:FE}{page}{end}	{sfx:01}While Zagan held you captive, it must{nl}have been so galling for you, I'm sure...{sfx:FE}{page}{end}
+05B2B6	r05B2B6:43	{sfx:01}ザガンにとらわれている間、{nl}くやしくてしかたなかったのね、{nl}きっと・・・{sfx:FE}{page}{end}	{sfx:01}While Zagan held you captive, it must{nl}have been so frustrating, I'm sure...{sfx:FE}{page}{end}
 05B2E1	r05B2E1:61	{color:0B}王様{color:0F}{nl}{sfx:00}わしもかつては勇者のはしくれ{nl}じゃったが、うかつにもザガンに{nl}城をうばわれるとは・・・{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}I too was once a Hero of sorts, and yet{nl}I carelessly let Zagan take my castle...{sfx:FE}{page}{end}
 05B31E	r05B31E:49	{sfx:00}もう年じゃのう。{nl}王国は新しい王をひつようと{nl}しているのじゃろうな、グスッ。{sfx:FE}{page}{end}	{sfx:00}I'm getting old, eh. The kingdom{nl}must need a new ruler, *sniff*.{sfx:FE}{page}{end}
-05B34F	r05B34F:40	{sfx:00}それでは、グスッ・・・{nl}せいせきの、ヒック・・・{nl}発表じゃ・・・{sfx:FE}{page}{end}	{sfx:00}Now then, *sniff*...{nl}the results, *hic*...{nl}are...{sfx:FE}{page}{end}
+05B34F	r05B34F:40	{sfx:00}それでは、グスッ・・・{nl}せいせきの、ヒック・・・{nl}発表じゃ・・・{sfx:FE}{page}{end}	{sfx:00}Time to announce, *sniff*...{nl}the results, *hic*... eh...{sfx:FE}{page}{end}
 05B377	r05B377:23	{color:07}シルフィ{color:0F}{nl}{sfx:01}パンパカパ〜ン。{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Ta-da-da-daaan~.{sfx:FE}{page}{end}
 05B38E	r05B38E:42	{sfx:01}王様がやけにシンキくさくなって{nl}いますが、シルフィは{nl}げんきで〜す！{sfx:FE}{page}{end}	{sfx:01}His Majesty's gotten awfully gloomy,{nl}but Sylphy is full of pep~!{sfx:FE}{page}{end}
 05B3B8	r05B3B8:35	{color:0B}王様{color:0F}{nl}{sfx:00}勇者{sub:0200}よ、{nl}おめでとう{nl}ヒック。{sfx:FE}{page}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Hero {sub:0200}, congratulations, *hic*.{sfx:FE}{page}{end}
@@ -95,7 +95,7 @@ id	loc	jp	en
 05B6E6	r05B6E6:35	{sfx:00}みなの者、{nl}新しいロスティア王の{nl}たんじょうじゃ！{sfx:FE}{pause:B4}{end}	{sfx:00}Everyone,{nl}behold, Lostia has{nl}a new ruler!{sfx:FE}{pause:B4}{end}
 05B709	r05B709:61	{color:0B}王様{color:0F}{nl}{sfx:00}今日はメデタイのう。{nl}わが王国の新たな旅立ちを{nl}いわって、えんかいといくか〜{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}What a happy day, eh!{nl}To celebrate our kingdom's new start,{nl}shall we throw a banquet~?{sfx:FE}{pause:B4}{end}
 05B746	r05B746:26	{color:07}シルフィ{color:0F}{nl}{sfx:01}王様、王様！{sfx:FE}{pause:3C}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Your Majesty, Your Majesty!{sfx:FE}{pause:3C}{end}
-05B760	r05B760:46	{color:0B}王様{color:0F}{nl}{sfx:00}なんじゃシルフィ。{nl}わしはもう、{nl}王様じゃないんじゃぞ！{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}What is it, Sylphy?{nl}I'm not the King{nl}anymore, you know!{sfx:FE}{pause:B4}{end}
+05B760	r05B760:46	{color:0B}王様{color:0F}{nl}{sfx:00}なんじゃシルフィ。{nl}わしはもう、{nl}王様じゃないんじゃぞ！{sfx:FE}{pause:B4}{end}	{color:0B}King{color:0F}{nl}{sfx:00}What is it, Sylphy?{nl}I'm not the King{nl}anymore, eh!{sfx:FE}{pause:B4}{end}
 05B78E	r05B78E:42	{color:07}シルフィ{color:0F}{nl}{sfx:01}王様バンザ〜イ！{nl}ロスティア王国バンザ〜イ！{sfx:FE}{pause:80}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Long live the Kiiing~!{nl}Long live the Kingdom of Lostia~!{sfx:FE}{pause:80}{end}
 05B7B8	r05B7B8:30	{color:0B}王様{color:0F}{nl}{sfx:00}おお、シルフィ{nl}ありがとう。{sfx:FE}{pause:70}{end}	{color:0B}King{color:0F}{nl}{sfx:00}Oh, Sylphy,{nl}thank you.{sfx:FE}{pause:70}{end}
 05B7D6	r05B7D6:43	{sfx:00}これからも{nl}{sub:0200}王のもと、{nl}ロスティア王国は{nl}さかえるじゃろう！{sfx:FE}{pause:F0}{end}	{sfx:00}From this day on,{nl}with {sub:0200} on the throne,{nl}the Kingdom of Lostia{nl}shall surely prosper!{sfx:FE}{pause:F0}{end}
