@@ -305,3 +305,5 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [x] b036 04A70D - "From Hero X,{nl}I helped myself to" stiff order; "Helped myself to{nl}N Shillings{nl}from Hero X!!" (fixed)
 - [x] b036 04CA6B - 父なる闇 "the Father Darkness" odd; "Darkness, my father?" or "the Dark Father?" (fixed: "the Dark Father?")
 - [x] b036 04A565 - ガーン！ shock beat; "Gaaah!" or "Nooo!" punchier than "Oh no!" (fixed: phase 6 review re-grade, Important)
+- [x] story 02 d745.037E - 国王の地位 "the throne of the King of Lostia" redundant; "the throne of Lostia" (fixed)
+- [x] story 02 d747.02D9 - same JP as its siblings, odd wording; matched to "Now everyone, before we set off, tell me..." (fixed)
