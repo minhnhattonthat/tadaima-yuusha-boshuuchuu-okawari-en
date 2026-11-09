@@ -1665,24 +1665,24 @@ e280.024D	b280+24D:20	{sfx:00}どうぞ、{nl}お気をつけて・・・{sfx:FE
 e280.0262	b280+262:33	{sfx:00}きゅうりょうが無いのですか。{nl}では、ボクはこれで・・・{sfx:FE}{end}	{sfx:00}You have no wages? Then I'll be going...{sfx:FE}{end}
 e280.0284	b280+284:11	仲間にしますか？{end}	Take on as an ally?{end}
 e281.00E1	b281+E1:8	{color:0B}{sub:0000}{color:0F}{end}	
-e281.00EA	b281+EA:53	{sfx:00}ピポーッ！{nl}ユウシャドノ、{nl}マタ[F4]オレ[F4]ヤトウカ？{page}{color:08}{sub:0100}{color:0F}シリングデ{nl}ツイテクピポーッ！{sfx:FE}{end}	{sfx:00}PIPOOO! NOBLE HERO, HIRE ME AGAIN?{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS I FOLLOW, PIPOOO!{sfx:FE}{end}
-e281.0120	b281+120:99	{sfx:00}ポピーッ！{nl}ユウシャドノ、オレ[F4]ヤトエ！{page}ブリキニアン、{nl}[F4]チカラツヨイ！{page}ブリキニアン、{nl}[F4]ヤクニタツ！{page}ブリキニアン、{nl}[F4]セイギノミカタッ！{page}マイツキ{color:08}{sub:0100}{color:0F}シリング{nl}ピポーッ！{sfx:FE}{end}	{sfx:00}POPIII! NOBLE HERO, HIRE ME!{page}TINNIAN,{nl}[F4]VERY STRONG!{page}TINNIAN,{nl}[F4]VERY USEFUL!{page}TINNIAN,{nl}[F4]CHAMPION OF JUSTICE!{page}MONTHLY {color:08}{sub:0100}{color:0F} SHILLINGS, PIPOOO!{sfx:FE}{end}
-e281.0184	b281+184:55	{sfx:00}ピポーッ！{nl}ブリキニアン、{nl}ユウシャノ[F4]シンユウ！{page}オカネ[F4]イラナイカラ{nl}ツレテッテクレ、ピポーッ！{sfx:FE}{end}	{sfx:00}PIPOOO! TINNIAN, HERO'S BEST FRIEND!{page}NO MONEY NEEDED, TAKE ME ALONG, PIPOOO!{sfx:FE}{end}
-e281.01BC	b281+1BC:21	{sfx:00}ピポッ！？{nl}イラナイポピーッ！？{sfx:FE}{end}	{sfx:00}PIPO?! NOT NEEDED, POPIII?!{sfx:FE}{end}
-e281.01D2	b281+1D2:18	{sfx:00}ポピーッ！{nl}ポピピーッ！！{sfx:FE}{end}	{sfx:00}POPIII! POPIPIII!!{sfx:FE}{end}
-e281.01E5	b281+1E5:20	{sfx:00}ピポーッ！{nl}ヌケルピポーッ！！{sfx:FE}{end}	{sfx:00}PIPOOO! I QUIT, PIPOOO!!{sfx:FE}{end}
-e281.01FA	b281+1FA:21	{sfx:00}ポピピーッ！{nl}ハズスピポーッ！？{sfx:FE}{end}	{sfx:00}POPIPIII! DISMISSED, PIPOOO?!{sfx:FE}{end}
-e281.0210	b281+210:26	{sfx:00}キュウリョウナイ、ピポ？{nl}ヌケルピポーッ！{sfx:FE}{end}	{sfx:00}NO WAGES, PIPO? I QUIT, PIPOOO!{sfx:FE}{end}
+e281.00EA	b281+EA:53	{sfx:00}ピポーッ！{nl}ユウシャドノ、{nl}マタ[F4]オレ[F4]ヤトウカ？{page}{color:08}{sub:0100}{color:0F}シリングデ{nl}ツイテクピポーッ！{sfx:FE}{end}	{sfx:00}BEE-BOOP! NOBLE HERO, HIRE ME AGAIN?{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS I FOLLOW, BEE-BOOP!{sfx:FE}{end}
+e281.0120	b281+120:99	{sfx:00}ポピーッ！{nl}ユウシャドノ、オレ[F4]ヤトエ！{page}ブリキニアン、{nl}[F4]チカラツヨイ！{page}ブリキニアン、{nl}[F4]ヤクニタツ！{page}ブリキニアン、{nl}[F4]セイギノミカタッ！{page}マイツキ{color:08}{sub:0100}{color:0F}シリング{nl}ピポーッ！{sfx:FE}{end}	{sfx:00}BOOP-BEEP! NOBLE HERO, HIRE ME!{page}TINNIAN,{nl}[F4]VERY STRONG!{page}TINNIAN,{nl}[F4]VERY USEFUL!{page}TINNIAN,{nl}[F4]CHAMPION OF JUSTICE!{page}MONTHLY {color:08}{sub:0100}{color:0F} SHILLINGS, BEE-BOOP!{sfx:FE}{end}
+e281.0184	b281+184:55	{sfx:00}ピポーッ！{nl}ブリキニアン、{nl}ユウシャノ[F4]シンユウ！{page}オカネ[F4]イラナイカラ{nl}ツレテッテクレ、ピポーッ！{sfx:FE}{end}	{sfx:00}BEE-BOOP! TINNIAN, HERO'S BEST FRIEND!{page}NO MONEY NEEDED, TAKE ME ALONG, BEE-BOOP!{sfx:FE}{end}
+e281.01BC	b281+1BC:21	{sfx:00}ピポッ！？{nl}イラナイポピーッ！？{sfx:FE}{end}	{sfx:00}BEE-BOOP?! NOT NEEDED, BOOP-BEEP?!{sfx:FE}{end}
+e281.01D2	b281+1D2:18	{sfx:00}ポピーッ！{nl}ポピピーッ！！{sfx:FE}{end}	{sfx:00}BOOP-BEEP! BOOP-BEE-BEEP!!{sfx:FE}{end}
+e281.01E5	b281+1E5:20	{sfx:00}ピポーッ！{nl}ヌケルピポーッ！！{sfx:FE}{end}	{sfx:00}BEE-BOOP! I QUIT, BEE-BOOP!!{sfx:FE}{end}
+e281.01FA	b281+1FA:21	{sfx:00}ポピピーッ！{nl}ハズスピポーッ！？{sfx:FE}{end}	{sfx:00}BOOP-BEE-BEEP! DISMISSED, BEE-BOOP?!{sfx:FE}{end}
+e281.0210	b281+210:26	{sfx:00}キュウリョウナイ、ピポ？{nl}ヌケルピポーッ！{sfx:FE}{end}	{sfx:00}NO WAGES, BEE-BOOP? I QUIT, BEE-BOOP!{sfx:FE}{end}
 e281.022B	b281+22B:11	仲間にしますか？{end}	Take on as an ally?{end}
 e282.00E1	b282+E1:8	{color:0B}{sub:0000}{color:0F}{end}	
-e282.00EA	b282+EA:64	{sfx:00}ピピピ・・・{nl}ユウシャドノ、マタアッタ{page}ギーゴノチカラ[F4]ヒツヨウカ？{page}{color:08}{sub:0100}{color:0F}シリングデ{nl}マタ[F4]ツイテイク・・・{sfx:FE}{end}	{sfx:00}PIPIPI... NOBLE HERO, WE MEET AGAIN{page}GIGO'S POWER REQUIRED?{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS GIGO FOLLOWS AGAIN...{sfx:FE}{end}
-e282.012B	b282+12B:109	{sfx:00}ピピピ・・・{nl}ユウシャドノカ・・・{page}ワレ[F4]ブリキニアンノ{nl}センシ[F4]ギーゴ[F4]ナリ・・・{page}ヤミノマモノ[F4]タオスタメ{nl}ユウシャト[F4]タビヲ{nl}トモニシタイ・・・{page}マイツキ{color:08}{sub:0100}{color:0F}シリングデ{nl}ツイテイク、ピピ・・・{sfx:FE}{end}	{sfx:00}PIPIPI... YOU ARE NOBLE HERO...{page}I AM GIGO, TINNIAN WARRIOR...{page}TO DEFEAT DARK FIENDS, I{nl}WISH TO JOURNEY WITH HERO...{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS A MONTH{nl}I FOLLOW, PIPI...{sfx:FE}{end}
-e282.0199	b282+199:56	{sfx:00}ピピピ・・・{nl}ギーゴ[F4]ユウシャドノノタビニ{nl}キョウリョクスル・・・{page}キュウリョウ、{nl}ムリョウナリ・・・{sfx:FE}{end}	{sfx:00}PIPIPI...{nl}GIGO WILL AID{nl}NOBLE HERO'S JOURNEY...{page}WAGES: NONE REQUIRED...{sfx:FE}{end}
-e282.01D2	b282+1D2:22	{sfx:00}ピピピ・・・{nl}ヒツヨウナイカ・・・{sfx:FE}{end}	{sfx:00}PIPIPI... NOT REQUIRED...{sfx:FE}{end}
-e282.01E9	b282+1E9:30	{sfx:00}ピピピ・・・{nl}ギーゴ[F4]ユウシャニ{nl}ツイテイク・・・{sfx:FE}{end}	{sfx:00}PIPIPI... GIGO FOLLOWS HERO...{sfx:FE}{end}
-e282.0208	b282+208:18	{sfx:00}ピピピ・・・{nl}サラバ・・・{sfx:FE}{end}	{sfx:00}PIPIPI... FAREWELL...{sfx:FE}{end}
-e282.021B	b282+21B:21	{sfx:00}ピピピ・・・{nl}マタ[F4]アオウ・・・{sfx:FE}{end}	{sfx:00}PIPIPI... UNTIL NEXT TIME...{sfx:FE}{end}
-e282.0231	b282+231:33	{sfx:00}ピピピ・・・{nl}キュウリョウギレ・・・{nl}ギーゴ[F4]サル・・・{sfx:FE}{end}	{sfx:00}PIPIPI... WAGES DEPLETED... GIGO DEPARTS...{sfx:FE}{end}
+e282.00EA	b282+EA:64	{sfx:00}ピピピ・・・{nl}ユウシャドノ、マタアッタ{page}ギーゴノチカラ[F4]ヒツヨウカ？{page}{color:08}{sub:0100}{color:0F}シリングデ{nl}マタ[F4]ツイテイク・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep...{nl}NOBLE HERO, WE MEET AGAIN.{page}GIGO'S POWER REQUIRED?{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS GIGO FOLLOWS AGAIN...{sfx:FE}{end}
+e282.012B	b282+12B:109	{sfx:00}ピピピ・・・{nl}ユウシャドノカ・・・{page}ワレ[F4]ブリキニアンノ{nl}センシ[F4]ギーゴ[F4]ナリ・・・{page}ヤミノマモノ[F4]タオスタメ{nl}ユウシャト[F4]タビヲ{nl}トモニシタイ・・・{page}マイツキ{color:08}{sub:0100}{color:0F}シリングデ{nl}ツイテイク、ピピ・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep... YOU ARE NOBLE HERO...{page}I AM GIGO, TINNIAN WARRIOR...{page}TO DEFEAT DARK FIENDS, I{nl}WISH TO JOURNEY WITH HERO...{page}FOR {color:08}{sub:0100}{color:0F} SHILLINGS A MONTH{nl}I FOLLOW, Beep-beep...{sfx:FE}{end}
+e282.0199	b282+199:56	{sfx:00}ピピピ・・・{nl}ギーゴ[F4]ユウシャドノノタビニ{nl}キョウリョクスル・・・{page}キュウリョウ、{nl}ムリョウナリ・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep...{nl}GIGO WILL AID{nl}NOBLE HERO'S JOURNEY...{page}WAGES: NONE REQUIRED...{sfx:FE}{end}
+e282.01D2	b282+1D2:22	{sfx:00}ピピピ・・・{nl}ヒツヨウナイカ・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep... NOT REQUIRED...{sfx:FE}{end}
+e282.01E9	b282+1E9:30	{sfx:00}ピピピ・・・{nl}ギーゴ[F4]ユウシャニ{nl}ツイテイク・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep... GIGO FOLLOWS HERO...{sfx:FE}{end}
+e282.0208	b282+208:18	{sfx:00}ピピピ・・・{nl}サラバ・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep... FAREWELL...{sfx:FE}{end}
+e282.021B	b282+21B:21	{sfx:00}ピピピ・・・{nl}マタ[F4]アオウ・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep... UNTIL NEXT TIME...{sfx:FE}{end}
+e282.0231	b282+231:33	{sfx:00}ピピピ・・・{nl}キュウリョウギレ・・・{nl}ギーゴ[F4]サル・・・{sfx:FE}{end}	{sfx:00}Beep-beep-beep...{nl}WAGES DEPLETED... GIGO DEPARTS...{sfx:FE}{end}
 e282.0253	b282+253:11	仲間にしますか？{end}	Take on as an ally?{end}
 e283.00E1	b283+E1:8	{color:0B}{sub:0000}{color:0F}{end}	
 e283.00EA	b283+EA:46	{sfx:00}勇者ニャ？{nl}ひさしぶりニャ・・・{page}{color:08}{sub:0100}{color:0F}シリングで{nl}またついてくニャ！{sfx:FE}{end}	{sfx:00}The Hero, meow? Long time no see, meow...{page}For {color:08}{sub:0100}{color:0F} Shillings I'll tag along again, meow!{sfx:FE}{end}
@@ -1825,14 +1825,14 @@ e296.029A	b296+29A:19	{sfx:01}それでは、{nl}さようなら・・・{sfx:FE
 e296.02AE	b296+2AE:39	{sfx:01}きゅうりょうが無いのですか？{nl}では、わたしは{nl}はずれましょう・・・{sfx:FE}{end}	{sfx:01}You have no wages? Then I shall step aside...{sfx:FE}{end}
 e296.02D6	b296+2D6:11	仲間にしますか？{end}	Take on as an ally?{end}
 e297.0089	b297+89:35	{sfx:00}どうか、{nl}このベンケーも旅の仲間に{nl}くわえてくだされ！{sfx:FE}{end}	{sfx:00}I beg you, let Benkei join{nl}you as a traveling ally!{sfx:FE}{end}
-e297.00AD	b297+AD:60	{color:0B}ベンケー{color:0F}{nl}{sfx:00}勇者殿、{nl}ワシはそろそろ{nl}シュギョウの旅に出ようと思う{page}またあおう、{nl}さらばだ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}Noble Hero, I think it's time I{nl}set out on a journey of training{page}We'll meet again. Farewell!{sfx:FE}{end}
+e297.00AD	b297+AD:60	{color:0B}ベンケー{color:0F}{nl}{sfx:00}勇者殿、{nl}ワシはそろそろ{nl}シュギョウの旅に出ようと思う{page}またあおう、{nl}さらばだ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}Noble Hero, I think it's time I{nl}set out on a journey of training.{page}We'll meet again. Farewell!{sfx:FE}{end}
 e297.00EA	b297+EA:34	{color:0B}ベンケー{color:0F}{nl}{sfx:00}また会おう、勇者殿！{nl}さらばだ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}We'll meet again, noble Hero! Farewell!{sfx:FE}{end}
 e297.010D	b297+10D:26	{color:0B}ベンケー{color:0F}{nl}{sfx:00}そうか、{nl}ザンネンじゃ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}I see. A pity, that!{sfx:FE}{end}
 e297.0128	b297+128:34	{color:0B}ベンケー{color:0F}{nl}{sfx:00}また会おう、勇者殿！{nl}さらばだ！{sfx:FE}{end}	{color:0B}Benkei{color:0F}{nl}{sfx:00}We'll meet again, noble Hero! Farewell!{sfx:FE}{end}
 e297.014B	b297+14B:25	{sfx:00}武士のめいよにかけて{nl}ともに戦おう{sfx:FE}{end}	{sfx:00}On my honor as a warrior,{nl}let us fight together{sfx:FE}{end}
 e298.0089	b298+89:24	{sfx:00}しばらくじゃが、{nl}わしも手伝おう！{sfx:FE}{end}	{sfx:00}Only for a while, mind, but I'll lend a hand too!{sfx:FE}{end}
 e298.00A2	b298+A2:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}ではサラバじゃ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Hmm, I see. Farewell then, eh...{sfx:FE}{end}
-e298.00C0	b298+C0:60	{color:0B}ウィズー{color:0F}{nl}{sfx:00}勇者殿、{nl}わしはそろそろ{nl}一人旅に出ようと思う{page}また会おう、{nl}さらばじゃ！{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Noble Hero, I think it's about{nl}time I set off traveling alone{page}We'll meet again. Farewell!{sfx:FE}{end}
+e298.00C0	b298+C0:60	{color:0B}ウィズー{color:0F}{nl}{sfx:00}勇者殿、{nl}わしはそろそろ{nl}一人旅に出ようと思う{page}また会おう、{nl}さらばじゃ！{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Noble Hero, I think it's about{nl}time I set off traveling alone.{page}We'll meet again. Farewell!{sfx:FE}{end}
 e298.00FD	b298+FD:29	{color:0B}ウィズー{color:0F}{nl}{sfx:00}そうか、{nl}たのもしいのぉ・・・{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}I see. Most reassuring, eh...{sfx:FE}{end}
 e298.011B	b298+11B:22	{color:0B}ウィズー{color:0F}{nl}{sfx:00}しょうがないのぉ{sfx:FE}{end}	{color:0B}Wizoo{color:0F}{nl}{sfx:00}Ah well, it can't be helped, eh...{sfx:FE}{end}
 e298.0132	b298+132:17	{sfx:00}ウム、{nl}よろしくたのむぞ{sfx:FE}{end}	{sfx:00}Mm, I'm counting on you{sfx:FE}{end}
@@ -1843,7 +1843,7 @@ e299.0103	b299+103:24	{color:0B}タケル{color:0F}{nl}{sfx:00}また勝負し�
 e299.011C	b299+11C:22	{color:0B}タケル{color:0F}{nl}{sfx:00}じゃあ、またな！！{sfx:FE}{end}	{color:0B}Takeru{color:0F}{nl}{sfx:00}Well, see ya!!{sfx:FE}{end}
 e299.0133	b299+133:15	{sfx:00}ともに{nl}戦おうな！{sfx:FE}{end}	{sfx:00}Let's fight together!{sfx:FE}{end}
 e300.014B	b300+14B:8	{color:07}{sub:0000}{color:0F}{end}	
-e300.0154	b300+154:34	{sfx:01}わ〜い、また会えたね{page}またいっしょに{nl}冒険しようよ！{sfx:FE}{end}	{sfx:01}Yaaay, we meet again{page}Let's go on another adventure together!{sfx:FE}{end}
+e300.0154	b300+154:34	{sfx:01}わ〜い、また会えたね{page}またいっしょに{nl}冒険しようよ！{sfx:FE}{end}	{sfx:01}Yaaay, we meet again!{page}Let's go on another adventure together!{sfx:FE}{end}
 e300.0177	b300+177:41	{sfx:01}冒険してるの？{wait}キティ、{nl}冒険だいすきっ！{nl}あたしもいきたいっ！{sfx:FE}{end}	{sfx:01}Are you on an adventure?{wait}Kitty LOVES adventures! I wanna go too!{sfx:FE}{end}
 e300.01A1	b300+1A1:5	いいよ！{end}	Sure!{end}
 e300.01A7	b300+1A7:13	 君にはまだムリだよ！{end}	 Not yet, kiddo!{end}

@@ -310,3 +310,4 @@ fixed, or `waived: reason`. The release script refuses to run while any line is 
 - [x] story 04 e233.03E8 / e233.04F0 / e233.0641 - same JP as their e230 twins, different English; matched to e230 (fixed)
 - [x] story 05 e237.01BD - "Lostia Kingdom Sing-Off" vs e230.0F2A "Lostia National Song Contest"; matched (fixed)
 - [x] story 05 e237.067A - dance party "Shall I enter?"; "Shall I join in?" as e230.1313 (fixed; same-JP e237.0201 follows)
+- [x] story 11/13/14 e282.00EA, e297.00AD, e298.00C0, e300.0154, d726.0D01, 01A4C2 - sentence cut by a page break with no stop ("AGAINGIGO'S", "foesLet"); stop added (fixed, work/tl/story4.fix.tsv)
