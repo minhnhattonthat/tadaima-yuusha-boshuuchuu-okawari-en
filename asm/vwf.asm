@@ -1270,6 +1270,12 @@ name_cache:
     lda 6,s             ; 1-2 X, 3 P, 4-5 rts, 6-8 small_map's return into the wrapper, 9-11 the wrapper's return
     cmp.w #$1E8F
     beq +
+    cmp.w #$6ECA        ; list rows ($C2:6EC7)
+    bne ++
+    jsr list_slot
+    bcc ++
+    brl .out
+++
     brl .other
 +
     lda 9,s
@@ -1367,6 +1373,67 @@ boot_block4:
     pla
     plp
     rtl
+
+; List rows ($C2:6EC7, 8 cells a row: shop and item lists, up to 5 rows on screen): a row's name goes into its own 8 tiles from !POOL
+; up, picked by the row's tilemap address ($11EF), so a page flip redraws each row over itself. Was the ring: 5 names of up to 8 plus
+; the panels' names didn't fit, it wrapped and a row went over another (player bug report: shop names wrong after left/right page flips,
+; "Wooden Shield" -> "or den Shield"). Rows are $40 or $60 words apart: (address / $20) mod 5 differs for any 5 rows in a row unless
+; the step is a multiple of 5. Panels pack down from !POOLB (hud_place); a panel entry under the slot is dropped, so it redraws into new
+; tiles. A16 X16 in, DB:($0E),Y = the F0. C set: CFIRST = the slot; C clear: image over 8 tiles, the ring as before.
+list_slot:
+    phy
+    iny
+    lda ($0E),y
+    ply
+    jsr need
+    sep #$20
+    lda.l !NEED
+    cmp.b #9
+    rep #$20
+    bcs .no
+    lda.l $7E11EF
+    lsr
+    lsr
+    lsr
+    lsr
+    lsr
+    sta.l $004204       ; hardware divider: 16 / 8 bits, 16 cycles
+    sep #$20
+    lda.b #5
+    sta.l $004206
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    lda.l $004216       ; remainder
+    asl
+    asl
+    asl
+    clc
+    adc.b #!POOL
+    sta.l !CFIRST
+    ldx.w #(!PANELN-1)*4
+.drop:
+    jsr protect_meets
+    bcc +
+    lda.b #$00
+    sta.l !PANEL+2,x
++
+    dex
+    dex
+    dex
+    dex
+    bpl .drop
+    rep #$20
+    sec
+    rts
+.no:
+    clc
+    rts
 
 ; A16 = far number -> !NEED = its image's tile count (stays !ROOM if out of range). A, X, Y kept.
 need:
