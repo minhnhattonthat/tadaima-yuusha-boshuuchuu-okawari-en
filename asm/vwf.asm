@@ -83,6 +83,15 @@ org $C55585
     dw $01F1
 org $C5558B
     dw $F400
+; The header shows strip cells 0-1 (勇者) in a fixed rect and cells 2.. in a rect as wide as the name's non-F4 bytes, right-aligned to them:
+; a far name (F0 lo hi F4 F4) gave 3, a gap after cell 1. VWF packs "Hero " + name, so always show 5 cells; header_strip blanks the
+; 7 cells and uploads all of them (the original drew every pad as a cell; unwritten ones showed stale VRAM after the name)
+org $C55665
+    db $80              ; bne -> bra: name width 5
+org $C555C1
+    jsl header_strip
+org $C2B67A
+    jsl name_strip      ; same stale cells after a hero's name in the status box and equip header
 
 ; status box digits ($C2:B7F0 money loop, $C2:B825 years, $C2:B838 months) moved to the English layout (tools/rects.py STATUS_CELLS)
 org $C2B7F4
@@ -830,6 +839,49 @@ fixed_check:
 +
     sta.l !FIXED
     rts
+
+; $C21AA4 (strip, then DMA what it wrote) for a slot of N cells the screen always shows: the N cells blanked first and all N sent.
+; VWF writes fewer cells than the original's one per byte, and the rest showed stale VRAM. X = cells (bank $7E), Y = string,
+; $00 = VRAM word, $02 = colours, as the caller set them.
+header_strip:           ; $C5:55C1 shop/inn header: 勇者 + 5 name cells
+    lda.w #$0380
+    bra strip_n
+name_strip:             ; $C2:B67A status box / equip header: a hero's 5 name cells
+    lda.w #$0280
+strip_n:
+    phx
+    clc
+    adc 1,s
+    pha                 ; end of the cells, start
+.clear:
+    lda.w #$0000
+    sta.l $7E0000,x
+    inx
+    inx
+    txa
+    cmp 1,s
+    bne .clear
+    lda 3,s
+    tax
+    lda $00
+    pha
+    phx                 ; as the wrapper: VRAM, start
+    jsl $C21AC4
+    plx
+    stx $00
+    lda 3,s             ; the end, not strip's X
+    sec
+    sbc $00
+    tcd
+    tya
+    ply                 ; VRAM
+    sta 3,s             ; strip's count over the start
+    pla                 ; drop the end
+    lda.w #$007E
+    jsl $829FDC
+    jsl $80E113
+    ply
+    rtl
 
 ; $C2A63F: 5 cells of label, then 5 of name, read one glyph at a time. Both go through strip so English draws.
 top_name:
