@@ -6,5 +6,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 lint = subprocess.call([sys.executable, "-X", "utf8", "tools/batches.py", "check"], cwd=ROOT)
-tests = subprocess.call([sys.executable, "-X", "utf8", "-m", "pytest", "-q", "tests"], cwd=ROOT)
+lint = subprocess.call([sys.executable, "-X", "utf8", "tools/runon.py"], cwd=ROOT) or lint
+tests =subprocess.call([sys.executable, "-X", "utf8", "-m", "pytest", "-q", "tests"], cwd=ROOT)
 sys.exit(lint or tests)

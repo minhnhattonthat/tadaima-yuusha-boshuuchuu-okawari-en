@@ -152,7 +152,7 @@ e230.1067	b230+1067:57	ピーピー{nl}いいぞぉ〜！{wait}勇者の歌声�
 e230.10A1	b230+10A1:56	BOO！BOO！{nl}ひっこめ！[F4]ヘタクソ！{wait}なんかウケが悪いみたい・・・{nl}200ポイントの{nl}NVPをうしなった{end}	BOO! BOO! Get off![F4]You stink!{wait}It didn't go over too well...{nl}You lost 200 NVP points.{end}
 e230.10DA	b230+10DA:21	あらぁ、じしんがないのね。{nl}ガッカリ〜！{end}	Oh my, no confidence, dear?{nl}How disappointiiing!{end}
 e230.1196	b230+1196:58	めぐまれない人に{nl}あいの手を・・・{nl}ロスティアたすけあい募金です{page}{sub:0000}シリング{nl}きふしてくださいますか？{end}	A helping hand for those less fortunate...{nl}It's the Lostia Charity Drive.{page}Would you donate {sub:0000} Shillings?{end}
-e230.11D1	b230+11D1:20	ありがとうございます。{nl}{speed:10}・・・・{speed:FF}	Thank you very much. {speed:10}......{speed:FF}
+e230.11D1	b230+11D1:20	ありがとうございます。{nl}{speed:10}・・・・{speed:FF}	Thank you very much.{nl}{speed:10}......{speed:FF}
 e230.11E7	b230+11E7:54	あ、あなたは勇者{sub:0000}様！{wait}気づかれちゃった。{nl}てれるなぁ。{page}{sub:0100}ポイントの{nl}NVPをかくとく！{end}	Oh, you're Hero {sub:0000}!{wait}They recognized me. Aw, shucks.{page}You earned {sub:0100} NVP points!{end}
 e230.121E	b230+121E:43	勇者だとは{nl}気づいてもらえなかった。{page}でも、いいことをしたので{nl}きもちいいなぁ{end}	They didn't notice I was a Hero.{page}But doing a good deed sure feels nice~{end}
 e230.124A	b230+124A:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
@@ -489,7 +489,7 @@ e237.0304	b237+304:65	{sfx:00}ピーピー{nl}いいぞぉ〜！{sfx:FE}{wait}�
 e237.0346	b237+346:64	{sfx:00}BOO！BOO！{nl}ひっこめ！[F4]ヘタクソ！{sfx:FE}{wait}なんかウケが悪いみたい・・・{nl}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをうしなった{end}	{sfx:00}BOO! BOO! Get off![F4]You stink!{sfx:FE}{wait}It didn't go over too well...{nl}You lost {color:08}{sub:0000}{color:0F} NVP points.{end}
 e237.0387	b237+387:25	{sfx:01}あらぁ、じしんがないのね。{nl}ガッカリ〜！{sfx:FE}{end}	{sfx:01}Oh my, no confidence, dear?{nl}How disappointiiing!{sfx:FE}{end}
 e237.0484	b237+484:66	{sfx:01}めぐまれない人に{nl}あいの手を・・・{nl}ロスティアたすけあい募金です{page}{color:08}{sub:0000}{color:0F}シリング{nl}きふしてくださいますか？{sfx:FE}{end}	{sfx:01}A helping hand for those less fortunate...{nl}It's the Lostia Charity Drive.{page}Would you donate {color:08}{sub:0000}{color:0F} Shillings?{sfx:FE}{end}
-e237.04C7	b237+4C7:24	{sfx:01}ありがとうございます。{sfx:FE}{nl}{speed:10}・・・・{speed:FF}	{sfx:01}Thank you very much.{sfx:FE} {speed:10}......{speed:FF}
+e237.04C7	b237+4C7:24	{sfx:01}ありがとうございます。{sfx:FE}{nl}{speed:10}・・・・{speed:FF}	{sfx:01}Thank you very much.{sfx:FE}{nl}{speed:10}......{speed:FF}
 e237.04E1	b237+4E1:62	{sfx:01}あ、あなたは勇者{sub:0000}様！{sfx:FE}{wait}気づかれちゃった。{nl}てれるなぁ。{page}{color:08}{sub:0100}{color:0F}ポイントの{nl}NVPをかくとく！{end}	{sfx:01}Oh, you're Hero {sub:0000}!{sfx:FE}{wait}They recognized me. Aw, shucks.{page}You earned {color:08}{sub:0100}{color:0F} NVP points!{end}
 e237.0520	b237+520:45	勇者だとは{nl}気づいてもらえなかった。{page}でも、いいことをしたので{nl}気持ちいいなぁ{end}	They didn't notice I was a Hero.{page}But doing a good deed sure feels nice~{end}
 e237.054E	b237+54E:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
@@ -615,7 +615,7 @@ e240.0222	b240+222:35	やった、{nl}あんしょうをぬけだした！{page}
 e240.0246	b240+246:9	ズズ〜ンン・・・{end}	KA-THUUUD...{end}
 e240.0250	b240+250:33	なんと！{nl}船があんしょうに{nl}のりあげてしまった！{wait}1回やすみ{end}	Oh no!{nl}The ship has run aground{nl}on the reef!{wait}Lose 1 turn{end}
 e240.02BB	b240+2BB:64	砂漠の中に、{nl}小さなみどりにつつまれた{nl}オアシスを見つけた・・・{page}やあ〜{nl}天国、天国・・・{wait}{speed:10}・・・・・{speed:FF}	In the middle of the desert, we found{nl}an oasis wrapped in a little greenery...{page}Ahhh~ Paradise, pure paradise...{wait}{speed:10}.....{speed:FF}
-e240.02FD	b240+2FD:20	ホホホ、{nl}良いホネやすめができたぞ！{end}	Ho ho ho, that was a fine rest for my bones!{end}
+e240.02FD	b240+2FD:20	ホホホ、{nl}良いホネやすめができたぞ！{end}	Ho ho ho,{nl}that was a fine rest for my bones!{end}
 e240.0312	b240+312:36	あまりイゴコチが良いので{nl}長くいすぎてしまった・・・{wait}1回やすみ{end}	It was so cozy we stayed too long...{wait}Lose 1 turn{end}
 e241.009F	b241+9F:21	さいきん{nl}カゼがはやっているらしい・・・{end}	I hear a cold has been going around lately...{end}
 e241.00B5	b241+B5:20	けんこうには{nl}気をつけなくちゃなぁ〜{end}	Gotta take care of my health~{end}
