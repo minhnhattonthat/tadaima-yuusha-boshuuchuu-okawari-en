@@ -38,6 +38,8 @@ An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So an
 | `$C21AC4` | whole routine | strip renderer |
 | `$C2D504`, `$C2D50A`, `$C2D510` | immediates `F7 8C`, `F7 42`, `F7 C7` (危険度) | `F1 00`, `00 F4`, `F4 F4`: far string 0 |
 | `$C55585`, `$C5558B` | immediates `F7 00`, `F7 01` (勇者) | `F1 01`, `00 F4`: far string 1 |
+| `$C55665` | `BNE` (name width = non-F4 name bytes) | `BRA`: always 5. The header shows strip cells 0-1 in a fixed rect, cells 2.. right-aligned by that width: a far name (`F0 lo hi F4 F4`) gave 3 and a gap after "Hero G" |
+| `$C555C1`, `$C2B67A` | `JSL $C21AA4` (strip, DMA the cells written) | `header_strip` (7 cells), `name_strip` (5, status box / equip header names): `strip_n` blanks the slot and sends all of it. VWF writes fewer cells than the original's one per byte; the slot's rest showed stale VRAM (looked like blue/red item icons after the name) |
 | `$C2A6DF` | `INC A / ORA #$FF00 / STA $113E` (HUD bar rank digit + 位 tile `$FF`) | `JSL rank_text` + 3 NOP: "No.1" in cells 12-15 of rect `$1111` |
 
 `far_read` also runs `title_check` on every byte read: while the reader is inside `$C4:C855-C86A` (THE END, CONFIG MODE, raw rows left Japanese-side = the original English, D19) it sets `!FIXED` and `vwf_char` sends each glyph down the old 16 px path. `rects.DOT_MARK`: the name entry draws a 1x1 rect `$85:9D76` (`$C1:4AB8`) holding the ゛ of もどる; blanked.

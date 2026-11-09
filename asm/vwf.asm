@@ -68,6 +68,11 @@ org $C2BD6C
     dw $190E
 org $C2BD72
     dw $000C
+; name entry birthday 01月01日: 月 and 日 are 1x1 rects ($C1:4471, $C1:4487, label-sheet tiles F9, 25): "01/01"
+org $C59516
+    db $2B              ; ／
+org $C59519
+    db $00
 ; FE {color:09}危険度{color:07}★★★ after a place record in the map-town box is built from immediates ($C2:D4F7): 危険度 (F7 8C F7 42 F7 C7)
 ; becomes F1 00 00 F4 F4 F4, a call to far string 0 (insert.CODE_TEXT, always numbered first), the pads skipped
 org $C2D504
