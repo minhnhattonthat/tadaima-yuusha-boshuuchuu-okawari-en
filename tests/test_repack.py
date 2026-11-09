@@ -14,6 +14,15 @@ ROM = next((ROOT / "rom").glob("*.sfc"), None)
 pytestmark = pytest.mark.skipif(ROM is None, reason="no dump in rom/")
 
 
+def test_trim_keeps_7f_fe00():
+    rom = ROM.read_bytes()
+    out = repack.repack(rom, trim=repack.TRIM)
+    for i, n in repack.TRIM.items():
+        src, size = next((s, k) for j, s, k, _, _ in unpack.entries(rom) if j == i)
+        assert dict((j, k) for j, _, k, _, _ in unpack.entries(out))[i] == n
+        assert unpack.load(out, src, n)[0] == unpack.load(rom, src, size)[0][:n]
+
+
 def test_grown_block_moves():
     rom = ROM.read_bytes()
     i, src, size = next((i, s, n) for i, s, n, _, _ in unpack.entries(rom) if i == 603)

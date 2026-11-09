@@ -35,7 +35,7 @@ def build(out, english=None):
         built = repack.repack(rom)
     else:
         image, edits = insert.apply(rom, english)
-        built = repack.repack(rom, edits, image)
+        built = repack.repack(rom, edits, image, repack.TRIM)
     out.parent.mkdir(exist_ok=True)
     out.unlink(missing_ok=True)  # a failed assemble must not leave an old ROM to test
     out.write_bytes(built)

@@ -178,6 +178,9 @@ org $C2A7E7
     jsl date_text
     db $80, $C2A825-$C2A7ED   ; bra $C2A825 (asar's bra took only the low byte of this target)
 
+org $C22726             ; JSL $828024: block 4 at boot, then the zeros it no longer holds (boot_block4)
+    jsl boot_block4
+
 org $C0FFD7
     db $0C              ; 4 MB
 
@@ -1344,6 +1347,26 @@ name_cache:
     jsr protect
     sta.l !CFIRST
     bra .out
+
+; $C2:2726, the boot load of block 4 (A = 4). Block 4 is built without its 512 zero bytes (repack.TRIM) so the mid-game load
+; ($C2:2706) no longer wipes our state at $7F:FE00-FFFF; at boot those zeros were its init (name entry showed junk without them).
+boot_block4:
+    jsl $828024
+    php
+    rep #$30
+    pha
+    phx
+    ldx.w #$01FE
+-
+    lda.w #$0000
+    sta.l $7FFE00,x
+    dex
+    dex
+    bpl -
+    plx
+    pla
+    plp
+    rtl
 
 ; A16 = far number -> !NEED = its image's tile count (stays !ROOM if out of range). A, X, Y kept.
 need:

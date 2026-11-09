@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import extract  # noqa: E402
 import insert  # noqa: E402
 import rects  # noqa: E402
+import repack  # noqa: E402
 import romdiff  # noqa: E402
 import unpack  # noqa: E402
 
@@ -73,6 +74,8 @@ def ranges(rom):
         used = unpack.load(rom, src, size)[1]
         out.append((off, off + (used or size) - 1, f"block {i}"))
         out.append((unpack.TABLE + i * 8, unpack.TABLE + i * 8 + 2, f"block {i} src (repack.MOVED)"))
+        if i in repack.TRIM:
+            out.append((unpack.TABLE + i * 8 + 3, unpack.TABLE + i * 8 + 4, f"block {i} size (repack.TRIM)"))
     asm = asm_bytes()
     # expanded banks: asm $E0:0000-7FFF, pointer table $21 and image table $22 lower halves (asserted in insert.Far.number),
     # far strings upper halves of $21+, name images lower halves of $23+ (insert.images)

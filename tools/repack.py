@@ -8,13 +8,18 @@ import unpack  # noqa: E402
 
 BLOCKS = 0x060010  # first block
 MOVED = 0x3F0000  # an edited block whose stream outgrew its slot moves here (last expanded bank, unused), its table src repointed
+# block 4 unpacks to 7F:E000-FFFF and ends in 512 zero bytes: they wiped the VWF state at 7F:FE00-FFFF (panel names, cache) on
+# a screen load, so a hero panel drawn once lost its protection (player bug report, docs/re/vwf.md). Built without them.
+TRIM = {4: 0x1E00}
 
 
-def repack(rom, edits=None, out=None):
+def repack(rom, edits=None, out=None, trim=None):
     """Blanks every block first, so a test against the dump proves the rebuild. Bytes the table doesn't reach stay:
     the five gaps between blocks are not padding (docs/re/memory.md). `edits` {block: new bytes} keep their size; a stream
-    that outgrew its slot moves to MOVED (within one bank) and the resource table's src points there."""
+    that outgrew its slot moves to MOVED (within one bank) and the resource table's src points there. `trim` {block: size}
+    cuts a block's zero tail, its table size set to match."""
     edits = edits or {}
+    trim = trim or {}
     out = bytearray(rom if out is None else out)
     streams = []
     moved = MOVED
@@ -24,6 +29,14 @@ def repack(rom, edits=None, out=None):
         off = src & 0x3FFFFF
         end = off + (used or size)
         out[off:end] = b"\xff" * (end - off)
+        if i in trim:
+            n = trim[i]
+            assert used and i not in edits and not any(data[n:]), i
+            stream = lz.compress(data[:n], dist_code)
+            assert len(stream) <= end - off, i
+            out[unpack.TABLE + i * 8 + 3:unpack.TABLE + i * 8 + 5] = n.to_bytes(2, "little")
+            streams.append((off, stream))
+            continue
         if i in edits:
             assert len(edits[i]) == size, i
             stream = lz.compress(edits[i], dist_code) if used else edits[i]
