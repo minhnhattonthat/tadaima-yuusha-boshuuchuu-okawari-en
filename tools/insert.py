@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import extract  # noqa: E402
 import font  # noqa: E402
 import gfx  # noqa: E402
+import logo  # noqa: E402
 import rects  # noqa: E402
 import unpack  # noqa: E402
 from tbl import Table  # noqa: E402
@@ -130,9 +131,11 @@ def apply(rom, english):
     rects.apply(out, english, far)
     blocks[1] = bytearray(gfx.race(gfx.panel(font.small_sheet(bytes(blocks[1])))))
     blocks[0], blocks[2], blocks[794] = gfx.year(bytes(blocks[0])), gfx.buttons(bytes(blocks[2])), gfx.title(bytes(blocks[794]))
+    blocks[793], blocks[794] = logo.bg(bytes(blocks[793]), bytes(blocks[794]), bytes(blocks[795]))  # 794: tiles below gfx.title's
+    blocks[789] = logo.balls(bytes(blocks[789]))
     shown |= {number[i]: (english[i], int(loc.split(":")[1])) for i, loc, _ in rows if i in english and i.startswith(NAMES) and number[i] not in shown}
     images(out, far.count, shown)
-    edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"0", "1", "2", "794"}
+    edited = {LOC.fullmatch(loc)[1] for i, loc, _ in rows if i in english} | {"0", "1", "2", "789", "793", "794"}
     blocks = {b: bytes(d) for b, d in blocks.items() if str(b) in edited}
     print(f"far strings {far.count}, end {far.pos:06X}")
     (ROOT / "build/far.tsv").write_text("".join(f"{n}\t{i}\n" for i, n in [*number.items(), *extra]), encoding="utf-8")  # for tools/windows.py

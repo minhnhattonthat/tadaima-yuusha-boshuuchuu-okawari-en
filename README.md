@@ -15,7 +15,7 @@ helps most.
 |---|---|
 | Story events, quests, recruits, bosses, endings | Translated |
 | Menus, items, equipment, spells, monsters, shops, system messages | Translated |
-| Graphics with text (command buttons, title menu, chapter cards, status labels) | Translated; the title logo stays Japanese (no official English logo) |
+| Graphics with text (command buttons, title menu, chapter cards, status labels) | Translated, title logo included ("Now Heroes Wanted More") |
 | Name entry | Translated (English letters) |
 | Staff credits, THE END, CONFIG MODE | English in the original |
 
