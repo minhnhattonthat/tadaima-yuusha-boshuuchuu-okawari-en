@@ -146,7 +146,7 @@ def rebuild(rom, p, en):
         grid[y][a:a + len(t)] = t
     width = max(max(len(r) for r in grid), MIN_W.get(p, 0))
     for r in grid:
-        r.extend([r[-1] if r[-1] in BLANK else fill] * (width - len(r)))
+        r.extend([fill if r[-1] in TILE else r[-1]] * (width - len(r)))  # a border row (save slot place name: top line E2) goes on
     return width, h, bytes(v for r in grid for v in r)
 
 
