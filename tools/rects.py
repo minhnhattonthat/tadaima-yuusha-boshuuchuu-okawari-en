@@ -153,6 +153,7 @@ def apply(out, english, far):
     if f"rect{RECTS[0]:06X}" in english:
         grid(out, far)
     cells(out, english)
+    maps(out)
     for p in JOB_MAGE:  # 魔術士: the 士 cell is 戦士's, "ght" of Knight in English; centred on blanks like the 2-cell jobs
         assert out[p:p + 6] in (bytes([0xDC, 0xDD, 0xE0, 0xE1, 0xC8, 0xC9]), bytes([0xDE, 0xDF, 0xE2, 0xE3, 0xCA, 0xCB])), hex(p)
         out[p:p + 6] = bytes([0xEC, *out[p:p + 4], 0xEC])
@@ -185,6 +186,25 @@ TITLE = (0x0594C6, 0x0594D8, 0x0594EA)  # the page's name: 4 big cells each of t
 # Glyph set ひらがなカタカナローマ字 (12 cells in the old 16 px font, drawn one per cell: asm fixed_check) the titles pick from.
 # The tabs L and R name the pages, so every page's title reads NAME. Codes 0A-23 are the old font's capitals.
 TITLE_SET, TITLE_GLYPHS = 0x05947C, bytes([0x17, 0x0A, 0x16, 0x0E] * 3 + [0xF4, 0xFF])
+
+
+# Party mode map choice: glyph set 勇者のたびだちしれん道終りなき伝説 (17 old 16 px cells, asm fixed_check) + three tilemaps W 2 picking
+# glyph k as tiles 4k..4k+3, 7 / 5 / 6 cells wide (sizes kept: no reader found for the tilemaps). Old capitals only.
+MAPS_SET, MAPS_RECTS, MAPS = 0x05AAD4, 0x05AAEC, ("JOURNEY", "TRIAL", "LEGEND")  # 勇者のたびだち / しれんの道 / 終りなき伝説
+
+
+def maps(out):
+    assert out[MAPS_RECTS - 1] == 0xFF and out[MAPS_RECTS:MAPS_RECTS + 2] == b"\x0e\x02"
+    glyphs = sorted(set("".join(MAPS)))
+    assert len(glyphs) <= 17
+    out[MAPS_SET:MAPS_SET + len(glyphs) + 1] = bytes([0x0A + ord(c) - 65 for c in glyphs] + [0xFF])  # kanji are 2 bytes: set is 24 with FF
+    p = MAPS_RECTS
+    for name in MAPS:
+        w = out[p] // 2
+        assert len(name) == w, (name, w)
+        k = [glyphs.index(c) * 4 for c in name]
+        out[p + 2:p + 2 + 4 * w] = bytes([t + d for t in k for d in (0, 1)] + [t + d for t in k for d in (2, 3)])
+        p += 2 + 4 * w
 
 
 def grid_chars(base, first_code):

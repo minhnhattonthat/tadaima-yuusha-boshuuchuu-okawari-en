@@ -69,6 +69,7 @@ def ranges(rom):
     out += [(a, a, "name-entry cursor x") for a in rects.CURSOR]
     out.append((rects.DOT_MARK, rects.DOT_MARK, "name-entry dakuten mark"))
     out += [(p, p + 5, "Mage job rect row") for p in rects.JOB_MAGE]
+    out.append((rects.MAPS_SET, rects.MAPS_RECTS + 78 - 1, "party mode map names: glyph set + 3 tilemaps"))
     out.append((rects.TITLE_SET, rects.TITLE_SET + len(rects.TITLE_GLYPHS) - 1, "name-entry title glyph set"))
     for i, src, size, _, _ in unpack.entries(rom):
         off = src & 0x3FFFFF

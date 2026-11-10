@@ -35,6 +35,10 @@ if scene.tile then  -- first turn menu of the map: act as if the player just sto
     end
   end)
 end
+if scene.poke_at then  -- { pc, addr, value }: write RAM each time pc runs (for screens that don't pass the new-game exit)
+  local pc, a, v = table.unpack(scene.poke_at)
+  L.on_exec(pc, pc, function() emu.write(a, v, wram) end)
+end
 if scene.boot_pad then
   L.on_exec(0xC10000, 0xC10000, function() emu.write(0x015F, scene.boot_pad, wram) end)
 end
@@ -57,5 +61,5 @@ L.on_frame(function(f)
   for _, r in ipairs(scene.route or {}) do
     if after_frame and f - after_frame == r[1] then L.press(r[2], r[3] or 4) end
   end
-  if scene.mash and not after_frame and f % scene.mash == 0 and L.route_done() then L.press("a", 4) end
+  if scene.mash and not after_frame and f < (scene.mash_end or math.huge) and f % scene.mash == 0 and L.route_done() then L.press("a", 4) end
 end)
