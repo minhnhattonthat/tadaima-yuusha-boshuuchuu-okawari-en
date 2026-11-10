@@ -127,7 +127,7 @@ e230.0C0A	b230+C0A:48	えーと、{nl}えーと・・・{page}あ、流れちゃ
 e230.0C91	b230+C91:71	勇者様、いつもごくろうさま。{nl}よかったら、これのんでください{wait}おサケをプレゼントされた。{nl}やった〜！[F4]今夜はえんかいだ！{nl}・・・・{end}	Hero, thanks for all you do.{nl}Please, have a drink on me{wait}You were given some sake.{nl}Yay![F4]Party tonight! ......{end}
 e230.0CD9	b230+CD9:28	おおっ、{nl}なんだか血のめぐりが{nl}よくなったようだぞ！{end}	Ooh, I feel like my blood is flowing better!{end}
 e230.0CF6	b230+CF6:22	う〜、{nl}のみすぎた〜、{nl}気持ち悪い〜{end}	Ugh, I drank too much~, I feel sick~{end}
-e230.0D52	b230+D52:76	じゃじゃーん、{nl}でたのだ{wait}妖怪べろりんQがあらわれた{wait}サイコロころがす{nl}良い子のみんな、{nl}べろりんQと勝負なのだ{page}負けたらオシオキなのだ{end}	Ta-daaa, here I am, yes indeedy!{wait}The yokai Berorin Q appeared!{wait}All you good kids who roll dice, it's a{nl}match against Berorin Q, yes indeedy!{page}Lose and you get punished, yes indeedy!{end}
+e230.0D52	b230+D52:76	じゃじゃーん、{nl}でたのだ{wait}妖怪べろりんQがあらわれた{wait}サイコロころがす{nl}良い子のみんな、{nl}べろりんQと勝負なのだ{page}負けたらオシオキなのだ{end}	Ta-daaa, here I am, yes indeedy!{wait}The yokai Berorin Q appeared!{wait}All you good kids{nl}who roll dice, it's a match{nl}against Berorin Q, yes indeedy!{page}Lose and you get punished, yes indeedy!{end}
 e230.0D9F	b230+D9F:12	{sub:0000}なのだ{page}ふるのだ{end}	It's {sub:0000}, yes indeedy!{page}Now you roll, yes indeedy!{end}
 e230.0DAC	b230+DAC:27	負けたのだ{page}ど〜こか〜、とお〜くへ{nl}いき〜た〜い♪{end}	I lost, yes indeedy!{page}Some-where far, far a-way{nl}I want to gooo~[D0]{end}
 e230.0DC8	b230+DC8:19	勝ったのだ{nl}い〜ざ〜{nl}さら〜ば〜♪{end}	I won, yes indeedy! And so-o, fare-weeell~[D0]{end}
@@ -325,7 +325,7 @@ e233.0AFB	b233+AFB:14	{sfx:00}な、{page}なだれだぁ！{sfx:FE}{end}	{sfx:0
 e233.0B0A	b233+B0A:14	{sfx:01}な、{page}なだれだぁ！{sfx:FE}{end}	{sfx:01}A-{page}AVALANCHE!{sfx:FE}{end}
 e233.0B19	b233+B19:12	なだれにまきこまれて、{end}	Caught in the avalanche,{end}
 e234.0061	b234+61:17	{sfx:00}じゃじゃーん、{nl}でたのだ{sfx:FE}{end}	{sfx:00}Ta-daaa, here I am, yes indeedy!{sfx:FE}{end}
-e234.0073	b234+73:67	妖怪べろりんQがあらわれた{wait}{sfx:00}サイコロころがす{nl}良い子のみんな、{nl}べろりんQと勝負なのだ{page}負けたらオシオキなのだ{sfx:FE}{end}	The yokai Berorin Q appeared!{wait}{sfx:00}All you good kids who roll dice, it's a{nl}match against Berorin Q, yes indeedy!{page}Lose and you get punished, yes indeedy!{sfx:FE}{end}
+e234.0073	b234+73:67	妖怪べろりんQがあらわれた{wait}{sfx:00}サイコロころがす{nl}良い子のみんな、{nl}べろりんQと勝負なのだ{page}負けたらオシオキなのだ{sfx:FE}{end}	The yokai Berorin Q appeared!{wait}{sfx:00}All you good kids{nl}who roll dice, it's a match{nl}against Berorin Q, yes indeedy!{page}Lose and you get punished, yes indeedy!{sfx:FE}{end}
 e234.00B7	b234+B7:16	{sfx:00}{sub:0000}なのだ{page}ふるのだ{sfx:FE}{end}	{sfx:00}It's {sub:0000}, yes indeedy!{page}Now roll, yes indeedy!{sfx:FE}{end}
 e234.00C8	b234+C8:37	{sfx:00}べろりんQの負けなのだ{page}ど〜こか〜、とお〜くへ{nl}い〜くの〜だ♪{sfx:FE}{end}	{sfx:00}Berorin Q loses, yes indeedy!{page}Off I go, faaar, faaar awaaay I gooo~[D0]{sfx:FE}{end}
 e234.00EE	b234+EE:24	{sfx:00}べろりんQの勝ちなのだ{nl}さらばなのだ{sfx:FE}{end}	{sfx:00}Berorin Q wins, yes indeedy!{nl}Farewell, yes indeedy!{sfx:FE}{end}
