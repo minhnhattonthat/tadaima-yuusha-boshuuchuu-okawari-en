@@ -10,10 +10,9 @@ Translated:
   guide text, and the endings.
 - Menus, items, equipment, spells, monster and place names, shops and inns,
   battle and system messages, save/load and name entry.
-- Graphics text: the command buttons, title menu, chapter cards and status
-  labels.
-- Left in Japanese: the title logo (it has no official English version).
-  The staff credits, THE END and CONFIG MODE are English in the original.
+- Graphics text: the title logo, command buttons, title menu, chapter cards
+  and status labels.
+- The staff credits, THE END and CONFIG MODE are English in the original.
 
 The Japanese font is replaced by a variable-width English font.
 
