@@ -123,6 +123,33 @@ org $C2B67A
 ; both from col 6; the gender glyph moves from col 12 to 13 to make room
 org $C2B42A
     dw $112E            ; ♂/♀: row 1, col 13
+
+; "Shillings" in full (user, D21). Recruit box: 14 cells can't hold "Pay 999 Shillings", so "Pay" goes up to the blank row 6 and
+; row 7 is the pay (digits cols 1-3, were 6-8: $C2:B3F5 STX / STA) + "Shillings" from col 5. Overrides label.tsv's Pay / Sh here.
+org $C2B3F6
+    dw $1176
+org $C2B3F9
+    dw $1177
+org $C0A130
+    db $00,$1A,$30,$48                                              ; row 6: Pay
+org $C0A13E
+    db $00,$00,$00,$00,$26,$1D,$37,$38,$3B,$3B,$38,$3D,$36,$42      ; row 7: digits, Shillings
+; Salary box ($C2:BE68 MVN of rect $C4:B871, 19x2, digits at row 1 col 11; ally status page, bottom-left panel, 19 cells wide):
+; "Salary/mo Shillings" + 4 digits needs 21, so Salary/mo goes up to row 0 and row 1 is the digits (cols 1-4) + Shillings from col 6
+org $C2BE84
+    dw $1113+19+1
+org $C2BE8A
+    dw $1113+19+3
+org $C4B873
+    db $1D,$30,$3B,$30,$41,$48,$2B,$3C,$3E,$26,$26,$26,$26,$26,$26,$26,$26,$26,$00
+    db $26,$00,$00,$00,$00,$26,$1D,$37,$38,$3B,$3B,$38,$3D,$36,$42,$26,$26,$26,$26
+; Shop/inn money box ($C5:56FC copies rect $C4:99DB, 10x2, to $1111, then the 5 digits $0EDE into row 1): shop_money builds a
+; 14x2 box at col 1 (was col 3; 14 = the panel's inner width), digits left-aligned + space + "Shillings"
+org $C556FC
+    jsl shop_money
+    bra $C5571D
+org $C55726
+    dw $39E1
 ; battle result box ($C3:38D9): each row is 6 digit cells + a 5-byte label copied from $81:8474/8479/847E into $1A2F/4F/6F.
 ; シリング becomes a far name (name_result, r018479:6): copy 6 bytes, the 6th is the EXP label's leading F4 pad (player bug report).
 ; The sprite frame covers cell 11, so the row moves a cell left: label at col 5, digits from $1A4E
@@ -1969,6 +1996,54 @@ date_text:
 .oct:   db $18,$26,$37,$32,$25,$28,$35,0            ; October
 .nov:   db $17,$32,$39,$28,$30,$25,$28,$35,0        ; November
 .dec:   db $0D,$28,$26,$28,$30,$25,$28,$35,0        ; December
+
+; money box, see org $C556FC. A16 X16 in; $1111 and $0EDE through the caller's DB, as the code it replaces.
+; 5 digits + space + 9 = 15 > 14 cells: 10000+ drops the space (user's choice, D21)
+shop_money:
+    php
+    phy
+    sep #$20
+    lda.b #14
+    sta.w $1111
+    lda.b #2
+    sta.w $1112
+    ldx.w #0
+-   stz.w $1113,x
+    inx
+    cpx.w #28
+    bne -
+    ldx.w #0
+    ldy.w #0
+.skip:                  ; leading blanks: anything but a digit tile 01-0A; the last cell always shows
+    lda.w $0EDE,x
+    dec
+    cmp.b #10
+    bcc .dig
+    inx
+    cpx.w #4
+    bne .skip
+.dig:
+    lda.w $0EDE,x
+    sta.w $1121,y
+    iny
+    inx
+    cpx.w #5
+    bne .dig
+    cpy.w #5
+    beq +
+    iny
++   ldx.w #0
+-   lda.l shillings,x
+    sta.w $1121,y
+    iny
+    inx
+    cpx.w #9
+    bne -
+    ply
+    plp
+    rtl
+shillings:              ; label-sheet tiles (rects.tiles)
+    db $1D,$37,$38,$3B,$3B,$38,$3D,$36,$42
 
 planebit:
     db 1, 2, 4, 8

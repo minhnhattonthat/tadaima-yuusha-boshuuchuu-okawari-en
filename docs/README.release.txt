@@ -39,8 +39,8 @@ Notes
 
 Known issues
 ------------
-- A few labels are abbreviated to fit their boxes: "Sh" (Shillings) and
-  "/mo" in shop and pay screens, "DOB" and "Yr/Mo" on the status and save
+- A few labels are abbreviated to fit their boxes: "/mo" on
+  the salary line, "DOB" and "Yr/Mo" on the status and save
   screens, "K. Salamander" in the battle target box.
 
 Report bugs at https://github.com/minhnhattonthat/tadaima-yuusha-boshuuchuu-okawari-en/issues

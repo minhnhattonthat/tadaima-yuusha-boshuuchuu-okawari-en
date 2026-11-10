@@ -19,7 +19,7 @@ helps most.
 | Name entry | Translated (English letters) |
 | Staff credits, THE END, CONFIG MODE | English in the original |
 
-Known issues: a few labels are abbreviated to fit their boxes (Sh for Shillings, /mo, DOB, Yr/Mo, K. Salamander in the
+Known issues: a few labels are abbreviated to fit their boxes (/mo, DOB, Yr/Mo, K. Salamander in the
 battle target box). See [Issues](../../issues).
 
 ## What's here

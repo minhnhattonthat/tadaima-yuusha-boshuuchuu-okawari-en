@@ -60,7 +60,8 @@ S.field_magic = turn({ { 90, "up" }, { 140, "a" }, { 200, "a" } }, spells)
 S.field_orb = turn({ { 90, "right" }, { 140, "a" } }, items)
 S.field_status_equip = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x09)
 S.field_status_magic = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "right" }, { 420, "a" } }, spells, 0x09)
-S.field_map_town = turn({ { 90, "x" }, { 140, "up" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x07)
+S.field_status_profile = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "right" }, { 420, "right" }, { 480, "a" } }, nil, 0x09)
+S.field_map_town =turn({ { 90, "x" }, { 140, "up" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x07)
 -- HP 1 ($0A42, character +13) in the first fight: the defeat scene. Scenario mode has no game over screen: the robot takes items and play goes on.
 S.defeat = { state = 0x17, ram = { [0x0A2C] = 0, [0x0A42] = 1 }, mash = 150, keep_mash = true, after = 0x10, expect = 0x10, tile = { 0x31, 0x10 }, frames = 24000 }
 -- Same fight, the 3 heroes at 999 HP (+13 HP, +15 max), mashed A until it's won: the result window (NVP / Shillings, 04CB3F / 04CB56).
