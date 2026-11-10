@@ -113,10 +113,10 @@ def test_lines_keep_count(built):
         code, k, fe = image[start:start + n - 1], 0, 0
         while k < len(code):  # a far number byte may be FE: walk the codes
             fe += code[k] == 0xFE
-            k += 3 if code[k] == insert.FAR else 1
+            k += 3 if code[k] == insert.CALL else 1
         assert fe == jp.count("{nl}"), i
     p = 0x00B5F0  # てきにのろいをかける{nl}{end}: line 2 empty
-    assert image[p] == insert.FAR and image[p + 3] == 0xFE
+    assert image[p] == insert.CALL and image[p + 3] == 0xFE
 
 
 def is_list(rom, loc):

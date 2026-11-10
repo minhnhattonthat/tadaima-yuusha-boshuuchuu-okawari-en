@@ -174,7 +174,7 @@ def records_in(span, far, extra, shown, t, i, start, n, en):
 
 
 def lines_in(out, far, shown, t, i, loc, jp, en, cells):
-    """A description in a raw range: `F0 a b FE F0 c d .. F4.. FF`, one far code per line, in the row's own bytes. 4 bytes a line."""
+    """A description in a raw range: `F1 a b FE F1 c d .. F4.. FF`, one far call per line, in the row's own bytes. 4 bytes a line."""
     m = LOC.fullmatch(loc)
     start, size = int(m[2], 16), int(m[3])
     text = en.removesuffix("{end}").split("{nl}")
@@ -192,7 +192,7 @@ def lines_in(out, far, shown, t, i, loc, jp, en, cells):
             far.put(n, t.encode(s) + b"\xff")
             shown[n] = (s, cells)
             numbers.append(n)
-            code += bytes([FAR, n & 255, n >> 8])
+            code += bytes([CALL, n & 255, n >> 8])  # not FAR: the shop prints a description as dialogue, where FAR ends the string
         code += b"\xfe" if k < len(text) - 1 else b""
     out[start:start + size - 1] = code + bytes([PAD]) * (size - 1 - len(code))
     return numbers
