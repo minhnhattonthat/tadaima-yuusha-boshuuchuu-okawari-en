@@ -78,7 +78,7 @@ byte at the end. `04 lo hi` is an immediate. Nested calls keep their state (**gu
 | Op | Operands | What |
 |---|---|---|
 | 00 | dst, value | assign |
-| 01 | dst, index, table | value table lookup |
+| 01 | dst, index, table | value table lookup: u16 size (itself included), then words. Can be string pointers into the middle of a piece (song list `$A13A`, e230/e237: past `[F4]..{nl}` heads); `extract.walk` cuts rows there |
 | 02 / 07 / 08 | target / target / - | jump / call / return |
 | 09-14 | a, b, target | compare and branch |
 | 15 / 16 | index, table | jump table: u16 size in bytes, then targets (0 = skip) |

@@ -113,13 +113,13 @@ def apply(rom, english):
             records_in(span, far, extra, shown, t, i, start, n, english[i])
             continue
         data = t.encode(english[i])
-        if span[start + n - 1] != 0xFF and not loc.startswith("r"):  # runs into the next row
+        if not jp.endswith("{end}") and not loc.startswith("r"):  # runs into the next row (a last FF can be an argument: {speed:FF})
             nxt = at.get((block, start + n))
             if nxt in number:
                 data += bytes([FAR, number[nxt] & 255, number[nxt] >> 8])
             else:
                 data += b"\xff"
-        elif not data.endswith(b"\xff"):
+        elif not english[i].endswith("{end}"):
             data += b"\xff"
         if len(data) <= n and n < 3:
             span[start:start + len(data)] = data

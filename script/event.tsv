@@ -135,20 +135,20 @@ e230.0DDC	b230+DDC:21	あいうちなのだ{nl}また会う〜日まで〜♪{en
 e230.0F2A	b230+F2A:72	歌おう空に、君とぼく♪{nl}つらい事もかなしい事も{nl}大きな声でふきとばそう〜♪{wait}ロスティア王国歌がっせ〜ん♪{wait}さんかしようか？{end}	Sing to the sky, you and me[D0]{nl}Blow the hard times and sad times{nl}away with a great big voice~[D0]{wait}The Lostia National Song Contest[D0]{wait}Shall I enter?{end}
 e230.0F73	b230+F73:8	{nl}    する{end}	{nl}    Yes{end}
 e230.0F7C	b230+F7C:6	  しない{end}	  No{end}
-e230.0F83	b230+F83:31	まあ、勇者様！{nl}どんな歌を歌ってくださるのかしら？{end}	Oh my, Hero!{nl}What song will you sing for us, I wonder?{end}
+e230.0F83	b230+F83:31	まあ、勇者様！{nl}どんな歌を歌ってくださるのかしら？{end}	Oh my, Hero! What song will you sing?{end}
 e230.0FA3	b230+FA3:7	ゾンビーユー{end}	Zombie You{end}
 e230.0FAB	b230+FAB:12	わかれの街ロスティア{end}	Lostia, Town of Farewells{end}
 e230.0FBA	b230+FBA:8	勇者おんど{end}	The Hero Ondo{end}
-e230.0FC3	b230+FC3:15	[F4][F4][F4][F4][F4][F4]{nl}ワゥラのなみだ{end}	[F4][F4][F4][F4][F4]{nl}Tears of Waura{end}
-e230.0FD3	b230+FD3:14	[F4][F4][F4][F4]{nl}もえろ！ムリファ{end}	[F4][F4][F4][F4]{nl}Burn On! Murifa{end}
-e230.0FE2	b230+FE2:16	[F4][F4][F4]{nl}タシュールのしろい砂{end}	[F4][F4]{nl}White Sands of Tashur{end}
+e230.0FCA	b230+FCA:8	ワゥラのなみだ{end}	Tears of Waura{end}
+e230.0FD8	b230+FD8:9	もえろ！ムリファ{end}	Burn On! Murifa{end}
+e230.0FE6	b230+FE6:12	タシュールのしろい砂{end}	White Sands of Tashur{end}
 e230.0FF5	b230+FF5:9	ウォストどっこい{end}	Heave-Ho Wost{end}
-e230.0FFF	b230+FFF:14	[F4][F4][F4]{nl}ウィアーザユウシャ{end}	[F4][F4][F4]{nl}We Are the Hero{end}
-e230.100E	b230+100E:13	[F4][F4]{nl}今夜はサイコロ{end}	[F4][F4][F4]{nl}Dice Tonight{end}
-e230.101C	b230+101C:14	[F4][F4][F4][F4]{nl}むねやけ番長{end}	[F4][F4][F4]{nl}Heartburn Boss{end}
-e230.102B	b230+102B:15	[F4][F4][F4][F4][F4]{nl}ばんぶう大将{end}	[F4][F4][F4]{nl}General Bamboo{end}
-e230.103B	b230+103B:13	[F4][F4][F4][F4][F4]{nl}ピココマーチ{end}	[F4][F4][F4][F4]{nl}Pikoko March{end}
-e230.1049	b230+1049:16	[F4][F4][F4][F4][F4]{nl}さすらいのブルース{end}	[F4][F4][F4]{nl}Wanderer's Blues{end}
+e230.1003	b230+1003:10	ウィアーザユウシャ{end}	We Are the Hero{end}
+e230.1011	b230+1011:10	今夜はサイコロ{end}	Dice Tonight{end}
+e230.1021	b230+1021:9	むねやけ番長{end}	Heartburn Boss{end}
+e230.1031	b230+1031:9	ばんぶう大将{end}	General Bamboo{end}
+e230.1041	b230+1041:7	ピココマーチ{end}	Pikoko March{end}
+e230.104F	b230+104F:10	さすらいのブルース{end}	Wanderer's Blues{end}
 e230.105D	b230+105D:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
 e230.1067	b230+1067:57	ピーピー{nl}いいぞぉ〜！{wait}勇者の歌声は人々のムネを{nl}強くうった{page}{sub:0000}ポイントの{nl}NVPをかくとく！{end}	Whistle! Whistle! Way to go~!{wait}The Hero's singing voice{nl}deeply moved the people{page}You earned {sub:0000} NVP points!{end}
 e230.10A1	b230+10A1:56	BOO！BOO！{nl}ひっこめ！[F4]ヘタクソ！{wait}なんかウケが悪いみたい・・・{nl}200ポイントの{nl}NVPをうしなった{end}	BOO! BOO! Get off![F4]You stink!{wait}It didn't go over too well...{nl}You lost 200 NVP points.{end}
@@ -475,20 +475,20 @@ e237.01BD	b237+1BD:67	{sfx:01}歌おう空に、君とぼく♪{nl}つらい事�
 e237.0201	b237+201:9	さんかしようか？{end}	Shall I join in?{end}
 e237.020B	b237+20B:8	{nl}    する{end}	{nl}    Yes{end}
 e237.0214	b237+214:6	  しない{end}	  No{end}
-e237.021B	b237+21B:36	{sfx:01}まあ、勇者様！{nl}どんな歌を{nl}歌ってくださるのかしら？{sfx:FE}{end}	{sfx:01}Oh my, Hero! What song will you sing for us,{nl}I wonder?{sfx:FE}{end}
+e237.021B	b237+21B:36	{sfx:01}まあ、勇者様！{nl}どんな歌を{nl}歌ってくださるのかしら？{sfx:FE}{end}	{sfx:01}Oh my, Hero! What song will you sing?{sfx:FE}{end}
 e237.0240	b237+240:7	ゾンビーユー{end}	Zombie You{end}
 e237.0248	b237+248:12	わかれの街ロスティア{end}	Lostia, Town of Farewells{end}
 e237.0257	b237+257:8	勇者おんど{end}	The Hero Ondo{end}
-e237.0260	b237+260:15	[F4][F4][F4][F4][F4][F4]{nl}ワゥラのなみだ{end}	[F4][F4][F4][F4][F4]{nl}Tears of Waura{end}
-e237.0270	b237+270:14	[F4][F4][F4][F4]{nl}もえろ！ムリファ{end}	[F4][F4][F4][F4]{nl}Burn On! Murifa{end}
-e237.027F	b237+27F:16	[F4][F4][F4]{nl}タシュールのしろい砂{end}	[F4][F4]{nl}White Sands of Tashur{end}
+e237.0267	b237+267:8	ワゥラのなみだ{end}	Tears of Waura{end}
+e237.0275	b237+275:9	もえろ！ムリファ{end}	Burn On! Murifa{end}
+e237.0283	b237+283:12	タシュールのしろい砂{end}	White Sands of Tashur{end}
 e237.0292	b237+292:9	ウォストどっこい{end}	Heave-Ho Wost{end}
-e237.029C	b237+29C:14	[F4][F4][F4]{nl}ウィアーザユウシャ{end}	[F4][F4][F4]{nl}We Are the Hero{end}
-e237.02AB	b237+2AB:13	[F4][F4]{nl}今夜はサイコロ{end}	[F4][F4][F4]{nl}Dice Tonight{end}
-e237.02B9	b237+2B9:14	[F4][F4][F4][F4]{nl}むねやけ番長{end}	[F4][F4][F4]{nl}Heartburn Boss{end}
-e237.02C8	b237+2C8:15	[F4][F4][F4][F4][F4]{nl}ばんぶう大将{end}	[F4][F4][F4]{nl}General Bamboo{end}
-e237.02D8	b237+2D8:13	[F4][F4][F4][F4][F4]{nl}ピココマーチ{end}	[F4][F4][F4][F4]{nl}Pikoko March{end}
-e237.02E6	b237+2E6:16	[F4][F4][F4][F4][F4]{nl}さすらいのブルース{end}	[F4][F4][F4]{nl}Wanderer's Blues{end}
+e237.02A0	b237+2A0:10	ウィアーザユウシャ{end}	We Are the Hero{end}
+e237.02AE	b237+2AE:10	今夜はサイコロ{end}	Dice Tonight{end}
+e237.02BE	b237+2BE:9	むねやけ番長{end}	Heartburn Boss{end}
+e237.02CE	b237+2CE:9	ばんぶう大将{end}	General Bamboo{end}
+e237.02DE	b237+2DE:7	ピココマーチ{end}	Pikoko March{end}
+e237.02EC	b237+2EC:10	さすらいのブルース{end}	Wanderer's Blues{end}
 e237.02FA	b237+2FA:8	{speed:10}・・・・{speed:FF}	{speed:10}......{speed:FF}
 e237.0304	b237+304:65	{sfx:00}ピーピー{nl}いいぞぉ〜！{sfx:FE}{wait}勇者の歌声は人々のムネを{nl}強くうった{page}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをかくとく！{end}	{sfx:00}Whistle! Whistle! Way to go~!{sfx:FE}{wait}The Hero's singing voice{nl}deeply moved the people{page}You earned {color:08}{sub:0000}{color:0F} NVP points!{end}
 e237.0346	b237+346:64	{sfx:00}BOO！BOO！{nl}ひっこめ！[F4]ヘタクソ！{sfx:FE}{wait}なんかウケが悪いみたい・・・{nl}{color:08}{sub:0000}{color:0F}ポイントの{nl}NVPをうしなった{end}	{sfx:00}BOO! BOO! Get off![F4]You stink!{sfx:FE}{wait}It didn't go over too well...{nl}You lost {color:08}{sub:0000}{color:0F} NVP points.{end}

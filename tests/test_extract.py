@@ -48,6 +48,12 @@ def test_rows_never_overlap(world):
                 seen[key, i] = loc
 
 
+def test_string_tables_start_rows(world):
+    """The song list ($A13A, op 01) points past `[F4]..{nl}` heads: each target starts a row, or the English shows blank pads."""
+    ids = {r[0] for r in world[2].rows["event"]}
+    assert {"e230.0FA3", "e230.0FCA", "e230.104F", "e237.0240", "e237.0267", "e237.02EC"} <= ids
+
+
 def test_ids_unique(world):
     ids = [r[0] for rows in world[2].rows.values() for r in rows]
     assert len(ids) == len(set(ids))

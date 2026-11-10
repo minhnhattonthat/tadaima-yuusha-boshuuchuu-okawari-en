@@ -175,6 +175,13 @@ def walk(data, argc):
                 todo += [w - VM_ORG for w in (data[t + i] | data[t + i + 1] << 8 for i in range(2, size + 2, 2)) if w]
             elif op.code in (0x1F, 0x20, 0x21, 0x22):
                 ptrs.update(v - VM_ORG for v in imm)
+            elif op.code == 0x01 and imm:  # value table, u16 size (itself included) then words: all inside the block = string pointers
+                t = imm[-1] - VM_ORG  # (song list $A13A, e230/e237: they point past `[F4]..{nl}` heads, into the row)
+                ws = [data[t + i] | data[t + i + 1] << 8 for i in range(2, data[t] | data[t + 1] << 8, 2)] if t + 1 < len(data) else []
+                if ws and all(inside(w) and data[w - VM_ORG - 1] in (0xFE, 0xFF)  # each after an end or {nl}, and text
+                              and texty(T.decode(data, w - VM_ORG, length=data.find(b"\xff", w - VM_ORG) + 1 - (w - VM_ORG))[0]) for w in ws):
+                    ptrs.update(w - VM_ORG for w in ws)
+                tables.add(t)
             else:
                 tables.update(v - VM_ORG for v in imm)
             if op.code in (0x02, 0x08, 0x29, 0x45, 0xFF):  # 45 leaves the script: text follows it directly

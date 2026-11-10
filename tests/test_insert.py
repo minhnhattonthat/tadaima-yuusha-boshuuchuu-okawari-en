@@ -74,6 +74,23 @@ def test_far_codes_resolve(built):
         assert image[cpu & 0x3FFFFF:(cpu & 0x3FFFFF) + len(data)] == data, i
 
 
+def test_far_strings_end(built):
+    """A far string ends in FF or a far code into the next row, also when its last byte is an argument: {speed:FF} ran on (song contest)."""
+    rom, rows, english, image, blocks = built
+    t = insert.table()
+    hits = 0
+    for i, loc, jp in rows:
+        if i not in english or jp.endswith("{end}") or not jp.endswith("FF}") or loc.startswith("r"):
+            continue
+        m = insert.LOC.fullmatch(loc)
+        span = blocks[int(m[1])] if m[1] else image
+        num = span[int(m[2], 16) + 1] | span[int(m[2], 16) + 2] << 8
+        at = int.from_bytes(image[insert.TABLE + num * 3:insert.TABLE + num * 3 + 3], "little") & 0x3FFFFF
+        assert image[at + len(t.encode(english[i]))] in (0xFF, insert.FAR), i
+        hits += 1
+    assert hits >= 20
+
+
 def test_end_bytes_survive(built):
     """List walks count FF FF: only text may change, never a terminator."""
     rom, rows, english, image, blocks = built
