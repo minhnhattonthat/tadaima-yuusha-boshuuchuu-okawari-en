@@ -23,12 +23,19 @@ MARK = {0x27: "゙", 0x28: "゚", 0xE8: "゙", 0xE9: "゚"}  # tile on the row a
 BLANK = (0x00, 0x26, 0xE7)
 # save slot header place names: pointers $85:BC6D (13), index from the save ($C4:22FA), rect at col 9 (player bug report: garbage name)
 REGIONS = [0x05BC87, 0x05BC99, 0x05BCAB, 0x05BCBB, 0x05BCCB, 0x05BCDD, 0x05BCF1, 0x05BCFF, 0x05BD13, 0x05BD25, 0x05BD37, 0x05BD4B, 0x05BD5F]
+# Item list choice box (player bug report): つかう / そうび over すてる, 4 wide with the right border last; 3 cells held no English word, so
+# they are 7 wide (asm/vwf.asm moves the box, its erase and cursor 3 cols left). はずす box was a 5x5 word tilemap ($C2:558A, C21C38):
+# asm draws it from byte rects instead, the top one built at its old place UNEQUIP. NO_RECT: the Drop confirm だ?め / OK!, A3 a glyph of だぁめ.
+CHOICE = (0x049360, 0x04936A, 0x049374)
+UNEQUIP, UNEQUIP_LEN, UNEQUIP_JP = 0x049496, 50, "はずす"
+NO_RECT = 0x049382
+WIDE = {p: 7 for p in CHOICE}
 # File offsets. COPIED: code copies these to RAM and patches numbers in, so they can't take a far code: English stays inside W.
 RECTS = [0x00A0DA, 0x00A14C, 0x0480F7, 0x0499DB, 0x04B4A0, 0x04B4AA, *range(0x04B596, 0x04B607, 14), 0x04B7BF, 0x04B80C, 0x04B814, 0x04B819,
          0x04B837, 0x04B845, 0x04B859, 0x04B863, 0x04B871, 0x04CBD1, 0x04CBDF, 0x04CBE2, 0x04CC06, 0x04CC16, 0x04CC1C, 0x04CC24, 0x04CC2E, 0x04CC34,
          *range(0x04CC46, 0x04CCA1, 18), 0x0597CC, 0x0597F0, 0x0597FA, 0x059804, *range(0x0598A6, 0x059941, 14), 0x05BC09, 0x05BC11, 0x05BC19,
-         *REGIONS]
-COPIED = {0x00A0DA, 0x00A14C, 0x0499DB, 0x04B4AA, 0x04B871}
+         *REGIONS, *CHOICE, 0x049382, 0x0493B3]
+COPIED = {0x00A0DA, 0x00A14C, 0x0499DB, 0x04B4AA, 0x04B871, 0x0493B3}  # $0493B3: item list Attack/Defense compare ($C2:5245 patches numbers)
 # Player select race rects ($C1:574D) redraw only their own width over the last one: all as wide as the widest (Dogfolk, a blank
 # column then 7 letters) so a shorter name blanks the rest (player bug report: left from Nyankee kept its last e)
 MIN_W = {p: 8 for p in range(0x0598A6, 0x059941, 14)}
@@ -42,7 +49,7 @@ def runs(rom, p):
     """Kana runs of the rect at p: (row, first col, end col, jp)."""
     w, h = rom[p], rom[p + 1]
     body = rom[p + 2:p + 2 + w * h]
-    text = lambda t: text_tile(t) or (p == YEAR_RECT and t == YEAR)
+    text = lambda t: text_tile(t) or (p == YEAR_RECT and t == YEAR) or (p == NO_RECT and t == 0xA3)
     out = []
     for y in range(h):
         x = 0
@@ -59,7 +66,17 @@ def runs(rom, p):
 
 
 def rows(rom):
-    return [(f"rect{p:06X}", f"r{p:06X}:{2 + rom[p] * rom[p + 1]}", "{nl}".join(r[3] for r in runs(rom, p))) for p in RECTS] + cell_rows(rom)
+    return ([(f"rect{p:06X}", f"r{p:06X}:{2 + rom[p] * rom[p + 1]}", "{nl}".join(r[3] for r in runs(rom, p))) for p in RECTS]
+            + [(f"rect{UNEQUIP:06X}", f"r{UNEQUIP:06X}:{UNEQUIP_LEN}", UNEQUIP_JP)] + cell_rows(rom))
+
+
+def unequip(out, en):
+    """The はずす box's top as a byte rect (7x2, the width of CHOICE) over its unused word tilemap."""
+    t = tiles(en, 0)
+    assert len(t) <= WIDE[CHOICE[0]] - 1, (en, "unequip box: no room")
+    w = WIDE[CHOICE[0]]
+    body = [0xE7] * (w - 1) + [0xEB] + t + [0] * (w - 1 - len(t)) + [0xE3]
+    out[UNEQUIP:UNEQUIP + 2 + len(body)] = bytes([w, 2] + body)
 
 
 # Recruit status box: $C2:B3DD copies rect $A0DA to $1111 and patches in headerless cell tables (no W H): race at $C0:A056 + 12 * race
@@ -115,11 +132,14 @@ def rebuild(rom, p, en):
     parts = en.split("{nl}")
     assert len(parts) == len(found), (hex(p), parts)
     grid = [body[y * w:y * w + w] for y in range(h)]
-    for (y, a, b, _), s in zip(found, parts):
+    for y, a, b, _ in found:
         for x in range(a, b):
             grid[y][x] = fill
             if y and grid[y - 1][x] in MARK:
                 grid[y - 1][x] = 0xE7 if grid[y - 1][x] >= 0xE8 else 0
+    if p in WIDE:  # the right border stays last: repeat the cell before it
+        grid = [r[:-1] + [r[-2]] * (WIDE[p] - w) + r[-1:] for r in grid]
+    for (y, a, b, _), s in zip(found, parts):
         t = tiles(s, fill)
         grid[y].extend([fill] * (a + len(t) - len(grid[y])))
         assert all(v in BLANK for v in grid[y][b:a + len(t)]), (hex(p), s, "runs into a number")
@@ -160,6 +180,8 @@ def apply(out, english, far):
         grid(out, far)
     cells(out, english)
     maps(out, far)
+    if f"rect{UNEQUIP:06X}" in english:
+        unequip(out, english[f"rect{UNEQUIP:06X}"])
     for p in JOB_MAGE:  # 魔術士: the 士 cell is 戦士's, "ght" of Knight in English; centred on blanks like the 2-cell jobs
         assert out[p:p + 6] in (bytes([0xDC, 0xDD, 0xE0, 0xE1, 0xC8, 0xC9]), bytes([0xDE, 0xDF, 0xE2, 0xE3, 0xCA, 0xCB])), hex(p)
         out[p:p + 6] = bytes([0xEC, *out[p:p + 4], 0xEC])

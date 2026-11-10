@@ -37,6 +37,12 @@ An open cell: bit 0 of `+0E`, a tile number that's always a multiple of 4. So an
 | `$C21A99` | `LDA +01,x / AND / JSL $80E11C` | `$80E11C(id)` sleeps until `$80E14D(id)`: 1 = frame, 6 = input poll. The two per-letter waits sleep by frame; page prompt and `{pause}` keep id 6 |
 | `$C21AC4` | whole routine | strip renderer |
 | `$C22726` | `JSL $828024` (block 4, boot) | `boot_block4`: the same load, then zero `$7F:FE00-FFFF` (the 512 bytes `repack.TRIM` cut from block 4); the mid-game load at `$C22706` stays as is |
+| `$C24E41`, `$C24E5E`, `$C24E8E` | dest `$38EE`, `$38EF`, `$392F` (item list Use/Equip + Discard box) | `$38EB`, `$38EC`, `$392C`: box 3 cols left, rects `rects.CHOICE` 7 wide |
+| `$C24E36`, `$C25586` | `JSL $C21CF0` (5x5 fill `$9398` at `$58EE`) | `fill_box`: the same, again at `$58EB` |
+| `$C2558A-$C2559F` | Remove box: word tilemap `$C4:9496` via `$C21C38` | `jsl unequip_box` + bra: byte rects (border, `rects.UNEQUIP` top, `$9374` in palette 28, right border) |
+| `$C24FEA`, `$C25720` | erase from `$070E` | `$070B` |
+| `$C24FF3`, `$C25729` | `JSL $C20D03` (erase) | `erase_box`: the same, then the Items window's cols 11-13 rows 7-11 back (rects `$C4:94A6`, `94B2`, `94B9`) |
+| `$C4933A` | cursor `6B 3E 6B 4E` | `53 3E 53 4E` |
 | `$C2D504`, `$C2D50A`, `$C2D510` | immediates `F7 8C`, `F7 42`, `F7 C7` (危険度) | `F1 00`, `00 F4`, `F4 F4`: far string 0 |
 | `$C55585`, `$C5558B` | immediates `F7 00`, `F7 01` (勇者) | `F1 01`, `00 F4`: far string 1 |
 | `$C55665` | `BNE` (name width = non-F4 name bytes) | `BRA`: always 5. The header shows strip cells 0-1 in a fixed rect, cells 2.. right-aligned by that width: a far name (`F0 lo hi F4 F4`) gave 3 and a gap after "Hero G" |

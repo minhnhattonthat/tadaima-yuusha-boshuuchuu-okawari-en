@@ -207,7 +207,7 @@ def images(out, count, rows):
         at, tiles = blank, 3
         if n in rows:
             text, cells = rows[n]
-            data = font.small_tiles(CODE.sub("", text), cells)
+            data = font.small_tiles(CODE.sub("", text.replace("[F4]", " ")), cells)  # F4 is the blank cell: "Power[F4]28" ran together
             if (pos & 0xFFFF) + len(data) > 0x8000:
                 pos = (pos >> 16) + 1 << 16
             at, tiles = pos, len(data) // 32

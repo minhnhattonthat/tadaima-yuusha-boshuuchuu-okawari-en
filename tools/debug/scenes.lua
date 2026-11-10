@@ -57,6 +57,9 @@ local scroll = { { 90, "down" }, { 140, "a" } }
 for k = 1, 60 do scroll[#scroll + 1] = { 200 + 20 * k, k <= 30 and "down" or "up" } end
 S.field_items_scroll = turn(scroll, items)
 S.field_magic = turn({ { 90, "up" }, { 140, "a" }, { 200, "a" } }, spells)
+-- Items, then A on the worn weapon in the Equip panel: the Remove / Drop box (rects.UNEQUIP, asm unequip_box). The Use/Equip box needs
+-- an item in the list, and a poke at $0BF9 doesn't reach it here: work/states/tybo_garb.mss (B, A) has one
+S.field_items_equip = turn({ { 90, "down" }, { 140, "a" }, { 220, "a" } })
 S.field_orb = turn({ { 90, "right" }, { 140, "a" } }, items)
 S.field_status_equip = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "a" } }, nil, 0x09)
 S.field_status_magic = turn({ { 90, "x" }, { 140, "right" }, { 190, "a" }, { 300, "right" }, { 360, "right" }, { 420, "a" } }, spells, 0x09)

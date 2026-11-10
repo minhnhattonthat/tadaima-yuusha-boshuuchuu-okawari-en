@@ -2,6 +2,12 @@ id	loc	jp	en
 rect00A0DA	r00A0DA:114	しゅぞく{nl}しょくぎょう{nl}たんじょうび{nl}まいつき{nl}シリング	Race{nl}Job{nl}Born{nl}Pay{nl}Sh
 rect00A14C	r00A14C:114	ちから{nl}たいりょく{nl}まりょく{nl}こううん{nl}すばやさ{nl}こうげきりょくぼうぎょりょく	Power{nl}Vigor{nl}Magic{nl}Luck{nl}Speed{nl}Attack Defense
 rect0480F7	r0480F7:6	ゆうしゃ	Hero
+rect049360	r049360:10	つかう	Use
+rect04936A	r04936A:10	そうび	Equip
+rect049374	r049374:14	すてる	Drop
+rect049382	r049382:22	だ?め	No
+rect0493B3	r0493B3:52	こうげき{nl}ぼうぎょ	Attack{nl}Defense
+rect049496	r049496:50	はずす	Remove
 rect0499DB	r0499DB:22	シリング	Sh
 rect04B4A0	r04B4A0:10	じゅんい	Rank
 rect04B4AA	r04B4AA:44	のこり{nl}シリング	Time left{nl}Shillings

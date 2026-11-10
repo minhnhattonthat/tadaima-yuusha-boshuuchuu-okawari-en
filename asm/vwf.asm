@@ -216,6 +216,41 @@ org $C2A7E7
 org $C22726             ; JSL $828024: block 4 at boot, then the zeros it no longer holds (boot_block4)
     jsl boot_block4
 
+; Item list choice box (player bug report): rects.CHOICE are 7 wide, so the box (border col 14, text 15-17, border 18) starts 3 cols
+; left: border col 11, text 12-17. Its erase ($C20D03 from col 14, rows 7-12) and the cursor x ($C4:933A, both rows) move with it.
+org $C24E41
+    dw $38EB            ; left border
+org $C24E5E
+    dw $38EC            ; つかう / そうび
+org $C24E8E
+    dw $392C            ; すてる
+org $C24FEA
+    dw $070B            ; erase, Use/Equip box
+org $C25720
+    dw $070B            ; erase, Remove box
+org $C4933A
+    db $53,$3E,$53,$4E  ; cursor x $6B - 24
+; The Remove box was a 5x5 word tilemap ($C4:9496 via $C21C38); unequip_box draws it from byte rects as the Use/Equip box
+org $C2558A
+    jsl unequip_box
+    db $80, $C255A0-$C25590   ; bra $C255A0
+; the box's fill (5x5 C8 at BG $5800 col 14): again at col 11, so the fill reaches the new left border
+org $C24E36
+    jsl fill_box
+org $C25586
+    jsl fill_box
+; The erase blanks cols 11-13, and those are the Items window's right edge (border col 13): erase_box draws it back.
+org $C24FF3
+    jsl erase_box
+org $C25729
+    jsl erase_box
+; rects at $C4:94A6, after the Remove top (rects.UNEQUIP, 16 bytes) in the word tilemap's 50: Items window cols 11-12 rows 7-11 (top
+; border, blank cells as the list leaves them), its right border col 13, its fill (BG $5800) cols 11-12. Read from VRAM before the box.
+org $C494A6
+    db 2,5, $E2,$E2, $26,$00, $00,$00, $26,$00, $00,$00
+    db 1,5, $E1,$E3,$E3,$E3,$E3
+    db 2,5, $C8,$C8,$C8,$C8,$C8,$C8,$C8,$C8,$C8,$C8
+
 org $C0FFD7
     db $0C              ; 4 MB
 
@@ -2047,6 +2082,87 @@ shop_money:
     ply
     plp
     rtl
+; DB $84 (the caller's). Left border flipped, top (rects.UNEQUIP), すてる greyed (palette 28 as the word tilemap had), then the
+; right border col over すてる's in the border's own palette.
+unequip_box:
+    lda.w #$9359
+    sta.w $11ED
+    lda.w #$38EB
+    sta.w $11EF
+    lda.w #$0060
+    sta.w $11F1
+    jsl $C21CF0
+    lda.w #$9496
+    sta.w $11ED
+    lda.w #$38EC
+    sta.w $11EF
+    lda.w #$0020
+    sta.w $11F1
+    jsl $C21CF0
+    lda.w #$9374
+    sta.w $11ED
+    lda.w #$392C
+    sta.w $11EF
+    lda.w #$0028
+    sta.w $11F1
+    jsl $C21CF0
+    lda.w #$9359
+    sta.w $11ED
+    lda.w #$38F2
+    sta.w $11EF
+    lda.w #$0020
+    sta.w $11F1
+    jsl $C21CF0
+    rtl
+
+fill_box:
+    jsl $C21CF0
+    lda.w #$9398
+    sta.w $11ED
+    lda.w #$58EB
+    sta.w $11EF
+    lda.w #$0025
+    sta.w $11F1
+    jsl $C21CF0
+    rtl
+
+erase_box:
+    jsl $C20D03
+    php
+    rep #$30
+    phx
+    phy
+    phb
+    pea $8484
+    plb
+    plb
+    lda.w #$94A6
+    sta.w $11ED
+    lda.w #$38EB
+    sta.w $11EF
+    lda.w #$0020
+    sta.w $11F1
+    jsl $C21CF0
+    lda.w #$94B2
+    sta.w $11ED
+    lda.w #$38ED
+    sta.w $11EF
+    lda.w #$0060
+    sta.w $11F1
+    jsl $C21CF0
+    lda.w #$94B9
+    sta.w $11ED
+    lda.w #$58EB
+    sta.w $11EF
+    lda.w #$0025
+    sta.w $11F1
+    jsl $C21CF0
+    plb
+    ply
+    plx
+    plp
+    rtl
+
 shillings:              ; label-sheet tiles (rects.tiles)
     db $1D,$37,$38,$3B,$3B,$38,$3D,$36,$42
 
