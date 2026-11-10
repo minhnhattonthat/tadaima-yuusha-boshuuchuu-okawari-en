@@ -125,6 +125,9 @@ def rebuild(rom, p, en):
 # those writes to the cells below (row 0 at $1113, row 1 at $1128). JP: のこり over 1年 0ヶ月 (年 ヶ月 are G4 tiles F7-F9), money + シリング
 # under it. English: money + "Shillings" on row 0, "<time left> 1yr 0mo" on row 1. yr/mo: flagged D4 abbreviation, "years"/"months" don't fit.
 STATUS = 0x04B4AA
+# party panel job rects: pointers $C4:B520, each 8x2 tiles (6 job tiles + 2 icon), job cells from the 04B485/04B492 sheets.
+# Mage's two rows (rect $C4:B54E) used 魔 術 + 戦士's 士 (player bug report: "Mage ght").
+JOB_MAGE = (0x04B550, 0x04B558)
 STATUS_CELLS = {"money": (0, 2, 5), "years": (1, 11, 2), "months": (1, 16, 2)}  # row, col, digits: asm writes at $1113 + 21 * row + col
 
 
@@ -147,6 +150,9 @@ def apply(out, english, far):
     if f"rect{RECTS[0]:06X}" in english:
         grid(out, far)
     cells(out, english)
+    for p in JOB_MAGE:  # 魔術士: the 士 cell is 戦士's, "ght" of Knight in English; centred on blanks like the 2-cell jobs
+        assert out[p:p + 6] in (bytes([0xDC, 0xDD, 0xE0, 0xE1, 0xC8, 0xC9]), bytes([0xDE, 0xDF, 0xE2, 0xE3, 0xCA, 0xCB])), hex(p)
+        out[p:p + 6] = bytes([0xEC, *out[p:p + 4], 0xEC])
     for p in RECTS:
         en = english.get(f"rect{p:06X}")
         if en is None:
