@@ -52,7 +52,11 @@ L.on_frame(function(f)
     if f == 700 then L.press("start", 4) end
     return
   end
+  for _, r in ipairs(scene.press_at or {}) do  -- { frame from boot, button }
+    if f == r[1] then L.press(r[2], 4) end
+  end
   if not warped then
+    if f >= (scene.mash_end or math.huge) then return end
     if f % 300 == 0 and state() == 0x16 then L.press("start", 4) end
     if f > 900 and f % PERIOD == 0 and L.route_done() then L.press("a", 4) end
     return

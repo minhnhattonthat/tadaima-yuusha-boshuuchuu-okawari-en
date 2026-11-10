@@ -31,7 +31,9 @@ S.ending = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 21000, 
 S.credits = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 24000, expect = 0x1E }
 S.the_end = { state = 0x18, ram = { [0x0A2C] = 12 }, mash = 150, frames = 32000, expect = 0x21 }
 S.party_mode = { mode = 1, frames = 6500, mash = 60 }
-S.party_map = { mode = 1, frames = 5600, mash = 60, mash_end = 5230, poke_at = { 0xC168B3, 0x1234, 1 } }  -- $1234 != 0 shows ($C1:68B3) the map choice 勇者のたびだち / しれんの道 / 終りなき伝説 (rects.MAPS)
+S.party_map = { mode = 1, frames = 5600, mash = 60, mash_end = 5230, poke_at = { 0xC168B3, 0x1234, 1 } }
+S.party_map_legend = { mode = 1, frames = 5700, mash = 60, mash_end = 5150, poke_at = { 0xC168B3, 0x1234, 1 },
+  press_at = { { 5400, "down" }, { 5560, "down" } } }  -- the 2nd and 3rd map's descriptions  -- $1234 != 0 shows ($C1:68B3) the map choice 勇者のたびだち / しれんの道 / 終りなき伝説 (rects.MAPS)
 S.field = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, frames = 22000 }
 S.field_menu = { state = 0x17, ram = { [0x0A2C] = 0 }, mash = 150, after = 0x01, frames = 22000 }
 

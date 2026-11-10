@@ -1,8 +1,8 @@
 id	loc	jp	en
 d739.000A	b739+A:17	冒険するマップをえらんで！{page}{end}	Choose a map for your adventure!{page}{end}
 d739.001B	b739+1B:36	はじめての方に{nl}おすすめマップ。{nl}プレイ時間、1時間くらい。{end}	For first-timers, this map is recommended.{nl}Play time: about 1 hour.{end}
-d739.003F	b739+3F:28	トレーニングマップ{nl}プレイ時間、2時間くらい。{end}	Training map Play time: about 2 hours.{end}
-d739.005B	b739+5B:28	レベルアップマップ{nl}プレイ時間、おこのみでどうぞ。{end}	Level-up map Play time: as long as you like.{end}
+d739.003F	b739+3F:28	トレーニングマップ{nl}プレイ時間、2時間くらい。{end}	Training map.{nl}Play time: about 2 hours.{end}
+d739.005B	b739+5B:28	レベルアップマップ{nl}プレイ時間、おこのみでどうぞ。{end}	Level-up map.{nl}Play time: as long as you like.{end}
 d739.0077	b739+77:7	これでいい？{end}	Is this okay?{end}
 d740.000A	b740+A:26	{color:07}シルフィ{color:0F}{nl}{sfx:01}ようこそロスティアへ！{sfx:FE}{page}{end}	{color:07}Sylphy{color:0F}{nl}{sfx:01}Welcome to Lostia!{sfx:FE}{page}{end}
 d740.0024	b740+24:41	{sfx:01}あたしは、シルフィ。{nl}王様のメッセンジャーシルフ{nl}で〜す{color:09}♥{color:0F}{sfx:FE}{page}{end}	{sfx:01}I'm Sylphy,{nl}the King's messenger sylph{nl}at your service~{color:09}[CB]{color:0F}{sfx:FE}{page}{end}
