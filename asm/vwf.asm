@@ -884,8 +884,6 @@ fixed_check:
     cpy.w #$9471
     beq .yes
     cpy.w #$947C
-    beq .yes
-    cpy.w #$AAD4            ; party mode map names (rects.MAPS)
     bne .no
 .yes:
     lda.w #$0001

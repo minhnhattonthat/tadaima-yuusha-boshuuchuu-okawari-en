@@ -64,7 +64,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - VWF open-cell flag moved from `+0E` bit 0 to bit 1: the ending text window starts at tile `$0001`, every cell looked open and drew scrambled.
 - **Facts that change the plan:**
   - Code-built Japanese still to do (phase 7/8): `危険度` (`LDA #$8CF7..` at `$C2:D503`; in the marker build the `F5` cell after it shows a stale small-font tile, blank in the original: fix with it), shop/inn header `勇者` before the name (no text read or rect log names it: find its writer), `1年 0ヶ月` / `0年目 4月` / `NO・1` (G4 small-font tiles, `docs/re/graphics.md`), job words `04B485`/`04B492` slot 17-32 px (Hero, Thief, Mage, Priest, Knight fit; 戦士 = Knight unless reworked).
-  - `05AAD4` party mode map choice (player report 2026-11-10, JP/garbage): glyph set read by `$C1:69FF`, shown only when `$1234` != 0 (`$C1:68B3`). Now asm `fixed_check` + `rects.maps`: JOURNEY / TRIAL / LEGEND (D20). Scene `party_map` (`work/qa/party_map`).
+  - `05AAD4` party mode map choice (player report 2026-11-10, JP/garbage): glyph set read by `$C1:69FF`, shown only when `$1234` != 0 (`$C1:68B3`). Now `rects.maps`: the card titles in the VWF, 19 cells (JP 17, VRAM `$5000` up; no damage seen) (D20). Scene `party_map` (`work/qa/party_map2`).
   - Scenario mode has no game over screen: `defeat` is the phase 8 "game over" row. The staff roll and THE END are English in the original; check against D3 in phase 8.
   - Only ch 0's map tiles are scened; other chapters' events (all 23 choice rows) aren't reached. States 02, 04-06, 12, 14 aren't reached.
   - Warp artifacts that match the original: `encounter` shows a lone シ, `standings` a row of 0s.

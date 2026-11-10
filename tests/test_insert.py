@@ -33,7 +33,8 @@ def test_rects():
     far = insert.Far(out)
     rects.apply(out, {wide: "Play Time", short: "Fast"}, far)
     assert out[p] == insert.FAR
-    cpu = int.from_bytes(out[insert.TABLE:insert.TABLE + 3], "little")
+    n = int.from_bytes(out[p + 1:p + 3], "little")
+    cpu = int.from_bytes(out[insert.TABLE + 3 * n:insert.TABLE + 3 * n + 3], "little")
     assert out[cpu & 0x3FFFFF:(cpu & 0x3FFFFF) + 2] == bytes([9, 2])
     assert out[0x04CC16:0x04CC18] == rom[0x04CC16:0x04CC18] and out[0x04CC18] == 0x10  # F of Fast, in place
     with pytest.raises(AssertionError):
