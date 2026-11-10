@@ -29,6 +29,9 @@ RECTS = [0x00A0DA, 0x00A14C, 0x0480F7, 0x0499DB, 0x04B4A0, 0x04B4AA, *range(0x04
          *range(0x04CC46, 0x04CCA1, 18), 0x0597CC, 0x0597F0, 0x0597FA, 0x059804, *range(0x0598A6, 0x059941, 14), 0x05BC09, 0x05BC11, 0x05BC19,
          *REGIONS]
 COPIED = {0x00A0DA, 0x00A14C, 0x0499DB, 0x04B4AA, 0x04B871}
+# Player select race rects ($C1:574D) redraw only their own width over the last one: all as wide as the widest (Dogfolk, a blank
+# column then 7 letters) so a shorter name blanks the rest (player bug report: left from Nyankee kept its last e)
+MIN_W = {p: 8 for p in range(0x0598A6, 0x059941, 14)}
 
 
 def text_tile(t):
@@ -121,7 +124,7 @@ def rebuild(rom, p, en):
         grid[y].extend([fill] * (a + len(t) - len(grid[y])))
         assert all(v in BLANK for v in grid[y][b:a + len(t)]), (hex(p), s, "runs into a number")
         grid[y][a:a + len(t)] = t
-    width = max(len(r) for r in grid)
+    width = max(max(len(r) for r in grid), MIN_W.get(p, 0))
     for r in grid:
         r.extend([r[-1] if r[-1] in BLANK else fill] * (width - len(r)))
     return width, h, bytes(v for r in grid for v in r)
