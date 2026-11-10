@@ -1019,7 +1019,7 @@ small_map:
 .lo:
     pla
     sta.l !NUM
-    bra .emit
+    brl .emit
 .text:
     lda.l !RUN
     beq .plain
@@ -1049,6 +1049,8 @@ small_map:
     bne +
     lda 4,s             ; but the equip screen's gear names ($C2:C0CA calls the loop) share the screen with a 3-line bio:
     cmp.w #$C0CD        ; names ring (tools/debug/farcaller.lua)
+    beq +
+    cmp.w #$B70C        ; and the rank panel's names ($C2:B709), on screen beside the status page's lines (name_cache .rank)
     beq +
     sep #$20
     bra .ringb
@@ -1276,6 +1278,30 @@ name_cache:
     bcc ++
     brl .out
 ++
+    lda 6,s
+    cmp.w #$20C4
+    bne ++
+    phy                 ; the FE/FF loop's string is at DB:($00): read the number ahead, the image needs only its own size
+    ldy.w #$0001
+    lda ($00),y
+    ply
+    jsr need
+    lda 9,s
+    cmp.w #$B70C
+    beq .rank
+    cmp.w #$C0CD
+    bne ++
+    lda 12,s
+    cmp.w #$BF54        ; status page gear list ($C2:BF52 -> $C2:C0BD; its spell list from $C2:BF8C follows on from HEAD)
+    bne ++
+    lda.b $00
+    cmp.w #$1236        ; its first name: the page packs up from the ring's bottom. From HEAD, the 3rd gear wrapped past the
+    bne ++              ; panels onto the 1st ("Bronze Sword" -> "dronze Sword"), and the spells onto the gear
+    sep #$20
+    lda.b #!POOL
+    sta.l !CFIRST
+    rep #$20
+++
     brl .other
 +
     lda 9,s
@@ -1288,7 +1314,9 @@ name_cache:
     cmp.w #$04A1
     beq .y1
     cmp.w #$ABE7
-    bne .other
+    beq +
+    brl .other
++
     phy
     iny
     lda ($02),y
@@ -1298,7 +1326,25 @@ name_cache:
     lda.w $0001,y
 .ahead:
     jsr need
-    bra .other
+    brl .other
+; rank panel names ($C2:B709 -> FE/FF loop, string at DB:($00)): drawn when the panel opens and kept beside the status page, whose
+; description lines walked the lines ring over them (player bug report: "Gan" -> "kes!"). A panel name keyed by its far number | $8000.
+.rank:
+    sep #$20
+    lda.b #$01
+    sta.l !HUDC
+    rep #$20
+    phy
+    ldy.w #$0001
+    lda ($00),y         ; D and DB still the loop's
+    ply
+    pha
+    ora.w #$8000
+    sta.l !PKEY
+    pla
+    sec
+    jsr drop_kind
+    bra .num
 .hud:
     sep #$20
     lda.b #$01
@@ -1308,6 +1354,9 @@ name_cache:
     and.w #$00F0
     sta.l !PKEY
     lda.w $0002,y       ; the far number, DB:Y as the caller left them
+    clc
+    jsr drop_kind
+.num:
     jsr need
     ldx.w #(!CACHEN-1)*4
 .find:
@@ -1353,6 +1402,38 @@ name_cache:
     jsr protect
     sta.l !CFIRST
     bra .out
+
+; Drop the other kind's panel entries: the rank panel and the HUD panels never share a screen, and a stale entry kept its ring
+; tiles off the next screen's names. C set (a rank name): drop keys < $8000 (HUD); C clear: drop keys >= $8000 (rank). A16 X16, A X kept.
+drop_kind:
+    pha
+    phx
+    php
+    ldx.w #(!PANELN-1)*4
+-
+    plp
+    php
+    lda.l !PANEL,x
+    bcs .rank
+    bpl .keep
+    bra .drop
+.rank:
+    bmi .keep
+.drop:
+    sep #$20
+    lda.b #$00
+    sta.l !PANEL+2,x
+    rep #$20
+.keep:
+    dex
+    dex
+    dex
+    dex
+    bpl -
+    plp
+    plx
+    pla
+    rts
 
 ; $C2:2726, the boot load of block 4 (A = 4). Block 4 is built without its 512 zero bytes (repack.TRIM) so the mid-game load
 ; ($C2:2706) no longer wipes our state at $7F:FE00-FFFF; at boot those zeros were its init (name entry showed junk without them).

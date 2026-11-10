@@ -48,6 +48,8 @@ RECORDS = [
     (0x009743, 12, 0x25, 1, 5, "name_hero"),  # the 12 heroes again, index byte + 5-byte name: versus mode (the shop header showed チンク)
     # battle result box label [F4]シリング + the next label's F4 ($C3:391A copies 6, asm/vwf.asm): small path, so a far name image
     (0x018479, 1, 0, 0, 6, "name_result"),
+    # defeat robot's slot: シリング10％ / 30％ / 50％, 8 cells each ($C1:0457: Y = $84:83EC + 8 x n, read from Y + 1; small path; player bug report)
+    (0x0483ED, 3, 8, 0, 8, "name_slot"),
 ]
 JP = re.compile(r"[ぁ-んァ-ヴー一-龥]")
 NOISE = re.compile(r"[Ⓐ-ⓩ🅐-🅨♂♀／％＆★「」]")
