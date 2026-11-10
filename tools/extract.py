@@ -48,6 +48,8 @@ RECORDS = [
     (0x009743, 12, 0x25, 1, 5, "name_hero"),  # the 12 heroes again, index byte + 5-byte name: versus mode (the shop header showed チンク)
     # battle result box label [F4]シリング + the next label's F4 ($C3:391A copies 6, asm/vwf.asm): small path, so a far name image
     (0x018479, 1, 0, 0, 6, "name_result"),
+    # level-up label レベルアップ‼ ($C3:3C58 copies 7 to $1A8F; small path, so a far name image; player bug report)
+    (0x018483, 1, 0, 0, 7, "name_result"),
     # defeat robot's slot: シリング10％ / 30％ / 50％, 8 cells each ($C1:0457: Y = $84:83EC + 8 x n, read from Y + 1; small path; player bug report)
     (0x0483ED, 3, 8, 0, 8, "name_slot"),
 ]
@@ -252,12 +254,14 @@ def shop_block(sink, b, data):
 
 
 def records(sink, rom):
+    base = {}  # ids run on across a section's records
     for first, count, stride, off, size, sec in RECORDS:
         for i in range(count):
             pos = first + i * stride + off
             s = T.decode(rom, pos, length=size)[0]
             if JP.search(plain(s)):
-                sink.rows.setdefault(sec, []).append((f"{sec[5:]}{i:03d}", f"r{pos:06X}:{size}", s))
+                sink.rows.setdefault(sec, []).append((f"{sec[5:]}{base.get(sec, 0) + i:03d}", f"r{pos:06X}:{size}", s))
+        base[sec] = base.get(sec, 0) + count
 
 
 FOES = range(558, 697)  # monster blocks: 4 u16 section offsets, the last section starts with the 8-byte name (no end code, F4 pads),
