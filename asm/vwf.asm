@@ -116,6 +116,8 @@ org $C555C1
     jsl header_strip
 org $C2B67A
     jsl name_strip      ; same stale cells after a hero's name in the status box and equip header
+org $C2B28A
+    jsl status_strip    ; recruit box header STATUS ($C0:A030, 6 cells, rect $C0:A038): stale tiles after it (player report, tybo_re.mss)
 
 ; recruit status box ($C2:B3DD, copied rect $A0DA at $1111): job cells (5x2 at $C0:A09E + 10 * job) and race cells (6x2 at $C0:A056
 ; + 12 * race) went to two rows each, kana on the lower, dakuten on the upper. English (tools/rects.py CELLS) is lower row only: both
@@ -934,6 +936,9 @@ header_strip:           ; $C5:55C1 shop/inn header: 勇者 + 5 name cells
     bra strip_n
 name_strip:             ; $C2:B67A status box / equip header: a hero's 5 name cells
     lda.w #$0280
+    bra strip_n
+status_strip:           ; $C2:B28A recruit status box header: 6 cells
+    lda.w #$0300
 strip_n:
     phx
     clc
