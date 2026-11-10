@@ -87,6 +87,11 @@ org $C59516
     db $2B              ; ／
 org $C59519
     db $00
+; player select race rect ($C1:574D, pointers $85:988E) at col 2 row 12: 7-tile Nyankee / Tinnian hit the panel's right border, col 1 clears it
+org $C14260
+    dw $0001
+org $C1535A
+    dw $0001
 ; FE {color:09}危険度{color:07}★★★ after a place record in the map-town box is built from immediates ($C2:D4F7): 危険度 (F7 8C F7 42 F7 C7)
 ; becomes F1 00 00 F4 F4 F4, a call to far string 0 (insert.CODE_TEXT, always numbered first), the pads skipped
 org $C2D504
