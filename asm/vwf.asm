@@ -163,13 +163,14 @@ org $C2A6DF
     nop
 
 ; save slot date "0年目 4月": template rect $85:BC2D (7x1, 年 目 . MM . 月) at col 23, year digits (2) at col 20, month at col 26.
-; English "Yr 0 Mo 4": template at col 20 = Y r YY . M o, year at col 22, month at col 27 (tiles of the label sheet, rects.tiles)
+; English "Yr 0 Mo 4": template at col 22 = Y r YY . M o, year at col 24, month at col 29 (tiles of the label sheet, rects.tiles).
+; 2 cols right of the JP date so the place name (col 9, rects.REGIONS) gets 12 cells and a gap; month ends at col 30, border at 31
 org $C42270
-    dw $0014
-org $C4236A
     dw $0016
+org $C4236A
+    dw $0018
 org $C423D1
-    dw $001B
+    dw $001D
 org $C5BC2F
     db $23,$41,$00,$00,$00,$17,$3E
 

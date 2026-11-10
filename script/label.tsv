@@ -57,6 +57,19 @@ rect059940	r059940:14	ニャンキー	Nyankee
 rect05BC09	r05BC09:8	ロード	Load
 rect05BC11	r05BC11:8	セーブ	Save
 rect05BC19	r05BC19:20	データがありません	No Data
+rect05BC87	r05BC87:18	アルディアちほう	Ardia Region
+rect05BC99	r05BC99:18	タシュールさばく	Tashur Sands
+rect05BCAB	r05BCAB:16	ペリルしょとう	Peril Isles
+rect05BCBB	r05BCBB:16	アルセンガルド	Arsengard
+rect05BCCB	r05BCCB:18	ロスティアしゅと	Lostia City
+rect05BCDD	r05BCDD:20	ゆうしゃのたびだち	Setting Out
+rect05BCF1	r05BCF1:14	しれんのみち	Trial Path
+rect05BCFF	r05BCFF:20	おわりなきでんせつ	Endless Saga
+rect05BD13	r05BD13:18	フォートのとりで	Fort Bastion
+rect05BD25	r05BD25:18	タシュールいせき	Tashur Ruins
+rect05BD37	r05BD37:20	ふういんのどうくつ	Sealed Cave
+rect05BD4B	r05BD4B:20	アストロンしんでん	Astron Hall
+rect05BD5F	r05BD5F:18	ロスティアのしろ	Lostia Keep
 cell00A062	r00A062:12	にんげん	Human
 cell00A06E	r00A06E:12	エルフィン	Elfin
 cell00A07A	r00A07A:12	ドワーフ	Dwarf
